@@ -43,7 +43,7 @@ def _get_download_url(page, cid: str, f: dict) -> str | None:
     enc_path = f['folder_path'].replace('/', '%2F')
     filename = f['filename']
 
-    page.goto(_folder_url(cid, nid, enc_path), wait_until='networkidle')
+    page.goto(_folder_url(cid, nid, enc_path), wait_until='domcontentloaded', timeout=60000)
     # Remove any lingering lightbox so the next wait_for_selector sees only a fresh one
     page.evaluate("() => { document.querySelectorAll('.basicLightbox').forEach(el => el.remove()); }")
 

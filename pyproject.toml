@@ -13,4 +13,5 @@ dependencies = [
     "python-pptx",
     "python-docx",
     "beautifulsoup4",
+    "pdfplumber",
 ]
