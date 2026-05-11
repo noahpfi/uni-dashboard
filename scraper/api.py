@@ -71,7 +71,8 @@ def get_summary():
 
 @app.get('/api/courses/summary')
 def get_courses_summary():
-    return _read_json('courses_summary.json')
+    p = DATA_DIR / 'courses_summary.json'
+    return json.loads(p.read_text(encoding='utf-8')) if p.exists() else []
 
 
 @app.get('/api/courses')
