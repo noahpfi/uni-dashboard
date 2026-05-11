@@ -1,0 +1,61 @@
+PS Einführung in die Makroökonomik
+Aufgabenblatt 4
+Sommersemester2026
+1. GegebenseifolgendesIS-LMModell,indemdieZentralbankeinenZielzinsvoni∗ =13%verfolgt:
+C =5000+0.2YD
+I =7000+0.05Y −8900i
+G=900
+T =1100
+YD =Y −T
+MD
+=0.30Y −10200i
+P
+A.WelchederfolgendenVariablensindimModellendogenbestimmt?
+c /P /inv /C /Y
+0 i
+B.UndwelchederfolgendenVariablensindimModellexogenbestimmt?
+Y /YD /inv /c /I
+i 0
+C.BestimmenSiedieIS-Gleichung.
+D.BestimmenSiedieLM-Gleichung.
+E.BerechnenSiedasGleichgewichtseinkommen(Y∗).
+F.BerechnenSiedie(reale)GeldmengeimGleichgewicht.
+2. GehenSievonfolgendemIS-LMModellaus:
+MD
+=3.00Y −7100i T =350
+P
+i∗ =8% G =300
+C =200+0.2YD
+I =310+0.25Y −2300i
+(Hinweis: Schreiben Sie das Modell zuerst allgemein an und setzen Sie erst zum Schluss die
+angegeben Werte ein, da Sie u.a. zur Berechnung der verschiedenen Multiplikatoren nach der
+jeweiligenVariableableitenmüssen. D.h.,lösenSiezuerstallgemeinnachdemgleichgewichtigen
+EinkommenY∗.)
+A.BerechnenSiedenStaatsausgabenmultiplikator.
+B.BerechnenSiedenSteuermultiplikator.
+C.BerechnenSiedasgleichgewichtigeEinkommenY∗.
+D. Wie wirken sich Änderungen in T und G aus, bei denen der Staatshaushalt ausgeglichen
+bleibt? Konkret, wie stark verändert sich Y, wenn T und G sich um −50 Geldeinheiten (GE)
+verändern?
+3. GehenSievonzweiunterschiedlichenSituationenaus:
+A.DieZentralbankkauftWertpapiereaufdemoffenenMarkt,umdenZielzinssatzzusenken.
+B.DerFinanzministersenktdieStaatsausgaben.
+1|2
+ZeigenSiedieVerschiebungenderIS-bzw. LM-KurvegrafischanhanddesIS-LM-Modells(inklu-
+siveGüter-undGeldmarkt)underklärenSiedieAuswirkungenderjeweiligenMaßnahmeaufdas
+Einkommen (Y), den Zinssatz (i), den Konsum (C), die Investitionen (I), und die Geldnachfrage
+(MD).
+ArbeitenSiedieFragenhandschriftlichausundladenSiedieabfotografiertenodergescannten
+Lösungskonzeptehoch.
+4. In einer Volkswirtschaft herrscht ein simultanes Gleichgewicht auf Güter- und Finanzmärkten.
+Schlagen Sie unter Verwendung des IS-LM Modells eine geeignete Kombination aus Geld- und
+Fiskalpolitikvor,umdieuntengenanntenZielezuerreichen.
+ErstellenSiezurVeranschaulichunggeeigneteGrafikenfürdasIS-LMModellsowieGüter-undFi-
+nanzmarkt. DiskutierenSiezudeminbeidenFällendievorgeschlagenenMaßnahmeninHinblick
+aufihreWirkungenaufdenZinssatzi,dieInvestitionenI unddasEinkommenY.
+A.EineErhöhungdesZinssatzesi,dasrealeBIPY sollaberkonstantbleiben.
+B. Eine Erhöhung der Steuern T zur Konsolidierung des Staatshaushalts, das reale BIP Y soll
+aberkonstantbleiben.
+Arbeiten Sie die Antworten für die beiden Fälle jeweils handschriftlich aus und laden Sie die
+eingescanntenoderabfotografiertenLösungenseparathoch.
+2|2

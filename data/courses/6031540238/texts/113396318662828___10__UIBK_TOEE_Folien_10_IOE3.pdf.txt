@@ -1,0 +1,271 @@
+Theorie ökonomischer Entscheidungen
+Prof. Dr. Heiner Schumacher
+UIBK
+10. Informationsökonomie III
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 1/21
+Einleitung
+Im vorletzten Kapitel haben wir gesehen, wie asymmetrische
+Information zu adverser Selektion führen kann. Schlechte Qualität
+verdrängt dann gute Qualität vom Markt.
+Wie kann die informierte Partei glaubwürdig mitteilen, dass sie gute
+Qualität anbietet?
+In diesem Kapitel analysieren wir eine Möglichkeit, nämlich Signaling.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 2/21
+Einleitung
+Signaling bedeutet, dass die informierte Partei eine Aktion wählt, die
+ihren Typ glaubwürdig preisgibt, weil andere Typen diese Aktion nicht
+wählen würden.
+Als Signaling Beispiel werden wir Ausbildung betrachten.
+Ein Arbeitgeber kann die Produktivität von Arbeitnehmern nicht
+direkt beobachten. Aber er kann aus ihrer Ausbildung (Schul- und
+Studienabschlüsse) etwas über ihre Produktivität lernen
+Ausbildung erhöht also nicht (nur) die Produktivität der
+Arbeitnehmer, sondern erfüllt also auch eine Informationsfunktion.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 3/21
+Einleitung
+Überblick
+Markt mit symmetrischer Information
+Markt mit asymmetrischer Information
+Signaling durch Ausbildung
+Separierende Gleichgewichte
+Pooling-Gleichgewichte
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 4/21
+Markt mit symmetrischer Information
+Wir betrachten einen Arbeitsmarkt mit einem Arbeiter und zwei
+Firmen j 1,2 , die um den Arbeiter konkurrieren.
+2 f g
+Der Arbeiter ist entweder sehr produktiv oder weniger produktiv. Wir
+nennen den ersten Typen wieder H-Typ und den zweiten L-Typ.
+Die Produktivität des H-Typen ist θ , die Produktivität des L-Typen
+H
+ist θ . Wir nehmen an, dass θ > θ > 0 gilt.
+L H L
+Die Wahrscheinlichkeit, dass der Arbeiter der H-Typ ist, ist µ.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 5/21
+Markt mit symmetrischer Information
+Jede Firma j macht dem Arbeiter ein Lohnangebot w .
+j
+Der Arbeiter akzeptiert das höchste Angebot. Wenn beide Angebote
+identisch sind, akzeptiert er jedes Angebot mit Wahrscheinlichkeit 1.
+2
+Wenn Firma j einen Arbeiter mit Produktivität θ zum Lohn w
+i j
+einstellt, so ist ihr Gewinn
+π = θ w .
+j i j
+(cid:0)
+Wenn eine Firma keinen Arbeiter einstellt, so ist ihr Gewinn 0.
+Die Auszahlung des Arbeiters ist der Lohn w des akzeptierten
+Angebots.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 6/21
+Markt mit symmetrischer Information
+Nehmen wir zunächst an, dass die Firmen die Produktivität des
+Arbeiters beobachten können, d.h. sie wissen ob er der H-Typ oder
+der L-Typ ist.
+Welchen Lohn würden sie anbieten?
+Wir bemerken, dass die beiden Firmen im Bertrand-Wettbewerb
+zueinander stehen.
+Daher muss gelten, dass im Gleichgewicht jede Firma j den Lohn
+w = θ anbietet und Nullgewinne macht.
+j i
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 7/21
+Markt mit symmetrischer Information
+Nehmen wir an, dass der Arbeiter der H-Typ ist.
+Kann es ein Gleichgewicht sein, dass w < θ ?
+j H
+Kann es ein Gleichgewicht sein, dass w > w > θ ?
+j j H
+(cid:0)
+Kann es ein Gleichgewicht sein, dass w > w = θ ?
+j j H
+(cid:0)
+Kann es ein Gleichgewicht sein, dass w = w > θ ?
+j j H
+(cid:0)
+Was bleibt als Kandidat für ein Gleichgewicht?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 8/21
+Markt mit asymmetrischer Information
+Als nächstes nehmen wir an, dass die Firmen den Typ des Arbeiters
+nicht beobachten können.
+Sie kennen nur die Wahrscheinlichkeit µ, dass er der H-Typ ist.
+Welchen Lohn würden sie nun anbieten?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 9/21
+Markt mit asymmetrischer Information
+Die erwartete Produktivität ist µθ +(1 µ)θ .
+H L
+(cid:0)
+Da die Firmen immer noch im Bertrand-Wettbewerb zueinander
+stehen, ist der Lohn im Gleichgewicht
+wˆ = µθ +(1 µ)θ .
+H L
+(cid:0)
+Für beide Typen ist der Lohn gleich. Relativ zur Situation mit
+symmetrischer Information verliert also der H-Typ und gewinnt der
+L-Typ.
+Warum kommt es nicht zu adverser Selektion?
+Konstruieren Sie eine Version dieses Modells bei der es zu adverser
+Selektion kommt! [Nehmen Sie dazu an, dass die beiden Typen
+unterschiedliche Reservationslöhne haben.]
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 10/21
+Signaling durch Ausbildung
+Als nächstes nehmen wir an, dass der Arbeiter eine Ausbildung e 0
+(cid:21)
+absolvieren kann, bevor er sich bei den Firmen bewirbt.
+Der Arbeiter kennt seinen Typ und kann e darauf konditionieren.
+Allerdings verursacht die Ausbildung (monetäre und psychische)
+Kosten. Diese Kosten hängen vom Typen des Arbeiters ab.
+Es sei c(e,θ ) die Kostenfunktion für den i-Typ. Wenn er die
+i
+Ausbildung e wählt und zum Lohn w eingestellt wird, so ist sein
+Nutzen
+U(θ ,w,e) = w c(e,θ ).
+i i
+(cid:0)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 11/21
+Signaling durch Ausbildung
+Produktivere Typen haben niedrigere Ausbildungskosten als weniger
+produktive Typen.
+Wir machen insbesondere die folgenden Annahmen:
+c(0,θ ) = 0 fü θ θ ,θ ,
+i i L H
+2 f g
+∂c(e,θ ) ∂2c(e,θ )
+i i
+> 0, > 0 für θ θ ,θ ,
+∂e ∂e2 i 2 f L H g
+∂c(e,θ ) ∂c(e,θ )
+c(e,θ ) > c(e,θ ), L > H für alle e.
+L H
+∂e ∂e
+Die wichtige Annahme hier ist dass der L-Typ höhere Kosten und
+höhere marginale Kosten hat als der H-Typ.
+Zeichnen Sie die Indi¤erenzkurven der beiden Typen im (w,e)-Raum!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 12/21
+Job Market Signaling
+Wir machen die extreme Annahme, dass Ausbildung die Produktivität
+der Arbeiter nicht verändert! Diese Annahme ist nicht wichtig, aber
+sie vereinfacht das Modell deutlich.
+Wenn die Firmen Ausbildung e sehen, denken Sie, dass die
+Wahrscheinlichkeit des H-Typen µ(e) ist.
+Die Funktion µ(e) leitet sich aus dem Verhalten der beiden Typen im
+Gleichgewicht her.
+Erinnern wir uns: Im Gleichgewicht müssen die Erwartungen aller
+Beteiligten richtig sein!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 13/21
+Job Market Signaling
+Welche Ausbildung wird der Arbeiter wählen und wie verändert
+Ausbildung seinen Lohn?
+Es sei e die Ausbildung die der H-Typ im Gleichgewicht wählt, und
+H(cid:3)
+e die Ausbildung die der L-Typ im Gleichgewicht wählt.
+L(cid:3)
+Wir unterscheiden im Folgenden zwischen zwei Typen von
+Gleichgewichten: Separierende Gleichgewichte und
+Pooling-Gleichgewichte.
+In einem separierenden Gleichgewicht wählen die beiden Typen
+unterschiedliche Ausbildungsniveaus, e = e .
+H(cid:3)
+6
+L(cid:3)
+In einem Pooling-Gleichgewicht wählen die beiden Typen genau
+dasselbe Ausbildungsniveau, e = e .
+H(cid:3) L(cid:3)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 14/21
+Separierende Gleichgewichte
+Wir beginnen mit der Analyse von separierenden Gleichgewichten.
+Es sei w der Lohn den die Firmen anbieten, wenn sie e beobachten,
+H(cid:3) H(cid:3)
+und w der Lohn den die Firmen anbieten, wenn sie e beobachten.
+L(cid:3) L(cid:3)
+Wir zeigen, dass in jedem separierenden Gleichgewicht w = θ und
+H(cid:3) H
+w = θ gelten muss.
+L(cid:3) L
+Weiter zeigen wir, dass in jedem separierenden Gleichgewicht e = 0
+L(cid:3)
+gelten muss.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 15/21
+Separierende Gleichgewichte
+Wir charakterisieren die Menge der separierenden Gleichgewichte.
+Es sei eine “Allokation”die Kombination aus Ausbildung und Lohn,
+(e,w).
+Wir haben gerade gezeigt, dass die Gleichgewichtsallokation für einen
+L-Typen (0,θ ) ist.
+L
+Der Lohn für H-Typen muss θ sein.
+H
+Es fehlt also nur noch, e zu bestimmen!
+H(cid:3)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 16/21
+Separierende Gleichgewichte
+Es sei e das Ausbildungsniveau so dass der L-Typ indi¤erent ist
+0
+zwischen der Allokation (0,θ ) und der Allokation (e ,θ ).
+L 0 H
+Es sei e das Ausbildungsniveau so dass der H-Typ indi¤erent ist
+00
+zwischen der Allokation (0,θ ) und der Allokation (e ,θ ).
+L 00 H
+Wir zeichnen diese Allokationen in den (w,e)-Raum!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 17/21
+Separierende Gleichgewichte
+Wir zeigen, dass für jedes Ausbildungsniveau e [e ,e ], die
+0 00
+2
+Allokation (e,θ ) eine Gleichgewichtsallokation für den H-Typen sein
+H
+kann!
+Die multiblen Gleichgewichte resultieren aus der Tatsache, dass wir
+die Interpretation der Firmen für Ausbildungsniveaus außerhalb des
+Gleichgewichts frei wählen können.
+Das ist für die Weiterentwicklung der Theorie enorm wichtig, soll uns
+aber im Folgenden nicht weiter interessieren.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 18/21
+Separierende Gleichgewichte
+Das Ausbildungsniveau e ist die geringste Ausbildung, die der H-Typ
+0
+in einem separierenden Gleichgewicht wählen kann.
+Der L-Typ ist in einem separierenden Gleichgewicht immer strikt
+schlechter gestellt als wenn Ausbildung nicht möglich wäre.
+Der H-Typ kann sich durch Ausbildung eventuell verbessern. Wenn µ
+allerdings großgenug ist, dann wird auch der H-Typ durch
+Signalisierung schlechter gestellt. Er muss dann die gesamte
+Ausbildung absolvieren nur um sich von ein paar wenigen L-Typen zu
+separieren.
+Signaling kann daher die Wohlfahrt strikt verschlechtern!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 19/21
+Pooling-Gleichgewichte
+Wir leiten die Menge der Pooling-Gleichgewichte her.
+In einem Pooling-Gleichgewicht wählen beide Typen dieselbe
+Ausbildung
+e = e = e
+H(cid:3) L(cid:3) (cid:3)
+und erhalten denselben Lohn.
+Der Pooling Lohn muss natürlich gleich der durchschnittlichen
+Produktivität sein:
+wˆ = µθ +(1 µ)θ .
+H L
+(cid:0)
+Wir nehmen an, dass die Firmen den Lohn θ anbieten, wenn sie ein
+L
+Ausbildungsniveau beobachten, das von e abweicht. (Wie könnten
+(cid:3)
+wir diese Annahme interpretieren?)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 20/21
+Pooling-Gleichgewichte
+Der i-Typ hat keinen Anreiz, von der Pooling-Ausbildung e
+(cid:3)
+abzuweichen, wenn gilt:
+θ µθ +(1 µ)θ c(e ,θ ).
+L H L (cid:3) i
+(cid:20) (cid:0) (cid:0)
+Daher ist e das Ausbildungsniveau in einem Pooling-Gleichgewicht,
+(cid:3)
+wenn gilt:
+c(e ,θ ) µ(θ θ ).
+(cid:3) i H L
+(cid:20) (cid:0)
+In diesem Modell ist Ausbildung in Pooling-Gleichgewichten reine
+Resourcen-Verschwendung. Trotzdem haben beide Typen einen
+Anreiz, in Ausbildung zu investieren.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 10.InformationsökonomieIII 21/21

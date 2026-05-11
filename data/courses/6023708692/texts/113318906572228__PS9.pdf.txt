@@ -1,0 +1,271 @@
+Statistische Datenanalyse
+Kapitel 9
+Regressionsanalyse
+Regressionsanalyse
+Regressionsanalyse - deskriptiv
+© StatistischeDatenanalyse–9–Regressionsanalyse 1/19
+Beispiel: CO und globale Erwärmung
+2
+• EinehoheKonzentrationvonu.a.Kohlendioxid(CO )inderAtmosphäre
+2
+führtzumsogenanntenTreibhauseffekt,einerTemperaturerhöhungander
+Planetenoberfläche.
+• Gesucht:QuantifizierungdiesesEffektsdurchSchätzungeinersogenannten
+RegressionsgeradeaufBasisempirischerMessungenderdurchschnittlichen
+5-jährigenCO KonzentrationundTemperatur-Anomalie.
+2
+• DiesermöglichteinePrognosederzukünftigenTemperaturaufBasisder
+zugehörigenCO -Konzentration.
+2
+• Daten:GlobalLandOceanTemperatureIndexvomNASAGoddardInstitute
+ofSpaceStudies(GISTEMP).
+• GISTEMPwirdangegebenin1/100◦CalsDifferenzzurdurchschnittlichen
+Temperatur1951–1980undistinderLiteraturbekanntalsglobale
+Oberflächentemperatur-Anomalie.
+© StatistischeDatenanalyse–9–Regressionsanalyse 2/19
+Beispiel: CO und globale Erwärmung
+2
+• AufBasisderviergegebenenMesspunkteberechnenwirnundieGerade
+nachdemKQ-Kriterium,
+CO [ppm] 341 349 356 364
+2
+GISTEMP[1/100◦C] 16.6 18.6 24 38.4
+• interpretierendieKoeffizientenund
+• gebeneinePrognosefürdieTemperaturwertebeiCO = 372und
+2
+CO = 382.
+2
+• Wirwissen,dassbeiCO = 372ppmeinTemperaturunterschiedvon47.8
+2
+[1/100◦C]undbeiCO = 382ppmeinTemperaturunterschiedvon55.4
+2
+[1/100◦C]beobachtetwurden.VergleichenwirdiebeobachtetenWertemit
+denaufgrundderRegressiongeschätztenWerten.
+© StatistischeDatenanalyse–9–Regressionsanalyse 3/19
+Beispiel: CO und globale Erwärmung
+2
+DatenineinDatenfilegeben
+R> head(daten.klima)
+Temp CO2
+1 16.6 341
+2 18.6 349
+3 24.0 356
+4 38.4 364
+5 NA 372
+6 NA 382
+R> plot(Temp ~ CO2, data = daten.klima[c(1:4), ], cex = 1.5, pch = 19)
+345 350 355 360
+53
+03
+52
+02
+CO2
+pmeT
+© StatistischeDatenanalyse–9–Regressionsanalyse 4/19
+Beispiel: CO und globale Erwärmung
+2
+R> linmodel <- lm(Temp ~ CO2, data = daten.klima)
+R> coef(linmodel)
+(Intercept) CO2
+-304.4374 0.9329
+R> plot(Temp ~ CO2, data = daten.klima[c(1:4), ], cex = 1.5, pch = 19)
+R> abline(linmodel, lwd = 2)
+345 350 355 360
+53
+03
+52
+02
+CO2
+pmeT
+Regressionsgleichung:
+(cid:92)
+Temp = −304.44+0.93·CO2
+i i
+© StatistischeDatenanalyse–9–Regressionsanalyse 5/19
+Beispiel: CO und globale Erwärmung
+2
+R> predict(linmodel, newdata = daten.klima)
+1 2 3 4 5 6
+13.67 21.13 27.67 35.13 42.59 51.92
+R> plot(Temp ~ CO2, data = daten.klima,
++ xlim = c(min(daten.klima$CO2), max(daten.klima$CO2)),
++ ylim = c(min(daten.klima$Temp, na.rm = TRUE) - 10,
++ max(daten.klima$Temp, na.rm = TRUE) + 20),
++ pch = 19)
+R> abline(linmodel, cex = 1.5)
+R> points(daten.klima$CO2, predict(linmodel, newdata = daten.klima),
++ col = "darkblue", pch = 18, cex = 1.5)
+© StatistischeDatenanalyse–9–Regressionsanalyse 6/19
+Beispiel: CO und globale Erwärmung
+2
+340 350 360 370 380
+06
+05
+04
+03
+02
+01
+CO2
+pmeT
+© StatistischeDatenanalyse–9–Regressionsanalyse 7/19
+Aufgabe: CO und globale Erwärmung
+2
+1 VerwendenSienundenR-Originaldatensatzklima.rdamitdenjährlichen
+Datenvon1979bis2010.
+2 BestimmenSiedieKQ-SchätzerfürdieRegressionsgeradezwischender
+jährlichenTemperaturerhöhungundderCO Konzentration.
+2
+3 ZeichnenSiedieresultierendeRegressionsgeradeindasStreudiagramm
+derDaten.
+4 InterpretierenSiedieErgebnisse.
+Datenquelle: NASAGoddardInstituteofSpaceStudies,
+https://www.giss.nasa.gov/
+© StatistischeDatenanalyse–9–Regressionsanalyse 8/19
+Beispiel: Mietspiegel für München 1999
+miete = β +β ·flaeche +β ·bjahr +ε
+i 0 1 i 2 i i
+R> load("daten/mietspiegel.rda")
+miete mieteqm flaeche bjahr bad kueche bezv lage zh
+1 120.6 3.446 35 1939 normal normal 1112 normale Lage ohne
+2 435.7 4.189 104 1939 gehoben normal 1112 normale Lage mit
+3 354.7 12.230 29 1971 normal normal 2114 gute Lage mit
+4 282.1 7.233 39 1972 normal normal 2148 gute Lage mit
+5 804.8 8.297 97 1985 normal normal 2222 normale Lage mit
+6 481.4 7.764 62 1962 normal normal 2222 normale Lage mit
+7 322.7 10.411 31 1965 normal normal 2211 normale Lage mit
+8 369.9 6.063 61 1958 gehoben normal 2142 gute Lage mit
+9 372.6 5.175 72 1978 normal normal 2143 normale Lage mit
+10 520.1 6.935 75 1968 normal normal 2142 normale Lage mit
+© StatistischeDatenanalyse–9–Regressionsanalyse 9/19
+Anwendung: Mietspiegel für München 1999
+R> m_miete <- lm(miete ~ flaeche + bjahr, data = mietspiegel)
+R> coef(m_miete)
+(Intercept) flaeche bjahr
+-4761.359 5.346 2.484
+m (cid:92) iete = βˆ +βˆ ·flaeche +βˆ ·bjahr
+i 0 1 i 2 i
+= −4761.36+5.35·flaeche +2.48·bjahr
+i i
+© StatistischeDatenanalyse–9–Regressionsanalyse 10/19
+Beispiel: Mietspiegel für München 1999 I
+Interpretation
+• Wohnfläche:βˆ = 5.35istpositiv,d.h.mitsteigenderWohnflächesteigt
+1
+auchdiedurchschnittlicheNettomiete.WennsichdieWohnflächeumeinen
+Quadratmetererhöht,dannsteigtceterisparibusdiedurchschnittliche
+Nettomieteum5.35Euro.
+• Baujahr:βˆ = 2.48istpositiv,d.h.neuereWohnungensindimDurchschnitt
+2
+teureralsältereWohnungen.Eineum1JahrneuereWohnungführtceteris
+paribuszueinerErhöhungderdurchschnittlichenNettomieteum2.48Euro.
+Prognose
+PrognosefüreineimJahr1998erbauteWohnungmit60qmWohnfläche.
+(cid:92)
+miete = −4761.36+5.35·60+2.48·1998 = 522.21Euro
+© StatistischeDatenanalyse–9–Regressionsanalyse 11/19
+Beispiel: Mietspiegel für München 1999 II
+Prognose in R
+R> ## Neue Daten erstellen.
+R> nd <- data.frame("flaeche" = 60, "bjahr" = 1998)
+R> ## Prognose mit dem geschaetzten Modell
+R> ## und den neuen Daten berechnen.
+R> predict(m_miete, newdata = nd)
+1
+522.2
+© StatistischeDatenanalyse–9–Regressionsanalyse 12/19
+Modell mit normaler Lage als Referenzkategorie I
+miete =β +β ·flaeche +β ·bjahr +β ·lagegute +β ·lagebeste +ε
+i 0 1 i 2 i 4 i 5 i i
+R> m_miete2 <- lm(miete ~ flaeche + bjahr + lage, data = mietspiegel)
+R> coef(m_miete2)
+(Intercept) flaeche bjahr
+-5070.796 5.234 2.635
+lagegute Lage lagebeste Lage
+46.628 132.976
+R> ## Neue Labels vergeben.
+R> levels(mietspiegel$lage)
+[1] "normale Lage" "gute Lage" "beste Lage"
+R> levels(mietspiegel$lage) <- c("normal", "gute", "beste")
+R> levels(mietspiegel$lage)
+[1] "normal" "gute" "beste"
+© StatistischeDatenanalyse–9–Regressionsanalyse 13/19
+Modell mit normaler Lage als Referenzkategorie II
+R> m_miete2 <- lm(miete ~ flaeche + bjahr + lage, data = mietspiegel)
+R> coef(m_miete2)
+(Intercept) flaeche bjahr lagegute
+-5070.796 5.234 2.635 46.628
+lagebeste
+132.976
+Wiederholung: Kategoriale Variablen in R.
+R> x <- c(2, 7, 11, 11, 2, 7, 7)
+R> x <- factor(x, levels = c(2, 7, 11), labels = c("blau", "rot", "gelb"))
+R> x
+[1] blau rot gelb gelb blau rot rot
+Levels: blau rot gelb
+R> levels(x)
+[1] "blau" "rot" "gelb"
+© StatistischeDatenanalyse–9–Regressionsanalyse 14/19
+Interpretation des Modells mit normaler Lage als
+Referenz
+• Wohnfläche:JegrößerdieWohnfläche,destohöheristdie
+durchschnittlicheNettomiete.EineumeinenqmgrößereWohnungerhöht
+diedurchschnittlicheNettomieteceterisparibusum5.23Euro.
+• Baujahr:NeuereWohnungensindimDurchschnittteurer.MitjedemJahr
+steigtdiedurchschnittlicheNettomieteceterisparibusum2.63Euro.
+• Wohnlage:InguterWohnlageerhöhtsichdiedurchschnittlicheNettomiete
+imVergleichzuWohnungeninnormalerLageceterisparibusum46.63Euro.
+InsehrguterWohnlageerhöhtsichdiedurchschnittlicheNettomieteceteris
+paribusum132.98EuroimVergleichzuWohnungeninnormalerLage.
+Wichtig:InterpretationimmerimVergleichmitderReferenzkategorie!
+© StatistischeDatenanalyse–9–Regressionsanalyse 15/19
+Modell mit sehr guter Lage als Referenzkategorie
+miete =β +β ·flaeche +β ·bjahr +β ·lagenormal +β ·lagegute +ε
+i 0 1 i 2 i 3 i 4 i i
+R> ## Neue Referenzkategorie setzen.
+R> mietspiegel$lage <- relevel(mietspiegel$lage, ref = "beste")
+R> m_miete3 <- lm(miete ~ flaeche + bjahr + lage, data = mietspiegel)
+R> coef(m_miete3)
+(Intercept) flaeche bjahr lagenormal
+-4937.820 5.234 2.635 -132.976
+lagegute
+-86.348
+© StatistischeDatenanalyse–9–Regressionsanalyse 16/19
+Interpretation des Modells mit sehr guter Lage als
+Referenz
+• InterpretationfürdieWohnflächeunddasBaujahranalog.
+• Wohnlage:InnormalerLageverringertsichdiedurchschnittliche
+NettomieteimVergleichzuWohnungeninsehrguterLageceterisparibus
+um132.98Euro.
+InguterLageverringertsichdiedurchschnittlicheNettomieteimVergleich
+zuWohnungeninsehrguterLageceterisparibusum86.35Euro.
+Prognose
+Prognosefüreine1998gebauteWohnungmit60qmWohnflächeinguter
+Wohnlage.
+(cid:92)
+miete=−4937.82+5.23·60+2.63·1998−132.98·0−86.35·1=554.28
+© StatistischeDatenanalyse–9–Regressionsanalyse 17/19
+Regressionsmodell
+yˆ = βˆ +βˆ ·x +βˆ ·x +···+βˆ ·x +···
+i 0 1 i1 2 i2 j ij
+Interpretation von
+βˆ
+j
+ImVergleichzurl-tenKategorie(Referenz)vonX istdieabhängigeVariableY im
+MittelumdenBetragβˆ
+erhöht(oderverringert),wenndiej-teKategorievonX
+j
+beobachtetwird(ceterisparibus).
+InterpretationimmerimVergleichzurReferenzkategorie.
+ÄndertsichdieReferenzkategorie,soändertsichauchdieInterpretation.
+© StatistischeDatenanalyse–9–Regressionsanalyse 18/19
+Aufgabe: Mietspiegel
+VerwendenSiedenDatensatzmietspiegel.rdaund
+1 schreibenSieeinmultiplesRegressionsmodellfürdieVariablemiete
+(Zielgrösse)mitallenmöglichenEinflussgrößenhin.
+WelcheVorzeichenerwartenSiebeidenjeweiligenunabhängigen
+Variablen?GebenSieeinekurzeBegründungan.
+2 BerechnenSienundasRegressionsmodell,
+3 gebenSiediegeschätzteRegressionsgleichungan,
+4 interpretierenSiealleKoeffizienten
+5 undbeurteilenSiedieGütederAnpassung.
+© StatistischeDatenanalyse–9–Regressionsanalyse 19/19

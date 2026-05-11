@@ -1,0 +1,353 @@
+Theorie ökonomischer Entscheidungen
+Prof. Dr. Heiner Schumacher
+UIBK
+5. Wettbewerb I
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 1/26
+Einleitung
+In Märkten mit perfektem Wettbewerb können Firmen den Preis nicht
+beein‡ussen und sehen diesen als gegeben an.
+Das Gleichgewicht in einem Markt mit perfektem Wettbewerb
+maximiert die Wohlfahrt (Erstes Wohlfahrtstheorem).
+Viele Firmen haben jedoch Möglichkeiten den Preis durch ihre
+Produktionsentscheidungen zu beein‡ussen.
+Eine extreme Form von Marktmacht ist das Monopol. Der
+Monopolist bestimmt alleine den Preis, den er für seine Produkte
+verlangen möchte.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 2/26
+Einleitung
+Marktmacht führt nicht nur zu einer ine¢ zienten Marktallokation,
+sondern auch zu Einkommens- und Vermögensungleichheit.
+In vielen entwickelten Ländern steigt die Marktmacht der
+erfolgreichsten Firmen. Im Moment ist nicht klar, wie die Politik
+darauf reagieren sollte.
+In diesem Kapitel analysieren wir das Verhalten eines Monopolisten,
+die Ursachen von Marktmacht, und die Konsequenzen für Wohlfahrt.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 3/26
+Einleitung
+Überblick
+Marktmacht im Monopol
+Regulierung
+Preisdiskriminierung
+Coase-Vermutung
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 4/26
+Marktmacht im Monopol
+Betrachten wir einen Monopolisten der die Menge x eines Gutes
+herstellt.
+Es sei p = p(x) die inverse Nachfragefunktion.
+Die Nachfrage fällt in der produzierten Menge, p (x) < 0.
+0
+Die Produktionskosten des Monopolisten sind c(x) mit c (x) 0.
+0
+(cid:21)
+Die Gewinnfunktion des Monopolisten ist daher
+π(x) = p(x)x c(x).
+(cid:0)
+Wie würde die Gewinnfunktion einer Firma bei perfektem Wettbewerb
+aussehen?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 5/26
+Marktmacht im Monopol
+Der Monopolist wählt die Menge x, die seinen Gewinn maximiert.
+Das Optimierungsproblem des Monopolisten ist daher
+maxp(x)x c(x).
+x (cid:0)
+Die optimale Menge wird charakterisiert durch die BEO
+dπ(x)
+= p (x)x +p(x) c (x) = 0.
+0 0
+dx (cid:0)
+Interpretieren Sie jeden Teil dieser Gleichung!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 6/26
+Marktmacht im Monopol
+Erinnern wir uns an die De…nition der Preiselastizität der
+Nachfrage
+1 p(x)
+ε = .
+(cid:0)p (x) x
+0
+Wir können die BEO umformen in
+1
+1 p(x) = c (x).
+0
+(cid:0) ε
+(cid:20) (cid:21)
+Es sei xm die Monopolmenge und pm der Monopolpreis. Aus der BEO
+erhalten wir dann die Gleichung
+pm c (xm) 1
+(cid:0) 0 = .
+pm ε
+Je höher die Preiselastizität der Nachfrage, desto geringer ist die
+Di¤erenz zwischen Monopolpreis und marginalen Kosten.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 7/26
+Marktmacht im Monopol
+Der Term
+pm c (xm)
+0
+(cid:0)
+pm
+ist der Preisaufschlag (“markup”) oder Lerner Index.
+Er variiert zwischen 0 (perfekter Wettbewerb) and 1 (vollkommen
+unelastische Nachfrage). Er beschreibt wie viel Marktmacht eine
+Firma hat.
+Nicht die Größe einer Firma entscheidet über ihre Marktmacht,
+sondern wie hoch sie den Preis ihres Produkts über die marginalen
+Kosten setzen kann.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 8/26
+Marktmacht im Monopol
+Wir betrachten ein Bespiel mit linearer Nachfrage p(x) = a bx und
+(cid:0)
+konstanten marginalen Kosten c.
+Das Maximierungsproblem des Monopolisten ist dann
+max(a bx)x cx.
+x (cid:0) (cid:0)
+Wir erhalten die BEO
+a 2bx c = 0.
+(cid:0) (cid:0)
+Aus dieser erhalten wir Monopolmenge und -preis:
+a c a+c
+xm = (cid:0) , pm = .
+2b 2
+Zum Vergleich: Im perfektem Wettbewerb wären Menge und Preis
+a c
+x = (cid:0) , p = c.
+b
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 9/26
+Marktmacht im Monopol
+Ursachen von Marktmacht
+Natürliche Monopole
+Wechselkosten (Viel‡iegerprogramme, Netzwerkgüter wie Facebook)
+Produktdi¤erenzierung
+Absolute Kostenvorteile, Kontrolle über Inputgüter
+Regulierung (Taxi-Lizensen, Copyright)
+“Common Ownership”
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 10/26
+Regulierung
+Das Gleichgewicht im Monopol ist ine¢ zient. Es wären noch mehr
+Konsumenten bereit, mindestens die Grenzkosten des Gutes zu
+bezahlen.
+Es lohnt sich für den Monopolisten jedoch nicht, die
+Produktionsmenge zu erhöhen, denn dann müsste er auch den Preis
+senken, um diese Menge abzusetzen. Dies würde den Gewinn aus
+bisher produzierten Einheiten reduzieren.
+Monopolmacht ist also schädlich für die Wohlfahrt. Ein sozialer
+Planer hätte eventuell die Möglichkeit, durch Regulierung des
+Monopols (Verstaatlichung, Preisregulierung, Mindestabsatz, etc.) die
+Wohlfahrt zu erhöhen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 11/26
+Regulierung
+Eine Möglichkeit wäre, Preise direkt zu regulieren.
+Insbesondere bei natürlichen Monopolen wurde diese Art der
+Regulierung angewandt. Die Regierung erlaubt genau einer Firma,
+den Markt zu bedienen, diktiert jedoch die Preise.
+Das Problem ist, den richtigen Preis zu …nden. Typischerweise kennt
+der Regulator die Kostenstruktur der Firma nicht genau.
+Die Firma selbst hat tendentiell kein Interesse daran, die
+Kostenstruktur wahrheitsgemäss zu berichten.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 12/26
+Regulierung
+Es gibt auch gute Gründe, Marktmacht durch Patente und
+Handelsmarken zu schützen.
+Stellen Sie sich eine Pharma-Firma vor, die ein Medikament gegen
+eine Krankheit entwickeln kann.
+Die Entwicklungskosten sind typischerweise sehr hoch, die Herstellung
+des Medikaments jedoch sehr günstig, sagen wir, 1 Cent pro Einheit.
+Bei perfektem Wettbewerb wäre der Preis etwa 1 Cent pro Einheit, so
+dass die Firma keinen Gewinn erwirtschaften würde. Sie würde dann
+auf ihren Entwicklungskosten sitzen bleiben. Die Innovation würde
+daher nicht statt…nden.
+Um Investitionen in Forschung und Entwicklung zu ermutigen, muss
+Regulierung manchmal intellektuelles Eigentum schützen, zumindest
+für einen begrenzten Zeitrahmen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 13/26
+Preisdiskriminierung
+Bisher konnte der Monopolist nur einen Preis für ein Gut verlangen.
+In der Realität …nden wir oft für dasselbe Gut unterschiedliche Preise.
+Beispiele: Flugtarife, Mengenrabatte, Studententarife, Paybackkarten.
+Dieses Verhalten nennen wir Preisdiskriminierung.
+Der Monopolist betreibt Preisdiskriminierung um die
+Konsumentenrente weiter abzuschöpfen, und um mit noch mehr
+Konsumenten handeln zu können.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 14/26
+Preisdiskriminierung
+Arten der Preisdiskriminierung
+Perfekte Preisdiskriminierung (individueller Preis = individuelle
+Zahlungsbereitschaft) nennen wir “Preisdiskriminierung 1. Art”.
+Nicht-lineare Preisstrukturen wie Mengenrabatte oder zweistu…ge
+Tarife nennen wir “Preisdiskriminierung 2. Art”.
+Gruppenspezi…sche Preise (z.B. für Schüler und Studenten) nennen
+wir “Preisdiskriminierung 3. Art”.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 15/26
+Preisdiskriminierung
+Perfekte Preisdiskriminierung
+Betrachten wir eine fallende Nachfragefunktion p(x). Diese impliziert,
+dass die Konsumenten sich hinsichtlich ihrer Zahlungsbereitschaft für
+das Gut des Monopolisten unterscheiden.
+Der Monopolist ist vollständig informiert und verlangt von jedem
+Konsumenten dessen Zahlungsbereitschaft.
+Das Gleichgewicht ist dann e¢ zient. Warum?
+Noch vor einiger Zeit war perfekte Preisdiskriminierung eine abstrakte
+Idee mit wenig praktischer Relevantz. Durch die Verfügbarkeit und
+Analyse von Konsumentendaten ändert sich das gerade.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 16/26
+Preisdiskriminierung
+Nicht-lineare Preisstrukturen
+Wiederum gibt es zwei Gruppen von Konsumenten mit
+unterschiedlicher Nutzenfunktion.
+Der Monopolist kann diese nicht unterscheiden (“asymmetrische
+Information”).
+Allerdings kann der Monopolist die Verträge so festlegen, dass es zur
+Selbstselektion der Konsumenten kommt.
+Diese Art der Preisdiskriminierung betrachten wir in einem späteren
+Kapitel.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 17/26
+Preisdiskriminierung
+Gruppenspezi…sche Preise
+Manchmal gibt es zwei Gruppen von Konsumenten eines Gutes, deren
+Zahlungsbereitschaft unterschiedlich ist, und die der Monopolist
+unterscheiden kann.
+Wenn Arbitrage zwischen diesen Gruppen nicht möglich ist, kann der
+Monopolist seinen Gewinn steigern indem er unterschiedliche Preise
+für diesen Gruppen festlegt.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 18/26
+Preisdiskriminierung
+Wir betrachten ein einfaches Modell zu gruppenspezi…schen Preisen.
+Die inversen Nachfragefunktionen der beiden Gruppen sind p (x ),
+1 1
+p (x ), und c(x +x ) ist die Kostenfunktion.
+2 2 1 2
+Die Gewinnfunktion des Monopolisten ist dann
+π(x ,x ) = p (x )x +p (x )x c(x +x )
+1 2 1 1 1 2 2 2 1 2
+(cid:0)
+Die BEO für die optimalen Mengen für die beiden Gruppen sind dann
+∂π(x ,x )
+1 2
+= p (x )+p (x )x c (x +x ) = 0,
+∂x
+1 1 10 1 1
+(cid:0)
+0 1 2
+1
+∂π(x ,x )
+1 2
+= p (x )+p (x )x c (x +x ) = 0.
+∂x
+2 2 20 2 2
+(cid:0)
+0 1 2
+2
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 19/26
+Preisdiskriminierung
+Wir erhalten durch umformen
+1
+p 1 = c (x +x ),
+1 0 1 2
+(cid:0) ε
+1
+(cid:20) (cid:21)
+1
+p 1 = c (x +x ).
+2 0 1 2
+(cid:0) ε
+2
+(cid:20) (cid:21)
+Im Optimum muss also gelten
+p 1 1
+1 = (cid:0) ε2 .
+p 1 1
+2
+(cid:0) ε1
+Interpretation: Die Gruppe mit der elastischeren Nachfrage erhält den
+niedrigeren Preis. Warum macht das Sinn?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 20/26
+Coase-Vermutung
+Bei langlebigen Gütern können Konsumenten nicht nur entscheiden
+ob, sondern auch wann sie ein Gut erwerben möchten.
+Sie antizipieren, dass der Monopolist bei zu geringer Nachfrage den
+Preis in der Zukunft senken wird.
+Viele Konsumenten entscheiden sich dann, das Gut erst zu einem
+späteren Zeitpunkt zu erwerben.
+Nur ungeduldige Konsumenten und solche mit sehr hoher
+Zahlungsbereitschaft kaufen das Gut dann zum hohen
+(Monopol-)Preis.
+Im Extremfall kann der Monopolist das Gut nur zu den
+Durchschnittskosten verkaufen, und würde so Nullgewinne machen.
+Dies ist die Coase-Vermutung.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 21/26
+Coase-Vermutung
+Wir betrachten dazu ein einfaches Beispiel.
+Gegeben sei ein Kontinuum von Konsumenten mit Masse 100.
+Jeder Konsument erwirbt höchstens eine Einheit des Gutes für
+maximal zwei Perioden t 1,2 .
+2 f g
+Die Zahlungsbereitschaft pro Periode v der Konsumenten ist
+gleichverteilt auf dem Intervall [0,100].
+Wir nehmen an, dass es keine Produktionskosten gibt.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 22/26
+Coase-Vermutung
+Der Monopolist verkauft das Gut in beiden Perioden.
+In t = 1 setzt er den Preis p fest, und die Konsumenten entscheiden
+1
+sich ob sie das Gut kaufen oder nicht.
+In t = 2 setzt er den Preis p fest, und die Konsumenten entscheiden
+2
+sich ob sie das Gut kaufen oder nicht. Die Konsumenten, die schon in
+t = 1 gekauft haben, erwerben das Gut kein zweites mal.
+Konsumenten, die das Gut in t = 1 kaufen, können es zweimal
+verwenden (haben also zweimal den Nutzen aus dem Gut).
+Konsumenten die das Gut in t = 2 kaufen, können es nur einmal
+verwenden.
+Welche Preise p und p maximieren den Gewinn des Monopolisten?
+1 2
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 23/26
+Coase-Vermutung
+Wir …nden die Lösung durch Rückwärtsinduktion.
+In t = 2 habe die x¯ Konsumenten mit der höchsten
+1
+Zahlungsbereitschaft das gut bereits gekauft.
+Die inverse Nachfragefunktion in t = 2 ist daher
+p (x ) = 100 x¯ x .
+2 2 1 2
+(cid:0) (cid:0)
+Der optimale Preis in t = 2 ist daher
+x¯
+1
+p = 50 .
+2
+(cid:0) 2
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 24/26
+Coase-Vermutung
+Sei p die Zahlungsbereitschaft des Konsumenten in t = 1 der gerade
+1
+indi¤erent ist zwischen dem Kauf in t = 1 und t = 2. Es muss dann
+gelten:
+x¯
+1
+2(100 x¯ ) p = 100 x¯ 50 .
+1 1 1
+(cid:0) (cid:0) (cid:0) (cid:0) (cid:0) 2
+(cid:18) (cid:19)
+Durch Umformen ergibt sich
+3x¯
+1
+p = 150 .
+1
+(cid:0) 2
+Die Maximierung des Gesamtgewinns
+maxp (x )x +p (x )x (x )
+1 1 1 2 1 2 1
+x1
+ergibt p = 90, p = 30, der Gewinn ist also 4500.
+1 2
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 25/26
+Coase-Vermutung
+Was kann der Monopolist tun, um dieses Kalkül der Konsumenten zu
+unterbinden?
+Eine Möglichkeit sind Leasing-Angebote: Der Monopolist verkauft in
+jeder Periode ein einperiodiges Nutzungsrecht.
+Das Maximierungsproblem des Monopolisten ist dann:
+maxp (x )x +p (x )x .
+1 1 1 2 2 2
+x1,x2
+Es ergibt sich p = 50, p = 50, der Gewinn wäre dann also 5000.
+1 2
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 5.WettbewerbI 26/26

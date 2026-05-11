@@ -1,0 +1,43 @@
+Einführung in die Theoretische Informatik LVA 703008
+2. Klausur am 2. Oktober 2020 IFI
+Aussagenlogik
+Betrachten Sie die aussagenlogische Formel A:
+(p → (q → (r → s)))∨(s → (r → (q → p)))
+(a) Betrachten Sie die Belegung v(p) = v(r) = T, v(q) = v(s) = F. Zeigen Sie, dass ¯v(A) = T
+gilt. [6 Punkte]
+(b) Zeigen Sie, dass A eine Tautologie ist. Verwenden Sie dazu die Methode von Quine.
+[10 Punkte]
+Boolesche Algebra
+Sei B eine Boolesche Algebra mit der Trägermenge B.
+(a) Zeigen Sie das zweite Gesetz von de Morgan für B.
+∼(a·b) = ∼(a)+∼(b) .
+[14 Punkte]
+(b) Gilt die gezeigte Aussage auch für die binäre Algebra? [2 Punkte]
+Hinweis: VerwendenSiefürdenBeweisdieEindeutigkeitdesKomplementsinderBooleschen
+Algebra.
+Formale Sprachen
+Gegeben sei die kontextfreie Grammatik G = ({S,B},{a,b,c},R,S), wobei die Regeln R wie
+folgt definiert sind:
+S → aSc | BB | (cid:15)
+B → b
+(a) Geben Sie L(G) in Mengennotation an. [4 Punkte]
+(b) Geben Sie eine Linksableitung in der Grammatik G für das Wort aabbcc an. [4 Punkte]
+(c) Geben Sie einen Syntaxbaum in Bezug auf G für dasselbe Wort aabbcc an. [4 Punkte]
+(d) Betrachten Sie die folgende Grammatik G = ({S},{0},R,S), wobei die Regeln R wie
+2
+folgt definiert sind:
+S → SS | 0 | (cid:15)
+Ist die Grammatik G mehrdeutig? Begründen Sie Ihre Antwort. [4 Punkte]
+2
+1
+Berechenbarkeitstheorie
+Implementieren Sie die Instruktion
+IF x THEN p END
+i
+basierend auf den verfügbaren Instruktionen einer Registermaschine. Das Programm p soll
+genau einmal ausgeführt werden, wenn x > 0. Es ist nicht notwendig den Zustand von x zu
+i i
+speichern. [16 Punkte]
+Hinweis: Beachten Sie, dass x auch größer als 1 sein kann.
+i
+2

@@ -1,0 +1,46 @@
+Vorlesung Datenbanksysteme
+Vorlesung Datenbanksysteme
+Univ.-Prof. Dr. Günther Specht
+Datenbanken und Informationssysteme (DBIS)
+Vorlesungsinhalt
+1. Einführung und Überblick
+2. Datenbankentwurf (E/R-Modell)
+3. Grundlagen relationaler Datenbanksysteme (Relationale Algebra)
+4. SQL
+5. Schnittstellen zur Anbindung an Datenbanksysteme
+6. Normalformen
+7. Architektur von Datenbanksystemen
+8. Physische Datenorganisation (B-Baum)
+9. RAID
+10. Synchronisation von Transaktionen
+11. Recovery
+12. Verteilte Informationssysteme
+13. Hauptspeicherdatenbanksysteme
+14. New und NoSQL DBS
+2
+Literatur: Grundlegend (deutsch)
+• A. Kemper, A. Eickler: Datenbanksysteme – Eine Einführung.
+De Gruyter / Oldenbourg Verlag, 10. Aufl., 2015
+• R. Elmasri, S. B. Navathe: Grundlagen von Datenbanksystemen,
+Pearson Studium, 3. Aufl. 2009 (engl: 7. Aufl. 2015)
+• G. Saake, K. Sattler, A. Heuer: Datenbanken – Konzepte und Sprachen,
+mitp-Verlag, 6. Aufl. 2018
+• G. Vossen: Datenmodelle, Datenbanksprachen und Datenbankmanagement-
+Systeme, Addison-Wesley, 5. Aufl. 2008
+• T. Kudraß: Taschenbuch Datenbanken, Hanser, 2. Aufl. 2015
+3
+Literatur: Grundlegend (englisch)
+• R. Elmasri, S.B. Navathe: Fundamentals of Database Systems, Addison-
+Wesley, 7th Ed. 2015
+• A. Silberschatz, H.F. Korth, S. Sudarshan: Database System Concepts,
+McGraw-Hill, 7th Ed. 2019
+• Date C.J., An Introduction to Database Systems, Vol I, Addison-Wesley, 8th Ed.
+2004
+• H. Garcia-Molina, J. Ullman, J. Widom: Database Systems, Prentice Hall, 2008
+4
+Literatur: Vertiefend
+• G. Saake, K. Sattler, A. Heuer Implementierungstechniken,
+mitp-Verlag, 4. Aufl. 2019
+• T. Härder, E. Rahm: Datenbanksysteme: Konzepte und Techniken der
+Implementierung. Springer-Verlag, 2. Aufl. 2001
+5

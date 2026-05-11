@@ -1,0 +1,56 @@
+Aufgabenblatt 5 Proseminar Bilanzierung und Bilanzanalyse
+KAPITEL 5 - Gewinn und Verlustrechnung
+Aufgabe 25: Gesamtkostenverfahren und Umsatzkostenverfahren
+Die Y AG weist zu Beginn des Geschäftsjahres 2024 folgende Bilanzwerte auf (01.01.2024):
+Aktiva Passiva
+Maschine 1 360.000 € Eigenkapital 452.000 €
+Gut A 17.304 € Bankkredit 800.000 €
+Gut B 38.760 € Sonstiges Fremdkapital 487.564 €
+Gut C 20.000 €
+Gut D 57.500 €
+Liquide Mittel 1.246.000 €
+1.739.564 € 1.739.564 €
+Die verschiedenen Güter werden teilweise selbst hergestellt und teilweise von externen Lieferanten zugekauft. Gut A
+und Gut B stellt die Y AG selbst her. Für eine Einheit von Gut A fallen Materialkosten in Höhe von 2,50 € und Ferti-
+gungskosten in Höhe von 3,80 € an. Für eine Einheit von Gut B fallen Materialkosten von 14,00 € und Fertigungskos-
+ten von 4,50 € an. Die Zuschlagssätze betragen für die Materialgemeinkosten 60 % und für die Fertigungsgemein-
+kosten 120 %.
+Im Geschäftsjahr hat die Y AG 6.000 Stück von Gut A und 5.400 Stück von Gut B produziert. Zudem hat die Y AG
+Gut C und Gut D von einem externen Lieferanten gekauft. Von Gut C wurden 12.500 Stück zu einem Preis von 25
+€/Stück erworben, von Gut D 6.700 Stück zu einem Preis von 23 €/Stück.
+Die Produktionskosten von Gut A und B sowie die Einkaufspreise von Gut C und D sind über die letzten Jahre stets
+konstant. Die Verkäufe im Geschäftsjahr 2024 verteilen sich folgendermaßen:
+Stück Preis/Stück
+Gut A 3.200 42 €
+Gut B 4.700 68 €
+Gut C 11.600 73 €
+Gut D 8.700 51 €
+Die Y AG möchte zudem in Zukunft Gut C selbständig herstellen. Hierfür wird eine neue Produktionsmaschine (Ma-
+schine 2) benötigt, die zum 04.01.2024 für 600.000 € neu angeschafft wird. Die Maschine soll über 8 Jahre linear
+abgeschrieben werden (kein Restwert). Maschine 1 wurde bereits am 05.01.2021 angeschafft und hat eine Nut-
+zungsdauer von 6 Jahren. Die Abschreibung erfolgt linear.
+Der Bankkredit der Y AG wird mit 5 % verzinst. Im Geschäftsjahr 2024 erfolgt die Rückzahlung der Hälfte des Bank-
+kredits (vom Bestand zum 01.01.2024) aus liquiden Mitteln des Unternehmens. Insgesamt fallen im Geschäftsjahr
+Personalaufwendungen in Höhe von 250.000 € an, die sich jeweils zu 50 % auf die Bereiche Verwaltung und Vertrieb
+aufteilen lassen.
+Jegliche Einkäufe und Verkäufe sowie alle Aufwands- und Ertragspositionen sind, sofern möglich, zahlungs-wirk-
+sam. Etwaige Ertragssteuern werden unverzüglich mittels Banküberweisung beglichen.
+Stellen Sie die Auswirkungen der genannten Sachverhalte auf den Jahresabschluss dar. Berechnen Sie auch den
+Stand der liquiden Mittel zum 31.12.
+Basierend darauf, stellen Sie die GuV für das Geschäftsjahr 2024 sowohl nach Gesamtkostenverfahren (GKV) als auch
+nach dem Umsatzkostenverfahren (UKV) auf. Erstellen Sie zudem die Bilanz zum Abschlussstichtag am 31.12.2024.
+1
+Aufgabenblatt 5 Proseminar Bilanzierung und Bilanzanalyse
+Aufgabe 26: Mehr-weniger Rechnung
+Der vorläufige unternehmensrechtliche Gewinn der Einzelunternehmerin Johanna Gruber e. U. (rechnungslegungs-
+pflichtig) beträgt für das Jahr 2021 350.000 €.
+Die nachfolgenden Geschäftsvorfälle sind noch nicht berücksichtigt. Alle Beträge exkl. USt.
+1. Am 15. Februar 2024 wurde ein Firmen-PKW für 30.000€ angeschafft. Johanna Gruber rechnet mit einer Nut-
+zungsdauer von vier Jahren, steuerrechtlich sind acht Jahre Nutzungsdauer anzusetzen.
+2. Im November des Abschlussjahres wurden 1.300€ an nicht anerkannte Spendenorganisationen gespendet.
+3. Die pauschalen Wertberichtigungen zu Lieferforderungen wurden von 2.800€ per 31.12.2023 auf 2.600€ per
+31.12.2024 reduziert. Pauschale Wertberichtigungen werden steuerlich nicht anerkannt.
+4. In der Bilanz werden langfristige Rückstellungen in Höhe von 3.000€ ausgewiesen. Der abgezinste Betrag, wel-
+cher laut Steuerrecht angesetzt werden muss, beträgt 2.900€.
+Bestimmen Sie den steuerrechtlichen Gewinn.
+2

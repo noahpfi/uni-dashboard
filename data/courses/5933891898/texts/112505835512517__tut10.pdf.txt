@@ -1,0 +1,104 @@
+Tutorium — Functional Programming
+Week 10 — List Comprehensions and Modules
+Adam Pescoller
+T. Niederbrunner & J. Bodemann (for courteously providing their materials)
+Tutorium—FunctionalProgramming WS25—Week10—List AdamPescoller
+ComprehensionsandModules 0/9
+Syntactic sugar: [a..b]
+• Shown before, e.g.: [1..10] = [1,2,3,4,5,6,7,8,9,10].
+• Not restricted to Integers! Can be done with any type that instantiates Enum.
+• This includes Float, Double, Char and Bool.
+[1.0..10.0] == [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0]
+['A'..'C'] == "ABC"
+data Country = Austria | Germany | USA deriving (Show,Enum)
+[(Austria)..(USA)] == [Austria, Germany, USA]
+[Austria .. USA] == [Austria, Germany, USA]
+[Austria..USA] == --error
+Tutorium—FunctionalProgramming WS25—Week10—List AdamPescoller
+ComprehensionsandModules 1/9
+List comprehension
+• Offer ability to define lists similarly to set notation.
+• Syntax [e | qual1, qual2,...], with qual_i consisting of:
+• Generators: These give us the elements to base our list off.
+Shape: pat <- expr, expr must return a list.
+• Guards: Boolean expressions that filter elements.
+• Local declarations: with let.
+{2n|0 ≤ n ≤ 10∧n ̸= 3}
+↓
+[2^n | n <- [0..10], n /= 3]
+↓
+[1,2,4,16,32,64,128,256,512,1024]
+Tutorium—FunctionalProgramming WS25—Week10—List AdamPescoller
+ComprehensionsandModules 2/9
+Exercise 10.1: List comprehension Exercises
+Use list comprehension to solve the following problems:
+• Calculate the sum of all odd numbers from 1 to 100.
+• All results of the 1x1 multiplication table as a triple of shape (x,y,x*y) up to
+10x10
+• The fibonacci numbers up to fib(10):
+The ratio between two successive fibonacci numbers is close to the golden ratio.
+Use the golden ratio (given below as ϕ) and the adapted fibonacci formula.
+Hint: You might have to use round.
+√
+1+ 5 ϕn
+ϕ = ≈ 1.6180339887 fib(n) = √
+2 5
+Tutorium—FunctionalProgramming WS25—Week10—List AdamPescoller
+ComprehensionsandModules 3/9
+Exercise 10.1: Possible Solutions
+res1 :: Integer
+res1 = sum [x | x <- [1 .. 100], x `mod` 2 == 1]
+res2 :: [(Integer, Integer, Integer)]
+res2 = [(x, y, x * y) | x <- [1 .. 10], y <- [1 .. 10]]
+res3 :: [Integer]
+res3 = [round (phi ^ n / sqrt 5) | n <- [1 .. 10]]
+where
+phi = (1 + sqrt 5) / 2
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week10—List AdamPescoller
+ComprehensionsandModules 4/9
+Exercise 10.2: Sorting
+Create a function orderWords, that sorts a list of words by an order given as a list of
+numbers.
+Use list comprehension.
+Hint: You might have to use !!
+Example:
+ls = ["Franz", "Anton", "Ingrid", "Niklas", "Zoe", "Viktoria"]
+myOrd = [5,1,0,2,4,3]
+orderWords myOrd ls ==
+["Ingrid","Anton","Niklas","Viktoria","Zoe","Franz"]
+Tutorium—FunctionalProgramming WS25—Week10—List AdamPescoller
+ComprehensionsandModules 5/9
+Exercise 10.2: Possible Solution
+orderWords :: [Int] -> [String] -> [String]
+orderWords ord xs = [name | rankToLookFor <- [0 .. (length ord - 1)],
+(name, rank) <- zip xs ord,
+rankToLookFor == rank]
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week10—List AdamPescoller
+ComprehensionsandModules 6/9
+Exercise 10.3: Using modules
+With the keyword import we can use functions defined in modules other than Prelude
+and our current file. Use the function sortOn, which is not available in Prelude, but
+in the module Data.List, to implement the sorting problem of Exercise 10.2.
+Tutorium—FunctionalProgramming WS25—Week10—List AdamPescoller
+ComprehensionsandModules 7/9
+Exercise 10.3: Possible Solution
+-- import all functions defined in this module
+-- import Data.List
+-- only import the sortOn function
+import Data.List(sortOn)
+orderWords :: [Int] -> [String] -> [String]
+orderWords ord xs = map snd . sortOn fst $ zip ord xs
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week10—List AdamPescoller
+ComprehensionsandModules 8/9
+Questions? Need help? Feedback?
+• Element Chat (with handle @adam.pescoller:student.uibk.ac.at)
+• Adam.Pescoller@student.uibk.ac.at
+• http://cl-informatik.uibk.ac.at/teaching/ws25/fp/feedback.php
+Tutorium—FunctionalProgramming WS25—Week10—List AdamPescoller
+ComprehensionsandModules 9/9

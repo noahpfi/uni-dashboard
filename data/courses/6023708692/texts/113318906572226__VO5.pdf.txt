@@ -1,0 +1,285 @@
+Statistische Datenanalyse
+Induktive Statistik
+Induktive Statistik
+Testen von Hypothesen
+© StatistischeDatenanalyse–5–InduktiveStatistik 1/18
+Musteraufgabe: Energiesparlampen
+EinHerstellervonEnergiesparlampenmöchtetesten,obdie
+durchschnittlicheLebensdauerderneuestenSeriesignifikant
+vondergewünschtendurchschnittlichenLebensdauervon
+10000Betriebsstundenabweicht.DazuwirdderProduktion
+eineStichprobevomUmfangnentnommen.DerHersteller
+kanndavonausgehen,dassdieBetriebsstundenX einer
+LampenormalverteiltsindmitErwartungswertµund
+bekannterVarianzσ2 (cid:0) 500 2 .
+1 FormulierenSiedieProblematikalsstatistische
+TestaufgabeundbestimmenSieeinengeeignetenTest
+zurUntersuchungderFragestellung.
+© StatistischeDatenanalyse–5–InduktiveStatistik 2/18
+Musteraufgabe: Energiesparlampen
+2 FührenSiedenTestimFalln (cid:0) 9,α (cid:0) 0.05anhandder
+Stichprobex (cid:0) 9953,x (cid:0) 10683,x (cid:0) 10572,
+1 2 3
+x (cid:0) 10632,x (cid:0) 10739,x (cid:0) 9883,x (cid:0) 10650,
+4 5 6 7
+x (cid:0) 9727undx (cid:0) 10569durch.
+8 9
+Bestimmensieauchdas95%und99%Konfidenzintervall
+fürµ.
+© StatistischeDatenanalyse–5–InduktiveStatistik 3/18
+Musteraufgabe: Energiesparlampen
+3
+GehenSiejetztdavonaus,dassdieVarianzσ2
+unbekannt
+ist.BestimmensiewiedereinengeeignetenTestund
+führensiedenTestanhandderbeobachtetenDaten
+durch.
+Bestimmensieauchdas95%und99%Konfidenzintervall
+fürµ.
+SinddieKonfidenzintervalletendenziellbreiteroder
+schmäleralsdieentsprechendenKonfidenzintervallebei
+bekannterVarianz?
+© StatistischeDatenanalyse–5–InduktiveStatistik 4/18
+Musteraufgabe: Energiesparlampen
+Modellannahmen:
+X i.i.d.,d.h.alleX ,...,X sindunabhängigundidentisch
+i 1 n
+verteiltmitX (cid:2)N µ, σ2 .
+i
+σ2 (cid:0) 500 2 (cid:0) σ (cid:0) (cid:0) 500 (cid:6)
+1) H (cid:2) µ (cid:0) 10000,H (cid:2) µ j 10000
+0 1
+σ2
+bekannt
+(cid:0)
+Gaußtest
+2) n (cid:0) 9,α (cid:0) 0.05,x¯ (cid:0) 10378.666667
+10378.666667 (cid:14) 10000
+z (cid:0) (cid:0) (cid:6) (cid:0)(cid:211)9
+500
+(cid:0) 2.272
+z % 1.959964 (cid:0) H kannabgelehntwerden
+0
+95%KI: 10052.01;10705.33
+(cid:18) (cid:24)
+99%KI: 9949.37;10807.97
+(cid:18) (cid:24)
+© StatistischeDatenanalyse–5–InduktiveStatistik 5/18
+Musteraufgabe: Energiesparlampen
+3) Modellvoraussetzungen:X (cid:2)N µ, σ2
+i
+σ2 istunbekannt (cid:0) σˆ2 (cid:0) s 2 (cid:0) (cid:6)
+n
+1
+s 2 (cid:0) n (cid:14) 1 = (cid:0) x i (cid:14) x¯ (cid:6) 2
+(cid:0)
+i 1
+s 2 (cid:0) 400.8444 2 (cid:0) t-Test
+x¯(cid:14)µ
+t (cid:0) 0 (cid:0)(cid:211)n (cid:0) 2.834017
+s
+t 1 (cid:14)0. 2 05 (cid:0) 8 (cid:6) (cid:0) 2.306004
+t % t 1 (cid:14)0. 2 05 (cid:0) 8 (cid:6) (cid:0) H 0 kannabgelehntwerden
+95%KI: 10070.55;10686.78
+(cid:18) (cid:24)
+© StatistischeDatenanalyse–5–InduktiveStatistik 6/18
+Musteraufgabe: Energiesparlampen
+TestundKonfidenzintervallmitα (cid:0) 0.01:
+t 1 (cid:14)0. 2 01 (cid:0) 8 (cid:6) (cid:0) 3.355387
+t $ t 1 (cid:14)0. 2 01 (cid:0) 8 (cid:6) (cid:0) H 0 kannnichtabgelehntwerden
+99%KI: 9930.34;10827.00
+(cid:18) (cid:24)
+© StatistischeDatenanalyse–5–InduktiveStatistik 7/18
+Allgemeine Bemerkungen zu statistischen
+Tests
+Bemerkung 1: Ungleichbehandlung des Fehlers 1. und
+2. Art
+a
+BeistatistischenTestswerdenFehler1.und2.Artnicht
+gleichbehandelt.DieWahrscheinlichkeitfürdenFehler1.
+Art(H verwerfen,obwohlH wahrist)wirdkontrolliert,
+0 0
+d.h.derTestsokonstruiert,dassdieWahrscheinlichkeit
+nichtgrößeralsdasvorgegebeneSignifikanzniveauαist.
+FürH entscheidetmansichalsofälschlicherweisenur
+1
+miteinerWahrscheinlichkeitvonhöchstensα(cid:0)
+100
+Prozent.
+© StatistischeDatenanalyse–5–InduktiveStatistik 8/18
+Allgemeine Bemerkungen zu statistischen
+Tests
+a
+EinegleichzeitigeKontrolledesFehlers2.Art(H
+0
+beibehalten,wennH wahrist)istnichtmöglich.Häufig
+1
+istsogardieVerteilungderTeststatistikfür
+ParameterwertederGegenhypothesenichtbekannt.
+TendenziellwirdderFehler2.Artumsogrößer,jenäher
+derwahreParameterbeidemParameterder
+Nullhypotheseist(vgl.Bemerkung5).
+a
+AufgrundderUngleichbehandlungderbeidenFehlerarten
+solltedieeigentlichinteressierendeFragestellungals
+Gegenhypotheseformuliertwerden.
+© StatistischeDatenanalyse–5–InduktiveStatistik 9/18
+Allgemeine Bemerkungen zu statistischen
+Tests
+Bemerkung 2: p-Werte
+a
+InstatistischenProgrammpaketenwerdeninderRegel
+sogenanntep-Werteangegeben.
+a
+MitHilfederp-WerteinRkönnenTestentscheidungen
+leichtgetroffenwerden:
+p-Wert& α(cid:8) H ablehnen!
+0
+p-Wert% α(cid:8) H beibehalten!
+0
+© StatistischeDatenanalyse–5–InduktiveStatistik 10/18
+Musteraufgabe: Statistisches
+Qualitätsmanagement
+R> load("./daten/statistisches_qualitaetsmanagement.rda")
+R> t.test(statistisches_qualitaetsmanagement$laenge,
++ alternative = "two.sided", mu = 2, conf.level = 0.95)
+One Sample t-test
+data: statistisches_qualitaetsmanagement$laenge
+t = 2.4, df = 9, p-value = 0.04
+alternative hypothesis: true mean is not equal to 2
+95 percent confidence interval:
+2.003 2.077
+sample estimates:
+mean of x
+2.04
+© StatistischeDatenanalyse–5–InduktiveStatistik 11/18
+Allgemeine Bemerkungen zu statistischen
+Tests
+Bemerkung 3: Tests und Konfidenzintervalle
+a
+BeizweiseitigenTestskanndieTestentscheidungeines
+TestszumSignifikanzniveauαauchmitHilfedes
+entsprechenden1
+(cid:14)αKonfidenzintervallsgefälltwerden.
+a Beispiel:H (cid:2) µ (cid:0) µ gegenH (cid:2) µ (cid:0) µ
+0 0 1 0
+'
+FallsdasKonfidenzintervalldenWertµ enthält,wirdH
+0 0
+beibehalten,ansonstenabgelehnt.
+© StatistischeDatenanalyse–5–InduktiveStatistik 12/18
+Allgemeine Bemerkungen zu statistischen
+Tests
+Bemerkung 4: Irrtumswahrscheinlichkeit
+BeiderIrrtumswahrscheinlichkeithandeltessichnichtum
+dieGesamtfehlerrate.
+a
+FallsH zutrifftistFehlerwahrscheinlichkeittatsächlich
+0
+gleichα.
+a
+FallsH zutrifftistdieFehlerwahrscheinlichkeitinder
+1
+Regelhöher(sieheBemerkungzurGütefunktion).
+a
+DieGesamtfehlerwahrscheinlichkeitistnicht
+berechenbar,dawirnichtwissenmitwelcher
+WahrscheinlichkeitH undH zutreffen.
+0 1
+© StatistischeDatenanalyse–5–InduktiveStatistik 13/18
+Allgemeine Bemerkungen zu statistischen
+Tests
+Beispiel1:
+P H (cid:0) 0.5 P H (cid:0) 0.5
+0 1
+(cid:0) (cid:6) (cid:0) (cid:6)
+P „FehlerersterArt“ (cid:0) 0.05 P „FehlerzweiterArt“ (cid:0) 0.1
+(cid:0) (cid:6) (cid:0) (cid:6)
+P „Fehler“ (cid:0) 0.5 (cid:0) 0.05 (cid:17) 0.5 (cid:0) 0.1 (cid:0) 0.075
+(cid:0) (cid:6)
+Beispiel2:
+P H (cid:0) 0.1 P H (cid:0) 0.9
+0 1
+(cid:0) (cid:6) (cid:0) (cid:6)
+P „FehlerersterArt“ (cid:0) 0.05 P FehlerzweiterArt“ (cid:0) 0.1
+(cid:0) (cid:6) (cid:0) (cid:6)
+P „Fehler“ (cid:0) 0.1 (cid:0) 0.05 (cid:17) 0.9 (cid:0) 0.1 (cid:0) 0.095
+(cid:0) (cid:6)
+© StatistischeDatenanalyse–5–InduktiveStatistik 14/18
+Allgemeine Bemerkungen zu statistischen
+Tests
+Beispiel3:
+P H (cid:0) 0.1 P H (cid:0) 0.9
+0 1
+(cid:0) (cid:6) (cid:0) (cid:6)
+P „FehlerersterArt“ (cid:0) 0.05 P „FehlerzweiterArt“ (cid:0) 0.3
+(cid:0) (cid:6) (cid:0) (cid:6)
+P „Fehler“ (cid:0) 0.1 (cid:0) 0.05 (cid:17) 0.9 (cid:0) 0.3 (cid:0) 0.275
+(cid:0) (cid:6)
+Fazit:DerFehlerzweiterArtmussbeiderKonstruktiondes
+Testsberücksichtigtwerden.FehlerzweiterArtkannindirekt
+überdieStichprobengrößebeeinflusstwerden.
+© StatistischeDatenanalyse–5–InduktiveStatistik 15/18
+Allgemeine Bemerkungen zu statistischen
+Tests
+Bemerkung 5: Gütefunktion
+DieGütefunktiong µ einesTestsgibtinAbhängigkeitvom
+(cid:0) (cid:6)
+interessierendenParameterµdieWahrscheinlichkeitan,die
+Nullhypothesezuverwerfen,d.h.
+g µ (cid:0) P H ablehnen,wennµderwahreParameterist .
+0
+(cid:0) (cid:6) (cid:0) (cid:6)
+a Fallsµ " H ,soistg µ & α.
+0
+(cid:0) (cid:6)
+a Fallsµ " H ,
+1
+(cid:14)
+* soist1 g(cid:0)µ(cid:6)dieWahrscheinlichkeitfürdenFehler2.Art.
+* soistg(cid:0)µ(cid:6)dieMacht(engl.Power)desTests.
+© StatistischeDatenanalyse–5–InduktiveStatistik 16/18
+Gütefunktion
+−2 0 2 4 6
+0.1
+8.0
+6.0
+4.0
+2.0
+0.0 Signifikanzniveau
+)um(g
+Stichprobenumfang
+n=10
+n=30
+n=100
+mu
+LängeeinesWerkstücks:GütefunktiondesTestsfürverschiedeneStichprobenumfänge.
+a
+DieWahrscheinlichkeitfürdenFehler2.Artwirdalso
+umsokleiner,jeweiterµvonµ entferntist.
+0
+a
+FürgrößereStichprobenumfängewirdderTest
+trennschärfer,d.h.derFehler2.Artwirdkleiner.
+© StatistischeDatenanalyse–5–InduktiveStatistik 17/18
+Allgemeine Bemerkungen zu statistischen
+Tests
+Bemerkung 6: Wahl des Stichprobenumfangs
+DerStichprobenumfangsolltesogewähltwerden,dassdie
+PowerdesTestsgroßgenugistum„bedeutende
+Unterschiede“zuerkennen.
+−2 0 2 4 6
+0.1
+8.0
+6.0
+4.0
+2.0
+0.0 Signifikanzniveau
+)um(g
+Stichprobenumfang
+n=10
+n=30
+n=100 n=200
+mu
+LängeeinesWerkstücks:GütefunktiondesTestsfürverschiedeneStichprobenumfänge.
+© StatistischeDatenanalyse–5–InduktiveStatistik 18/18

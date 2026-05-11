@@ -1,0 +1,530 @@
+juridikum 2/2024 https://doi.org/10.33196/juridikum202402018101 181
+Hört die Signa(le)
+Rechtspolitische Fragen und Ableitungen aus dem Fall der Signa-Gruppe
+Leonhard Dobusch / Jakob Sturn
+1. Boom und Bust des Signa-Geschäftsmodells
+Die Insolvenz des Signa-Konglomerats ist die größte Pleite der zweiten Republik.1 Ein
+hochriskantes Geschäftsmodell, dessen fixer Bestandteil das systematische Unterlaufen
+von Transparenzpflichten war, scheiterte schlussendlich an gestiegenen Zentralbankzin-
+sen. Schon heute, lange bevor die Aufarbeitung des Falls abgeschlossen sein wird, werfen
+das Geschäftsmodell sowie die Insolvenz zentraler Unternehmen der Signa-Gruppe
+rechtspolitische Fragen im Bereich des österreichischen Unternehmens- und Gesell-
+schaftsrechts auf.
+Im Jahr 2010 wurde die Signa Prime Selection AG mit einem Immobilienvermögen von
+rund 750 Millionen Euro gegründet.2 In nur zehn Jahren konnte dieses um fast 2000 %
+auf 15 Milliarden Euro gesteigert werden. Möglich gemacht hat dies eine aggressive
+Kauf-Mietsteigerung-Aufwertungs-Spirale als risikoreiches Geschäftsmodell. Durch den
+Einstieg bei Kaufhausketten mit Niederlassungen in den Top-Lagen österreichischer und
+deutscher Innenstädte erwarb die Signa nicht nur das Handelsgeschäft, sondern auch die
+Immobilien der Kaufhäuser. Aufgeteilt in verschiedene Sparten erhöhte die Immobilien-
+sparte der Handelssparte die Miete für deren Geschäftsflächen.3
+Dabei ging es aber nicht primär um die dadurch gesteigerten Mieteinnahmen an sich.
+Durch die gestiegenen Mieten konnte die Immobiliensparte der Signa ihre gerade erwor-
+benen Immobilien in ihren Büchern stark aufwerten. Die in befristeten Verträgen erhöh-
+te Miete wurde zur Rechtfertigung dieser Aufwertungen herangezogen. Die dadurch ent-
+standenen Aufwertungsgewinne nach internationalen Rechnungslegungsvorschriften4
+dienten einerseits als Rechtfertigung für die Ausschüttung von Gewinnen nach den Be-
+1 Kreditschutzverband von 1870, Unternehmensinsolvenzen um 13 Prozent gestiegen, ksv.at 12.1.2024, https://www.
+ksv.at/KSV1870_Insolvenzstatistik_Unternehmen_2023_PDF (4.4.2024).
+2 NN, Milliardär Benko kann sich auf Mega-Dividende freuen, manager-magazin.de 10.10.2020, www.manager-magazin.
+de/finanzen/rene-benko-signa-prime-kuendigt-mega-dividende-an-a-52560a1d-b05b-4c13-a877-941a257368f9
+(4.4.2024).
+3 Bender/Kolf/Neumaier/Verfüden, Wie René Benko Immobilienwerte hochgeschraubt haben soll, handelsblatt.com
+11.12.2023, www.handelsblatt.com/unternehmen/handel-konsumgueter/signa-wie-rene-benko-immobilienwerte-
+hochgeschraubt-haben-soll/100002680.html (4.4.2024).
+4 International Financial Reporting Standards (IFRS), http://eu-ifrs.de/eu-ifrs-texte/ (1.5.2024).
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout
+182 Dobusch / Sturn, Hört die Signa(le)
+stimmungen des Unternehmensgesetzbuchs (UGB)5 an die Eigentümer von Signa-Gesell-
+schaften trotz mäßiger Ergebnisse im Bereich der gewöhnlichen Geschäftstätigkeit, an-
+dererseits konnten die nun aufgewerteten Immobilien bei Banken als Sicherheit für neue
+Kredite hinterlegt werden, um wiederum neue Immobilien zu erwerben.6 Die Spirale
+drehte sich auf diese Weise immer weiter, solange die Zinsen niedrig blieben und die Im-
+mobilienpreise stiegen – ein in Immobilienmärkten immer wieder florierendes, finanzia-
+lisiertes Geschäftsmodell.7
+Zu Beginn der COVID-19-Pandemie gerät das Geschäftsmodell der Signa zunehmend
+unter Druck. Die Lockdowns machen der Handelssparte so stark zu schaffen, dass sie
+die erhöhten Mieten nicht mehr zahlen kann. Mietnachlässe seitens der Immobilienspar-
+te zugunsten der Handelssparte hätten aber die Aufwertungen der Immobilien – und da-
+mit das ganze Geschäftsmodell der Signa – gefährdet.8 Hohe staatliche Hilfszahlungen
+im Rahmen der COVID-19-Subventionen bewahrten die Handelssparte der Signa-Grup-
+pe vor der Insolvenz, stabilisierten gleichzeitig aber auch das Geschäftsmodell der Im-
+mobiliensparte. Drei Jahre später erhöhte die Europäische Zentralbank (EZB) als Re-
+aktion auf Krieg und Inflation ihre Zinsen so stark wie noch nie in vergleichsweise kur-
+zer Zeit. Die dadurch stark gestiegenen Finanzierungskosten der Immobilien konnte die
+Signa nicht mehr tragen bzw versiegte der Nachschub an weiterem Kapital aufgrund des
+schwierigeren Finanzierungsumfelds.9 Mit der Signa Holding GmbH (angemeldete For-
+derungen zum Stichtag 29.1.24: 8,6 Mrd Euro), der Signa Development Selection AG
+(angemeldete Forderungen zum Stichtag 26.2.24: 2,2 Mrd Euro) und der Signa Prime
+Selection AG (angemeldete Forderungen zum Stichtag 19.2.24: 6,3 Mrd Euro) wurden
+von November 2023 bis Jänner 2024 drei zentrale Säulen des Signa-Konglomerats in-
+solvent. Die Insolvenz der Signa Holding GmbH sowie der Signa Prime Selection AG
+sind die größten Insolvenzen in Österreichs Zweiter Republik.10
+Die Folgen einer Insolvenz in der Größenordnung der Signa-Gruppe lassen sich grob in
+drei Bereiche einordnen: (1) unmittelbare Kosten für Mitarbeiter:innen, Gläubiger:innen
+und Investor:innen; (2) mittelbare Kosten durch Steuerausfälle, Umschulungskosten und
+Weitergabe von Kosten durch unmittelbar betroffene Unternehmen an ihre Kund:innen;
+(3) mögliche makro-ökonomische Konsequenzen für Banken- und Finanzmarktstabili-
+5 Unternehmensgesetzbuch (UGB), dRGBl 1897/S 219 idF BGBl I 2023/187.
+6 Dobusch, Wie (risiko)reich ist René Benko? Antworten auf häufige Fragen zum Immobilienmilliardär, moment.at
+26.4.2021, www.moment.at/story/wie-reich-ist-rene-benko/ (4.4.2024).
+7 Botzem/Dobusch, Financialization as strategy: Accounting for inter-organizational value creation in the European
+real estate industry, Accounting, Organizations and Society 2017, 31.
+8 Greive/Kolf, „Das ist ein Skandal“ – Experten kritisieren zweiten Staatskredit für Galeria, handelsblatt.com
+26.1.2022, www.handelsblatt.com/unternehmen/einzelhandel-das-ist-ein-skandal-experten-kritisieren-zweiten-
+staatskredit-fuer-galeria/28004358.html (4.4.2024).
+9 Fleckl/Reinhart, Inside Signa: Aufstieg und Fall des René Benko (2024) 190 ff.
+10 Kreditschutzverband von 1870, Unternehmensinsolvenzen um 13 Prozent gestiegen.
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout
+juridikum 2/2024 recht & gesellschaft 183
+tät sowie für Preisentwicklung auf Immobilienmärkten.11 Hinzu kommt noch, dass zu-
+mindest ein Teil der über die Jahre ausgeschütteten oder auf anderem Wege aus dem Si-
+gna-Geflecht abgeflossenen Gelder auf überhöhten Mieten basierten – Mieten, die letzt-
+lich auch zu einem wesentlichen Teil über staatliche Hilfszahlungen in Deutschland und
+Österreich mitfinanziert worden waren.
+Die folgenden Ausführungen fokussieren auf Geschäftsmodell und gesellschaftsrecht-
+liche Konstruktion der Signa-Gruppe, wie es über mehrere Jahre hinweg und unter-
+stützt durch Dienstleister (zB Wirtschaftsprüfungsgesellschaften sowie steuerliche und
+anwaltliche Beratungsunternehmen) praktiziert worden ist. Mögliche strafrechtliche
+Aspekte des Falls, allen voran die Frage, ob es im Rahmen der Signa-Gruppe außer-
+dem zu (systematischen) Verletzungen des Verbots der Einlagenrückgewehr gem § 82
+Abs 1 GmbHG12 sowie § 52 AktG13 gekommen ist, müssen auch auf Grund der vorhan-
+denen Quellenlage außen vor bleiben. Der Schwerpunkt der abschließenden rechtspoli-
+tischen Diskussion liegt deshalb auch primär auf Fragen von legistischem Änderungs-
+bedarf und weniger im Bereich (fehlender) Rechtsdurchsetzung.
+2. Intransparenzstrategie der Signa-Gruppe
+Bemerkenswert am Aufstieg der Signa-Gruppe rund um Gründer und mutmaßlich fak-
+tischen Geschäftsführer14 René Benko war, dass deren Wachstum und beträchtliches In-
+vestitionsvolumen quasi völlig abseits öffentlicher Kapitalmärkte erfolgte und selbst die
+verbleibenden, geringeren Publizitätspflichten systematisch unterlaufen wurden. So wur-
+den jahrelang Fristen zur Einreichung von Jahresabschlüssen diverser Signa-Gesellschaf-
+ten ignoriert. Die damit verbundenen Strafen der Geschäftsführung wurden vom Unter-
+nehmen über höhere Vergütungen an die betroffenen Manager erstattet,15 was auf diese
+Weise auch noch mindernde Wirkung auf die Körperschaftssteuer hatte.
+Spätestens mit der schrittweisen Karstadt-Übernahme ab 2012 stieg der Finanzbedarf
+der Signa-Gruppe noch einmal beträchtlich an.16 Unternehmen in dieser Größenordnung
+11 Die Risiken einer möglichen Signa-Pleite für Banken und Finanzmarktstabilität waren der Grund, dass die Europäische
+Zentralbank (EZB) im Sommer 2023 eine Sonderprüfung von Banken durchführte, die gegenüber Signa-Gesellschaften
+als Kreditgeber auftraten, vgl Mußler, Bankenaufsicht macht eine Prüfung nur zum Galeria-Karstadt-Kaufhof-Risiko,
+FAZ 7.7.2023, https://www.faz.net/aktuell/finanzen/bankenaufsicht-macht-erstmals-eine-pruefung-nur-zum-galeria-
+karstadt-kaufhof-risiko-19018478.html (25.4.2024); siehe auch: EZB, Speech by Andrea Enria, Chair of the Supervi-
+sory Board of the ECB, at the press conference on the 2023 SREP results and the supervisory priorities for 2024-26,
+19.12.2023, https://www.bankingsupervision.europa.eu/press/speeches/date/2023/html/ssm.sp231219~421bbae836.
+en.html (25.4.2024).
+12 GmbH-Gesetz (GmbHG), RGBl 1906/58 idF BGBl I 2023/179.
+13 Aktiengesetz (AktG), BGBl 1965/98 idF BGBl I 2023/178.
+14 Siehe unten (Kap 4).
+15 Fleckl/Reinhart, Exklusiv: Was kostet ein (Alt)-Kanzler? news.at 24.11.2023, www.news.at/a/causa-rene-benko
+(4.4.2024).
+16 Fahmy, Goldman Sachs Group Selling 17 German Stores for $1.45B, Bloomberg 21.12.2012, https://www.bloomberg.
+com/news/articles/2012-12-21/goldman-sachs-group-selling-17-german-stores-for-1-45b (25.4.2024).
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout
+184 Dobusch / Sturn, Hört die Signa(le)
+wenden sich üblicherweise an Kapitalmärkte, wenn sie hohe Kapitalsummen benötigen.
+Entweder über einen Börsengang, um zusätzliches Eigenkapital durch Ausgabe von Ak-
+tien zu erhalten, oder über Unternehmensanleihen. Unternehmensanleihen sind Wert-
+papiere mit fixen Zinsen, die ebenfalls an Börsen gehandelt werden können. Am Ende
+ihrer Laufzeit müssen sie wie ein endfälliger Kredit zurückgezahlt werden.
+Aber: Wenn ein Unternehmen Geld von öffentlichen Kapitalmärkten will, muss es viel
+transparenter sein. So gelten beispielsweise gem § 189a Z 1 lit a UGB „Unternehmen,
+deren übertragbare Wertpapiere zum Handel an einem geregelten Markt eines Mitglied-
+staats der Europäischen Union [...] zugelassen“ sind als „Unternehmen von öffentlichem
+Interesse“ (Public Interest Entity, PIE). Dann muss es Marktteilnehmer:innen gleichzeitig
+über relevante Fragen informieren und detaillierte Informationen über die Situation des
+Unternehmens veröffentlichen. Dies soll verhindern, dass einzelne Investor:innen zulas-
+ten anderer bevorzugt werden.17
+Zu den wichtigsten Publizitätsvorschriften, zusätzlich zu jenen nach UGB (hier insb
+§§ 278 f UGB), von auf Kapitalmärkten tätigen Unternehmen zählen Emissions- und
+Zulassungspublizität (insb in Form der Prospektpflicht gem § 2 KMG18), die Veröffent-
+lichung von (Halb-)Jahresfinanzberichten (§ 82 Abs 4 BörseG19) sowie anlassbezogene
+Ad-hoc-Publizität.20
+Die Publizitätspflichten von börsennotierten Unternehmen sind also auf Grund von ka-
+pitalmarktrechtlichen Vorgaben substanziell strenger und teurer als jene, die aus der
+Rechnungslegungspflicht des UGB resultieren. Warum unterwerfen sich Unternehmen
+trotzdem diesen strengeren Regelwerken? Weil es ihnen so leichter fällt, überhaupt In-
+vestor:innen zu finden. Aktien oder Anleihen, die an Börsen gehandelt werden, können
+in der Regel vergleichsweise einfach wieder zum jeweils aktuellen Kurs verkauft werden.
+Wer also an der Börse in ein Unternehmen investiert, bindet Kapital nicht zwangsläufig
+langfristig. Aktien können auf den Kapitalmärkten leichter und rascher wieder verkauft
+werden.
+Ein Investment außerhalb der Börse ist starrer. Anteile an einem Unternehmen, das nicht
+an der Börse notiert, sind nicht so einfach zu liquidieren. Selbst wenn ein potenzieller
+Käufer gefunden ist, lässt sich der Preis nicht so einfach bestimmen. Börsenkurs gibt es
+ja keinen. All das sind Gründe, warum sich Unternehmen bei großem Kapitalbedarf ten-
+denziell stärker über die Börse finanzieren.21
+René Benko überzeugte aber über Jahre immer wieder finanzkräftige Investor:innen, jen-
+seits der Börse in seine Gesellschaften zu investieren. So konnte er weitgehend die Trans-
+parenzbestimmungen für börsennotierte Unternehmen vermeiden. Die Antwort auf die
+17 Kalss in Kalss/Nowotny/Schauer, Österreichisches Gesellschaftsrecht2 Rz 3/79 (Stand 1.6.2017, rdb.at).
+18 Kapitalmarktgesetz 2019 (KMG), BGBl I 2019/62 idF BGBl I 2022/69.
+19 Börsegesetz 2018 (BörseG), BGBl I 2017/107 idF BGBl I 2022/69.
+20 Kalss in Kalss/Nowotny/Schauer, GesR2 Rz 3/80 f.
+21 Vgl zB Brau, Why do firms go public? in Cumming, The Oxford Handbook of Entrepreneurial Finance (2012) 467–494.
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout
+juridikum 2/2024 recht & gesellschaft 185
+Frage, wie Benko das gelungen ist, ist eine der zentralen Innovationen (im Minsky’schen
+Sinne)22 des Signa-Modells: Viele, die in zentrale Signa-Gesellschaften investierten, be-
+kamen eine Verkaufsoption („Put-Option“) der Signa Holding GmbH für die erworbe-
+nen Gesellschaftsanteile.23 Konkret bekamen die Geldgeber:innen das Recht, nach einer
+gewissen Frist jederzeit ihre Anteile an die Signa Holding GmbH (zurück) zu verkaufen.
+So konnte man aus Anteilen an Gesellschaften wie der Signa Prime Selection AG oder
+Signa Development Selection AG ähnlich selbstbestimmt aussteigen, wie das bei Aktien
+der Fall wäre.
+Der Ausstieg funktioniert natürlich nur, wenn nicht alle Anteilseigner:innen gleichzeitig
+aussteigen. Das ist aber bei an der Börse notierten Aktiengesellschaften ähnlich: wenn
+dort alle Anteilseigner:innen gleichzeitig verkaufen möchten, stürzt der Aktienkurs ab
+und entwertet so die Aktien aller Beteiligter.
+Gleichzeitig ist es aber so, dass dieses Finanzierungsmodell zu einem gewissen Grad auf
+Transparenzvermeidung angewiesen war. Nicht allen Investoren wurden Put-Optionen
+angeboten, ebenso blieben die Konditionen für die Put-Optionen geheim. Dies diente
+wohl auch dazu, „Ansteckungs“ bzw „Herdeneffekte“ zu vermeiden, sollten einzelne
+Investor:innen von ihren Put-Optionen Gebrauch machen sowie Ungleichbehandlung
+von Investor:innen zu verschleiern.
+Im Fall der Signa-Gruppe wurden diese Put-Optionen erstmals einer breiteren Öffent-
+lichkeit bekannt, als Roland Berger im Oktober 2023 seinen Anteil in Höhe von 1,64 %
+an der Signa Prime Selection AG verkaufen wollte.24 Aufgrund der Insolvenz der Signa
+Holding GmbH wenig später, hat dieser Versuch nur noch teilweise funktioniert.
+Gewährt wurden die Put-Optionen von der Signa Holding GmbH, die als reine Beteili-
+gungsgesellschaft fungiert hat.25 Wie inzwischen öffentlich zugängliche Dokumente be-
+legen,26 wurde bewusst über diverse Beteiligungskonstruktionen ein beherrschender Ein-
+fluss gem § 244 Abs 2 UGB auf die Tochtergesellschaften – allen voran Signa Prime Se-
+lection AG und Signa Development Selection AG – vermieden. Gleichzeitig präsentierte
+sich die Signa Holding GmbH in ihrer Außendarstellung durchaus als klassische Holding
+mit einem prominent besetzten Beirat unter Vorsitz von René Benko.
+Ausgehend von dieser zentralen und gleichzeitig ungewöhnlichen Rolle der Signa Hol-
+ding GmbH für das Funktionieren des Signa-Geschäftsmodells und die Steuerung der
+22 Vgl zB Minksy, The evolution of financial institutions and the performance of the economy, Journal of Economic
+Issues 1986, 345–353.
+23 Fleckl/Reinhart, Exklusiv: Was kostet ein (Alt)-Kanzler? news.at.
+24 Kolf/Schütze, Roland Berger will Anteile an Benko-Firma Signa Prime verkaufen, handelsblatt.com 20.10.2024, www.
+handelsblatt.com/unternehmen/handel-konsumgueter/immobilien-roland-berger-will-anteile-an-benko-firma-signa-
+prime-verkaufen/29468036.html (11.4.2024).
+25 Investor:innen in eben diese Signa Holding GmbH erhielten teilweise ebenfalls Put-Optionen, dann allerdings von
+Stiftungen im Umfeld René Benkos. Für diesen Hinweis danken wir Martin Noé.
+26 Fleckl/Reinhart, Exklusiv: Was kostet ein (Alt)-Kanzler? news.at.
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout
+186 Dobusch / Sturn, Hört die Signa(le)
+Signa-Gruppe, sollen im Folgenden einige spezifische rechtliche bzw rechtspolitische Fra-
+gestellungen erörtert werden.
+3. Wann ist eine Kapitalgesellschaft „groß“?
+Im Regelfall gelten für Kapitalgesellschaften gem §§ 278 und 279 UGB ab einer gewis-
+sen Größe erhöhte Anforderungen bei der Offenlegung des Jahresabschlusses. Als „klei-
+ne Kapitalgesellschaft“ mit geringeren Transparenzpflichten gelten GmbHs, die zwei von
+drei der folgenden Kriterien erfüllen (vgl § 221 Abs 1 UGB). Erstens, ein Umsatz unter
+10 Millionen Euro pro Jahr. Zweitens, weniger als 50 Mitarbeiter:innen. Drittens, eine
+Bilanzsumme unter 5 Millionen Euro.
+Mit einer Bilanzsumme von 6,1 Milliarden Euro (Stand: Ende 2022)27 übertraf die Sig-
+na Holding GmbH das dritte Kriterium zwar um ein Vielfaches. Die anderen beiden er-
+füllte sie aber und musste so ihren Jahresabschluss nicht von einem Wirtschaftsprüfer
+prüfen lassen, musste gem § 278 Abs 1 UGB keine gesonderte Gewinn- und Verlustrech-
+nung veröffentlichen. Tatsächlich ließ die Signa Holding GmbH ihren Jahresabschluss
+2021 noch freiwillig von BDO testieren, der letzte Abschluss vor der Insolvenz 2022
+wurde aber von keinem Wirtschaftsprüfer mehr testiert.
+Nicht möglich wäre das bei Unternehmen von öffentlichem Interesse gemäß § 189a Z 1
+UGB, die stets als große Kapitalgesellschaft klassifiziert werden (§ 221 Abs 3 UGB). Hin-
+zu kommt die systematisch nicht nachvollziehbar auf Aktiengesellschaften beschränkte
+Anwendung der Bestimmungen in § 221 Abs 4a UGB, wonach die Schwellenwerte zur
+Größenbestimmung nach § 221 Abs 1 bis 2 UGB auf konsolidierter oder aggregierter
+Basis zu berechnen sind. Hier wäre es nur logisch, diese Bestimmung auch auf andere
+Kapitalgesellschaften, insbesondere GmbHs und wohl auch FlexKapGs auszudehnen.
+Im Falle der Signa Holding GmbH hätte ein erweiterter Anwendungsbereich von § 221
+Abs 4a UGB jedoch keine unmittelbaren Folgen gehabt, da eine Konsolidierung der Hol-
+ding mit Töchtern tunlichst vermieden wurde.
+4. Konsolidieren oder nicht konsolidieren, das war die Frage
+Denn die Signa-Führung hatte große Anstrengungen unternommen, um die Aufstellung
+einer konsolidierten Konzernbilanz auf Ebene der Signa Holding GmbH zu vermeiden.28
+Eine solche Konsolidierungspflicht liegt jedenfalls bei Stimmrechtsmehrheit vor. Diese
+vermied die Signa Holding GmbH aber tunlichst, indem sie ihren Anteil an den Tochter-
+gesellschaften bei unter 50 % hielt.29 Die Konsolidierungspflicht kann aber bei Vorliegen
+27 Signa Holding GmbH, Jahresabschluss für das Jahr (2022) 2.
+28 Fleckl/Reinhart, Exklusiv: Was kostet ein (Alt)-Kanzler? news.at.
+29 Gahleitner/Leitsmüller/Oberrauter, Signa-Pleite: Mega-GAU der Intransparenz – welche Lehren sind daraus zu zie-
+hen, awblog.at 12.1.2024, https://www.awblog.at/Wirtschaft/Signa-Pleite-Mega-GAU-der-Intransparenz (4.4.2024).
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout
+juridikum 2/2024 recht & gesellschaft 187
+einer „einheitlichen Leitung“ gem § 244 Abs 1 UGB auch ohne eine solche Mehrheit
+gegeben sein. Ein internes Gutachten der Steuerberatungskanzlei TPA hatte „die Fest-
+stellung des Vorliegens einheitlicher Leitung“ im Falle von Signa „grundsätzlich als
+grenzwertig“ eingestuft.30
+Hintergrund für die Vermeidung der Konsolidierungspflicht waren aber nicht nur mög-
+liche Folgen für die rechnungslegungsrechtliche Einstufung der Signa Holding GmbH,
+sondern auch das Signa-Finanzierungsmodell. Die oben skizzierte Finanzierung mithilfe
+von Put-Optionen an die Signa Holding wäre wohl mit einer integrierten Konzernbilanz
+auf Holding-Ebene nicht oder jedenfalls nur viel schwerer möglich gewesen.
+Auch mit Stand April 2024 ist noch nicht bekannt, welche Signa-Investoren eine solche
+Put-Option hatten – und wem die Existenz dieser Put-Option bekannt war. Das ist auch
+deshalb relevant, weil die Existenz von Put-Optionen innerhalb der gesamten Signa-
+Gruppe zu einer fragwürdigen Darstellung des Eigenkapitals auf Ebene der Signa Hol-
+ding GmbH geführt haben dürfte. Eigenkapital von Investor:innen mit Verkaufsoption
+weist bis zu einem gewissen Grad Merkmale von Fremdkapital auf: Der Anteil kann
+durch Ziehen der Option einseitig in eine Geldforderung umgewandelt werden – und
+auf diese Weise beispielsweise eine Liquiditätskrise wie im Fall von Signa noch einmal
+verschärfen. Zumindest auf Ebene der Signa Holding GmbH war das relevant, da we-
+sentliche Vermögenswerte der Signa Holding GmbH Anteile an jenen Gesellschaften (Si-
+gna Prime Selection AG und Signa Development Selection AG) waren, für die Put-Op-
+tionen gewährt wurden.
+Jenseits der Frage, was die Hauptgründe für die gezielte Vermeidung einer Konzern-
+konsolidierung im Fall der Signa-Gruppe waren, stellt sich die Frage, wie der Umge-
+hung gesetzlich vorgesehener Konsolidierungspflichten wirksam entgegengetreten wer-
+den könnte. Dies gilt insbesondere für eine Konsolidierungspflicht gem § 244 Abs 1
+aufgrund „einheitlicher Leitung“. Dass im Falle der Signa-Gruppe eine einheitliche
+Leitung durch den „faktischen Geschäftsführer“31 René Benko vorlag, wurde nicht nur
+im Rahmen der Außendarstellung der Gruppe (zB die prominente Platzierung des Bei-
+ratsvorsitzenden Benko auf der Webseite), sondern im Nachgang von wesentlichen In-
+vestor:innen wie Hans-Peter Haselsteiner bestätigt. Letzterer hatte am 24. Jänner 2024
+in einem Interview mit Armin Wolf explizit formuliert32: „Es ist ja kein Geheimnis,
+dass man [Benko] die faktische Geschäftsführung unterstellt. Da wird er sich auch
+schwer wehren können, dazu sollte er auch stehen. Er hat nun einmal die Zügel in der
+Hand gehabt.“
+30 Fleckl/Reinhart, Exklusiv: Was kostet ein (Alt)-Kanzler? news.at.
+31 Vgl dazu Lobnig, Die Voraussetzungen der faktischen Geschäftsführung, Zeitschrift für Gesellschaftsrecht und an-
+grenzendes Steuerrecht 2021, 287.
+32 Neuper/Sommersguter, Haselsteiner zur Signa-Implosion: „Das war der große Fehler, schmerzhaft teuer“, Kleine Zei-
+tung 24.1.2024, https://www.kleinezeitung.at/wirtschaft/18027940/das-ist-eine-bittere-niederlage-auch-aus-unter-
+nehmerischer-sicht (24.4.2024).
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout
+188 Dobusch / Sturn, Hört die Signa(le)
+Bemerkenswert ist in diesem Zusammenhang, dass René Benko mutmaßlich über Jahre
+die Rolle eines faktischen Geschäftsführers ausgeübt hat, ohne selbst direkt über Betei-
+ligungen an einzelnen Signa-Gesellschaften zu verfügen. Allerdings zählen Privatstiftun-
+gen im Umfeld von René Benko, allen voran die (inzwischen ebenfalls insolvente)33 Fa-
+milie Benko Privatstiftung, zu den größten Anteilsinhabern der Signa Holding GmbH
+und anderer Signa-Gesellschaften.
+Entscheidend für eine faktische Geschäftsführung sind jedoch nicht Beteiligungsverhält-
+nisse, sondern nachhaltige und kontinuierliche Einflussnahme (auch auf den formell be-
+stellten Geschäftsführer) sowie Auftreten nach außen.34 Beides dürfte bei René Benko
+hinsichtlich zentraler Signa-Gesellschaften der Fall gewesen sein.35
+Was die Einhaltung von gesetzlich gebotener Konsolidierungspflichten betrifft, so ist es
+derzeit im Wesentlichen Aufgabe von Aufsichtsräten und Wirtschaftsprüfern darauf hin-
+zuweisen. Zumindest für Unternehmen von öffentlichem Interesse könnte allerdings auch
+eine amtswegige Prüfung von Vorliegen bzw Ausmaß etwaiger Konsolidierungspflichten
+vorgesehen werden. Vor allem auch, weil im Fall der Signa Holding GmbH ein Aufsichts-
+rat nicht vorhanden und eine Prüfpflicht des Jahresabschlusses durch Wirtschaftsprüfer
+gem § 278 Abs 1 UGB nicht gegeben war.
+5. Simulation und Sorgfalt von Aufsicht(sräten)
+Weil die Signa Holding GmbH gem § 29 GmbH-Gesetz weder über ein Stammkapital
+von über 70.000 Euro verfügte noch mehr als 50 Gesellschafter:innen hatte, war sie ge-
+setzlich nicht verpflichtet, einen Aufsichtsrat einzusetzen.36 Allerdings wurde ein mit pro-
+minenten Mitgliedern (ua der ehemalige Bundeskanzler Alfred Gusenbauer) besetzter
+„Beirat“ mit René Benko als Vorsitzendem etabliert. Ein solcher Beirat ist gesetzlich nicht
+näher ausgestaltet, allerdings prinzipiell gesellschaftsrechtlich zulässig (vgl die Formu-
+lierung „eines anderen Organes“ in § 20 Abs 2 GmbHG).37
+Spätestens mit der Insolvenz der Signa Holding GmbH stellt sich die Frage, inwieweit
+Mitglieder von deren Beirat für Verletzung von Sorgfaltspflichten analog zu Aufsichts-
+räten gem § 95 AktG bzw § 30j GmbHG haften und sie für bestimmte Geschäftsvor-
+gänge (zB überhöhte bzw genehmigungspflichtige Honorare an Beiratsmitglieder) ver-
+antwortlich sind.
+Zwar gibt es bei der Signa Holding GmbH keinen Aufsichtsrat, allerdings hat der OGH
+in Entscheidungen zur Mitbestimmung (§ 110 ArbVG) sowie zur Haftung von Aufsichts-
+33 Graber/Gepp, Nächste Insolvenz: Familie Benko Privatstiftung hat 854 Millionen Euro Schulden, derstandard.at
+28.3.2024, https://www.derstandard.de/story/3000000213663/die-familie-benko-privatstiftung-beantragte-
+insolvenzverfahren (24.4.2024).
+34 Barnert, Die Voraussetzungen der faktischen Geschäftsführung, Aufsichtsrat aktuell 2021, 252.
+35 Fleckl/Reinhart, Inside Signa.
+36 Gahleitner/Leitsmüller/Oberrauter, Signa-Pleite: Mega-GAU der Intransparenz, awblog.at.
+37 Ausführlich dazu: Frotz in Straube/Ratka/Rauter, WK GmbHG Anhang zu §§ 29–33: Beirat (Stand 1.9.2022, rdb.at).
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout
+juridikum 2/2024 recht & gesellschaft 189
+räten (§ 33 GmbHG) festgestellt,38 dass die entsprechenden gesetzlichen Bestimmungen
+auch auf einen „Beirat“ oder ähnlich benannte Überwachungsorgane einer GmbH an-
+wendbar sind. Jedenfalls ist so eine Anwendbarkeit nach hA zu bejahen, sofern wesent-
+liche und typische Aufsichtsratskompetenzen diesem Organ gemäß Gesellschaftsvertrag
+zukommen.39
+Im Gesellschaftsvertrag der Signa Holding gibt es keine expliziten Hinweise auf den Si-
+gna-Beirat. Er wurde daher wohl schuldrechtlich, also auf einfacher vertraglicher Grund-
+lage, eingerichtet. Bei einem solchen schuldrechtlichen Beirat wird in der Literatur in der
+Regel ein subsidiärer Rückgriff auf Organisationsvorschriften des GmbHG mangels
+Organqualität verneint.40
+Allerdings gab es eine schriftliche ausgearbeitete Beiratssatzung, in der ua auch eine Bei-
+ratsvergütung vorgesehen war. In dem Dokument mit dem Titel „Grundsätze der Orga-
+nisation und Funktion des Beirats der Signa Holding GmbH“ heißt es im ersten Satz:
+„Die Geschäftsführer der Signa Holding GmbH haben in Abstimmung mit den Gesell-
+schaftern beschlossen, einen Beirat einzurichten.” Gleichzeitig wird in § 3 des Dokuments
+festgehalten, dass der Beirat „weder Geschäftsführungs- noch Überwachungsaufgaben
+noch sonstige Entscheidungskompetenzen hat. Der Beirat ist insbesondere auch nicht als
+satzungsmäßiges Organ der Gesellschaft eingerichtet.”
+Diese Formulierung wurde offensichtlich gewählt, um eine Organhaftung durch analo-
+ge Anwendung von Haftungsbestimmungen für Aufsichtsräte des GmbHG auf den Bei-
+rat auszuschließen. Jedoch stellt sich im Einklang mit der ständigen Rechtsprechung zur
+Haftung von faktischen Geschäftsführern41 die Frage, ob es nicht auch einen „faktischen
+Aufsichtsrat” mit entsprechenden Sorgfaltspflichten und Haftungen gibt – zumindest in
+jenen Fällen, wo solche „faktischen Aufsichtsräte“ an Tatbeständen wie fahrlässige Kri-
+da gem § 159 StGB beteiligt waren. Maßgeblich wären dann nicht die formal festgehal-
+tenen, sondern die tatsächlich ausgeübten Tätigkeiten der Beiratsmitglieder.
+6. Allgemein- und rechtspolitische Ableitungen
+Wie der Fall Signa gezeigt hat, können sich auch sehr große Unternehmen durch ge-
+schickte gesellschaftsrechtliche Konstruktionen auf im Wesentlichen legale Weise Auf-
+sichtsbehörden weitgehend entziehen, sofern sie sich abseits öffentlicher Kapitalmärkte
+finanzieren. Gleichzeitig gibt es alleine aufgrund der Größe einer Unternehmensgruppe
+wie Signa und den mit einer Insolvenz verbundenen, gesellschaftlichen Folgekosten, ein
+öffentliches Interesse an deren rechtmäßigem Gebaren.
+38 OGH 27.9.2006, 9 ObA 130/05s.
+39 Frotz in Straube/Ratka/Rauter, WK GmbHG Anhang zu §§ 29–33: Beirat (Stand 1.9.2022, rdb.at).
+40 Frotz in Straube/Ratka/Rauter, WK GmbHG Anhang zu §§ 29–33: Beirat 57.
+41 Vgl Lobnig, GES 2021, 287.
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout
+190 Dobusch / Sturn, Hört die Signa(le)
+Sinnvoll wäre hier in einem ersten Schritt die Definition von Unternehmen von öffentli-
+chem Interesse (Public Interest Entity, PIE) in § 189a Z 1 nicht nur auf kapitalmarkt-
+orientierte Unternehmen (bzw die in § 189a Z 1 lit b–d angeführten Sonderfälle wie
+Kreditinstitute und Versicherungsunternehmen) zu beschränken, sondern Unternehmens-
+geflechte auch rein aufgrund ihrer Größe als PIE zu klassifizieren. Im Ergebnis würden
+so automatisch erhöhte Anforderungen gelten (zB strengere Vorgaben bei der Wirt-
+schaftsprüfung). Ebenfalls anzudenken wäre, Unternehmen bei eklatantem Überschrei-
+ten (zB dem mehr als fünffachen) von einem der drei Kriterien für die Größenklassifizie-
+rung in § 221 Abs 1 UGB ebenfalls automatisch als große Kapitalgesellschaft zu klassi-
+fizieren.
+Geeignet wäre auch eine Nachschärfung im Bereich der Rechtsdurchsetzung im Bereich
+großer Unternehmensgeflechte. So sind Kapitalgesellschaften aktuell gem § 277 UGB
+verpflichtet, binnen neun Monaten nach Ablauf des Geschäftsjahrs einen Jahresabschluss
+zu erstellen und diesen beim Firmenbuchgericht einzureichen. Kommt eine Kapitalge-
+sellschaft dem nicht nach, kann die Geschäftsführung gem § 283 UGB zu Strafzahlun-
+gen verpflichtet werden, die sich wiederum an der Größe der Gesellschaft bemessen. Für
+kleine GmbHs beträgt die Strafe 700 Euro für alle zwei Monate, in denen kein Jahres-
+abschluss vorgelegt wurde. Diese Strafen sind so gering, dass sie bei größeren Unterneh-
+mensgeflechten keinen Einhaltungsdruck ausüben.
+Die Bundesregierung hat anlässlich des Signa-Falles aus diesem Durchsetzungsdefizit
+staatlicher Kontrollbehörden gelernt und bereits eine Verschärfung der Strafen bei nicht
+fristgerechter Einreichung des Jahresabschlusses angekündigt.42 Anzudenken wären hier
+neben höheren, an der Bilanzsumme orientierten Geldstrafen43 auch wahrscheinlich wirk-
+samere gesellschaftsrechtliche Konsequenzen. So könnte etwa die Erfüllung von Publizi-
+tätspflichten zur Voraussetzung für Gewinnausschüttung der betroffenen Geschäftspe-
+riode gemacht werden.
+Jenseits dieser Nachjustierung gesellschaftsrechtlicher Transparenzpflichten gäbe es auch
+noch andere Möglichkeiten zur Erhöhung des Transparenzniveaus des Wirtschaftsstand-
+orts Österreich. Ein Hebel wäre, die via Firmenbuch verfügbaren Informationen noch
+einfacher zugänglich zu machen. Eine Möglichkeit das Transparenzniveau in diesem Be-
+reich zu erhöhen und damit auch das Vertrauen in den österreichischen Wirtschaftsstand-
+ort zu stärken, wäre die Informationen von Firmen- und Grundbüchern entsprechend
+zunehmend etablierter Open-Data-Prinzipien44 und damit auch kostenlos zur Verfügung
+zu stellen.
+42 Graber/Pflügl, Justizministerin Zadić erwägt wegen Signa strafrechtliche Folgen bei fehlenden Bilanzen, Der Standard
+19.1.2024.
+43 Gahleitner/Leitsmüller/Oberrauter, Signa-Pleite: Mega-GAU der Intransparenz, awblog.at.
+44 Eibl/Lutz/Parycek/Pawel, White Paper der Cooperation OGD Austria (Version 1.2.0/8.11.2016), https://www.data.
+gv.at/infos/open-data-prinzipien/ (25.4.2024).
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout
+juridikum 2/2024 recht & gesellschaft 191
+Gerade im Fall von komplexeren Firmengeflechten wie der Signa-Gruppe, bei denen
+mehr Transparenz besonders wünschenswert wäre, stellen die Kosten für den Firmen-
+buchzugang bzw -abruf eine vergleichsweise große Hürde dar: auch wenn die Kosten
+für einen Einzelabruf gering sind, so summieren sich diese schnell, wenn eine größere
+Zahl an Gesellschaften über mehrere Jahre hinweg untersucht werden soll. In anderen
+EU-Staaten (zB Luxemburg) ist ein kostenloser Zugang zu Jahresabschlüssen und ande-
+ren Firmenbuch-Dokumenten völlig üblich45.
+Leonhard Dobusch, Betriebswirt und Jurist, ist Professor für Organisation an der Universität Innsbruck und wissen-
+schaftlicher Leiter des Momentum Instituts in Wien; leonhard.dobusch@uibk.ac.at
+Jakob Sturn, Ökonom, ist wissenschaftlicher Mitarbeiter im Momentum Institut in Wien; jakob.sturn@momentum-institut.at
+45 European e-justice, Unternehmensregister in den Mitgliedstaaten, https://e-justice.europa.eu/106/DE/business_registers_
+in_eu_countries?LUXEMBOURG&member=1 (25.4.2024).
+© Verlag Österreich 2024
+rhU
+81:71
+mu
+4202.70.61
+ma
+hcsuboD
+drahnoeL
+rüf
+treizneziL
+BiblioScout

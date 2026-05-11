@@ -1,0 +1,37 @@
+{
+  "_hash": "676c02442a0c568f",
+  "course_id": "6033703148",
+  "course_code": "2026S703080",
+  "course_type": "PS",
+  "course_title": "Software Engineering",
+  "course_name": "2026S703080 PS Software Engineering",
+  "ongoing_summary": "Die Abgabe der Projektergebnisse und Pitch-Slides ist am 28.05.2026, 12:00 Uhr. Die Anmeldung für das Prüfungsgespräch ist vom 01.06.2026 bis 15.06.2026 möglich. Die Abgabe der Abnahmetests ist am 05.06.2026, 12:00 Uhr.",
+  "deadlines": [
+    {
+      "date": "2026-05-28",
+      "description": "Abgabe der Projektergebnisse und Pitch-Slides bis 28.05.2026, 12:00 Uhr"
+    },
+    {
+      "date": "2026-06-01",
+      "description": "Anmeldung für das Prüfungsgespräch vom 01.06.2026 bis 15.06.2026"
+    },
+    {
+      "date": "2026-06-05",
+      "description": "Abgabe der Abnahmetests bis 05.06.2026, 12:00 Uhr"
+    },
+    {
+      "date": "2026-06-08",
+      "description": "Tickets zu allen Mängeln bis zum 08.06.2026, 8:00 Uhr, in GitLab"
+    },
+    {
+      "date": "2026-06-15",
+      "description": "Letzter Tag für die Anmeldung zum Prüfungsgespräch"
+    },
+    {
+      "date": "2026-06-18",
+      "description": "Prüfungsgespräche finden nach der Abgabedeadline am 18.06.2026 in KW 26 und 27 statt"
+    }
+  ],
+  "requirements": "Um den Kurs erfolgreich zu absolvieren, müssen die Studierenden an den Proseminaren teilnehmen, die Konzepte und Projekte bearbeiten und die Abgabedeadlines einhalten. Die genauen Prüfungsmodalitäten sind im Kurs beschrieben.",
+  "last_activity": "2026-05-11"
+}

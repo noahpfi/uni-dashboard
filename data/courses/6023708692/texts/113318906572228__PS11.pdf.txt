@@ -1,0 +1,238 @@
+Statistische Datenanalyse
+Kapitel 10
+Regressionsanalyse, Fortsetzung
+Regressionsanalyse, Fortsetzung
+Modellwahl
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 1/17
+Aufgabe Unterernährung in Barisal
+VerwendenSiefürdieseAufgabewiederdenDatensatzzurUnterernährungin
+Barisal(bangladesh_barisal_ohne_na.rda).DieZielgrößeistderzscoreund
+m_bildung(Referenzkategorie"keine Ausbildung"),k_geschl,m_bmiund
+k_altersinddieerklärendenVariablen.
+I SeiModell1ohnedieBildungderMutterundihrenBMI,seiModell2das
+ModellmitallenVariablen.VergleichenSiediebeidenModellemitdem
+korrigiertenBestimmtheitsmaß,demAICundderANOVA.WassindIhre
+Schlussfolgerungen?
+II VergleichenSiedasvollständigeModell2mitdemModell3,dask_geschl,
+m_bmiundk_alteralserklärendeVariablenberücksichtigt.Interpretieren
+SiedieErgebnisse!
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 2/17
+Aufgabe Unterernährung in Barisal
+III WendenSiedenBefehlanovaaufdasModell2an.Waswirddabeigetestet?
+FührenSiedieseTestsSchrittfürSchrittdurch,indemSieimmerdiezwei
+entsprechendenModelletesten.UntersuchenSieauchdieVeränderungder
+AICs.
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 3/17
+Anwendung: Barisal - Modellwahl, I
+R> modell_1 <- lm(zscore ~ k_geschl + k_alter, data = bangladesh_barisal_ohne_na)
+R> modell_2 <- lm(zscore ~ m_bildung + k_geschl + m_bmi + k_alter,
++ data = bangladesh_barisal_ohne_na)
+R> c(summary(modell_1)$adj.r.square, summary(modell_2)$adj.r.square)
+[1] 0.1225 0.1873
+R> AIC(modell_1, modell_2)
+df AIC
+modell_1 4 3535
+modell_2 8 3461
+R> anova(modell_1, modell_2)
+Analysis of Variance Table
+Model 1: zscore ~ k_geschl + k_alter
+Model 2: zscore ~ m_bildung + k_geschl + m_bmi + k_alter
+Res.Df RSS Df Sum of Sq F Pr(>F)
+1 1012 1918
+2 1008 1770 4 149 21.2 <2e-16
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 4/17
+Anwendung: Barisal - Modellwahl, II
+R> modell_2 <- lm(zscore ~ m_bildung + k_geschl + m_bmi + k_alter,
++ data = bangladesh_barisal_ohne_na)
+R> modell_3 <- lm(zscore ~ k_geschl + m_bmi + k_alter,
++ data = bangladesh_barisal_ohne_na)
+R> c(summary(modell_3)$adj.r.square, summary(modell_2)$adj.r.square)
+[1] 0.1713 0.1873
+R> AIC(modell_3, modell_2)
+df AIC
+modell_3 5 3477
+modell_2 8 3461
+R> anova(modell_3, modell_2)
+Analysis of Variance Table
+Model 1: zscore ~ k_geschl + m_bmi + k_alter
+Model 2: zscore ~ m_bildung + k_geschl + m_bmi + k_alter
+Res.Df RSS Df Sum of Sq F Pr(>F)
+1 1011 1810
+2 1008 1770 3 40.2 7.63 4.8e-05
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 5/17
+Anwendung: Barisal - Modellwahl, III
+R> anova(modell_2)
+Analysis of Variance Table
+Response: zscore
+Df Sum Sq Mean Sq F value Pr(>F)
+F= 120/3 = 39.9 =22.7
+m_bildung 3 120 39.9 22.7 3.0e-14 1770/1008 1.8
+k_geschl 1 1 0.9 0.5 0.48
+m_bmi 1 40 40.3 22.9 1.9e-06
+k_alter 1 260 259.9 148.0 < 2e-16
+Residuals 1008 1770 1.8
+WelcheHypothesenstehenhinterdiesenF-Tests?
+R> modell0 <- lm(zscore ~ 1, data = bangladesh_barisal_ohne_na)
+R> modell1 <- lm(zscore ~ m_bildung, data = bangladesh_barisal_ohne_na)
+R> modell2 <- lm(zscore ~ m_bildung + k_geschl, data = bangladesh_barisal_ohne_na)
+R> modell3 <- lm(zscore ~ m_bildung + k_geschl + m_bmi,
++ data = bangladesh_barisal_ohne_na)
+R> modell_2 <- lm(zscore ~ m_bildung + k_geschl + m_bmi + k_alter,
++ data = bangladesh_barisal_ohne_na)
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 6/17
+Anwendung: Barisal - Modellwahl, III
+R> anova(modell0, modell1)
+Analysis of Variance Table
+Model 1: zscore ~ 1
+Model 2: zscore ~ m_bildung
+Res.Df RSS Df Sum of Sq F Pr(>F)
+1 1014 2190
+2 1011 2071 3 120 19.5 2.7e-12 F= 120/3 = 39.9 =19.5
+2071/1011 2.05
+R> anova(modell1, modell2)
+Analysis of Variance Table
+Model 1: zscore ~ m_bildung
+Model 2: zscore ~ m_bildung + k_geschl
+Res.Df RSS Df Sum of Sq F Pr(>F)
+1 1011 2071
+2 1010 2070 1 0.882 0.43 0.51 F= 0.9/1 = 0.9 =0.43
+2070/1010 2.05
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 7/17
+Anwendung: Barisal - Modellwahl, III
+R> anova(modell2, modell3)
+Analysis of Variance Table
+Model 1: zscore ~ m_bildung + k_geschl
+Model 2: zscore ~ m_bildung + k_geschl + m_bmi
+Res.Df RSS Df Sum of Sq F Pr(>F)
+1 1010 2070
+2 1009 2030 1 40.3 20 8.6e-06 F= 40.3/1 = 40.3 =20
+2030/1009 2.01
+R> anova(modell3, modell_2)
+Analysis of Variance Table
+Model 1: zscore ~ m_bildung + k_geschl + m_bmi
+Model 2: zscore ~ m_bildung + k_geschl + m_bmi + k_alter
+Res.Df RSS Df Sum of Sq F Pr(>F)
+1 1009 2030
+2 1008 1770 1 260 148 <2e-16 F= 259.9/1 = 259.9 =148
+1769.7/1008 1.76
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 8/17
+Regressionsanalyse, Fortsetzung
+Residuendiagnostik
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 9/17
+Eine erste Residuendiagnostik
+EinesorgfältigeResiduendiagnostikistwichtig,umvalideSchätzersowohlfür
+dieRegressionsparameteralsauchfürdieStandardfehlerzuerhalten.
+Möglichkeitenfüreineerste (grobe)Residuendiagnostik:
+• StreudiagrammderResiduenaufdiegefittetenWerte.
+• StreudiagrammderResiduenaufdieunabhängigenVariablen.
+• Histogramm/BoxplotderResiduen.
+• AnalysevonextremenWerten/Ausreißern.
+• KorrelationsmatrixvondenunabhängigenVariablen.
+• ...
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 10/17
+Aufgabe Unterernährung in Barisal
+FührenSienuneineersteResiduendiagnostikzudembereitsgeschätzten
+Modellmitm_bildung(Referenzkategorie"keine Ausbildung"),k_geschl,
+m_bmiundk_alteralserklärendeVariablendurch,indemSiesich
+• dasStreudiagrammderResiduenaufdiegefittetenWerte,
+• dasStreudiagrammderResiduenaufdiemetrischenunabhängigen
+Variablen,
+• dasHistogrammderResiduen
+• denQQ-plotsowie
+• dieKorrelationsmatrixdermetrischenunabhängigenVariablenansehen.
+WelchesFazitziehenSie?SinddieVoraussetzungendermultiplenRegression
+hiererfüllt?
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 11/17
+Anwendung: Barisal
+R> load("daten/bangladesh_barisal_ohne_na.rda")
+R> modell_2 <- lm(zscore ~ m_bildung + k_geschl + m_bmi + k_alter,
++ data = bangladesh_barisal_ohne_na)
+R> modell_2
+Call:
+lm(formula = zscore ~ m_bildung + k_geschl + m_bmi + k_alter,
+data = bangladesh_barisal_ohne_na)
+Coefficients:
+(Intercept) m_bildungPrimaerausbildung
+-2.6173 -0.1050
+m_bildungSekundaerausbildung m_bildunghoehere Bildung
+0.3350 0.5500
+k_geschlmaennlich m_bmi
+-0.0565 0.0801
+k_alter
+-0.0292
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 12/17
+Anwendung: Barisal - Residuendiagnostik
+R> plot(fitted(modell_2), residuals(modell_2),
++ ylab = "Residuen", xlab = "gefittete Werte")
+R> abline(0,0, col = "blue")
+−3.0 −2.0 −1.0 0.0
+4
+2
+0
+4−
+gefittete Werte
+neudiseR
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 13/17
+Anwendung: Barisal - Residuendiagnostik
+R> par(mfrow = c(1,2))
+R> plot(bangladesh_barisal_ohne_na$m_bmi, residuals(modell_2),
++ xlab = "BMI der Mutter", ylab = "Residuen")
+R> abline(0,0, col = "blue")
+R> plot(bangladesh_barisal_ohne_na$k_alter, residuals(modell_2),
++ xlab = "Alter des Kindes", ylab = "Residuen")
+R> abline(0,0, col = "blue")
+15 20 25 30 35
+4
+2
+0
+2−
+4−
+BMI der Mutter
+neudiseR
+0 10 20 30 40 50 60
+4
+2
+0
+2−
+4−
+Alter des Kindes
+neudiseR
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 14/17
+Anwendung: Barisal - Residuendiagnostik
+R> hist(residuals(modell_2), freq = FALSE, xlab = "Residuen", main = "")
+Residuen
+ytisneD
+−4 −2 0 2 4 6
+03.0
+02.0
+01.0
+00.0
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 15/17
+Anwendung: Barisal - Residuendiagnostik
+R> qqnorm(modell_2$residuals)
+R> qqline(modell_2$residuals)
+−3 −2 −1 0 1 2 3
+4
+2
+0
+2−
+4−
+Normal Q−Q Plot
+Theoretical Quantiles
+selitnauQ
+elpmaS
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 16/17
+Anwendung: Barisal - Residuendiagnostik
+R> cor.test(bangladesh_barisal_ohne_na$m_bmi,
++ bangladesh_barisal_ohne_na$k_alter)
+’
+Pearsons product-moment correlation
+data: bangladesh_barisal_ohne_na$m_bmi and bangladesh_barisal_ohne_na$k_alter
+t = 0.18, df = 1013, p-value = 0.9
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+-0.05588 0.06718
+sample estimates:
+cor
+0.005671
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 17/17

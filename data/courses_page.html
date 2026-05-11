@@ -1,0 +1,664 @@
+<!DOCTYPE html><html lang="de"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="nofollow">
+<meta name="google" content="notranslate">
+<meta name="description" content="OpenOlat - infinite learning">
+<meta name="keywords" content="OpenOlat, OLAT, eLearning, Lernplattform, LMS, Learning Management System, LCMS, Learning Content Management System, Open Source, elearning, JAVA, IMS, QTI, SCORM, Content package, Kollaboration, Usability, Performanz, Skalierbarkeit"> 
+<meta name="generator" content="OpenOlat 20.2.7 - https://www.openolat.org">
+<meta name="dcterms.type" content="Interactive Resource">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<script>
+var o_info = new Object();
+o_info.initialPageLoadFinished = false;
+o_info.version = '20.2.7';
+o_info.o_winid = '1033204825';
+window.name  = '1033204825';
+o_info.o_user = { identity : 5688098839, lastName : "Pfister", firstName : "Noah"}; o_info.uriprefix="/auth/";
+o_info.bc="";
+o_info.businessPath="";
+o_info.startBusinessPath="";
+o_info.serverUri="https://lms.uibk.ac.at"
+o_info.serverContext=""
+o_info.dirty_form = "Achtung! Sie haben noch ungespeicherte Formulardaten. Wenn Sie OK drücken verlassen Sie das Formular ohne zu speichern. Die enthaltenen Änderungen gehen damit verloren.";
+o_info.locale = "de";
+o_info.lastClickTime = new Date().getTime();
+o_info.drop = true;
+o_info.o_baseURI = "/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/";
+o_info.oo_noresponse_title = "Sie wurden abgemeldet";
+o_info.oo_noresponse = "Ihre Sitzung ist abgelaufen oder der Server wurde neu gestartet. Um sich erneut anzumelden, w\u00E4hlen Sie diesen <b><a href=\'reload.html\'>Link<\/a><\/b> oder laden Sie die Seite neu.<br><br>Bitte beachten Sie, dass alle ungespeicherten \u00C4nderungen in Ihrem Browserfenster beim erneuten Anmelden verloren gehen. Schlie\u00DFen Sie diesen Dialog um ungespeicherte Forenbeitr\u00E4ge oder \u00E4hnliches jetzt in die Zwischenablage Ihres Browsers zu kopieren und anschlie\u00DFend die Seite neu zu laden.";
+o_info.oo_noresponse_unsaved_data = "<h3>Ungespeicherte Daten<\/h3><p>Falls Sie ungespeicherte Daten haben, kehren Sie auf die Seite zur\u00FCck und speichern Sie die Daten in die Zwischenablage. Nicht gespeicherte Daten gehen bei einem erneuten Login verloren.<\/p><p><a class=\"btn o_button_ghost\" href=\'back.html\'><i class=\"o_icon o_icon_back\"> <\/i> Zur\u00FCck zur Seite<\/a><\/p>";
+o_info.zseed = 0;
+o_info.newWindow=null;
+o_info.submit=null;
+o_info.preventOnchange=false;
+o_info.latexit=false;
+if (top!=self){top.location=self.location+"?o_winrndo=1";}
+function o_start() {
+	o_init();
+				o_info.initialPageLoadFinished = true;
+}
+
+
+
+
+try{
+	if(o_info.startBusinessPath != null && o_info.startBusinessPath.length > 0
+			&& window.history && !(typeof window.history === "undefined") && window.history.pushState) {
+		window.history.pushState('', document.title, o_info.startBusinessPath);
+		o_info.startBusinessPath = null;
+	}
+	if (document.location.href.indexOf('oow') != -1) {
+		window.history.replaceState(window.history.state, document.title, window.location.href.split("?")[0]);
+	}
+} catch(e) { }
+</script>
+
+<script>
+function o_mathjax(fct_success) {
+	if(window.MathJax === undefined) {
+		window.MathJax = {
+  tex: {
+    inlineMath: [['$$', '$$'], ['\\(', '\\)']],
+    macros: {
+      exponentialE: "\\mathrm{e}",
+      imaginaryI: "\\mathrm{i}",
+      differentialD: "\\mathrm{d}",
+      larr: "\\leftarrow",
+      lrArr: "\\leftrightarrow",
+      rarr: "\\rightarrow"
+    }
+  },
+  options: {
+    enableMenu: false,
+    processHtmlClass: 'tex2jax_process',
+    renderActions: {
+      findScripts: [11, function (doc) {
+        var nodes = document.querySelectorAll('.math');
+        for (var i=0; i<nodes.length; i++) {
+          var node = nodes[i];
+          var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], (node.tagName !== 'SPAN'));
+          var text = document.createTextNode('');
+          node.parentNode.replaceChild(text, node);
+          math.start = {node: text, delim: '', n: 0};
+          math.end = {node: text, delim: '', n: 0};
+          doc.math.push(math);
+        }
+      }, '']
+    }
+  },
+  output: {
+    font: 'mathjax-newcm',    fontPath: '/mathjax/es5/mathjax-newcm-font'  }
+};
+;
+		jQuery.ajax("/mathjax/es5/tex-mml-chtml.js", {
+			cache: true,
+			dataType: "script",
+			crossDomain: true,
+			success: function() {
+		    	if(typeof fct_success !== "undefined") {
+		    		fct_success();
+		    	}
+				o_info.latexit = false;
+			}
+		});
+	}
+}
+</script>
+ 
+<script src="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/js/jquery/jquery-3.7.1.min.js"></script>
+	<script src="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/js/js.plugins.min.js"></script>
+	<script src="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/movie/player.min.js"></script>
+	<script src="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/js/iframeResizer/iframeResizer.min.js"></script>
+
+	<link href="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/js/js.plugins.min.css" rel="stylesheet">
+<script>
+jQuery.noConflict();
+
+jQuery(document).ooTranslator().initialize("/g/openolat2027-deorg.olat.core.commons.chiefcontrollers.JSTranslatorMapper");
+o_info.oo_translator = jQuery(document).ooTranslator();
+jQuery(window).on("popstate", function(e) {
+	if(e.originalEvent.state && e.originalEvent.state.businessPath) {
+		if (e.originalEvent.state.businessPath.indexOf('oow') == -1) {
+			var windowedPath = e.originalEvent.state.businessPath + '?oow=' + window.name;
+			window.history.replaceState(e.originalEvent.state, document.title, windowedPath);
+			window.location.reload();
+		} else {
+			window.location.href = e.originalEvent.state.businessPath;
+		}
+	}
+});
+	
+var closing = function(e) {
+	if(navigator.sendBeacon) {
+		var beaconUrl = '/auth/52%3A1%3A1033204827%3A2%3A0%3Acid%3Aclose-window%3A_csrf%3A779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b/';
+		if(beaconUrl.indexOf("/dmz/") == -1) {
+			navigator.sendBeacon(beaconUrl, null);
+		}
+	}
+};
+window.onbeforeunload = closing;
+window.onunload = closing;
+
+jQuery(function() {
+	if ((window.unsafeWindow == null ? window : unsafeWindow).MathJax == null) {
+		var count = jQuery('div.math,span.math,math,div.mathEntryInteraction').length;
+		if (count > 0 || o_info.latexit) {
+			o_mathjax();
+		}
+	}
+});
+</script>
+
+<script src="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/js/jquery/openolat/jquery.breadcrumb.js"></script>
+
+<link id="o_theme_css" href="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/themes/uibk2024/theme.css" rel="stylesheet">
+<link id="o_email_css" href="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/themes/uibk2024/email.css" rel="stylesheet">
+<script src="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/themes/uibk2024/theme.js"></script>
+<link rel="icon" href="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/themes/uibk2024/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/themes/uibk2024/meta/favicon16.png" type="image/png" sizes="16x16">
+<link rel="icon" href="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/themes/uibk2024/meta/favicon32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/themes/uibk2024/meta/favicon64.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/themes/uibk2024/meta/appicon180.png" type="image/png" sizes="180x180">
+<link rel="manifest" href="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/themes/uibk2024/meta/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+
+<script>
+"use strict";
+jQuery(document).ready(function() {
+	// Detect IE below version 11
+	if (window.navigator.userAgent.indexOf('MSIE ') > 0) {
+		jQuery('body').addClass('o_browser_ie10');
+	}
+});
+</script>
+<!-- empty -->
+<style id="o_fontSize_css"></style>
+<style>
+		.o_custom_navbar-brand { background-image: none; }
+</style>
+
+<title>Kurse</title>
+</head>
+
+<body onload="o_start();" id="o_body" class="o_lang_de">
+<h1 id="o_top" class="sr-only" data-nosnippet="">Kurse</h1>	
+<div id="o_bg"></div>
+<!-- START guiDebug -->
+
+<!-- END guiDebug -->
+<!-- START jsServer -->
+<div id="o_c1033204921"><div id="o_c1033204919"><div id="o_c1033204918"><div style="height:0px">
+<script>
+"use strict";
+
+let stopped = true;
+function initPolling () {
+	o_info.lastClickTime = new Date().getTime();
+	pollgrowth = 0;
+	pollcount  = 0;
+	if (stopped) {
+		stopped = false;
+		tick();
+	}
+}
+
+jQuery("#o_body").bind("mouseover click keypress", function(event){initPolling();});
+
+o_info.wins = {};
+o_info.poller = null;
+
+let growthrate = 10;
+let pollminutes = 60;
+let pollcount = 0;
+let pollError = 0;
+let pollgrowth = 0;
+let timestampLastPoll = new Date().getTime();
+
+function tick () {
+	o_info.poller = jQuery.periodic({period: 5000, decay:1.005, max_period: Number.MAX_VALUE}, function() {
+		if ( !o_info.linkbusy && (this.period > 1000) && (pollError < 2) ) {
+			try {
+				let now = new Date().getTime();
+				if ((now - o_info.lastClickTime) < (pollminutes * 60 * 1000)) {
+					if ((now - timestampLastPoll) > (this.period + pollgrowth)) {
+						timestampLastPoll = now;
+						pollcount++;
+						pollgrowth = Math.ceil((this.period+pollgrowth)*(100+growthrate)/100) - this.period;
+
+						let data = {
+							"_csrf": "779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b",
+							"oow": window.name
+						};
+						o_info.ajaxpp = jQuery.ajax({
+							method:'POST',
+							url:'/m/a8ae04a1472cd19977b1ee31dc317483/',
+							dataType: 'json',
+							data: data,
+							cache: false,
+							success:onPollSuccess,
+							error:onPollFailure
+						});
+
+					}
+				} else {
+					stopped = true;
+				}
+			} catch (e) {
+				if(window.console) console.log(e);
+				o_info.poller.cancel(); //stop on errors
+			}
+		}
+
+		if(pollError >= 2) {
+			window.close();
+		}
+	});
+}
+
+jQuery(document).ready(initPolling);
+
+jQuery(function() { 
+	setTimeout( function(){ if (!o_info.ajaxpp) {
+			showMessageBox('error', 'error', 'Some core functionality could not be started. Please log out of OLAT and login again.');
+		}},60000);
+	}
+);
+
+function onPollSuccess(content, s, response) {
+	if(response.status == 304) {
+	 	pollError = 0;
+	} else if(response.status >= 200 && response.status < 300) {
+	 	pollError = 0;
+	 	o_ainvoke(content);
+	} else {
+	 	pollError++;
+	}
+}
+
+function onPollFailure(response) {
+	pollError++;
+	if(response.status == 404) { 
+						o_info.poller.cancel(); 
+	}
+}
+</script>
+<div id="o_c1033204920"><div id="o_c1033204917"><script>
+if (o_info.poller && o_info.poller.period != 5000) {
+	o_info.poller.period = 5000;
+	o_info.poller.reset();
+}
+</script>
+</div></div>
+</div></div></div></div>
+<!-- END jsServer -->
+
+<!-- START olatContentPanel -->
+
+<a href="#o_main_container" class="sr-only" data-nosnippet="">Zum Hauptbereich springen</a>
+	<div id="o_beta_logo"></div>
+
+<div id="o_messages" class="hidden-print" data-nosnippet=""><div id="o_c1033204831"><div id="o_c1033204824"><!-- empty --></div></div></div>
+<div id="o_header_wrapper" data-nosnippet=""> 
+	<div id="o_header_container" class="o_container_offcanvas container-fluid"> 
+		<div id="o_logo" aria-hidden="true"></div>
+		<div id="o_right_logo" aria-hidden="true"></div>
+		
+			</div>
+</div>
+
+<div id="o_offcanvas_right" class="o_navbar o_navbar-offcanvas " role="navigation" aria-label="Persönlich Werkzeuge, Einstellungen und Logout" data-nosnippet="" style="">
+	<a href="javascript:;" class="o_offcanvas_close" title="Schließen"><i class="o_icon o_icon_close o_icon-lg"> </i> <span class="sr-only">Dialogfenster schliessen</span></a>
+	<div id="o_offcanvas_right_container" class="o_navbar-collapse">
+			<div id="o_c1033204900"><ul id="o_c1033204877" class="nav o_navbar-nav o_navbar-right o_sel_menu_tools list-unstyled">
+			<li>
+				<h2 id="o_navbar_category_tools" class="o_navbar_category">Persönliche Werkzeuge</h2>
+				<ul class="list-unstyled">
+				 	<li><a class=" o_sel_user_tools-calendar" id="o_c1033204879" href="/auth/HomeSite/5688098839/calendar/0" onclick="o_XHREvent('/auth/52:1:1033204879:2:1/',true,true,'cid','personal.tool.alt.1033204878','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_calendar" aria-hidden="true"></i> <span>Kalender</span></a></li>
+				 	<li><a class=" o_sel_user_tools-filehub" id="o_c1033204881" href="/auth/HomeSite/5688098839/filehub/0" onclick="o_XHREvent('/auth/52:1:1033204881:2:1/',true,true,'cid','personal.tool.alt.1033204880','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_bc_icon" aria-hidden="true"></i> <span>File Hub</span></a></li>
+				 	<li><a class=" o_sel_user_tools-notelist" id="o_c1033204883" href="/auth/HomeSite/5688098839/notelist/0" onclick="o_XHREvent('/auth/52:1:1033204883:2:1/',true,true,'cid','personal.tool.alt.1033204882','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_notes" aria-hidden="true"></i> <span>Notizen</span></a></li>
+				 	<li><a class=" o_sel_user_tools-otherusers" id="o_c1033204887" href="/auth/HomeSite/5688098839/otherusers/0" onclick="o_XHREvent('/auth/52:1:1033204887:2:1/',true,true,'cid','personal.tool.alt.1033204886','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_search" aria-hidden="true"></i> <span>Personensuche</span></a></li>
+				 	<li><a class=" o_sel_user_tools-PortfolioV2" id="o_c1033204893" href="/auth/HomeSite/5688098839/PortfolioV2/0" onclick="o_XHREvent('/auth/52:1:1033204893:2:1/',true,true,'cid','personal.tool.alt.1033204892','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_ep_icon" aria-hidden="true"></i> <span>Portfolio 2.0</span></a></li>
+				 	<li><a class=" o_sel_user_tools-MediaCenter" id="o_c1033204895" href="/auth/HomeSite/5688098839/MediaCenter/0" onclick="o_XHREvent('/auth/52:1:1033204895:2:1/',true,true,'cid','personal.tool.alt.1033204894','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_media" aria-hidden="true"></i> <span>Media Center</span></a></li>
+				 	<li><a class=" o_sel_user_tools-ToDos" id="o_c1033204897" href="/auth/HomeSite/5688098839/ToDos/0" onclick="o_XHREvent('/auth/52:1:1033204897:2:1/',true,true,'cid','personal.tool.alt.1033204896','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_todo_task" aria-hidden="true"></i> <span>To-dos</span></a></li>
+				 	<li><a class=" o_sel_user_tools-Mail" id="o_c1033204899" href="/auth/HomeSite/5688098839/Mail/0" onclick="o_XHREvent('/auth/52:1:1033204899:2:1/',true,true,'cid','personal.tool.alt.1033204898','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_mail" aria-hidden="true"></i> <span>E-Mail</span></a></li>
+				</ul>
+			</li>
+			<li>
+				<h2 id="o_navbar_cagegory_tools" class="o_navbar_category">Erfolge/Leistungen</h2>				
+				<ul class="list-unstyled">
+				 	<li><a class=" o_sel_user_tools-effstatements" id="o_c1033204891" href="/auth/HomeSite/5688098839/effstatements/0" onclick="o_XHREvent('/auth/52:1:1033204891:2:1/',true,true,'cid','personal.tool.alt.1033204890','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_statement" aria-hidden="true"></i> <span>Leistungsnachweise</span></a></li>
+				</ul>
+			</li>
+			<li>
+				<h2 id="o_navbar_category_configurations" class="o_navbar_category">Konfiguration</h2>
+				<ul class="list-unstyled">
+				 	<li><a class=" o_sel_user_tools-profil" id="o_c1033204885" href="/auth/HomeSite/5688098839/profil/0" onclick="o_XHREvent('/auth/52:1:1033204885:2:1/',true,true,'cid','personal.tool.alt.1033204884','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_user" aria-hidden="true"></i> <span>Profil</span></a></li>
+				 	<li><a class=" o_sel_user_tools-mysettings" id="o_c1033204889" href="/auth/HomeSite/5688098839/mysettings/0" onclick="o_XHREvent('/auth/52:1:1033204889:2:1/',true,true,'cid','personal.tool.alt.1033204888','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_settings" aria-hidden="true"></i> <span>Einstellungen</span></a></li>
+				</ul>
+			</li>
+	<li>
+								<a href="/auth/52%3A1%3A1033204877%3A2%3A0%3Acid%3Alogout%3A_csrf%3A779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b/" class="o_logout" title="Melden Sie sich von OpenOlat ab" onclick="if (window.olatonunload) {olatonunload();}">
+			<i class="o_icon o_icon_logout o_icon-fw"></i> Abmelden
+		</a>
+	</li>
+</ul></div>
+	</div>
+</div>
+<div id="o_navbar_wrapper" class="o_navbar" role="navigation" aria-label="Hauptnavigation" data-nosnippet="">
+	<div id="o_navbar_container" class="o_container_offcanvas container-fluid">
+		<a class="o_navbar-brand o_clickable" href="https://www.uibk.ac.at" title="Universität Innsbruck" rel="noopener noreferrer" target="_blank" style=""><span class="sr-only">Zur Startseite"</span></a>
+		
+		<div class="o_collapse o_navbar-collapse">
+						<ul id="o_c1033204828" class="o_navbar_sites nav o_navbar-nav">
+		<li class=" o_site_portal">
+			<a class="" id="o_c1033204835" accesskey="g" href="/url/Portal/0" onclick="o_XHREvent('/auth/52:1:1033204835:2:1/',true,true,'cid','t','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false" title="Alle Portlets"><span>Portal</span></a>	
+		</li>
+		<li class=" active  o_site_repository" aria-current="true">
+			<a class=" a11yactive" aria-current="true" id="o_c1033204837" accesskey="r" href="/url/MyCoursesSite/0" onclick="o_XHREvent('/auth/52:1:1033204837:2:1/',true,true,'cid','t','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><span>Kurse</span></a>
+		</li>
+		<li class=" o_site_groups">
+			<a class="" id="o_c1033204839" accesskey="g" href="/url/GroupsSite/0" onclick="o_XHREvent('/auth/52:1:1033204839:2:1/',true,true,'cid','t','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false" title="Arbeiten Sie mit Lern- und Arbeitsgruppen"><span>Gruppen</span></a>	
+		</li>
+		<li class=" o_site_project">
+			<a class="" id="o_c1033204841" accesskey="p" href="/url/Projects/0" onclick="o_XHREvent('/auth/52:1:1033204841:2:1/',true,true,'cid','t','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><span>Projekte</span></a>	
+		</li>
+<script>
+"use strict";
+jQuery(document).trigger("oo.nav.sites.modified");
+</script>
+<li class="divider o_dropdown_site"></li></ul>
+
+			<ul id="o_c1033204829" class="o_navbar_tabs nav o_navbar-nav">
+<script>
+"use strict";
+jQuery(document).trigger("oo.nav.tabs.modified");
+</script>
+</ul>
+
+						<ul id="o_navbar_more" class="nav o_navbar-nav o_dropdown_toggle" style="display: none" role="presentation">
+				<li>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">Mehr <b class="caret"> </b></a>
+					<ul class="dropdown-menu dropdown-menu-right"></ul>
+				</li>
+			</ul>
+							<div id="o_c1033204876"><div id="o_c1033204842" class="o_navbar_tools">
+	<ul id="o_navbar_tools_permanent" class="nav o_navbar-nav o_navbar-right">
+			 <li class="o_navbar_tool "><a class=" o_sel_user_tools-notifications" id="o_c1033204844" href="/auth/HomeSite/5688098839/notifications/0" onclick="o_XHREvent('/auth/52:1:1033204844:2:1/',true,true,'cid','personal.tool.alt.1033204843','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_notification o_icon-lg" aria-hidden="true" title="Abonnements"></i> <span><span class="sr-only">Abonnements</span></span></a></li>
+			 <li class="o_navbar_tool "><a class=" o_sel_user_tools-mypassword" id="o_c1033204846" href="/auth/HomeSite/5688098839/mypassword/0" onclick="o_XHREvent('/auth/52:1:1033204846:2:1/',true,true,'cid','personal.tool.alt.1033204845','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon-fw o_icon_password o_icon-lg" aria-hidden="true" title="Passwort"></i> <span><span class="sr-only">Passwort</span></span></a></li>
+			 <li id="o_navbar_coaching" class="o_navbar_tool "><div id="o_c1033204849"><div id="o_c1033204847" class="o_coaching_notifications">
+	<span id="o_c1033204848"></span>
+</div></div></li>
+			 <li id="o_navbar_imclient" class="o_navbar_tool "><div id="o_c1033204858"><div id="o_c1033204850">	<div class="o_im_messages">
+		<div id="o_c1033204851">
+
+</div>
+	</div>
+
+	<div id="o_im_status" class="dropdown">
+		<a id="o_im_status_toggle" href="javascript:;" class="o_undecorated dropdown-toggle" data-toggle="dropdown">
+			<i class="o_icon o_icon_status_available" aria-hidden="true" title="Instant-Messaging-Status wechseln"></i>
+			<span class="sr-only">Instant-Messaging-Status wechseln</span>
+		</a>
+		<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="o_im_status_toggle">
+			<li role="menuitem"><span class="o_chelp_wrapper"><a href="https://docs.openolat.org/de/manual_user/basic_concepts/Chat/" class="o_chelp" target="_blank" title="Hilfe zu dieser Funktion im Handbuch öffnen"><i class="o_icon o_icon_help"> </i> Hilfe</a></span></li>
+			<li role="menuitem"><a class="" id="o_c1033204853" href="javascript:;" onclick="o_XHREvent('/auth/52:1:1033204853:2:1/',true,true,'cid','presence.available','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon_status_available o_icon-fw" aria-hidden="true"></i> <span>Verfügbar</span></a></li>
+			<li role="menuitem"><a class="" id="o_c1033204854" href="javascript:;" onclick="o_XHREvent('/auth/52:1:1033204854:2:1/',true,true,'cid','presence.dnd','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon_status_dnd o_icon-fw" aria-hidden="true"></i> <span>Bitte nicht stören</span></a></li>
+			<li role="menuitem"><a class="" id="o_c1033204855" href="javascript:;" onclick="o_XHREvent('/auth/52:1:1033204855:2:1/',true,true,'cid','presence.unavailable','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false"><i class="o_icon o_icon_status_unavailable o_icon-fw" aria-hidden="true"></i> <span>Nicht verfügbar</span></a></li>
+		</ul>
+	</div>
+
+		<div id="o_im_summary"><a class="badge" id="o_c1033204856" href="javascript:;" onclick="o_XHREvent('/auth/52:1:1033204856:3:1/',true,true,'cid','cmd.roster','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false" title="Klicke um ein Fenster mit Deinen Chat-Kontakten zu öffnen."><span><span aria-hidden="true">0/22</span><span class="sr-only">0 Deiner total 22 Kontakte sind online</span></span></a> <script>
+(function(){ var o_c1033204856 = jQuery('#o_c1033204856');o_c1033204856.click(function(event) { jQuery('#o_c1033204856').each(function(index, el) {;  var href = jQuery(el).attr('href');    if(href.indexOf('x') == -1) jQuery(el).attr('href',href+'x'+event.pageX+'y'+event.pageY+''); });});})();
+</script></div>
+	<div id="o_c1033204857"><!-- empty --></div>
+</div></div></li><li id="o_navbar_print" class="o_navbar_tool "><a class="" href="javascript:o_doPrint();" rel="noopener noreferrer" id="print-1033204863"><i class="o_icon o_icon_print o_icon-lg o_icon-fw" aria-hidden="true" title="Drucken"> </i> <span class="sr-only">Drucken</span></a></li>
+			 
+			 <li id="o_navbar_search_opener" class="o_navbar_tool  dropdown "><a id="o_search_tool_toggler" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+	<i class="o_icon o_icon_search o_icon-lg" aria-hidden="true" title="Suchen"></i>
+	<span class="sr-only">Suche</span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="o_search_tool_toggler">          
+	<li id="o_navbar_search" class="o_navbar-form">
+		<div id="o_c1033204867"><div id="o_c1033204866"><form method="post" id="ofo_1033204866" name="ofo_1033204866" action="/auth/52%3A1%3A1033204866%3A1%3A1%3Aofo_%3Afid/" onsubmit="return o_XHRSubmit('ofo_1033204866');" onkeydown="o_submitByEnter(event)"><input type="hidden" id="ofo_1033204866_dispatchuri" name="dispatchuri" value="undefined"><input type="hidden" id="ofo_1033204866_eventval" name="dispatchevent" value="undefined"><input type="hidden" name="_csrf" value="779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b"><fieldset id="o_c1033204865" class="o_form form-inline  ">
+
+	<div id="o_c1033204868" class="form-group clearfix"><div class="form-group  ">
+		<div class="input-group ">
+		
+				<div id="o_c1033204869"><input type="text" id="o_fi1033204869" name="o_fi1033204869" class="form-control " size="35" maxlength="255" value="" onfocus="o_info.lastFormFocusEl='o_fi1033204869'; " placeholder="Suchen" autofocus="" aria-label="Volltextsuche"><script>(function() { "use strict";
+jQuery('#o_fi1033204869').on('change keypress', {formId:"ofo_1033204866_dispatchuri", hideMessage:false, stopPropagation:false}, setFlexiFormDirtyByListener);})();</script></div>
+
+			<a class="o_search input-group-addon inputgroupaddon" id="o_fi1033204870" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033204866','ofo_1033204866_dispatchuri','o_fi1033204870','ofo_1033204866_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon-fw o_icon_search o_icon-lg" aria-hidden="true" title="Suche in: &quot;In OLAT&quot;"></i> <span><span class="sr-only">Suche in: "In OLAT"</span></span></a>
+
+		</div>
+</div></div>
+</fieldset></form> <script>
+ /* <![CDATA[ */ 
+ (function() {jQuery('#ofo_1033204866').keypress(function(event) {
+ if (13 == event.keyCode) {
+  event.preventDefault();
+  if (this.onsubmit()) { this.submit(); }
+ }
+});
+})();
+ /* ]]> */ 
+</script></div></div>
+	</li>
+</ul>
+<script>
+jQuery('#o_search_tool_toggler').click(function () {
+	setTimeout(function() {
+		jQuery('#o_search_tool_toggler[aria-expanded="true"] + .dropdown-menu #o_navbar_search input:text').focus();	
+	},0);
+});
+</script>
+</li>
+				<li id="o_navbar_help_opener" class="o_navbar_tool dropdown">
+					<a id="o_help_tool_toggler" href="javascript:;" class="dropdown-toggle" aria-expanded="false" data-toggle="dropdown" title="Starten Sie die OpenOlat-Hilfe" aria-controls="o_c1033204842_help">
+						<i class="o_icon o_icon_help o_icon-lg" aria-hidden="true"> </i>
+						<span class="sr-only">Hilfe</span>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-right" id="o_c1033204842_help" role="menu" aria-labelledby="o_navbar_help_opener">          
+			 				<li role="menuitem" id="o_navbar_help_academy" class=""><a class="" href="https://www.openolat.com/openolat-academy/" target="ooAcademy" rel="noopener noreferrer" id="help.academy"><i class="o_icon o_icon-fw o_icon_video" aria-hidden="true"> </i> <span>OpenOlat Academy</span></a></li>
+			 				<li role="menuitem" id="o_navbar_help_custom1" class=""><a class="" href="https://www.uibk.ac.at/de/ecampus/werkzeuge/openolat/" target="ooCustom1" rel="noopener noreferrer" id="help.custom1"><i class="o_icon o_icon-fw o_icon_manual" aria-hidden="true"> </i> <span>Helpcards</span></a></li>
+			 				<li role="menuitem" id="o_navbar_help_custom2" class=""><a class="" href="https://www.uibk.ac.at/de/ecampus/" target="custom2" rel="noopener noreferrer" id="help.custom2"><i class="o_icon o_icon-fw o_icon_external_link" aria-hidden="true"> </i> <span>eCampus</span></a></li>
+			 				<li role="menuitem" id="o_navbar_help_manual" class=""><a class="" href="https://docs.openolat.org/de/" target="oohelp" rel="noopener noreferrer" id="help.ooDocs"><i class="o_icon o_icon-fw o_icon_manual" aria-hidden="true"> </i> <span>OpenOlat Handbuch</span></a></li>
+					</ul>
+				</li>
+		<li id="o_navbar_my_menu" class="o_portrait">
+			<a id="o_sel_navbar_my_menu_caret" href="javascript:;" aria-expanded="false" onclick="OPOL.navbar.toggleRight(); return false;" title="Noah – Persönliche Werkzeuge">
+				<div id="o_c1033204874"><div id="o_c1033204873"><div class="o_portrait ">
+		<div id="o_c1033204875"><div class="o_user_portrait o_user_portrait_small"><div class="o_user_portrait_avatar"><div class="o_user_portrait_initials o_user_initials o_user_initials_purple">NP</div></div><div class="o_user_portrait_border"></div></div></div>
+</div></div></div>
+				<b class="caret"> </b>
+			</a>
+		</li>
+	</ul>
+</div>
+</div>
+		</div>
+		
+	</div>
+</div>
+<div id="o_container_page_width_toggler" aria-hidden="true" data-nosnippet="">
+	<div id="o_go_standard_width" title="Standard Breite für Inhalt verwenden, optimiert für Lesen" class="btn btn-primary btn-xs o_noprint"><i class="o_icon o_icon_width_collapse o_icon-fw"> </i></div>
+	<div id="o_go_full_width" title="Standard Breite für Inhalt verwenden, optimiert für Lesen" class="btn btn-default btn-xs o_noprint"><i class="o_icon o_icon_width_expand o_icon-fw"> </i></div>
+</div>
+<div><script>
+jQuery(document).ready(function() {
+	jQuery("#o_go_standard_width").click(function() { OPOL.setContainerFullWidth(0); o_XHRNFEvent('/auth/52:1:1033204827:2:1/','cid','width.standard','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b','no-response','oo-no-response'); });
+	jQuery("#o_go_full_width").click(function() { OPOL.setContainerFullWidth(1); o_XHRNFEvent('/auth/52:1:1033204827:2:1/','cid','width.full','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b','no-response','oo-no-response'); });
+});
+</script></div>
+<div id="o_c1033204833"><!-- empty --></div>
+
+<div id="o_main_wrapper">
+	<div id="o_main_container" class="o_container_offcanvas container-fluid">
+		<div id="o_c1033204904"><div id="o_c1033205101"><div id="o_main" class="row o_sel_my_repository_entries">
+<div id="o_main_center" class="split-pane">
+<div id="o_main_center_content" class="clearfix">
+<a id="o_content"></a>
+<div id="o_main_center_content_inner">
+<div id="o_c1033205097"><div class="o_sel_my_courses">
+	<h2><i class="o_icon o_CourseModule_icon"> </i> Kurse</h2>
+		<div id="o_c1033205105" class=""><div id="o_c1033205105_bbar"></div><div id="o_c1033205111"><div id="o_c1033205110"><form method="post" id="ofo_1033205110" name="ofo_1033205110" action="/auth/52%3A1%3A1033205110%3A1%3A1%3Aofo_%3Afid/" onsubmit="return o_XHRSubmit('ofo_1033205110');" onkeydown="o_submitByEnter(event)"><input type="hidden" id="ofo_1033205110_dispatchuri" name="dispatchuri" value="undefined"><input type="hidden" id="ofo_1033205110_eventval" name="dispatchevent" value="undefined"><input type="hidden" name="_csrf" value="779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b"><div id="o_c1033205109"><div id="o_c1033205112"><div id="o_c1033205123" class="o_table_tabs"><ul class="o_segments o_segments_tab btn-group"><li><a href="javascript:jQuery('#o_fi1033205123').val('');o_ffXHREvent('ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205123','ofo_1033205110_eventval','2',false,true,false,true,'tab','Bookmarks')" class="btn btn-default btn-primary o_sel_mycourses_fav"><span>Favoriten</span></a></li><li><a href="javascript:jQuery('#o_fi1033205123').val('');o_ffXHREvent('ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205123','ofo_1033205110_eventval','2',false,true,false,true,'tab','My')" class="btn btn-default o_sel_mycourses_my"><span>Aktiv</span></a></li><li><a href="javascript:jQuery('#o_fi1033205123').val('');o_ffXHREvent('ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205123','ofo_1033205110_eventval','2',false,true,false,true,'tab','Closed')" class="btn btn-default o_sel_mycourses_closed"><span>Beendet</span></a></li><li><a href="javascript:jQuery('#o_fi1033205123').val('');o_ffXHREvent('ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205123','ofo_1033205110_eventval','2',false,true,false,true,'tab','Search')" class="btn btn-default o_sel_mycourses_search"><span>Suche</span></a></li></ul><a class="btn btn-default o_button_ghost o_table_remove_filters" id="o_fi1033205124" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205124','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, true);" draggable="false" role="button"><span>Filter entfernen</span></a></div><div id="o_c1033205125" class="o_table_filters_wrapper o_collapsed o_table_filters_large_off"><div class="o_button_group"><a class="btn btn-default o_button_details" id="o_fi1033205128" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205128','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, true);" draggable="false" role="button"><i class="o_icon o_icon-fw o_icon_details_expand" aria-hidden="true"></i> <span>Suchfilter ausblenden</span></a></div></div><div class="o_table_toolbar o_table_batch_hide clearfix"><div class="o_table_search o_noprint"><input type="text" id="o_fi1033205112_searchField" name="o_fi1033205112_searchField" class="form-control " size="35" value="" onfocus="o_info.lastFormFocusEl='o_fi1033205112_searchField'; " aria-label="Suche"><script>(function() { "use strict";
+jQuery('#o_fi1033205112_searchField').on('change keypress', {formId:"ofo_1033205110_dispatchuri", hideMessage:false, stopPropagation:false}, setFlexiFormDirtyByListener);})();</script><a class="btn btn-default o_reset_quick_search" id="o_fi1033205120" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205120','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, true);" draggable="false" role="button"><i class="o_icon o_icon_remove_filters" aria-hidden="true" title="Suche entfernen"></i> <span><span class="sr-only">Suche entfernen</span></span></a><a class="btn btn-default o_table_search_button" id="o_fi1033205121" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205121','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, true);" draggable="false" role="button"><i class="o_icon o_icon_search" aria-hidden="true" title="Suchen"></i> <span><span class="sr-only">Suchen</span></span></a><script>jQuery('#o_fi1033205112_searchField').on('keydown', function(e) {if(e.which == 13) { e.preventDefault(); e.stopPropagation();o_ffXHREvent('ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205121','ofo_1033205110_eventval','2',false,false,true,true); return false; }});</script> <span>17 Einträge</span></div><div class="o_table_tools o_noprint"><div class="btn-group"><a class="btn btn-default" id="o_fi1033205113" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205113','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, true);" draggable="false" role="button"><i class="o_icon o_icon_sort_menu o_icon-lg" aria-hidden="true" title="Tabelle sortieren"></i> <span><span class="sr-only">Tabelle sortieren</span></span> <i class="o_icon o_icon_caret o_icon-sm" title="Tabelle sortieren" aria-hidden="true"></i> </a></div> <div class="btn-group"><a class="btn btn-default o_sel_custom" id="o_fi1033205116" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205116','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, true);" draggable="false" role="button"><i class="o_icon o_icon_table_custom o_icon-lg" aria-hidden="true" title="Liste Ansicht"></i> <span><span class="sr-only">Liste Ansicht</span></span></a><a class=" active btn btn-default o_sel_table" aria-current="true" id="o_fi1033205117" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205117','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, true);" draggable="false" role="button"><i class="o_icon o_icon_table o_icon-lg" aria-hidden="true" title="Tabelle Ansicht"></i> <span><span class="sr-only">Tabelle Ansicht</span></span></a></div> <div class="btn-group"><a class="btn btn-default" id="o_fi1033205114" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205114','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, true);" draggable="false" role="button"><i class="o_icon o_icon_customize" aria-hidden="true" title="Spalten auswählen"></i> <span><span class="sr-only">Spalten auswählen</span></span></a></div> <div class="btn-group o_table_settings"><a class="btn btn-default" id="o_fi1033205115" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205115','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, true);" draggable="false" role="button"><i class="o_icon o_icon_actions" aria-hidden="true" title="Tabelle Einstellungen"></i> <span><span class="sr-only">Tabelle Einstellungen</span></span></a></div> </div></div><div class="o_table_wrapper o_table_flexi o_coursetable o_rendertype_classic"><div class="o_scrollable_wrapper" id="o_scroll_o_fi1033205112"><div class="o_scrollable"><table id="o_fi1033205112" class="table table-condensed table-striped table-hover"><thead><tr><th scope="col" class=" o_col_favorit"><a class="o_orderby" href="javascript:;" onclick="o_ffXHREvent('ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205112','ofo_1033205110_eventval','2',false,true,true,true,'sort','favorit','asc','asc')" role="button" onkeydown="triggerClick(event, true, true);" draggable="false"><i class="o_icon o_icon_bookmark_header" title="Favorit" aria-hidden="true"> </i><span class="sr-only">Favorit</span></a></th><th scope="col" class=" o_col_type"><a class="o_orderby" href="javascript:;" onclick="o_ffXHREvent('ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205112','ofo_1033205110_eventval','2',false,true,true,true,'sort','type','asc','asc')" role="button" onkeydown="triggerClick(event, true, true);" draggable="false">Typ</a></th><th scope="col" class=" o_col_displayname"><a class="o_orderby" href="javascript:;" onclick="o_ffXHREvent('ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205112','ofo_1033205110_eventval','2',false,true,true,true,'sort','displayname','asc','asc')" role="button" onkeydown="triggerClick(event, true, true);" draggable="false">Titel der Lernressource</a></th><th scope="col" class=" o_col_completion"><a class="o_orderby" href="javascript:;" onclick="o_ffXHREvent('ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033205112','ofo_1033205110_eventval','2',false,true,true,true,'sort','completion','asc','asc')" role="button" onkeydown="triggerClick(event, true, true);" draggable="false">Fortschritt</a></th><th scope="col">Öffnen</th></tr></thead><tbody><tr id="row_o_fi1033205112-0" class=""><td class="text-left "><div id="o_c1033206064" class=""><a class=" tablecell" id="o_fi1033206064" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206064','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206065" class=""><a class=" tablecell" id="o_fi1033206065" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5294030963" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206065','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Mentoring Programm für (Internationale) Wirtschaftswissenschaften</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206066" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206066" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5294030963" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206066','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-1" class=""><td class="text-left "><div id="o_c1033206068" class=""><a class=" tablecell" id="o_fi1033206068" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206068','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206069" class=""><a class=" tablecell" id="o_fi1033206069" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6023708692" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206069','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2026S403001 VO Statistische Datenanalyse</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206070" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206070" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6023708692" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206070','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-2" class=""><td class="text-left "><div id="o_c1033206072" class=""><a class=" tablecell" id="o_fi1033206072" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206072','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206073" class=""><a class=" tablecell" id="o_fi1033206073" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6031540238" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206073','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2026S404001 VO Theorie ökonomischer Entscheidungen: Strategisches Verhalten</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206074" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206074" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6031540238" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206074','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-3" class=""><td class="text-left "><div id="o_c1033206076" class=""><a class=" tablecell" id="o_fi1033206076" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206076','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206077" class=""><a class=" tablecell" id="o_fi1033206077" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6038519917" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206077','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2026S404005 PS Theorie ökonomischer Entscheidungen: Strategisches Verhalten</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206078" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206078" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6038519917" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206078','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-4" class=""><td class="text-left "><div id="o_c1033206080" class=""><a class=" tablecell" id="o_fi1033206080" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206080','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206081" class=""><a class=" tablecell" id="o_fi1033206081" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6035931207" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206081','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2026S406150 VO Bilanzierung und Bilanzanalyse</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206082" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206082" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6035931207" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206082','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-5" class=""><td class="text-left "><div id="o_c1033206084" class=""><a class=" tablecell" id="o_fi1033206084" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206084','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206085" class=""><a class=" tablecell" id="o_fi1033206085" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6038520730" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206085','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2026S406161 PS Bilanzierung und Bilanzanalyse</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206086" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206086" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6038520730" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206086','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-6" class=""><td class="text-left "><div id="o_c1033206088" class=""><a class=" tablecell" id="o_fi1033206088" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206088','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206089" class=""><a class=" tablecell" id="o_fi1033206089" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6038520085" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206089','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2026S432020 VO Einführung in die Makroökonomik: Kreislauf, Konjunktur und Wachstum</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206090" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206090" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6038520085" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206090','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-7" class=""><td class="text-left "><div id="o_c1033206092" class=""><a class=" tablecell" id="o_fi1033206092" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206092','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206093" class=""><a class=" tablecell" id="o_fi1033206093" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6038520438" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206093','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2026S432521 PS Einführung in die Makroökonomik</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206094" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206094" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6038520438" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206094','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-8" class=""><td class="text-left "><div id="o_c1033206096" class=""><a class=" tablecell" id="o_fi1033206096" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206096','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206097" class=""><a class=" tablecell" id="o_fi1033206097" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6026199046" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206097','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2026S437300 VO Management von Leistungsprozessen</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206098" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206098" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6026199046" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206098','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-9" class=""><td class="text-left "><div id="o_c1033206100" class=""><a class=" tablecell" id="o_fi1033206100" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206100','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206101" class=""><a class=" tablecell" id="o_fi1033206101" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6026199052" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206101','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2026S437305 PS Methoden zum Management von Leistungsprozessen</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206102" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206102" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6026199052" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206102','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-10" class=""><td class="text-left "><div id="o_c1033206104" class=""><a class=" tablecell" id="o_fi1033206104" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206104','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206105" class=""><a class=" tablecell" id="o_fi1033206105" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6033703148" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206105','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2026S703080 PS Software Engineering</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206106" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206106" href="https://lms.uibk.ac.at/auth/RepositoryEntry/6033703148" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206106','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-11" class=""><td class="text-left "><div id="o_c1033206108" class=""><a class=" tablecell" id="o_fi1033206108" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206108','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206109" class=""><a class=" tablecell" id="o_fi1033206109" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5944246707" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206109','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2025W703020 VO Datenbanksysteme</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206110" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206110" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5944246707" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206110','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-12" class=""><td class="text-left "><div id="o_c1033206112" class=""><a class=" tablecell" id="o_fi1033206112" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206112','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206113" class=""><a class=" tablecell" id="o_fi1033206113" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5933891898" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206113','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2025W703024 VO Funktionale Programmierung</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206114" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206114" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5933891898" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206114','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-13" class=""><td class="text-left "><div id="o_c1033206116" class=""><a class=" tablecell" id="o_fi1033206116" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206116','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206117" class=""><a class=" tablecell" id="o_fi1033206117" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5826707742" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206117','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2025S703007 VO Einführung in die Theoretische Informatik</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206118" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206118" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5826707742" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206118','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-14" class=""><td class="text-left "><div id="o_c1033206120" class=""><a class=" tablecell" id="o_fi1033206120" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206120','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206121" class=""><a class=" tablecell" id="o_fi1033206121" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5805998286" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206121','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>2025S703010 VO Algorithmen und Datenstrukturen</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206122" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206122" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5805998286" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206122','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-15" class=""><td class="text-left "><div id="o_c1033206124" class=""><a class=" tablecell" id="o_fi1033206124" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206124','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206125" class=""><a class=" tablecell" id="o_fi1033206125" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5823463508" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206125','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>VO Einführung in die Makroökonomik (Sommersemester)</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206126" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206126" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5823463508" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206126','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr><tr id="row_o_fi1033205112-16" class=""><td class="text-left "><div id="o_c1033206128" class=""><a class=" tablecell" id="o_fi1033206128" href="javascript:;" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206128','ofo_1033205110_eventval','2'); " onkeydown="triggerClick(event, true, false);" draggable="false"><i class="o_icon o_icon_bookmark" aria-hidden="true" title="Bookmark entfernen"></i> <span><span class="sr-only">Bookmark entfernen</span></span></a></div></td><td class="text-left "><div class="o_nowrap o_repoentry_type"><i class="o_icon o_icon-lg o_CourseModule_icon" title="Kurs"> </i></div></td><td class="text-left "><div id="o_c1033206129" class=""><a class=" tablecell" id="o_fi1033206129" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5717917862" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206129','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Mathematik</span></a></div></td><td class="text-left "></td><td class="text-left "><div id="o_c1033206130" class=""><a class="btn btn-sm btn-primary o_start tablecell" id="o_fi1033206130" href="https://lms.uibk.ac.at/auth/RepositoryEntry/5717917862" onmousedown="o_info.preventOnchange=true;" onmouseup="o_info.preventOnchange=false;" onclick="o_ffEvent(event,'ofo_1033205110','ofo_1033205110_dispatchuri','o_fi1033206130','ofo_1033205110_eventval','2');  return false;" onkeydown="triggerClick(event, true, false);" draggable="false"><span>Öffnen</span> <i class="o_icon o_icon_start" aria-hidden="true"></i> </a></div></td></tr></tbody></table></div></div><div class="o_table_pagination"></div></div><script>o_initScrollableOverflowIndicator('o_scroll_o_fi1033205112');</script><script>(function() { "use strict";
+jQuery('#o_fi1033205112').on('change keypress', {formId:"ofo_1033205110_dispatchuri", hideMessage:false, stopPropagation:false}, setFlexiFormDirtyByListener);})();</script></div></div></form> <script>
+ /* <![CDATA[ */ 
+ (function() {jQuery('#ofo_1033205110').keypress(function(event) {
+ if (13 == event.keyCode) {
+  event.preventDefault();
+  if (this.onsubmit()) { this.submit(); }
+ }
+});
+})();
+ /* ]]> */ 
+</script></div></div></div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div></div>
+		<a id="o_toplink" href="#o_top" onclick="o_scrollTop();" title="Zum Anfang der Seite">
+			<i class="o_icon o_icon_top"></i> 
+			nach oben
+		</a>	
+	</div>
+</div>
+
+<footer id="o_footer_wrapper">
+	<div id="o_footer_container" class="o_container_offcanvas container-fluid">
+		<div id="o_c1033204909"><div id="o_c1033204905"><div id="o_footer_user" class="clearfix">
+		<span id="o_username">Eingeloggt als <i>Pfister, Noah</i></span>
+	<span id="o_counter">(<span id="o_c1033204906">892</span> Personen sind online)</span>
+		<div id="o_c1033204908"><div id="o_c1033204907"><script>
+function o_shareSocialUrl() {
+	if(o_info.businessPath && o_info.businessPath.length > 0) return o_info.businessPath;
+	return 'https://lms.uibk.ac.at';
+} 
+function o_shareSocialTitle() {
+	return document.title;
+}
+function o_shareCallout() {
+	return '<p><input id="callout_share_link_in" type="text" name="cl_share_link" value="' + o_shareSocialUrl() + '" size="64" /></p>';
+}
+</script>
+
+<div id="o_share">
+
+	<a id="o_share_social" href="javascript:;" data-original-title="" title="">
+		<i class="o_icon o_icon_share_social o_icon-lg" aria-hidden="true" title="Link auf diese Seite teilen"></i>
+		<span class="sr-only">Link auf diese Seite teilen</span>
+	</a>
+	<div id="o_share_social_wrapper" class="hide"><div id="o_share_social_container">
+			<a tabindex="1" id="o_linkedin" href="#" target="_blank" onclick="window.open('https://www.linkedin.com/feed/?shareActive&amp;text='+encodeURIComponent(o_shareSocialTitle())+'%0A'+encodeURIComponent(o_shareSocialUrl()));return false;">
+				<i class="o_icon o_icon_linkedin o_icon-lg" aria-hidden="true" title="Link auf LinkedIn teilen"></i>
+				<span class="sr-only">Link auf LinkedIn teilen</span>
+			</a>
+			<a id="o_facebook" href="#" target="_blank" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(o_shareSocialUrl())+'&amp;t='+encodeURIComponent(o_shareSocialTitle()));return false;">
+				<i class="o_icon o_icon_facebook o_icon-lg" aria-hidden="true" title="Link auf facebook teilen"></i>
+				<span class="sr-only">Link auf facebook teilen</span>
+			</a>
+			<a id="o_twitter" href="#" target="_blank" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent(o_shareSocialUrl())+'&amp;text='+encodeURIComponent(o_shareSocialTitle()));return false;">
+				<i class="o_icon o_icon_twitter o_icon-lg" aria-hidden="true" title="Link Xen"></i>
+				<span class="sr-only">Link Xen</span>
+			</a>
+			<a id="o_mail" href="javascript: window.location.href='mailto:?subject=' + encodeURIComponent(o_shareSocialTitle()) + '&amp;body=' + encodeURIComponent(o_shareSocialUrl());">
+ 				<i class="o_icon o_icon_mailto o_icon-lg" aria-hidden="true" title="Link per Mail versenden"></i>
+ 				<span class="sr-only">Link per Mail versenden</span>
+ 			</a>
+	</div></div>
+	<script>
+	jQuery(function() {
+		o_shareLinkPopup('o_share_social', jQuery('#o_share_social_wrapper').html());
+	});
+	</script>
+		<a id="o_link" href="javascript:;" title="Link kopieren" data-original-title="Link kopieren">
+			<i class="o_icon o_icon_link o_icon-lg" aria-hidden="true" title="Link kopieren"></i>
+			<span class="sr-only">Link kopieren</span>
+		</a>
+		<a id="o_qrcode" href="javascript:;" title="QR-Code kopieren" data-original-title="QR-Code kopieren">
+			<i class="o_icon o_icon_qrcode o_icon-lg" aria-hidden="true" title="QR-Code kopieren"></i>
+			<span class="sr-only">QR-Code kopieren</span>
+		</a>
+		<script>
+		jQuery(function() {
+			o_shareLinkPopup('o_link', o_shareCallout);
+			o_QRCodePopup('o_qrcode', o_shareSocialUrl);
+		});
+		</script>
+		<a id="o_landingpage" href="javascript:;" onclick="o_XHREvent('/auth/52:1:1033204907:2:1/',false,false,'cid','setLandingPage','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;">
+		<i class="o_icon o_icon_landingpage o_icon-lg" aria-hidden="true" title="Aktuelle Seite im Profil als persönliche Startseite festlegen"></i>
+		<span class="sr-only">Aktuelle Seite im Profil als persönliche Startseite festlegen</span>
+	</a>
+</div>
+</div></div>
+</div>
+<div id="o_footer_powered" class="clearfix">
+	<a href="https://www.openolat.org" target="_blank" title="Informationen zum Lernmanagment System OpenOlat" rel="noopener noreferrer">
+		<img src="/raw/eb680c9:eb680c91e7a0752841391f44d8365c25071b4217/images/openolat/openolat_powerd_by_120x30.png" alt="OpenOlat Logo" width="120" height="30">
+	</a>
+</div>
+<div id="o_footer_version" class="clearfix">
+	<a class="" id="o_comenu_about" href="javascript:;" onclick="o_XHREvent('/auth/52:1:omenu_about:1:1/',true,true,'cid','about','_csrf','779baa3b-6b4e-4d9f-9ca3-851d0bd3a18b'); return false;" draggable="false" title="Informationen zu OpenOlat Build (eb680c9:eb680c91e7a0752841391f44d8365c25071b4217)"><span>OpenOlat&nbsp;20.2.7</span></a>
+</div>	
+</div></div>
+	</div>
+</footer>
+
+<div id="o_c1033204901"><div id="o_c1033205102"><script>
+"use strict";
+</script></div></div>
+<div id="o_c1033204902"><div id="o_c1033205103"><script>
+"use strict";
+</script></div></div>
+<div id="o_c1033204903"><div id="o_c1033205104"></div></div>
+
+<dialog class="dialog modal" tabindex="-1" aria-modal="true" aria-labelledby="o_so_md_1033204827" id="o_form_dirty_message" data-nosnippet="">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" aria-label="Close" onclick="o_guiCloseModal('#o_form_dirty_message').classList.remove('show');"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="o_so_md_1033204827">Ungespeicherte Formulardaten</h4>
+      </div>
+      <div class="modal-body">
+      	<p class="o_warning_with_icon">
+			Achtung! Sie haben noch ungespeicherte Formulardaten
+		</p>
+      	<p>
+			Wenn Sie die Schaltfläche <strong>Daten nicht speichern</strong> drücken verlassen Sie das Formular ohne zu speichern. <strong>Die enthaltenen Änderungen gehen damit verloren</strong>.
+		</p>
+      	<p>
+			Wenn Sie die Schaltfläche <strong>Zurück zum Formular</strong> drücken gelangen Sie zurück zum Formular und können dieses abspeichern. 
+		</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary pull-left o_form_dirty_back" onclick="o_guiCloseModal('#o_form_dirty_message').classList.remove('show');"><i class="o_icon o_icon-fw o_icon_back"> </i>Zurück zum Formular</button>
+        <button type="button" class="btn btn btn-danger o_form_dirty_ignore"><i class="o_icon o_icon-fw o_icon_clear_all"> </i>Daten nicht speichern</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="o_ajax_busy" data-nosnippet="">
+	<i class="o_icon o_icon_busy o_icon-5x o_icon-spin"></i>	
+	<div id="o_ajax_progress">
+		<div class="o_label">Daten werden übertragen...</div>
+		<div class="progress"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div></div>
+		<div class="o_progress_info text-muted small"> </div>
+		<div class="o_progress_buttons">
+			<button id="o_progress_cancel" class="btn btn-default">Abbrechen</button>
+		</div>
+	</div>
+</dialog>
+
+<div id="o_width_1em" style="width:1em; position: absolute; left: -1000px;" aria-hidden="true"></div>
+<div><script>
+// init size and listen to text resize events
+"use strict";
+jQuery(function() {
+	o_initEmPxFactor();
+});
+</script></div>
+</body></html>

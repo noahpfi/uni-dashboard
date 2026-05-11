@@ -1,0 +1,87 @@
+Statistische Datenanalyse
+Kapitel 6
+Zweistichproben t-Test
+Aufgabe 1
+VerwendenSieunserenMietspiegeldatensatzmietspiegel.rda.
+a) IstdiedurchschnittlicheMonatsmieteproQuadratmeterunterschiedlichin
+Abhängigkeit,obeineZentralheizungvorhandenistodernicht?
+b) UnterstütztunsereStichprobedieAlternativhypothese,dassimSchnitt
+WohnungenmiteinergehobenenAusstattungdesBadeseinehöhere
+MonatsmieteproQuadratmetererzielen?
+c) KannmiteinergehobenenAusstattungderKüchedurchschnittlicheine
+höhereMonatsmieteproQuadratmetererzieltwerden?
+d) ErzielteineWohnunginnormalerLageimSchnitteineniedrigere
+MonatsmieteproQuadratmeteralseineWohnunginguterLage?
+GehenSiedavonaus,dassdieVoraussetzungenfürdenpassendenstatistischen
+Testerfülltsind.
+© StatistischeDatenanalyse–6–Zweistichprobent-Test 1/7
+Aufgabe 1 a)
+IstdiedurchschnittlicheMonatsmieteproQuadratmeterunterschiedlichin
+Abhängigkeit,obeineZentralheizungvorhandenistodernicht?
+X...MonatsmieteproQuadratmeterfürWohnungenmitZentralheizung
+Y...MonatsmieteproQuadratmeterfürWohnungenohneZentralheizung
+H : µ = µ H : µ ̸= µ
+0 X Y 1 X Y
+R> attach(mietspiegel)
+R> t.test(mieteqm[zh == "mit"], mieteqm[zh == "ohne"],
++ alternative = "two.sided", paired = FALSE, var.equal = TRUE)
+Oder
+R> t.test(mieteqm ~ zh, data = mietspiegel,
++ alternative = "two.sided", var.equal = TRUE)
+© StatistischeDatenanalyse–6–Zweistichprobent-Test 2/7
+Aufgabe 1 b)
+UnterstütztunsereStichprobedieAlternativhypothese,dassimSchnitt
+WohnungenmiteinergehobenenAusstattungdesBadeseinehöhere
+MonatsmieteproQuadratmetererzielen?
+X...MonatsmieteproQuadratmeterfürWohnungenmitgehobener
+Badausstattung
+Y...MonatsmieteproQuadratmeterfürWohnungenmitnormaler
+Badausstattung
+H : µ ≤ µ H : µ > µ
+0 X Y 1 X Y
+R> t.test(mieteqm[bad == "gehoben"], mieteqm[bad == "normal"],
++ alternative = "greater", paired = FALSE, var.equal = TRUE)
+© StatistischeDatenanalyse–6–Zweistichprobent-Test 3/7
+Aufgabe 1 c)
+KannmiteinergehobenenAusstattungderKüchedurchschnittlicheinehöhere
+MonatsmieteproQuadratmetererzieltwerden?
+X...MonatsmieteproQuadratmeterfürWohnungenmitgehobener
+Küchenausstattung
+Y...MonatsmieteproQuadratmeterfürWohnungenmitnormaler
+Küchenausstattung
+H : µ ≤ µ H : µ > µ
+0 X Y 1 X Y
+R> t.test(mieteqm[kueche == "gehoben"], mieteqm[kueche == "normal"],
++ alternative = "greater", paired = FALSE, var.equal = TRUE)
+© StatistischeDatenanalyse–6–Zweistichprobent-Test 4/7
+Aufgabe 1 d
+ErzielteineWohnunginnormalerLageimSchnitteineniedrigereMonatsmiete
+proQuadratmeteralseineWohnunginguterLage?
+X...MonatsmieteproQuadratmeterfürWohnungeninnormalerLage
+Y...MonatsmieteproQuadratmeterfürWohnungeninguterLage
+H : µ ≥ µ H : µ < µ
+0 X Y 1 X Y
+R> t.test(mieteqm[lage == "normale Lage"], mieteqm[lage == "gute Lage"],
++ alternative = "less", paired = FALSE, var.equal = TRUE)
+© StatistischeDatenanalyse–6–Zweistichprobent-Test 5/7
+Aufgabe 2
+HabendieTeilnehmeramUS-Masters2026(augusta2026.rda)dieRunden2und
+4unterschiedlichgutabsolviert(VariablenR2undR4)?
+GehenSiedavonaus,dassdieVoraussetzungenfürdenpassendenstatistischen
+Testerfülltsind.
+Quelle:https://www.pgatour.com/leaderboard
+© StatistischeDatenanalyse–6–Zweistichprobent-Test 6/7
+Augusta 2026
+X ...PunkteinR2
+1
+X ...PunkteinR4
+2
+D = X −X DifferenzderPunkteR2undR4
+1 2
+H : µ = 0 H : µ ̸= 0
+0 D 1 D
+R> load("daten/augusta2026.rda")
+R> head(augusta2026)
+R> t.test(augusta2026$R2, augusta2026$R4, mu = 0, paired = TRUE,
++ alternative = "two.sided", conf.level = 0.95)
+© StatistischeDatenanalyse–6–Zweistichprobent-Test 7/7

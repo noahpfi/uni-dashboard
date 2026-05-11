@@ -1,0 +1,516 @@
+PS Software Engineering
+Projektmanagement – 05.03.2026
+Agenda
+» Projektplanung
+» Vorgehensmodell im Proseminar
+» Projektmanagement in Git
+PSSoftwareEngineering–Projektmanagement Seite 2
+Projektplan: Semester
+» Semesterbegin: Grobplanung
+» Welche Deadlines? Welche Features? Welche Milestones?
+» Abschnitt Projektplan im SW-Konzept
+» Während des Semesters: Inkrement
+• Ca. 2 Wochen
+• Meeting zu Beginn: Backlog priorisieren, Tasks aufsplitten, Aufwand abschätzen (siehe Meeting
+Protokolle)
+• Ziel: lauffähiges System mit n neuen Features
+PSSoftwareEngineering–Projektmanagement Seite 3
+Was ist zu tun? Projektplan für das ganze Semester
+» Überblicksmäßig
+» Was ist umzusetzen?
+» Wie hängen einzelne Features voneinander ab?
+» Welche Milestones gibt es?
+» Welche Features sollten in welchen Milestones umgesetzt werden?
+» Welche zusätzlichen Aufgaben sind zu erledigen? Z.B. Abnahmetests
+» Bedenken Sie u.a., dass
+• Sie Deadlines in anderen LVs haben und nicht immer das gleiche Arbeitspensum leisten können
+• Sie zwischendurch vielleicht unterwegs sind (Ostern, Feiertage)
+• Testdrehbuch, Zwischenpräsentation, Abnahmetests etc. ebenfalls eingeplant werden müssen
+PSSoftwareEngineering–Projektmanagement Seite 4
+Was ist zu tun? Laufende Inkrement-Planung
+» Am Anfang jedes neuen PS-Inkrements (z.B. Freitag nach Abgabedeadline)
+» Setzen Sie sich ein Zeitlimit
+» Vorangegangenen Milestone aufarbeiten
+• Falls offene Issues: warum?
+- Nicht mehr benötigt
+- Zu groß/unklar
+- Von einem anderen Feature blockiert
+- Zu viel vorgenommen
+• Falls Burndown Chart verwendet: welche Lehren lassen sich daraus ziehen?
+- Tatsächliches Burndown vs. idealer Trend (zu viel/zu wenig Arbeit im MS)
+- Kontinuierliche Entwicklung oder last-minute Sprints?
+» Nicht vergessen: Wiki Eintrag Protokoll
+PSSoftwareEngineering–Projektmanagement Seite 5
+Was ist zu tun? Laufende Inkrement-Planung Cont’d
+» Backlog aufarbeiten
+• Was muss in den aktuellen Milestone
+• Was kann in den nächsten Milestone
+• Was ist nicht mehr relevant, bereits gefixt, etc.
+» Neuen Milestone genauer planen
+• Passt das Ziel des MS, oder haben sich Prioritäten geändert
+• Vorhandene, high-level Features in kleinere, gut abgegrenzte Tasks herunterbrechen
+• Tasks priorisieren (z.B. unter Verwendung von Git Labels)
+• Task-Verantwortlichkeiten festlegen
+• Deadlines festlegen (z.B. wenn es Abhängigkeiten gibt)
+PSSoftwareEngineering–Projektmanagement Seite 6
+Laufendes Inkrement: Bugs, neue Features
+» Nicht alles kann am Anfang des Inkrements geplant werden
+» (cid:60)nvorhergesehen Bugs, zu spät bedacht Features, etc.
+» Mögliche Herangehensweise:
+• Neues Issue anlegen (möglichst genau beschreiben, z.B. Fehlerlog)
+• Neues Issue kategorisieren
+- Kritischer Bug: muss sofort (oder zumindest im laufenden MS) erledigt werden
+- Bug: behindert momentan laufende Entwicklung nicht; kann z.B. im nächsten MS gefixt werden
+(Backlog)
+- Kritisches Feature: ein wichtiges Feature wurde übersehen; z.B. team-interne Abstimmung, ob das
+Feature in den laufenden MS aufgenommen wird
+- Nice-to-have Feature: kommt in den Backlog
+» Wichtig:vermeidenSiees,BugfixesinFeatureBranchesumzusetzen.WennSieaufeinenkritischenBugstoßen,legenSieeinen
+neuenBranchan,behebenSiedenBugundmergenSiedieLösungindendevelopmentBranch.
+• AlleTeammitgliederhabensofortZugriffaufdieLösung.
+• Code,dernichtzurLösunggehört,gelangtgarantiertnichtvorzeitigindendevelopmentBranch
+• KlarerMergemitOptionzumMergeRequestundCodeReview
+PSSoftwareEngineering–Projektmanagement Seite 7
+Benötigtes Wissen & Werkzeuge
+1. Was muss überhaupt umgesetzt werden?
+2. Wie sollen Features priorisiert werden?
+3. Wie können Features in gut umsetzbare Tasks zerlegt werden?
+4. Wie kann man versuchen abzuschätzen, wie viel Zeit man zur (cid:60)msetzung eines Tasks benötigt?
+» Sowohl für die initiale Planung des Semesters…
+» …als auch zu Beginn jedes Sprints (insbes. Features in Tasks aufsplitten)
+PSSoftwareEngineering–Projektmanagement Seite 8
+Planung ist WIP
+» Wichtig: reflektieren Sie z.B. zu Beginn des nächsten Sprints, wie gut die angewandten Methoden
+funktioniert haben. Passen Sie Ihre Vorgehensweisen an.
+» 2 Wochen (oder sogar mehr) sind u.(cid:60). zu lange, um rasch auf falsche Priorisierung oder zu
+optimistische/pessimistische Zeitschätzungen zu reagieren
+• Setzen Sie zu Inkrement-Halbzeit ein Team-Meeting an
+• Besprechen Sie den Milestone Fortschritt
+• Passen Sie Priorisierung, Zeitschätzungen etc. an
+PSSoftwareEngineering–Projektmanagement Seite 9
+Beispiel: Datenschutz
+» Aus der Aufgabenstellung:
+SensordatenausRäumlichkeiten,indenenimmerdiegleichenPersonenarbeiten(z.B.Büroräumlichkeiten),dürfennurdann
+gespeichertundinderWebapplikationausgewertetwerden,wennimRaumzumindest5Personenanwesendsind.
+SensordatenausRäumlichkeiten,denenkeinefixeBelegungzugeordnetist(z.B.Konferenzräume,Aufenthaltsräume,Gänge),dürfen
+uneingeschränktgespeichertundausgewertetwerden.
+Abwesenheiten:DamitbelegungsabhängigeDatenschutzregelnjederzeitkorrektangewandtwerdenkönnen,müssenAbwesenheiten
+imSystemerfasstwerden.Nutzer:innenkönnenAbwesenheiten((cid:60)rlaub,Krankheit,Karenz,etc.)stunden-odertageweiseimSystem
+eintragen.
+PSSoftwareEngineering–Projektmanagement Seite 10
+Beispiel: Datenschutz
+» Schritt 1: Was umfasst das Feature?
+» Was ist das Ziel des Features?
+» Was davon wird auf der Sensorstation, dem Raspberry, der Webapp umgesetzt?
+» Welche Ansichten/Interaktionen hat ein (cid:60)ser der Rolle Mitarbeiter?
+» Welche Abteilungsleiter oder höheres Management?
+» Was gehört zum Feature, vs was sind Voraussetzungen?
+PSSoftwareEngineering–Projektmanagement Seite 11
+Beispiel: Datenschutz
+» Schritt 2: Priorisierung der Sub-Features
+» Ziel: Identifizieren, welche (Sub-)Features
+» essentiell
+» wichtig
+» Nice-to-have sind
+» MoSCo(W) (Must-have, Should-have, Could-have(, Won’t-have))
+• Must-have: essentielle Systemfunktionalität
+• Should-have: wichtige Funktionalität. System funktioniert prinzipiell ohne, aber nur eingeschränkt
+• Could-have: Nice-to-Have Features, verbessert (cid:60)ser Experience. Nicht essentiell
+• Won’t-have (for now): Features die im momentanen Inkrement nicht umgesetzt werden/gar nicht
+umgesetzt werden
+» Core Features First Ansatz
+» (cid:60)msetzung in Git: Labels
+PSSoftwareEngineering–Projektmanagement Seite 12
+Beispiel: Datenschutz
+» Schritt 3: Iterationen der identifizierten und priorisierten Sub-Features
+» Ziel:
+» Iteratives (cid:60)msetzen von Features
+» Es ist immer eine lauffähige Version des Features implementiert
+» Sie wird mit jeder Iteration komplexer/umfangreicher
+» Vorteile:
+» Man kann (den Kunden) der PS-Leitung immer etwas zeigen
+» Komplexität der einzelnen Iterationen < Gesamtkomplexität Feature
+» Einstiegshürde ist niedriger
+» Probleme können früher erkannt und dadurch eingeplant werden
+PSSoftwareEngineering–Projektmanagement Seite 13
+Beispiel: Datenschutz
+» Schritt 3: Iterationen der identifizierten und priorisierten Sub-Features
+» Mögliche Ansätze, um große oder abstrakte Features in kleinere, konkrete Aufgaben zu splitten
+• (cid:60)ser-Story basiert
+- Was möchte ein (cid:60)ser von einem bestimmten Feature haben?
+- CR(cid:60)D-Based, Workflow-Based, Vertical Slicing, …
+• Gherkin-Based (BDD-abgeleitet)
+- Wie kann erwartetes Verhalten getestet werden?
+- Backend, headless, komplexe Logik
+• Nach Schritten in einem Prozess
+- Welche Zustände durchläuft ein Feature? Welche Zustandsübergänge gibt es? Welche Events lösen
+Zustandsübergänge aus?
+• etc.
+» Wichtig: Immer inkrementell denken! Was ist die einfachste nächste Iteration des Features
+PSSoftwareEngineering–Projektmanagement Seite 14
+Beispiel: Datenschutz
+» Schritt 4: Aufwandsabschätzung
+» Wie viel Zeit muss zum (cid:60)msetzen des Features eingeplant werden?
+» Aus der Psychologie:
+» Option: Planning Poker
+» Ablauf
+• Jede Person im Team bekommt ein Set an Zahlen (meistens Fibonacci Zahlen: 1, 2, 3, 5, 8, 13, 21)
+• Ein Feature wird dem Team zur Abschätzung vorgelegt
+• Jede Person im Team wählt eine Nummer, die dem geschätzten Aufwand entspricht (je höher, desto
+mehr Aufwand)
+• Alle zeigen gleichzeitig ihre Nummern
+» Wenn die Aufwandsschätzungen weit auseinander gehen, wird das besprochen und der Vorgang
+wiederholt
+» Besprechen ist wichtig! Jede Person hat eine (etwas) andere Sicht auf das System und damit auf
+mögliche Probleme/Herausforderungen
+PSSoftwareEngineering–Projektmanagement Seite 15
+Agenda
+» Projektplanung
+» Vorgehensmodell im Proseminar
+» Projektmanagement in GIT
+PSSoftwareEngineering–Projektmanagement Seite 16
+Vorgehensmodell
+Ein Vorgehensmodell (Softwareentwicklungsmodell) definiert
+» die Aktivitäten, die im Laufe der Softwareentwicklung durchlaufen werden
+• z.B. Angebotserstellung oder Testen
+» die Produkte (Dokumente, Modelle), die innerhalb der Aktivitäten erstellt werden
+• z.B. Pflichtenheft oder lauffähiges System
+» die Beschreibungstechniken und Methoden, die in den Produkten bzw. zur Erstellung der
+Produkte verwendet werden
+• z.B. Klassendiagramme
+» die für die Aktivitäten und Produkte Verantwortlichen
+• z.B. Projektmanager, Entwickler
+» den Prozess, d.h. mögliche Abfolgen von Aktivitäten
+PSSoftwareEngineering–Projektmanagement Seite 17
+Beispiele von Vorgehensmodellen
+»Wasserfallmodell
+» Sequentielles Durchlaufen aller Schritte (Anforderungsspezifikation, Design,
+Implementierung, Test)
+» Agile Methoden
+» Inkrementelle Entwicklung mit sehr kurzen Zyklen und Fokus auf Softwarequalität
+PSSoftwareEngineering–Projektmanagement Seite 18
+Vorgehensmodell des Proseminars
+» Abgeleitet aus agilen Methoden der Softwareentwicklung (Scrum) und Methoden der
+Anforderungsspezifikation
+Semesteranfang Konzept Vorträgeund
+(Anforderungen,Oberflächenprototyp,
+Workshops
+SW-Architektur,Projektplan)
+Dokumentation Projektmanagement Inkremente alle2Wochen
+zur
+Aufwände inGit
+Besprechung
+Dokumentierte Testdrehbuch Abnahmetest
+Endversion
+UpdateKonzeptpapier KIErfahrungsbericht
+(Anforderungen,SW-Architektur)
+Semesterende
+PSSoftwareEngineering–Projektmanagement Seite 19
+Inkrement
+» Eine lauffähige, qualitätsgesicherte Version des Systems, mit neuen Features
+» Jedes Inkrement umfasst:
+• Planung der Ziele (siehe auch Meeting Protokoll)
+• Implementierung
+• Dokumentation
+• Qualitätssicherung (J(cid:60)nit Tests, SonarQube)
+• Dokumentation
+» Je sorgfältiger pro Inkrement gearbeitet wird, desto weniger Arbeit fällt am Semesterende an
+PSSoftwareEngineering–Projektmanagement Seite 20
+Auch das ist Dokumentation
+» Wie kann was ausgeführt werden
+• Bedienung Installationsskripts
+• Wie kann das Web-App gestartet werden
+• Welche (cid:60)ser existieren in der Datenbank, wie
+lauten ihre Login-Credentials
+» Getroffene Entscheidungen
+• Lösch-Policies
+• Modus-Hierarchie
+• Verwendung Designpatterns
+• Logging Policies
+• Nicht umgesetzte Features
+PSSoftwareEngineering–Projektmanagement Seite 21
+Agenda
+» Projektplanung
+» Vorgehensmodell im Proseminar
+» Projektmanagement in Git
+PSSoftwareEngineering–Projektmanagement Seite 22
+GIT Branching Modell – Stabile Branches
+» Esgibt2Branchesdieimmerexistieren:
+1. Main:Diefertige„production-ready“Versionder
+Software
+2. Develop:deraktuelleStandderEntwicklungfürdas
+nächsteRelease
+» JederMergenachMainisteinRelease!
+Releaseskönnenalssolchesgetaggedwerden.
+PSSoftwareEngineering–Projektmanagement Seite 23
+GIT Branching Modell – Feature branches
+Alsowirdin„Develop“entwickelt?
+Nein!
+EsistnichtklarwanneinFeaturereleasedwird,darumTrennunginSub-Branches.
+Erlaubtesparallelzuarbeiten
+Wichtig
+» mergenmitgit merge --no-ff Branchname
+» KEIN Commit squashing beim mergen!
+PSSoftwareEngineering–Projektmanagement Seite 24
+GIT Branching in der Praxis
+» EinvielverwendetesModellinderIndustrie.
+» ImPS:vereinfachtesModellohneReleaseundHotfix
+Branches
+PSSoftwareEngineering–Projektmanagement Seite 25
+Benennung der Feature Branches
+» Wichtig: einigen Sie sich im Team auf eine Variante und bleiben Sie das gesamte Semester dabei.
+» Sie können Ansätze mischen
+» GitHub Flow (Einfachste Variante)
+• user-create-dialog
+• fix-login-bug
+» (reduzierter) GitFlow Ansatz (mit Präfix zur Kategorisierung)
+• Präfix: feature/ hotfix/ bugfix/ release/
+- feature/shift-validation
+- bugfix/fix-login-bug
+- hotfix/=>dringendeBugfixesinProductionCode;fürdasPSnichtrelevant
+- release/=>fürdasPSnichtrelevant
+PSSoftwareEngineering–Projektmanagement Seite 26
+Benennung der Feature Branches Cont’d
+» Mit Custom Präfix » Mit Issue Nummern (in beliebiger Konstellation)
+• Nach Layer/Systemteil
+• 123-shift-validation
+- frontend/user-create-dialog
+• feature/123-shift-validation
+- backend/shift-validation
+- raspberry/rest-api-definition • backend/123-shift-validation
+• Nach Aufgaben • issue-234/workplace-create-ui
+- feature/user-create-dialog • issue-234/workplace-crud
+- bug/fix-bug-login - Relevant, wenn issue-234 mehrere Sub-Issues
+hat
+- refactor/shift-validation
+- docu/update-sw-concept
+- test/create-acceptance-tests-webapp
+PSSoftwareEngineering–Projektmanagement Seite 27
+Git Tools
+» Wichtig: einigen Sie sich im Team darauf, wie Sie Git zu Projektplanung und Projektmanagement
+verwenden und halten Sie sich das ganze Semester daran
+• Dokumentieren Sie das in Git
+» Die Abläufe sollen Sie unterstützen und daher akzeptablen Mehraufwand bedeuten! Balance finden
+» Einsatz von Milestones und Labels ist verpflichtend!
+» Labels
+» Issue Boards für Kanban-Like Projektmanagement
+» Milestone Burndown Charts
+» Merge Requests
+» GitLab Time Tracking
+GitLab Quick-Actions: textbasierte Kürzel für verschiedene GitLab Actions (wie z.B. Time Tracking)
+PSSoftwareEngineering–Projektmanagement Seite 28
+Burndown und Burnup Charts
+Quelle:https://docs.gitlab.com/user/project/milestones/burndown_and_burnup_charts/
+PSSoftwareEngineering–Projektmanagement Seite 29
+Trotz allem
+» Es ist wichtig zu planen, aber damit zu rechnen, dass alles anders kommt
+» (cid:60)msetzung soll nicht am planen scheitern
+• Zeitlimits für Planungs-Sessions setzen
+• Kurze Zwischen-Meetings im Team während des Inkrements (z.B. 30 Minuten) für (cid:60)pdates
+• Auch außerhalb der Planungseinheiten mit anderen Teammitgliedern kommunizieren
+• Frühzeitig Probleme ansprechen, damit das Team rasch darauf reagieren kann
+• Hilfe in Anspruch nehmen (LVA-Leitung, OLAT Forum)
+» Wenige, konkret formulierte Richtlinien im Team bzgl. Entwicklung, Issues, Branching, Dokumentation und
+Testen, etc.
+• Dafür über das ganze Semester hindurch umgesetzt
+» So viel wie möglich schriftlich festhalten
+• Designentscheidungen
+• Lösch-Policy
+• Features, die nicht umgesetzt werden
+• API Schnittstellen
+PSSoftwareEngineering–Projektmanagement Seite 30
+Sammlung Techniken Projektplanung
+PSSoftwareEngineering–Projektmanagement Seite 31
+Projektplan: Feature Priorisierung
+» Viel zu tun - wenig Zeit: was sind die wichtigsten Features, die umgesetzt werden müssen
+» Methoden zur Priorisierung von Features/Issues
+• MoSCoW (Must-have, Should-have, Could-have, Won’t-have)
+• Value vs Effort Matrix
+• Abgewandelte Buy-a-Feature Methode
+• Eisenhower Matrix ((cid:60)rgency vs Importance)
+» Methoden können gestackt werden
+PSSoftwareEngineering–Projektmanagement Seite 32
+MoSCoW
+» MoSCoW (Must-have, Should-have, Could-have, Won’t-have)
+• Must-have: essentielle Systemfunktionalität
+• Should-have: wichtige Funktionalität. System funktioniert prinzipiell ohne, aber nur eingeschränkt
+• Could-have: Nice-to-Have Features, verbessert (cid:60)ser Experience. Nicht essentiell
+• Won’t-have (for now): Features die im momentanen Inkrement nicht umgesetzt werden/gar nicht
+umgesetzt werden
+» Core Features First Ansatz
+» (cid:60)msetzung in Git: Labels
+» z.B. Schichtplan Applikation
+• Schichtplan erstellen: Must-Have
+• Schichtplan validieren: Should-Have
+• Schichtplan kopieren: Could-Have
+PSSoftwareEngineering–Projektmanagement Seite 33
+Value vs. Effort Matrix
+» Voraussetzung:
+• Liste von Features
+• Features haben Value (z.B. MoSCoW)
+• Features haben Effort (z.B. Planning Poker)
+» Value vs. Effort: Auflistung der Features im 2x2 Grid
+• High Value, Low Effort (aka. Quick Wins) -> hohe Priorität
+• High Value, High Effort (aka. Big Bets) -> müssen gut geplant werden (potentiell über mehrere
+Inkremente)
+• Low Value, Low Effort (aka. Nice-to-Haves) -> wenn gerade sonst nichts zu tun ist
+• Low Value, High Effort (aka. Time Wasters) -> nur wenn am Ende viel Zeit übrig ist
+» Fokus:
+• Was bringt den (cid:60)sers am meisten (d.h. welche Features erwarten die Kunden/die PS-Leitung)
+• (cid:60)nd was kann am schnellsten umgesetzt werden
+PSSoftwareEngineering–Projektmanagement Seite 34
+Buy-A-Feature
+» Eigentlich: Kundenwünsche. Seid eure eigenen Kunden
+» Ablauf
+• Jedes Feature bekommt einen Preis
+• Der Preis kann Komplexität, Zeitaufwand, oder Impact des Features reflektieren
+• Jedes Teammitglied bekommt ein fixes Budget (z.B. €100)
+• Teammitglieder kaufen sich in Features ein
+• Je wichtiger einem Teammitglied ein Feature ist, desto mehr Geld gibt er oder sie dafür aus
+• Die Features, die “fully funded” sind, werden in der Planung priorisiert
+» Budget und Preis müssen verhältnismäßig sein (z.B. Budget: €100, Preise: €30, €50, €70)
+» Man muss ein Feature nicht zur gänze “kaufen”, sondern kann auch einen Teilbetrag zum Feature leisten
+» Wenn man selbst kein Budget mehr hat, aber ein weiteres Feature als essentiell ansieht, dann kann man
+versuchen, andere Spieler davon zu überzeugen, das spezifische Feature zu kaufen
+PSSoftwareEngineering–Projektmanagement Seite 35
+Eisenhower Matrix
+» Voraussetzung:
+• Liste von Features
+• Es ist klar, welche Features Urgent sind
+• Es ist klar, welche Features Important sind
+» (cid:60)rgent vs Important
+• (cid:60)rgent & Important
+• (cid:60)rgent & Not Important
+• Not (cid:60)rgent & Important
+• Not (cid:60)rgent & Not Important
+» z.B.: es ist Mittwoch Abend, am Freitag um 8:00 ist die Inkrement-Deadline, was wird bis dahin aus dem
+Milestone noch umgesetzt
+PSSoftwareEngineering–Projektmanagement Seite 36
+Projektplan: Feature-Breakdown
+» Konkrete Projektplanung benötigt konkrete Features
+• Möglichst ohne Abhängigkeiten
+• In einem Inkrement umsetzbar
+• Testbar
+» Mögliche Ansätze, um große oder abstrakte Features in kleinere, konkrete Aufgaben zu splitten
+• (cid:60)ser-Story basiert
+- Was möchte ein (cid:60)ser von einem bestimmten Feature haben?
+- CR(cid:60)D-Based, Workflow-Based, Vertical Slicing, …
+• Gherkin-Based (BDD-abgeleitet)
+- Wie kann erwartetes Verhalten getestet werden?
+- Backend, headless, komplexe Logik
+• Nach Schritten in einem Prozess
+- Welche Zustände durchläuft ein Feature? Welche Zustandsübergänge gibt es? Welche Events lösen
+Zustandsübergänge aus?
+• etc.
+PSSoftwareEngineering–Projektmanagement Seite 37
+Feature-Breakdown: (cid:60)ser-Story basiert
+» CRUD: Feature wird nach CR(cid:60)D Operationen aufgesplittet. Frontend- und Backend Teams arbeiten
+parallel
+» Vertical Slicing:
+• Anwendung: Komplexe Features, die in Inkrementen umgesetzt werden
+• Aka. End-to-End Mini-Features
+• Fullstack Feature Entwicklung
+• Steigende Komplexität/Feature-(cid:60)mfang
+- Step 1: minimale Variante des Features End-to-End
+- Step n: Erweiterung um Sub-Feature n + 1
+• Endergebnis: immer eine fully-working Version des Features. Feature wird nach und nach komplett
+» z.B. Schichtplan erstellen:
+• Schritt 1. Schichtplan erstellen, editieren, veröffentlichen
+• Schritt 2. Abwesenheiten von MA bei Schichtplan erstellen/editieren anzeigen
+• Schritt 3. Schichtplan vor Veröffentlichung validieren
+PSSoftwareEngineering–Projektmanagement Seite 38
+Feature-Breakdown: (cid:60)ser-Story basiert
+» Split by Workflow Steps: Multi-Path Features
+• Ein Feature ist komplex und besteht aus mehreren Schritten
+• Feature wird in die einzelnen Schritte aufgeteilt
+• u.(cid:60). weitere (cid:60)nterteilung nach Frontend/Backend
+» z.B. Schichtplan Workflow
+• 1. Neuen Schichtplan erstellen
+• 2. Schichten hinzufügen
+• 3. (cid:60)ser zu Schichten hinzufügen
+• 4. Schichtplan validieren -> kann z.B. nach Prozess weiter unterteilt werden
+• 5. Schichtplan veröffentlichen
+PSSoftwareEngineering–Projektmanagement Seite 39
+Feature-Breakdown: (cid:60)ser-Story basiert
+» Happy Path vs Edge Cases/Points of Failure
+» Voraussetzung
+• Best Case und Edge Case Varianten eines Features identifiziert
+• Zuerst wird Best Case implementiert
+• Dann macht man sich über Edge Case(s) Gedanken
+» z.B. Schichtplan Veröffentlichung
+• Feature 1: Schichtplan wird veröffentlicht, wenn Validierung fehlerfrei durchläuft
+- (cid:60)ser-Ansicht
+- Änderung Status in der Datenbank
+- Schichtplan kann nicht mehr geändert werden
+• Feature 2: Schichtplan bleibt im Status “in Entwurf”, wenn Validierung fehlschlägt
+- Manager bekommt Information, warum Validierung fehlgeschlagen ist
+PSSoftwareEngineering–Projektmanagement Seite 40
+Feature-Breakdown: Gherkin-Based (adaptiert)
+» Aus Behavior-Driven Development (BDD)
+» Features werden nach erwartetem Verhalten beschrieben
+• vs. (cid:60)ser-Interaktion
+• Features sind klar verständlich und testbar
+» Gherkin-Syntax: Given-When-Then
+• Dokumentation inbegriffen
+• Aside: Es existieren Tools, die daraus automatisierte Tests generieren können
+» Given Andrea is assigned a shift Monday 9:00 - 13:00
+When the manager tries to assign Andrea to a shift Monday 12:00 - 16:00
+Then the assignment should be rejected by the system
+And display “Scheduling Conflict Detected: Double booking”
+» Given Andrea is absent every Monday all day
+When the manager tries to assign Andrea to a shift Monday 12:00 - 16:00
+Then the assignment should be rejected by the system
+And display “Scheduling Conflict Detected: Employee absent”
+PSSoftwareEngineering–Projektmanagement Seite 41
+Projektplan: Zeitschätzung
+» Wie viel Zeitaufwand ist ein Feature?
+» Grundlage zur Milestone Gestaltung
+• Beschränkte Arbeitszeit
+• Zusätzlicher Aufwand (Dokumentation, andere Abgaben, Projektmanagement)
+» Mögliche Schätzmethoden
+• T-Shirt-Sizing
+• Planning Poker
+• Three-Point Estimation (PERT)
+PSSoftwareEngineering–Projektmanagement Seite 42
+T-Shirt Sizing
+» Einfache, intuitive Methode zur Aufwandsschätzung
+» Schnelle Einteilung von Features für eine erste Abschätzung
+» Mögliche Kategorien
+• XS: trivial, 1-2 Stunden
+• S: kleiner Task, ca. 4 Stunden (ein halber Arbeitstag)
+• M: moderat, 1-2 Tage
+• L: großes Feature, 2-5 Tage
+• XL: sehr großes Feature, mehr als 5 Tage -> Feature ist zu groß!
+» Hilfreich, um zu grobgranulare Tasks zu erkennen (XL)
+» Hilfreich, um erste grobe Verteilung der Tasks auf Milestones zu machen
+• Wenige L Tasks …
+» Sprint-Balancing
+PSSoftwareEngineering–Projektmanagement Seite 43
+Planning Poker
+» Detaillierter als T-Shirt-Sizing. Mehr Diskussion zu erwarten, bis Konsens erreicht ist.
+» Ablauf
+• Jede im Team bekommt ein Nummer-Set (meistens Fibonacci Nummern: 1, 2, 3, 5, 8, 13, 21)
+• Ein Feature wird dem Team zur Abschätzung vorgelegt
+• Jeder im Team wählt eine Nummer, die dem geschätzten Aufwand entspricht (je höher, desto mehr
+Aufwand)
+• Alle zeigen gleichzeitig ihre Nummern
+• Wenn die Aufwandsschätzungen weit auseinander gehen, wird das besprochen und der Vorgang
+wiederholt
+PSSoftwareEngineering–Projektmanagement Seite 44
+Three-Point Estimation (PERT)
+» Mehr Details, (cid:60)nsicherheit und Worst Case Szenarios
+» Kann nach einer schnellen T-Shirt-Sizing Session verwendet werden, um Features besser abzuschätzen
+» Drei Schätzungen pro Feature
+• O(ptimistic): alles läuft, keine nennenswerten Bugs, gute Doku
+• P(essimistic): nichts funktioniert, cryptische Bugs, keine Doku
+• M(ost likely): Mischung
+» Ein gewichtetes Mittel berechnen
+• PERT Formel (Program Analysis Review Technique)
+• PERT = (O + 4*M + P)/6
+» z.B. Schichtplan Validierung: Schicht-Konflikte
+• O: einfache Überprüfung, alle MA nur in der gleichen Firma angestellt
+P: Nachtschichten, 24h Schichten, die meisten/alle MA haben Anstellungen in weiteren Firmen
+M: Manche MA haben Anstellungen in weiteren Firmen
+PSSoftwareEngineering–Projektmanagement Seite 45
+Page46
+PSSoftwareEngineering–WorkshopProjektmanagement

@@ -1,0 +1,291 @@
+Statistische Datenanalyse
+Robuste Tests
+Robuste Tests
+Rangsummentest
+© StatistischeDatenanalyse–14–RobusteTests 1/19
+II) Wilcoxon-Rang-Test für gepaarte
+(verbundene) Stichproben
+• H :EsgibtkeinenUnterschiedindenReaktionszeiten
+0
+H :EsgibteinenUnterschiedindenReaktionszeiten
+1
+• Differenz(d)bilden:
+ohne 232 245 234 248 247 239 241 246 249 250
+mit 251 253 252 255 256 259 258 257 235 240
+d -19 -8 -18 -7 -9 -20 -17 -11 14 10
+© StatistischeDatenanalyse–14–RobusteTests 2/19
+• R aufteilen,obsiezupositivenodernegativen
+i
+Differenzengehören,unddiejeweiligenRangsummen
+bilden
+Summe
+R− 9 2 8 1 3 10 7 5 45
+R+ 6 4 10
+Wilcoxon-Rang-Test für gepaarte
+(verbundene) Stichproben
+• RängederDifferenzenbildenR:
+i
+ohne 232 245 234 248 247 239 241 246 249 250
+mit 251 253 252 255 256 259 258 257 235 240
+d -19 -8 -18 -7 -9 -20 -17 -11 14 10
+abs(d) 19 8 18 7 9 20 17 11 14 10
+R 9 2 8 1 3 10 7 5 6 4
+i
+© StatistischeDatenanalyse–14–RobusteTests 3/19
+Wilcoxon-Rang-Test für gepaarte
+(verbundene) Stichproben
+• RängederDifferenzenbildenR:
+i
+ohne 232 245 234 248 247 239 241 246 249 250
+mit 251 253 252 255 256 259 258 257 235 240
+d -19 -8 -18 -7 -9 -20 -17 -11 14 10
+abs(d) 19 8 18 7 9 20 17 11 14 10
+R 9 2 8 1 3 10 7 5 6 4
+i
+• R aufteilen,obsiezupositivenodernegativen
+i
+Differenzengehören,unddiejeweiligenRangsummen
+bilden
+Summe
+R− 9 2 8 1 3 10 7 5 45
+R+ 6 4 10
+© StatistischeDatenanalyse–14–RobusteTests 3/19
+Wilcoxon-Rang-Test für gepaarte
+(verbundene) Stichproben
+ohne 232 245 234 248 247 239 241 246 249 250
+mit 251 253 252 255 256 259 258 257 235 240
+d -19 -8 -18 -7 -9 -20 -17 -11 14 10
+abs(d) 19 8 18 7 9 20 17 11 14 10
+R 9 2 8 1 3 10 7 5 6 4
+i
+Summe
+R− 9 2 8 1 3 10 7 5 45
+R+ 6 4 10
+• UndjetztdieSummederRängezudenpositiven
+Differenzen als TeststatistikverwendenV = 10und
+AlgorithmuszurBerechnungderVerteilungder
+Teststatistik.
+© StatistischeDatenanalyse–14–RobusteTests 4/19
+Wilcoxon-Rang-Test auch für gepaarte
+(verbundene) Stichproben in R
+R> wilcox.test(ohne, mit, paired=TRUE, alternative = "two.sided")
+Wilcoxon signed rank exact test
+data: ohne and mit
+V = 10, p-value = 0.08
+alternative hypothesis: true location shift is not equal to 0
+R> wilcox.test(ohne, mit, paired=TRUE, alternative = "less")
+Wilcoxon signed rank exact test
+data: ohne and mit
+V = 10, p-value = 0.04
+alternative hypothesis: true location shift is less than 0
+© StatistischeDatenanalyse–14–RobusteTests 5/19
+III) Wilcoxon-Rang-Test für eine Stichprobe
+• DasgleicheTestprinzipkannauchbeieinerStichprobe
+angewendetwerden.
+• Fragestellung:Kannmandavonausgehen,dassder
+SchalterimSchnittöfterals240malinderMinutebereits
+ohneAufputschmittelbetätigtwurde?
+• Vorgehensweise:DifferenzderWertezu240bilden.
+• DannwiederdenAbsolutwertenderDifferenzenRänge
+zuteilen,AchtungBindungen.
+• DieRängederpositiven Differenzenaufsummieren.
+© StatistischeDatenanalyse–14–RobusteTests 6/19
+III) Wilcoxon-Rang-Test für eine Stichprobe
+ohne 232 245 234 248 247 239 241 246 249 250
+d -8 5 -6 8 7 -1 1 6 9 10
+abs(d) 8 5 6 8 7 1 1 6 9 10
+R 7.5 3 4.5 7.5 6 1.5 1.5 4.5 9 10
+i
+Summe
+R− 7.5 4.5 1.5
+R+ 3 7.5 6 1.5 4.5 9 10 41.5
+R> options(digits=8)
+R> wilcox.test(ohne, mu = 240, alternative = "greater", exact = FALSE)
+Wilcoxon signed rank test with continuity correction
+data: ohne
+V = 41.5, p-value = 0.083988
+alternative hypothesis: true location is greater than 240
+© StatistischeDatenanalyse–14–RobusteTests 7/19
+Zusammenfassung
+1 Vorzeichentest
+• EineSP
+TeststatistikV=ZahlBeobachtungenüber/unterMedian
+V∼B(n,π =0.5)oderV∼a N(n·π,n·π·(1−π))
+• ZweigepaarteSP
+TeststatistikV=Zahlpos/negDifferenzen
+V∼B(n,π =0.5)oderV∼a N(n·π,n·π·(1−π))
+2 Rangsummentest
+• EineSP
+TeststatistikV=SummeRängepos.Differenzen
+• ZweigepaarteSP
+TeststatistikV=SummeRängepos.Differenzen
+• ZweiunabhängigeSP
+TeststatistikW=kleinereSummederRänge
+TeststatistikU=W−n (n +1)/2
+A A
+© StatistischeDatenanalyse–14–RobusteTests 8/19
+Robuste Tests
+Kruskal-Wallis-
+Varianzanalyse
+© StatistischeDatenanalyse–14–RobusteTests 9/19
+Robuste Kruskal-Wallis-Varianzanalyse
+k-Stichprobenproblem:VerwendeeineArtVarianzanalyse
+aufBasisderRängeR vonBeobachtungiinStichprobej
+ij
+(Kruskal-Wallis-Test).
+k
+(cid:80) n(R ¯ −R ¯)2
+j j
+j=1
+K = (N−1) ,
+(cid:80)
+k
+(cid:80)
+nj
+(R −R ¯)2
+ij
+j=1i=1
+¯ ¯
+wobeiRundR dieDurchschnittsrängeinsgesamtbzw.in
+j
+Stichprobejsind.N = n +n +···+n istder
+1 2 k
+Gesamtstichprobenumfang.
+Prüfverteilung:Permutationsverteilung(i.d.R.aufBasisvon
+AlgorithmenzurdirektenBerechnung).
+© StatistischeDatenanalyse–14–RobusteTests 10/19
+Robuste Kruskal-Wallis-Varianzanalyse
+R> kruskal.test(mieteqm ~ bad, data = mietspiegel)
+Kruskal-Wallis rank sum test
+data: mieteqm by bad
+Kruskal-Wallis chi-squared = 5.8, df = 1, p-value =
+0.02
+R> kruskal.test(mieteqm ~ kueche, data = mietspiegel)
+Kruskal-Wallis rank sum test
+data: mieteqm by kueche
+Kruskal-Wallis chi-squared = 54, df = 1, p-value =
+2e-13
+R> kruskal.test(mieteqm ~ lage, data = mietspiegel)
+Kruskal-Wallis rank sum test
+data: mieteqm by lage
+Kruskal-Wallis chi-squared = 23, df = 2, p-value =
+8e-06
+© StatistischeDatenanalyse–14–RobusteTests 11/19
+Robuste Tests
+Spearman
+Korrelationskoeffizient
+© StatistischeDatenanalyse–14–RobusteTests 12/19
+Korrelationstest für robustes
+Korrelationsmaß
+• Spearmans ϱ:BerechnungderPearson-Korrelationfür
+dierangtransformiertenVariablen.
+Tests:FürdiesesKorrelationsmaßgibtesTeststatistikenmit
+NormalverteilungsapproximationensowieAlgorithmenzur
+BerechnungderexaktenPermutationsverteilung.
+© StatistischeDatenanalyse–14–RobusteTests 13/19
+Spearmans ϱ - Beispiel
+EinneuesMessinstrumentsolldieRisikobereitschaftvon
+Studienabgänger:innenmessen(Skala0-100).Nunsoll
+untersuchtwerden,obdieSelbsteinschätzung(Selbst)der
+RisikobereitschaftbeidenStudienabgänger:innenmitder
+Fremdeinschätzung(Fremd)durchderenPartner:in(Skala
+0-10)zusammenhängt.
+Proband:in Selbst Fremd
+3 43 3.0
+7 47 1.2
+4 52 4.2
+8 54 4.0
+5 56 4.3
+6 58 6.6
+1 60 2.8
+2 68 5.9
+9 69 4.1
+10 72 4.8
+© StatistischeDatenanalyse–14–RobusteTests 14/19
+Spearmans ϱ - Beispiel
+Proband:in Selbst Selbst Fremd Fremd
+Rang Rang
+3 43 1 3.0 3
+7 47 2 1.2 1
+4 52 3 4.2 6
+8 54 4 4.0 4
+5 56 5 4.3 7
+6 58 6 6.6 10
+1 60 7 2.8 2
+2 68 8 5.9 9
+9 69 9 4.1 5
+10 72 10 4.8 8
+© StatistischeDatenanalyse–14–RobusteTests 15/19
+Spearmans ϱ - Beispiel
+H : ϱ = 0versusH : ϱ ̸= 0
+0 1
+R> cor.test(selbst, fremd, method="spearman")
+’
+Spearmans rank correlation rho
+data: selbst and fremd
+S = 80, p-value = 0.1
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+rho
+0.5152
+ϱˆ= 0.515
+R> cor(selbst_rang, fremd_rang, method="pearson")
+[1] 0.5152
+R> cor(selbst, fremd, method="pearson")
+[1] 0.5507
+© StatistischeDatenanalyse–14–RobusteTests 16/19
+Spearmans ϱ - monotoner versus linearer
+Zusammenhang I
+DieSpearman-Korrelationmisstdenmonotonen
+Zusammenhang,währenddiePearson-Korrelationden
+linearenZusammenhangmisst.
+R> x <- seq(0,3,0.1)
+R> y <- x^2
+R> (cor(y, x, method = "pearson"))
+[1] 0.9663
+R> Rangx <- rank(x)
+R> Rangy <- rank(y)
+R> (cor(y, x, method = "spearman"))
+[1] 1
+R> par(mfrow=c(1,2))
+R> plot(y ~ x)
+R> abline(lm(y~x), col = "blue")
+R> plot(Rangy ~ Rangx, xlab="Rang von x", ylab="Rang von y")
+© StatistischeDatenanalyse–14–RobusteTests 17/19
+Spearmans ϱ - monotoner versus linearer
+Zusammenhang II
+0.0 0.5 1.0 1.5 2.0 2.5 3.0
+8
+6
+4
+2
+0
+x
+y
+0 5 10 15 20 25 30
+03
+52
+02
+51
+01
+5
+0
+Rang von x
+y nov
+gnaR
+© StatistischeDatenanalyse–14–RobusteTests 18/19
+Robuster Korrelationstest für
+Zusammenhang Miete und Fläche beim
+Mietspiegel I
+Spearman
+R> cor.test(~ miete + flaeche, data = mietspiegel,
++ method = "spearman",exact=FALSE)
+’
+Spearmans rank correlation rho
+data: miete and flaeche
+S = 2.1e+09, p-value <2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+rho
+0.5616
+© StatistischeDatenanalyse–14–RobusteTests 19/19

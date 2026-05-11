@@ -1,0 +1,406 @@
+Statistische Datenanalyse
+Zusammenhangsanalysen
+Zusammenhangsanalysen
+Zusammenhang zweier
+metrischer Variablen
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 1/21
+Kovarianz
+Kovarianz
+DieKovarianzzwischenzweiZufallsvariablenXundY ist
+definiertals
+Cov(X,Y) = σ = E[(X−µ )(Y −µ )] = E(X·Y)−µ µ
+XY X Y X Y
+wobei µ = E(X) und µ = E(Y) die Erwartungswerte
+X Y
+vonX undY seien.
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 2/21
+Kovarianz
+• Cov(X,X) = Var(X)
+• Cov(X,Y) = Cov(Y,X)
+• Unabhängigkeit
+SinddieZufallsvariablenX undY unabhängig,danngilt
+Cov(X,Y) = 0
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 3/21
+Kovarianz - Linearer Zusammenhang
+• Linearer Zusammenhang
+’JegrößerCov(X,Y)betragsmäßigist’,destostärkerist
+derlineareZusammenhangzwischenY undX,d.h.desto
+besseristdieApproximation
+Y ≈ β +β X
+0 1
+• Grösster Wert
+DieKovarianzistbetragsmäßigamgrößten,wennsie
+(cid:112)
+gleich Var(Y)Var(X)ist,alsoeinperfekterlinearer
+Zusammenhangvorliegt.
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 4/21
+Kovarianz - weitere Eigenschaften
+• DieKovarianzvonX undY istnicht
+maßstabsunabhängig,d.h.wennz.B.X mitdemFaktorb
+multipliziertwird,ändertsichdieKovarianzauchumden
+Faktorb:
+Cov(a+bX,Y) = E[(a+bX−(a+bµ ))(Y −µ )]
+X Y
+= bE[(X−µ )(Y −µ )] = bCov(X,Y)
+X Y
+DamitsagtderabsoluteWertCov(X,Y)nichtsüberdie
+StärkedeslinearenZusammenhangsausundCov(X,Y)
+mussgeeignetnormiertwerden.
+• Damitauch:
+Cov(aX+bY,cZ) = Cov(aX,cZ)+Cov(bY,cZ)
+= a·c·Cov(X,Z)+b·c·Cov(Y,Z)
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 5/21
+Bravais-Pearson-Korrelationskoeffizient
+Als naheliegendes Maß für die Stärke des linearen Zu-
+sammenhangszwischenY undX definierenwirdenKor-
+relationskoeffizienten:
+Cov(X,Y) σ
+ρ(X,Y) = = XY
+(cid:112) (cid:112)
+Var(X)Var(Y) σ2σ2
+X Y
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 6/21
+Eigenschaften des
+Korrelationskoeffizienten
+1 −1 ≤ ρ ≤ 1
+2 ZwischenY undXbestehtgenaudanneineexaktelineare
+Beziehung,wennρ = 1(positiverZusammenhang)oder
+ρ = −1(negativerZusammenhang)ist.
+3
+Jenäherρbei1oder−1liegt,destostärkeristderlineare
+ZusammenhangzwischenY undX.
+4
+Jenäherρbei0liegt,destogeringeristderlineare
+Zusammenhang.
+5 DerKorrelationskoeffizientistmaßstabsunabhängig
+gegenüberlinearenTransformationen.FürX ˜ = a X+b
+X X
+undY ˜ = a Y +b gilt
+Y Y
+a a
+ρ(X ˜,Y ˜) = X Y ρ(X,Y).
+|a ||a |
+X Y
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 7/21
+Empirischer Korrelationskoeffizient
+Empirischer Korrelationskoeffizient
+Der Empirische Korrelationskoeffizient r berechnet
+XY
+sichausdenDaten(x,y),i = 1,...,n,wiefolgt
+i i
+s
+r = XY
+XY s s
+X Y
+(cid:80)n
+(x −x¯)(y −y¯)
+(cid:80)n
+xy −nx¯y¯
+i i i i
+= i=1 = i=1
+(cid:115) (cid:115)(cid:18) (cid:19)(cid:18) (cid:19)
+(cid:80)n
+(x i −x¯)2
+(cid:80)n
+(y i −y¯)2
+(cid:80)n
+x i 2−nx¯2
+(cid:80)n
+y i 2−ny¯2
+i=1 i=1 i=1 i=1
+und ist der Schätzer für den Korrelationskoeffizienten
+ρ(X,Y).
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 8/21
+Empirische Kovarianz
+Empirische Kovarianz
+DieempirischeKovarianzs berechnetsichausdenDa-
+XY
+ten(x,y),i = 1,...,n,wiefolgt
+i i
+n n
+1 (cid:88) 1 (cid:88) n
+s = (x −x¯)(y −y¯)= xy − x¯y¯
+XY n−1 i i n−1 i i n−1
+i=1 i=1
+undistderSchätzerfürdieKovarianzCov(X,Y).
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 9/21
+Testen auf statistische Signifikanz des
+Korrelationskoeffizienten
+WirkönnendasfolgendeHypothesenpaartesten:
+H : ρ = 0 H : ρ ̸= 0
+0 1
+FallsX undY normalverteiltsind,lautetdieentsprechende
+Teststatistik
+√
+r n−2
+T = XY
+(cid:112)
+1−r2
+XY
+unddieTeststatistikistt-verteiltmitn−2Freiheitsgraden.
+4.0
+3.0
+2.0
+1.0
+0.0
+a=0.05
+ta2=-t1-a2 t1-a2 t
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 10/21
+Testen auf statistische Signifikanz des
+Korrelationskoeffizienten
+DerAblehnungsbereichfürdieseNullhypotheseist
+| T | > t (n−2)
+1−α/2
+DasbenötigteQuantilderentsprechendent-Verteilungkann
+wiedermitRberechnetwerden.
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 11/21
+Korrelationstest in R
+R> load("./daten/mietspiegel.rda")
+R> cor.test(mietspiegel$miete, mietspiegel$flaeche,
++ alternative = "two.sided")
+’
+Pearsons product-moment correlation
+data: mietspiegel$miete and mietspiegel$flaeche
+t = 39.98, df = 3080, p-value <2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+0.560797 0.607304
+sample estimates:
+cor
+0.584531
+MitHilfedeskritischenWertes(α = 0.05)kommtman
+(natürlich)zurgleichenSchlussfolgerung:
+t = 39.98 > t (3082−2) = qt(0.975,3080) ≈ 1.96
+0.975
+⇒ H kannabgelehntwerden.
+0
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 12/21
+Unabhängigkeit und Unkorreliertheit
+FallsX undY unabhängigsind,gilt:
+• Cov(X,Y) = 0
+• X undY sindunkorreliert,esbestehtalsokeinlinearer
+ZusammenhangzwischenX undY.
+Aber:FallsX undY unkorreliertsind,folgtnichtdie
+UnabhängigkeitvonX undY.
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 13/21
+Illustrierendes Beispiel
+• BetrachtedieZufallsvariableX mitdenRealisierungen
+−1,0,1,diejeweilsgleichwahrscheinlichseien,d.h.
+P(X = −1) = P(X = 0) = P(X = 1) = 1.
+3
+DefiniereY = X2,sodassY undX definitionsgemäß
+abhängigsind.
+• GemeinsameVerteilung
+Y
+0 1
+-1 0 1/3 1/3
+X 0 1/3 0 1/3
+1 0 1/3 1/3
+1/3 2/3
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 14/21
+Illustrierendes Beispiel, Fortsetzung
+• BerechnungderKovarianz
+E(X) = 0
+2
+E(Y) = 1·P(Y = 1) =
+3
+E(X·Y) = (−1)·0·0+(−1)·1·(1/3)+0·0·(1/3)+
++ 0·1·0+1·0·0+1·1·(1/3)
+1 1
+= −1· +1· = 0
+3 3
+2
+Cov(X,Y) = E(X·Y)−E(X)·E(Y) = 0−0· = 0
+3
+X undY sindalsounkorreliert,abernichtunabhängig!
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 15/21
+Illustration zum Korrelationskoeffizienten
+y
+5
+4
+3
+2
+1
+0
+1−
+0 1 2 3
+x
+y
+1
+0
+1−
+2−
+3−
+4−
+5−
+0 1 2 3
+x
+y
+4
+3
+2
+1
+0
+0 1 2 3
+x
+y
+0
+1−
+2−
+3−
+4−
+0 1 2 3
+x
+y
+2
+0
+2−
+4−
+−3 −2 −1 0 1 2 3
+x
+y
+4
+2
+0
+2−
+−3 −2 −1 0 1 2 3
+x
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 16/21
+Wichtige Anmerkungen
+Korrelation und Kausalität
+DerKorrelationskoeffizientr liefertHinweise,keinesfalls
+XY
+BeweisefürkausalenZusammenhang.
+Verdeckte Korrelation
+KorrelationzwischenX undY wirdnichterkannt,daeindrittes
+MerkmalZ nichtbeachtetwird.VergleicheFolie18.
+Scheinkorrelation
+ScheinbareKorrelationzwischenX undY,daeindrittes
+MerkmalZ ignoriertwird.VergleicheFolie19.
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 17/21
+Illustration zur verdeckten Korrelation
+y
+5.3
+5.2
+5.1
+5.
+5.−
+5.1−
+5.2−
+5.3−
+r_XY = −0.07
+−3 −2 −1 0 1 2 3
+x
+y
+3
+2
+1
+0
+1−
+2−
+3−
+r_XY = 0.66
+−3 −2 −1 0 1 2 3
+x
+y
+5.3
+5.2
+5.1
+5.
+5.−
+5.1−
+5.2−
+5.3−
+r_XY = −0.75
+−3 −2 −1 0 1 2 3
+x
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 18/21
+Illustration zur Scheinkorrelation
+y
+04
+53
+03
+52
+02
+9 10 11 12 13 14 15 16 17 18 19 20 21
+x
+ZusammenhangzwischenEinstiegsgehalt(y)und
+Studiendauer(x)fürdreiStudienfächer.
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 19/21
+Zweidimensionale Normalverteilung
+Der zweidimensionale Zufallsvektor X = (X ,X )T ist
+1 2
+zweidimensionalnormalverteiltmitderDichte
+(cid:18) (cid:19)
+f(x) = f(x ,x ) =
+1
+exp −
+1 (x−µµµ)T(cid:80)(cid:80)(cid:80)−1(x−µµµ)
+,
+1 2 (cid:12)(cid:80)(cid:80)(cid:80)(cid:12)1 2
+2π(cid:12) (cid:12)2
+wobei
+(cid:32) (cid:33) (cid:32) (cid:33)
+µ E(X )
+µµµ = 1 = 1
+µ E(X )
+2 2
+und
+(cid:32) (cid:33)
+(cid:88)(cid:88)(cid:88)
+=
+Var(X
+1
+) Cov(X
+1
+,X
+2
+)
+.
+Cov(X ,X ) Var(X )
+1 2 2
+(cid:80)(cid:80)(cid:80)
+heißtKovarianzmatrixvonX.
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 20/21
+Zweidimensionale Normalverteilung
+5000 Zufallszahlen
+2x
+5000 Zufallszahlen
+3.5 3 2.5 2 1.5 1 ..55 0 −.5 −1 −1.5 −2 −2.5 −3 −3.5
+−3.5−3−2.5−2−1.5−1−.50x1..5511.522.533.5
+2x
+5000 Zufallszahlen
+3.5 3 2.5 2 1.5 1 ..55 0 −.5 −1 −1.5 −2 −2.5 −3 −3.5
+−3.5−3−2.5−2−1.5−1−.50x1..5511.522.533.5
+2x 3.5 3 2.5 2 1.5 1 ..55 0 −.5 −1 −1.5 −2 −2.5 −3 −3.5
+−3.5−3−2.5−2−1.5−1−.50x1..5511.522.533.5
+5000 Zufallszahlen
+2x
+5000 Zufallszahlen
+3.5
+3
+2.5
+2 1.5 1 ..55 0 −.5
+−1
+−1.5
+−2
+−2.5
+−3
+−3.5
+−3.5−3−2.5−2−1.5−1−.50x1..5511.522.533.5
+2x
+3.5
+3
+2.5
+2
+1.5 1 ..55 0 −.5
+−1
+−1.5
+−2
+−2.5
+−3
+−3.5
+−3.5−3−2.5−2−1.5−1−.50x1..5511.522.533.5
+Abbildung:StichprobenvonzweidimensionalenNormalverteilungenmit
+ρ=−0.9,ρ=−0.5,ρ=0,ρ=0.5undρ=0.9.
+© StatistischeDatenanalyse–8–Zusammenhangsanalysen 21/21

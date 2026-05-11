@@ -1,0 +1,67 @@
+Variablenbeschreibung fragebogen 2026S.rda
+Variable Fragestellung/Beschreibung Antwortm¨oglichkeiten
+motiv Welches dieser Motive ist fu¨r Sie der entscheidende Grund in Innsbruck 1 (N¨ahe zum Heimatort), 2 (Sport- und Frei-
+zu studieren? zeitangebot), 3 (Attraktivit¨at des Studienange-
+bots), 4 (Ruf der Uni), 5 (Attraktivit¨at der
+Stadt), 6 (anderer Grund)
+schultyp Welchen Schultyp haben Sie besucht? 1 (AHS / Gymnasium), 2 (BHS / Fachgymnasi-
+um), 3 (Studienberechtigungspru¨fung), 4 (Sons-
+tiges)
+vertrauen Ich habe starkes Vertrauen in die Wissenschaft. 1 (stimme sehr zu), ..., 5 (stimme u¨berhaupt
+nicht zu)
+studium Statistik hat viel mit dem Wirtschaftsstudium zu tun. 1 (stimme sehr zu), ..., 5 (stimme u¨berhaupt
+nicht zu)
+fleiss Statistik kann mit etwas Fleiß jede/r lernen. 1 (stimme sehr zu), ..., 5 (stimme u¨berhaupt
+nicht zu)
+stunden MitwievielenVor-undNachbereitungsstundenfu¨rdenKursStatistische
+Datenanalyse rechnen Sie w¨ochentlich?
+puls Wie hoch ist Ihr Ruhepuls? Gemessen in Herzschl¨age pro Minute.
+kraft Wie viele Stunden Kraftsport betreiben Sie pro Woche?
+ausdauer Wie viele Stunden Ausdauersport betreiben Sie pro Woche?
+yoga Betreiben Sie Yoga? 1 (ja), 2 (nein)
+unruhig Wie oft haben Sie sich in den letzten 4 Wochen innerlich unruhig oder
+nerv¨os gefu¨hlt? Geben Sie eine Zahl zwischen 0 und 100 an. 0 steht fu¨r
+nie und 100 fu¨r immer.
+stress Wie oft haben Sie in den letzten 4 Wochen negativen Stress (Disstress)
+empfunden? Geben Sie eine Zahl zwischen 0 und 100 an. 0 steht fu¨r nie
+und 100 fu¨r immer.
+1
+wut Wie oft haben Sie in den letzten 4 Wochen Wut oder A¨rger empfunden?
+Geben Sie eine Zahl zwischen 0 und 100 an. 0 steht fu¨r nie und 100 fu¨r
+immer.
+gluecklich WieofthabenSiesichindenletzten4Wochenglu¨cklichgefu¨hlt?Geben
+Sie eine Zahl zwischen 0 und 100 an. 0 steht fu¨r nie und 100 fu¨r immer.
+gewicht K¨orpergewicht des Studierenden in kg.
+groesse selbst K¨orpergr¨oße des Studierenden in cm.
+groesse mutter K¨orpergr¨oße der Mutter in cm.
+groesse vater K¨orpergr¨oße des Vaters in cm.
+beruf Sind Sie gegenw¨artig beufst¨atig oder nicht? Bitte w¨ahlen Sie von dieser 1 (nein, nicht berufst¨atig), 2 (Geringfu¨gig), 3
+Liste aus, was auf Sie zutrifft. Wenn Sie mehr als eine Besch¨aftigung ha- (Teilzeit), 4 (Vollzeit)
+ben, dann beziehen Sie sich bitte nur auf Ihre hauptberufliche T¨atigkeit.
+schlaf Haben Sie Einschlaf- oder Durchschlafprobleme? 1 (ja), 2 (nein)
+alkohol Wie oft trinken Sie Alkohol? Frage entommen aus dem AUDIT-C (Al- 1 (nie), 2 (etwa 1 x monatlich), 3 (2-4 x monat-
+cohol Use Disorders Identification Test-Consumption) Fragebogen1. lich), 4 (2-3 x w¨ochentlich), 5 (4 x oder ¨ofter pro
+Woche)
+rauchen Rauchen Sie, wenn ja, wie oft pro Tag? 1 (nein), 2 (ja, 1 x pro Tag), 3 (ja, 2 x pro Tag),
+4 (ja, 3 x oder ¨ofter pro Tag)
+kaffee Trinken Sie Kaffee, wenn ja, wie oft pro Tag? 1 (nein), 2 (ja, 1 x pro Tag), 3 (ja, 2 x pro Tag),
+4 (ja, 3 x oder ¨ofter pro Tag)
+wasser Wieviel Wasser trinken Sie im Durchschnitt pro Tag in Liter?
+einkommen Wie hoch ist Ihr monatlich verfu¨gbares Einkommen in Euro? Darun-
+ter sind alle Einku¨nfte (z.B. Lohn, Gehalt, Stipendien, Studienbeihilfe,
+Unterhaltsleistungen der Eltern, etc.), vermindert um Steuern und So-
+zialabgaben, zu verstehen.
+fixkosten Wie viel Geld geben Sie pro Monat fu¨r Wohnen aus (Miete, Heizung,
+Strom, Internet, etc.)?
+1https://alkoholleitlinie.de/diagnostik/fragebogen-instrumente/
+2
+lebensmittel Wie viel Geld geben Sie pro Monat fu¨r Essen aus (Lebensmittel, Re-
+staurantbesuche, etc.)?
+ernaehrung Ern¨ahren Sie sich gesund? Zum Beispiel wenig verarbeitetes Fleisch, 1 (ja), 2 (nein)
+Su¨ßigkeiten und Fertigprodukte, viel Gemu¨se, Fisch und Vollkornpro-
+dukte.
+stil Wie wu¨rden Sie Ihren Ern¨ahrungsstil beschreiben? 1 (ich esse alles), 2 (pescetarisch), 3 (vegeta-
+risch), 4 (vegan)
+geschlecht Was ist Ihr aktueller amtlicher Geschlechtseintrag? 1 (m¨annlich), 2 (weiblich), 3 (divers)
+geburtsjahr In welchem Jahr sind Sie geboren?
+3

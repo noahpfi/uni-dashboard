@@ -1,0 +1,296 @@
+Strategie, 5 Forces und Wertekette
+Univ.Prof.DDr. Jürgen Huber, Institut für Banken und Finanzen
+Einführung in die BWL I Huber I 14. VO-Termin Seite 1
+Übersicht für heute:
+»
+Strategie – was ist das?
+»
+Strategische Analyse
+• SWOT-Analyse eines Unternehmens
+• 5-Forces Analyse einer Industrie
+• Wertekette
+Einführung in die BWL I Huber I 14. VO-Termin Seite 2
+Strategische Analyse
+»
+Strategie:
+• altgriechisch „strategós“: Feldherr, Kommandant
+• Duden: „genauer Plan des eigenen Vorgehens, der dazu dient, ein militärisches,
+politisches, psychologisches, wirtschaftliches o.ä. Ziel zu erreichen, und in dem man
+diejenigen Faktoren, die in die eigene Aktion hineinspielen könnten, von vornherein
+einzukalkulieren versucht“
+• „…ist die Fortbildung des ursprünglich leitenden Gedankens entsprechend den stets
+sich ändernden Bedingungen“ (Moltke)
+• Plan des Top-Managements, der der Erreichung der Ziele des Unternehmens dient.
+(Wright et al.)
+Einführung in die BWL I Huber I 14. VO-Termin Seite 3
+Strategische Analyse
+»
+Merkmale der Strategie:
+• Aktionsfelder bzw. Domäne der Unternehmung – in welchen Feldern ist die U. tätig?
+• Konkurrenzbezogenheit (was machen unsere Konkurrenten?)
+• Einbindung der Umwelt („Stakeholder“, wie zB Politik, Gewerkschaften, NGOs, etc.)
+• Welche Ressourcen sind vorhanden?
+• Stimmigkeit der Ressourcen
+• Beeinflusst Entscheidungen mit langfristig hoher Bedeutung – „große Entscheidungen“
+• langfristig / mittelfristig / kurzfristig
+• Meist formal geplant
+Quelle: vgl. Schreyögg/Koch
+Einführung in die BWL I Huber I 14. VO-Termin Seite 4
+Strategie: Operatives und strategisches Management
+• Strategisches Management
+• Schaffung und dauerhafte Absicherung von Erfolg am Markt
+• Kann in derzeitigen Geschäftsfeldern mit bestehendem Wettbewerbskonzept und vorhandenen
+Ressourcen auch zukünftig erfolgreich konkurriert werden?
+• Oder müssen neue Geschäftsfelder gesucht, neue Wettbewerbskonzepte entwickelt und/oder
+neue Ressourcen aufgebaut werden?
+• „Die richtigen Dinge tun“
+• Operatives Management („Taktik“)
+• Erzielung des unmittelbaren Erfolgs
+• Umsetzung der Strategien
+• „Die Dinge richtig tun“
+• Finanzielles Management
+• Liquiditätssicherung
+Einführung in die BWL I Huber I 14. VO-Termin Seite 5
+Strategie: Operatives und strategisches Management
+Finanzielles Operatives Strategisches
+Management Management Management
+Sicherung des
+Zweck Liquiditätssicherung Angemessene Rendite
+langfristigen Erfolg
+Kernkriterium Liquidität Erfolg Erfolgsfaktoren
+Hauptinformation Erlöse/Kosten Aufwand/Ertrag Marktposition
+Jahresabschluss/ Audit
+Informationsquelle Accounting
+Cashflow-Statement Portfolio-Analyse
+kurzfristig
+mittelfristig
+langfristig
+Quelle: vgl. Matzler/Müller/Mooradian 2011
+Einführung in die BWL I Huber I 14. VO-Termin Seite 6
+Strategie – Strategiebestimmung
+»
+Grundfragen der Strategiebestimmung
+• Wo treten wir an? In welchen Geschäftsfeldern wollen wir tätig sein?
+• Definiert nach Produkten/Dienstleistungen oder Kundengruppen oder Anwenderproblemen
+• Frage der Marktabdeckung: Gesamter Markt oder Nische
+• Nische: Verzicht auf potentielle Kunden, Frage der Beständigkeit und Größe
+• Wie wollen wir den Wettbewerb in diesen Geschäftsfeldern bestreiten? USP (Unique Selling Proposition)?
+• Kostenführerschaft/Differenzierung
+• Gegenwärtige und zukünftige Positionierung, z.B. Nischenanbieter oder Marktführer
+• Frage der Geschäftsfeldstruktur
+• Konservative Strategie (rule taker): Platzierung in bestehenden Geschäftsfelder (zB Taxiunternehmen, Hilton)
+• Veränderungsstrategie (rule breaker): Markt-Innovationsstrategien (zB UBER, Airbnb)
+• Welche Ressourcen und Kompetenzen stehen zur Verfügung?
+• Wo liegen unsere Kernkompetenzen?
+• Was ist unserer längerfristige Erfolgsbasis?
+• Wie verwundbar ist die Strategie längerfristig (imitierbar, Wettbewerbsumfeld, globales Umfeld, Stärken und Schwächen)
+Quelle: vgl. Schreyögg/Koch
+Einführung in die BWL I Huber I 14. VO-Termin Seite 7
+Strategische Analyse
+» SWOT-Analyse
+• Strengths, Weaknesses, Opportunities, Threats
+• Stärken, Schwächen, Chancen, Bedrohungen
+Globale Umwelt
+• Externe Analyse:
+Wettbewerbs-
+umwelt
+• Chancen und Bedrohungen
+• Interne Analyse
+• Stärken und Schwächen Unter-
+nehmung
+Quelle: vgl. Schreyögg/Koch
+Einführung in die BWL I Huber I 14. VO-Termin Seite 8
+Strategische Analyse
+»
+Externe Analyse
+• Chancen und Bedrohungen (Opportunities, Threats)
+• Unternehmensebene vs. Geschäftsfeldebene
+• Globale Umwelt – potentiell relevante Trends
+• Natürliche Umwelt (zB auch Klimawandel)
+Globale Umwelt
+• Sozio-kulturelle Umwelt
+Wettbewerbs-
+• Politisch-rechtliche Umwelt
+umwelt
+• Makro-ökonomische Umwelt
+• Technologische Umwelt
+• Wettbewerbsumwelt
+• Porter‘s 5 Forces Unter-
+nehmung
+• Industrielle Beziehungen / Politik /Staat
+Quelle: vgl. Schreyögg/Koch
+Einführung in die BWL I Huber I 14. VO-Termin Seite 9
+Strategische Analyse
+»
+Externe Analyse
+• Chancen und Bedrohungen (Opportunities, Threats)
+• Unternehmensebene vs. Geschäftsfeldebene
+• Globale Umwelt – potentiell relevanter Trends
+• Natürliche Umwelt (zB auch Klimawandel)
+neue
+Anbieter
+• Sozio-kulturelle Umwelt
+• Politisch-rechtliche Umwelt
+• Makro-ökonomische Umwelt
+Wettbewerb
+zwischen
+• Technologische Umwelt Lieferanten Kunden
+derzeitigen
+Anbietern
+• Wettbewerbsumwelt
+• Porter‘s 5 Forces
+• Industrielle Beziehungen / Politik /Staat
+Substitute
+Quelle: vgl. Schreyögg/Koch
+Einführung in die BWL I Huber I 14. VO-Termin Seite 10
+Michael Porters
+5-Forces-Analyse
+für die Autobranche
+Einführung in die BWL I Huber I 14. VO-Termin Seite 11
+Strategische Analyse – Michael Porters 5-Forces-Analyse
+»
+Neue Anbieter – Quellen von Eintrittsbarrieren
+• Mindestoptimale Betriebsgröße
+• „Economies of Scale“
+• Absolute Kostennachteile
+neue
+Anbieter
+• z.B. Standortnachteile
+• Käuferloyalität
+Wettbewerb
+• Zugang zu Vertriebskanälen
+zwischen
+Lieferanten Kunden
+derzeitigen
+Anbietern
+• Umstellungskosten bei Produktwechsel
+• Kapitalbedarf
+• Staatliche Schranken; Patente
+Substitute
+Quelle: vgl. Schreyögg/Koch
+Einführung in die BWL I Huber I 14. VO-Termin Seite 12
+Strategische Analyse – Michael Porters 5-Forces-Analyse
+»
+Kunden – Verhandlungsstärke
+• Konzentrationsgrad
+• z.B. Lebensmittelhandel, Automobilindustrie
+• Anteil an den Gesamtkosten der Kunden neue
+Anbieter
+• Standardisierungsgrad
+• Umstellungskosten auf alternativen Lieferanten
+Wettbewerb
+• Bedeutung für die Produktqualität des Abnehmerproduktes zwischen
+Lieferanten Kunden
+derzeitigen
+Anbietern
+• Informationsstand über Faktormärkte
+• Frage der Rückwärtsintegration (könnte ein Kunde ein Wettbewerber werden?)
+Substitute
+Quelle: vgl. Schreyögg/Koch
+Einführung in die BWL I Huber I 14. VO-Termin Seite 13
+Strategische Analyse – Michael Porters 5-Forces-Analyse
+»
+Lieferanten – Verhandlungsstärke
+• Konzentrationsgrad
+• z.B. Lebensmittelhandel, Automobilindustrie
+• Anteil an den Gesamtkosten der Kunden neue
+Anbieter
+• Standardisierungsgrad
+• Umstellungskosten auf alternative Kunden
+Wettbewerb
+• Bedeutung für die Produktqualität zwischen
+Lieferanten Kunden
+derzeitigen
+des Abnehmerproduktes
+Anbietern
+• Informationsstand über Faktormärkte
+• Frage der Vorwärtsintegration (könnte ein Lieferant ein Wettbewerber werden)
+Substitute
+Quelle: vgl. Schreyögg/Koch
+Einführung in die BWL I Huber I 14. VO-Termin Seite 14
+Strategische Analyse – Michael Porters 5-Forces-Analyse
+»
+Substitutionsprodukte
+• Produkte anderer Märkte mit subjektiver Äquivalenz
+• Frage der Funktion eines Produkts
+neue
+• Frage des Verwendungszusammenhangs Anbieter
+• Beispiele
+• Ski und Snowboards
+Wettbewerb
+zwischen
+Lieferanten Kunden
+• Butter und Margarine derzeitigen
+Anbietern
+• Lebensversicherung und Immobilienfonds
+Substitute
+Quelle: vgl. Schreyögg/Koch
+Einführung in die BWL I Huber I 14. VO-Termin Seite 15
+Strategische Analyse
+»
+Interne Analyse
+• Stärken und Schwächen (Strengths, Weaknesses)
+• Beschreibung der Ressourcen
+• Vergleich → relative Ressourcenstärke in Bezug auf Konkurrenten
+Globale Umwelt
+• Frage nach neuen Geschäftsfeldern
+Wettbewerbs-
+• Potentialanalyse umwelt
+• Wertschöpfungszentrierte Ressourcenanalyse
+• Ressourcen als Wertaktivitäten
+• Ressourcen im Wertschöpfungsprozess
+Unter-
+• Organisationale Fähigkeiten und Kompetenzen (Kernkompetenzen) nehmung
+Quelle: vgl. Schreyögg/Koch
+Einführung in die BWL I Huber I 14. VO-Termin Seite 16
+Strategische Analyse
+»
+Ressourcen als Wertaktivitäten
+• Tangible Ressourcen (v.a. Material, Betriebsmittel)
+• Intangible Ressourcen (z.B. Qualifikation und Fertigkeiten von Mitarbeitern; Markenimage)
+• 5 Arten von Ressourcen:
+• Finanzielle Ressourcen (Cashflow, Kreditwürdigkeit, etc.)
+• Physische Ressourcen (Gebäude, Anlagen, Servicestationen, etc.)
+• Humanressourcen (Facharbeiter, Ingenieure, Führungskräfte, etc.)
+• Organisatorische Ressourcen (Informationssystem, etc.)
+• Technologische Ressourcen (Qualitätsstandards, Markenname, Know-How in F&E, etc.)
+Einführung in die BWL I Huber I 14. VO-Termin Seite 17
+Strategische Analyse
+»
+Ressourcen im Wertschöpfungsprozess (Wertekette nach Michael Porter)
+• Primäre Aktivitäten für Herstellung und Vertrieb
+• Sekundäre Aktivitäten zur Versorgung/Unterstützung der primären Aktivitäten
+Quelle: vgl. Schreyögg/Koch; gabler; http://wirtschaftslexikon.gabler.de
+Einführung in die BWL I Huber I 14. VO-Termin Seite 18
+Strategische Analyse
+»
+Ressourcen im Wertschöpfungsprozess
+• Vor- und nachgelagerte Werteketten
+• Typische Werteketten einzelner Branchen / Kostenstrukturanalyse
+Unsere Lieferanten Wir Unsere Abnehmer
+Quelle: vgl. Schreyögg/Koch; gabler; http://wirtschaftslexikon.gabler.de
+Einführung in die BWL I Huber I 14. VO-Termin Seite 19
+Strategische Analyse
+»
+Organisationale Fähigkeiten und Kompetenzen
+• Spezifisches Know-How
+• Steuerungs- und Koordinationskompetenzen
+• Unternehmensspezifisches Wissen
+• Unternehmenskulturell verankerte Prozesse
+»
+Kernkompetenzen
+• Sind für den Kunden erkennbar und wertvoll.
+• Sind gegenüber der Konkurrenz einmalig („USP – unique selling proposition“).
+• Sind schwer imitierbar
+• Eröffnen potentiell Zugang zu einer Vielzahl von Märkten.
+Einführung in die BWL I Huber I 14. VO-Termin Seite 20
+Weiterführende Literatur für Interessierte
+»
+Fuhrmann, B. „Introduction to Business and Economics“, 2019 (engl.)
+»
+Schreyögg, G., Koch, J. (2014): Grundlagen des Managements. Springer
+Gabler
+»
+Wöhe, G./Döring, U./Brösel, G. (2016): Einführung in die Allgemeine
+Betriebswirtschaftslehre. Vahlen,
+Seite 21

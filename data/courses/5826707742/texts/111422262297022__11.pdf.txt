@@ -1,0 +1,245 @@
+Einführung in die Theoretische Informatik
+ArminWalch Georg Moser JoshuaOcker
+ManuelEberl SamuelFrontull VeraSchmitt
+https://tcs-informatik.uibk.ac.at
+Zusammenfassung
+Satz
+JedepartielleFunktionf: Nk → N,dieberechenbaraufeinerRMist,istaufeinerTM
+berechenbarundumgekehrt
+Definition (many-one reduction)
+angenommen
+• L,MSprachenüberΣ
+• L ⩽ MmitR: Σ∗ → Σ∗
+m
+• dieReduktionRwirdvonTMT berechnet,sodassgiltx ∈ L ⇔ R(x) ∈ M
+Entscheidbarkeit von L, durch Entscheider H von M
+T
+t
+x R(x) t
+H
+r
+r
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 1
+Inhalte der Lehrveranstaltung
+Einführung in die Logik
+Syntax&SemantikderAussagenlogik,KalküldesnatürlichenSchließens,Konjunktive
+undDisjunktiveNormalformen
+Einführung in die Algebra
+algebraischeStrukturen,BoolescheAlgebra
+Einführung in die Theorie der Formalen Sprachen
+GrammatikenundFormaleSprachen,Chomsky-Hierarchie,ReguläreSprachen,
+KontextfreieSprachen,AnwendungenvonformalenSprachen
+Einführung in die Berechenbarkeitstheorie und Komplexitätstheorie
+AlgorithmischunlösbareProbleme,Turingmaschinen,Alternative
+Berechnungsmodelle,Reduktion,Komplexitätstheorie
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 2
+Komplexitätstheorie
+Definition
+KomplexitätstheorieanalysiertAlgorithmenundProbleme:
+WelcheRessourcenbenötigteinbestimmterAlgorithmusodereinProblem?
+Ressourcen
+• Speicherplatz
+• Rechenzeit
+• ...
+Problem & Algorithmus
+Wirunterscheidenzwischen
+• derKomplexitäteinesAlgorithmus AlgorithmusvonQuine:2c·n
+(wobeindiemaximalebinäreLängederEingabe)
+• derKomplexitäteinesProblems SATistinNP
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 3
+Definition (Maze)
+Gegeben
+• gerichtetenGraphGmitEckenmengeE
+• Eckens,t ∈ E
+∃Wegzwischensundt?
+Algorithmus
+zumBeispieldepth-firstsearch
+Komplexität
+• Zeitkomplexität:„ungefähr“n2
+• Platzbedarf:„ungefähr“n
+wobein := #(E)+#(K)
+NB:„ungefähr“bedeutet:esgilt∃c∈R+∃m∀n⩾mLaufzeitvonMbeiEingabex ⩽c·T(n),wobei
+|x|=n.WirschreibendannauchO(T)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 4
+Definition („Hamiltonscher Kreis“ (HK))
+∃ZykelineinemungerichtetenGraphG,derjedeEckegenaueinmalenthält(mit
+AusnahmederStart-/Endecke)?
+Algorithmus
+• AlgorithmuskönntefüreinenungerichtetenGraphenmitEckenmengeEund
+KantenmengeK wiefolgtverfahren:
+• ÜberprüfefürjedesTupelausK#(E),obeseinHamiltonscherKreisist.
+Komplexität
+• Zeitkomplexität:„ungefähr“nn+2
+• Platzbedarf:„ungefähr“n
+• Zeitkomplexitätkannauf(„ungefähr“)2n verbessertwerden
+wobein = #(E)+#(K)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 5
+Beispiel
+5
+6
+3 2
+3
+7
+2
+4
+0 1
+1
+0
+DannistzumBeispiel(1,2,6,7)einHamiltonscherKreis
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 6
+Definition (“Generalised Geography” (GEO))
+dasSpielverallgemeinerteLänderkundeisteinZweipersonenspiel
+SpielerheißenAnnaundOtto,gegeben
+1 gerichteterGraphGundStartknotens
+2 AnnabeginntimLandssie
+wählteinerreichbares(unmarkiertes)Landt,welchessiemarkiert
+3 Ottoziehtvont weiterundmarkiertwieder
+4 derjenigeSpieler,dernichtmehrziehenkannverliert
+∃GewinnstrategiefürAnna?
+Beispiel
+Länderkunde
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 7
+AlgorithmusAmitEingabe(G,b)
+1 seibderaktuelleKnotenundhabedieserAusgangsgrad0;Spieler1verliert
+immerundAverwirft
+2 eliminiereKnotenbundallebetroffenenKanten;bezeichnedenneuenGraphen
+mitG′
+3
+∀unmittelbarenNachfolgerb′ vonb,rufeArekursivmit(G′,b′)auf
+4 wennalleAufrufeakzeptieren,hatSpieler2eineGewinnstrategie
+5 wenneinAufrufnichtakzeptiert,hatSpieler1eineGewinnstrategie;also
+akzeptiertA
+Komplexität
+• Platzkomplexität:„ungefähr“n
+• nurderRekursionsstackbrauchtPlatz,dieRekursionstiefeistn
+ndieAnzahlderEckenvonG
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 8
+Laufzeitkomplexität
+Definition
+seiMeinetotaleDTModerNTM
+• dieLaufzeitkomplexitätvonMistFunktionT: N → N,wobeiT wiefolgtdefiniert
+T(n) := max{m | M hält bei Eingabe x, ℓ(x) = n, nach m}
+Schritten
+• T(n)bezeichnetdieLaufzeitvonM,wennndieLängederEingabe
+• MheißtT-Zeit-Turingmaschine
+Definition
+seiT: N → NeinenumerischeFunktion
+DTIME(T) := {L(M) | M ist eine mehrbändige DTM mit Laufzeit in
+ungefährT Schritten}
+NTIME(T) := {L(N) | N ist eine mehrbändige NTM mit Laufzeit in
+ungefährT Schritten}
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 9
+Beispiel
+betrachteMazealsSprache:
+Maze = {(G,s,t) | GGraphmitWegvonsnacht}
+esgiltMaze ∈ DTIME(n2)
+Beispiel
+betrachteHKalsSprache
+G ist ein ungerichteter Graph mit Hamilton-
+HK = {(G,k) |
+schemKreisk }
+esgiltHK ∈ DTIME(nn+2),aberauchHK ∈ NTIME(n2)
+Definition
+(cid:91) (cid:91)
+P := DTIME(nk) NP := NTIME(nk)
+k⩾1 k⩾1
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 10
+Definition
+• einVerifikatoreinerSpracheL ⊆ Σ∗,isteinAlgorithmusV sodass
+L = {x ∈ Σ∗ | ∃c,sodassV akzeptiertEingabe(x,c)}
+• einpolytimeVerifikatoristeinVerifikatormitLaufzeitungefährnk wobein = |x|
+Definition (alternativ)
+NPistdieKlassederSprachen,dieeinenpolytimeVerifikatorhaben
+Beispiel
+betrachteHK;definiereVerifikatorV fürHKmitEingabe(G,k)
+1 V prüftofk einHamiltonscherKreisist
+2 wennja,akzeptiertV,sonstverwirftV
+3 V läuftinpolynomiellerZeit
+alsogiltHK ∈ NP′
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 11
+Lemma
+wennL ∈ NP′ dannL ∈ NP;wobeiNPdieDefinitionviaNTMundNP′ dieDefinitionvia
+Verifikator
+Beweis.
+1 seiV einVerifikatorfürL
+2 V läuftinpolynomiellerZeitaufEingabe(x,c),
+dasheißtV läuftinZeitungefähr|x|k fürgeeignetesk
+3 definiereNTMNmitEingabex
+• rate(nichtdeterministisch)Stringcmit|c|=|x|k („ungefähr“)
+• simuliereV auf(x,c)
+• wennNakzeptiert,dannakzeptiertV,sonstverwirftV
+Algorithmusistnichtdeterministisch
+Beispiel
+HK ∈ NP
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 12
+Lemma
+wennL ∈ NP,dannL ∈ NP′
+Beweis.
+1 seiL ∈ NP;∃NTMN,sodassL = L(N)
+2 NhatpolynomiellenichtdeterministischeZeitkomplexität
+3 definiereeinenpolytimeVerifikatorV mitEingabe(x,c),
+wobeicdenerfolgreichenPfadimBerechnungsbaumcodiert
+• simuliereNaufx
+• verwendeZertifikatcumNichtdeterminismusaufzulösen
+Algorithmusistdeterministisch
+4 wennNakzeptiert,akzeptiertV,ansonstenverwirftV
+Satz
+diebeidenDefinitionenstimmenüberein,d.h.NP = NP′
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 13
+Das Erfüllbarkeitsproblem (SAT)
+Beispiel
+betrachteSATalsSprache:
+SAT = {F | F FormelmiterfüllbarerBelegungv}
+esgiltSAT ∈ DTIME(2n),aberesistnichtbekanntobSAT ∈ P
+Beispiel (cont’d)
+• EsgiltSAT ∈ NP.
+• AlsZertifikatwählenwirdie(erfüllende)BelegungvfürF.FürjedeBelegungv
+kannleicht(inpolynomiellerZeit)nachgewiesenwerden,obv(F) = T.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 14
+Reduktionen (in polynomieller Zeit)
+Reduktionen (revisited)
+Definition
+1
+∃k-bändigetotaleDTMMmitEingabealphabetΣ
+2 MläuftinpolynomiellerZeit
+3 beiEingabex ∈ Σ∗,schreibtMR(x)aufdas(erste)Band
+dannheißtR: Σ∗ → ∆∗ inpolynomiellerZeitberechenbar
+Definition
+1
+∃R: Σ∗ → ∆∗
+2 RberechenbarinpolynomiellerZeit
+3 fürA ⊆ Σ∗,B ⊆ ∆∗ giltx ∈ A ⇔ R(x) ∈ B
+dannistAinpolynomiellerZeitaufBreduzierbar;kurz:A⩽p B
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 15
+Beispiel
+A = {x ∈ {a,b}∗ | ℓ(x)istgerade}und
+B = {x ∈ {0,1}∗ | x isteinPalindromgeraderLänge}.
+DanngiltA ⩽p B;wirwählenR(a) = 0undR(b) = 0;somitwandelnwireinWortaus
+{a,b}n in0n um
+x ∈ A x R(x) R(x) ∈ B
+✓ ϵ ϵ ✓
+× a 0 ×
+× b 0 ×
+✓ aa 00 ✓
+✓ ab 00 ✓
+✓ ba 00 ✓
+. . . .
+. . . .
+. . . .
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 16
+Definition
+1 C einebeliebigeKomplexitätsklasse
+2
+BeineSpracheüberΣund
+3 ∀SprachenA ∈ C gilt:A ⩽p B
+dannistB⩽p-hartfürC
+Beispiel
+HKist⩽p-hartfürNP
+Definition
+füreineSpracheB,sei
+1 B⩽p-hartfürC und
+2 B ∈ C
+dannistB⩽p-vollständigfürC oder(kurz)C-vollständig
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 17
+Komplexitätstheorie, graphisch
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 18

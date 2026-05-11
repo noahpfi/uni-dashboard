@@ -1,0 +1,139 @@
+Mathematik
+Syllabus
+Themen
+1 LineareundquadratischeFunktionen
+2 Differentialrechnung
+3 Integralrechnung
+4 ElementareFinanzmathematik
+5 Matrixalgebra
+6 MehrdimensionaleAnalysis
+7 Wahrscheinlichkeitsrechnung
+2026-S Mathematik–0–Syllabus 1/13
+Lehrbuch
+BirgitRudloff&AchimZeileis(2023).MathematikfürWirtschaftswissenschaften:
+EineEinführungmitanwendungsorientiertenBeispielen.460Seiten,unabhängig
+veröffentlicht.
+Inhalt:DasBuchistdieinhaltlicheGrundlagedesModulsmit
+DetailsundBeispielaufgabenzuallenThemen.
+Verfügbarkeit:
+Print:https://www.amazon.de/dp/B0CJ4CR1CM(39.90Euro)
+Online:https://www.mathe4wiwi.org/buch/
+2026-S Mathematik–0–Syllabus 2/13
+Leistungsbeurteilung
+PS:Prüfungsimmanent(d.h.mitAnwesenheitspflicht).
+• AbmeldungbeiunentschuldigtemFehleninersteroderzweiterPS-Einheit.
+• WöchentlicheOnlinetestsmitinsg.50+Rechenaufgaben.
+ProvollständigrichtigerAufgabe1Punkt.
+• 11wöchentlicheschriftlichePS-Testsmitje1Single-Choice-Aufgabe(ein
+Streichresultat).1schriftlichePS-Klausurmit9Single-Choice-Aufgaben.
+ProrichtigerAufgabe7Punkte,profalscherAufgabe1PunktAbzug.
+• Biszu7PunktefüraktiveMitarbeitimPSundimForum.
+• AlleStudierenden,diemindestenseineLeistungerbringen,erhalteneine
+Note.(AußerbeiAbbruchdesPSauswichtigemGrund.)
+• DieNoteergibtsichausdemerreichtenAnteil(100%=190Punkte).
+Punkte < 50% ab50% ab60% ab75% ab85%
+Note 5 4 3 2 1
+2026-S Mathematik–0–Syllabus 3/13
+Leistungsbeurteilung
+VO:SchriftlicheKlausur.
+• An-/AbmeldungerfolgtüberLFU:onlinebzw.Sowi-Prüfungsreferat.
+• Dauer:90Minuten.
+• 12Single-Choice-Aufgaben.ProrichtigerAufgabe5Punkte,profalscher
+Aufgabe1PunktAbzug.
+• DieNoteergibtsichausdemAnteildererreichtenPunkte.
+Punkte < 50% ab50% ab60% ab75% ab85%
+Note 5 4 3 2 1
+2026-S Mathematik–0–Syllabus 4/13
+Hinweise zu Prüfungen
+Onlinetests:
+• JeweilsnachderVOvonMi(11:30)bisMo(9:00)vordenPS.
+DiskussionimForumdesOlatkurses(ModerationvonMibisFr).
+• JedeeinzelneAufgabekannzweimaleingegeben/gespeichertwerden(d.h.
+jeweilseinFehlversuchisterlaubt).DasSystemzeigtsofortan,welcher
+AnteilderPunkte(zwischen0und1)erreichtwurde.
+PS-Tests:
+• JeweilseineSingle-Choice-AufgabeamEndejedesPS(abPS-2ainWoche3).
+• SelbständigeBearbeitungnurmitFormelsammlungundeinemerlaubten
+Taschenrechner.
+2026-S Mathematik–0–Syllabus 5/13
+Hinweise zu Prüfungen
+Rechenbeispiele:
+• UnkommentierteFormelsammlungwirdzurVerfügunggestellt.
+• Zwischenergebnissenichtrunden.Endergebnissewerdenaufzwei
+Nachkommastellengerundetabgefragt.
+• SechserlaubteTaschenrechnermodelleinschriftlichenPrüfungen:
+TexasInstruments Casio FX-82DEPLUS
+TI-30XIIS TI-30XA TI-30ECORS FX-82MS FX-82Solar FX-85DEPLUS
+TI-30XIIB TI-30XASolar FX-85MS FX-82SolarII FX-87DEPLUS
+2026-S Mathematik–0–Syllabus 6/13
+Lernunterstützung
+VO:https://www.mathe4wiwi.org/
+• Videos/Screencasts.
+• TrainingsaufgabenalsVorbereitungaufOnlinetests/PS(mitLösungswegen).
+Olat:https://lms.uibk.ac.at/url/RepositoryEntry/5717917862
+• Mitteilungen(bzgl.VO,PS,Prüfungen,...).
+• Ressourcen:VO-undPS-Folien,Klausurarchiv,Formelsammlung.
+• FAQ.
+• DiskussionsforenfürAdministrativesundInhalt.
+• SelbsttestsalsVorbereitungaufschriftlichePrüfungen(ohneLösungswege).
+• Probeklausuren(ohneLösungswege,mitZeitbeschränkung).
+• Livestream(ÜbertragungderVO,zeitgleichzurVO).
+2026-S Mathematik–0–Syllabus 7/13
+Ablauf
+VO:Vorlesung&Selbststudium
+PS:Tests&Diskussion
+2026-S Mathematik–0–Syllabus 8/13
+Ablauf
+VO:DieInhaltewerdenzunächstmitScreencastsselbständigerarbeitet.
+AnschließendÜberblickundDiskussioninVO-Terminen(inkl.Livestream).
+• InhaltederVO-TerminehängenwesentlichvonFragen/Diskussionenab.
+• KommunikationimHörsaalsowieperParticify.
+PS:DieInhaltewerdendurchdieOnlinetestsvorbereitetunddanninPräsenz
+vertieft.AllePSfindenmitAnwesenheitspflichtstatt.
+• GemeinsameBearbeitungvonÜbungsaufgabeninKleingruppen.
+• SchriftlicheKurztestsamEndejedesPS.
+• MitarbeitspunktefürregelmäßigeAktivität.
+2026-S Mathematik–0–Syllabus 9/13
+Ablauf
+Kommunikation:
+• WährendVOundPSkönnenFragenlivegestelltund(auchuntereinander)
+beantwortetwerden.
+• AußerhalbderLehrveranstaltungennutzenSiedasForumimOlatkurs,um
+Fragenzustellenundsichgegenseitigzubeantworten.Auchundbesonders
+währendderOnlinetests.
+• MitteilungenimOlatkurslesen(ambestenabonnieren).
+2026-S Mathematik–0–Syllabus 10/13
+Richtlinie zur Nutzung von Künstlicher Intelligenz
+Definition:GenerativeWerkzeugeausderKünstlichenIntelligenz(KI)erstellen
+neueInhaltebasierendaufBenutzereingaben(Prompts)undvorabtrainierten
+neuronalenNetzwerken,z.B.ChatGPT,Claude,Gemini,usw.
+Motivation:UmerfolgreichanalytischeFähigkeiteninMathematik,Statistik
+unddarüberhinauszuerwerben,sindpersönlicheAnstrengungundpraktische
+Erfahrungunverzichtbar.DasmühsameDurcharbeitenvonProblemenistein
+wichtigerTeildesLernprozesses.DieserkannnichtdurchKI-Werkzeugeersetzt
+werden,dieLösungenohneVerständniserzeugen.
+Nutzung:KI-WerkzeugekönnenaktivesLernensinnvollunterstützen,sindaber
+inallenPrüfungenstrengstensuntersagt!
+2026-S Mathematik–0–Syllabus 11/13
+Termine: Onlinetests, PS-Tests und Klausuren
+Onlinetests:JeweilsvonMi11:30bisMo9:00.
+PS-Tests:AmEndejederPS-Einheit.
+PS-Klausur:22./23.Juni(jeweilsinderZeitdesPS).
+Vorlesungsprüfung:
+• Datum:Mo20.7.10:00.
+• Anmeldung:6.7.–13.7.12:00UhrMittags(überLFU:online).
+• WeitereTermine:InnachfolgendenSowi-Prüfungswochen.
+2026-S Mathematik–0–Syllabus 12/13
+Software: R
+Motivation:ZurVertiefungdesVerständnissesundalsVorbereitungfürdas
+Modul“StatistischeDatenanalyse”wirddieLösungeinigerAufgabeninVO/PS
+mitHilfedesStatistik-SystemsR(https://www.R-project.org/)illustriert.
+• Open-Source-Software,freiverfügbarunterGPL
+• AktuelleVersion:4.5.2
+• ComprehensiveRArchiveNetworkmitDownloadszurInstallation
+https://CRAN.R-project.org/
+• DirekterLinkzumWindows-Installationsprogramm
+https://CRAN.R-project.org/bin/windows/base/
+• RStudio:IntegrierteEntwicklungsumgebungfürR
+https://posit.co/download/rstudio-desktop/
+2026-S Mathematik–0–Syllabus 13/13

@@ -1,0 +1,405 @@
+Synchronisation paralleler
+X
+Transaktionen
+Kapitel
+Vorlesung Datenbanksysteme
+Univ.-Prof. Dr. Günther Specht
+Datenbanken und Informationssysteme (DBIS)
+Vorlesungsinhalt
+Synchronisation paralleler Transaktionen
+1. Motivation (Problemstellung)
+2. Serialisierbarkeit
+3. Sperren und Sperrprotokolle
+1. 2-Phasen Sperrprotokoll
+2. Deadlock und Livelock
+3. Strenges 2-Phasen Sperrprotokoll
+4. Protokolle mit Lese und Schreibsperren (RX, RAX, RAC)
+4. Optimistische Verfahren
+5. Zusammenfassung
+2
+1. Motivation (Problemstellung)
+• Zielsetzung der TA-Verwaltung:
+– Kurze Antwortzeiten
+– Hoher Datendurchsatz
+• Lösung:
+– Simultanes Verarbeiten der TA anstelle serieller Ausführung
+(vg. Timesharing bei BS)
+3
+Ausführung paralleler Transaktionen durch das DBMS
+4
+Motivation (Problemstellung)
+Verarbeitungsmodell:
+1. Transaktionen (TAs) sind Einheiten der Ablaufsteuerung im DBS
+(ähnlich wie Prozesse im BS). Jede TA besteht aus einem sequentiellen
+Programm einzelner („atomarer“) Aktionen (lese Tupel, schreibe Tupel, etc.)
+T = (a , a , …, a )
+i i1 i2 ik
+Ziel: Parallelausführung von n-TAs {T , T , …, T }
+1 2 n
+2. Jede TA liest Daten aus der DB in den privaten Arbeitsbereich (Workspace),
+ändert dort und schreibt von hier wieder zurück in die DB
+5
+Motivation (Problemstellung)
+• Konsistenzprobleme (z.B. Lost updates):
+T T
+1 2
+a : read (A -> X )
+11 1
+a : read (A -> X )
+21 2
+a : X = X + 2
+22 2 2
+a : write (X -> A)
+23 2
+a : X = X + 1
+12 1 1
+a : write (X -> A)
+13 1
+6
+2. Serialisierbarkeit
+• Definition:
+Ein Schedule für eine Menge {T , …, T } von TA
+1 n
+ist eine Folge von Aktionen, die durch Mischen der Aktionen a der T unter
+ij i
+Beibehaltung der Ordnung innerhalb der T entsteht.
+i
+• Definition:
+Ein serieller Schedule S ist ein Schedule von {T , …, T },
+1 n
+wobei S = π(T , …, T ).
+1 n
+(für Permutationen π), (d.h. nur ganze Transaktionen werden vertauscht)
+• Definition:
+Ein Schedule S von {T , …, T } ist serialisierbar, wenn er dieselbe Wirkung wie
+1 n
+ein beliebiger serielle Schedule von {T , …, T } hat.
+1 n
+7
+Serialisierbarkeit
+• Konsistenzbedingung:
+Nur serialisierbare Schedules dürfen zugelassen werden
+• Im Beispiel ist (a , a , a , a , a , a ) kein serialisierbarer Schedule von
+11 21 22 23 12 13
+{T , T }
+1 2
+• Strategien:
+– Verwendung nur serieller Schedules
+ primitives DBS, schlechte Performance
+– Allgemeiner Mechanismus = Verwendung von Sperren
+(zur Erzeugung serialisierbarer Schedules)
+8
+3. Sperren und Sperrprotokolle
+9
+3. Sperren und Sperrprotokolle
+• Sperre (Lock):
+Temporäres Zugriffsprivileg auf einzelne Objekte
+• Sperrbare Einheiten:
+– Tupel
+– Seiten (= physischer Datenblock), Plattenblock,
+– ganze Relationen
+– ganze Datenbank
+• Ist die sperrbare Einheit klein, dann ist die Nebenläufigkeit besonders groß,
+jedoch auch der Systemaufwand groß. Ist die sperrbare Einheit groß, so ist der
+Systemaufwand klein, aber auch nur geringe Nebenläufigkeit möglich.
+10
+Sperren und Sperrprotokolle cont.
+• Sperranfrage:
+– allgemein: (<object>, <lock-type>, <TA_id>)
+• Verwaltet werden Sperren über den Lock-Manager (er führt die Sperrtabelle)
+• Sperren selbst müssen atomar sein (bspw. über BS-Semaphore)
+• Beispiel:
+lock(B); read B->X, lock(C), read C -> Y, unlock (C),
+X = X+Y, write X -> B, unlock(B)
+11
+3.1. Zwei Phasen Sperrprotokoll
+• Einfachste und populärste Methode zur Erzeugung serialisierbarer Schedules
+• Definition:
+Ein 2-Phasen Sperrprotokoll erfordert, dass jede TA alle ihre
+Sperranfragen vor ihren ersten unlock stellt
+Anzahl Sperren
+genauer:
+Lockpoint
+verarbeiten
+Freigabe
+Sperre
+anfordern
+t
+begin TA end TA
+Sperrphase unlock-Phase
+12
+Zwei Phasen Sperrprotokoll
+• Beachte: Das Zurückschreiben in die DB findet nur in der zweiten Phase
+(unlock-Phase) statt
+• Zurücksetzen der TA (abort) während der ersten Phase leicht möglich
+• Satz:
+Jeder 2-Phasen Transaktions-Schedule ist serialisierbar!
+• (Beweis siehe Lehrbuch)
+• Es bleiben die Probleme: Deadlock, Livelock
+13
+3.2. Allg. Probleme bei Sperrsynchronisation
+3.2.1. Deadlock
+Beispiel:
+TA TA
+1 2
+Lock A Lock B
+Lock B Lock A
+… …
+=> TA und TA warten ewig aufeinander.
+1 2
+14
+Allgemeine Probleme bei Sperrsynchronisation
+• Maßnahmen zur Deadlockvermeidung / Auflösung:
+1. Preclaiming
+2. Totale Ordnung auf DB-Objekte
+3. Erkennung mittels Wartegraphen
+4. Deadlockauflösung durch Timeout
+15
+(3.2.1) 1. Preclaiming
+• Preclaiming: Jede TA fordert alle benötigten Sperren zu Beginn an.
+Parallelität ist nur zwischen „konfliktfreien“ TA möglich
+Sperren
+Lockpoint
+t
+• Beurteilung: zu restriktiv (Sperranforderung viel zu früh,
+im interaktiven Modus: „Sperren auf Verdacht“)
+16
+(3.2.1) 2. Totale Ordnung auf DB-Objekte
+Totale Ordnung auf DB-Objekte:
+• Sperren können nur in aufsteigender Ordnung angefordert werden
+– teils im BS:
+Datei < Hauptspeicher < Rechnerkern
+17
+(3.2.1) 3. Erkennung mittels Wartegraphen
+Besser für DBS:
+• Erkennung mittels Wartegraph
+• Anschließendes Rücksetzen (abort TA) oder Neustart der TA nach endlicher
+Zeit
+=> schnelles Rücksetzen ist bei Mehrbenutzerbetrieb wesentlich
+• Definition:
+Ein Wartegraph ist ein gerichteter Graph über einzelne TAs, wobei die Knoten
+die TA sind und die Kanten T  T, falls T auf Freigabe einer Sperre von T
+i j i j
+wartet (Deadlock = Zyklus im Wartegraph)
+• Deadlockerkennung entspricht der Zykluserkennung
+T T
+1 2
+im Wartegraph; Komplexität ist i.A.
+O(n3) (Warshall)
+18
+Erkennung Sperrenverwaltern cont.
+• Falls der Graph zyklenfrei ist (immer sofortiger Test) und nur Test einer neuen
+Einfügung:
+Komplexität O(n*m) (wobei n = |TAs|, m = |Kanten|)
+• „Wie oft soll die Zyklenerkennung aufgerufen werden?“
+periodisch
+Zyklenerkennung
+nur bei größeren Abfragen oder Änderungen
+• Deadlock-Auflösung:
+Welche der beteiligten TA sollen zurückgesetzt werden? Wie erkennt man
+Kosten, die eine TA schon verursacht hat bzw. noch verursachen wird? (Wie
+„nah“ ist sie am Ziel?)
+=> Ermittlung des „minimal cycle cut“
+19
+(3.2.1) 4. Deadlockauflösung durch Timeout
+• Probleme:
+– Länge des Timeout-Intervalls
+– Unter Umständen handelt es sich um keinen Timeout, sondern nur um
+lange TAs oder langes Warten (sinnvoll bei bekannter maximaler TA-Länge)
+20
+3.2.2. Live-Lock (Verhungerungsproblem)
+• Ein Live-Lock für eine TA T besteht, wenn T nach einer Sperranfrage wartend
+gesetzt wird, aber aufgrund einer unfairen Sperrenvergabe nicht wieder aktiviert
+wird
+lock (B)
+T
+1
+wartend
+lock (B) unlock (B) lock (B)
+T T T T
+2 4 6 8
+lock (B) unlock (B)
+T T T
+3 5 7
+• Vermeidung: faire Sperrenvergabe --> z.B.: „first come, first serve“
+(weitere Strategien: Vergleiche BS)
+21
+3.3. Strenges 2-Phasen Sperrprotokoll
+• Wechselwirkung zwischen 2-Phasen Sperren und Recovery: gefährliche Effekte
+beim Rücksetzen während der unlock-Phase (= Schreiben auf DB)
+• Szenario:
+T
+1
+unlock
+unlock commit T :fail
+1
+(A, T ) (A, T )
+1 2 abort T
+1
+TA: A C I D
+Start lock lock
+commit T :OK
+T , T (A, T ) (A, T ) 2
+1 2 1 2 dauerhaft
+isoliert
+konsistent
+T ebenfalls zurücksetzen schreiben in DB atomar
+2
+22
+Strenges 2-Phasen Sperrprotokoll
+• Commit von T1 kann scheitern
+– Rücksetzen von T1
+– Rücksetzen von T2 (bereits commit!) => Widerspruch zur Dauerhaftigkeit
+– „Dominoeffekt an nötigen Rücksetzaktionen“
+• Daher: Strenges 2-Phasen Sperrprotokoll
+Alle Sperren müssen bis zum Ende der TA (EOT = End of Transaction)
+gehalten werden
+Anzahl Sperren
+t
+Start TA EOT
+• In der Praxis: fast immer strenges 2-Phasen Sperrprotokoll
+23
+3.4. Protokolle mit Lese- und Schreibsperren
+• Bisher wurden nur exklusive Sperren lock(A,TA) betrachtet
+• Neu:
+Verfeinerung bezüglich reiner Lesezugriffe (R-Sperre) und
+Lesen und Schreiben (X-Zugriffe)
+– RX-Sperrprotokoll
+– RAX-Sperrprotokoll
+– RAC-Sperrprotokoll
+24
+3.4.1 RX-Sperrprotokoll
+• Sperrenverträglichkeit
+gewähren
+R X
+haben R + -
+X - -
++ : verträgliche Sperre (dürfen gewährt werden)
+- : unverträgliche Sperre (müssen warten)
+• RX-Sperrverwalter:
+– Mehrere TAs dürfen gleichzeitig lesen
+– Exklusives Schreiben (Ändern)
+• Vorteil: erhöhte Parallelität unter Lesen
+25
+3.4.2 RAX-Sperrprotokoll
+• Idee:
+Da die Updates vor dem Commit erst auf Kopien vorbereitet werden, ist
+Parallelität zwischen Lesen und Schreiben im Prinzip möglich
+• Neue Sperrart: A-Lock
+• Sperrmatrix:
+R A X
+R + + -
+A + - -
+- - -
+X
+• Der A-Lock dient zur Vorbereitung einer neuen Objektversion auf Kopie,
+während dessen sind die alten Versionen lesbar (R-Sperre)
+26
+RAX-Sperrprotokoll
+• Szenario:
+Wunsch
+A X
+commit
+a := a + 1
+Warten
+alter Wert
+neuer
+Wert
+alter Wert
+R A R
+T T T
+1 2 3
+• A-Sperre,
+• nach Fertigstellen der neuen Version: Konvertierungswunsch A -> X
+• Warten, bis alle alten Leser fertig sind, auch neue Leser müssen dann warten
+• dann A -> X; commit; X-Sperre lösen; neue Leser  neuer Wert
+27
+RAX-Sperrprotokoll
+• Vorteil von RAX:
+– Höhere Parallelität als bei RX, insbesondere hohe Verfügbarkeit für
+Leserwünsche
+• Nachteil von RAX:
+– Konvertierung von A -> X kann zu einem Deadlock führen
+– Rücksetzen => „verlorene“ Arbeit
+28
+3.4.3 RAC-Sperrprotokoll
+(siehe Tafelarbeit)
+• Leser kommen immer dran
+– Kurzzeitig: 2 Versionen
+– Sperrmatrix:
+R A C
+R + + +
+A + - -
+C + - -
+29
+4. Optimistische Verfahren
+• Annahme: Konflikte zwischen TAs sind sehr selten. TAs sind sehr kurz (billig)
+• Idee:
+Parallele TAs dürfen alle ungehindert bis EOT auf lokaler Kopie arbeiten:
+vor commit: Test, ob Schedule serialisierbar war (Validierung)
+commit
+oder
+Lesen, arbeiten auf Kopie
+abort
+•
+BOT Arbeitsphase Validierung Schreibphase
+• Vorteile:
+– Aufwand für das Führen der Sperrtabelle entfällt vollständig
+– keine Deadlocks mehr möglich
+– reine Lesetransaktionen werden nie behindert
+30
+Optimistische Verfahren
+• Validierungsverfahren:
+– Jeder TA wird beim Eintritt in die Validierungsphase eine Serialisierungsnr.
+zugewiesen
+– Eine TA T ist dann korrekt, wenn für jede TA T, die T in der seriellen
+i
+Reihenfolge voraussetzt, zumindest eines der folgenden Kriterien erfüllt ist
+(jedes dieser drei Kriterien stellt die Serialisierbarkeit sicher):
+• T wurde vor Beginn von T beendet
+i
+• Die Schreibmenge von T schneidet sich nicht mit der Schreib- oder Lesemenge
+i
+von T
+• Die Schreibmenge von T, schneidet sich mit der Lesemenge von T, und T
+i i
+schrieb vor T persistent in die DB
+• Wertung:
+Optimistische Verfahren bieten Vorteile, wenn Konflikte zwischen Transaktionen
+selten sind (z.B.: bei geringer Nebenläufigkeit) und keine langen Transaktionen
+vorliegen
+31
+5. Zusammenfassung
+• Ziel:
+– Höhere Performance durch verschränkte Verarbeitung der TAs
+• Problem:
+– „Lost updates“
+• Forderung:
+– Serialisierbare Scheduler
+• Realisierung
+– 2-Phasen Sperrprotokoll
+• Bleibende Probleme:
+– Deadlock
+– Live-Lock
+32
+Zusammenfassung
+• Probleme lösbar durch:
+– Preclaiming
+– Zyklussuche im Wartegraph
+– Zeitstempel
+• 2-Phasen-Sperrprotokoll Problem:
+– Kaskadenartiges Zurücksetzen von bereits committeten TAs
+– Lösung durch strengeres 2-Phasen-Sperrprotokoll
+• Noch besser als X-Protokoll: RX-Protokoll, RAX-Protokoll, RAC-Protokoll
+• Granularität: beachte Index-Strukturen: B-Baum-Splits, Extendible Hashing etc.
+• Optimistische Verfahren
+33
+Zusammenfassung
+• Heute:
+– Optimistische Verfahren
+(in nicht kritischen Anwendungen: Biblio, NoSQL etc.)
+– In allen Anderen (Bank, Flugbuchung, ihre Noten-DB )
+– RAX + Zeitstempel
+– (RAX/RX + Wartegraph)
+– einige auch RX
+34

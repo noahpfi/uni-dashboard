@@ -1,0 +1,523 @@
+Docker Workshop - PS Software Engineering 2026
+Zoe Pfister
+BasierendaufdenSlidesvonAndreaMussmann,AlexanderBlaas,SashkoRistovund
+EduardFrankfort
+Agenda
+• WarumDocker? MotivationundGrundidee
+• Grundbegriffe: Dockerfile,Image,Container,Registry
+• InstallationundersteSchrittemitDocker
+• ErstesBeispiel: ImagebauenundContainerstarten
+• PersistenzmitVolumes
+• Multi-Container-AnwendungenmitNetzwerkundMySQL
+• DockerComposemit compose.yaml
+• BestPracticesundwichtigeDocker-Commands
+• BindMounts
+PSSoftwareEngineering2026April20 1
+Warum PDroocjekketr-?Infrastruktur: Beispiel eigener Rechner
+● Apache Webserver
+● PHP ● Python
+● WordPress ● Python ● SQLite
+● Ant
+● Node.js
+● NPM ● Java 8
+● Java 11
+● MongoDB ● Maven
+● Maven
+● Tomcat 8
+● Tomcat 9
+● PostgreSQL
+● MySQL
+● PhpMyAdmin ● Neo4j
+Alexander Blaas | PS So2ware Engineering SS21 | Workshop 5: Docker Page 8
+PSSoftwareEngineering2026April20 2
+DockerermöglichtdasErstellenvonisolierten
+Containern. DabeiwerdenAbhängigkeiten
+eines Programms(JavaVersion,Datenbanken,
+etc.) gebündelt.
+→Containerkönnendannausgeliefertund
+deployedwerden.
+Warum Docker?
+PSSoftwareEngineering2026April20 3
+Warum Docker?
+DockerermöglichtdasErstellenvonisolierten
+Containern. DabeiwerdenAbhängigkeiten
+eines Programms(JavaVersion,Datenbanken,
+etc.) gebündelt.
+→Containerkönnendannausgeliefertund
+deployedwerden.
+PSSoftwareEngineering2026April20 3
+Virtuelle Maschinen und Docker-Container im Vergleich
+Docker Container Virtuelle Maschinen
+• AppsA–FlaufenaufeinemHost-OS • JedeVMhateineigenes Guest-OS
+• Container: IsolierteProzesse • VollwertigeBetriebssysteme
+• Größe: MB-Bereich • Größe: GB-Bereich
+PSSoftwareEngineering2026April20 4
+Image
+Einunveränderliches, schreibgeschütztes Templateaus
+übereinanderliegendenEbenen,dasallenötigenDateien,Bibliothekenund
+KonfigurationenenthältundalsGrundlagefürdasStartenvonContainerndient.
+Container
+Einelaufende Instanz eines Docker-Images,dieeineisolierteUmgebung
+miteigenemDateisystem,ProzessenundRessourcenbereitstellt.
+Grundbegriffe
+Dockerfile
+EineTextdatei mit einer Reihe von Anweisungen(Basis-Image,Kopieren
+vonDateien,InstallierenvonPaketen,FestlegendesStartbefehls),mitder
+DockerautomatisierteinImageerzeugt.
+PSSoftwareEngineering2026April20 5
+Container
+Einelaufende Instanz eines Docker-Images,dieeineisolierteUmgebung
+miteigenemDateisystem,ProzessenundRessourcenbereitstellt.
+Grundbegriffe
+Dockerfile
+EineTextdatei mit einer Reihe von Anweisungen(Basis-Image,Kopieren
+vonDateien,InstallierenvonPaketen,FestlegendesStartbefehls),mitder
+DockerautomatisierteinImageerzeugt.
+Image
+Einunveränderliches, schreibgeschütztes Templateaus
+übereinanderliegendenEbenen,dasallenötigenDateien,Bibliothekenund
+KonfigurationenenthältundalsGrundlagefürdasStartenvonContainerndient.
+PSSoftwareEngineering2026April20 5
+Grundbegriffe
+Dockerfile
+EineTextdatei mit einer Reihe von Anweisungen(Basis-Image,Kopieren
+vonDateien,InstallierenvonPaketen,FestlegendesStartbefehls),mitder
+DockerautomatisierteinImageerzeugt.
+Image
+Einunveränderliches, schreibgeschütztes Templateaus
+übereinanderliegendenEbenen,dasallenötigenDateien,Bibliothekenund
+KonfigurationenenthältundalsGrundlagefürdasStartenvonContainerndient.
+Container
+Einelaufende Instanz eines Docker-Images,dieeineisolierteUmgebung
+miteigenemDateisystem,ProzessenundRessourcenbereitstellt.
+PSSoftwareEngineering2026April20 5
+Von Dockerfile zum Container
+1 Dockerfileschreiben(Anweisungendefinieren)
+2 docker build erzeugteinImage
+3 docker run starteteinenContainerausdemImage
+Imageai-enhancedfrom
+https://medium.com/platformer-blog/practical-guide-on-writing-a-dockerfile-for-your-application-89376f88b3b5
+PSSoftwareEngineering2026April20 6
+Registry / Docker Hub
+DockerHubisteinezentralePlattformzumSpeichern, Teilen und Verwalten
+vonDocker-Images.
+Beispiele:
+• docker pull postgres (PostgresDB
+https://hub.docker.com/_/postgres)
+• docker pull alpine (AlpineLinuxhttps://hub.docker.com/_/alpine)
+• docker pull ubuntu (UbuntuLinuxhttps://hub.docker.com/_/ubuntu)
+• ...
+ImagesaufDockerHubsindoftinvielenVersionenverfügbar. Dieneueste
+Versionwirdoftals latest (z.B. postgres:latest)bezeichnet. Mansollte
+aberimmereinebestimmteVersionangeben(z.B. postgres:17).
+PSSoftwareEngineering2026April20 7
+Installation
+OffizielleAnleitung(DockerDesktop):
+https://docs.docker.com/get-started/get-docker/
+CheatsheetfürdieCommand-Line:
+https://docs.docker.com/get-started/docker_cheatsheet.pdf
+DasfolgendeBeispielbasiertaufdemGetStartedWorkshopvonDocker:
+https://docs.docker.com/get-started/workshop/
+PSSoftwareEngineering2026April20 8
+Schritt 1: App herunterladen
+ZuerstklonenwirdieBeispiel-Anwendung:
+git clone https://github.com/docker/getting-started-app.git
+Projektstruktur:
+getting-started-app/
+|-- .dockerignore
+|-- package.json
+|-- package-lock.json
+|-- spec/
+|-- src/
+PSSoftwareEngineering2026April20 9
+Schritt 2: Unser erstes Dockerfile
+ImProjektverzeichnisein Dockerfile anlegen:
+FROM node:24-alpine
+1
+WORKDIR /app
+2
+COPY . .
+3
+RUN npm install --omit=dev
+4
+CMD ["node", "src/index.js"]
+5
+EXPOSE 3000
+6
+Was passiert hier?
+• FROM –Basis-Image(Alpine • COPY –DateienimVerzeichniskopieren
+LinuxmitNode.js) • RUN –Abhängigkeiteninstallieren
+• WORKDIR –Arbeitsverzeichnis • CMD –StartbefehlderAnwendung
+imContainer
+• EXPOSE –ListenPort
+PSSoftwareEngineering2026April20 10
+Schritt 2: Unser erstes Dockerfile
+ImProjektverzeichnisein Dockerfile anlegen:
+FROM node:24-alpine
+1
+WORKDIR /app
+2
+COPY . . # This will copy the entire directory relative to your current path!
+3
+RUN npm install --omit=dev
+4
+CMD ["node", "src/index.js"]
+5
+EXPOSE 3000
+6
+Was passiert hier?
+• FROM –Basis-Image(Alpine • COPY –DateienimVerzeichniskopieren
+LinuxmitNode.js) • RUN –Abhängigkeiteninstallieren
+• WORKDIR –Arbeitsverzeichnis • CMD –StartbefehlderAnwendung
+imContainer
+• EXPOSE –ListenPort
+PSSoftwareEngineering2026April20 10
+Container starten:
+docker run --name getting-started-container -d -p
+127.0.0.1:3000:3000 getting-started
+• Container-Name: -name getting-started-container. Erlaubteinfache
+IdentifikationdesContainers.
+• DetachedMode(Hintergrund): -d.
+• Port-Mapping: -p HOST:CONTAINER.
+Schritt 3: Image bauen & Container starten
+Image bauen:
+docker build -t getting-started .
+• Benennung(Tag)desImages: -t getting-started
+• DockerfileimaktuellenVerzeichnissuchen: .
+PSSoftwareEngineering2026April20 11
+Schritt 3: Image bauen & Container starten
+Image bauen:
+docker build -t getting-started .
+• Benennung(Tag)desImages: -t getting-started
+• DockerfileimaktuellenVerzeichnissuchen: .
+Container starten:
+docker run --name getting-started-container -d -p
+127.0.0.1:3000:3000 getting-started
+• Container-Name: -name getting-started-container. Erlaubteinfache
+IdentifikationdesContainers.
+• DetachedMode(Hintergrund): -d.
+• Port-Mapping: -p HOST:CONTAINER.
+PSSoftwareEngineering2026April20 11
+Wichtig
+ÄnderungenerfordernimmereinenneuenBuildundeinenneuenContainer!
+Änderungen am Code vornehmen
+1 Quellcodeändern(z.B.Textin src/static/js/app.js)
+2 Imageneu bauen:
+docker build -t getting-started .
+3 AltenContainerstoppen und entfernen:
+docker stop <container-id oder -name>
+docker rm <container-id oder -name>
+4 NeuenContainerstarten:
+docker run --name getting-started-container -d -p \
+127.0.0.1:3000:3000 getting-started
+PSSoftwareEngineering2026April20 12
+Änderungen am Code vornehmen
+1 Quellcodeändern(z.B.Textin src/static/js/app.js)
+2 Imageneu bauen:
+docker build -t getting-started .
+3 AltenContainerstoppen und entfernen:
+docker stop <container-id oder -name>
+docker rm <container-id oder -name>
+4 NeuenContainerstarten:
+docker run --name getting-started-container -d -p \
+127.0.0.1:3000:3000 getting-started
+Wichtig
+ÄnderungenerfordernimmereinenneuenBuildundeinenneuenContainer!
+PSSoftwareEngineering2026April20 12
+Lösung: Volumes
+VolumesbietenpersistentenSpeicher,derüberdieLebensdauereines
+Containershinausbestehenbleibt. DockerverwaltetdenSpeicherortaufdem
+Host-Computer.
+→ DieTodo/AppverwendetstandardmäßigeineSQLite-Datenbankunter
+/etc/todos/todo.db. Persistierenwirsie!
+Persistieren von Daten: Volumes
+• JederContainerhatseineneigenenScratch Space
+• ÄnderungenimDateisystemeinesContainerssindfürandereContainer
+nicht sichtbar
+• WirdeinContainergelöscht,gehenalleDatenverloren
+PSSoftwareEngineering2026April20 13
+→ DieTodo/AppverwendetstandardmäßigeineSQLite-Datenbankunter
+/etc/todos/todo.db. Persistierenwirsie!
+Persistieren von Daten: Volumes
+• JederContainerhatseineneigenenScratch Space
+• ÄnderungenimDateisystemeinesContainerssindfürandereContainer
+nicht sichtbar
+• WirdeinContainergelöscht,gehenalleDatenverloren
+Lösung: Volumes
+VolumesbietenpersistentenSpeicher,derüberdieLebensdauereines
+Containershinausbestehenbleibt. DockerverwaltetdenSpeicherortaufdem
+Host-Computer.
+PSSoftwareEngineering2026April20 13
+Persistieren von Daten: Volumes
+• JederContainerhatseineneigenenScratch Space
+• ÄnderungenimDateisystemeinesContainerssindfürandereContainer
+nicht sichtbar
+• WirdeinContainergelöscht,gehenalleDatenverloren
+Lösung: Volumes
+VolumesbietenpersistentenSpeicher,derüberdieLebensdauereines
+Containershinausbestehenbleibt. DockerverwaltetdenSpeicherortaufdem
+Host-Computer.
+→ DieTodo/AppverwendetstandardmäßigeineSQLite-Datenbankunter
+/etc/todos/todo.db. Persistierenwirsie!
+PSSoftwareEngineering2026April20 13
+Volumes verwenden
+Volume erstellen:
+docker volume create todo-db
+Container mit Volume starten:
+docker run -d -p 127.0.0.1:3000:3000 \
+--mount type=volume,src=todo-db,target=/etc/todos \
+getting-started
+• VolumeaneinenPfadimContainerbinden: --mount
+• NamedesVolumes: src
+• MountpunktimContainer: target
+DatenbleibenjetztauchnachdemNeustartdesContainerserhalten!
+PSSoftwareEngineering2026April20 14
+Container-Networking
+ContainerkönnenübereingemeinsamesDocker-Netzwerkmiteinander
+kommunizieren. KontaktierungerfolgtüberdenContainernamenals
+Hostname.
+Multi-Container. Jetzt wollen wir MySQL!
+Grundregel
+JederContainersolltegenau eine Aufgabeübernehmen.
+GründefürdieTrennung:
+• APIs,FrontendsundDatenbankenunabhängig skalieren.
+• VerschiedeneVersionenundUpdatesisoliertverwalten.
+PSSoftwareEngineering2026April20 15
+Multi-Container. Jetzt wollen wir MySQL!
+Grundregel
+JederContainersolltegenau eine Aufgabeübernehmen.
+GründefürdieTrennung:
+• APIs,FrontendsundDatenbankenunabhängig skalieren.
+• VerschiedeneVersionenundUpdatesisoliertverwalten.
+Container-Networking
+ContainerkönnenübereingemeinsamesDocker-Netzwerkmiteinander
+kommunizieren. KontaktierungerfolgtüberdenContainernamenals
+Hostname.
+PSSoftwareEngineering2026April20 15
+Beispiel: App + MySQL
+todo-app-network
+Todo App MySQL
+PSSoftwareEngineering2026April20 16
+Beispiel: App + MySQL
+1. Netzwerk erstellen:
+docker network create todo-app
+2. MySQL-Container starten:
+docker run -d --network todo-app --network-alias mysql \
+-v todo-mysql-data:/var/lib/mysql \
+-e MYSQL_ROOT_PASSWORD=secret \
+-e MYSQL_DATABASE=todos \
+mysql:8.0
+• Environment-Variablessetzen: -e
+• Docker-HubSeiteenthältDokumentation:
+https://hub.docker.com/_/mysql
+PSSoftwareEngineering2026April20 17
+Das wird alles schnell komplex!
+Beispiel: App + MySQL contd.
+3. App-Container mit DB verbinden:
+docker run -d --network todo-app \
+-p 127.0.0.1:3000:3000 -e MYSQL_HOST=mysql \
+-e MYSQL_USER=root -e MYSQL_PASSWORD=secret \
+-e MYSQL_DB=todos getting-started
+EinloggenindieMySQL-Datenbank:
+docker exec -it <container-id oder -name> mysql -u root -p
+PSSoftwareEngineering2026April20 18
+Beispiel: App + MySQL contd.
+3. App-Container mit DB verbinden:
+docker run -d --network todo-app \
+-p 127.0.0.1:3000:3000 -e MYSQL_HOST=mysql \
+-e MYSQL_USER=root -e MYSQL_PASSWORD=secret \
+-e MYSQL_DB=todos getting-started
+EinloggenindieMySQL-Datenbank:
+docker exec -it <container-id oder -name> mysql -u root -p
+Das wird alles schnell komplex!
+PSSoftwareEngineering2026April20 18
+Introducing: Docker Compose
+• EinToolzumDefinieren und Verwaltenvon
+Multi-Container-Anwendungen
+• KonfigurationineinereinzigenYAML-Datei(compose.yaml)
+• AlleServicesmiteinem Befehlstartenundstoppen
+• ErstelltautomatischeinNetzwerkfüralledefiniertenServices
+Vorteile
+• KeinmanuellesErstellenvonNetzwerkenundVolumesnötig
+• InfrastrukturalsCode–versionierbarundreproduzierbar
+• EinfachesStarten: docker compose up -d
+• EinfachesStoppen: docker compose down
+PSSoftwareEngineering2026April20 19
+compose.yaml – Beispiel
+• services: Definiertdie
+1 services:
+2 app: Container-DienstederAnwendung.
+3 build: .
+4 ports: • app / mysql: NamederServices. Wird
+5 - "3000:3000" automatischzueinemNetwork-Alias.
+6 environment:
+7 MYSQL_HOST: mysql • environment: Umgebungsvariablen,
+8 MYSQL_USER: root umz.B.MySQL-Zugangsdatenandie
+9 MYSQL_PASSWORD: secret
+10 MYSQL_DB: todos Appzuübergeben. Networkalias
+11 mysql: mysql wirdalsHostnameübergeben.
+12 image: mysql:8.0
+13 environment: • volumes: PersistiertDaten(auchnach
+14 MYSQL_ROOT_PASSWORD: secret NeustartdesContainerserhalten).
+15 MYSQL_DATABASE: todos
+16 volumes: • Mit docker compose up -d wirddie
+17 - todo-mysql-data:/var/lib/mysql
+kompletteUmgebungaufeinmal
+18 volumes:
+19 todo-mysql-data: gestartet.
+PSSoftwareEngineering2026April20 20
+Hilfreiche Optionen in compose.yaml
+1 services: • depends_on: Steuernder
+2 app: Startreihenfolge;mitLong-Syntaxkann
+3 build: .
+4 depends_on: manauchauf service_healthy
+5 db: warten.
+6 condition: service_healthy
+7 restart: unless-stopped • healthcheck: definiert,wannein
+8 Serviceals"healthy"gilt.
+9 db:
+10 image: postgres:18 • restart: Restart-Policy,z.B.
+11 healthcheck: unless-stopped (default: norestart).
+12 test: ["CMD-SHELL", "pg_isready -U
+postgres"] • Much,muchmore:
+13 interval: 10s
+https://docs.docker.com/
+14 retries: 5
+reference/compose-file/services/.
+PSSoftwareEngineering2026April20 21
+Image-Building Best Practices
+1 Layer Caching nutzen
+• SeltengeänderteAnweisungenzuerstimDockerfile
+• AbhängigkeitenvorQuellcodekopieren
+2 Multi-Stage Builds
+• Build-AbhängigkeitenvomfinalenImagetrennen
+• KleinereundsicherereProduktions-Images
+• BeispielSkeletonProjekt
+3 Kleine Base-Images wählen
+• Alpine-Variantenbevorzugen(node:24-alpine)
+• NurnotwendigePaketeinstallieren
+4 .dockerignore verwenden
+• node_modules, .git,Logsetc.ausschließen
+• SchnellereBuildsundkleinereImages
+PSSoftwareEngineering2026April20 22
+Optimiertes Dockerfile
+Vorher(keinCachingder Nachher(Dependenciesgecacht):
+Dependencies):
+FROM node:24-alpine
+1
+FROM node:24-alpine WORKDIR /app
+1 2
+WORKDIR /app COPY package.json package-lock.json ./
+2 3
+COPY . . RUN npm install --omit=dev
+3 4
+RUN npm install --omit=dev COPY . .
+4 5
+CMD ["node", "src/index.js"] CMD ["node", "src/index.js"]
+5 6
+Effekt
+Solangesich package.json nichtändert,wirdder npm install-Layeraus
+demCachegeladen–deutlichschnellereBuilds!
+PSSoftwareEngineering2026April20 23
+Beispiel .dockerignore File
+node_modules
+1
+.git
+2
+.gitignore
+3
+Dockerfile
+4
+README.md
+5
+*.log
+6
+.env
+7
+coverage
+8
+• Verhindert,dassunnötigeDateienindenBuild-Kontextgelangen(z.B.
+lokaler node-modules Ordneroder .git Ordner).
+• HältsensibleoderlokaleDateienwie .env ausdemImageheraus.
+PSSoftwareEngineering2026April20 24
+Multi-Stage Build: Skeleton Projekt
+SourcecodeistimSWESkeletonGitLabzufinden.
+1 # 1. API-Code generieren
+2 FROM maven:3.9-eclipse-temurin-25 AS api
+3 WORKDIR /app
+4 COPY pom.xml .
+5 COPY src/main/resources ./src/main/resources
+6 RUN mvn generate-sources -Dskip.frontend=true
+7
+8 # 2. Frontend bauen
+9 FROM node:25 AS frontend
+10 WORKDIR /app
+11 COPY src/main/frontend/package*.json ./
+12 RUN npm ci
+13 COPY src/main/frontend/ .
+14 COPY --from=api /app/src/main/frontend/src/generated-skeleton-api ./src/generated-skeleton-
+api
+15 RUN npm run build
+PSSoftwareEngineering2026April20 25
+Einschub Dev-Environments: Bind Mounts
+Bindmountskönnenverwendetwerden,umsourcecodedirektvonder
+Host-MachinemitdemContainerzuteilen.
+PSSoftwareEngineering2026April20 26
+Einschub Dev-Environments: Bind Mounts
+Development-Container starten:
+docker run -dp 127.0.0.1:3000:3000 \
+-w /app --mount type=bind,src=.,target=/app \
+node:24-alpine \
+sh -c "npm install && npm run dev"
+• --mount type=bind,src=.,target=/app: lokalesProjektverzeichnisinden
+Containereinbinden
+• -w /app: Working-Directory
+• sh -c "npm install && npm run dev": installiertnpmpackagesundstartet
+denDev-Servervia sh
+• Code-ÄnderungensindnachdemSpeichernsofortimContainersichtbar
+PSSoftwareEngineering2026April20 27
+Einschub Dev-Environments: Bind Mounts
+Development-Container starten:
+docker run -dp 127.0.0.1:3000:3000 \
+-w /app --mount type=bind,src=.,target=/app \
+node:24-alpine \
+sh -c "npm install && npm run dev"
+Vorteil
+FürdielokaleEntwicklungbrauchtihrNode.jsnichtzwingendaufdemHost–
+ToolsundAbhängigkeitenlaufenkomplettimContainer.
+PSSoftwareEngineering2026April20 27
+Wichtige Commands
+docker ps # laufende Container listen
+docker images # lokale Images
+docker stop ID # Container stoppen
+docker rm ID # Container loeschen
+docker rm -f ID # Container loeschen (force stop)
+docker logs ID # Logs anzeigen
+docker exec -it ID sh # interaktive Shell starten
+Cheatsheet: https://docs.docker.com/get-started/docker_cheatsheet.pdf
+PSSoftwareEngineering2026April20 28
+What’s Next?
+• EinbindenvonDatenbank-GUIs(PHPMyAdmin).
+• VerkleinernvonImagesmittels scratch images.
+• VerwendenvonImagesinCI/CDPipelines(GitLabRunners&GitHub
+Actions).
+• ...
+PSSoftwareEngineering2026April20 29
+Zusammenfassung
+• Dockerermöglichtkonsistente und isolierteEntwicklungs-und
+Produktionsumgebungen.
+• DieAbhängigkeiteneinerUmgebungwerdenineinemContainergebündelt.
+• Ein DockerfileisteineTextdateimitAnweisungen,ein Imageein
+unveränderliches,schreibgeschütztesTemplate,dasallesNötigefürdas
+StarteneinesContainersliefert.
+• DockerHubenthältunzähligevorgefertigteImages.
+• Bind Mounts und VolumeserlaubenflexiblesArbeitenmitlokalenDaten
+undProjektquellen.
+• NetworkserlaubendieKommunikationzwischenContainern.
+• Docker ComposeerlaubteinfacheKonfigurationvonundInteraktion
+zwischenDocker-Containern.
+PSSoftwareEngineering2026April20 30
+Vielen Dank für die Aufmerksamkeit!
+Zoe Pfister
+BasierendaufdenSlidesvonAndreaMussmann,AlexanderBlaas,SashkoRistovund
+EduardFrankfort

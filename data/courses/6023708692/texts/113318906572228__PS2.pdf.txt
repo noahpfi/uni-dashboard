@@ -1,0 +1,171 @@
+Statistische Datenanalyse
+Kapitel 1
+Deskriptive Statistik
+Deskriptive Statistik
+Beschreibung Datensatz
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 1/13
+Datensatz: Mietspiegel I
+EinMietspiegelsollMieter:innenundVermieter:innengleichermaßeneinen
+ÜberblicküberdenMarktfürWohnraumgeben.ZudiesemZwecksindim
+Datensatzmietspiegel.rdafür3082Wohnungen,dieimJahr1999inMünchen
+vermietetwordensind,achtverschiedeneMerkmaleerhobenworden.
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 2/13
+Datensatz: Mietspiegel II
+• MieteinEuroproMonat(miete)bzw.MieteinEuroproMonatund
+Quadratmeter(mieteqm)
+• Wohnfläche(flaeche)
+• Baujahr(bjahr)
+• AusstattungdesBades(bad;2=gehoben,1=normal)
+• AusstattungderKüche(kueche;2=gehoben,1=normal)
+• BezirksviertelinMünchen(bezv)
+• LagekategoriegemäßderEinschätzungvonGutachtern(lage;1=normale
+Lage,2=guteLage,3=besteLage)
+• Zentralheizung(zh;2=mit,1=ohne)
+ZielistdieSchätzungdesZusammenhangeszwischenderMieteundden
+anderenVariablen.
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 3/13
+Datensatz im R und Typen von Variablen I
+R> load("~/datenanalyse/daten/mietspiegel.rda")
+R> head(mietspiegel)
+miete mieteqm flaeche bjahr bad kueche bezv lage
+1 120.6 3.446 35 1939 normal normal 1112 normale Lage
+2 435.7 4.189 104 1939 gehoben normal 1112 normale Lage
+3 354.7 12.230 29 1971 normal normal 2114 gute Lage
+4 282.1 7.233 39 1972 normal normal 2148 gute Lage
+5 804.8 8.297 97 1985 normal normal 2222 normale Lage
+6 481.4 7.764 62 1962 normal normal 2222 normale Lage
+zh
+1 ohne
+2 mit
+3 mit
+4 mit
+5 mit
+6 mit
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 4/13
+Datensatz im R und Typen von Variablen II
+R> str(mietspiegel)
+’ ’
+data.frame: 3082 obs. of 9 variables:
+$ miete : num 121 436 355 282 805 ...
+$ mieteqm: num 3.45 4.19 12.23 7.23 8.3 ...
+$ flaeche: int 35 104 29 39 97 62 31 61 72 75 ...
+$ bjahr : num 1939 1939 1971 1972 1985 ...
+$ bad : Factor w/ 2 levels "normal","gehoben": 1 2 1 1 1 1 1 2 1 1 ...
+$ kueche : Factor w/ 2 levels "normal","gehoben": 1 1 1 1 1 1 1 1 1 1 ...
+$ bezv : int 1112 1112 2114 2148 2222 2222 2211 2142 2143 2142 ...
+$ lage : Factor w/ 3 levels "normale Lage",..: 1 1 2 2 1 1 1 2 1 1 ...
+$ zh : Factor w/ 2 levels "ohne","mit": 1 2 2 2 2 2 2 2 2 2 ...
+• AufwelcherMessskalawurdendieVariablenerhoben/gemessen?
+• Welche(Zufalls)Variablensindstetig,welchediskret?
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 5/13
+Deskriptive Statistik
+Statistische Beschreibung von
+stetigen Variablen
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 6/13
+Statistische Beschreibung mit R, I
+R> summary(mietspiegel)
+miete mieteqm flaeche bjahr
+Min. : 40.39 Min. : 0.4146 Min. : 20.00 Min. :1918
+1st Qu.: 321.07 1st Qu.: 5.2453 1st Qu.: 51.00 1st Qu.:1939
+Median : 425.70 Median : 6.9594 Median : 65.00 Median :1959
+Mean : 458.07 Mean : 7.0901 Mean : 67.37 Mean :1956
+3rd Qu.: 557.69 3rd Qu.: 8.8145 3rd Qu.: 81.00 3rd Qu.:1972
+Max. :1837.89 Max. :17.6688 Max. :160.00 Max. :1997
+bad kueche bezv lage
+normal :2891 normal :2951 Min. : 113 normale Lage:1794
+gehoben: 191 gehoben: 131 1st Qu.: 561 gute Lage :1210
+Median :1025 beste Lage : 78
+Mean :1170
+3rd Qu.:1714
+Max. :2529
+zh
+ohne: 321
+mit :2761
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 7/13
+Statistische Beschreibung mit R, II
+• InwelchemBereichbewegensichdieWertederVariablen?
+• WelcheMaßederzentralenTendenzfindenSieindiesemOutput?
+Interpretation?
+• GibteseinStreuungsmaßindiesemOutput?
+• FürwelchestatistischeKennzahlstehtdieAbkürzung“1stQu.”?
+Interpretation?
+• WarumsiehtdieBeschreibungfürdieVariablemietenichtauswiejenefür
+bad?
+• GibtesFehlerindenDaten(unplausibleWerte,fehlendeBeobachtungen,
+etc.)?
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 8/13
+Statistische Beschreibung mit R
+R> summary(mietspiegel$miete)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+40.39 321.07 425.70 458.07 557.69 1837.89
+R> quantile(mietspiegel$miete, probs = c(0.25,0.75))
+25% 75%
+321.0657 557.6916
+R> quantile(mietspiegel$miete, probs = c(0.25,0.75), type = 2)
+25% 75%
+321.0402 557.7683
+SieheauchSkriptDeskriptiveStatistik.
+R> max(mietspiegel$miete) - min(mietspiegel$miete)
+[1] 1797.498
+R> var(mietspiegel$miete)
+[1] 38053.64
+R> sd(mietspiegel$miete)
+[1] 195.0734
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 9/13
+Histogramm
+R> par(mfrow = c(1,2))
+R> hist(mietspiegel$miete, xlab = "Miete", ylab = "Dichte",
++ main = "Miete", freq = FALSE)
+R> hist(mietspiegel$mieteqm, xlab = "Miete pro qm", ylab = "Dichte",
++ main = "Miete pro qm", freq = FALSE)
+Miete
+Miete
+ethciD
+0 500 1000 1500
+0200.0
+0100.0
+0000.0
+Miete pro qm
+Miete pro qm
+ethciD
+0 5 10 15
+51.0
+01.0
+50.0
+00.0
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 10/13
+Boxplot
+R> boxplot(mietspiegel$miete, main = "Miete")
+0051
+0001
+005
+0
+Miete
+Interpretation?
+SieheauchSkript
+DeskriptiveStatistik.
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 11/13
+Empirische Schiefe
+1 (cid:88)
+n (cid:18)
+x
+−x¯(cid:19)3
+v = i
+n s
+i=1
+R> n <- length(mietspiegel$miete)
+R> mean_miete <- mean(mietspiegel$miete)
+R> sd_miete <- sd(mietspiegel$miete)
+R> v_miete <- 1/n * sum(((mietspiegel$miete - mean_miete) / (sd_miete))^3)
+R> v_miete
+[1] 1.231848
+R> mean_mieteqm <- mean(mietspiegel$mieteqm)
+R> sd_mieteqm <- sd(mietspiegel$mieteqm)
+R> v_mieteqm <- 1/n * sum(((mietspiegel$mieteqm - mean_mieteqm) / (sd_mieteqm))^3)
+R> v_mieteqm
+[1] 0.298517
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 12/13
+Aufgabe
+VerwendenSieweiteremetrischeVariablendesMietspiegel-Datensatzesund
+beschreibenSiediesegrafischundmitdeskriptivenKennzahlen.
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 13/13

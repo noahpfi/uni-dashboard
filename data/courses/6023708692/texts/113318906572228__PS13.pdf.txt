@@ -1,0 +1,193 @@
+Statistische Datenanalyse
+Kapitel 10
+Regressionsanalyse, Fortsetzung
+Anämie in Afrika
+VerwendenSiefürdieseAufgabedenDatensatzzurAnämie(Blutarmut)inAfrika
+(d_anemia.rda).BeieinerAnämie(Blutarmut)bestehteinMangelanHämoglobin,dem
+rotenBlutfarbstoff.
+DieZielgrösseistdergemesseneWertfürhemoglobinundgender,m_prim_education,
+UN_region,altitude,c_age,m_age,malaria_incidence,wealth_indexsinddie
+erklärendenVariablen.
+• DieDatensindausdemwissenschaftlichenProjektProbabilisticMachineLearning
+(P33941),Seiler,UmlaufundWetscher.
+• VereinigtSurveydaten(DemographicandHealthSurveys)mitweiteren
+Datenquellen(u.a.georeferenziert)zueinemgroßenDatenssatz.
+• DasZielist,räumlichzeitlicheDynamikenzuerkennen.
+EinBeitragzumNature-ArtikelvonSeiler,Wetscher,Harttgen,UtzingerundUmlauf(2025)istimNewsroomderUniversität
+erschienen:“HochauflösendeSchätzungenzuAnämiebeiKinderninarmenLändern”.
+https://www.uibk.ac.at/de/newsroom/2025/hochauflosende-schatzungen-zu-anamie-bei-kindern-in-armen-lander/.
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 1/15
+Hintergrund Forschungsprojekt
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 2/15
+Hintergrund Forschungsprojekt
+Abbildung:Forschungsziel Abbildung:Stichprobe
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 3/15
+Aufgabe Anämie in Afrika
+SchätzenSieeinRegressionsmodellmitgender,m_prim_education,UN_region,
+altitude,altitude2,c_age,m_age,malaria_incidence,wealth_indexalserklärenden
+Variablen.
+(i)InterpretierenSiesignifikanteKoeffizienten.ZeichnenSiedengeschätzten
+quadratischenZusammenhangzwischendemHämoglobinundderHöhe.FindenSie
+EvidenzfürfolgendeAussage:
+DiegeringereSauerstoffverfügbarkeitingroßerHöheerfordertphysiologische
+Anpassungen,dieeineangemesseneSauerstoffversorgungdesGewebesermöglichen.
+EinsolcherMechanismusisteinlangsamerAnstiegderHämoglobinkonzentration(Hb),
+derbeiBewohnerngroßerHöhenzueinererhöhtenHbführt.
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 4/15
+Aufgabe Anämie in Afrika (II)
+(ii)FührenSieimweitereneineersteResiduendiagnostikmitdemgeschätztenModell
+durchundbetrachtenSiefolgendeAspekte:
+• dasStreudiagrammderResiduenaufdiegefittetenWerte,
+• dasStreudiagrammderResiduenaufdiemetrischenunabhängigenVariablen,
+• dasHistogrammderResiduensowie
+• dieKorrelationsmatrixdermetrischenunabhängigenVariablenansehen.
+SinddieVoraussetzungendermultiplenRegressionhiererfüllt?
+(iii)TestenSieobeseinenZusammenhangzwischenAnämie(anemia)unddem
+BildungshintergrundderMutter(m_prim_education)gibt.
+(iv)WelchesFazitziehenSie?
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 5/15
+Anwendung: Anämie in Afrika
+R> load("daten/d_anemia.rda")
+R> lm_hb <- lm(hemoglobin ~ gender + m_prim_education + UN_region + altitude +
++ I(altitude^2) + c_age + m_age + malaria_incidence + wealth_index, data = d)
+R> summary(lm_hb)
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 6/15
+Anwendung: Anämie in Afrika
+Call:
+lm(formula = hemoglobin ~ gender + m_prim_education + UN_region +
+altitude + I(altitude^2) + c_age + m_age + malaria_incidence +
+wealth_index, data = d)
+Residuals:
+Min 1Q Median 3Q Max
+-5.982 -0.909 0.103 1.032 6.126
+Coefficients:
+Estimate Std. Error t value Pr(>|t|)
+(Intercept) 9.53475 0.19737 48.31 < 2e-16
+genderfemale 0.06454 0.06158 1.05 0.29467
+m_prim_educationyes 0.18456 0.06929 2.66 0.00778
+UN_regionMiddle Africa 0.14857 0.11323 1.31 0.18961
+UN_regionWestern Africa -0.31661 0.10082 -3.14 0.00171
+altitude -0.23369 0.22705 -1.03 0.30345
+I(altitude^2) 0.48692 0.12680 3.84 0.00013
+c_age 0.02368 0.00202 11.73 < 2e-16
+m_age 0.00845 0.00527 1.60 0.10935
+malaria_incidence -1.26497 0.20137 -6.28 3.9e-10
+wealth_index 0.20700 0.03980 5.20 2.1e-07
+Residual standard error: 1.52 on 2440 degrees of freedom
+Multiple R-squared: 0.192, Adjusted R-squared: 0.189
+F-statistic: 58 on 10 and 2440 DF, p-value: <2e-16
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 7/15
+Anwendung: Anämie in Afrika
+R> x <- seq(min(d$altitude), max(d$altitude), 0.1)
+R> y <- coef(lm_hb)["altitude"] * x + coef(lm_hb)["I(altitude^2)"] * x^2
+R> plot(y ~ x, type = "l", xlab = "Altitude in km", cex.axis = 0.7, cex.lab = 0.7)
+0.0 0.5 1.0 1.5
+2.1
+8.0
+4.0
+0.0
+Altitude in km
+y
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 8/15
+Anwendung: Anämie in Afrika – Residuendiagnostik
+R> plot(fitted(lm_hb), residuals(lm_hb),
++ ylab = "Residuen", xlab = "gefittete Werte")
+9 10 11 12
+6
+4
+2
+2−
+6−
+gefittete Werte
+neudiseR
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 9/15
+Anwendung: Anämie in Afrika – Residuendiagnostik
+R> par(mfrow = c(1,2))
+R> plot(d$m_age, residuals(lm_hb),
++ xlab = "Alter der Mutter", ylab = "Residuen")
+R> plot(d$c_age, residuals(lm_hb),
++ xlab = "Alter des Kindes", ylab = "Residuen")
+20 25 30 35 40
+6
+4
+2
+0
+2−
+4−
+6−
+Alter der Mutter
+neudiseR
+10 20 30 40 50 60
+6
+4
+2
+0
+2−
+4−
+6−
+Alter des Kindes
+neudiseR
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 10/15
+Anwendung: Anämie in Afrika – Residuendiagnostik
+R> hist(residuals(lm_hb), freq = FALSE, xlab = "Residuen", main = "")
+Residuen
+ytisneD
+−6 −4 −2 0 2 4 6
+02.0
+01.0
+00.0
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 11/15
+Anwendung: Anämie in Afrika – Residuendiagnostik
+R> vars <- c("altitude", "m_age", "wealth_index", "c_age", "malaria_incidence")
+R> round(cor(d[, vars]), 4)
+altitude m_age wealth_index c_age malaria_incidence
+altitude 1.0000 -0.0117 -0.0162 0.0032 -0.2933
+m_age -0.0117 1.0000 -0.0214 0.0268 0.0036
+wealth_index -0.0162 -0.0214 1.0000 -0.0469 -0.1205
+c_age 0.0032 0.0268 -0.0469 1.0000 0.0109
+malaria_incidence -0.2933 0.0036 -0.1205 0.0109 1.0000
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 12/15
+Anwendung: Anämie in Afrika – Residuendiagnostik
+R> library("car")
+R> vif(lm_hb)
+GVIF Df GVIF^(1/(2*Df))
+gender 1.006 1 1.003
+m_prim_education 1.149 1 1.072
+UN_region 2.510 2 1.259
+altitude 18.371 1 4.286
+I(altitude^2) 16.517 1 4.064
+c_age 1.005 1 1.003
+m_age 1.008 1 1.004
+malaria_incidence 1.303 1 1.141
+wealth_index 1.065 1 1.032
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 13/15
+Anwendung: Anämie in Afrika – Chi-Quadrattest
+R> d$anemia <- relevel(d$anemia, "not anemic")
+R> plot(d$anemia ~ d$m_prim_education, xlab = "Prim¨arschulbildung", ylab = "Blutarmut")
+Primärschulbildung
+tumratulB
+no yes
+dlim
+ereves
+8.0
+4.0
+0.0
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 14/15
+Anwendung: Anämie in Afrika – Chi-Quadrattest
+R> tab <- xtabs(~ anemia + m_prim_education, data = d)
+R> print(tab)
+m_prim_education
+anemia no yes
+not anemic 474 338
+mild 425 223
+moderate 635 264
+severe 75 17
+R> chisq.test(tab)
+Pearson's Chi-squared test
+data: tab
+X-squared = 39, df = 3, p-value = 2e-08
+R> chisq.test(tab, correct = FALSE)
+Pearson's Chi-squared test
+data: tab
+X-squared = 39, df = 3, p-value = 2e-08
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 15/15

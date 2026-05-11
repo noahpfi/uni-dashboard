@@ -1,0 +1,330 @@
+Preis und Wert
+Univ.Prof.DDr. Jürgen Huber, Institut für Banken und Finanzen
+Übersicht für heute:
+»
+Preis und Wert
+»
+Wie bewerte ich einen Zahlungsstrom?
+»
+Deskriptive und Normative Sichtweise
+»
+Modelle – grau ist alle Theorie?
+»
+Entscheidungen unter Sicherheit, Risiko oder Unsicherheit
+Einführung in die BWL I Huber I 6. VO-Termin Seite 2
+Preis und Wert
+»
+Was ist der „Preis“, was ist der „Wert“ von etwas?
+Einführung in die BWL I Huber I 6. VO-Termin Seite 3
+Preis und Wert
+»
+Was ist der „Preis“, was ist der „Wert“ von etwas?
+»
+Preis = der Geldbetrag zu dem ein Gut gehandelt wird
+»
+Wert = der Geldbetrag zu dem ein Gut fairerweise gehandelt werden sollte
+»
+Zitat Warren Buffet „Price is what you pay; value is what you get.“
+»
+Bsp.: Ein Glas Wasser hat heute in Tirol einen sehr geringen Preis, kostet aber
+mitten in der Wüste sehr viel. Sein Wert kann von sehr niedrig (Toilettenspülung)
+bis zu extrem hoch (lebensrettend) reichen.
+Einführung in die BWL I Huber I 6. VO-Termin Seite 4
+Preis und Wert
+»
+Was bestimmt den Preis von Gütern?
+»
+Relative Knappheit: Diamanten sind eigentlich nutzlos, aber knapp/selten;
+Wasser ist lebenswichtig, aber ausreichend vorhanden
+→ Bewertung zum Grenznutzen; mehr dazu in der VWL.
+»
+Eingeschränkter gefragt: Was bestimmt den Preis einer Veranlagung die Erträge
+bringt? Wie geht man dabei mit zukünftigen Zahlungen um? Wieviel soll ich
+heute zahlen, um in Zukunft einen Betrag von 1000 Euro zu bekommen? Wovon
+hängt das ab?
+Einführung in die BWL I Huber I 6. VO-Termin Seite 5
+Preis und Wert
+»
+Wieviel ist es heute wert, in Zukunft einen Betrag von 1000 Euro zu bekommen?
+Wovon hängt das ab?
+»
+ZEITPUNKT: wann in der Zukunft (morgen, 1 Jahr, 100 Jahre?)
+»
+UNSICHERHEIT: lebt der Zahler dann noch? Lebe ich dann noch? Gibt es den Euro
+dann noch?
+»
+VERZINSUNG & INFLATION: mit welchem Zinssatz sind zukünftige Zahlungen
+abzuzinsen?
+Einführung in die BWL I Huber I 6. VO-Termin Seite 6
+Preis und Wert
+»
+VERZINSUNG & INFLATION: mit welchem Zinssatz sind zukünftige Zahlungen
+abzuzinsen?
+» Bsp. Angenommen, Sie erwarten in einem Jahr eine Zahlung von 1000 Euro (𝐾 ).
+1
+Bei einem Zinssatz 𝑟 = 5% ist deren heutiger Wert (𝐾 ):
+0
+K = K / (1+r) = 1000 / (1+0,05) = 952,38 K = K / (1+r)n
+0 1 0 n
+Einführung in die BWL I Huber I 6. VO-Termin Seite 7
+Preis und Wert
+»
+VERZINSUNG & INFLATION: mit welchem Zinssatz sind zukünftige Zahlungen
+abzuzinsen?
+» Bsp. Angenommen, Sie erwarten in einem Jahr eine Zahlung von 1000 Euro (𝐾 ).
+1
+Bei einem Zinssatz 𝑟 = 5% ist deren heutiger Wert (𝐾 ):
+0
+K = K / (1+r) = 1000 / (1+0,05) = 952,38 K = K / (1+r)n
+0 1 0 n
+» Erfolgt dieselbe Zahlung von 1000 Euro erst in zwei Jahren (𝐾 ), so ist bei einem
+2
+Zinssatz von 5% der heutige Wert
+K = K / (1+r)2 = 1000 / (1+0,05)2 = 907,03
+0 2
+Einführung in die BWL I Huber I 6. VO-Termin Seite 8
+Preis und Wert
+»
+VERZINSUNG & INFLATION: mit welchem Zinssatz sind zukünftige Zahlungen
+abzuzinsen?
+» Bsp. Angenommen, Sie erwarten in einem Jahr eine Zahlung von 1000 Euro (𝐾 ).
+1
+Bei einem Zinssatz 𝑟 = 5% ist deren heutiger Wert (𝐾 ):
+0
+K = K / (1+r) = 1000 / (1+0,05) = 952,38 K = K / (1+r)n
+0 1 0 n
+» Erfolgt dieselbe Zahlung von 1000 Euro erst in zwei Jahren (𝐾 ), so ist bei einem
+2
+Zinssatz von 5% der heutige Wert
+K = K / (1+r)2 = 1000 / (1+0,05)2 = 907,03
+0 2
+» Erfolgt dieselbe Zahlung von 1000 Euro erst in zehn Jahren (𝐾 ), so ist bei einem
+10
+Zinssatz von 5% der heutige Wert
+K = K / (1+r)10 = 1000 / (1+0,05)10 = 613,91
+0 10
+Einführung in die BWL I Huber I 6. VO-Termin Seite 9
+Preis und Wert
+»
+Was, wenn es nicht nur eine Zahlung gibt, sondern mehrere?
+»
+Aufsummieren!
+»
+Bsp.: Sie erhalten in den nächsten 5 Jahren je 10; der Zins ist immer 4%. Wieviel
+ist dieser Zahlungsstrom heute wert?
+» Wert = 10/1,04 + 10/1,042 + 10/1,043 + 10/1,044 + 10/1,045 = 44,52
+»
+Wert = 9,61 + 9,25 + 8,89 + 8,55 + 8,22 = 44,52
+Einführung in die BWL I Huber I 6. VO-Termin Seite 10
+Preis und Wert
+»
+Diese einfache Diskontierungsmethode wird für sehr viele zukünftige
+Zahlungsströme verwendet. Der (Kapital)Wert eines zukünftigen Zahlungsstroms
+ist einfach die Summe der zukünftigen diskontierten Zahlungen.
+K = Σ K / (1+r)n
+0 n
+»
+Bsp.: Eine Staatsanleihe zahlt einen Kupon von 5% auf ein Nominale von 100.
+Der Marktzinssatz sei 3% für alle Laufzeiten und die Anleihe läuft noch drei Jahre.
+D.h. die Anleihe zahlt in einem Jahr 5, in zwei Jahren 5, und in drei Jahren 105
+(Tilgung der Nominale + Zins).
+K = 5/1,03 + 5/1,032 + 105/1,033 = 105,66
+0
+Einführung in die BWL I Huber I 6. VO-Termin Seite 11
+Grafisches Beispiel für eine Kapitalwert/Barwertberechnung (Zins 7%)
+Einführung in die BWL I Huber I 6. VO-Termin Seite 12
+ 1
+8
+0
+8
+7
+7
+3
+6
+,
+,
+,
+,
+,
+4
+8
+3
+1
+7
+0
+0
+1
+6
+5
+6
+8
+( 1 , 0 7 ) -1
+1
++ 9
+( 1 , 0 7 ) -2
+2
++ 9
+( 1 , 0 7 ) -3
+3
++ 9
+( 1 , 0 7 ) -4
++
+4
+1 0 9
+t
+Nehmen Sie an, eine Anleihe hat eine Laufzeit von 4 Jahren und zahlt einen Kupon von
+9% auf ein Nominale von 100. Der Marktzinssatz sei 7% für alle Laufzeiten. Wie hoch
+ist der heutige Wert der Anleihe?
+/1,07
+/1,072
+/1,073
+/1,074
+Immobilien und Aktien: Ewige Einnahmen / Renten
+»
+Was ist eine Wohnung wert, die Ihnen unendlich lang („ewige Rente“) je eine
+Miete von 5.000 Euro/Jahr einbringt; Zins = 5%?
+𝑅
+∞
+»
+Formel: Wert = Zahlung / Zins 𝐾 =
+0
+r
+Wert = 5.000/0,05 = 100.000 Euro
+»
+Was, wenn die Miete anfangs 5.000 Euro/Jahr ist und jährlich um 2,5% steigt
+(Inflationsausgleich)?
+»
+Formel: Wert = Zahlung / (Zins – Wachstum)
+𝑅
+∞
+Wert = 5.000 / (0,05-0,025) = 200.000 𝐾 =
+0
+(r − 𝑔)
+-> steigende Zahlungen sind mehr wert.
+Einführung in die BWL I Huber I 6. VO-Termin Seite 13
+Preis und Wert eines Unternehmens
+»
+Eine Aktie = Beteiligung an einem Unternehmen entspricht so einer ewig
+wachsenden Rente und wird daher auch bewertet als 𝑅
+∞
+𝐾 =
+0
+Wert = Gewinn / (Zins – Wachstum) r − 𝑔
+»
+Apple bspw. hat einen Gewinn von rund 120 Mrd. USD pro Jahr. Wenn wir von
+einem risikoadjustierten Zins von 8% und einem Wachstum von 4% pro Jahr
+ausgehen, so ergibt sich ein Wert von
+Wert Apple = 120 / (0,08 – 0,04) = 3000 Mrd. USD.
+»
+Die Bewertung hängt entscheidend von der Einschätzung der Zukunft (Gewinne,
+Zinsen, Wachstum) ab. Sähe jemand bspw. nur 3% Wachstum, wäre für ihn der
+Wert Apple = 120 / (0,08 – 0,03) = 2400 Mrd. USD.
+Einführung in die BWL I Huber I 6. VO-Termin Seite 14
+Preis und Wert
+»
+Einige Anlagegüter erbringen regelmäßig Erträge; andere nicht. Bei Letzteren
+hofft der Käufer auf Gewinn durch späteren Verkauf zu einem höheren Preis.
+Einführung in die BWL I Huber I 6. VO-Termin Seite 15
+Präskriptive vs. deskriptive Entscheidungstheorie
+Die Wirtschaftswissenschaften sind eine Theorie der Wahlhandlungen, d.h. die
+Menschen müssen entscheiden, wie sie mit knappen Ressourcen umgehen.
+»
+Präskriptive Entscheidungstheorie: Wie sollen sich Wirtschaftssubjekte
+angesichts knapper Ressourcen und alternativer Handlungsmöglichkeiten
+sinnvollerweise entscheiden?
+»
+Deskriptive Entscheidungstheorie: Wie entscheiden sich Wirtschaftssubjekte
+angesichts knapper Ressourcen und alternativer Handlungsmöglichkeiten
+tatsächlich?
+Einführung in die BWL I Huber I 6. VO-Termin Seite 16
+Betriebswirtschaftliche Entscheidungstheorie
+»
+Methodische Orientierung hängt von der Fragestellung ab – je wohlstrukturierter
+das Problem, desto präskriptiver kann die Entscheidungstheorie sein.
+Deskriptive
+Entscheidungstheorie Human resources
+(Entscheidungsverhalten)
+Marketing
+Accounting
+Finance
+Präskriptive
+Entscheidungstheorie
+(Entscheidungslogik)
+OR, Logistics
+Einführung in die BWL I Huber I 6. VO-Termin Seite 17
+Einführung in die BWL I Huber I 6. VO-Termin Seite 18
+Modelle & Theorien
+Die Entscheidungstheorie arbeitet mit
+Modellen, d.h. stark vereinfachten
+Abbildern der Realität.
+Entscheidungslogische Modelle haben
+normativen Charakter: es sollen Aussagen
+Alle Wissenschaften arbeiten mit Modellen,
+darüber abgeleitet werden, wie ein Akteur
+um Komplexität zu reduzieren. Die Geo-
+angesichts eines gegebenen Problems
+graphen tun es mit Landkarten. Obwohl nahe-
+entscheiden sollte!
+zu alles auf der Landkarte falsch ist (reale Seen
+Dabei konzentrieren wir uns auf einige sind nicht trocken, reale Straßen nicht gelb,
+zentrale Aspekte und klammern alles andere
+reale Berge nicht flach etc.), ist ein derartiges
+(wie Hoffnungen, Ängste, Gefühle) zunächst
+Modell äußerst hilfreich für diejenigen
+einmal aus.
+Anwendungen, für die es geschaffen ist
+–> aber man braucht die „richtige“ Karte.
+Einführung in die BWL I Huber I 6. VO-Termin Seite 19
+Entscheidungen unter Sicherheit, Unsicherheit oder Risiko
+»
+Bei Entscheidungen unter Sicherheit stehen für jede Aktion sämtliche
+Handlungskonsequenzen eindeutig fest; es gibt keine verschiedenen
+‚states of nature‘.
+»
+Auch bei Entscheidungen unter Risiko hängen die Handlungskonsequenzen
+davon ab, welcher ‚state of nature‘ eintritt; es sind subjektive oder objektive
+Wahrscheinlichkeitsaussagen über diese Umweltzustände möglich.
+»
+Bei Entscheidungen unter Unsicherheit hängen die Handlungskonsequenzen
+davon ab, welcher ‚state of nature‘ eintritt; Wahrscheinlichkeitsaussagen über
+diese Umweltzustände sind nicht möglich.
+Einführung in die BWL I Huber I 6. VO-Termin Seite 20
+Entscheidungen unter Sicherheit
+»
+Entscheidungen unter Sicherheit sind keineswegs trivial: Das „travelling
+salesman“-Problem hat hunderte von Mathematikern bewegt: Bei n Zielorten,
+gibt es n! Möglichkeiten (wenn n=20, dann sind das über
+2.432.900.000.000.000.000 Möglichkeiten). Selbst Supercomputer brauchen hier
+lange Rechnerzeiten.
+Einführung in die BWL I Huber I 6. VO-Termin Seite 21
+Entscheidungen unter Sicherheit
+»
+Weitere typische Entscheidungsprobleme unter Sicherheit:
+•Zuschnittprobleme (Stoffe, Bleche, Hölzer etc.)
+•Packprobleme (wie bekomme ich möglichst viele Produkte in einen Container)
+•Lagerraumminimierung
+•Reihenfolgeprobleme (Maschinenbelegung)
+=> Typische Probleme im Rahmen des Operations Research!
+•Oft werden aber aus Vereinfachungsgründen auch Entscheidungen unter
+Unsicherheit/Risiko als Entscheidungen unter Sicherheit behandelt (z.B.
+Verwendung des Kapitalwerts bei Investitionsentscheidungen).
+Einführung in die BWL I Huber I 6. VO-Termin Seite 22
+Entscheidungen unter Risiko
+Bei Entscheidungen unter Risiko lassen sich die Wahrscheinlichkeiten zukünftiger
+Umweltzustände entweder exakt berechnen (zB beim Roulette oder einem
+Münzwurf), oder zumindest aus Erfahrungswerten ableiten (zB Wetter im Kühtai im
+nächsten Dezember). Berechnen und Optimieren ist damit in der Regel möglich
+(siehe zB „GdM Investition und Finanzierung“).
+Entscheidungen unter Unsicherheit
+Bei Unsicherheitssituationen kann nichts über die möglichen zukünftigen
+Umweltzustände gesagt werden. Ein „Berechnen“ und Optimieren ist damit
+meist nicht möglich.
+Einführung in die BWL I Huber I 6. VO-Termin Seite 23
+Weiterführende Literatur für Interessierte
+»
+Zu Verzinsung/Diskontierung: Geyer, A., Hanke, M., Littich, E., Nettekoven,
+M. „Grundlagen der Finanzierung“, 2015, Kapitel 3 und 4.
+»
+Zu Entscheidungstheorie: Holzmeister, F., Huber, J., Schredelseker, K.
+„Grundlagen der Finanzwirtschaft“, 2022, Kapitel 2.
+Einführung in die BWL I Huber I 6. VO-Termin Seite 24

@@ -1,0 +1,226 @@
+Theorie ökonomischer Entscheidungen
+Prof. Dr. Heiner Schumacher
+UIBK
+4. Spieltheorie III
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 1/21
+Einleitung
+Eine wichtige Klasse von dynamischen Spielen sind wiederholte
+Spiele. In wiederholten Spielen wird dasselbe Stufenspiel in
+mehreren (oder unendlich vielen) Perioden gespielt.
+In diesen Spielen ist die Auszahlung eines Spielers ein gewichteter
+Durchschnitt der Periodenauszahlungen.
+Wiederholte Spiele eignen sich, um Koordination und Kooperation
+zu analysieren.
+Es gibt viele Anwendungen: Kartelle, Risikoteilung, relationale
+Verträge, etc.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 2/21
+Einleitung
+Überblick
+Das Gefangenendilemma
+Endlich wiederholte Spiele
+Unendlich wiederholte Spiele
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 3/21
+Das Gefangenendilemma
+Zwei Einbrecher, die gemeinsam einen “Bruch”auf dem Gewissen
+haben, sind verhaftet worden und sitzen in getrennten Zellen. Außer
+illegalem Wa¤enbesitz kann man ihnen aber nichts nachweisen. Jeder
+überlegt, ob er den “Bruch”gestehen (D) oder leugnen (C) soll.
+Wenn beide leugnen, bekommen beide ein halbes Jahr wegen illegalen
+Wa¤enbesitzes.
+Wenn beide gestehen, bekommen beide 2 Jahre wegen Einbruchs mit
+mildernden Umständen (weil sie gestanden haben).
+Wenn einer gesteht und der andere leugnet, wird der geständige
+freigesprochen (Kronzeugenregelung), während der andere 3 Jahre im
+Gefängnis absitzen muss.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 4/21
+Das Gefangenendilemma
+Analyse des Gefangenendilemmas
+Wir nehmen an, dass der Nutzen aus 0/0,5/2/3 Jahren Gefängnis
+5/4/1/0 ist.
+Das Gefangenendilemma kann dann durch folgende
+Auszahlungsmatrix dargestellt werden:
+S1/S2 D C
+D 1,1 5,0
+C 0,5 4,4
+Welches Gleichgewicht ergibt sich?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 5/21
+Das Gefangenendilemma
+Interpretation des Gefangendilemmas
+Das Gleichgewicht wird Pareto-dominiert durch C,C. Dennoch
+gelingt es den Gefangenen nicht, sich auf dieses Ergebnis zu
+koordinieren.
+Das Gefangenendilemma ist eine Parabel die das Scheitern von
+Kooperation oft sehr gut erklärt (Beispiele: Kartellverhalten,
+Abrüstung, Klimaverhandlungen, Ö¤entliche Güter).
+Wie könnte das Gefangenendilemma gelöst werden?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 6/21
+Endlich wiederholte Spiele
+Nehmen wir nun an, dass das Gefangenendilemma zweimal
+hintereinander gespielt wird.
+Die Auszahlung jedes Spielers ist die Summe der Auszahlungen aus
+beiden Perioden.
+In der zweiten Periode sieht jeder Spieler das Aktionenpro…l, das in
+der ersten Periode gespielt wurde.
+Stellen Sie dieses Spiel als Spielbaum dar. Wie viele Strategien hat
+jeder Spieler?
+Lösen Sie das Spiel durch Rückwärtsinduktion. Was ist das
+teilspielperfekte Nash Gleichgewicht? Gibt es mehrere?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 7/21
+Endlich wiederholte Spiele
+So lange das Gefangenendilemma endlich oft wiederholt wird (und die
+Spieler genau wissen, wann das Spiel endet), gibt es keine
+Kooperation.
+Dieses Phänomen wird Endrunden-E¤ekt genannt.
+Ist der Endrunden-E¤ekt immer plausibel?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 8/21
+Endlich wiederholte Spiele
+Betrachten wir nun folgendes Stufenspiel:
+S1/S2 D C R
+D 1,1 5,0 0,0
+C 0,5 4,4 0,0
+R 0,0 0,0 3,3
+Was sind die Nash Gleichgewichte in reinen Strategien in diesem
+Stufenspiel?
+Nehmen Sie an, dass dieses Stufenspiel zweimal wiederholt wird.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 9/21
+Endlich wiederholte Spiele
+In diesem Spiel können wir Kooperation C,C als Ergebnis in einem
+teilspielperfektem Gleichgewicht stützen.
+Betrachten wir folgendes Strategiepro…l: Die Spieler wählen C,C in
+der ersten Periode; wenn C,C beobachtet wurde, wählen sie R,R;
+ansonsten wählen sie D,D.
+Zeigen Sie, dass dieses Strategiepro…l ein teilspielperfektes Nash
+Gleichgewicht darstellt!
+Die Intuition ist, dass Kooperation durch die glaubhafte Androhung
+von Bestrafung gestützt wird.
+Was könnte allerdings passieren, wenn die Spieler vor Beginn der
+zweiten Periode kommunizieren könnten?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 10/21
+Unendlich wiederholte Spiele
+Betrachten wir nun ein wiederholtes Spiel mit unendlich vielen
+Perioden.
+Da es keine letzte Periode gibt, gibt es auch keinen Endrunden-E¤ekt.
+Kooperation kann nun mit Bestrafungen durchgesetzt werden, welche
+die Auszahlung einer abweichenden Partei reduzieren. Wenn die
+Ausführung dieser Bestrafung glaubwürdig ist, so kann sie das
+Verhalten der Spieler beein‡ussen.
+Da es unendlich viele Perioden gibt, können wir Rückwärtsinduktion
+nicht mehr anwenden. Um teilspielperfekte Nash Gleichgewichte zu
+bestimmen, müssen wir uns etwas neues einfallen lassen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 11/21
+Unendlich wiederholte Spiele
+Alle Auszahlungen zu addieren macht in einem unendlich wiederholten
+Spiel keinen Sinn. Daher führen wir einen Diskontfaktor ein.
+Die Aktion von Spieler i in Periode t ist gegeben durch st.
+i
+Der Gegenwartswert der Auszahlungen von Spieler i in Periode 0 ist
+u (s0,s0 )+δu (s1,s1 )+δ 2u (s2,s2 )+...
+i i i i i i i i i
+(cid:0) (cid:0) (cid:0)
+oder, mit anderer Notation,
+∞
+∑ δτu (sτ,sτ ).
+i i i
+τ=0 (cid:0)
+Der Diskontfaktor kann auf zwei Arten interpretiert werden: Entweder
+als Zinssatz (er drückt dann aus, wie geduldig ein Spieler ist), oder als
+Wahrscheinlichkeit, dass das Spiel sich um eine Periode verlängert.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 12/21
+Unendlich wiederholte Spiele
+Wir verwenden im Folgenden oft diese nützliche Gleichung:
+∞
+∑ δτ = 1 .
+1 δ
+τ=0 (cid:0)
+Leiten Sie diese selbst her!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 13/21
+Unendlich wiederholte Spiele
+Manchmal erweist es sich als günstig, die Auszahlungen der Spieler
+mit dem Faktor 1 δ zu multiplizieren, um diese zu “normalisieren”.
+(cid:0)
+Die Auszahlung eines Spielers ist dann
+∞
+(1 δ) ∑ δτu (sτ,sτ ).
+i i i
+(cid:0) τ=0 (cid:0)
+Dies erlaubt es uns, die Auszahlungen der Spieler im unendlich
+wiederholten Spiel mit denen im Stufenspiel zu vergleichen.
+Wir nehmen an, dass die Spieler in jeder Periode t wissen, was in den
+t 1 vorherigen Perioden passiert ist, d.h., sie kennen die
+(cid:0)
+Geschichte des Spiels.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 14/21
+Unendlich wiederholte Spiele
+Strategien sind nun Funktionen, die für jede beliebige Geschichte eine
+Aktion de…nieren.
+Um zu überprüfen, ob ein Strategiepro…l ein teilspielperfektes Nash
+Gleichgewicht ist, benötigen wir ein theoretisches Resultat, das
+sogenannte Einmal-Abweichungsprinzip.
+Wir nennen dieses Resultat für endlich wiederholte Spiele, es gilt aber
+auch für unendlich wiederholte Spiele (unter eine technischen
+Nebenbedingung).
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 15/21
+Unendlich wiederholte Spiele
+Einmal-Abweichungsprinzip
+In einem endlich wiederholten Spiel ist das Strategiepro…l s ein
+teilspielperfektes Nash Gleichgewicht dann und nur dann wenn es das
+Einmal-Abweichungsprinzip erfüllt, d.h. es gibt keinen Spieler und
+keine Geschichte, so dass dieser Spieler nach dieser Geschichte seine
+Auszahlung verbessern kann indem er von s in einer Periode
+i
+abweicht, sich aber sonst immer an s hält.
+i
+Durch das Einmal-Abweichungsprinzip vermeiden wir, unendlich viele
+Abweichungen von s überprüfen zu müssen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 16/21
+Unendlich wiederholte Spiele
+Nun können wir zeigen, wie Kooperation im unendlich wiederholten
+Gefangenendilemma gestützt werden kann.
+S1/S2 D C
+D 1,1 5,0
+C 0,5 4,4
+Wir überprüfen das folgende Resultat: Wenn der Diskontfaktor δ groß
+genug ist, dann existiert ein teilspielperfektes Nash Gleichgewicht, in
+dem beide Spieler in jeder Periode des Spiels C wählen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 17/21
+Unendlich wiederholte Spiele
+Um dieses Resultat zu beweisen, verwenden wir die folgende Strategie
+(“Trigger-Strategie”): Wähle C in Periode 1; wähle C in jeder
+nachfolgenden Periode so lange beide Spieler bisher immer C gewählt
+haben; ansonsten wähle D.
+Wir wenden das Einmal-Abweichungsprinzip an.
+Ist es optimal für einen Spieler, sich an diese Strategie in einer
+Periode zu halten, wenn bisher beide Spieler immer C gewählt haben?
+Ist es optimal für einen Spieler, sich an diese Strategie in einer Periode
+zu halten, wenn bisher mindestens einmal ein Spieler D gewählt hat?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 18/21
+Unendlich wiederholte Spiele
+Wir beantworten die erste Frage.
+Nimm an, dass sich Spieler i immer an die vorgeschlagene Strategie
+(cid:0)
+hält. Wenn Spieler i nicht abweicht, so ist seine Auszahlung
+∞
+∑ δτ4 = 4 .
+1 δ
+τ=0 (cid:0)
+Wenn dieser Spieler jedoch abweicht, ist seine maximale Auszahlung
+∞
+5+ ∑ δτ1 = 5+ δ .
+1 δ
+τ=1 (cid:0)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 19/21
+Unendlich wiederholte Spiele
+Spieler i wird also nicht abweichen, wenn
+4 δ 1
+5+ δ .
+1 δ (cid:21) 1 δ () (cid:21) 4
+(cid:0) (cid:0)
+Als nächstes müssen wir die zweite Frage beantworten. Warum wird
+kein Spieler einen Anreiz haben, von der vorgeschlagenen Strategie
+abzuweichen, wenn bisher mindestens ein Spieler einmal D gewählt
+hat?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 20/21
+Unendlich wiederholte Spiele
+Was könnten die Probleme der Trigger-Strategie sein?
+Gibt es noch andere Strategien, die Kooperation stützen können?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 4.SpieltheorieIII 21/21

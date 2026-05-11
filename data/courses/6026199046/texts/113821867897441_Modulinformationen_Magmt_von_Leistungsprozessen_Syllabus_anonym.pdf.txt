@@ -1,0 +1,144 @@
+Vorlesung „Management von Leistungsprozessen“
+Assoz.-Prof. Mag. Mag. Stefan Häussler, PhD
+LV-Nr.: 437300 & 437311 (IWW)
+Thema: Management von Leistungsprozessen
+Zeit: Siehe Vorlesungsverzeichnis
+Ort: online
+---------------------------------------------------------------------------------------------------------------
+1 Qualifikationsziele
+• Überblick (deskriptiv) über die betrieblichen Leistungsprozesse (Beschaffung,
+Produktion, Lagerhaltung, Vertrieb) für Sach- und Dienstleistungsunternehmen
+• Kenntnis der wesentlichen Entscheidungsprobleme bei der Gestaltung und operativen
+Lenkung der Leistungsprozesse
+• Kenntnis wesentlicher Planungsmethoden und deren informationstechnischer
+Unterstützung
+• Fähigkeit, betriebliche Entscheidungsprobleme zu strukturieren und Methoden auf die
+Problemstellungen zuzuordnen
+2 Inhalt des Moduls
+Das Modul „Management von Leistungsprozessen“ beschäftigt sich mit der Gestaltung,
+Planung und Steuerung jener betrieblicher Prozesse bzw. Aktivitäten, die sich unmittelbar auf
+die Leistungserstellung sowohl von Dienstleistungen als auch von Sachleistungen beziehen. Es
+geht also primär um die Prozesse im Rahmen von Beschaffung, Produktion und Vertrieb. Viele
+Rahmenbedingungen, vor allem im Bereich der Produktion, sind durch die Technik
+vorgegeben, jedoch ist die Gestaltung, Planung und Steuerung dieser Prozesse ein zentrales
+betriebswirtschaftliches Aufgabengebiet.
+Im Detail werden im Modul folgende Punkte behandelt:
+• Leistungsprozesse in Sachleistungsunternehmen
+• Leistungsprozesse in Dienstleistungsunternehmen - Besonderheiten und Probleme
+• Überblick über die Entscheidungsbereiche (strategisch – taktisch – operativ)
+• Diskutieren typischer Planungssituationen
+• Planungsprobleme und -methoden bei der Gestaltung, Planung und Steuerung der
+Leistungsprozesse in Sach- und Dienstleistungsunternehmen.
+• Supply Chain Management und unternehmensübergreifende Planung von
+Leistungsprozessen (kurze Einführung)
+• Informationstechnische Unterstützung der Planung von Leistungsprozessen: PPS-,
+APS- und ERP-Systeme (kurze Einführung)
+Die Inhalte der einzelnen Lehrveranstaltungen (Vorlesungsteile und Proseminare) werden dort
+im Detail vorgestellt.
+3 Organisatorische Gestaltung
+Das Modul besteht aus einer zweistündigen Vorlesung (Häussler) und einem einstündigen
+Proseminar. Die parallel angebotenen Proseminare vertiefen dabei selektiv Themenbereiche der
+Vorlesung, wobei Teile der Vorlesung auch auf den Proseminarinhalten aufbauen können. Eine
+völlige Vereinheitlichung der Proseminarinhalte wird nicht angestrebt.
+4 Beurteilung
+Um das Modul positiv zu absolvieren, benötigen Studierende einen positiven PS-Schein, der
+die Voraussetzung zum Antritt zur Gesamtprüfung darstellt, sowie eine positive
+Gesamtprüfung. Die Gesamtprüfung wird schriftlich in Präsenz angeboten und besteht aus:
+• Einer offenen Frage, die schriftlich zu beantworten ist,
+• einem Teil mit Single Choice Fragen und
+• einem Teil mit Multiple Choice Fragen.
+Der genaue Modus wird im Zuge des Semesters noch verlautbart. Die Klausur hat eine Dauer
+von 90 Minuten die – beginnend mit Modulende – dreimal angeboten wird. Prüfungsstoff ist
+der Gesamtinhalt des Moduls. Die Prüfung ist positiv absolviert, wenn mindestens 50% der
+erreichbaren Punkte erzielt wurden.
+5 Literatur
+Maßgeschneidertes Textbuch
+Prüfungsliteratur zum Modul Management von Leistungsprozessen. Zusammengestellt von
+o.Univ.-Prof. Dr. Hubert Missbauer und Mag. Dr. Stefan Häussler. Universität Innsbruck,
+Fakultät für Betriebswirtschaft. Pearson Education, 2015. Enthält Teile der untenstehenden
+Bücher: Kummer et al. (2013), Thonemann (2010), Krajewski et al. (2013).
+Basisliteratur:
+Kummer, S., Grün, O., Jammernegg, W. (2013): Grundzüge der Beschaffung, Produktion und
+Logistik. 3., aktualisierte Auflage, Pearson Studium, München.
+Kummer, S., Grün, O., Jammernegg, W. (2013): Grundzüge der Beschaffung, Produktion und
+Logistik - das Übungsbuch. 2., aktualisierte Auflage, Pearson Studium, München.
+Thonemann, U. (2010): Operations Management. Konzepte, Methoden und Anwendungen,
+2. Aufl., Pearson Studium, München.
+Zäpfel, G. (2001): Grundzüge des Produktions- und Logistikmanagement, 2. unwesentlich
+veränd. Auflage, München, Wien.
+Vertiefend:
+Fitzsimmons, J.A., Fitzsimmons, M.J. (2008): Service Management: Operations, Strategy, and
+Information Technology, 6th Edition, New York: McGraw-Hill.
+Krajewski, L.J., Ritzman, L.P., Malhotra, M. (2007): Operations Management. 7th Edition,
+Upper Saddle River, NJ: Pearson Prentice Hall, sowie 10th Edition, Harlow, Essex: Pearson
+Education Limited, 2013.
+2
+6 Prüfungsstoff
+Eine Liste des Prüfungsstoffs für die Gesamtprüfung wird rechtzeitig bekannt gegeben.
+7 Gliederung des Inhalts
+1 Management von Leistungsprozessen – eine Einführung
+1.1 Beschreibung typischer Fälle
+1.2 Abstraktion: Grundlagen der Produktionstheorie; Produktionsfunktionen
+2 Anforderungen an Leistungsprozesse und Kenngrößen zur
+Überwachung
+3 Entscheidungsbereiche des Management von Leistungsprozessen
+4 Typischer Ablauf der operativen Produktions- und Beschaffungs-
+planung
+4.1 Planung des Produktionsprogramms
+4.1.1 Problemstellung
+4.1.2 Exkurs: Einführung in das Operations Research I: Programmplanung mittels
+linearer Optimierung
+4.1.3 Programmplanung bei saisonalen Nachfrageschwankungen
+4.2 Mengenplanung
+4.2.1 Programmgebundene Bedarfsermittlung (Stücklistenauflösung)
+4.2.2 Verbrauchsgebundene Bedarfsermittlung (Zeitreihenanalyse)
+4.3 Beschaffung und Beschaffungsplanung
+4.3.1 Aufgabenstellung und Entscheidungsprobleme
+4.3.2 Beschaffungsarten und deren Auswahl
+4.3.3 Lagerdispositionssysteme
+4.4 Termin- und Kapazitätsplanung
+4.4.1 Problemstellung
+4.4.2 Netzplantechnik
+5 Distributions- und Entsorgungslogistik
+5.1 Entscheidungsprobleme
+5.2 Tourenplanung und Travelling Salesman Problem
+Exkurs: Einführung in das Operations Research II: Modelle der
+ganzzahligen Optimierung; Heuristiken
+5.3 Entsorgung und Wiederverwertung
+3
+6 Dimensionierung und Strukturierung der Leistungserstellung
+6.1 Determinanten des Kapazitätsbedarfs
+6.2 Revenue Management bei der Sach- und Dienstleistungsproduktion
+6.3 Struktur- und Layoutgestaltung: Process Layout, Product Layout und
+hybride Formen; Exkurs: Einführung in das Operations Research III:
+Simulation zur Bewertung von Auslegungsalternativen
+6.4 Vertiefung Fertigungsstrukturierung: Just-in-Time und
+Durchlaufzeitreduzierung
+7 Ganzheitliche Betrachtung logistischer Netzwerke – Supply Chain
+Management
+8 Logistiksoftware
+4
+VO Management von Leistungsprozessen
+Assoz.-Prof. Mag. Mag. Stefan Häussler, PhD
+Terminplan
+Termin Thema
+Vorbesprechung: Inhalte, Modus, Ablauf der VO; Einführung in die
+1.Termin
+Produktionstheorie, Leistungsprozesse und Entscheidungsbereiche
+2.Termin Operative Prognose; Lineare Programmierung
+3.Termin Operative Prognose; Lineare Programmierung
+Fragen und Antwort (Q+A) zu Inhalten aus den Proseminaren:
+- Video: 5_Operative_NettobedLose;
+4.Termin - Video: 6_VerbrBedarfsErmABCXYZ;
+- Video: 7_TerminuKapplanung
+Rechenbeispiele und offene Fragen
+Zusammenhänge der operativen Produktionsplanung;
+5.Termin
+Distributionslogisitk und Routenplanung
+6.Termin Distributionslogisitk und Routenplanung
+7.Termin Entsorgungslogistik; Kapapazitätsmanagement; Simulation
+8.Termin Entsorgungslogistik; Kapapazitätsmanagement; Simulation
+9.Termin Revenue Management; Supply Chain Management
+10.Termin Revenue Management; Supply Chain Management
+11.Termin Besprechung Allgemein: Q+A-Session
+5

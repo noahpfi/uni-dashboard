@@ -1,0 +1,127 @@
+Statistische Datenanalyse
+Kapitel 4
+KIs, t-Test, approx. Binomialtest
+Aufgabe 1 zu Konfidenzintervall
+VerwendenSiedenFragebogendatensatzfragebogen_bereinigt_2026S.rda.
+a) BerechnenSiemitHilfediesesDatensatzesdenSchätzerfürdie
+durchschnittlicheGrößedermännlichenStudierendenmitzugehörigem
+Standardfehler!
+b) GebenSiedas95%-KonfidenzintervallfürdieerwarteteDurchschnittsgröße
+derElternderStudierendenan!
+c) Wielautetdas99%-KonfidenzintervallfürdenAnteilderweiblichen
+Studierenden?
+© StatistischeDatenanalyse–4–KIs,t-Test,approx.Binomialtest 1/9
+Aufgabe 1 a)
+BerechnenSiemitHilfediesesDatensatzesdenSchätzerfürdie
+durchschnittlicheGrößedermännlichenStudierendenmitzugehörigem
+Standardfehler!
+X...GrößedermännlichenStudierenden
+R> attach(Fragebogen)
+R> x_bar <- mean(groesse_selbst[geschlecht == "maennlich"])
+R> x_var <- var(groesse_selbst[geschlecht == "maennlich"])
+R> n_maennlich <- length(groesse_selbst[geschlecht == "maennlich"])
+R> se <- sqrt(x_var/n_maennlich)
+© StatistischeDatenanalyse–4–KIs,t-Test,approx.Binomialtest 2/9
+Aufgabe 1 b)
+GebenSiedas95%-KonfidenzintervallfürdieerwarteteDurchschnittsgrößeder
+ElternderStudierendenan!
+X...DurchschnittsgrößederElternderStudierenden
+R> dgroesse_eltern <- (groesse_mutter + groesse_vater)/2
+R> x_bar <- mean(dgroesse_eltern)
+R> x_var <- var(dgroesse_eltern)
+R> n <- nrow(Fragebogen)
+R> se <- sqrt(x_var/n)
+R> ug95 <- x_bar - se*qt(0.975, n-1)
+R> og95 <- x_bar + se*qt(0.975, n-1)
+R> KI95 <- c(ug95, og95)
+© StatistischeDatenanalyse–4–KIs,t-Test,approx.Binomialtest 3/9
+Aufgabe 1 c)
+Wielautetdas99%-KonfidenzintervallfürdenAnteilderweiblichen
+Studierenden?
+X...weiblicheStudierende
+R> pi_hat <- sum(geschlecht == "weiblich")/nrow(Fragebogen)
+R> se <- sqrt(pi_hat*(1-pi_hat)/nrow(Fragebogen))
+R> ug99 <- pi_hat - se*qnorm(0.995)
+R> og99 <- pi_hat + se*qnorm(0.995)
+R> KI99 <- c(ug99, og99)
+© StatistischeDatenanalyse–4–KIs,t-Test,approx.Binomialtest 4/9
+Aufgabe 2 zu t-Test und approx. Binomialtest
+VerwendenSieunserenMietspiegeldatensatzmietspiegel.rda.
+a) UnterstütztunsereStichprobedieAlternativhypothese,dassimSchnittdie
+FlächederWohnungeninMünchenimJahr1999kleinerals70m2 war?
+b) Ein/eineImmobilienmakler:inistderMeinung,dassdiedurchschnittliche
+MonatsmieteproQuadratmeterinMünchenimJahr1999beimehrals7
+Euro/m2 lag.BestätigtunsereStichprobedieseMeinung?
+c) IstderAnteilderWohnungeninnormalerLagesignifikantgrößerals55%?
+d) "DerAnteilderWohnungenmiteinemBaujahrvor1945seikleinerals30%
+gewesen."BestätigtunsereStichprobedieseAnnahme?
+© StatistischeDatenanalyse–4–KIs,t-Test,approx.Binomialtest 5/9
+Aufgabe 2 a)
+UnterstütztunsereStichprobedieAlternativhypothese,dassimSchnittdie
+FlächederWohnungeninMünchenimJahr1999kleinerals70m2 war?
+X...FlächederWohnung
+H : µ ≥ 70 H : µ < 70
+0 flaeche 1 flaeche
+R> attach(mietspiegel)
+R> n <- nrow(mietspiegel)
+R> mu_0 <- 70
+R> x_bar <- mean(flaeche)
+R> s <- sd(flaeche)
+R> tstat <- ((x_bar - mu_0) / s) * sqrt(n)
+R> tkrit <- qt(0.95, n-1)
+R> c(tstat, -tkrit)
+R> pval <- pt(tstat, n-1)
+oder
+R> t.test(flaeche, mu = 70, alternative = "less")
+© StatistischeDatenanalyse–4–KIs,t-Test,approx.Binomialtest 6/9
+Aufgabe 2 b)
+Ein/eineImmobilienmakler:inistderMeinung,dassdiedurchschnittliche
+MonatsmieteproQuadratmeterinMünchenimJahr1999beimehrals7
+Euro/m2 lag.BestätigtunsereStichprobedieseMeinung?
+X...MonatsmieteproQuadratmeter
+H : µ ≤ 7 H : µ > 7
+0 mieteqm 1 mieteqm
+R> n <- nrow(mietspiegel)
+R> mu_0 <- 7
+R> x_bar <- mean(mieteqm)
+R> s <- sd(mieteqm)
+R> tstat <- ((x_bar - mu_0) / s) * sqrt(n)
+R> tkrit <- qt(0.95, n-1)
+R> c(tstat, tkrit)
+R> pval <- pt(tstat, n-1, lower.tail = FALSE)
+oder
+R> t.test(mieteqm, mu = 7, alternative = "greater")
+© StatistischeDatenanalyse–4–KIs,t-Test,approx.Binomialtest 7/9
+Aufgabe 2 c)
+IstderAnteilderWohnungeninnormalerLagesignifikantgrößerals55%?
+X...LagederWohnung
+H : π ≤ 0.55 H : π > 0.55
+0 normaleLage 1 normaleLage
+approximativerBinomialtest
+R> n <- nrow(mietspiegel)
+R> pi_0 <- 0.55
+R> pi_hat <- sum(lage == "normale Lage") / n
+R> zstat <- ((pi_hat - pi_0) / (sqrt(pi_0 * (1 - pi_0)))) * sqrt(n)
+R> zkrit <- qnorm(0.95)
+R> c(zstat, zkrit)
+R> pval <- pnorm(zstat, lower.tail = FALSE)
+oder(mitexaktemBinomialtest)
+R> binom.test(table(lage != "normale Lage"), p = pi_0, alternative = "greater")
+© StatistischeDatenanalyse–4–KIs,t-Test,approx.Binomialtest 8/9
+Aufgabe 2 d)
+"DerAnteilderWohnungenmiteinemBaujahrvor1945seikleinerals30%
+gewesen."BestätigtunsereStichprobedieseAnnahme?
+X...BaujahrderWohnung
+H : π ≥ 0.30 H : π < 0.30
+0 Baujahrvor1945 1 Baujahrvor1945
+approximativerBinomialtest
+R> n <- nrow(mietspiegel)
+R> pi_0 <- 0.3
+R> pi_hat <- sum(bjahr < 1945) / n
+R> zstat <- ((pi_hat - pi_0) / (sqrt(pi_0 * (1 - pi_0)))) * sqrt(n)
+R> zkrit <- qnorm(0.95)
+R> c(zstat, -zkrit)
+R> pval <- pnorm(zstat)
+oder(mitexaktemBinomialtest)
+R> binom.test(table(bjahr >= 1945), p = pi_0, alternative = "less")
+© StatistischeDatenanalyse–4–KIs,t-Test,approx.Binomialtest 9/9

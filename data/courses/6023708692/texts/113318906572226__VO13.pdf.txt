@@ -1,0 +1,362 @@
+Statistische Datenanalyse
+Robuste Tests
+Robuste Tests
+Einführung
+© StatistischeDatenanalyse–13–RobusteTests 1/27
+Robuste Teststatistiken
+t-Test:DaderMittelwertkeinrobustesLagemaßist(d.h.sich
+durcheineeinzigeextremeBeobachtungstarkändernkann),
+istauchdieT-Statistiknichtrobust.
+Robuste Alternativen:
+• MedianoderMediandifferenz:Medianistrobustes
+Lagemaß.
+• Differenzgetrimmter Mittel:Lassejeweilseinen
+bestimmtenAnteilderextremstenBeobachtungenvor
+BerechnungderMittelwerteweg.
+• Rangsummen:BildedieRängeindervereinigten
+StichprobeundberechnedieRangsummeinnureinerder
+beidenStichproben.
+InallenStatistikenhabenAusreißernurbeschränkten
+Einfluss.Einenicht-robusteTeststatistikdagegenverliertbei
+AusreißernanTrennschärfe.
+© StatistischeDatenanalyse–13–RobusteTests 2/27
+Robuste Tests
+Vorzeichentest
+© StatistischeDatenanalyse–13–RobusteTests 3/27
+I) Einstichproben Vorzeichen Test für den
+Median
+H : Median = Md versusH : Median ̸= Md
+0 0 1 0
+• SeiV dieZahlderBeobachtungenüber/unterdem
+Medianwert(Md )
+0
+• BinomialtestTeststatistikV ∼ B(n,π = 0.5),oder
+• Normalverteilungsapproximation:Approximieredie
+BinomialverteilungmitderNormalverteilungbei
+genügendgroßerStichprobe(nπ(1−π) > 9)
+Teststatistik
+V−µ V−0.5n
+Z = = √ ∼ a N(0,1)
+σ 0.5 n
+Bemerkung:DiesesErgebniskommtvomZentralenGrenzwertsatz,denwirinderletztenVorlesung,
+VO15,näherbesprechen.
+© StatistischeDatenanalyse–13–RobusteTests 4/27
+I) Einstichproben Vorzeichen Test für den
+Median
+• FestlegungdesSignifikanzniveausα
+• TestdurchführungmitdenkritischenWertenodermit
+demp-Wert.
+© StatistischeDatenanalyse–13–RobusteTests 5/27
+Beispiel: Preise für Rundflugtickets
+DieCentralAirlinesbehauptet,dassderMedian-Preis(der
+mittlerePreis)einesRundflugticketsüberdenGrandCanyon
+beica.500Geldeinheitenliegt.DiesglaubtdasReisebüro
+”ZufriedenerKunde”nichtunderhebtdaherPreise
+verschiedenerAnbietersolcherRundflüge.Eine
+Zufallsstichprobevon400Ticketsergab,dassauf160Tickets
+einPreiskleinerals500GEausgestelltwar.KeinTickethatte
+genaudenPreisvon500GE.
+© StatistischeDatenanalyse–13–RobusteTests 6/27
+Beispiel: Preise für Rundflugtickets
+• H : Median = 500versusH : Median ̸= 500
+0 1
+• Signifikanzniveauα = 5%
+• Binomialtest
+0 12 26 40 54 68 82 96 111 128 145 162 179 196 213 230 247 264 281 298 315 332 349 366 383 400
+# Tickets
+30.0
+20.0
+10.0
+00.0
+R> (crit.value.left <- qbinom(0.025,400,0.5))
+[1] 180
+R> (crit.value.right <- qbinom(0.975,400,0.5))
+[1] 220
+Da160 < 180kannH abgelehntwerden.
+0
+© StatistischeDatenanalyse–13–RobusteTests 7/27
+Beispiel: Preise für Rundflugtickets
+• Normalverteilungsapproximation
+Teststatistik
+160−0.5·400
+z = √ = −4
+0.5· 400
+KritischerWert
+R> (crit.value.left <- qnorm(0.025))
+[1] -1.96
+DieNullhypothesekannabgelehntwerden.
+Beachte:
+• Bindungen(PreisegleichwiedermittlerePreis)
+• Stetigkeitskorrektur
+© StatistischeDatenanalyse–13–RobusteTests 8/27
+II) Vorzeichen Test für gepaarte
+(verbundene) Stichproben
+Testidee:AnstattdieBeobachtungenüberbzw.unterdem
+Medianzuzählen,zähltmandieZahl der positiven bzw.
+negativen Differenzen,und,wenneskeinenUnterschied
+gibt(Nullhypothese),dannsolltenpositivewienegative
+Differenzenannhäherndgleichoftvorkommen.
+Beispiel:EineSchulbehördemöchteuntersuchen,obsichdie
+SchulleistungenvonSchüler:inneninnerhalbeinesZeitraums
+verbesserthaben.DieSchulleistungeneinerZufallsstichprobe
+von43Schüler:innenwerdenanhandeinesgeeignetenTests
+gemessen.NachdemzweimonatigenUnterrichtwerdendie
+SchulleistungenvondenselbenSchüler:innenerneuterhoben.
+© StatistischeDatenanalyse–13–RobusteTests 9/27
+Vorzeichen Test für gepaarte
+(verbundene) Stichproben - Beispiel
+DieSchulbehördeführtmitdenerhaltenenBeobachtungen
+einenrechtsseitigenVorzeichentestdurch,d.h.Essolldie
+Alternativhypothesegetestetwerden,dassdieneue
+LehrmethodeeinepositiveAuswirkungaufdie
+Schulleistungenhatte(positiveDifferenzen).
+ZurAuswertungwerdendieHäufigkeitenderVorzeichen
+(+,−,=)derDifferenzenbestimmt:
++ − = Summe
+25 11 7 43
+KönnenwirausdiesemErgebnisschließen,dassdieneue
+LehrmethodeinderGrundgesamtheiteinenpositivenEffekt
+besitzt?
+© StatistischeDatenanalyse–13–RobusteTests 10/27
+Vorzeichen Test für gepaarte
+(verbundene) Stichproben - Beispiel
+• DerStichprobenumfangnwirdumdieAnzahlder
+Bindungenaufn ′ = n−7 = 36reduziert.
+• TeststatistikistdieZahlderpositiven Differenzen
+• Binomialtest
+0 1 2 3 4 5 6 7 8 9 11 13 15 17 19 21 23 25 27 29 31 33 35
+# pos. Differenzen
+21.0
+80.0
+40.0
+00.0
+R> (crit.value.right <- qbinom(0.95,36,0.5))
+[1] 23
+Da25 > 23,kanndieNullhypothese(gleichoderkeine
+Verbesserung)abgelehntwerden.
+© StatistischeDatenanalyse–13–RobusteTests 11/27
+Vorzeichen Test für gepaarte
+(verbundene) Stichproben - Beispiel
+• Normalverteilungsapproximation
+Teststatistik
+25−0.5·36
+z = √ = 2.3333
+0.5· 36
+KritischerWert
+R> (crit.value.right <- qnorm(0.95))
+[1] 1.645
+DieNullhypothese(gleichoderkeineVerbesserung)kann
+abgelehntwerden.
+© StatistischeDatenanalyse–13–RobusteTests 12/27
+Robuste Tests
+Rangsummentest
+© StatistischeDatenanalyse–13–RobusteTests 13/27
+I) Unabhängige Stichproben
+VergleichedenUnterschiedzwischendenMedianen(schwarz)
+mitdemUnterschiedzwischendenMittelwerten(blau):
+A B
+6
+4
+2
+0
+2−
+Fürspäter:Datensindgespeichertindat0.
+© StatistischeDatenanalyse–13–RobusteTests 14/27
+Rangtests
+In der Praxis:Obwohlschwererzuinterpretierenalsbspw.
+dieMediandifferenzsindRangsummenamgebräuchlichsten.
+DashatzumTeilhistorischeGründe:
+• Früher:Rangtestswarenbeliebt,weilmandas
+PermutationsprinzipanwendenunddamitdieVerteilung
+derTeststatistikberechnenkonnte(ohnemoderne
+RechnerzurVerfügungzuhaben).
+• Heute:RangtestswerdenverwendetwegenRobustheit
+beischwerenRändernoderAusreißern(nichtunbedingt
+wegenderVerteilungsunabhängigkeit).
+Beispiel:DerbekanntesteRangtestistderWilcoxon-oder
+Mann-Whitney-Test.
+© StatistischeDatenanalyse–13–RobusteTests 15/27
+Wilcoxon- bzw. Mann-Whitney-Test
+Teststatistiken:BildedievereinigteStichprobealler
+n = n +n BeobachtungenundvergebeRängeR.Verwende
+A B i
+diekleinere Summe der RängealsTeststatistik
+(Wilcoxon-Statistik):
+(cid:88)
+nA
+W = R
+i
+i=1
+EineäquivalenteTeststatistikistdieMann-Whitney
+U-Statistik:
+U = W−n ·(n +1)/2
+A A
+Uwirdvonwilcox.test()inRberechnet.
+Prüfverteilung:EsgibtverschiedeneAlgorithmen,diedie
+VerteilungderTeststatistikexaktausrechnenkönnen(ohne
+allePermutationenexplizitberechnenzumüssen).
+AsymptotischistdieTeststatistiknormalverteilt.
+© StatistischeDatenanalyse–13–RobusteTests 16/27
+Wilcoxon- bzw. Mann-Whitney-Test
+U = W−n ·(n +1)/2
+A A
+DergrüneAusdruckistdiekleinst mögliche Rangsumme.
+Beispiel:DieStichprobemitdenkleinerenRängenhatdie
+Ränge1,2,3,4,dann
+R> raenge.A <- c(1,2,3,4)
+R> minimum.rangsumme.A <- 4*5/2
+R> minimum.rangsumme.A
+[1] 10
+R> wilcoxon <- sum(raenge.A)
+R> wilcoxon
+[1] 10
+R> U <- wilcoxon - minimum.rangsumme.A
+R> U
+[1] 0
+© StatistischeDatenanalyse–13–RobusteTests 17/27
+Wilcoxon- bzw. Mann-Whitney-Test per
+Hand
+BerechnungderW-undU-TeststatistikvonHand:
+R> dat0
+y x
+1 -2.50 B
+2 -0.26 A
+3 -0.20 A
+4 0.24 A
+5 0.33 A
+6 0.49 A
+7 0.80 A
+8 1.71 A
+9 1.80 B
+10 1.98 B
+11 2.37 B
+12 2.52 B
+13 3.40 B
+14 5.18 B
+15 6.04 A
+© StatistischeDatenanalyse–13–RobusteTests 18/27
+Wilcoxon- bzw. Mann-Whitney-Test
+ZählenwirdieRängefürAzusammen:
+W = 2+3+4+5+6+7+8+15
+= 50
+U = W−n ·(n +1)/2
+A A
+= 50−8·9/2
+= 14
+© StatistischeDatenanalyse–13–RobusteTests 19/27
+Wilcoxon- bzw. Mann-Whitney-Test
+• Voraussetzung:DieFormderVerteilungenderbeidenzu
+vergleichendenStichprobenmüssengleichsein.
+(Achtung:Varianz)
+• DannwirdfolgendeNullhypothesegeprüft:Die
+WahrscheinlichkeiteinerBeobachtungausdenbeiden
+Grundgesamtheitenistfürjedederbeiden
+Grundgesamtheitengleich,d.h.dieVerteilungensind
+gleich:
+H : F (x) = F (x)versusH : F (x) = F (x+δ)
+0 A B 1 A B
+• DamanaberalsVoraussetzunggleiche
+Verteilungsformenannimmt,folgtdaraus,dassdie
+Medianeund/oderMittelwerteungleichseinmüssen,falls
+dieNullhypotheseabgelehntwerdenkann.
+• →H : Median = Median vs.H : Median ̸= Median
+0 A B 1 A B
+© StatistischeDatenanalyse–13–RobusteTests 20/27
+Wilcoxon- bzw. Mann-Whitney-Test in R
+Wilcoxon- bzw. Mann-Whitney-Test
+R> wilcox.test(y ~ x, data = dat0, paired=FALSE)
+Wilcoxon rank sum exact test
+data: y by x
+W = 14, p-value = 0.1
+alternative hypothesis: true location shift is not equal to 0
+t-Test
+R> t.test(y ~ x, data = dat0, paired=FALSE)
+Welch Two Sample t-test
+data: y by x
+t = -0.84, df = 12, p-value = 0.4
+alternative hypothesis: true difference in means between group A and group B is not equal to 0
+95 percent confidence interval:
+-3.459 1.532
+sample estimates:
+mean in group A mean in group B
+1.144 2.107
+© StatistischeDatenanalyse–13–RobusteTests 21/27
+Wilcoxon- bzw. Mann-Whitney-Test in R I
+MitPackagecoin:
+R> library("coin")
+R> wilcox_test(y ~ x, data = dat0, distribution = "exact")
+Exact Wilcoxon-Mann-Whitney Test
+data: y by x (A, B)
+Z = -1.6, p-value = 0.1
+alternative hypothesis: true mu is not equal to 0
+© StatistischeDatenanalyse–13–RobusteTests 22/27
+Wilcoxon- bzw. Mann-Whitney-Test in R II
+Bemerkungen:
+• DasPaketcoinstandardisiertdieTeststatistikähnlichwie
+beimt-Test.Dasändertabernichtsamp-Wert.
+• DerAlgorithmusfürdieexaktePermutationsverteilungin
+wilcox_test()funktioniertauchbeiBindungen,d.h.
+wenndergleichey-WertinStichprobeAundBvorkommt.
+• DerklassischeAlgorithmuszurBerechnungdesp-Werts,
+wieinwilcox.test()implementiert,funktioniertnur
+ohneBindungen.
+© StatistischeDatenanalyse–13–RobusteTests 23/27
+Rangtest: Illustration I
+A B
+y
+2
+1
+0
+1−
+2−
+SummeallermöglichenRänge:3240
+SummederRängevonA(WilcoxonStatistik):W =1584
+Mann-WhitneyStatistik:U=836
+p-Wert=0.734
+© StatistischeDatenanalyse–13–RobusteTests 24/27
+Rangtest: Illustration II
+A B
+y
+8
+6
+4
+2
+0
+2−
+SummeallermöglichenRänge:3240
+SummederRängevonA(WilcoxonStatistik):W =820
+Mann-WhitneyStatistik:U=0
+p-Wert=1.86e−23
+© StatistischeDatenanalyse–13–RobusteTests 25/27
+Wilcoxon- bzw. Mann-Whitney-Test
+Beispiel:GibteseinenUnterschiedinderzentralenTendenz
+derVerteilungvonmieteqmjenachkueche(bzw.bad)
+AusstattunginMietspiegel-Daten?
+R> wilcox.test(mieteqm ~ kueche, data = mietspiegel)
+Wilcoxon rank sum test with continuity correction
+data: mieteqm by kueche
+W = 120181, p-value = 2e-13
+alternative hypothesis: true location shift is not equal to 0
+R> wilcox.test(mieteqm ~ bad, data = mietspiegel)
+Wilcoxon rank sum test with continuity correction
+data: mieteqm by bad
+W = 247503, p-value = 0.02
+alternative hypothesis: true location shift is not equal to 0
+© StatistischeDatenanalyse–13–RobusteTests 26/27
+Effizienzunterschiede
+Effizienz:EineTestprozeduristeffizienteralseineandere,
+wennsiezumErzielenderselbenTrennschärfeweniger
+Beobachtungenbenötigt.
+Für 2-Stichprobenproblem:
+• SinddieVariablenY undY tatsächlichnormalverteilt,
+A B
+dannistderexaktet-TestdereffizientesteTestfür
+Lageunterschiede.VielerobusteTests(wieetwader
+Wilcoxon-Mann-Whitney-Test)sindaberfastgenauso
+effizient.
+• SindY undY nichtnormalverteilt,kanndert-Test
+A B
+extremineffizientunddamitirreführendsein.Viele
+robusteTestshingegenhabenfüreinegroßeKlassevon
+möglichenVerteilungenguteEffizienzeigenschaften.
+© StatistischeDatenanalyse–13–RobusteTests 27/27

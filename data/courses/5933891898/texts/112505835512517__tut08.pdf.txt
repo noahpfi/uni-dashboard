@@ -1,0 +1,158 @@
+Tutorium — Functional Programming
+Week 08 — Higher Order Functions
+Adam Pescoller
+T. Niederbrunner & J. Bodemann (for courteously providing their materials)
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 0/14
+Class hierarchy
+https://en.wikibooks.org/wiki/Haskell/Classes_and_types
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 1/14
+Deriving
+• Instances for the following built in type classes can be automatically instantiated
+with deriving:
+• Eq, Ord, Enum, Bounded, Show, Read
+• Derived Eq/Ord check for equality/order of constructors and recursively of the
+arguments
+• The order of constructors is determined by the order of declaration.
+Example:
+data Numbers = A Integer | B Integer deriving (Eq,Ord)
+A a == A b = a == b
+B a == B b = a == b
+_ == _ = False
+A a <= A b = a <= b
+A _ <= B _ = True
+...
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 2/14
+Higher-Order Functions
+• "Functions are just like any other value."1
+• Functions can take functions as input
+• Functions can return functions as results
+• Allows for more reuse and abstraction
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 3/14
+Exercise 8.1 Higher-Order Functions
+Create a (higher-order) function myAbs that takes the Arguments
+f :: Double -> Double and x :: Double
+and returns the absolute value of f(x).
+Test with:
+g x = x^2-4
+id :: a -> a -- built in
+for x = 0 and x = 3.
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 4/14
+Exercise 8.1: Possible Solution
+myAbs :: (Double -> Double) -> Double -> Double
+myAbs f x
+| value < 0 = -value
+| otherwise = value
+where
+value = f x
+result2 = myAbs id (-4.0)
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 5/14
+Lambda (λ) Abstractions
+• Allows us to create functions anywhere
+• They are anonymous, which means the don’t clutter up the namespace.
+• Often used with map or filter
+• Syntax: \ pat1 ... patN -> expr
+Examples:
+myAbs (\x -> x^2-4) 0
+(\x y -> x + y) 5 7
+multWithTwo = \x -> x * 2
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 6/14
+map and filter
+map :: (a -> b) -> [a] -> [b]
+• Takes a function f :: a -> b and list xs :: [a] as parameters
+• Applies f to all elements in xs
+• map f [a, b, ..., z] = [f a, f b, ..., f z]
+map (*2) [1,2,3] == [2,4,6]
+map head [[1,2],[2,3],[3,4]] == [1,2,3]
+filter :: (a -> Bool) -> [a] -> [a]
+• Takes a function f :: a -> Bool and list xs :: [a] as parameters
+• Checks if f evalutes to True for all elements in xs
+• if f a for an element a in xs evalutes to True, keep it, else discard it from the list.
+filter (>=2) [1,2,3] == [2,3]
+filter (==True) [True, False, True] == [True, True]
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 7/14
+Exercise 8.2: Lambda-Abstractions, map and filter
+Create a function div2 :: [Integer] -> [Integer] that filters out all integers not
+divisible by two, and then divides them by two.
+Use lambda abstractions wherever possible.
+Hint: Use `mod`
+Examples:
+div2 [2,4,6] == [1,2,3]
+div2 [1,2,3,4] == [1,2]
+div2 [1,3,5] == []
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 8/14
+Exercise 8.2: Possible Solution
+div2 :: [Integer] -> [Integer]
+div2 xs = map (\x -> x `div` 2) (filter (\x -> x `mod` 2 == 0) xs)
+-- See "Partial Application" in the next slides
+div2Advanced :: [Integer] -> [Integer]
+div2Advanced xs = map (`div` 2) (filter even xs)
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 9/14
+Partial Application
+In Partial Application we do not to supply all arguments to a function.
+• The consequence of that is the result of the partial application is a higher-order
+function.
+• Arguments can only be left out in order right-to-left (Exception: Operators).
+Remember associativity of ->:
+f :: a -> b -> c -> d
+f :: a -> (b -> (c -> d))
+By applying partially we "take away" -> from the left:
+f x :: b -> (c -> d)
+f x y == (f x) y :: c -> d
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 10/14
+Partial Application (2)
+Getting around the right-to-left restriction:
+• flip, reverses order of arguments for binary functions.
+• Lambda abstractions
+Examples:
+f :: a -> b -> c
+f x :: b -> c
+flip f x :: a -> c
+g :: a -> b -> c -> d
+g m n :: c -> d
+(\x z y -> g x y z) m n :: b -> d
+Exceptions: Operators
+(3+) :: Num a => a -> a
+(+3) :: Num a => a -> a
+(`div` 2) :: Integral a => a -> a
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 11/14
+Exercise 8.2: Partial application
+Use partial application to implement the following functions without naming the last
+argument:
+• add10 :: Num a => a -> a: Adds 10 to the input.
+• removeSmallerThan :: (Num a, Ord a) => a -> [a] -> [a]: Removes all
+elements of the list that are smaller than the provided number.
+Hint: You can implement the functions in one line by making use of other functions
+you already know.
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 12/14
+Exercise 8.3: Possible Solution
+add10 :: Num a => a -> a
+add10 = (10+)
+removeSmallerThan :: (Num a, Ord a) => a -> [a] -> [a]
+removeSmallerThan x = filter (>=x)
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 13/14
+Questions? Need help? Feedback?
+• Element Chat (with handle @adam.pescoller:student.uibk.ac.at)
+• Adam.Pescoller@student.uibk.ac.at
+• http://cl-informatik.uibk.ac.at/teaching/ws25/fp/feedback.php
+Tutorium—FunctionalProgramming WS25—Week08—HigherOrder AdamPescoller
+Functions 14/14

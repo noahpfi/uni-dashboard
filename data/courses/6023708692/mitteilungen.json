@@ -1,0 +1,62 @@
+[
+  {
+    "date": "2026-05-11",
+    "title": "PS 9",
+    "author": "Steckel-Berger, Gabriele",
+    "body": "Liebe Studierende,\ndurch den längeren 4. Präsenztest (PS7) und das Besprechen des Aufgabenblattes 1 (PS8) jeweils in einer PS-Einheit möglicherweise in Vergessenheit geraten :-)\nbereiten Sie bitte für die PSe in dieser Woche wieder ein RScript mit den R-Kommandos aus den PS9-Folien vor.\nHerzliche Grüße\nIhr Team der Statistischen Datenanalyse\nGabriele Steckel-Berger, Nikolaus Umlauf, Reto Stauffer, Benjamin Müller, Rudolf Hakenschmidt, Daniel Gstrein, Lukas Kleinheinz, Mattias Wetscher, Verena Pflügler, Laura Osl, Niklas Costa e Freitas, Jakob Gmachl, Thomas Jank"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "PS7 (3. Präsenztest), PS8 (Aufgabenblatt 1)",
+    "author": "Steckel-Berger, Gabriele",
+    "body": "Liebe Studierende!\nIn den PSen am 29./30.04.2026 (PS7) gibt es den etwas umfangreicheren 3. Präsenztest gleich zu Beginn der jeweiligen PSe. Sie erhalten dabei wieder einen personalisierten Datensatz zum Download, mit dem Sie die Fragen bearbeiten sollen.\nZur Bearbeitung darf ausschließlich RStudio verwendet werden. Für den Test stehen Ihnen 40 Minuten zur Verfügung, Sie können insgesamt 15 Punkte erreichen.\nZur Vorbereitung bitten wir Sie, die Inhalte der letzten PS-Einheiten noch einmal zu wiederholen, insbesondere auch die Inhalte des PS6.\nDie restliche Zeit in diesen PSen kann z.B. für Fragen zu den bisherigen Themen, zum Aufgabenblatt 1, … genutzt werden.\nDas Aufgabenblatt 1 (inklusive Variablenbeschreibung) und der bereinigte Datensatz, fragebogen_bereinigt_2026S.rda, sind im OLAT verfügbar. Sie können idealerweise schon jetzt mit der Ausarbeitung der Lösung der einzelnen Aufgaben beginnen. Das Besprechen des Aufgabenblattes 1 findet in den PSen am 06./07.05.2026 (PS8) statt.\nHerzliche Grüße\nIhr Team der Statistischen Datenanalyse\nGabriele Steckel-Berger, Nikolaus Umlauf, Reto Stauffer, Benjamin Müller, Rudolf Hakenschmidt, Daniel Gstrein, Lukas Kleinheinz, Mattias Wetscher, Verena Pflügler, Laura Osl, Niklas Costa e Freitas, Jakob Gmachl, Thomas Jank"
+  },
+  {
+    "date": "2026-04-20",
+    "title": "PS6",
+    "author": "Steckel-Berger, Gabriele",
+    "body": "Liebe Studierende,\nin den PSen dieser Woche besprechen wir den Foliensatz PS6.pdf (t-Test-2-Stichprobenfall, unabhängige vs. gepaarte Stichproben).\nFür das Bearbeiten der Aufgabe 2 in diesen Folien benötigen wir einen weiteren Datensatz, augusta2026.rda, den wir Ihnen im OLAT zur Verfügung stellen. Dieser Datensatz beinhaltet die Ergebnisse des Golf-Master-Turniers, das vom 9. bis 12.  April 2026 in Augusta, Georgia, stattgefunden hat.\nZur Vorbereitung auf das PS in dieser Woche vergessen Sie bitte nicht, ein RScript mit den R-Kommandos des Foliensatzes PS6.pdf zu erstellen :-).\nHerzliche Grüße\nIhr Team der Statistischen Datenanalyse\nGabriele Steckel-Berger, Nikolaus Umlauf, Reto Stauffer, Benjamin Müller, Rudolf Hakenschmidt, Daniel Gstrein, Lukas Kleinheinz, Mattias Wetscher, Verena Pflügler, Laura Osl, Niklas Costa e Freitas, Jakob Gmachl, Thomas Jank"
+  },
+  {
+    "date": "2026-04-16",
+    "title": "2. Präsenztest",
+    "author": "Steckel-Berger, Gabriele",
+    "body": "Liebe Studierende,\nin der kommenden Woche finden in den PSen die zweiten Präsenztests statt. Diese Tests sind Online-Tests, die jedoch in Präsenz im PS abgehalten werden. Sie erhalten dabei wieder einen personalisierten Datensatz zum Download, mit dem Sie die Fragen bearbeiten sollen.\nZur Bearbeitung darf ausschließlich RStudio verwendet werden. Für den Test stehen Ihnen 20 Minuten zur Verfügung, und es können insgesamt 10 Punkte erreicht werden.\nZur Vorbereitung bitten wir Sie, die Inhalte der letzten PS-Einheiten (PS2, PS3, PS4) noch einmal zu wiederholen. Die Inhalte des PS5 sind für den 2. Präsenztest nicht relevant.\nHerzliche Grüße\nIhr Team der Statistischen Datenanalyse\nGabriele Steckel-Berger, Nikolaus Umlauf, Reto Stauffer, Benjamin Müller, Rudolf Hakenschmidt, Daniel Gstrein, Lukas Kleinheinz, Mattias Wetscher, Verena Pflügler, Laura Osl, Niklas Costa e Freitas, Jakob Gmachl, Thomas Jank"
+  },
+  {
+    "date": "2026-03-30",
+    "title": "Ostern 2026",
+    "author": "Steckel-Berger, Gabriele",
+    "body": "Liebe Studierende,\nwir wünschen Ihnen schöne Ferien und frohe Ostern!\nHerzliche Grüße\nIhr Team der Statistischen Datenanalyse\nGabriele Steckel-Berger, Nikolaus Umlauf, Reto Stauffer, Benjamin Müller, Rudolf Hakenschmidt, Daniel Gstrein, Lukas Kleinheinz, Mattias Wetscher, Verena Pflügler, Laura Osl, Niklas Costa e Freitas, Jakob Gmachl, Thomas Jank"
+  },
+  {
+    "date": "2026-03-27",
+    "title": "2. Präsenztest",
+    "author": "Steckel-Berger, Gabriele",
+    "body": "Liebe Studierende,\naufgrund der Prüfungswoche vom 10.04.2026 bis 17.04.2026 verschieben wir den 2. Präsenztest um eine Woche. Dieser findet nun in den PSen am 22.04. bzw. 23.04.2026 statt.\nHerzliche Grüße\nIhr Team der Statistischen Datenanalyse\nGabriele Steckel-Berger, Nikolaus Umlauf, Reto Stauffer, Benjamin Müller, Rudolf Hakenschmidt, Daniel Gstrein, Lukas Kleinheinz, Mattias Wetscher, Verena Pflügler, Laura Osl, Niklas Costa e Freitas, Jakob Gmachl, Thomas Jank"
+  },
+  {
+    "date": "2026-03-23",
+    "title": "PS4",
+    "author": "Steckel-Berger, Gabriele",
+    "body": "Liebe Studierende,\nherzlichen Dank für das Ausfüllen des Fragebogens. Dieser ist nun die Basis für das Beantworten der Fragestellungen im Aufgabenblatt 1, Aufgabenblatt 2 und weiteren Fragestellungen im Datenanalyse-Modul.\nIn den PSen dieser Woche besprechen wir den Foliensatz PS4.pdf.\nZur Vorbereitung laden Sie sich bitte aus dem OLAT den Datensatz fragebogen_2026S.rda in Ihren Datenordner und bereiten Sie ein RScript mit den R-Kommandos dieser Folien vor!\nHerzliche Grüße\nIhr Team der Statistischen Datenanalyse\nGabriele Steckel-Berger, Nikolaus Umlauf, Reto Stauffer, Benjamin Müller, Rudolf Hakenschmidt, Daniel Gstrein, Lukas Kleinheinz, Mattias Wetscher, Verena Pflügler, Laura Osl, Niklas Costa e Freitas, Jakob Gmachl, Thomas Jank"
+  },
+  {
+    "date": "2026-03-13",
+    "title": "Information zu PSen",
+    "author": "Steckel-Berger, Gabriele",
+    "body": "Liebe Studierende,\naus organisatorischen Gründen ist ab sofort kein Wechsel zwischen den PSen mehr möglich.\nHerzliche Grüße\nIhr Team der Statistischen Datenanalyse\nGabriele Steckel-Berger, Nikolaus Umlauf, Reto Stauffer, Benjamin Müller, Rudolf Hakenschmidt, Daniel Gstrein, Lukas Kleinheinz, Mattias Wetscher, Verena Pflügler, Laura Osl, Niklas Costa e Freitas, Jakob Gmachl, Thomas Jank"
+  },
+  {
+    "date": "2026-03-12",
+    "title": "1. Präsenztest",
+    "author": "Steckel-Berger, Gabriele",
+    "body": "Liebe Studierende,\nnächste Woche finden in den PSen (18./19.03.2026) die ersten Präsenztests statt. Diese Tests sind im Prinzip Online-Tests, die jedoch in Präsenz im PS abgehalten werden. Sie erhalten dabei einen Datensatz zum Download, mit dem Sie die Fragen bearbeiten sollen.\nZur Bearbeitung darf ausschließlich RStudio verwendet werden. Für die Bearbeitung des Tests stehen Ihnen 20 Minuten zur Verfügung, Sie können insgesamt 10 Punkte erreichen.\nZur Vorbereitung möchten wir Sie bitten, die Inhalte der letzten PS-Einheiten noch einmal zu wiederholen, dann sollte der Test gut zu absolvieren sein.\nHerzliche Grüße\nIhr Team der Statistischen Datenanalyse\nGabriele Steckel-Berger, Nikolaus Umlauf, Reto Stauffer, Benjamin Müller, Rudolf Hakenschmidt, Daniel Gstrein, Lukas Kleinheinz, Mattias Wetscher, Verena Pflügler, Laura Osl, Niklas Costa e Freitas, Jakob Gmachl, Thomas Jank"
+  },
+  {
+    "date": "2026-03-05",
+    "title": "Skript - Deskriptive Statistik",
+    "author": "Steckel-Berger, Gabriele",
+    "body": "Liebe Studierende,\nwie in den PSen dieser Woche angekündigt, ersuchen wir Sie, die Kapitel 1 und 2 unseres Skripts zur \"Deskriptiven Statistik\" (im OLAT im Reiter \"Unterlagen\" verfügbar) bis zur VO am 10.03.2026 zu lesen.\nMethoden der deskriptiven Statistik sind Thema der kommenden PSe ab 11./12.03.2026. Dazu werden wir in den PSen die Folien PS2.pdf, PS3.pdf und PS4.pdf besprechen.\nGrundlegendes aus diesem Skript ist auch Thema des OT1, den Sie von Dienstag, 10.03.2026, 14:00 Uhr bis Freitag, 13.03.2026, 12:00 Uhr jeweils in einem Zeitfenster von 90 Minuten ab dem Start des OT1 bearbeiten können.\nHerzliche Grüße\nIhr Team der Statistischen Datenanalyse\nGabriele Steckel-Berger, Nikolaus Umlauf, Reto Stauffer, Benjamin Müller, Rudolf Hakenschmidt, Daniel Gstrein, Lukas Kleinheinz, Mattias Wetscher, Verena Pflügler, Laura Osl, Niklas Costa e Freitas, Jakob Gmachl, Thomas Jank"
+  }
+]

@@ -1,0 +1,241 @@
+Was ist Wissenschaftliches Denken?
+Univ.Prof.DDr. Jürgen Huber, Institut für Banken und Finanzen
+Übersicht für heute:
+»
+Wissenschaftliches Denken
+»
+Ist Inflation normal? Ist Globalisierung unumkehrbar?
+»
+Survivorship bias
+»
+Beginn der Wissenschaft – Beginn der Wirtschaftswissenschaften
+Einführung in die BWL I Huber I 4. VO-Termin Seite 2
+Ihr Studium an der Universität ist „wissenschaftlich fundiert“
+… das heißt v.a. neugierig sein! Alles hinterfragen und Herkunft und
+Ursachen von Phänomenen, Organisationen und Regeln erkunden!
+»
+Beispiel: Wie hoch ist derzeit in etwa der Ölpreis?
+Einführung in die BWL I Huber I 4. VO-Termin Seite 3
+Ihr Studium an der Universität ist „wissenschaftlich fundiert“
+… das heißt v.a. neugierig sein! Alles hinterfragen und Herkunft und
+Ursachen von Phänomenen, Organisationen und Regeln erkunden!
+»
+Beispiel: Wie hoch ist derzeit in etwa der Ölpreis?
+»
+Ok … aber was ist ein „Barrel“
+»
+Und woher kommt der Dollar?
+»
+Und woher kommt das $-Zeichen?
+»
+Wieviel Gold gibt es weltweit und wieviel ist das gesamt wert?
+»
+… und welchen Anteil des Weltvermögens macht das in etwa aus?
+Einführung in die BWL I Huber I 4. VO-Termin Seite 4
+Seien Sie kritisch, entscheiden Sie Fakten-basiert,
+und suchen Sie nach langen Zeitreihen
+Beispiele:
+»
+Ist Inflation „normal“, sogar „unvermeidlich“?
+»
+Wird die Welt tatsächlich immer globalisierter? Ist die Globalisierung
+unumkehrbar?
+Einführung in die BWL I Huber I 4. VO-Termin Seite 5
+Daten: US-Inflation 1948 – 2021: Ja, Inflation ist „normal“
+Einführung in die BWL I Huber I 4. VO-Termin Seite 6
+Schaut man aber noch länger zurück, so wird deutlich, dass Inflation
+erst „normal“ ist, seit der Goldstandard (um 1932) abgeschafft wurde
+2 1 8 r a W I r a I I r
+a
+1 W W
+l
+f
+o
+iv
+d
+i d
+C l
+r r l
+a o r
+o
+W W
+W
+Black Tuesday
+1929-10-29
+7
+Globalisierung … sieht wie ein klarer ansteigender Trend aus
+Einführung in die BWL I Huber I 4. VO-Termin Seite 8
+Globalisierung ist aber nicht irreversibel – durch Weltkriege stark zurückgeworfen
+Einführung in die BWL I Huber I 4. VO-Termin Seite 9
+Globalisierung tendenziell rückläufig seit 2008
+(hier Auslandsinvestitionen als Prozentanteil am Welt-BIP)
+5.00
+4.50
+4.00
+3.50
+3.00
+2.50
+2.00
+1.50
+1.00
+0.50
+0.00
+1980 1982 1984 1986 1988 1990 1992 1994 1996 1998 2000 2002 2004 2006 2008 2010 2012 2014 2016 2018 2020 2022
+10
+https://www.economist.com/briefing/2022/06/16/the
+-structure-of-the-worlds-supply-chains-is-changing
+11
+Survivorship Bias: Falsche Schlüsse, da man nur erfolgreiche sieht!
+(deutsch etwa: Überlebensirrtum bzw. Verzerrung zugunsten der Überlebenden)
+» Hier sehen Sie die Einschusslöcher durch FLAK bei US-Bombern die im Zweiten Weltkrieg von ihren Angriffen über
+Deutschland zurückkehrten. Wo würden Sie als Ingenieur empfehlen, eine bessere Panzerung anzubringen?
+Einführung in die BWL I Huber I 4. VO-Termin Seite 12
+Survivorship Bias: Falsche Schlüsse, da man nur erfolgreiche sieht!
+(deutsch etwa: Überlebensirrtum bzw. Verzerrung zugunsten der Überlebenden)
+» Der Begriff geht auf die Arbeit Alliierter Ingenieure im Zweiten Weltkrieg zurück, welche die Panzerung der
+Bomber-Flugzeuge verbessern und somit die Überlebensrate der Piloten und Besatzung steigern wollten. Sie
+verstärkten zunächst die Panzerung der zurückgekehrten Maschinen an den Stellen mit den meisten
+Einschusslöchern. Allerdings verbesserte sich dadurch die Überlebensrate nicht. Der Mathematiker Abraham Wald
+erkannte schließlich den Irrtum und regte an, die Flugzeuge dort stärker zu panzern, wo sie keine Einschusslöcher
+aufwiesen, da Treffer an diesen Stellen offensichtlich einen Absturz auslösten und somit die Rückkehr unmöglich
+machten.
+» Der „Survivorship Bias“ spielt in viele Bereiche der BWL hinein:
+• In der Management-Literatur wird von Elon Musk, Steve Jobs,
+Bill Gates, Warren Buffet und anderen extrem erfolgreichen
+Managern berichtet; nicht aber von den Tausenden ebenso
+talentierten, die aber scheiterten.
+• Bei Aktienfonds gibt es viele Rankings der Besten; aber keine der
+Schlechtesten, obwohl die Rendite v.a. durch Zufall getrieben sind.
+• Aktienindizes bestehen nur aus den „besten“ Aktien – Unternehmen
+die (wie Lehman Brothers) bankrott gehen, fallen aus den Datenbanken.
+Einführung in die BWL I Huber I 4. VO-Termin Seite 13
+Einer der den Survivorship
+Bias in seinem Feld erkannte:
+John Malkovich
+„Es ist nur Glück, alles ist Glück. Ich hatte Glück, dummes Glück, unverdientes
+Glück. Wenn Leute mich loben, denke ich immer an all die talentierten Kollegen,
+die kein Glück hatten. War das ihre Schuld? Fehlte ihnen der Mut oder das
+Selbstvertrauen? Letztlich lässt sich alles mit Glück erklären. Oder mit einem
+Mangel an Glück.“ (John Malkovich in der Tiroler Tageszeitung 06.04.2023)
+https://www.tt.com/artikel/30851095/john-malkovich-im-tt-interview-durch-die-schauspielerei-verliere-ich-ein-vermoegen
+Einführung in die BWL I Huber I 4. VO-Termin Seite 14
+Was ist Wissenschaft?
+Wissenschaft ist,
+»
+dass wir uns nicht länger vor dem Zorn der Götter fürchten, wenn ein Gewitter
+aufzieht, sondern verstehen, welche elektrischen Entladungen hier passieren.
+»
+dass wir vom Weltraum aus ein Bild der Erdkugel machen können –
+wunderschön, verletzlich und letztlich ein kleiner bewohnbarer Punkt
+im sie umgebenden großen, kalten und recht leeren Weltraum.
+»
+dass wir mit Wikipedia im speziellen und dem Internet ganz generell eine
+umfassende Wissensbasis für jeden haben – und das dank
+Smartphones praktisch jederzeit und überall.
+»
+dass wir den Effekt von Handel auf den Wohlstand der
+beteiligten Menschen und Länder bestimmen können.
+»
+Wissenschaft macht aus einem Rätseln oder Fürchten ein Verstehen.
+Einführung in die BWL I Huber I 4. VO-Termin Seite 15
+Was ist Wissenschaft?
+»
+„Wissenschaft ist „der systematische Versuch zu entdecken, was alles Wichtiges in
+der Welt der Fall ist und warum es der Fall ist.“ (Tetens, 2013)
+»
+Dabei gibt es zwei wichtige Kriterien: Objektivität (über das Subjekt hinaus
+prüfbare Gültigkeit) und Erklärungsanspruch.
+»
+Meinungen, Mythen oder Erzählungen erfüllen zumindest eines dieser Kriterien
+nicht.
+»
+Damit Wissenschaft also wirklich Wissen schafft, welches erklärend, überprüfbar,
+nützlich und erweiterbar ist, haben sich durch gelebte Praxis, aber auch durch
+aktive Überlegungen (Wissenschaftstheorie) Regeln etabliert, die ein
+entsprechend systematisches Vorgehen sicherstellen.
+»
+In den begleitenden PS ist es ein wesentliches Ziel, Sie mit diesen Regeln vertraut
+zu machen, um Ihnen zu ermöglichen, wissenschaftlich zu arbeiten.
+Einführung in die BWL I Huber I 4. VO-Termin Seite 16
+Wann begann systematisches wissenschaftliches Denken?
+» Die ersten „Wissenschaftler“ waren die Philosophen im antiken Griechenland;
+φιλοσοφία / philosophia ist die „Liebe zur Weisheit“:
+• Sophisten (Protagoras, Demokrit) – Universalgelehrte; Wander-Lehrende (gab ja keine Unis…)
+• Sokrates (469-399 BC, strukturierte Dialoge, Fragen!)
+• Platon (purster Theoretiker – nur die „Vernunft“ zählt; Academia in Athen)
+• Aristoteles (Empiriker und Klassifizierer; Lehrer von Alexander dem Großen)
+» Mittelalter
+• Europa: Unter dem starken limitierenden Einfluss der Kirche, Mönche (Irland) erhalten durch
+Kopieren das antike Wissen; kaum neues Wissen.
+• Arabische Welt: Damals junge dynamische Region; führend in Mathematik, Astronomie und
+Medizin, Schmelztiegel der Kulturen mit Zugang zu antikem Wissen.
+» Renaissance
+• Wiedergeburt der antiken Ideale, die Rolle der Kirche wird langsam zurückgedrängt;
+Individuen werden wieder wichtig (Künstler werden berühmt); erste Experimente.
+Einführung in die BWL I Huber I 4. VO-Termin Seite 17
+Gedankenfreiheit!
+» Im antiken Griechenland durfte und konnte man (meist) frei seine Ideen und Gedanken
+äußern; konnte selbst die Existenz der Götter anzweifeln.
+» Im mittelalterlichen Europa oder in streng islamischen Gesellschaften ist dies nicht möglich
+bzw. mit dem Tod bedroht. In Ägypten und der Türkei darf die Evolutionstheorie nicht gelehrt
+werden; daher glauben auch 96% der Ägypter nicht daran (bzw. kennen sie gar nicht).
+» Die Gedankenfreiheit macht den entscheidenden Unterschied, denn nur sie erlaubt
+wissenschaftlichen Fortschritt und neue Erkenntnisse.
+» Lange durften bspw. Ärzte den menschlichen Körper nicht öffnen (weder lebendig noch
+tot) – daher lange keine Heilung bspw. bei Blinddarmentzündung („Seitenkrankheit“).
+» Giordano Bruno (1548-1600) wurde von der Inquisition verbrannt, da er ein
+sonnenzentriertes Weltbild vorschlug, und meinte, die Sterne am Nachthimmel könnten ja
+auch weit entfernte Sonnen sein – vielleicht sogar mit eigenen Planeten und Leben auf ihnen.
+» Nur Gedankenfreiheit erlaubt Fortschritt – bitte trauen Sie sich immer, dafür einzustehen!
+Einführung in die BWL I Huber I 4. VO-Termin Seite 18
+Die erste Universität, damals „Museion“ genannt und uns bekannt
+als „Bibliothek von Alexandria“
+»
+Gegründet von den Ptolemäern in Ägypten rund 300 v.Chr.
+»
+Im Wirtschafts- und Kulturzentrum des östlichen Mittelmeers, wo
+das intellektuelle Erbe der Griechen, Römer, Ägypter, Babylonier
+und Juden gesammelt wurde und sich gegenseitig bereicherte.
+Einführung in die BWL I Huber I 4. VO-Termin Seite 19
+Die Bibliothek von Alexandria…
+»
+Bot den besten Wissenschaftern ihrer Zeit lebenslange Anstellung,
+gratis Verpflegung und Unterkunft, eine gute steuerfreie Bezahlung und
+vollen Zugang zu den Schriften der Bibliothek.
+»
+Wurde bei Caesars Eroberung Ägyptens teilweise zerstört.
+»
+Verlor unter römischer Herrschaft schrittweise an Bedeutung (weil
+anderen Zentren von Bildung und Handel aufstiegen).
+»
+Zerstört wurde sie (damals von einer Frau; Hypathia, geleitet) etwa im
+Jahr 400 n.Chr., vermutlich von christlichen Fanatikern.
+(Film über Hypathia und die Zerstörung der Bibliothek: Agora: Die Säulen des Himmels
+https://de.wikipedia.org/wiki/Agora_%E2%80%93_Die_S%C3%A4ulen_des_Himmels)
+Einführung in die BWL I Huber I 4. VO-Termin Seite 20
+Entdeckungen, die an der Bibliothek von Alexandria gemacht wurden…
+»
+Archimedes entdeckte die Zahl Pi und entwickelte die Mathematik weiter
+»
+Euklid entwickelte dort seine Geometrie
+»
+Eratosthenes behauptete, dass die Erde eine Kugel sei und er errechnete Ihren Umfang zu
+99% korrekt (während Kolumbus sich um 75% irrte)
+»
+Geographen schlugen vor, dass man Indien auch erreichen könnte, indem man von
+Spanien aus nach Westen segeln würde (was Kolumbus 1800 Jahre später tat)
+»
+Astronomen schlugen ein heliozentrisches Universum vor
+»
+Galen revolutionierte die Medizin (4-Säfte-Lehre)
+»
+Geometer berechneten die Länge des Jahres mit 365 ¼ Tagen und schlugen einen
+Schalttag alle 4 Jahre vor (von Julius Cäsar als Julianischer Kalender eingeführt)
+»
+Ingenieure entwickelten hydraulische und pneumatische Maschinen
+Einführung in die BWL I Huber I 4. VO-Termin Seite 21
+Weiterführende Literatur für Interessierte
+»
+Zum Beginn der Renaissance: Stephen Greenblatt „Die Wende: Wie die
+Renaissance begann“
+Einführung in die BWL I Huber I 4. VO-Termin Seite 22

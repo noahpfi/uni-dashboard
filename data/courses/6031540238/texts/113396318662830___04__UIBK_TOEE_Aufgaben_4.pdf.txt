@@ -1,0 +1,79 @@
+Theorie ökonomischer Entscheidungen
+Aufgabenblatt 4
+Prof. Dr. Heiner Schumacher
+UIBK
+1 Das “Rotten-Kid”Theorem
+Betrachten Sie einen Haushalt mit zwei Parteien, Eltern und Kind. Die Eltern kümmern
+sich nicht nur um sich selbst, sondern auch um das Wohlergehen ihres Kindes. Das Kind
+allerdings ist komplett egoistisch. Es kann durch eigene Leistung das Familieneinkommen
+vergrößern. Eine Leistung von a erhöht das Familieneinkommen um 20a, verursacht dem
+Kind aber Kosten von a2. Die Eltern beobachten die Leistung des Kindes und wählen
+dann die Höhe des Taschengeldes b. Die Nutzenfunktion des Kindes ist
+U (a;b) = ln(100 a2 +b):
+K
+(cid:0)
+Die Nutzenfunktion der Eltern ist
+V = ln(400+20a b)+U (a;b):
+E K
+(cid:0)
+1. Schreiben Sie den Spielbaum des Spiels auf.
+2. Zeigen Sie, dass im einzigen teilspielperfekten Nash Gleichgewicht das Kind die
+Leistung a so wählt, dass das Familieneinkommen abzüglich der Kosten des Kindes
+maximiert wird (dies ist das “Rotten-Kid”Theorem). Beachten Sie, dass das Fam-
+ilieneinkommen 100+400+20a ist.
+3. Nehmen Sie nun an, dass auch die Eltern komplett egoistisch sind. Ihre Nutzen-
+funktion ist nun
+V = ln(400+20a b):
+E
+(cid:0)
+Finden Sie das teilspielperfekte Nash Gleichgewicht. Maximiert die Leistung des
+Kindes in diesem Gleichgewicht immer noch das Familieneinkommen abzüglich der
+Kosten des Kindes?
+1
+2 Wiederholte Spiele I
+Das folgende Stufenspiel wird zweimal hintereinander gespielt. Das Ergebnis in der ersten
+Periode wird beobachtet bevor die Spieler ihre Aktion in der zweiten Periode wählen.
+S1/S2 Links Mitte Rechts
+Oben 3,1 0,0 5,0
+Mitte 2,1 1,2 3,1
+Unten 1,2 -1,0 4,4
+1. Nehmen Sie an, dass der Diskontfaktor (cid:14) = 1 ist. Zeigen Sie, dass es ein teilspielper-
+fektes Nash Gleichgewicht in diesem Spiel gibt, in dem in der ersten Periode das
+Aktionenpro…l (Unten, Rechts) gespielt wird.
+2. Nehmen Sie nun an, dass der Diskontfaktor (cid:14) < 1 ist. Wie hoch muss (cid:14) mindestens
+sein, damit das Strategienpro…l aus der vorherigen Teilaufgabe ein teilspielperfektes
+Nash Gleichgewichts ist?
+3 Wiederholte Spiele II
+Betrachten Sie das folgende Stufenspiel:
+S1/S2 L M N R
+2 2 2 2
+L 2,2 -1,3 0,0 -1,1
+1
+M 0,0 1,1 0,0 -2,-1
+1
+N 0,0 0,0 0,1 -4,-1
+1 2
+R -1,-2 -1,-2 -1,-4 -2,-3
+1
+1. Bestimmen Sie alle Nash Gleichgewichte des Stufenspiels in reinen Strategien.
+2. NehmenSiean,dassdasSpieldreimalgespieltwird. FindenSieeinteilspielperfektes
+NashGleichgewichtindemdasAktionenpro…l(L ;L )indererstenPeriodegespielt
+1 2
+wird. Sie können davon ausgehen, dass der Diskontfaktor (cid:14) = 1 ist.
+4 Wiederholte Werbung
+Zwei Firmen im Wettbewerb wählen im Stufenspiel zwischen den Aktionen “Werbung”
+und “keine Werbung”. Wenn sie beide Werbung schalten, erzielen beide eine Auszahlung
+von 5. Wenn eine Firma Werbung schaltet und die andere nicht, erzielt die werbende
+Firma eine Auszahlung von 10 und die andere Firma nur eine von 3. Wenn keine der
+Firmen Werbung schaltet, verdienen beide einen Betrag von (cid:11), mit 5 < (cid:11) < 10. Im
+Stufenspiel wählen die Firmen ihre Aktion simultan.
+2
+1. Nehmen Sie an, dieses Spiel wird nur einmal gespielt. Zeigen Sie, dass dann beide
+Firmen Werbung schalten werden.
+2. Nehmen Sie an, dass dieses Spiel unendlich oft gespielt wird, und dass der Diskont-
+faktor 0:9 ist. Betrachten Sie die folgende Trigger-Strategie: In der ersten Periode
+schaltet keine Firma Werbung. In späteren Perioden schaltet eine Firma keine Wer-
+bung, wenn bisher nie eine Firma Werbung geschaltet hat; sonst schaltet sie Wer-
+bung. Für welche Werte von (cid:11) unterstützt diese Trigger-Strategie ein teilspielper-
+fektes Nash Gleichgewicht?
+3

@@ -1,0 +1,409 @@
+R University
+Statistics Exam 2021-06-22 Exam ID 00001
+Name:
+StudentID:
+Signature:
+1. (a) X (b) (c) X (d) (e) (f) (g) X (h)
+(i) [X]
+2. (a) X (b) X (c) X (d) X (e) X (f) X (g) (h) X
+(i) X [X]
+3. (a) (b) X (c) (d) (e)
+4. (a) (b) X (c) (d) X (e)
+5. (a) (b) X (c) X (d) (e) X (f)
+6. (a) X (b) (c) (d) (e) (f) (g) (h)
+(i) [X]
+7. (a) (b) (c) X (d) (e) (f) (g) (h) X
+(i) [X]
+8. (a) (b) X (c) (d) (e) X (f) (g) X (h) X
+(i) X []
+9. (a) (b) (c) X (d) X (e) X (f) X (g) (h) X
+(i) X []
+Statistics Exam: 00001
+10. (a) (b) (c) X (d) X (e) X (f) X (g)
+2
+Statistics Exam: 00001
+1. Problem
+WelchederfolgendenAussagensindrichtig?
+a) DieFormel(s→k)→(n∨¬s∨k)isteineTautologie.
+b) DieFormel(s∧¬k)→TrueisterfüllbaraberkeineTautologie.
+c) DieFormel(¬k∨¬s)∨(k∧s)isteineTautologie.
+d) DieFormel(¬y∧(h→y))→¬histunerfüllbar.
+e) DieFormel(s→¬s)∧(¬s→s)isterfüllbaraberkeineTautologie.
+f) DieFormel¬False∧¬((¬k∧¬s)∨¬n)istunerfüllbar.
+g) DieFormels∧k∧((True∨s)∧False)∧nistunerfüllbar.
+h) DieFormel((s→k)∧(s→n))→(s→(n∧k))istunerfüllbar.
+i) DieFormel(s∧¬k)∨(¬s∧¬k)∨(k∧¬s)∨(s∧k)isterfüllbaraberkeineTautologie.
+j) DieFormel((k→h)∧(s→(n∧k)))→((n→¬y)→(s→y))isterfüllbaraberkeineTautologie.
+Solution
+a) Wahr.
+b) Falsch. DieFormelisteineTautologie.
+c) Wahr.
+d) Falsch. DieFormelisteineTautologie.
+e) Falsch. DieFormelistunerfüllbar.
+f) Falsch. DieFormelisterfüllbaraberkeineTautologie.
+g) Wahr.
+h) Falsch. DieFormelisteineTautologie.
+i) Falsch. DieFormelisteineTautologie.
+j) Wahr.
+2. Problem
+Betrachten Sie die folgende Belegung v der Atome p, q und r. Welche der folgenden Formeln
+evaluierenunterdieserBelegungzuT?
+
+T a=p
+
+v(a)= F a=q
+T
+a=r
+a) (¬q∨p)∧r
+b) p →(q →p)
+c) (q∧p)∨(p∨(q∧r))
+d) (r ∧p)→(p∨r)
+e) r →(q∧p →q)
+f) ¬p →(p∧q)
+g) r ∧p →q∧r
+h) r ∨p∨q∨(p →r)
+i) q∨(p∧r)∨¬q
+j) (r ∨p)∧¬(p →q)
+Solution
+a) Wahr
+3
+Statistics Exam: 00001
+b) Wahr
+c) Wahr
+d) Wahr
+e) Wahr
+f) Wahr
+g) Falsch
+h) Wahr
+i) Wahr
+j) Wahr
+3. Problem
+Sei B = (cid:104)B;+,·,∼,0,1(cid:105) eine Boolsche Algebra und sei F = ∼(x )+(x ·∼(x )) ein Boolscher Aus-
+1 1 2
+druck. WelchederfolgendenAussagenistrichtig?
+a) F istäquivalentzurBoolschenFunktionf :B2 →B definiertals:
+s s f(s ,s )
+1 2 1 2
+0 0 1
+0 1 0
+1 0 1
+1 1 1
+b) F istäquivalentzurBoolschenFunktionf :B2 →B definiertals:
+s s f(s ,s )
+1 2 1 2
+0 0 1
+0 1 1
+1 0 1
+1 1 0
+c) F istäquivalentzurBoolschenFunktionf :B2 →B definiertals:
+s s f(s ,s )
+1 2 1 2
+0 0 0
+0 1 1
+1 0 1
+1 1 1
+d) F istäquivalentzurBoolschenFunktionf :B2 →B definiertals:
+s s f(s ,s )
+1 2 1 2
+0 0 1
+0 1 0
+1 0 0
+1 1 0
+e) KeinederAussageniststimmig.
+Solution
+a) Falsch
+b) Wahr
+c) Falsch
+d) Falsch
+e) Falsch
+4. Problem
+Welche der folgenden Aussagen sind immer richtig, wenn B = (cid:104)B;+,·,∼,0,1(cid:105) eine Boolesche Al-
+gebraist?
+a) Fürallea∈B gilta+∼(a)=0.
+4
+Statistics Exam: 00001
+b) (cid:104)B;·,1(cid:105)isteinkommutativerMonoid.
+c) (cid:104)B;·,1(cid:105)isteinRing.
+d) Fürallea∈B gilta+∼(a)=1.
+e) Fürallea,b ∈B gilta+b =a+∼(b)a.
+Solution
+a) Falsch.
+b) Wahr. DiesisteinesderGrundgesetzederBoolschenAlgebra.
+c) Falsch.
+d) Wahr. DiesisteinesderGrundgesetzederBoolschenAlgebra.
+e) Falsch.
+5. Problem
+SeiE dieMengemitdenfolgendendreiGleichungen:
+∼(x)·x =0 x ·x =x x ·y =y ·x (E)
+MarkierenSiediekorrektenAussagen.
+a) E |=x ·0=0
+b) E |=x·∼(x)=0
+c) SeiC =(cid:104){0,1};·C,∼C,0C(cid:105)eineAlgebramit
+·C 0 1 ∼C 0C
+0 0 0 0 1 0
+1 0 1 1 0
+EsgiltC |=x ·0=0.
+d) SeiC =(cid:104){0,1};·C,∼C,0C(cid:105)eineAlgebramit
+·C 0 1 ∼C 0C
+0 0 1 0 1 0
+1 1 0 1 0
+EsgiltC |=x ·0=0.
+e) SeiC =(cid:104){0,1};·C,∼C,0C(cid:105)eineAlgebramit
+·C 0 1 ∼C 0C
+0 0 0 0 1 0
+1 0 1 1 0
+EsgiltC |=E.
+f) SeiC =(cid:104){0,1};·C,∼C,0C(cid:105)eineAlgebramit
+·C 0 1 ∼C 0C
+0 0 1 0 1 0
+1 1 0 1 0
+EsgiltC |=E.
+Solution
+a) Falsch
+b) Wahr
+c) Wahr
+5
+Statistics Exam: 00001
+d) Falsch
+e) Wahr
+f) Falsch
+6. Problem
+Betrachten Sie die formalen Sprachen L = {(cid:15),0,10,100,110}, M = {1,11,101,111} und N =
+{0,1}∗. WelchederfolgendenAussagensindrichtig?
+a) L∪M ={(cid:15),0,1,10,11,100,101,110,111}
+b) L∪(M ∩N)={(cid:15),0,1,10,100,101,110,111}
+c) (L∪M)∩N =∅
+d) L∩N ={(cid:15),0,1,11,100,110}
+e) L∪M ={0,1,10,11,100,101,110,111}
+f) (L∪M)∩N ={(cid:15),0,10,100,110}
+g) (L∩M)∪N ={(cid:15),0,1,10,11,100,101,110,111}
+h) KeinederAntworten
+i) (L∪M)∩N ={0,1,10,11,100,101,110,111}
+j) (L∪M)∩N ={(cid:15),0,1,10,11,100,101,110,111}
+Solution
+a) Wahr.
+b) Falsch.
+c) Falsch.
+d) Falsch.
+e) Falsch.
+f) Falsch.
+g) Falsch.
+h) Falsch.
+i) Falsch.
+j) Wahr.
+7. Problem
+WelchederfolgendenAussagenbezüglichderChomsky-Hierarchiesindwahr?
+BeachtenSie:
+• L istdieMengederregulärenSprachen.
+3
+• L istdieMengederkontextfreienSprachen.
+2
+• L istdieMengederkontextsensitivenSprachen.
+1
+• L istdieMengederrekursivaufzählbarenSprachen.
+0
+• ListdieMengederformalenSprachen.
+(Mit⊂bezeichnenwirdieechteMengeninklusion.)
+a) L ⊆L ⊆L⊆L ⊆L
+1 3 2 0
+b) EinekontextfreieSpracheistauchregulär
+c) AllebeschränktenSprachensindauchrekursivaufzählbar
+d) DieChomsky-HierarchieisteineHierarchiewederüberformaleSprachennochGrammatiken
+e) L ⊂L⊂L
+2 3
+f) L ⊆L ⊆L ⊆L
+3 2 1
+g) L ⊆L ⊆L⊆L ⊆L
+2 0 1 3
+h) EinereguläreSpracheistauchkontextsensitiv
+6
+Statistics Exam: 00001
+i) DieChomsky-HierarchieisteineHierarchieüberGrammatiken
+j) AlleregulärenSprachensindauchkontextfrei
+Solution
+a) Falsch
+b) Falsch
+c) Wahr
+d) Falsch
+e) Falsch
+f) Falsch
+g) Falsch
+h) Wahr
+i) Falsch
+j) Wahr
+8. Problem
+Betrachten Sie die folgende Grammatik G = ({P,F,C},{π,e,+,−,∗,/,0,1,2,...,9},R,P) mit den
+Regeln:
+P →C |F |(P+P)|(P−P)|(P∗P)|(P/P)
+F →0|1|2|...|9|FF
+C →π |e
+Beantworten Sie die folgenden Fragen bezüglich den Lücken (Einträge mit einer Box · ) in der
+TabelledesrekursivenInferenzVerfahrens,sodass((π/13)+(4∗e))∈L(P).
+Ableitung Schritt Variable Regel Rekursion
+π 1 C C → a
+4 2 F F →4
+1 3 F F →1
+3 4 F F →3
+13 5 F F →FF 3,4
+e 6 e C →e
+b 7 P P →C 1
+4 8 P f 2
+13 9 P P →F 5
+e 10 P c →C 6
+(4∗e) 11 P P →(P∗P) 8,10
+(π/13) 12 P P →(P/P) d
+((π/13)+(4∗e)) 13 P P →(P+P) 12,11
+a) 4gehörtinLücke a
+b) π gehörtinLücke b
+c) C gehörtinLücke a
+d) P gehörtinLücke f
+e) P →F gehörtinLücke f
+f) P →C gehörtinLücke f
+g) C gehörtinLücke e
+7
+Statistics Exam: 00001
+h) 7,9gehörtinLücke d
+i) π gehörtinLücke a
+j) F gehörtinLücke c
+Solution
+Ableitung Schritt Variable Regel Rekursion
+π 1 C C →π
+4 2 F F →4
+1 3 F F →1
+3 4 F F →3
+13 5 F F →FF 3,4
+e 6 C C →e
+π 7 P P →C 1
+4 8 P P →F 2
+13 9 P P →F 5
+e 10 P P →C 6
+(4∗e) 11 P P →(P∗P) 8,10
+(π/13) 12 P P →(P/P) 7,9
+((π/13)+(4∗e)) 13 P P →(P+P) 12,11
+a) Falsch
+b) Wahr
+c) Falsch
+d) Falsch
+e) Wahr
+f) Falsch
+g) Wahr
+h) Wahr
+i) Wahr
+j) Falsch
+9. Problem
+Betrachten Sie folgende Registermaschine R = ((x) ,P) mit dem Programm P, mit Startwert
+i 1≤i≤4
+in Register x und Ergebnis in x nach der Berechnung. (NB. Wir verwenden eine Abkürzung für
+1 3
+8
+Statistics Exam: 00001
+direkteZuweisungenvonWertenineinRegister,wieinderVorlesungbesprochen.)
+x :=0;
+3
+x :=x ;
+2 1
+x :=x ;
+4 2
+while(x (cid:54)=0)do
+1
+x :=x −1;
+1 1
+while(x (cid:54)=0)do
+2
+x :=x −1;
+2 2
+x :=x +1;
+3 3
+end;
+x :=x ;
+2 4
+end;
+while(x (cid:54)=0)do
+2
+x :=x +1;
+3 3
+x :=x −1;
+2 2
+end;
+x :=x ;
+2 4
+while(x (cid:54)=0)do
+2
+x :=x +1;
+3 3
+x :=x −1;
+2 2
+end;
+x :=x +1;
+3 3
+x :=x +1;
+3 3
+x :=x +1;
+3 3
+DieAntwortmöglichkeitenbestehenausverschiedenenSpezifikationen/Aussagen,welchedieReg-
+istermaschine R beschreiben sollen. Welche der folgenden Aussagen über die Registermaschine
+R sindkorrekt?
+a) Die Registermaschine R multipliziert die Werte aus Register x und x und speichert das
+1 2
+ErgebnisinRegisterx .
+3
+b) DasRegisterx hatnachdemEndederBerechnungderRegistermaschinedenWert0.
+3
+c) Das Register x hat nach dem Ende der Berechnung der Registermaschine den Startwert n
+4
+derzuvorinRegisterx war.
+1
+d) DieRegistermaschinebenutztgenau4Register.
+e) InderBerechnungderRegistermaschinekommteineMultiplikationvor.
+f) DieRegistermaschineRberechnetfürdenWertnausRegisterx dasErgebnisdesPolynoms
+1
+n2+n+n+2+1.
+g) DieRegistermaschineRberechnetfürdenWertnausRegisterx dasErgebnisdesPolynoms
+1
+n2+2n.
+h) DasRegisterx hatnachdemEndederBerechnungderRegistermaschineeinenWertgrößer
+3
+als0.
+i) DieRegistermaschineRberechnetfürdenWertnausRegisterx dasErgebnisdesPolynoms
+1
+n2+2n+3.
+j) DieRegistermaschinebenutztgenau3Register.
+Solution
+a) Falsch
+b) Falsch
+c) Wahr
+d) Wahr
+9
+Statistics Exam: 00001
+e) Wahr
+f) Wahr
+g) Falsch
+h) Wahr
+i) Wahr
+j) Falsch
+10. Problem
+BetrachtenSiedieTuringmaschineM =({s,p,t,r},{0,1},{(cid:96),(cid:116),0,1},(cid:96),(cid:116),δ,s,t,r)mitδ
+(cid:96) 0 1 (cid:116)
+s (s,(cid:96),R) (s,0,R) (p,1,L) (r,(cid:116),R)
+p (t,(cid:96),R) (p,1,L) (p,1,L) (r,(cid:116),R)
+Wir nehmen an, dass die Turingmaschine immer auf dem Startsymbol (cid:96) startet und nur Eingaben
+derForm(cid:96)x(cid:116)∞ mitx ∈{0,1,(cid:116)}∗ bekommt. DieLängedesInputsbezeichnetdieLängevonx,im
+Folgendenalson=|x|.
+MarkierenSiekorrekteAussagen.
+a) FürdenInput(cid:96)(cid:116)(cid:116)01hältMaufderAusgabe(cid:96)1111.
+b) EsexistierteinInputderLängen,sodassdieTuringmaschineM mindestens2n2+5Schritte
+ausführt.
+c) DerInput(cid:96)0010wirdakzeptiert.
+d) DerInput(cid:96)001wirdvonM akzeptiert.
+e) DieTuringmaschineführtfürjedenInputderLängenmaximal6n+5Schritteaus.
+f) FürdenInput(cid:96)001(cid:116)10hältMaufderAusgabe(cid:96)111(cid:116)10.
+g) DerInput(cid:96)0(cid:116)1wirdvonM akzeptiert.
+Solution
+a) Falsch
+b) Falsch
+c) Wahr
+d) Wahr
+e) Wahr
+f) Wahr
+g) Falsch
+10

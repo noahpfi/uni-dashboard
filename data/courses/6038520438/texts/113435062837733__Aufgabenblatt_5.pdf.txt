@@ -1,0 +1,50 @@
+PS Einführung in die Makroökonomik
+Aufgabenblatt 5
+Sommersemester2026
+1. GegebenseifolgendeserweitertesIS-LMModell,indemdieZentralbankeinennominalenZielzins
+voni∗ =4%verfolgt:
+C =7500+0.2YD
+I =4400+0.10Y −11200(r +x)
+G=700
+T =1200
+MD
+=0.35Y −9800(r +x)
+P
+DieInflationserwartungenliegenbeiπe =−1%unddieRisikoprämieliegtbeix =1%.
+A.BeiwelchemProzentsatzliegtdieUntergrenzedesRealzinses?
+B.BerechnenSiedasGleichgewichtseinkommen(Y∗).
+C.BerechnenSiedierealeGeldmengeimGleichgewicht.
+D. Wie verändert sich das gleichgewichtige Einkommen wenn die Zentralbank die Inflationser-
+wartungenum25Basispunkteverändert(z.B.durchForwardGuidanceMaßnahmen).
+E.UmwievielGeldeinheiten(GE)mussdieZentralbankdie(reale)Geldmengeveränderndamit
+dieGeldnachfragebeidemneuenrealenZielzinserfülltwird?
+2. GehenSievoneinemerweitertenIS-LMModellaus,dassdenrealenZinssatzr sowieeineRisiko-
+prämiex berücksichtigt:
+IS : Y =C(Y −T)+I(Y,r +x)+G
+LM : r =r∗
+FertigenSieeinIS-LMDiagramman(inklusiveGütermarkt,GeldmarktunddemZusammenhang
+zwischenZinsenundInvestitionen). NehmenSielineareFunktionenfürKonsumundInvestitionen
+an.
+A.IllustrierenSiedenEffekteinerErhöhungderRisikoprämiex grafisch.
+B.ErklärenSieanhandderGrafikwelchenEffektdieseVeränderungaufY undI hat?
+C.DiskutierenSiemöglicheökonomischeGründefüreineErhöhungderRisikoprämiex.
+3. EineVolkswirtschaftseidurchdiefolgendenVerhaltensgleichungenbeschrieben:
+C =200+0.3YD
+I =900
+G=900
+T =800
+(a) BerechnenSiedasgleichgewichtigeBIP(Y∗)
+(b) BerechnenSiedasverfügbareEinkommenimGleichgewicht(YD∗)
+1|2
+(c) BerechnenSiedieKonsumausgabenimGleichgewicht(C∗)
+4. DenAusgangspunktbildetfolgendesGütermarktmodell: Y =c +c (Y −T)+I+G.
+0 1
+SowohlauspolitischenwieausmakroökonomischenGründenverpflichtensichmancheRegierun-
+genzueinemausgeglichenenHaushalt(alsoohneDefizit).
+(a) WiestarkverändertsichY,wennGumeineEinheitsteigt(Staatsausgabenmultiplikator)?
+(b) WiestarkverändertsichY,wennT umeineEinheitsteigt(Steuermultiplikator)?
+(c) WarumunterscheidensichderStaatsausgaben-undderSteuermultiplikator?
+(d) Wie wirken sich Änderungen in T und G aus, bei denen der Staatshaushalt ausgeglichen
+bleibt? Konkret,wiestarkverändertsichY,wennT undGsichjeweilsum900Geldeinheiten
+(GE)verändern?
+2|2

@@ -1,0 +1,145 @@
+Statistische Datenanalyse
+Kapitel 10
+Regressionsanalyse, Fortsetzung
+Regressionsanalyse, Fortsetzung
+Regressionsanalyse - induktiv
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 1/11
+Aufgabe: Mietspiegel
+VerwendenSiewiederdenDatensatzmietspiegel.rdaund
+1 schreibenSieeinmultiplesRegressionsmodellmitmietealsabhängige
+VariableundallenmöglichenEinflussgrößenhin.
+WelcheVorzeichenerwartenSiebeidenjeweiligenunabhängigen
+Variablen?GebenSieeinekurzeBegründungan.
+2 SchätzenSienundasRegressionsmodellund
+3 gebenSiediegeschätzteRegressionsgleichungan.
+4 InterpretierenSiealleKoeffizienten.
+5 BeurteilenSiedieGütederAnpassung.
+6 BerechnenSiedasBestimmtheitsmaßnachR2 = r y 2 yˆ .
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 2/11
+Anwendung: Mietspiegel I
+miete = β +β ·flaeche +β ·bjahr +β ·badgehoben +
+i 0 1 i 2 i 3 i
+β ·kuechegehoben +β ·lagegute +β ·lagebeste +β ·zhmit +ε
+4 i 5 i 6 i 7 i i
+R> load("daten/mietspiegel.rda")
+R> levels(mietspiegel$lage) <- c("normal", "gute", "beste")
+R> lm_miete <- lm(miete ~ flaeche + bjahr + bad + kueche + lage + zh,
++ data = mietspiegel)
+R> coef(lm_miete)
+(Intercept) flaeche bjahr badgehoben
+-3636.266 4.965 1.853 58.224
+kuechegehoben lagegute lagebeste zhmit
+101.160 49.346 128.360 116.335
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 3/11
+Anwendung: Mietspiegel II
+geschätzte Regressionsgleichung
+(cid:92)
+miete = −3636.27+4.97·flaeche +1.85·bjahr +
+i i i
+58.22·badgehoben +101.16·kuechegehoben +49.35·lagegute +
+i i i
+128.36·lagebeste +116.33·zhmit
+i i
+Bestimmtheitsmaß
+R> cor(fitted(lm_miete), mietspiegel$miete)^2
+[1] 0.4859
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 4/11
+Aufgabe Mietspiegel: Konfidenzintervall der Parameter
+BerechnenSiemithilfevonRdieKonfidenzintervalleundbeantwortenSie
+folgendeFragen:
+1 InterpretierenSiedasKonfidenzintervallzumjeweiligenParameter.
+2 EnthältdasKonfidenzintervalldie0?WelcheSchlussfolgerungkönnenSie
+ziehen,wenndie0nichtimKonfidenzintervallenthaltenist?
+3 GebenSiedas99%igeKonfidenzintervallfüreinenParameterIhrerWahlan!
+4 Istessinnvoll,dieKonstanteindiesemBeispielzuinterpretieren?Wenn
+nein,warum?Wennja,warum?
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 5/11
+Anwendung: Mietspiegel I
+R> confint(lm_miete)
+2.5 % 97.5 %
+(Intercept) -4123.464 -3149.068
+flaeche 4.743 5.188
+bjahr 1.603 2.103
+badgehoben 36.923 79.524
+kuechegehoben 76.408 125.911
+lagegute 38.954 59.738
+lagebeste 96.447 160.274
+zhmit 98.886 133.783
+R> confint(lm_miete, parm = "flaeche", level = 0.99)
+0.5 % 99.5 %
+flaeche 4.673 5.258
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 6/11
+Aufgabe Mietspiegel: Hypothesentest
+BeantwortenSiefolgendeFragenanhandunseresBeispiels:
+• InwelcherSpaltedesRsummaryOutputsbefindensichdieWerteder
+Teststatistik?
+• Wokönnendiep-Werteabgelesenwerden?ErklärenSieanhandeines
+Koeffizienten,wasderp-Wertist.
+• EntscheidenSiemitHilfedesp-WertesbeijedemKoeffizienten,obSiedie
+NullhypothesenichtablehnenoderdieAlternativhypotheseannehmen.
+WelchenFehlermachenSiebeiderjeweiligenEntscheidung?
+• InterpretierenSieallestatistischsignifikantenKoeffizienten(α = 5%)!
+• VerwendenSiedenBefehlanova()umeineVarianzanalysedurchzuführen
+undinterpretierenSiedieErgebnisse!
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 7/11
+Anwendung: Mietspiegel
+R> summary(lm_miete)
+Call:
+lm(formula = miete ~ flaeche + bjahr + bad + kueche + lage +
+zh, data = mietspiegel)
+Residuals:
+Min 1Q Median 3Q Max
+-640.7 -86.6 -7.8 80.0 1034.4
+Coefficients:
+Estimate Std. Error t value Pr(>|t|)
+(Intercept) -3636.266 248.477 -14.63 < 2e-16
+flaeche 4.965 0.114 43.70 < 2e-16
+bjahr 1.853 0.127 14.56 < 2e-16
+badgehoben 58.224 10.864 5.36 9.0e-08
+kuechegehoben 101.160 12.624 8.01 1.6e-15
+lagegute 49.346 5.300 9.31 < 2e-16
+lagebeste 128.360 16.276 7.89 4.3e-15
+zhmit 116.335 8.899 13.07 < 2e-16
+Residual standard error: 140 on 3074 degrees of freedom
+Multiple R-squared: 0.486, Adjusted R-squared: 0.485
+F-statistic: 415 on 7 and 3074 DF, p-value: <2e-16
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 8/11
+Anwendung: Mietspiegel - Varianzanalyse
+R> lm0 <- lm(miete ~ 1, data = mietspiegel)
+R> anova(lm0, lm_miete)
+Analysis of Variance Table
+Model 1: miete ~ 1
+Model 2: miete ~ flaeche + bjahr + bad + kueche + lage + zh
+Res.Df RSS Df Sum of Sq F Pr(>F)
+1 3081 1.17e+08
+2 3074 6.03e+07 7 5.7e+07 415 <2e-16
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 9/11
+Anwendung: Mietspiegel - Varianzanalyse
+R> anova(lm_miete)
+Analysis of Variance Table
+Response: miete
+Df Sum Sq Mean Sq F value Pr(>F)
+flaeche 1 40059206 40059206 2043.0 < 2e-16
+bjahr 1 8957286 8957286 456.8 < 2e-16
+bad 1 868592 868592 44.3 3.3e-11
+kueche 1 1312653 1312653 66.9 4.0e-16
+lage 2 2418304 1209152 61.7 < 2e-16
+zh 1 3350933 3350933 170.9 < 2e-16
+Residuals 3074 60276285 19608
+Interpretation?
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 10/11
+Aufgabe Unterernährung in Barisal
+VerwendenSiefürdieseAufgabedenDatensatzzurUnterernährunginBarisal
+(bangladesh_barisal_ohne_na.rda);dieZielgrösseistderzscore.
+• SchreibenSieeinmultipleslinearesRegressionsmodellmitm_bildung
+(Referenzkategorie"keine Ausbildung"),k_geschl,m_bmiundk_alterals
+erklärendeVariablenhinundgebenSieeineVermutungsowiekurze
+Begründungan,welchesVorzeichendieRegressionskoeffizientenIhrer
+Meinungnachhabenkönnten.
+• GebenSiediegeschätzteRegressionsgleichunganundbeurteilenSiedie
+GütederAnpassung.
+• WelchederberechnetenRegressionskoeffizientensindaufdem10%,5%,
+1%-NiveausignifikantvonNullverschieden?
+• BeeinflusstdasSignifikanzniveaudasBestimmtheitsmaß?
+• InterpretierenSiediestatistischsignifikantenKoeffizienten(α = 5%)!
+© StatistischeDatenanalyse–10–Regressionsanalyse,Fortsetzung 11/11

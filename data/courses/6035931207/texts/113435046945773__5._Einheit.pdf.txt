@@ -1,0 +1,1138 @@
+Bilanzierungsvorschriften nach UGB
+Gewinn- und Verlustrechnung
+§ 198 versus § 231 Abs 2 UGB
+Kapitel 5
+Egger/Samer/Bertl Band 1
+Kapitel 6
+Univ.-Prof. Dr. Dipl.-Ing. Mag. Stéphanie Mittelbach-Hörmanseder, MIM (CEMS)
+Institut für Rechnungslegung, Wirtschaftsprüfung und Steuerlehre
+Die Inhalte dieses Skriptes sind urheberrechtlich geschützt und dürfen nicht weiter verbreitet werden!
+1. Konzeptionen der Gewinnermittlung
+▪ Die Ermittlung des Periodenerfolgs ist eine der zentralen Aufgaben der Rechnungslegung.
+▪ Gewinn ist dabei ein positiver Erfolg, Verlust stellt einen negativen Erfolg dar.
+▪ Formal wird zwischen den folgenden beiden Ermittlungsmöglichkeiten unterschieden:
+Bestandsorientierte Gewinnermittlung Stromgrößenorientierte Gewinnermittlung
+𝑁𝑒𝑡𝑡𝑜 𝑉𝑒𝑟𝑚ö𝑔𝑒𝑛 𝑎𝑚 𝐸𝑛𝑑𝑒 𝑑𝑒𝑟 𝑃𝑒𝑟𝑖𝑜𝑑𝑒 𝐸𝑟𝑡𝑟ä𝑔𝑒
+− 𝑁𝑒𝑡𝑡𝑜 𝑉𝑒𝑟𝑚ö𝑔𝑒𝑛 𝑧𝑢 𝐵𝑒𝑔𝑖𝑛𝑛 𝑑𝑒𝑟 𝑃𝑒𝑟𝑖𝑜𝑑𝑒 − 𝐴𝑢𝑓𝑤𝑒𝑛𝑑𝑢𝑛𝑔𝑒𝑛
++ 𝐴𝑢𝑠𝑧𝑎ℎ𝑙𝑢𝑛𝑔𝑒𝑛 𝑎𝑛 𝐸𝑖𝑔𝑒𝑛𝑡ü𝑚𝑒𝑟 𝐺𝑒𝑤𝑖𝑛𝑛 𝑜𝑑𝑒𝑟 𝑉𝑒𝑟𝑙𝑢𝑠𝑡
+− 𝐸𝑖𝑛𝑧𝑎ℎ𝑙𝑢𝑛𝑔𝑒𝑛 𝑣𝑜𝑛 𝐸𝑖𝑔𝑒𝑛𝑡ü𝑚𝑒𝑟𝑛
+𝐺𝑒𝑤𝑖𝑛𝑛 𝑜𝑑𝑒𝑟 𝑉𝑒𝑟𝑙𝑢𝑠𝑡
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. Funktion der Gewinn- und Verlustrechnung (GuV)
+▪ GuV dient dem Zweck der Erfolgsermittlung
+▪ Gegenüberstellung von Aufwendungen und Erträgen § 231 UGB:
+▪ Zwingende Aufstellung in Staffelform für Kapitalgesellschaften
+▪ Unterteilung des Gesamterfolgs in:
+Betriebsergebnis
++/- Finanzergebnis
+= Ergebnis vor Steuern
++/- Steuern vom Einkommen und vom Ertrag
+= Ergebnis nach Steuern
++/- (Sonstige Steuern)
+Siehe § 231 UGB
+= Jahresüberschuss/Jahresfehlbetrag
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. Gliederungsalternativen für die GuV nach § 231 UGB
+„Die Gewinn- und Verlustrechnung ist in Staffelform nach dem Gesamtkostenverfahren oder dem Umsatzkostenverfahren
+aufzustellen.“
+(§ 231 Abs. 1 S. 1 UGB)
+(1) Gesamtkostenverfahren (i.S. einer „Produktionserfolgsrechnung“)
+▪ Gegenüberstellung der gesamten Kosten und Erlöse, korrigiert um die Bestandsveränderungen
+▪ Der Ausweis der Aufwandspositionen erfolgt nach Kostenarten.
+(2) Umsatzkostenverfahren (i.S. einer „Absatzerfolgsrechnung“)
+▪ Erlöse werden nur den Kosten der umgesetzten Produkte gegenübergestellt
+▪ Als Aufwand werden die Herstellungskosten ausgewiesen, die den umgesetzten Erzeugnissen zuzurechnen
+sind (keine Bestandsveränderungen in der GuV)
+▪ Strukturierung nach Kostenstellen.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+5. Bestandsveränderungen nach UKV und GKV
+Umsatzkostenverfahren Gesamtkostenverfahren
+Aktivierte
+Eigenleistung
+Bestands-
+erhöhung
+Gesamt-
+kosten
+Bestandserhöhung
+Umsatz-
+kosten
+Umsatz Umsatz
+Gewinn Gewinn
+Bestands-
+minderung
+Umsatz-
+kosten Gesamt-
+Bestandsminderung Umsatz Umsatz
+kosten
+Gewinn Gewinn
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. Gewinn- und Verlustrechnung (GuV)
+Gesamtkostenverfahren Umsatzkostenverfahren
+Umsatzerlöse Umsatzerlöse
+Herstellungskosten der zur Erzielung der
++/- Bestandsveränderungen -
+Umsatzerlöse erbrachten Leistung
++ Aktivierte Eigenleistungen = Bruttoergebnis vom Umsatz
++ Sonstige Betriebliche Erträge - Vertriebskosten
+- Aufwendung für Material und bezogene Leistungen - Allgemeine Verwaltungskosten
+- Personalaufwendungen + Sonstige betriebliche Erträge (ggf untergliedert)
+- Abschreibungen - Sonstige betrieblicher Aufwendungen
+- Sonstige betrieblicher Aufwendungen
+= Betriebsergebnis = Betriebsergebnis
++/- Finanzergebnis +/- Finanzergebnis
+= Ergebnis vor Steuern = Ergebnis vor Steuern
+- Steuern vom Einkommen und vom Ertrag - Steuern vom Einkommen und vom Ertrag
+= Ergebnis nach Steuern = Ergebnis nach Steuern
+- (Sonstige Steuern) - (Sonstige Steuern)
+= Jahresüberschuss/Jahresfehlbetrag = Jahresüberschuss/Jahresfehlbetrag
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Die Ertragsposten nach dem GKV (Z 1-4)
+1. Umsatzerlöse (§231 Abs 2 UGB)
+▪ Gem § 189a Z 5 sind Umsatzerlöse
+▪ die Beträge, die sich aus dem Verkauf von Produkten und der Erbringung von Dienstleistungen nach Abzug von
+Erlösschmälerungen und der Umsatzsteuer sowie von sonstigen direkt mit dem Umsatz verbundenen Steuern
+ergeben.
+2. Veränderung des Bestands an fertigen und unfertigen Erzeugnissen sowie an noch nicht
+abrechenbaren Leistungen
+▪ Die Bestandsveränderungen ergeben sich grundsätzlich aus der Differenz der Anfangs- und Endbestände an
+unfertigen und fertigen Erzeugnissen sowie noch nicht abrechenbaren Leistungen; dabei ist es, wie schon
+dargelegt, unbeachtlich, ob eine derartige Änderung aus einer Veränderung der Kalkulationssätze, einer
+Abwertung einzelner Gegenstände oder aus einer Mengenänderung resultiert.
+▪ Gem § 232 Abs 2 sind als Bestandsveränderungen außer Änderungen der Menge auch solche des Wertes zu
+berücksichtigen.
+▪ Soweit Abwertungen von unfertigen und fertigen Erzeugnissen sowie noch nicht abrechenbaren Leistungen die
+im Unternehmen auf diese Gegenstände üblichen Abschreibungen überschreiten, sind sie unter Z 7b
+auszuweisen.
+▪ Nicht unter den Bestandsveränderungen dürfen Veränderungen des Bestandes an Handelswaren ausgewiesen
+werden, obwohl ihr Ausweis in der Bilanz gemeinsam mit den fertigen Erzeugnissen erfolgt. Der
+Handelswarenverbrauch ist unter dem Posten 5a (Materialaufwand) auszuweisen.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Die Ertragsposten nach dem GKV (Z 1-4)
+3. Andere aktivierte Eigenleistungen
+▪ Zu den anderen aktivierten Eigenleistungen gehören auch aktivierte Großreparaturen.
+4. Sonstige betriebliche Erträge
+a. Erträge aus dem Abgang vom und der Zuschreibung zum Anlagevermögen mit Ausnahme der Finanzanlagen
+b. Erträge aus der Auflösung von Rückstellungen
+c. übrige
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Die Aufwandsposten nach dem GKV(Z 5-8)
+5. Aufwendungen für Material und sonstige bezogene Herstellungsleistungen
+a) Materialaufwand
+b) Aufwand für bezogene Leistungen
+6. Personalaufwand
+a) Löhne und Gehälter
+7. Abschreibungen
+8. Sonstige betriebliche Aufwendungen
+ZWISCHENSUMME aus Z 1-8 bzw. BETRIEBSERFOLG (nicht im Gesetz genannt)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Umsatzkostenverfahren: Bruttoergebnis vom Umsatz
+Z1 Umsatzerlöse (= Gesamtkostenverfahren)
+Z2 Herstellungskosten der zur Erzielung der Umsatzerlöse erbrachten Leistungen
+Aufteilung der betrieblichen Aufwandswendungen (lt Z 5-8 des GKV) auf die Kostenstellen mit folgender
+Mindestgliederung:
+- Material und Fertigungsstellen (= Herstellungskosten)
+- Verwaltung
+- Vertrieb
+- Kostenstelle für die Erfassung der den vorhergehenden Bereichen nicht zuordenbaren Aufwendungen
+= Bruttoergebnis vom Umsatz (Z 3)
+Erleichterungen gem § 279 UGB
+§ 279 Für die Offenlegung kleiner und mittelgroßer Aktiengesellschaften (§ 221 Abs. 1 und Abs. 2) und mittelgroßer
+Gesellschaften mit beschränkter Haftung (§ 221 Abs. 2) gilt Folgendes: […]
+2. Die Posten des § 231 Abs. 2 Z 1 bis 3 und 5 und Abs. 3 Z 1 bis 3 dürfen zu einem Posten unter der Bezeichnung
+„Rohergebnis“ zusammengefasst werden.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Umsatzkostenverfahren: Betriebserfolg
+Bruttoergebnis vom Umsatz (Z 3)
+Z4+5 Allgemeine Verwaltungs- und Vertriebskosten
+Z6 Sonstige betriebliche Erträge
+Z7 Sonstige betriebliche Aufwendungen
+Z8 Betriebserfolg
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+4. Unterschiede zwischen UKV und GKV
+Bestandserhöhung
+Umsatzkosten
+Umsatzerlöse Umsatzerlöse Umsatzerlöse
+Gesamtkosten
+Gewinn
+Bestands-
+veränderungen,
+aktivierte EL
+Gewinn
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+5. Ertrags- und Aufwandsposten des Finanzbereichs
+Z10 Erträge aus Beteiligungen, davon aus verbundenen Unternehmen
+Z11 Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens, davon aus verbundenen
+Unternehmen
+Z12 sonstige Zinsen und ähnliche Erträge, davon aus verbundenen Unternehmen
+Z13 Erträge aus dem Abgang von und der Zuschreibung zu Finanzanlagen und Wertpapieren des Umlaufvermögens
+Z14 Aufwendungen aus Finanzanlagen und aus Wertpapieren des Umlaufvermögens, davon haben Gesellschafter, die
+nicht klein sind, gesondert auszuweisen
+a) Abschreibungen
+b) Aufwendungen aus verbundenen Unternehmen
+Z15 Zinsen und ähnliche Aufwendungen, davon betreffend verbundene Unternehmen
+Z16 Zwischensumme aus Z 10-15 („Finanzerfolg“)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+6. Umsatzkostenverfahren vs. Gesamtkostenverfahren in der Praxis
+▪ Im deutschsprachigen Raum ist das Gesamtkostenverfahren (GKV) traditionell verbreiteter.
+▪ Anwendung von Unternehmen, die ihren Gewinn- und Verlustausweis nach Kostenarten strukturieren.
+▪ In den USA ist das Umsatzkostenverfahren nach dem US GAAP zwingend anzuwenden (Cost of Sales Accounting)
+Gesamtkostenverfahren
+▪ wird häufiger in der produzierenden Industrie eingesetzt → detaillierte Aufschlüsselung der Kosten nach Kostenarten
+(z. B. Material- und Personalkosten).
+▪ Transparenz ist besonders wichtig für Unternehmen mit hohen Materialkosten, wie z. B. in der Fertigungsindustrie.
+▪ ermöglicht eine klarere Sicht auf die Gesamtkosten, die in den Produktionsprozessen anfallen.
+Umsatzkostenverfahren
+▪ Wird häufiger in dienstleistungsorientierten Unternehmen und in großen, international tätigen Unternehmen genutzt
+→ gruppiert Kosten nach Funktionen (z. B. Vertrieb, Verwaltung) und ermöglicht bessere Analyse der Rentabilität
+einzelner Geschäftsbereiche oder Projekte.
+▪ Branchen mit komplexen Wertschöpfungsketten und Projekten, wie z. B. im Einzelhandel und in multinationalen
+Unternehmen, wo internationale Vergleichbarkeit entscheidend ist.
+→ Insgesamt bevorzugen international ausgerichtete Unternehmen das Umsatzkostenverfahren, da es die
+Berichterstattung nach internationalen Rechnungslegungsstandards (IFRS oder US-GAAP) erleichtert
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+7. Bestandteile UGB-Abschluss (Einzelabschluss – Kapitalgesellschaft)
+Bilanz Erträge
+g
+Aufwendungen n
+Vermögens- Eigenkapital u
+dn
+gegenstände Jahresergebnis nh
+uc
+e)
+B
+Liquide Mittel Fremdkapital ggf. Rücklagenbuchung n -r t G
+nsU
+Gewinnvortrag/Verlustvortrag iu 1
+wl3
+e r e2
+Bilanzgewinn GV§
+(
+Eigenkapital 01.01
+l
+a
+Bilanzgewinn t
+i
+p
+a
+k
+Transaktionen mit Eigentümer
+n
+e
+g
+Eigenkapital 31.12 i
+E
+Erläuternd dazu: Notes (Anhang)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel Gewinn- und Verlustrechnung (GKV)
+Die Gauff-AG produzierte im Jahr 2024 10.000 Dosen Tennisbälle und 6.000 Baseballs. Im Laufe des Geschäfts-
+jahres 2024 wurden 8.000 Dosen Tennisbälle und 5.800 Baseballs verkauft.
+Der Verkaufspreis pro Dose Tennisbälle beträgt 10 EUR und pro Baseball 25 EUR. Die Herstellungskosten pro Dose
+Tennisbälle betragen 5 EUR und pro Baseball 12,50 EUR.
+Am Ende des Geschäftsjahres werden die folgenden Endbestände festgestellt:
+Dosen Tennisbälle: 2.000
+Baseballs: 200
+Die weiteren Kosten der Gauff-AG im Zusammenhang mit dem Verkauf von Tennisbällen (in Dosen) und Baseballs sind
+die folgenden:
+Personalkosten 60.000 EUR
+Abschreibungen 6.500 EUR
+Sonstige betriebliche Aufwendungen 13.000 EUR
+Außerdem erzielte das Unternehmen sonstige Erträge in Höhe von 15.000 EUR.
+Stellen Sie die Gewinn- und Verlustrechnung nach dem Gesamtkostenverfahren gemäß UGB auf.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel Gewinn- und Verlustrechnung (UKV)
+Die Sinner-AG produzierte im Jahr 2024 10.000 Dosen Tennisbälle und 6.000 Baseballs. Im Laufe des Geschäfts-
+jahres 2023 wurden 8.000 Dosen Tennisbälle und 5.800 Baseballs verkauft.
+Der Verkaufspreis pro Dose Tennisbälle beträgt 10 EUR und pro Baseball 25 EUR. Die Herstellungskosten pro Dose
+Tennisbälle betragen 5 EUR und pro Baseball 12,50 EUR.
+Am Ende des Geschäftsjahres werden die folgenden Endbestände festgestellt:
+Dosen Tennisbälle: 2.000
+Baseballs: 200
+Die weiteren Kosten der Sinner-AG im Zusammenhang mit dem Verkauf von Tennisbällen (in Dosen) und Baseballs sind
+die folgenden:
+Personalkosten 16.500 EUR
+Abschreibungen 12.500 EUR
+Sonstige betriebliche Aufwendungen 38.000 EUR
+Außerdem erzielte das Unternehmen sonstige Erträge in Höhe von 15.000 EUR.
+Stellen Sie die Gewinn- und Verlustrechnung sowohl nach dem Umsatzkostenverfahren auf.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Wissensüberprüfung
+Das Unternehmensgesetzbuch (UGB)
+Berichtspflichten und Publizitätsvorschriften
+Kapitel 6
+Egger/Samer/Bertl Band 1
+Kapitel 7
+Kapitel 8
+Kapitel 9
+Univ.-Prof. Dr. Dipl.-Ing. Mag. Stéphanie Mittelbach-Hörmanseder, MIM (CEMS)
+Institut für Rechnungslegung, Wirtschaftsprüfung und Steuerlehre
+Die Inhalte dieses Skriptes sind urheberrechtlich geschützt und dürfen nicht weiter verbreitet werden!
+Berichtspflichten und Publizitätsvorschriften
+1
+Einzelabschluss
+2 Konzernabschluss
+3
+Weitere Berichtspflichten
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. Wichtigste Bestandteile des Jahresabschlusses
+Gewinn und
+Bilanz Anhang Kapitalflussrechnung
+Verlustrechnung
+Gegenüberstellung von Gegenüberstellung von Ergänzende Erläuterungen Gegenüberstellung von
+Vermögen & Kapital zu Erträgen & Aufwendungen zur Bilanz & GuV zur Ein- und Auszahlungen
+einem bestimmten einer Periode Erfüllung des „true & fair einer Periode
+Stichtag view“
+(Zeitpunktrechnung) (Zeitraumrechnung) Auslagerung von Daraus wird die
+Informationen iSd Veränderung der
+Abbildung der Abbildung der Ertragslage Grundsatzes der Finanzlage abgeleitet.
+Vermögenslage Bilanzklarheit; z.B.:
+Einteilung in Erträge und Verbindlichkeitenspiegel
+Einteilung in Aktiva und Aufwendungen
+Passiva verpflichtend für
+(Ermittlung des Kapitalgesellschaften
+Gewinnes/Verlustes) (außer Kleinstkapitalgesellschaften)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. Einzelabschluss
+1.1 Anhang
+1.1 § 236 Anhang und Lagebericht
+FÜNFTER TITEL
+Anhang und Lagebericht
+Erläuterung der Bilanz und der Gewinn- und Verlustrechnung
+§ 236. Im Anhang sind die Bilanz und die Gewinn- und Verlustrechnung sowie die darauf angewandten Bilanzierungs-
+und Bewertungsmethoden so zu erläutern, dass ein möglichst getreues Bild der Vermögens-, Finanz- und Ertragslage
+des Unternehmens vermittelt wird. Eine kleine Gesellschaft braucht keine über die Anforderungen in diesem
+Bundesgesetz hinausgehenden Anhangangaben zu machen, soweit auf sie keine Rechnungslegungsvorschriften für
+Unternehmen bestimmter Rechtsformen anwendbar sind, die auf Rechtsakten der Europäischen Union beruhen. Die
+Anhangangaben sind in der Reihenfolge der Darstellung der Posten in der Bilanz und in der Gewinn- und
+Verlustrechnung zu machen.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.1 Funktionen des Anhangs
+„Im Anhang sind die Bilanz und die Gewinn- und Verlustrechnung sowie die darauf angewandten Bilanzierungs- und
+Bewertungsmethoden so zu erläutern, dass ein möglichst getreues Bild der Vermögens-, Finanz- und Ertragslage des
+Unternehmens vermittelt wird.“
+(§ 236 S. 1 UGB)
+▪ Interpretationsfunktion (Auslegung der Generalklausel)
+▪ Erläuterungsfunktion
+▪ Begründungsfunktion
+▪ Entlastungsfunktion
+▪ Ergänzungsfunktion
+▪ Korrekturfunktion (zusätzliche Angaben iSd § 222 Abs 2, 2. Satz)
+BOTTOM-UP ANSATZ
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.1 Stichtagsprinzip und Grundsatz der Wertaufhellung
+▪ „Die Vermögensgegenstände sind zum Abschlussstichtag […] zu bewerten.“ (§ 201 Abs. 2 Z 3 UGB)
+▪ Bei der Jahresabschlusserstellung: Berücksichtigung aller Informationen, welche für die Abbildung der objektiven
+Verhältnisse am Bilanzstichtag maßgeblich sind
+▪ Grundsatz der Wertaufhellung: Ereignisse, welche zwischen dem Abschlussstichtag und dem Zeitpunkt der
+Jahresabschlussaufstellung bekannt werden, sich aber auf das abgelaufene Geschäftsjahr beziehen, müssen
+berücksichtigt werden (§ 201 Abs. 2 Z 4 lit b UGB)
+▪ Nicht zu berücksichtigen sind wertbegründende Ereignisse, die nach dem Abschlussstichtag stattfinden
+▪ Anhang für mittelgroße und große KapG: Angabe der Art und finanziellen Auswirkungen wesentlicher Ereignisse nach
+dem Abschlussstichtag (Nachtragsbericht) (§ 238 Abs. 1 Z 11 UGB)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.1 Wesentliche Bestandteile des Anhangs
+Erläuterung der Bilanzierungs- und Bewertungsmethoden
+▪ Ausübung von Bilanzansatzwahlrechten und Abweichungen gegenüber dem Vorjahr
+▪ Ausübung von Bewertungswahlrechten und Abweichungen gegenüber dem Vorjahr
+▪ Abschreibungsmethoden
+Erläuterung zur Bilanz
+▪ Grundwerte bei Grundstücken
+▪ Anlagenspiegel
+▪ Verpflichtung aus der Nutzung von in der Bilanz nicht ausgewiesenen Sachanlagen (Miet-/Leasingverpflichtungen
+für das Folgejahr und 5 folgenden Geschäftsjahre)
+▪ Betrag von pauschalen Wertberichtigungen
+▪ Verbindlichkeitenspiegel (mit einer Restlaufzeit größer 5 Jahre)
+▪ Gesonderte Darstellung wesentlicher Rückstellungen
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.1 Wesentliche Bestandteile des Anhangs
+Anlagespiegel
+Entwicklung des Anlagevermögens, Pauschalwertberichtigung
+§ 226 (1) Im Anhang ist die Entwicklung der einzelnen Posten des Anlagevermögens darzustellen. Dabei sind für die
+verschiedenen Posten des Anlagevermögens jeweils gesondert anzugeben:
+1. die Anschaffungs- oder Herstellungskosten zum Beginn und Ende des Geschäftsjahrs;
+2. die Zu- und Abgänge sowie Umbuchungen im Laufe des Geschäftsjahrs;
+3. die kumulierten Abschreibungen zu Beginn und Ende des Geschäftsjahrs;
+4. die Ab- und Zuschreibungen des Geschäftsjahrs;
+5. die Bewegungen in Abschreibungen im Zusammenhang mit Zu- und Abgängen sowie Umbuchungen im Laufe
+des Geschäftsjahrs und
+6. der im Laufe des Geschäftsjahrs aktivierte Betrag, wenn Zinsen gemäß § 203 Abs. 4 aktiviert werden, der im
+Laufe des Geschäftsjahrs aktivierte Betrag, wenn Zinsen gemäß Paragraph 203, Absatz 4, aktiviert werden.
+(2) (Anm.: aufgehoben durch BGBl. I Nr. 22/2015)Anmerkung, aufgehoben durch Bundesgesetzblatt Teil eins, Nr. 22 aus
+2015,)
+(3) Werden Vermögensgegenstände des Anlagevermögens im Hinblick auf ihre Geringwertigkeit im Jahre ihrer
+Anschaffung oder Herstellung vollständig abgeschrieben, dann dürfen diese Vermögensgegenstände als Abgang
+behandelt werden.
+(4) Ein Geschäfts(Firmen)wert ist in die Darstellung der Entwicklung des Anlagevermögens aufzunehmen. Ein voll
+abgeschriebener Geschäfts(Firmen)wert ist als Abgang zu behandeln.
+(5) Gesellschaften, die nicht klein sind, haben den Betrag einer PWB zu Forderungen für den entsprechenden Posten
+der Bilanz im Anhang anzugeben. EWB zum UV sind vom entsprechenden Aktivposten abzusetzen.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.1 Wesentliche Bestandteile des Anhangs
+Erläuterung zur Gewinn- und Verlustrechnung
+▪ Aufgliederung der Umsatzerlöse nach Tätigkeitsbereichen sowie nach geographisch bestimmten Märkten
+▪ Aufwandsposten, die bei Anwendung des Umsatzkostenverfahrens nicht gesondert ausgewiesen sind
+▪ Gesonderte Angabe wesentlicher Verluste aus dem Abgang von Vermögensgegenständen des Anlagevermögens
+sonstige Angaben
+▪ Pflichtangaben über Organe und Arbeitnehmer
+▪ Pflichtangaben bei AG‘s
+▪ Ereignisse nach dem Bilanzstichtag (zB. Covid 19!!)
+→ Umfang der Angaben hängt von der Größenklasse ab
+→ Schutzklausel, sofern Angaben unwesentlich sind oder dem Unternehmen einen erheblichen Nachteil zufügen
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel: Anlagenspiegel
+Klausur April 2024 (12 Punkte)
+Sie sind als Buchhalter:in bei einem Hersteller für Schokolade (Schoki AG) tätig und erhalten von der CFO die Aufgabe,
+den Anlagenspiegel gemäß § 226 UGB zu erstellen.
+Berücksichtigen Sie dafür die folgenden Sachverhalte und stellen Sie diese im Anlagespiegel per 31.12.2024 dar.
+Verwenden Sie dafür das Lösungsschema auf der folgenden Seite.
+Sachverhalte:
+1. Am 15. Mai 2024 wurde ein neues Firmenauto für die Vertriebsmitarbeiter der Schoki AG um 25.000€ (netto)
+angeschafft und sofort in Betrieb genommen. Es wird eine geplante Nutzungsdauer von 5 Jahren angenommen.
+2. Im Jahr 2023 hat die Schoki AG eine 100%-Beteiligung an einem Kakaoproduzenten für langfristige Haltezwecke um
+50.000€ erworben. Zum 31.12.2023 betrug der Wert der Beteiligung 55.000€, dieser ist zum 31.12.2024 jedoch auf
+47.000€ gesunken. Es ist von einer langfristigen Wertminderung auszugehen.
+Entwicklung AK/HK Entwicklung der Abschreibungen Buchwert
+Sach-
+verhalt 01.01 Veränderung Geschäftsjahr 31.12 01.01 Veränderung Geschäftsjahr 31.12 Aktuelles
+Vorjahr
+Nummer Kumulierte Kumulierte Jahr
+31.12.
+AK/HK Zugang Abgang Umbuchungen AK/HK Abschreibung Abgang Zuschreibung
+31.12.
+Abschreibung Abschreibung
+1.
+2.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.1 Bestandteile des unternehmensrechtlichen Jahresabschlusses
+Abhängig von der Rechtsform
+Bilanz GuV Anhang Lagebericht
+Jahresabschluss
+für Nicht-Kapitalgesellsch. (Einzelunt./Pers.Ges.) (§ 193
+Abs. 4 UGB) sowie Kleinstkapitalgesellschaften, sofern
+bei diesen bestimmte Angaben gem. § 237 Abs. 1 Z 2
+und Z 3 UGB in der Bilanz enthalten sind
+(§ 242 Abs. 1 UGB)
+Jahresabschluss
+für alle Kapitalgesellschaften mit Ausnahme von Kleinstkapitalgesellschaften, sofern
+Erweiterter Jahresabschluss
+sie die Angaben gem. § 237 Abs. 1 Z 2 und Z 3 UGB unter der Bilanz anführen;
+für Kapitalgesellschaften
+notwendige Anhangangaben variieren je nach Größe der Kapitalgesellschaft (§§ 237-
+242 UGB; Größenklassen nach § 221 UGB)
+Jahresabschluss + Lagebericht
+Kapitalgesellschaften, mit Ausnahme von
+kleinen GmbHs (§ 243 Abs. 4 UGB; Größenklassen nach § 221 UGB)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. Einzelabschluss
+1.2 Lagebericht
+1.2 Lagebericht nach UGB
+Lagebericht
+§ 243 (1) Im Lagebericht sind der Geschäftsverlauf, einschließlich des Geschäftsergebnisses, und die Lage des
+Unternehmens so darzustellen, dass ein möglichst getreues Bild der Vermögens-, Finanz- und Ertragslage vermittelt
+wird, und die wesentlichen Risiken und Ungewissheiten, denen das Unternehmen ausgesetzt ist, zu beschreiben.
+(2) Der Lagebericht hat eine ausgewogene und umfassende, dem Umfang und der Komplexität der Geschäftstätigkeit
+angemessene Analyse des Geschäftsverlaufs, einschließlich des Geschäftsergebnisses, und der Lage des
+Unternehmens zu enthalten. Abhängig von der Größe des Unternehmens und von der Komplexität des
+Geschäftsbetriebs hat die Analyse auf die für die jeweilige Geschäftstätigkeit wichtigsten finanziellen
+Leistungsindikatoren einzugehen und sie unter Bezugnahme auf die im Jahresabschluss ausgewiesenen Beträge und
+Angaben zu erläutern.
+▪ Zusätzlicher Bericht neben dem Jahresabschluss
+▪ Erstellungspflicht für Kapitalgesellschaften (Befreiung für kleine GmbHs) -> siehe gesetzliche Grundlagen
+▪ AFRAC 9 Lageberichterstattung UGB
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.2 Lagebericht nach UGB
+Weitere Angaben (§ 243 Abs. 3 UGB)
+▪ Voraussichtliche Entwicklung des Unternehmens
+▪ Tätigkeiten im Bereich Forschung und Entwicklung;
+▪ Informationen über die eigenen Anteile der Gesellschaft;
+▪ bestehende Zweigniederlassungen der Gesellschaft;
+▪ Verwendung von Finanzinstrumenten (bestehende Risiken, Risikomanagement)
+▪ Mit Aktien börsennotierte AGs müssen zudem über Gesellschaftsstruktur (zB Kapitalzusammensetzung,
+Stimmrechte) berichten (§ 243a Abs. 1 UGB)
+▪ Unternehmen von öffentlichem Interesse müssen zudem interne Kontroll- und Risikomanagementsysteme im
+Hinblick auf den Rechnungslegungsprozess beschreiben (§ 243a Abs. 2 UGB)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.2 Lagebericht – wesentliche Bestandteile
+Mindestbestandteile
+Darstellung des Geschäftsverlaufs und der Lage des Unternehmens
+▪ bestehende Zweigniederlassungen
+▪ finanzielle Leistungsindikatoren
+AFRAC-Stellungnahme 9
+▪ nichtfinanzielle Leistungsindikatoren bei großen Kapitalgesellschaften Lageberichterstattung (UGB)
+voraussichtliche Entwicklung des Unternehmens und Risikoberichterstattung
+▪ Darstellung der Chancen und Risiken
+▪ Risikomanagementziele und -methoden im Rahmen der Bilanzierung von Sicherungsgeschäften
+▪ Bestehende Preisänderungs-, Ausfall-, Liquiditäts- und Cashflow-Risiken bei der Verwendung von
+Finanzinstrumenten
+Forschungs- und Entwicklungsaktivitäten des Unternehmens
+Ggf. Bestand sowie den Erwerb und die Veräußerung eigener Anteile
+→ Besonderheiten für mittelgroße und kleine Gesellschaften sowie börsennotierte Unternehmen
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.2 Finanzielle Leistungsindikatoren nach AFRAC 9
+5. Inhalt des Lageberichts
+5.1. Bericht über den Geschäftsverlauf und die wirtschaftliche Lage
+Finanzielle und nichtfinanzielle Leistungsindikatoren
+[…]
+(40) Als finanzielle Leistungsindikatoren sind dabei die gängigen Kennzahlen (Zahlen oder Zahlenverhältnisse) der
+finanzwirtschaftlichen und erfolgswirtschaftlichen Analyse (zB Erfolgskennzahlen, insbesondere
+Rentabilitätskennzahlen, Kennzahlen der Vermögens- und Kapitalstruktur, Finanzierungskennzahlen und die
+Geldflussrechnung) zu verstehen (vgl KFS/BW 3). Neben der Definition der dargestellten Kennzahlen ist
+gegebenenfalls auch eine Überleitung der Zahlen aus dem Abschluss anzugeben. Damit ist zu gewährleisten,
+dass der Berichtsadressat die Anpassung einer aus dem Jahresabschluss entnommenen und adaptierten Zahl
+nachvollziehen kann, womit die Vergleichbarkeit mit anderen Unternehmen verbessert wird.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.2 Finanzielle Leistungsindikatoren nach AFRAC 9
+5. Inhalt des Lageberichts
+5.1. Bericht über den Geschäftsverlauf und die wirtschaftliche Lage
+Finanzielle und nichtfinanzielle Leistungsindikatoren
+[…]
+(41) Die Darstellung einer vollständigen Kapitalflussrechnung ist aus rechtssystematischen Erwägungen nicht
+verpflichtend (vgl § 250 Abs 1 UGB idF des ReLÄG 2004 mit der auf Konzernabschlüsse eingeschränkten
+Verpflichtung zur Aufstellung einer Geldflussrechnung). Es ist als ausreichend zu erachten, wenn unter Angabe der
+angewandten Grundsätze für die Aufstellung (zB IAS 7, KFS/BW 2) Teilergebnisse der Geldflussrechnung
+(Geldfluss aus der operativen Tätigkeit, Geldfluss aus der Investitionstätigkeit und Geldfluss aus der
+Finanzierungstätigkeit) dargestellt werden. Ausgenommen von dieser Angabeverpflichtung sind
+Unternehmensbranchen, in denen die Aussagekraft der Geldflussrechnung von untergeordneter Bedeutung ist.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.2 Cash-Flow Kennzahlen nach KFS/BW 3
+6. Cash-flow-Kennzahlen
+(28) Die Ausführungen dieses Abschnitts gelten nur für den Lagebericht, nicht für den Konzernlagebericht, weil die
+Geldflussrechnung Pflichtbestandteil des Konzernabschlusses ist (vgl. § 250 Abs. 1 UGB).
+(29) Die Aufnahme einer vollständigen Geldflussrechnung (vgl. KFS/BW 2) in den Lagebericht wird empfohlen.
+Alternativ können entsprechend der AFRAC-Stellungnahme „Lageberichterstattung gemäß §§ 243, 243a und 267
+UGB“ Teilergebnisse der Geldflussrechnung oder daraus abgeleitete Cash-flow-Kennzahlen dargestellt werden.
+Diese müssen nachvollziehbar sein
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.2 Bestandteile des unternehmensrechtlichen Jahresabschlusses
+Abhängig von der Rechtsform
+Bilanz GuV Anhang Lagebericht
+Jahresabschluss
+für Nicht-Kapitalgesellsch. (Einzelunt./Pers.Ges.) (§ 193
+Abs. 4 UGB) sowie Kleinstkapitalgesellschaften, sofern
+bei diesen bestimmte Angaben gem. § 237 Abs. 1 Z 2
+und Z 3 UGB in der Bilanz enthalten sind
+(§ 242 Abs. 1 UGB)
+Jahresabschluss
+für alle Kapitalgesellschaften mit Ausnahme von Kleinstkapitalgesellschaften, sofern
+Erweiterter Jahresabschluss
+sie die Angaben gem. § 237 Abs. 1 Z 2 und Z 3 UGB unter der Bilanz anführen;
+für Kapitalgesellschaften
+notwendige Anhangangaben variieren je nach Größe der Kapitalgesellschaft (§§ 237-
+242 UGB; Größenklassen nach § 221 UGB)
+Jahresabschluss + Lagebericht
+Kapitalgesellschaften, mit Ausnahme von
+kleinen GmbHs (§ 243 Abs. 4 UGB; Größenklassen nach § 221 UGB)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Wissensüberprüfung
+1. Einzelabschluss
+1.3 Kapitalflussrechnung
+1.3 Cash-Flow Statement
+Definition
+→ Information über tatsächliche Zahlungsströme (Ein- und Auszahlungen des Unternehmens)
+▪ Ziel: reale Vorstellung darüber, wie viel Bargeld dem Unternehmen zu einem bestimmten Zeitpunkt zur Verfügung
+steht
+▪ Direkte versus indirekte Berechnung
+▪ Kapitalflussrechnung für den Einzelabschluss im UGB nicht explizit gefordert, aber im Rahmen des Lageberichts
+Teilergebnisse davon
+▪ Bestandteil des Konzernabschlusses (§ 250 Abs 1 UGB)
+▪ Anzuwendendes Regelwerk
+− AFRAC 36 Geldflussrechnung
+− IAS 7 Statement of Cash-Flows
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.3 Rechtliche Anforderungen
+→ Information über tatsächliche Zahlungsströme (Ein- und Auszahlungen des Unternehmens)
+▪ Ziel: reale Vorstellung darüber, wie viel Bargeld dem Unternehmen zu einem bestimmten Zeitpunkt zur Verfügung
+steht
+▪ Direkte versus indirekte Berechnung
+▪ Kapitalflussrechnung für den Einzelabschluss im UGB nicht explizit gefordert, aber im Rahmen des Lageberichts
+Teilergebnisse davon
+▪ Bestandteil des Konzernabschlusses (§ 250 Abs 1 UGB)
+DRITTER TITEL
+Inhalt und Form des Konzernabschlusses
+Inhalt
+§ 250. (1) Der Konzernabschluss besteht aus der Konzernbilanz, der Konzern-Gewinn- und Verlustrechnung, dem
+Konzernanhang, der Konzernkapitalflussrechnung und einer Darstellung der Komponenten des Eigenkapitals und ihrer
+Entwicklung. Er kann um die Segmentberichterstattung erweitert werden.
+Anzuwendendes Regelwerk
+▪ AFRAC 36 Geldflussrechnung
+▪ IAS 7 Statement of Cash Flows
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.3 Cash Flow nach AFRAC 36
+Netto-Geldfluss aus der betrieblichen Tätigkeit
+▪ Zeigt an, inwieweit das Unternehmen in der Lage ist, Geldmittel zur Aufrechterhaltung der Geschäftstätigkeit, zur
+Kredittilgung, für Dividendenzahlungen sowie Investitionen ohne Zugriff auf externe Finanzmittel zu schaffen.
+▪ Zeigt die Innenfinanzierungskraft
+▪ Entscheidende Kennzahl für Liquidität & Fortführung
+▪ Dazu gehören: Einzahlungen aus Lieferungen und Leistungen, Auszahlungen an Lieferanten, Löhne und Gehälter,
+Steuerzahlungen
+▪ Direkte vs. indirekte Methode
+Netto-Geldfluss aus der Investitionstätigkeit
+▪ Zeigt grundsätzlich das Ausmaß jener Investitionen in das IAV, SAV und FAV an, die künftig Erträge und Einzahlungen
+bewirken sollen.
+▪ Dazu gehören: Auszahlungen für Investitionen, Einzahlungen aus Anlageverkäufen, Kauf/Verkauf von Sachanlagen,
+Immateriellen Vermögenswerten, Finanzanlagen
+▪ Negativer Cashflow deutet auf Investitionsphase
+▪ Positiver Cashflow deutet auf Desinvestitionsphase
+Netto-Geldfluss aus der Finanzierungstätigkeit
+▪ Erfasst ausschließlich Finanzierungsvorgänge der Außenfinanzierung.
+▪ Dazu gehören: Kreditaufnahme/Kreditrückzahlung, Kapitalerhöhungen, Dividendenzahlungen
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.3 Cash Flow nach AFRAC 36
+Cashflow nach der Praktiker Methode
+▪ Maß für die Innenfinanzierungskraft eines Unternehmens, d.h. wie viel liquide Mittel aus dem laufenden
+Geschäft erwirtschaftet werden
+Jahresüberschuss
++ Abschreibungen vom Anlagevermögen
+- Zuschreibungen zum Anlagevermögen
++ Erhöhung langfristiger Rückstellungen
+- Verminderung langfristiger Rückstellungen
+= Cash Flow (Praktikermethode)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.3 Bedeutung der Cash Flow Rechnung
+https://hbsp.harvard.edu/products/videos/5367AV-AVO-ENG
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.3 Zusammenhang
+Gesamtergebnis-
+Kapitalflussrechnung Bilanz
+rechnung/GuV
+Liquide Mittel zuBeginn der Periode Erträge
++ Einzahlungen Anlagevermögen/ Eigenkapital - Aufwendungen
+- Auszahlungen langfristige
+Vermögenswerte = Jahresüberschuss/fehlbetrag
+= Liquide Mittel am Ende d. Periode
+Davon
+©
+Jahres-
+ergebnis
+Umlaufvermögen
+Davon
+Liquide Mittel &
+Zahlungsmittel-
+äquivalente Verbindlichkeiten
+Anhang
+Zusätzliche Informationen (z.B.
+= =
+Erläuterungen, Tabellen, Ergänzungen)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.3 Zentrale Jahresabschlüsse - Zusammenhang
+Kapitalflussrechnung Bilanz GuV
+CF operativer Tätigkeit Anlage- Umsatzerlöse
+Eigenkapital
+vermögen
+- Materialaufwand
++ CF Investitionstätigkeit
+Umlauf- Davon
+- Löhne und Gehälter
++ CF Finanzierungstätigkeit
+vermögen Jahresergebnis
+- Abschreibungen
+= Nettoveränderung d. liquiden
+davon liquide
+Mittel in d. Periode
+Verbindlich- - Externe Leistungen
+Mittel &
+Zahlungsmittel- keiten
++ Liquidie Mittel Beginn d. P.
+= Ergebnis vor Zinsen und Steuern
+äquivalente
+(EBIT)
+= Liquidie Mittel Ende d. P.
+Summe Aktiva Summe Passiva + / - Finanzergebnis
+= Ergebnis vor Steuern
+Anhang
+- Ertragsteuern
+Zusätzliche Informationen zum
+= Jahresüberschuss/-fehlbetrag
+Jahresabschluss (z.B. Tabellen,
+Berechnungen, Erläuterungen)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.3 Zentrale Jahresabschlüsse - Zusammenhang
+Kapitalflussrechnung Bilanz GuV
+CF operativer Tätigkeit Anlage- Umsatzerlöse
+Eigenkapital
+vermögen
+- Materialaufwand
++ CF Investitionstätigkeit
+Umlauf- Davon
+- Löhne und Gehälter
++ CF Finanzierungstätigkeit
+vermögen Jahresergebnis
+- Abschreibungen
+= Nettoveränderung d. liquiden
+davon liquide
+Mittel in d. Periode
+Verbindlich- - Externe Leistungen
+Mittel &
+Zahlungsmittel- keiten
++ Liquidie Mittel Beginn d. P.
+= Ergebnis vor Zinsen und Steuern
+äquivalente
+(EBIT)
+= Liquidie Mittel Ende d. P.
+Summe Aktiva Summe Passiva + / - Finanzergebnis
+= Ergebnis vor Steuern
+- Ertragsteuern
+= Jahresüberschuss/-fehlbetrag
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. Einzelabschluss
+1.4 Publizitätsvorschriften
+1.4 Publizitätspflichten für KapG im UGB
+Grundsätzliches
+▪ Publizitätspflichten betreffen Kapitalgesellschaften (AG, GmbH, GmbH & Co KG)
+▪ Ziel ist der Gläubigerschutz und die Informationsfunktion für Öffentlichkeit und Investoren
+Offenlegung
+▪ Einreichung des Jahresabschlusses (+ Lagebericht und ggf. weitere Berichte) beim Firmenbuchgericht (spätestens
+9 Monate nach dem Bilanzstichtag) (§ 277 Abs. 1 UGB)
+▪ Umfang je nach Größenklasse. Die Größenklasse ist auf dem Jahresabschluss anzugeben
+▪ Große Aktiengesellschaften müssen vollständig offenlegen, Erleichterungen für andere KapG (z.B. verkürzte Bilanz,
+§§ 278 ff. UGB)
+Veröffentlichung
+▪ Die Unterlagen sind elektronische einzureichen
+▪ Vorstand einer großen Aktiengesellschaft muss den Jahresabschluss unmittelbar nach der Behandlung in der
+Hauptversammlung, spätestens 9 Monate nach Bilanzstichtag veröffentlichen (§ 277 Abs. 2 UGB)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.4 Publizitätspflichten für KapG im UGB
+Erleichterung des Gesellschaftsrechtlichen COVID-19-Gesetzes
+▪ Verlängerung der in § 277 Abs. 1 und 2 UGB genannten Fristen auf jeweils 12 Monate nach dem Bilanzstichtag
+▪ Gültig für Bilanzstichtage zwischen 16.10.2019 und 31.12.2020
+Sanktionen bei Verletzung der Publizitätspflichten
+▪ Nach §283 UGB sind Zwangsstrafen nach Ablauf der Offenlegungsfrist zu verhängen
+▪ Diese ist auch wiederholt zu verhängen, wenn Pflichten nach je weiteren zwei Monaten nicht nachgekommen wird
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.4 Veröffentlichung des Jahresabschlusses beim Firmenbuchgericht:
+Einzelunternehmer Personengesellschaft GmbH AG
+Erstellung in den ersten 9 Erstellung in den ersten 9
+Erstellung in den ersten 9 Monaten des Erstellung in den ersten 9 Monaten des
+Monaten des folgenden Monaten des folgenden
+folgenden Geschäftsjahres folgenden Geschäftsjahres
+Geschäftsjahres §193 (2) Geschäftsjahres
+§193 (2) UGB §193 (2) UGB
+UGB §193 (2) UGB
+In den ersten 5 Monaten des In den ersten 5 Monaten des
+folgenden Geschäftsjahres Erstellung folgenden Geschäftsjahres
+(Lagebericht, Anhang, Corporate (Lagebericht, Anhang, Corporate
+- -
+Governance-Bericht, Bericht über Governance-Bericht, Bericht über
+Zahlungen an staatliche Stellen) Zahlungen an staatliche Stellen)
+§222 (1) UGB §222 (1) UGB
+Prüfung durch Generalversammlung Prüfung durch Aufsichtsrat innerhalb
+- - innerhalb von 8 Monaten von 2 Monaten
+§35 (1) Z. 1 GmbHG §96 AktG
+Vorlage an Abschlussprüfer §§268 ff. Vorlage an Abschlussprüfer §§268 ff.
+- - UGB → Bestätigungsvermerk UGB → Bestätigungsvermerk
+§274 UGB §274 UGB
+Offenlegung beim Firmenbuchgericht Offenlegung beim Firmenbuchgericht
+innerhalb der ersten 9 Monate nach innerhalb der ersten 9 Monate nach
+- -
+dem Bilanzstichtag, durch dem Bilanzstichtag, durch
+gesetzlichen Vertreter §277 (1) UGB gesetzlichen Vertreter §277 (1) UGB
+Beachte: Größenklassen bei der AG & GmbH bezüglich Umfang des JA! (§221 UGB)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.4 Anlegerschutz und Anwendung iSd. BörseG 2018
+▪ Anwendungsbereich: nur bei AG (oder SE): nur diese haben Möglichkeit an Börse gelistet zu sein §4 (1) BörseG, §3
+AktG
+▪ AG hat konsolidierten JA inkl. Lagebericht, Prüfungsberichte an FMA innerhalb von 6 Monaten nach Abschluss des
+Geschäftsjahres vorzulegen §27 BörseG -> Beachte ebenso §221 UGB
+▪ Jahresfinanzbericht ist von Emittenten innerhalb von 4 Monaten nach Ablauf des Geschäftsjahres bereitgestellt
+werden §124 BörseG, dieser muss 10 Jahre öffentlich sein
+Jahresfinanzbericht umfasst: geprüften Abschluss, Lagebericht, Erklärungen des gesetzlichen Vertreters;
+Konzernabschluss: falls Pflicht dazu besteht
+▪ Halbjahresbericht: muss binnen 3 Monate nach Ablauf des Berichtszeitraumes (= abgelaufenes Geschäftsjahr), für
+erste 6 Monate des abgelaufenen Geschäftsjahres §125 BörseG
+▪ Intermediär (=Börse) haben unverzüglich Informationen die Rechte des Aktionärs betreffen zu übermitteln §180
+BörseG
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.4 Veröffentlichungspflicht der großen Kapitalgesellschaften
+▪ Große Kapitalgesellschaften haben nach §222 (2) UGB den Jahresabschluss im Amtsblatt der Wiener Zeitung zu
+veröffentlichen
+▪ Seit 1.7.2023 keine Veröffentlichungen mehr im Amtsblatt der Wiener Zeitung
+▪ Seit 1.7.2023 Veröffentlichungen in „EVI – Die elektronische Verlautbarungs- und Informationsplattform des Bundes“
+▪ Rückwirkend auch die Jahresabschlüsse von 1. Juli 2011 - 30. Juni 2023 abrufbar
+▪ Abrufbar unter: https://www.evi.gv.at/
+https://www.oesterreich.gv.at/nachrichten/allgemein/EVI_die_elektronische_verlautbarungsundinformationsplattform_des_bundes.html
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.4 Veröffentlichungspflicht der großen Kapitalgesellschaften
+https://www.evi.gv.at
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.4 Veröffentlichungspflicht der großen Kapitalgesellschaften
+https://www.evi.gv.at/s?suche=voestalpine&page=2
+https://www.evi.gv.at/api/dateien/bln-hv6/anhang/d5dtabga.bs3
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.4 Beispiel Veröffentlichung
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1.4 Beispiel Veröffentlichung
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Wissensüberprüfung
+Berichtspflichten
+2. Konzernabschluss
+2. Der Konzernabschluss
+DRITTER ABSCHNITT
+Konzernabschluss, Konzernlagebericht, konsolidierter Corporate Governance-Bericht und konsolidierter Bericht über
+Zahlungen an staatliche Stellen
+ERSTER TITEL
+Anwendungsbereich
+Pflicht zur Aufstellung
+§ 244. (1) Stehen Unternehmen unter der einheitlichen Leitung einer Kapitalgesellschaft (Mutterunternehmen) mit Sitz
+im Inland, so haben die gesetzlichen Vertreter des Mutterunternehmens einen Konzernabschluss, einen
+Konzernlagebericht sowie gegebenenfalls einen konsolidierten Corporate Governance-Bericht aufzustellen sowie dem
+Aufsichtsrat und der Hauptversammlung (Generalversammlung) des Mutterunternehmens innerhalb der für die Vorlage
+des Jahresabschlusses geltenden Fristen vorzulegen. Der Konzernabschluss, der Konzernlagebericht sowie der
+konsolidierte Corporate Governance-Bericht sind von sämtlichen gesetzlichen Vertretern zu unterzeichnen und der
+Haupt- oder Generalversammlung zusammen mit dem Jahresabschluss des Mutterunternehmens vorzulegen. Soweit in
+den folgenden Bestimmungen der Konzernlagebericht erwähnt wird, erfasst dieser Begriff gegebenenfalls auch den
+konsolidierten Corporate Governance-Bericht.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Grundlagen
+Konzern
+→ Gruppe von mehreren rechtlich selbständigen Unternehmen, die über eine einheitliche Leitung und/oder durch
+Beteiligungen oder aufgrund beherrschenden Einflusses wirtschaftlich miteinander verbunden sind. (§ 15 AktG)
+▪ Diese Gruppe von Unternehmen (Tochterunternehmen ((TU)) wird von einem Mutternunternehmen (MU) beherrscht
+▪ Konzernabschluss: Abschluss der wirtschaftlichen Einheit Konzern
+▪ Regelung des Konzernabschlusses (und Konzernlageberichts) in §§ 244-267 UGB
+▪ Zweck des Konzernabschlusses: Darstellung eines möglichst getreuen Bildes der Vermögens-, Finanz-, und
+Ertragslage des Konzerns
+(§ 250 Abs. 2 UGB)
+▪ Konzernabschluss hat eine reine Informationsfunktion, er ist keine:
+− Grundlage für die Ausschüttungsbemessung
+− Grundlage für die Steuerbemessung
+▪ Abschluss wird aufgestellt, als ob der Konzern nur aus einem Unternehmen bestünde (§ 253 Abs. 1 UGB)
+▪ Basis: Jahresabschlüsse des MU und der TU
+▪ Konsolidierung: Neutralisierung der Transaktionen innerhalb des Konzerns
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Grundlagen
+VIERTER TITEL
+Vollständige Zusammenfassung der Jahresabschlüsse verbundener Unternehmen (Vollkonsolidierung)
+Grundsätze, Vollständigkeitsgebot
+§ 253. (1) In dem Konzernabschluß ist der Jahresabschluß des Mutterunternehmens mit den Jahresabschlüssen der
+Tochterunternehmen zusammenzufassen. An die Stelle der dem Mutterunternehmen gehörenden Anteile an den
+einbezogenen Tochterunternehmen treten die Vermögensgegenstände, Rückstellungen, Verbindlichkeiten und
+Rechnungsabgrenzungsposten der Tochterunternehmen, soweit sie nach dem Recht des Mutterunternehmens
+bilanzierbar sind und die Eigenart des Konzernabschlusses keine Abweichungen bedingt oder in den folgenden
+Vorschriften nichts anderes bestimmt ist.
+(2) Die Vermögensgegenstände, aktiven latenten Steuern, Rückstellungen, Verbindlichkeiten und
+Rechnungsabgrenzungsposten sowie die Erträge und Aufwendungen der in den Konzernabschluß einbezogenen
+Unternehmen sind unabhängig von ihrer Berücksichtigung in den Jahresabschlüssen dieser Unternehmen vollständig
+aufzunehmen, soweit nach dem Recht des Mutterunternehmens nicht ein Bilanzierungsverbot oder ein
+Bilanzierungswahlrecht besteht. Nach dem Recht des Mutterunternehmens zulässige Bilanzierungswahlrechte dürfen
+im Konzernabschluß unabhängig von ihrer Ausübung in den Jahresabschlüssen der in den Konzernabschluß
+einbezogenen Unternehmen ausgeübt werden. (Anm.: Abs. 3 aufgehoben durch BGBl. I Nr. 22/2015)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Aufstellungspflicht und Konsolidierungskreis
+Pflicht zur Konzernrechnungslegung (§ 244 Abs. 2 UGB)
+▪ Mutterunternehmen (MU) ist eine Kapitalgesellschaft oder verdeckte KapG (zB GmbH & Co KG) mit Sitz im Inland
+und
+▪ besitzt mindestens ein Tochterunternehmen
+Tochterunternehmen (TU) liegt vor, wenn:
+▪ Einheitliche Leitung durch das MU oder
+▪ Mehrheit der Stimmrechte beim MU liegt oder andere Rechte bestehen, um beherrschenden Einfluss auszuüben
+(Control)
+▪ Weltabschlussprinzip (§ 247 Abs. 1 UGB): Alle TU sind unabhängig von Sitz, Rechtsform und Tätigkeit in den
+Konzernabschluss einzubeziehen.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Konzern-Organigramm
+Die Ottakringer Gruppe
+Quelle: 01_konzernorganigramm.pdf (ottakringerkonzern.com)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. IAS-Verordnung (EG-VO 1606/2002)
+▪ Konzernabschlüsse der in einem EU-Mitgliedsstaat kapitalmarktorientierten Gesellschaften sind ab dem 1. Januar
+2005 nach IFRS aufzustellen
+▪ Wahlrecht für die EU-Mitgliedsstaaten bezüglich der Einrichtung einer Verpflichtung oder eines Wahlrechts für die
+− Konzernabschlüsse nicht-kapitalmarktorientierter Gesellschaften sowie
+− die Einzelabschlüsse kapitalmarktorientierter und/oder nicht-kapitalmarktorientierter Gesellschaften
+Umsetzung in Österreich
+▪ Kapitalmarktorientierte Unternehmen sind ab dem Geschäftsjahr 2005 verpflichtet, Konzernabschlüsse nach IFRS
+aufzustellen (Art. 4 IAS-Verordnung i. V. m. § 245a Abs. 1 UGB).
+▪ Für andere Konzernunternehmen besteht hierzu ein Wahlrecht (§ 245a Abs. 2 UGB).
+▪ Beim Einzelabschluss besteht keine Möglichkeit zur befreienden Aufstellung eines IFRS-Abschlusses. Hier ist
+verpflichtend ein Abschluss nach UGB aufzustellen.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Internationale Rechnungslegung
+Rechnungslegungsstandards, die:
+▪ … länderübergreifend gelten oder anerkannt sind
+▪ … die Vergleichbarkeit von Abschlüssen sicherstellen
+▪ … vor allem für Kapitalmärkte relevant sind
+Ziel ist es Transparenz, Vergleichbarkeit und Vertrauen von Investoren zu schaffen
+“IFRS provide a common accounting language used by more than 100 countries. They make company accounts
+understandable and comparable across international boundaries.”
+(Website European Commission – Financial Reporting)
+“Our mission is to develop [IFRS]standards that bring transparency, accountability and efficiency to financial markets
+around the world. Our work serves the public interest by fostering trust, growth and long-term financial stability in the global
+economy.”
+(Website IFRS Foundation)
+https://www.ifrs.org/use-around-the-world/why-global-accounting-standards/
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Internationale Rechnungslegung
+Weitere internationale Rechnungslegung:
+IAS – International Accounting Standards
+▪ Vorgängerstandards der IFRS
+▪ Gelten noch, sofern sie nicht von den IFRS ersetzt wurden
+IFRS for SMEs
+▪ Vereinfachte Version der IFRS
+▪ Für kleine und mittlere Unternehmen; nicht kapitalmarktorientiert
+▪ In der EU nicht verpflichtend, national unterschiedlich zulässig
+US-GAAP
+▪ Rechnungslegungsstandard der USA; Pflicht für US-Unternehmen
+▪ Teilweise Konvergenz mit IFRS, aber nicht identisch
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. IFRS-Anwendung weltweit
+IFRS für inländische kapitalmarktorientierte Unternehmen verpflichtend:
+In Anlehnung an: http://www.ifrs.org/use-around-the-world/use-of-ifrs-standards-by-jurisdiction/#profiles
+Weltkarte: http://www.powerpointslides.net/fileadmin/user_upload/worldmap.ppt
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Organisationsstruktur der IFRS Foundation
+Drei-Säulen-Struktur
+Monitoring Board der IFRS Foundation 3. Öffentliche Rechenschaftspflicht
+y
+r
+o Treuhänder der IFRS Foundation 2. Governance und Aufsicht
+s l
+i
+i c
+v
+n
+d
+u
+A
+o
+S C
+R
+F
+I IFRS Foundation
+*
+F International Accounding 1. Unabhängige Festlegung von Standards und
+A
+S Standards Board (IASB) verbundene Aktivitäten
+A
+IFRS Interpretation Committee
+Quelle: IASB (2015), Über uns und unsere Arbeit, S. 3. * Accounting Standards Advisory Forum (Vertreter internationaler Standardsetter)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Standard-setting: Due Process
+Entstehung eines Standards
+Agenda Beratung Forschungsprogramm Normungsprogramm Implementierung
+3,5
+jähriger Recherche Vorschlag
+Plan
+PIR*
+Standard- Rechtskräftige Interpretation/
+Auskunftsersuchen Diskussionspapier
+entwurf IFRS Änderung
+* Überprüfung nach Umsetzung
+Quelle: IASB (2015), Über uns und unsere Arbeit.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Endorsement-Verfahren
+IASB
+veröffentlicht
+IASB-Standards
+(IAS/IFRS)
+Accounting
+Regulatory Interpretation (SIC/IFRIC)
+Committee
+berät
+EU-Kommission EFRAG
+EU-Parlament
+EU-Ministerrat
+endorsement
+(ECOFIN)
+Regulierungsebene: Technische Ebene
+Komitologieverfahren
+“EU-IAS/IFRS“
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Inhaltliche Grundlagen der IFRS
+▪ Rahmenkonzept (Conceptual Framework) als konzeptionelles Fundament der IFRS
+▪ Enthält Festlegung des Zwecks der Rechnungslegung sowie wesentliche Konzepte
+→ Leitfaden für das IASB im Rahmen der Standardsetzung
+▪ Einzelregelungen (Standards) in chronologischer Reihenfolge (IAS 1 bis IAS 41; IFRS 1 bis IFRS 17), umfassen derzeit
+ca. 1.500 Seiten Standards sowie ca. 3.000 Seiten zusätzliche Erläuterungen/Ergänzungen
+▪ Einzelregelungen sind von den Abschlusserstellern nach IFRS anzuwenden (und gehen stets dem Rahmenkonzept
+vor!)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Zweck der Rechnungslegung nach IFRS
+Zwecksetzung: Entscheidungsnützlichkeit für gegenwärtige und potenzielle Investoren und Gläubiger, um diese in
+ihren Ressourcenallokations-entscheidungen zu unterstützen. Hierzu zählen Entscheidungen über:
+▪ Kaufen, Halten oder Verkaufen von Eigenkapital- und Fremdkapitalinstrumenten;
+▪ Kreditvergabe;
+▪ Ausübung von Rechten/anderen Einflussnahmen hinsichtlich Aktivitäten des Managements. (CF.1.2)
+Insbesondere sollen Informationen bereit gestellt werden über:
+▪ die Höhe, die zeitliche Verteilung und die Unsicherheit künftiger Nettozahlungszuflüsse des Unternehmens;
+▪ die Ressourcenverwaltung durch das Management. (CF.1.3)
+▪ IFRS fokussieren ausschließlich auf die Informationsfunktion
+▪ Anknüpfung von Rechtsfolgen (zB Ausschüttungsbemessung; Steuerbemessung) wird bei der Entwicklung der IFRS
+nicht berücksichtigt
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Bestandteile der Bilanz (Kapitel 4, Rahmenkonzept)
+▪ Vermögenswert (asset): Gegenwärtige wirtschaftliche Ressource unter der Kontrolle der berichterstattenden
+Einheit, deren Entstehung auf vergangene Ereignisse zurückzuführen ist
+▪ Wirtschaftliche Ressource: Recht, welches das Potenzial besitzt, wirtschaftlichen Nutzen zu generieren.
+▪ Schuld (liability): Gegenwärtige Verpflichtung der berichterstattenden Einheit zur Übertragung wirtschaftlicher
+Ressourcen als Ergebnis vergangener Ereignisse.
+▪ Eigenkapital (equity): Summe aller assets abzüglich Summe aller liabilities
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Vergleich UGB - IFRS
+Rechnungslegungsstandard/Merkmal UGB IFRS
+Normsetzung Gesetzgeber Privater Standardsetzer (IASB)
+vorsichtige Ermittlung des Vermittlung entscheidungsnützlicher
+Primäre Zielsetzung
+ausschüttungsfähigen Gewinns Information
+Relevanz und glaubwürdige
+Zentraler Rechnungslegungsgrundsatz Vorsichtsprinzip
+Darstellung
+▪ Anwendungspflicht für den
+Konzernabschluss kapital-
+Anwendungspflicht für den marktorientierter Unternehmen
+Anwendung
+Einzelabschluss ▪ Wahlrecht für den
+Konzernabschluss sonstiger
+Unternehmen
+IFRS for SMEs (nicht
+Erleichterungen für KMU nach Rechtsform und Größe
+kapitalmarktnotierte Unt.)
+Verknüpfung mit der Steuerbilanz Maßgeblichkeitsprinzip Keine
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Bestandteile eines IFRS-Abschlusses
+Ein vollständiger Abschluss besteht gemäß IAS 1.10 aus
+1. Bilanz zum Abschlussstichtag
+2. Gesamtergebnisrechnung für die Periode
+3. Eigenkapitalveränderungsrechnung für die Periode
+4. Kapitalflussrechnung für die Periode
+5. Anhang, der eine zusammenfassende Darstellung der wesentlichen Rechnungslegungsmethoden und sonstige
+Erläuterungen enthält
+(„Ein Unternehmen kann für diese Bestandteile andere Bezeichnungen als die in diesem Standard vorgesehenen Begriffe
+verwenden. Ein Unternehmen kann beispielsweise die Bezeichnung „Gewinn- und Verlustrechnung sowie sonstiges
+Ergebnis“ anstatt „Gesamtergebnisrechnung“ verwenden.“, IAS 1.10)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Inhaltliche Unterschiede zwischen UGB und IFRS
+Selbst erstelle immaterielle Vermögensgegenstände / Vermögenswerte
+▪ (Konkretes) Aktivierungsverbot nach UGB
+▪ IFRS unterscheiden bei selbst erstellten immateriellen Vermögenswerten eine Forschungs- und eine
+Entwicklungsphase:
+− Forschungsphase: Aktivierungsverbot
+− Entwicklungsphase: Aktivierungsgebot unter bestimmten Voraussetzungen (u.a. technische Realisierbarkeit;
+zuverlässige Bestimmung der Kosten)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Inhaltliche Unterschiede zwischen UGB und IFRS
+Ansatzunterschiede (u.a.)
+▪ Pflicht zur Aktivierung latenter Steuern auf steuerliche Verlustvorträge nach IFRS (UGB: Wahlrecht)
+▪ Verbot der Passivierung von Aufwandsrückstellungen nach IFRS (UGB: Wahlrecht, bzw. Pflicht, sofern nach GoB
+zwingend)
+Bewertungsunterschiede (u.a.)
+▪ Bewertung von vielen Finanzinstrumenten (aber auch z.B. Renditeimmobilien) zwingend zu Zeitwerten nach IFRS,
+auch wenn diese höher sind als die Anschaffungskosten (wahlweise auch z.B. für Sachanlagen)
+▪ Geschäfts- oder Firmenwert nach IFRS ohne planmäßige Abschreibung, jährlicher Test auf Wertminderung
+Darstellungsunterschiede (u.a.)
+▪ Keine detaillierten Mindestgliederungsschemata für Bilanz/GuV in den IFRS
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Wissensüberprüfung
+
+Berichtspflichten
+3. weitere Berichtspflichten
+3. Frankfurter Allgemeine Zeitung, 17.03.2017, S. 16
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Corporate Governance-Bericht (§ 243c UGB)
+▪ Aufstellungspflicht für mit Aktien börsennotierte AGs
+▪ Inhalt des Berichts
+− Nennung eines in Österreich allgemein anerkannten Corporate Governance Kodex und inwiefern dieser befolgt
+wird (Comply-or-explain approach)
+− Spezifische Pflichtangaben gemäß § 243c Abs. 2 UGB:
+❖ Zusammensetzung und Arbeitsweise des Vorstands/Aufsichtsrats
+❖ Maßnahmen zur Förderung von Frauen im Vorstand, im Aufsichtsrat und in leitenden Stellungen der
+Gesellschaft;
+❖ (nur für große AGs gemäß Kriterien des § 221 Abs. 3 S. 1 UGB)
+Beschreibung des Diversitätskonzepts, das im Zusammenhang mit der Besetzung des Vorstands und des
+Aufsichtsrats der Gesellschaft in Bezug auf Aspekte wie Alter, Geschlecht, Bildungs- und Berufshintergrund
+verfolgt wird, der Ziele dieses Diversitätskonzepts sowie der Art und Weise der Umsetzung dieses
+Konzepts und der Ergebnisse im Berichtszeitraum; wird kein derartiges Konzept angewendet, so ist dies zu
+begründen;
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Corporate Governance-Bericht Raiffeisenbank
+Coporate-Governance-Bericht DE-2023.pdf
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Nachhaltigkeitsbericht
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Nachhaltigkeitsbericht
+▪ Das Nachhaltigkeitsberichtsgesetz (NaBeG) ist das zentrale österreichische Gesetz zur Regelung der
+Nachhaltigkeitsberichterstattung von Unternehmen.
+▪ Es wurde Anfang 2026 beschlossen und setzt die europäische Corporate Sustainability Reporting Directive (CSRD)
+in nationales Recht um.
+Seit 19.02.2026 ist das Nachhaltigkeitsberichterstattungsgesetz (NaBeG) in Kraft!
+Wer muss Berichten?
+Anwendungsbereich: (Mutter)unternehmen mit
+▪ Mehr als 1.000 Beschäftigten
+▪ Einem Nettojahresumsatz von über 450 Mio. Euro
+▪ Unabhängig von der Kapitalmarktorientiertheit
+Siehe § 243b UGB iVm den Übergangsbestimmungen in § 908 UGB.
+3. Nachhaltigkeitsbericht
+Zentrale Vorschrift: § 243b UGB (Nachhaltigkeitsbericht)
+Nach § 243b UGB müssen Unternehmen folgende Informationen offenlegen:
+a) Geschäftsmodell und Strategie
+▪ Beschreibung des Geschäftsmodells
+▪ Nachhaltigkeitsstrategie und deren Integration ins Unternehmen
+▪ Ziele und Fortschritte in Bezug auf Nachhaltigkeit
+b) Nachhaltigkeitsaspekte (ESG)
+Informationen zu:
+▪ Umweltbelangen (z. B. Emissionen, Ressourcenverbrauch)
+▪ Sozial- und Arbeitnehmerbelangen
+▪ Achtung der Menschenrechte
+▪ Bekämpfung von Korruption und Bestechung
+c) Doppelte Wesentlichkeit
+▪ Darstellung, welche Nachhaltigkeitsthemen wesentlich sind
+▪ Sowohl Inside-out (Auswirkungen des Unternehmens) als auch Outside-in (Risiken für das Unternehmen)
+3. Nachhaltigkeitsbericht
+Zentrale Vorschrift: § 243b UGB (Nachhaltigkeitsbericht)
+Nach § 243b UGB müssen Unternehmen folgende Informationen offenlegen:
+d) Risiken und Due-Diligence-Prozesse
+▪ Wesentliche Risiken im Zusammenhang mit Nachhaltigkeit
+▪ Maßnahmen und Prozesse zur Risikoidentifikation und -steuerung
+▪ Lieferketten-bezogene Sorgfaltspflichten
+e) Kennzahlen (KPIs)
+▪ Quantitative und qualitative Leistungsindikatoren
+▪ Vergleichbarkeit über Zeit und zwischen Unternehmen
+f) Governance
+▪ Rolle von Leitungs- und Aufsichtsorganen in Nachhaltigkeitsfragen
+▪ Anreizsysteme (z. B. ESG-bezogene Vergütung)
+3. Nachhaltigkeitsbericht
+Ergänzende Vorschrift: § 243 UGB (Lagebericht allgemein)
+Nach § 243 UGB muss der Lagebericht insgesamt:
+▪ den Geschäftsverlauf und die Lage des Unternehmens darstellen
+▪ auch nichtfinanzielle Leistungsindikatoren enthalten, soweit sie für das Verständnis relevant sind
+▪ wesentliche Risiken und Unsicherheiten beschreiben
+→Der Nachhaltigkeitsbericht ist somit Teil des Lageberichts und ergänzt diese allgemeinen Anforderungen um ESG-
+spezifische Inhalte.
+Weitere relevante Bestimmungen
+§ 243c UGB: regelt die Nachhaltigkeitsberichterstattung auf Konzernebene
+§ 269 UGB: verpflichtet zur (eingeschränkten) Prüfung der Nachhaltigkeitsangaben durch Abschlussprüfer →
+Nachhaltigkeitsinformationen nach § 243b UGB sind damit Teil des prüfungspflichtigen Lageberichts.
+→ Detailliertere Informationen erhalten Sie in der
+Vorlesung von PwC
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Jahresabschlusserfordernisse und Größenklassen
+(vereinfachte Darstellung!)
+Kleinst Klein Mittelgroß Groß
+Bilanzsumme* ≤450 000 ≤ 6,25 Mio ≤ 25 Mio > 25 Mio
+Umsatz* ≤ 900 000 ≤ 12,5 Mio ≤ 50 Mio > 50 Mio
+Arbeitnehmer ≤ 10 ≤ 50 ≤ 250 > 250
+GmbH AG GmbH AG GmbH AG GmbH AG
+Bilanz Ja Ja Ja Ja Ja Ja Ja Ja
+GuV Ja Ja Ja Ja Ja Ja Ja Ja
+Anhang Nein Nein Eingeschränkt Eingeschränkt Ja Ja Ja Ja
+Lagebericht Nein Ja Nein Ja Ja Ja Ja Ja
+Ja, wenn
+Corporate GovernanceBericht Nein Nein Nein Nein Nein Nein Nein
+börsennotiert**
+Ja, in bestim- Ja, in bestim-
+Berichtüber Zlg. an staatl. Stellen Nein Nein Nein Nein Nein Nein
+mtenIndustrien mtenIndustrien
+Ja, wenn
+börsennotiert**
+Nachhaltigkeitsbericht*** Nein Nein Nein Nein Nein Nein Nein
+und > 500
+Arbeitnehmer
+Prüfungspflicht Nein Ja Nein**** Ja Ja Ja Ja Ja
+Bilanz nach
+Bilanz nach Ja, Ja, Ja, Ja,
+Offenlegung (FB) Formblatt Ja Ja
+Formblatt eingeschränkt eingeschränkt eingeschränkt eingeschränkt
+und Anhang
+Hinterlegung Hinterlegung Hinterlegung Hinterlegung Hinterlegung Hinterlegung Hinterlegung
+Veröffentlichung Wiener Zeitung
+Firmenbuch Firmenbuch Firmenbuch Firmenbuch Firmenbuch Firmenbuch Firmenbuch
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Wissensüberprüfung

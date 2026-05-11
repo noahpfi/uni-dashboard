@@ -1,0 +1,368 @@
+Theorie ökonomischer Entscheidungen
+Prof. Dr. Heiner Schumacher
+UIBK
+6. Wettbewerb II
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 1/28
+Einleitung
+Wenn es auf der Angebotsseite mehrere Anbieter gibt, von denen jeder
+den Preis beein‡ussen kann, dann sprechen wir von einem Oligopol.
+Wir werden den einfachsten Fall mit zwei Firmen betrachten
+(Duopol). Weiter werden wir annehmen, dass auf der Nachfrageseite
+vollkommene Konkurrenz herrscht.
+Wir werden sehen, dass es verschiedene Oligopol-Theorien gibt, die
+sehr unterschiedliche Marktgleichgewichte und Preisaufschläge
+vorhersagen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 2/28
+Einleitung
+Wettbewerbsformen
+Mengenwettbewerb: Entscheidungsvariable ist für jedes
+Unternehmen die zu produzierende Menge. Die Summe der Mengen
+aller Anbieter bestimmt den Preis.
+Preiswettbewerb: Entscheidungsvariable für jedes Unternehmen ist
+der Preis.
+Weiterhin unterscheiden wir zwischen sequentiellen und simultanen
+Entscheidungen.
+Bei sequentiellen Entscheidungen dominiert ein Anbieter den Markt
+und kann seine Entscheidung vor seinem Konkurrenten festlegen
+(“Stackelberg-Führer”). Sein Konkurrent (“Stackelberg-Anpasser”)
+tri¤t seine Entscheidung erst nachdem er die Entscheidung des
+anderen Anbieters beobachtet hat.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 3/28
+Einleitung
+Übersicht
+Mengenführerschaft (Stackelberg-Wettbewerb)
+Simultane Wahl der Mengen (Cournot-Wettbewerb)
+Simultane Wahl der Preise (Bertrand-Wettbewerb)
+Aufspaltung von Firmen
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 4/28
+Mengenführerschaft
+Dieses Modell beschreibt eine Situation, in der ein dominanter
+Anbieter das Verhalten seiner Konkurrenten beein‡usst (aber nicht
+umgekehrt).
+Es besteht aus zwei Stufen.
+Stufe 1: Unternehmen 1 (“Stackelberg-Führer”) wählt seine Menge
+x .
+1
+Stufe 2: Unternehmen 2 (“Stackelberg-Anpasser”) beobachtet x und
+1
+wählt daraufhin seine Menge x .
+2
+Auf dem Markt ergibt sich der Preis p(x +x ).
+1 2
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 5/28
+Mengenführerschaft
+Unternehmen 1 muss bei seiner Entscheidung die Reaktion von
+Unternehmen 2 berücksichtigen.
+Wir erhalten die Lösung durch Rückwärtsinduktion. Unternehmen 2
+maximiert seinen Gewinn bei gegebener Menge x :
+1
+maxp(x +x )x c (x ).
+1 2 2 2 2
+x2 (cid:0)
+Die Bedingung erster Ordnung ist also
+p(x +x )+p (x +x )x = c (x ).
+1 2 0 1 2 2 20 2
+Daraus lässt sich die Reaktionsfunktion x = f(x ) von
+2 1
+Unternehmen 2 bestimmen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 6/28
+Mengenführerschaft
+Unternehmen 1 weiß, dass Unternehmen 2 die Menge f(x ) wählen
+1
+wird.
+Also ist dessen Maximierungsproblem:
+maxp(x +f(x ))x c (x ).
+1 1 1 1 1
+x1 (cid:0)
+Die Bedingung erster Ordnung für ein Gewinnmaximum ist dann:
+p(x +f(x ))+p (x +f(x ))(1+f (x ))x = c (x ).
+1 1 0 1 1 0 1 1 10 1
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 7/28
+Mengenführerschaft
+Um diese Interaktion besser zu verstehen, betrachten wir ein Beispiel
+mit lineare Nachfrage, p(x +x ) = a b(x +x ), und konstanten
+1 2 1 2
+(cid:0)
+Grenzkosten, c (x) = c (x) = cx, wobei c < a.
+1 2
+Die Gewinnfunktion des Anpassers ist also
+(a b(x +x ))x cx .
+1 2 2 2
+(cid:0) (cid:0)
+Daraus erhalten wir die Reaktionsfunktion
+a c x
+1
+x = f(x ) = (cid:0) .
+2 1
+2b (cid:0) 2
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 8/28
+Mengenführerschaft
+Das Maximierungsproblem des Marktführers ist folglich
+max(a b(x +f(x )))x cx
+1 1 1 1
+x1 (cid:0) (cid:0)
+a c b
+= max (cid:0) x x2.
+x1 2 1 (cid:0) 2 1
+Die Bedingung erster Ordnung für ein Optimum ist
+a c
+(cid:0) bx = 0.
+1
+2 (cid:0)
+Damit erhalten wir im Gleichgewicht
+a c a c a+3c
+x = (cid:0) , x = (cid:0) , p = .
+1 2
+2b 4b 4
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 9/28
+Mengenführerschaft
+Wir vergleichen dieses Ergebnis mit dem Monopolfall und dem
+Wettbewerbsmarkt bei vollkommener Konkurrenz (beide hatten wir
+im letzten Kapitel hergeleitet).
+Monopolmenge und -preis sind
+a c a+c
+x = (cid:0) , p = .
+2b 2
+Bei vollkommener Konkurrenz sind Menge und Preis
+a c
+x = (cid:0) , p = c.
+b
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 10/28
+Mengenführerschaft
+Die gesamte Menge ist bei Mengenführerschaft größer als im
+Monopol, aber niedriger als bei vollkommener Konkurrenz (zeigen Sie
+dies analytisch).
+Der Gewinn des Marktführers ist höher als der des Anpassers
+(begründen Sie dies intuitiv). Die Summe der Gewinne ist allerdings
+kleiner als der Monopolgewinn (zeigen Sie dies wiederum analytisch).
+Das Ergebnis ist ine¢ zient (Warum?).
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 11/28
+Simultane Festlegung der Mengen
+Wenn beide Unternehmen gleichzeitig ihre Mengen festlegen müssen,
+weißkeines, welche Menge der Konkurrent wählt.
+Beide Unternehmen müssen folglich Erwartungen über die Handlung
+des Konkurrenten bilden.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 12/28
+Simultane Festlegung der Mengen
+Wenn Unternehmen 2 erwartet, dass Unternehmen 1 die Menge xe
+1
+produziert, so ist dessen Maximierungskalkül
+maxp(xe +x )x c (x ).
+1 2 2 2 2
+x2 (cid:0)
+Aus der Bedingung erster Ordnung
+p(xe +x )+p (xe +x )x = c (x )
+1 2 0 1 2 2 20 2
+erhalten wir die Reaktionsfunktion x = f (xe) von Unternehmen 2.
+2 2 1
+Genauso bekommen wir die Reaktionsfunktion x = f (xe) von
+1 1 2
+Unternehmen 1.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 13/28
+Simultane Festlegung der Mengen
+Wir nennen die beschriebene Situation auch Cournot-Wettbewerb
+(oder Cournot-Spiel).
+Ein Nash-Gleichgewicht im Cournot-Spiel ist eine Mengenkombination
+(xc,xc) so dass xc = f (xc) und xc = f (xc) gilt.
+1 2 1 1 2 2 2 1
+Im Gleichgewicht sind die erwarteten Mengen (xe,xe) mit den
+1 2
+tatsächlich realisierten Mengen identisch!
+Beachte: Die Reaktionsfunktion f im Cournot-Modell sagt nicht, wie
+2
+Unternehmen 2 auf die tatsächlich gewählte Menge von Unternehmen
+1 reagiert, sondern auf die erwartete Menge.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 14/28
+Simultane Festlegung der Mengen
+Wir betrachten wieder das Beispiel mit linearer Nachfrage und
+konstanten Grenzkosten.
+Der erwartete Gewinn von Unternehmen i 1,2 ist
+2 f g
+(a b(x +xe ))x cx .
+i i i i
+(cid:0) (cid:0) (cid:0)
+Es ergibt sich folgende Reaktionsfunktion:
+a c xe
+x i = (cid:0) (cid:0) i.
+2b (cid:0) 2
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 15/28
+Simultane Festlegung der Mengen
+Im Gleichgewicht muss gelten x = xe für i 1,2 . Wir können also
+i i 2 f g
+substituieren und erhalten
+a c a c xi
+x = (cid:0) 2(cid:0)b (cid:0) 2 .
+i
+2b (cid:0) 2
+Daraus erhalten wir das Gleichgewicht
+a c a+2c
+xc = (cid:0) für i 1,2 , pc = .
+i 3b 2 f g 3
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 16/28
+Simultane Festlegung der Mengen
+Das Cournot-Gleichgewicht ist eine stabile Situation: Kein
+Unternehmen hat einen Anreiz, seine Menge zu ändern, nachdem es
+die tatsächlich gewählte Menge des Konkurrenten erfährt.
+Bei symmetrischer Kostenstruktur ist das Ergebnis symmetrisch: Die
+Firmen wählen identische Mengen. Was aber passiert bei
+asymmetrischen Grenzkosten?
+Der Gesamtoutput ist größer als im Monopol, aber kleiner als bei
+vollkommener Konkurrenz.
+Die Summe der Gewinne ist kleiner als im Monopol, aber größer als
+bei vollkommener Konkurrenz.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 17/28
+Simultane Festlegung der Mengen
+Der Gewinn eines Cournot-Duopolisten ist niedriger als der Gewinn
+des Stackelberg-Führers. (Warum?)
+Der Stackelberg-Führer produziert mehr als ein Cournot-Duopolist.
+(Warum?)
+Im Stackelberg-Spiel ist der Anpasser besser informiert als ein
+Duopolist im Cournot-Spiel. Er kann beobachten, welche Menge der
+Stackelberg-Führer auf den Markt wirft. Trotzdem erzielt der
+Stackelberg-Anpasser einen niedrigeren Gewinn als ein
+Cournot-Duopolist. (Warum?)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 18/28
+Simultane Festlegung der Mengen
+Cournot-Gleichgewichte lassen sich auch für Märkte mit mehr als zwei
+Unternehmen berechnen. Wenn die Anzahl der Unternehmen gegen
+∞ konvergiert, so
+konvergiert der Gleichgewichtspreis gegen die Grenzkosten,
+konvergiert die produzierte Menge gegen die Menge bei vollkommener
+Konkurrenz, und
+konvergiert die Summe der Gewinne gegen 0.
+Wir erhalten so eine theoretische Rechtfertigung für das Modell bei
+vollkommener Konkurrenz!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 19/28
+Simultane Festlegung der Preise
+Wir betrachten nun eine weitere Wettbewerbsform: die simultane
+Festlegung der Preise.
+Jedes Unternehmen i 1,2 wählt einen Preis p und bedient alle
+i
+2 f g
+Käufer zu diesem Preis. Da es sich um ein homogenes Gut handelt,
+kaufen alle Konsumenten vom billigsten Anbieter. Wir nennen diese
+Form von Wettbewerb auch Bertrand-Wettbewerb.
+Jedes Unternehmen kann den gesamten Markt bedienen.
+Wenn beide Unternehmen denselben Preis setzten, p = p , teilen sie
+1 2
+sich den Markt.
+Die Grenzkosten sind konstant bei c.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 20/28
+Simultane Festlegung der Preise
+Wir zeigen nun: Es existiert ein einziges Nash-Gleichgewicht!
+In diesem Gleichgewicht setzen beide Unternehmen ihren Preis gleich
+den Grenzkosten.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 21/28
+Simultane Festlegung der Preise
+Es muss gelten: Jedes Unternehmen maximiert seinen Gewinn,
+gegeben den Preis des Konkurrenten.
+Kann es ein Gleichgewicht sein, dass p < c?
+i
+Kann es ein Gleichgewicht sein, dass p > p > c?
+i i
+(cid:0)
+Kann es ein Gleichgewicht sein, dass p > p = c?
+i i
+(cid:0)
+Kann es ein Gleichgewicht sein, dass p = p > c?
+i i
+(cid:0)
+Was bleibt als Kandidat für ein Gleichgewicht?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 22/28
+Simultane Festlegung der Preise
+Das Marktergebnis ist dasselbe wie bei vollkommener Konkurrenz:
+Preis gleich Grenzkosten.
+Man nennt dies auch das Bertrand-Paradox: obwohl es nur zwei
+Anbieter gibt, besitzen diese keine Marktmacht.
+Es gibt eine Reihe von Märkten, die sich gut durch
+Bertrand-Wettbewerb beschreiben lassen, z.B. benachbarte
+Tankstellen, Bieterwettbewerb bei Auktionen, etc.
+Im Bertrand-Wettbewerb gibt es starke Anreize, Preisabsprachen zu
+tre¤en um Gewinne zu steigern.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 23/28
+Aufspaltung von Firmen
+Bisher scheint es so, dass die Aufspaltung eines Monopols in ein
+Duopol die Wohlfahrt immer vergrößern müsste.
+Dies ist allerdings nicht der Fall wenn Firmen komplementäre Güter
+anbieten, wie z.B. Computer und Software.
+Ein berühmter Fall ist der von Microsoft, welches im Jahr 2000 in
+zwei unabhängige Unternehmen aufgespalten werden sollte. Das eine
+Unternehmen sollte die Rechte an Windows erhalten, das andere
+Eigentümer der Anwendungsprogramme werden.
+Wir zeigen, dass dies alle Beteiligten schlechter gestellt hätte.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 24/28
+Aufspaltung von Firmen
+Betrachten wir erst den Monopolfall. Es sei w “Windows”und o
+“O¢ ce”.
+Die Nachfragefunktionen seien
+1
+x = 1 p p ,
+w w o
+(cid:0) (cid:0) 2
+1
+x = 1 p p .
+o o w
+(cid:0) (cid:0) 2
+Die marginalen Kosten sind gleich 0.
+Die Gewinnfunktion des Monopolisten ist
+1 1
+π(p ,p ) = p 1 p p +p 1 p p .
+w o w w o o o w
+(cid:0) (cid:0) 2 (cid:0) (cid:0) 2
+(cid:20) (cid:21) (cid:20) (cid:21)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 25/28
+Aufspaltung von Firmen
+Die BEO für ein Optimum ist dann
+1 2p p = 0,
+w o
+(cid:0) (cid:0)
+1 2p p = 0.
+o w
+(cid:0) (cid:0)
+Daraus ergeben sich die optimalen Preise
+1
+p = p = ,
+w o
+3
+und der Gewinn pro Produkt für den Monopolisten
+1 1 1 1
+1 = .
+3 (cid:0) 3 (cid:0) 6 6
+(cid:20) (cid:21)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 26/28
+Aufspaltung von Firmen
+Nun nehmen wir an, dass die Firmen für w und o ihre Preise
+unabhängig voneinander festlegen.
+Die Gewinnfunktion von Firma w ist
+1
+π(p ) = p 1 p pe .
+w w (cid:0) w (cid:0) 2 o
+(cid:20) (cid:21)
+Die BEO ist daher
+1
+1 2p pe = 0,
+(cid:0) w (cid:0) 2 o
+und die Reaktionsfunktion
+1 1
+p = pe.
+w 2 (cid:0) 4 o
+Genauso erhalten wir die Reaktionsfunktion für Firma o,
+1 1
+p = pe .
+o 2 (cid:0) 4 w
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 27/28
+Aufspaltung von Firmen
+Im Nash Gleichgewicht wählen die beiden Firmen die Preise
+2 1
+p = p = > .
+w o
+5 3
+Der Gewinn pro Produkt ist
+2 2 1 4 1
+1 = < .
+5 (cid:0) 5 (cid:0) 5 25 6
+(cid:20) (cid:21)
+Alle Parteien stellen sich also strikt schlechter, wenn das Monopol in
+ein Duopol aufgespalten wird!
+Erklären Sie die Intuition für dieses Ergebnis!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 6.WettbewerbII 28/28

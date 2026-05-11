@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2026-04-30",
+    "title": "Reminder: GenAI-Experiment",
+    "author": "Pfister, Zoe Michaela Dietmar",
+    "body": "Liebe Studierende,\nmacht mit bei unserem GenAI-Experiment und bearbeitet spannende, praxisnahe Aufgaben im Bereich Projektmanagement.\nTermine:\n04.05.2026, 12:00–13:30, RR15\n05.05.2026, 17:00–18:30, RR15\nFür die Teilnahme erhaltet ihr 2,5 % Bonus auf die PS Software Engineering Bewertung.\nJetzt anmelden:\nhttps://lms.uibk.ac.at/auth/RepositoryEntry/6033703148/CourseNode/113705787646655"
+  },
+  {
+    "date": "2026-04-01",
+    "title": "Info zum Axios-Incident",
+    "author": "Pfister, Zoe Michaela Dietmar",
+    "body": "Liebe Studierende,\nwie einige von euch möglicherweise bereits mitbekommen haben, wurde die äußerst beliebte JavaScript HTTP client library `axios` von einer Supply-Chain Attack getroffen. Dabei geht es um die Versionen\naxios@1.14.1 or axios@0.30.4\n, die am 31.03.2026 erschienen sind.\nAuch das Skeleton-Projekt verwendet diese Dependency,\nallerdings in einer nicht betroffenen Version\n. Konkret ist über die `package-lock.json` File definiert, dass im Projekt Version 1.13.5 verwendet wird (siehe\nhttps://git.uibk.ac.at/informatik/qe/swa_swe/swe/swe-skeleton/-/blob/main/src/main/frontend/package-lock.json?ref_type=heads#L1584-1594\n). Ein `npm install` führt hier also zur Installation von Version 1.13.5 (\nhttps://docs.npmjs.com/cli/v11/commands/npm-install\n).\nWarum wir euch trotzdem informieren: Solltet ihr allerdings die Dependencies mittels `npm update` manuell aktualisiert haben, könnte es sein, dass eine betroffene Version installiert wurde. Daher diese Meldung. Mehr Informationen über den Exploit findet ihr unter\nhttps://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan\n.\nSupply-Chain Attacks sind mittlerweile kein Einzelfall mehr (vgl. xz Backdoor letztes Jahr). NPM bietet mittlerweile sogar die Möglichkeit, ein\n`min-release-age`\nzu setzen, damit keine Packages jünger als x Tage installiert werden.\nBleibt wachsam und vergesst nicht auf eure Backups!\nSchöne Grüße\nDie LV-Leitung"
+  },
+  {
+    "date": "2026-03-12",
+    "title": "Konfiguration Router-Netz am Raspberry Pi",
+    "author": "Jäger, Alexandra Rosa",
+    "body": "Liebe Studierende,\nwie in den Proseminaren angekündigt findet am 23.03 die Demonstration des Durchstichs im Proseminar statt - die 3 Systemkomponenten sind erfolgreich verbunden und können (einfachste) Nachrichten austauschen.\nUm auf dem Universitätsgelände die Kommunikation zwischen Raspberry PI und der Webapplikation zu ermöglichen, sollte sich beide im gleichen Netz befinden. Wenn Sie dafür den von uns bereitgestellten Router nutzen möchten, möchten wir Sie bitten, die WLAN Konfiguration des Raspberry PI für das Routernetz bei ihnen zuhause vorzunehmen. Die entsprechenden Login-Daten befinden sich im OLAT. Leider mussten wir feststellen, dass die Bildschirme in den Rechnerräumen keine HDMI Eingänge besitzen, weshalb diese Vor-Konfiguration mit einem Bildschirm zuhause für Sie die einfachste Möglichkeit darstellt. Wir bemühen uns, entsprechende Kabel für die Konfiguration in den Rechnerräumen zu besorgen, können das aber nicht bis zum 23.03 garantieren.\nIn den Proseminaren am 16.03 können Sie die Verbindung mit dem Router erneut testen.\nBeste Grüße, die LV-Leitung"
+  },
+  {
+    "date": "2026-03-10",
+    "title": "Verschiebung BLE Crashcourse",
+    "author": "Mussmann, Andrea",
+    "body": "Sehr geehrte Kursteilnehmer:innen,\nWegen Krankheit muss der Vortrag BLE Crashcourse auf\nDienstag, 17.3.2026, 17:15-18:45\nverschoben werden.\nVielen Dank für Ihr Verständnis.\nMfG, die LV-Leitung"
+  },
+  {
+    "date": "2026-03-05",
+    "title": "Berichtigung Raum Arduino Workshop",
+    "author": "Mussmann, Andrea",
+    "body": "Sehr geehrte Kursteilnehmer:innen,\nWir wurden darauf hingewiesen, dass wir für den Arduino Workshop am Dienstag, 10.3.2026, irrtümlich den falschen Raum angegeben haben.\nDer Workshop findet an der Technik im HSB 2 statt.\nVielen Dank!\nMfG, die LV-Leitung"
+  },
+  {
+    "date": "2026-03-02",
+    "title": "Willkommen im PS Software Engineering",
+    "author": "Mussmann, Andrea",
+    "body": "Sehr geehrte Kursteilnehmer:innen,\nWir möchten Sie herzlich im Kurs \"PS Software Engineering (703080)\" willkommen heißen.\nAufgrund der beschränkten Kurszeiten und Kapazitäten in den Proseminargruppen war es leider nicht möglich allen Wünschen (Kurszeit, Teamzusammensetzung) voll umfänglich nachzukommen. Zum jetzigen Zeitpunkt ist es der PS-Leitung nicht mehr möglich, einzelnen einseitigen Änderungswünschen nachzukommen. Wenn ein Wechsel in eine andere PS-Gruppe gewünscht ist, muss dafür ein/eine KursteilnehmerIn in der anderen Gruppe bereit sein, die Gruppe zu tauschen. Sie können das Diskussionsthema Wechsel PS-Gruppe im OLAT Kurs der LVA benutzen, um wechselwillige KursteilnehmerInnen zu finden.\nWir möchten an dieser Stelle darauf hinweisen, dass der im letzten Semester im Kurs \"Softwarearchitektur\" vorgestellte Technologie-Stack eingesetzt werden muss. Es wird zudem vorausgesetzt, dass Sie mit den Inhalten aus vorangegangenen Kursen - insbesondere Programmiermethodik und Softwarearchitektur - vertraut sind (siehe Empfohlener Studienverlauf).\nIm Baustein Aufgabenstellung finden Sie die diesjährige Aufgabenstellung für das PS-Projekt.\nMit freundlichen Grüßen,\nDie LVA-Leitung"
+  }
+]

@@ -1,0 +1,305 @@
+Einführung in die Theoretische Informatik
+1. Vorlesungsklausur für das WS24/25 am 31.01.2025 (Musterlösung) Gruppe B1
+Name:
+Matrikelnummer:
+Unterschrift:
+Diese Klausur ist closed-book. Sie haben 90 Minuten Zeit. Insgesamt gibt es 100 Punkte, die sich wie folgt
+aufteilen: 24 Punkte für die Multiple-Choice-Fragen 1 bis 6 und 19 Punkte für die offenen Fragen 7 bis 10.
+DieAntwortderMultiple-Choice-FragenmüssensieaufdemDeckblatt(dieseSeite)angeben,indemSiejeweils
+T (Wahr) oder F (Falsch) in die entsprechende Box eintragen. Beachten Sie, dass auch mehrere Antworten
+richtig sein können. Pro richtige Antwort bekommen Sie einen Punkt, pro falsche Antwort werden Ihnen 2
+Punkte abgezogen. Wenn Sie keine Antwort geben, gibt es keine Punktabzüge. Es ist auch nicht möglich, für
+eine gesamte Aufgabe Minuspunkte zu erhalten. Ihre Note wird dann durch den angegebenen Notenschlüssel
+berechnet.
+FallsSiemehrPlatzbrauchen,gebenwirIhnengernezusätzlicheZettel,verwendenSiekeinesfallseigeneZettel!
+Viel Erfolg!
+Notenschlüssel:
+Punkte ⩾90 ⩾75 ⩾60 ⩾50 <50
+Note Sehr Gut Gut Befriedigend Genügend Nicht Genügend
+1. (a) X (b) (c) (d)
+2. (a) (b) X (c) X (d)
+3. (a) (b) (c) X (d) X
+4. (a) (b) X (c) X (d) X
+5. (a) X (b) (c) X (d) X
+6. (a) (b) X (c) (d) X
+7. / 19 Punkte
+8. / 19 Punkte
+9. / 19 Punkte
+10. / 19 Punkte
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+1. (4 Punkte) Welche der folgenden Aussagen sind richtig?
+a) Die Formel (¬x∧¬p)∧(x∨p) ist unerfüllbar.
+b) Die Formel (¬(w→r)∨x)∧(p→x) ist unerfüllbar.
+c) Die Formel (False∧(True∨p))∧t∧x∧p ist eine Tautologie.
+d) Die Formel ((p → (t∧x))∧(x → w)) → ((t → ¬r) → (p → ¬r)) ist erfüllbar aber keine
+Tautologie.
+2
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+Solution
+a) Wahr.
+b) Falsch. Die Formel ist erfüllbar aber keine Tautologie.
+c) Falsch. Die Formel ist unerfüllbar.
+d) Falsch. Die Formel ist eine Tautologie.
+3
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+2. (4 Punkte) Betrachten Sie die formalen Sprachen L={ϵ,0,10,100,110}, M ={1,11,101,111} und
+N ={0,1}∗. Welche der folgenden Aussagen sind richtig?
+a) L∪M ={0,1,10,11,100,101,110,111}
+b) L∩N ={ϵ,0,10,100,110}
+c) L∪(M ∩N)={ϵ,0,1,10,11,100,101,110,111}
+d) L∪(M ∩N)={ϵ,0,1,10,100,101,110,111}
+4
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+Solution
+a) Falsch
+b) Wahr
+c) Wahr
+d) Falsch
+5
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+3. (4 Punkte) Welche der folgenden Anordnungen der Chomsky-Hierarchie sind richtig?
+Zur Erinnerung:
+L =reguläre Sprachen L =rekursiv aufzählbare Sprachen
+3 0
+L =kontextfreie Sprachen L=formale Sprachen
+2
+L =kontextsensitive Sprachen
+1
+Hier bezeichnet ⊆ die Teilmengenbeziehung und ⊊ die echte Teilmengenbeziehung; ähnlich für ⊋.
+a) L =L =L =L =L
+3 2 1 0
+b) L ⊋L ⊋L ⊋L ⊋L
+3 2 1 0
+c) L ⊆L ⊆L ⊆L ⊆L
+3 2 1 0
+d) L ⊊L ⊊L ⊊L ⊊L
+3 2 1 0
+6
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+Solution
+a) Falsch
+b) Falsch
+c) Wahr
+d) Wahr
+7
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+4. Betrachten Sie die folgende Grammatik G=({M,E},{b,r,(,)},R,M).
+Regeln R der Grammatik G:
+M →rEb|ϵ
+E →M |(bEr)
+Welche der folgenden Aussagen sind im Bezug auf diese Grammatik korrekt?
+a) Die Grammatik ist rechtslinear
+b) Die Grammatik ist kontextfrei
+c) Die Grammatik erzeugt eine kontextsensitive Sprache
+d) Die Grammatik erzeugt eine rekursiv aufzählbare Sprache
+8
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+Solution
+a) Falsch
+b) Wahr
+c) Wahr
+d) Wahr
+9
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+5. Welche der folgenden Ableitungen sind im Bezug auf die Grammatik G=({S,T,U},{a,b,c},R,S)
+korrekt? (Die Ableitung kann auch partiell sein.)
+Regeln R der Grammatik G:
+S →aTb|aU |ϵ
+aTb→aaaTbb|aaTbbb|bTa|Sbb
+U →aaU |Sc
+a) S ⇒aTb⇒aaTbbb⇒aaaaTbbbb⇒aaaSbbbbb⇒aaabbbbb
+b) S ⇒aU ⇒aaaU ⇒aaaSc⇒aaaaaaTbbc⇒aaaaTbc
+c) S ⇒aTb⇒aaaTbb⇒aaSbbb⇒aaaTbbbb
+d) S ⇒aU ⇒aaaU ⇒aaaSc⇒aaaaUc⇒aaaaaaUc
+10
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+Solution
+a) Wahr
+b) Falsch
+c) Wahr
+d) Wahr
+11
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+6. (4 Punkte) Seien L und M formale Sprachen mit L ⩽p M. Welche der folgenden Aussagen zu
+Reduktionen sind richtig?
+a) Wenn L∈NP dann auch M ∈NP.
+b) Wenn M ∈P dann auch L∈P.
+c) Wenn L∈P dann auch M ∈P.
+d) Wenn M ∈NP dann auch L∈NP.
+12
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+Solution
+a) Falsch
+b) Wahr
+c) Falsch
+d) Wahr
+13
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+7. (19 Punkte) Zeigen Sie im Kalkül NK des natürlichen Schließens, dass
+¬¬(q →p)∨(¬r →p), q →¬r ⊢ q →p
+Verwenden sie hierfür ausschließlich die folgenden Regeln:
+Einführung Elimination
+A B A∧B A∧B
+∧ ∧: i ∧: e ∧: e
+A∧B A B
+A B
+. .
+. .
+. .
+A∨B C C
+A B
+∨ ∨: i ∨: i ∨: e
+A∨B A∨B C
+A
+.
+.
+.
+B
+A A→B
+→ →: i →: e
+A→B B
+A
+.
+.
+.
+False
+A ¬A
+¬ ¬: i ¬: e
+¬A False
+False
+False False: e
+A
+¬¬A
+¬¬ ¬¬: e
+A
+14
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+Solution
+Zeigen Sie im Kalkül NK des natürlichen Schließens, dass
+¬¬(q →p)∨(¬r →p), q →¬r ⊢ q →p
+1 ¬¬(q →p)∨(¬r →p) Prämisse
+2 q →¬r Prämisse
+3 ¬¬(q →p) Annahme
+4 q →p ¬¬: e 3
+5 ¬r →p Annahme
+6 q Annahme
+7 ¬r →: e 6,2
+8 p →: e 7,5
+9 q →p →: i 6–8
+10 q →p ∨: e 1,3–4,5–9
+Alternativ:
+1 ¬¬(q →p)∨(¬r →p) Prämisse
+2 q →¬r Prämisse
+3 q Annahme
+4 ¬r →: e 3,2
+5 ¬¬(q →p) Annahme
+6 q →p ¬¬: e 5
+7 p →: e 3,6
+8 ¬r →p Annahme
+9 p →: e 4,7
+10 p ∨: e 2,5–6,7–9
+11 q →p →: i 3–9
+15
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+8. a) (9 Punkte) Betrachten Sie die folgende formale Sprache über dem Alphabet Σ={a,b}:
+L ={xaa|x∈Σ∗}
+1
+Finden Sie eine Grammatik G mit L(G )=L .
+1 1 1
+b) Betrachten Sie die folgende Grammatik G = ({S,T},{a,b,c},R ,S), mit R gegeben durch
+2 2 2
+die Regeln
+S →ϵ|aTbTc
+aT →cc
+bT →T
+cT →c
+• (2 Punkte) Geben Sie in G eine Ableitung für das Wort ccc an.
+2
+• (4 Punkte) Bestimmen Sie den Typ der Grammatik G so genau wie möglich.
+2
+• (4 Punkte) Bestimmen Sie die von G erzeugte Sprache L(G ).
+2 2
+16
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+Solution
+a) G =({S},{a,b},R,S), mit R gegeben durch die Regeln
+1
+S →aa|aS |bS
+b) • S ⇒aTbTc⇒ccbTc⇒ccTc⇒ccc
+• Die Grammatik G ist kontextsensitiv.
+2
+• L(G )={ϵ,ccc}
+2
+17
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+9. a) (12 Punkte) Wir betrachten das Alphabet Σ={0,1,2} und darauf die Sprache L, die aus den
+Wörter besteht, die 012 oder 102 enthalten. Das heißt
+L={x012y |x,y ∈Σ∗}∪{x102y |x,y ∈Σ∗}.
+KonstruierenSieeinendeterministischenendlichenAutomatenA,mitwenigerals10Zuständen,
+sodass L(A) = L gilt. Geben Sie ihren Automaten als Zustandsgraphen an. Automaten mit
+mehr Zuständen erhalten 0 Punkte.
+b) (7 Punkte) Gegeben sei ein Alphabet Σ und ein Automat mit Zuständen Q und Übergangs-
+funktion δ. Beweisen Sie mittels Induktion auf y, dass die erweiterte Übergangsfunktion
+(cid:40)
+q x=ϵ
+δˆ:Q×Σ∗ →Q, δˆ(q,x)=
+δ(δˆ(q,y),a) x=ya
+die folgende Eigenschaft erfüllt:
+∀q ∈Q:∀x,y ∈Σ∗ :δˆ(δˆ(q,x),y)=δˆ(q,xy).
+18
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+Solution
+a) Es sei
+A=(Σ={0,1,2},Q={1,2,3,4,5,6},Q ={4},s=1,δ)),
+f
+wobei δ über den folgenden Zustandsgraphen definiert ist:
+0
+1
+2 3
+0 2
+2
+2
+1
+start 1 1 0 4 0 1 2
+0
+2
+1 2
+5 6
+0
+1
+b) Es seien q ∈Q und x∈Σ∗. Wir zeigen die Aussage durch Induktion auf y:
+• y =ϵ: δˆ(δˆ(q,x),ϵ)=δˆ(q,x)=δˆ(q,xϵ).
+• y =za: δˆ(δˆ(q,x),za)=δ(δˆ(δˆ(q,x),z),a) I = V δ(δˆ(q,xz),a)=δˆ(q,xza).
+19
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+10. (19 Punkte) Geben Sie eine totale, deterministische 1-Band-Turingmaschine M mit dem Eingabeal-
+phabet {z,x,y} an, die für eine Eingabe der Form zn (mit n≥0) die Ausgabe xnyn produziert.
+Das heißt: Falls der Bandinhalt initial von der Form
+⊢zz...z⊔∞
+(cid:124) (cid:123)(cid:122) (cid:125)
+n mal
+ist, so landet die Maschine in endlich vielen Schritten im akzeptierenden Zustand t und der Bandin-
+halt ist dann:
+⊢xx...xyy...y⊔∞
+(cid:124) (cid:123)(cid:122) (cid:125)(cid:124) (cid:123)(cid:122) (cid:125)
+n mal n mal
+Beachten Sie dabei:
+• Ihre Maschine darf, abgesehen von den akzeptierenden und verwerfenen Zuständen t und r,
+höchstens3weitereZuständehaben.MaschinenmitmehrZuständenerhalten0Punkte.
+• GebenSieIhreMaschinewieausderVorlesungbzw.derSLbekanntgraphischalsZustands-
+übergangsgraph an.
+• Zustandsübergänge, die für die Korrektheit der Maschine irrelevant sind (z.B. weil sie uner-
+reichbar sind) sowie die Übergänge von den akzeptierenden/verwerfenden Zuständen dürfen
+weggelassen werden.
+• Das Verhalten der Maschine auf Eingaben, die nicht von der Form zn sind, sowie die Position
+des Lese-/Schreibkopfes am Ende der Ausführung sind egal.
+20
+1. VO-Klausur ETI WS24/25 Gruppe B1 (Musterlösung)
+Solution
+z/z/R z/z/L
+⊢/⊢/R y/y/R y/y/L
+z/x/R ⊔/y/L
+⊔/⊔/L x/x/R
+y/y/L
+t r
+21

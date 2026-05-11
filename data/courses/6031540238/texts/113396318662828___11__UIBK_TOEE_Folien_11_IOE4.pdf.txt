@@ -1,0 +1,385 @@
+Theorie ökonomischer Entscheidungen
+Prof. Dr. Heiner Schumacher
+UIBK
+11. Informationsökonomie IV
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 1/32
+Moralisches Risiko - Überblick
+Wenn zwischen den beteiligten Parteien beim Vertragsabschluss
+symmetrische Information besteht und sich eine
+Informationsasymmetrie erst im Laufe der Beziehung entwickelt,
+sprechen wir von moralischem Risiko (oder Moral Hazard).
+Beispiele: Versicherungen, “Too-big-to-fail”, etc.
+Im letzten Teil der Informationsökonomie beschäftigen wir uns damit,
+wie Parteien bei moralischem Risiko miteinander handeln.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 2/32
+Moralisches Risiko - Überblick
+Der Begri¤ “moralisches Risiko”kommt aus der
+Versicherungswirtschaft. Versicherungsunternehmen unterscheiden
+zwei Arten von Risiko.
+Objektives Risiko: Das unvermeidbare Risiko eines Blitzschlages,
+einer Krebserkrankung, eines bestimmten Unfalls, etc.
+Moralisches Risiko: Der Teil des Risikos, bei dem die
+Eintrittswahrscheinlichkeit oder die Schadenshöhe durch den
+Versicherten beein‡usst werden kann.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 3/32
+Das Eigentümer-Manager-Problem
+Ein klassisches Problem des moralischen Risikos ist der Kon‡ikt
+zwischen dem Eigentümer und dem Manager eines Unternehmens.
+Informationsasymmetrie. Die Eigentümer können das Verhalten des
+Managers nicht perfekt beobachten. Selbst wenn sie die
+Entscheidungen des Managers beobachten können, wissen Sie nicht,
+aufgrund welcher Informationen diese Entscheidungen getro¤en
+wurden.
+Interessengegensatz. Die Eigentümer möchten, dass der Manager
+den Gewinn des Unternehmens maximiert. Der Manager will dagegen
+seinen eigenen Nutzen maximieren, d.h., tendenziell weniger hart
+arbeiten und mehr “perks”(großer Firmenwagen, repräsentatives
+Büro, sinnlose Firmenakquisitionen) genießen, als es den Eigentümern
+recht ist.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 4/32
+Einleitung
+Überblick
+Das Eigentümer-Manager-Problem
+Der optimale Vertrag unter symmetrischer Information
+Der optimale Vertrag unter asymmetrischer Information
+Weitere Ergebnisse
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 5/32
+Das Eigentümer-Manager-Problem
+Ab sofort bezeichnen wir den Eigentümer als Prinzipal und den
+Manager als Agenten.
+Die möglichen Gewinne des Unternehmens sind x x ,x ,...,x ,
+1 2 n
+2 f g
+wobei x < x < ... < x .
+1 2 n
+Der Agent wählt zwischen “niedriger Anstrengung”al und “hoher
+Anstrengung”ah.
+Die Kosten dieser Aktionen für den Agenten sind
+C(ah) = c > C(al) = 0.
+Wenn der Agent nicht für den Prinzipal arbeitet, erhält er seinen
+Reservationsnutzen V¯.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 6/32
+Das Eigentümer-Manager-Problem
+Die Aktion des Agenten bestimmt die Wahrscheinlichkeitsverteilung
+über x:
+n
+a = ah ph = (ph,ph,...,ph), ph > 0, ∑ ph = 1,
+1 2 n i i
+)
+i=1
+n
+a = al pl = (pl,pl,...,pl), pl > 0, ∑ pl = 1.
+1 2 n i i
+)
+i=1
+Der Erwartungswert ist höher, wenn der Agent ah wählt:
+n n
+∑ phx > ∑ plx .
+i i i i
+i=1 i=1
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 7/32
+Das Eigentümer-Manager-Problem
+Es sei w der Lohn, den der Prinzipal an den Agenten bezahlt.
+Der Prinzipal ist risikoneutral und hat die Nutzenfunktion
+π = x w.
+(cid:0)
+Der Agent ist risikoavers und hat die Nutzenfunktion
+V = U(w) C(a)
+(cid:0)
+wobei U (w) > 0 und U (w) < 0 gilt.
+0 00
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 8/32
+Das Eigentümer-Manager-Problem
+Zeitstruktur
+1 Der Prinzipal bietet einen Vertrag w(x) an.
+2 Der Agent entscheidet, ob er er den Vertrag akzeptiert und für den
+Prinzipal arbeitet, oder ob er ihn ablehnt; in diesem Fall ist das Spiel
+beendet, der Prinzipal bekommt 0 und der Agent V¯.
+3 Wenn der Agent den Vertrag annimmt, wählt er seine Aktion a.
+4 Der Gewinn x wird realisiert, der Prinzipal erhält x w(x) und der
+(cid:0)
+Agent den Nutzen aus w(x).
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 9/32
+Der optimale Vertrag unter symmetrischer Information
+Angenommen, es gäbe keine Informationsprobleme und die Aktion des
+Agenten könnte vertraglich kontrolliert werden (“…rst best”).
+Welche Aktion des Agenten und welche Lohnfunktion w(x) würde
+dann den erwarteten Gewinn des Prinzipals maximieren? Wir gehen in
+zwei Schritten vor:
+1 Wir müssen zunächst für jede mögliche Aktion das optimale
+Lohnschema bestimmen, mit dem der Prinzipal diese Aktion zu
+minimalen Kosten implementieren kann.
+2 Im zweiten Schritt fragen wir, welche Aktion der Prinzipal gerne
+implementieren möchte, gegeben die in (1.) bestimmten Kosten.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 10/32
+Der optimale Vertrag unter symmetrischer Information
+Beachten Sie, dass der Vertrag auf a konditionieren kann.
+Das heißt, dass der Prinzipal dem Agenten eine sehr hohe Strafe
+auferlegen kann, wenn er nicht die gewünschte Aktion wählt.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 11/32
+Der optimale Vertrag unter symmetrischer Information
+Beginnen wir mit der Aktion ah.
+Der optimale Vertrag löst das Problem
+n
+max ∑ ph(x w )
+i i i
+wi
+i=1
+(cid:0)
+unter der Partizipationsbedingung (PC) des Agenten
+n
+∑ phU(w ) c V¯.
+i i
+(cid:0) (cid:21)
+i=1
+Im Optimum muss die (PC) mit Gleichheit erfüllt sein. (Warum?)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 12/32
+Der optimale Vertrag unter symmetrischer Information
+Wir lösen das Maximierungsproblem mit dem Lagrange-Ansatz:
+n n
+L = ∑ ph(x w ) λ V¯ ∑ phU(w )+c .
+i i i i i
+(cid:0) (cid:0) (cid:0)
+i=1 " i=1 #
+Die Bedingungen erster Ordnung sind
+∂L
+= ph +λphU (w ) = 0,
+∂w (cid:0) i i 0 i
+i
+∂L = ∑ n phU(w ) c V¯ = 0.
+i i
+∂λ (cid:0) (cid:0)
+i=1
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 13/32
+Der optimale Vertrag unter symmetrischer Information
+Damit erhalten wir den optimalen Vertrag. Aus der ersten Bedingung
+erster Ordnung erhalten wir
+1
+= λ für alle i.
+U (w )
+0 i
+Das bedeutet w = w... = w = w¯(ah), wobei w¯(ah) der Lohn ist,
+1 n
+den der Agent bekommt, wenn er ah wählt.
+Der konstante Lohn bietet dem Agenten eine vollständige
+Versicherung!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 14/32
+Der optimale Vertrag unter symmetrischer Information
+Aus der zweiten Bedingung erster Ordnung erhalten wir dann
+U w¯(ah) c = V¯.
+(cid:0)
+(cid:16) (cid:17)
+Wir können diese Gleichung schreiben als
+w¯(ah) = U 1(V¯ +c).
+(cid:0)
+Der Agent wird also für seine “Outside Option”und seine
+Anstrengungskosten exakt kompensiert!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 15/32
+Der optimale Vertrag unter symmetrischer Information
+Ganz analog können wir die optimale Lohnfunktion für die Aktion al
+bestimmen. Auch hier ergibt sich ein konstanter Lohn, diesmal mit
+w(al) = U 1(V¯). (Warum?)
+(cid:0)
+Der Prinzipal wählt dann den Vertrag aus, welcher ihm den höchsten
+erwarteten Gewinn bietet:
+n n
+∑ phx U 1(V¯ +c) versus ∑ plx U 1(V¯).
+i i (cid:0) i i (cid:0)
+(cid:0) (cid:0)
+i=1 i=1
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 16/32
+Der optimale Vertrag unter symmetrischer Information
+Der optimale Vertrag zahlt dem Agenten einen …xen Lohn, wenn er
+die richtige Aktion wählt.
+Wenn der Agent diese Aktion nicht wählt, wird er so hart bestraft,
+dass sich ein Abweichen für ihn nicht lohnt.
+Sowohl die Risikoallokation ist e¢ zient (der risikoaverse Agent ist
+vollständig versichert, der risikoneutrale Prinzipal trägt das gesamte
+Risiko), als auch die implementierte Aktion (der Agent wählt die
+Aktion welche die Wohlfahrt der beiden Parteien maximiert).
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 17/32
+Der optimale Vertrag unter asymmetrischer Information
+Jetzt kommen wir zum interessanten Fall: Der Prinzipal kann a nicht
+mehr beobachten. Daher kann der Vertrag auch nicht mehr auf a
+konditionieren.
+Wie sieht nun der optimale Vertrag aus?
+Bei einem …xen Lohn würde der Agent immer al wählen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 18/32
+Der optimale Vertrag unter asymmetrischer Information
+Ein Vertrag der ah implementiert, muss dem Agenten mehr bezahlen,
+wenn ein Zustand der Welt eintri¤t, der unter ah wahrscheinlicher ist
+als unter al.
+Wir gehen wieder in zwei Schritten vor:
+1 Für jede mögliche Aktion bestimmen wir den optimalen Lohnvertrag,
+der diese Aktion zu minimalen Kosten implementiert.
+2 Dann fragen wir, welche Aktion der Prinzipal implementieren will.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 19/32
+Der optimale Vertrag unter asymmetrischer Information
+Der optimale Vertrag der ah implementiert ist eine Lösung des
+Maximierungsproblems
+n
+max ∑ ph(x w )
+i i i
+wi
+i=1
+(cid:0)
+unter der Partizipationsbedingung (PC)
+n
+∑ phU(w ) c V¯
+i i
+(cid:0) (cid:21)
+i=1
+und unter der Anreizverträglichkeitsbedingung (IC)
+n n
+∑ phU(w ) c ∑ plU(w ).
+i i i i
+(cid:0) (cid:21)
+i=1 i=1
+Die Anreizverträglichkeitsbedingung stellt sicher, dass es sich für den
+Agenten nicht lohnt, den Vertrag zu unterschreiben und al zu wählen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 20/32
+Der optimale Vertrag unter asymmetrischer Information
+Der Lagrange-Ansatz ist also
+n n
+L = ∑ ph(x w ) λ V¯ ∑ phU(w )+c
+i i i i i
+(cid:0) (cid:0) (cid:0)
+i=1 " i=1 #
+n n
+µ ∑ plU(w ) ∑ phU(w )+c .
+i i i i
+(cid:0) (cid:0)
+"i=1 i=1 #
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 21/32
+Der optimale Vertrag unter asymmetrischer Information
+Die Bedingungen erster Ordnung sind:
+∂L
+= ph +λphU (w ) µ(pl ph)U (w ) = 0,
+∂w (cid:0) i i 0 i (cid:0) i (cid:0) i 0 i
+i
+∂L = ∑ n phU(w ) V¯ c = 0,
+i i
+∂λ (cid:0) (cid:0)
+i=1
+∂L = ∑ n (ph pl)U(w ) c = 0.
+i i i
+∂µ (cid:0) (cid:0)
+i=1
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 22/32
+Der optimale Vertrag unter asymmetrischer Information
+Damit können wir wieder den optimalen Vertrag charakterisieren. Es
+muss gelten:
+1 pl
+= λ+µ 1 i für alle i 1,2,...,n .
+U (w ) (cid:0) ph 2 f g
+0 i (cid:18) i (cid:19)
+Die Lagrange-Multiplikatoren sind positive Konstanten. (Warum?)
+Das bedeutet, dass der Lohn nicht konstant ist, sondern sich mit der
+pl
+Likelihood-Ratio i verändert.
+ph
+i
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 23/32
+Der optimale Vertrag unter asymmetrischer Information
+Das Ergebnis ist ine¢ zient. Obwohl der Agent risikoavers und der
+Prinzipal risikoneutral ist, wird der Agent nicht vollständig versichert!
+Der Prinzipal versucht, den Agenten durch eine Beteiligung am
+Gewinn zur Wahl von a = ah zu bringen und gleichzeitig die
+Risikoprämie so niedrig wie möglich zu halten.
+Der second-best-optimale Vertrag scha¤t die bestmögliche
+Abwägung zwischen optimaler Risikoallokation und optimalen
+Anreizen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 24/32
+Der optimale Vertrag unter asymmetrischer Information
+Da die Anreizverträglichkeitsbedingung bindet, muss gelten:
+n n
+∑ phU(w ) c = ∑ plU(w ).
+i i i i
+(cid:0)
+i=1 i=1
+Der Agent ist also gerade indi¤erent zwischen hoher und niedriger
+Anstrengung. Im Gleichgewicht wird er aber dennoch hart arbeiten.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 25/32
+Der optimale Vertrag unter asymmetrischer Information
+Da die Partizipationsbedingung bindet, muss gelten:
+n
+∑ phU(w ) c = V¯.
+i i
+(cid:0)
+i=1
+Der Agent ist wieder indi¤erent zwischen diesem Vertrag und seinem
+Reservationsnutzen. Er bekommt eine Kompensation die genau sein
+getragenes Risiko und seine Anstrengungskosten abdeckt.
+Der erwartete Lohn des Agenten ist dabei aber höher als der ohne
+Informationsasymmetrie. (Warum?)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 26/32
+Der optimale Vertrag unter asymmetrischer Information
+Wie verändert sich der Lohn des Agenten, wenn der Gewinn von x
+i
+auf x steigt?
+i+1
+Die Likelihood-Ratio fällt:
+pl pl
+i > i+1 U (w) muss fallen w > w .
+ph ph ) 0 ) i+1 i
+i i+1
+Die Likelihood-Ratio steigt:
+pl pl
+i < i+1 U (w) muss steigen w < w .
+ph ph ) 0 ) i+1 i
+i i+1
+Daher wird der Agent belohnt, wenn es wahrscheinlicher wird, dass er
+hart gearbeitet hat, und bestraft, wenn es wahrscheinlicher wird, dass
+er faul war.
+Beachten Sie, dass der Lohn des Agenten durchaus fallen kann,
+wenn der Gewinn des Prinzipals steigt!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 27/32
+Der optimale Vertrag unter asymmetrischer Information
+Wie sieht der optimale Vertrag aus, wenn der Prinzipal al
+implementieren will?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 28/32
+Weitere Ergebnisse
+Zusätzliche Information
+Angenommen, der Prinzipal kann außer dem Gewinn x noch ein
+zweites Signal y beobachten. Sollte der optimale Vertrag auf diese
+zusätzliche Information konditionieren?
+Ja, genau dann, wenn dieses Signal zusätzliche statistische
+Information über die Wahl der Aktion des Agenten enthält!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 29/32
+Weitere Ergebnisse
+Risikoneutraler Agent
+Wie sieht der optimale Vertrag aus, wenn a nicht beobachtbar ist, der
+Agent aber ebenfalls risikoneutral ist?
+Dann ist es egal, wer das Risiko trägt. Der folgende Vertrag wäre
+…rst-best-optimal:
+w = x K,
+i i
+(cid:0)
+wobei K so gewählt ist, dass der Agent wieder gerade seinen
+Reservationsnutzen erhält.
+Interpretation: Der Prinzipal verkauft dem Agenten das Geschäft zum
+Preis K.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 30/32
+Weitere Ergebnisse
+Lässt sich das Prinzipal-Agenten Modell empirisch belegen?
+Das Prinzipal-Agenten Modell hat mehrere empirische Implikationen.
+Eine davon ist, dass es weniger monetäre Anreize geben sollte, wenn
+das wirtschaftliche Umfeld riskanter ist. (Warum?)
+Diese Vorhersage wurde in einer Vielzahl von Studien überprüft.
+Die Resultate sind gemischt: Für CEOs erhält man manchmal eine
+positive, und manchmal eine negative Korrelation zwischen monetären
+Anreizen und Risiko.
+Für Unternehmensgründer ergibt sich eine negative Korrelation: je
+riskanter das wirtschaftliche Umfeld, desto geringer ist der
+Eigenkapitalanteil des Gründers.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 31/32
+Weitere Ergebnisse
+Vermögensbeschränkte Agenten
+Aktienoptionen
+Relative Leistungsbeurteilung
+Karriereanreize
+Anreize für Arbeitsgruppen
+Anreize für multiple Aufgaben
+Intrinsische Motivation
+Fairness, Reziprozität
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 11.InformationsökonomieIV 32/32

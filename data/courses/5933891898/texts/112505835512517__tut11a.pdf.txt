@@ -1,0 +1,181 @@
+Tutorium — Functional Programming
+Week 11a — Modules and Scopes
+Adam Pescoller
+T. Niederbrunner & J. Bodemann (for courteously providing their materials)
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 0/9
+Modules
+• To organize code
+• Are a collection of functions, types and type classes
+• The module Prelude is included by default
+• Contains all the built-in functions we’ve been using so far
+Syntax:
+• Create module: module MyModule(x,y,z) where
+• Import everything from a module: import MyModule
+• Import something specific: import MyModule(x,y,z)
+• Qualified import: import qualified MyModule
+• Helps avoiding name conflicts by requiring use of Module name to use
+function/type/etc.: MyModule.testFunction
+• Exclude someting of a module:
+import MyModule hiding (x,y,z)
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 1/9
+Exercise 11.1: Creating Modules
+Create a new module called Coordinates. It should Contain
+• type Coordinate = (Double, Double)
+• a function scalarAdd to add two Coordinates.
+• a function scalarProduct for a scalar product.
+• a function euclidNorm for the Euclidean norm.
+Export all those functions from the Module
+Bonus question: What happens if you define pi in this module?
+pi :: Double
+pi = 3.1415
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 2/9
+Exercise 11.1: Possible Solution
+type Coordinate = (Double, Double)
+scalarAdd :: Coordinate -> Coordinate -> Coordinate
+scalarAdd (x_1, y_1) (x_2, y_2) = (x_1 + x_2, y_1 + y_2)
+scalarProduct :: Double -> Coordinate -> Coordinate
+scalarProduct a (x, y) = (a * x, a * y)
+euclidNorm :: Coordinate -> Double
+euclidNorm (x, y) =
+let zs = x ^ 2 + y ^ 2 in sqrt zs
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 3/9
+Exercise 11.2: Import Modules
+Create a new function to calculate the centre of mass of a given list of coordinates.
+The centre of mass is calculated the following way:
+1 X n
+c = ∗ m
+i
+n
+i=1
+With m = (x ,y ) being the coordinates, n being the length of the coordinates
+i i i
+Create a new file and use the
+Coordinates module.
+To import the Coordinates module, call it
+Coordinates.hs and place it in the same
+folder.
+Test the new function with
+[(-1,1),(2,2),(2,-1)].
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 4/9
+Exercise 11.2: Possible Solution
+import Coordinates (Coordinate, scalarAdd, scalarProduct)
+centerOfMass :: [Coordinate] -> Coordinate
+centerOfMass xs = scalarProduct (1 / fromIntegral (length xs))
+$ foldr1 scalarAdd xs
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 5/9
+Exercise 11.3: Scopes
+Analyse the following code. Can you find errors or code with potentially unintended
+effects?
+import Prelude hiding(head)
+konst = 4.0
+func1 :: String -> Char
+func1 xs = head xs
+func2 :: Double -> Double
+func2 x = pi * x
+func3 :: (Double, Double) -> Double
+func3 (x, y) = let myMult = x * konst; myAdd = x + konst in
+myMult + myAdd
+func4 = myMult * myMult
+func5 :: Double -> Double
+func5 konst = konst * 5
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 6/9
+func1 :: String -> Char
+hiding head from the Prelude creates an error here, since head is now not in scope
+func2 :: Double -> Double
+using pi from the Prelude, no problems here
+func3 :: (Double, Double) -> Double
+konst can be used in the let binding, since it’s a global constant
+Exercise 11.3: Possible Solution
+konst :: Double
+a normal constant definition (with a german sounding name)
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 7/9
+func2 :: Double -> Double
+using pi from the Prelude, no problems here
+func3 :: (Double, Double) -> Double
+konst can be used in the let binding, since it’s a global constant
+Exercise 11.3: Possible Solution
+konst :: Double
+a normal constant definition (with a german sounding name)
+func1 :: String -> Char
+hiding head from the Prelude creates an error here, since head is now not in scope
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 7/9
+func3 :: (Double, Double) -> Double
+konst can be used in the let binding, since it’s a global constant
+Exercise 11.3: Possible Solution
+konst :: Double
+a normal constant definition (with a german sounding name)
+func1 :: String -> Char
+hiding head from the Prelude creates an error here, since head is now not in scope
+func2 :: Double -> Double
+using pi from the Prelude, no problems here
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 7/9
+Exercise 11.3: Possible Solution
+konst :: Double
+a normal constant definition (with a german sounding name)
+func1 :: String -> Char
+hiding head from the Prelude creates an error here, since head is now not in scope
+func2 :: Double -> Double
+using pi from the Prelude, no problems here
+func3 :: (Double, Double) -> Double
+konst can be used in the let binding, since it’s a global constant
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 7/9
+func5 :: Double -> Double
+the parameter name konst is allowed here, but it overwrites the global constant, so in
+func5 it uses the local variable, not the global one. It may be undesired behavior, in
+such small functions it doesn’t matter that much, but in bigger ones, it is not a good
+idea, to use global constant names as local variables
+Solution file
+You can find this file in the attachments.
+Exercise 11.3: Possible Solution
+ffunc4 :: Double
+can’t use myMult in func4, since it’s not in scope, it’s declared in a local let binding in
+func3
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 8/9
+Solution file
+You can find this file in the attachments.
+Exercise 11.3: Possible Solution
+ffunc4 :: Double
+can’t use myMult in func4, since it’s not in scope, it’s declared in a local let binding in
+func3
+func5 :: Double -> Double
+the parameter name konst is allowed here, but it overwrites the global constant, so in
+func5 it uses the local variable, not the global one. It may be undesired behavior, in
+such small functions it doesn’t matter that much, but in bigger ones, it is not a good
+idea, to use global constant names as local variables
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 8/9
+Exercise 11.3: Possible Solution
+ffunc4 :: Double
+can’t use myMult in func4, since it’s not in scope, it’s declared in a local let binding in
+func3
+func5 :: Double -> Double
+the parameter name konst is allowed here, but it overwrites the global constant, so in
+func5 it uses the local variable, not the global one. It may be undesired behavior, in
+such small functions it doesn’t matter that much, but in bigger ones, it is not a good
+idea, to use global constant names as local variables
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 8/9
+Questions? Need help? Feedback?
+• Element Chat (with handle @adam.pescoller:student.uibk.ac.at)
+• Adam.Pescoller@student.uibk.ac.at
+• http://cl-informatik.uibk.ac.at/teaching/ws25/fp/feedback.php
+Tutorium—FunctionalProgramming WS25—Week11a—Modulesand AdamPescoller
+Scopes 9/9

@@ -1,0 +1,339 @@
+Einführung in die Theoretische Informatik
+ArminWalch Georg Moser JoshuaOcker
+ManuelEberl SamuelFrontull VeraSchmitt
+https://tcs-informatik.uibk.ac.at
+Zusammenfassung
+Zusammenfassung der letzten LVA
+Satz
+SeiΣeinAlphabetundseix ∈ Σ∗.DiefolgendenBeschreibungenkontextfreier
+Sprachensindäquivalent:
+1 x ∈ L(A)nachdemrekursivenInferenzverfahren
+∗
+2 A ⇒ x
+∗
+3 A ⇒ x
+ℓ
+∗
+4 A ⇒ x
+r
+5 EsexistierteinSyntaxbaummitWurzelAundErgebnisx
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 1
+Zusammenfassung der letzten LVA
+Parsergenerierung in C mit yacc
+Regelteil calc.y (gekürzt)
+expression: term { $$ = $1; }
+| '+' term { $$ = $2; }
+| '-' term { $$ = -$2; }
+| expression '+' term { $$ = $1 + $3; }
+| expression '-' term { $$ = $1 - $3; }
+;
+term: factor { $$ = $1; }
+| term '*' factor { $$ = $1 * $3; }
+| term '/' factor { $$ = $1 / $3; }
+;
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 2
+Inhalte der Lehrveranstaltung
+Einführung in die Logik
+Syntax&SemantikderAussagenlogik,KalküldesnatürlichenSchließens,Konjunktive
+undDisjunktiveNormalformen
+Einführung in die Algebra
+algebraischeStrukturen,BoolescheAlgebra
+Einführung in die Theorie der Formalen Sprachen
+GrammatikenundFormaleSprachen,Chomsky-Hierarchie,ReguläreSprachen,
+KontextfreieSprachen,AnwendungenvonformalenSprachen
+Einführung in die Berechenbarkeitstheorie und Komplexitätstheorie
+AlgorithmischunlösbareProbleme,Turingmaschinen,Alternative
+Berechnungsmodelle,Reduktion,Komplexitätstheorie
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 3
+Berechenbarkeitstheorie
+Einführung in die Berechenbarkeitstheorie
+Frage
+IstjedesProblemalgorithmischlösbar?
+Antwort
+Nein
+Ein einfaches Programm
+main()
+{
+printf("hello, world");
+}
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 4
+Beispiel
+betrachteProgrammF:
+main()
+{
+int n, summe = 3, x, y, z;
+scanf(``%d'', &n);
+while (1) {
+for (x=1; x <= summe-2; x++)
+for (y=1; y <= summe-x-1; y++) {
+z = summe - x - y;
+if (pow(x,n) + pow(y,n) == pow(z,n))
+printf("hello, world");
+} summe++;
+}
+}
+DasProgrammFistkein„hello,world“-Programm
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 5
+Beispiel (Fortsetzung)
+• CoderepräsentiertdengroßenFermat;xn+yn = zn,fürallen
+• widerlegtvonAndrewWiles,1980er
+• FunFact:InderSimponsFolge“TheWizardofEvergreenTerrace”schreibtHomer
+diefolgende(scheinbare)LösungandieTafel:
+398712+436512 = 447212 .
+Dasistzwarfalsch,aberaufeinemeinfachenTaschenrechnererscheintdie
+Lösung(durchRundungsfehler)alsrichtig.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 6
+Beispiel
+betrachteProgrammG
+main()
+{
+int n, x, y, z, test, summe=4;
+while (1) {
+test = 0;
+for (x=2; x <= summe; x++) {
+y = summe - x;
+if (is_prime(x) && is_prime(y)) test = 1;
+}
+if (!test) printf("hello, world");
+summe = summe + 2;
+}
+}
+DasProgrammGistwahrscheinlichkein„hello,world“-Programm1
+1Gistkein„hello,world“-ProgrammfürZahlen ⩽1017
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 7
+Großer Fermat (1637)
+DieGleichungan+bn = cn besitztfürn > 2keineLösunginN
+Vermutung von Goldbach (1742)
+Jede gerade Zahl ( ⩾ 2) kann als Summe zweier Primzahlen darge-
+stelltwerden
+Satz
+EskannniemalseinTestprogrammfür„hello,world“-Programmegeben
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 8
+Entscheidbarkeit & Unentscheidbarkeit
+Definition (informell)
+EinProblem,dasalgorithmischnichtlösbarist,wirdunentscheidbargenannt;
+andernfallsheißtdasProblementscheidbar
+Definition
+AlsHalteproblembezeichnenwirdasProblem,obeinbeliebigesProgrammaufseiner
+Eingabehält.
+Definition
+PostschesKorrespondenzproblem:GegebenzweigleichlangeListenvon(nicht-leeren)
+Wörternw ,w ,...,w undx ,x ,...,x .GesuchtsindIndizesi ,i ,...,i ,sodass
+1 2 n 1 2 n 1 2 m
+w w ...w = x x ...x
+i1 i2 im i1 i2 im
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 9
+Satz
+DiefolgendenProblemesindentscheidbar:
+• dasErfüllbarkeitsproblemderAussagenlogik(SAT)
+• dasWortproblemderBoolschenAlgebra
+• seiGeineKFG,istL(G) = ∅?
+• ...
+Satz
+DiefolgendenProblemesindunentscheidbar:
+• dasHalteproblem
+• dasPostscheKorrespondenzproblem
+• seiGeineKFGüberΣ,istL(G) = Σ∗?
+• ...
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 10
+Turingmaschinen
+Definition (informell)
+deterministische,einbändigeTuringmaschine(TM):
+⊢ a b b a b a ⊔ ⊔ ⊔ ⊔ ⊔ ⊔ ⊔ ···
+Q Lese/Schreibkopf
+• EineTMverwendeteineinseitigunendlichesBandalsSpeicher
+• ZuBeginnderBerechnungstehtdieEingabeaufdemBand
+• DerSpeicherwirdmiteinemLese/Schreibkopfgelesenoderbeschrieben
+• DasVerhaltenderTMwirddurchdieendlicheKontrolleQkontrolliert
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 11
+Definition (formal)
+einedeterministische,einbändigeTuringmaschine(TM)Mistein9-Tupel
+M = (Q,Σ,Γ,⊢,⊔,δ,s,t,r)
+sodass
+1 QeineendlicheMengevonZuständen,
+2
+ΣeineendlicheMengevonEingabesymbolen,
+3
+ΓeineendlicheMengevonBandsymbolen,mitΣ ⊆ Γ,
+4
+⊢∈ Γ\Σ,derlinkeEndmarker,
+5
+⊔ ∈ Γ\Σ,dasBlanksymbol,
+6
+δ: Q×Γ → Q×Γ×{L,R}dieÜbergangsfunktion,
+7 s ∈ Q,derStartzustand,
+8 t ∈ Q,derakzeptierendeZustandund
+9 r ∈ Q,derverwerfendeZustandmitt ̸= r.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 12
+Definition (Übergangsfunktion)
+dieGleichungδ(p,a) = (q,b,d)bedeutet:WenndieTMMimZustandpdasSymbola
+liest,dann
+1 MersetztadurchbaufdemBand
+2 derLese/SchreibkopfbewegtsicheinenSchrittindieRichtungd
+3 MwechseltindenZustandq
+Definition (Zusatzbedingungen)
+• DerlinkeEndmarkerdarfnichtüberschriebenwerden
+∀p ∈ Q,∃q ∈ Q δ(p,⊢) = (q,⊢,R)
+• WenndieTMakzeptiert/verwirft,bleibtdieTMindiesemZustand
+∀b ∈ Γ,∃c,c′ ∈ Γundd,d′ ∈ {L,R}: δ(t,b) = (t,c,d)
+δ(r,b) = (r,c′,d′)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 13
+Beispiel
+seiM = ({s,t,r,q ,q ,q },{0,1},{⊢,⊔,0,1,X,Y},⊢,⊔,δ,s,t,r)mitδ wiefolgt
+1 2 3
+p∈Q a∈Γ δ(p,a) p∈Q a∈Γ δ(p,a)
+s ⊢ (s,⊢,R) q ⊢ (r,⊢,R)
+2
+s ⊔ (r,⊔,R) q ⊔ (r,⊔,R)
+2
+s 0 (q ,X,R) q 0 (q ,0,L)
+1 2 2
+s 1 (r,1,R) q 1 (r,1,R)
+2
+s X (r,X,R) q X (s,X,R)
+2
+s Y (q ,Y,R) q Y (q ,Y,L)
+3 2 2
+q ⊢ (r,⊢,R) q ⊢ (r,⊢,R)
+1 3
+q ⊔ (r,⊢,R) q ⊔ (t,⊔,R)
+1 3
+q 0 (q ,0,R) q 0 (r,0,R)
+1 1 3
+q 1 (q ,Y,L) q 1 (r,1,R)
+1 2 3
+q X (r,X,R) q X (r,X,R)
+1 3
+q Y (q ,Y,R) q Y (q ,Y,R)
+1 1 3 3
+t ∗ (t,∗,R) r ∗ (r,∗,R)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 14
+Konfiguration einer TM
+Definition
+eineKonfigurationeinerTMMisteinTripel(p,x,n),sodass
+1 p ∈ QZustand,
+2 x = y⊔∞ Bandinhalt y ∈ Γ∗
+3 n ∈ NPositiondesLese/Schreibkopfes
+Definition
+StartkonfigurationbeiEingabex ∈ Σ∗:(s,⊢x⊔∞,0)
+Beispiel
+Sei0011dieEingabederTMM,dannistdieStartkonfigurationgegebendurch
+(s,⊢ 0011⊔∞,0)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 15
+Schrittfunktion von TMs
+Definition
+1
+Relation−→istwiefolgtdefiniert:
+M
+(cid:40)
+(q,z′,n−1) wennδ(p,z ) = (q,b,L)
+(p,z,n)−→ 1 n
+M (q,z′,n+1) wennδ(p,z ) = (q,b,R)
+n
+z′ istString,denwirausz erhalten,wennz durchbersetzt
+n
+Definition
+∗
+reflexive,transitiveHülle−→:
+0 M
+α−→α
+1
+M
+n+1 n 1
+2
+α−−→β,wennα−→γ−→β fürKonfigurationγ
+M M M
+∗ n
+3
+α−→β,wenn∃n α−→β
+M M
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 16
+Beispiel (Wiederholung)
+seiM = ({s,t,r,q ,q ,q },{0,1},{⊢,⊔,0,1,X,Y},⊢,⊔,δ,s,t,r)mitδ wiefolgt
+1 2 3
+p∈Q a∈Γ δ(p,a) p∈Q a∈Γ δ(p,a)
+s ⊢ (s,⊢,R) q ⊢ (r,⊢,R)
+2
+s ⊔ (r,⊔,R) q ⊔ (r,⊔,R)
+2
+s 0 (q ,X,R) q 0 (q ,0,L)
+1 2 2
+s 1 (r,1,R) q 1 (r,1,R)
+2
+s X (r,X,R) q X (s,X,R)
+2
+s Y (q ,Y,R) q Y (q ,Y,L)
+3 2 2
+q ⊢ (r,⊢,R) q ⊢ (r,⊢,R)
+1 3
+q ⊔ (r,⊢,R) q ⊔ (t,⊔,R)
+1 3
+q 0 (q ,0,R) q 0 (r,0,R)
+1 1 3
+q 1 (q ,Y,L) q 1 (r,1,R)
+1 2 3
+q X (r,X,R) q X (r,X,R)
+1 3
+q Y (q ,Y,R) q Y (q ,Y,R)
+1 1 3 3
+t ∗ (t,∗,R) r ∗ (r,∗,R)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 17
+Beispiel
+WirbetrachtendieSchrittfunktionfüreineakzeptierendeBerechnungvonMbei
+Eingabe0011:
+(s,⊢ 0011⊔∞,0) −→ 1 (s,⊢ 0011⊔∞,1) −→ 1 (q ,⊢ X011⊔∞,2)
+1
+M M
+−→ 1 (q ,⊢ X011⊔∞,3) −→ 1 (q ,⊢ X0Y1⊔∞,2)
+1 2
+M M
+−→ 1 (q ,⊢ X0Y1⊔∞,1) −→ 1 (s,⊢ X0Y1⊔∞,2)
+2
+M M
+−→ 1 (q ,⊢ XXY1⊔∞,3) −→ 1 (q ,⊢ XXY1⊔∞,4)
+1 1
+M M
+−→ 1 (q ,⊢ XXYY⊔∞,3) −→ 1 (q ,⊢ XXYY⊔∞,2)
+2 2
+M M
+−→ 1 (s,⊢ XXYY⊔∞,3) −→ 1 (q ,⊢ XXYY⊔∞,4)
+3
+M M
+−→ 1 (q ,⊢ XXYY⊔∞,5) −→ 1 (t,⊢ XXYY⊔⊔∞,6)
+3
+M M
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 18
+Definition
+eineTMM
+• akzeptiertx ∈ Σ∗,wenn∃y,n:
+(s,⊢x⊔∞,0) −→ ∗ (t,y,n)
+M
+• verwirftx ∈ Σ∗,wenn∃y,n:
+(s,⊢x⊔∞,0) −→ ∗ (r,y,n)
+M
+• hältbeiEingabex,wennx akzeptiertoderverworfen
+• hältnichtbeiEingabex,wennx wederakzeptiert,nochverworfen
+• isttotal,wennMaufallenEingabenhält
+Definition
+dieSpracheeinerTMMistwiefolgtdefiniert:
+L(M) := {x ∈ Σ∗ | Makzeptiertx}
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 19
+Satz
+SeiLeineSprache,dievoneinerTMakzeptiertwird.DannistLrekursivaufzählbar.
+Folgerung
+SeiLeineSprache,dievoneinerTMakzeptiertwird,dannexistierteineGrammatikG,
+sodassL = L(G)
+Definition (Berechenbarkeit mit einer TM)
+• SeiM = (Q,{⊓, },{⊢,⊔,⊓, },⊢,⊔,δ,s,t,r)
+• EinepartielleFu(cid:50)nktionf: Nk(cid:50)→ NheißtM-berechenbar,wenn:
+f(n
+1
+,...,n
+k
+) = m gdw. (s,⊢ ⊓n1 ··· ⊓nk ⊔∞,0)
+−→ ∗ (t,⊢ (cid:50)⊓m⊔∞ (cid:50),n)
+M
+• EinepartielleFunktionf: Nk → NheißtberechenbarmiteinerTM,wenneineTM
+MüberdemAlphabet{⊓, }existiert,sodassf M-berechenbar
+(cid:50)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 20

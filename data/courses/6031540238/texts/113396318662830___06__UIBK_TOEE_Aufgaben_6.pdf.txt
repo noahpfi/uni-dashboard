@@ -1,0 +1,70 @@
+Theorie ökonomischer Entscheidungen
+Aufgabenblatt 6
+Prof. Dr. Heiner Schumacher
+UIBK
+1 Cournot Duopol
+Auf der kleinen Insel Little Andaman im Golf von Bengalen be…nden sich zwei Un-
+ternehmenU1undU2, dieStrohhüteproduzieren. DieinverseNachfragenachStrohhüten
+auf der Insel lautet p(x) = 65 5x. Außerdem ist bekannt, dass Strohhüte ein homogenes
+(cid:0)
+Produkt sind und dass pro angebotener Einheit für beide Firmen Kosten von 5 anfallen.
+Fixkosten gibt es nicht. Beide Unternehmen konkurrieren über die Menge und setzen
+diese simultan fest. Es sei x die von U1 produzierte Menge, x die von U2 produzierte
+1 2
+Menge, und x = x +x .
+1 2
+1. Bestimmen Sie die Reaktionsfunktionen der beiden Unternehmen.
+2. Berechnen Sie den Preis p, die jeweils produzierte Mengen x und x , die jeweiligen
+1 2
+Gewinne (cid:25) und (cid:25) im Gleichgewicht.
+1 2
+3. Berechnen Sie den Wohlfahrtsverlust im Vergleich zum Wettbewerbsmarkt.
+2 Stackelberg Duopol
+Betrachten Sie wieder den Markt aus der letzten Aufgabe. U1 scha¤t es nun, sich auf
+eine Menge festlegen zu können, bevor U2 über seine Produktionsmenge entscheidet. U2
+beobachtet die Entscheidung von U1 und legt dann seine Menge fest.
+1. Berechnen Sie den Preis p, die jeweils produzierte Mengen x und x , die jeweiligen
+1 2
+Gewinne (cid:25) und (cid:25) im Gleichgewicht.
+1 2
+2. Berechnen Sie den Wohlfahrtsverlust im Vergleich zum Wettbewerbsmarkt.
+3. Erklären Sie, warum U1 einen Wettbewerbsvorteil hat.
+1
+3 Stackelberg Oligopol mit drei Firmen
+In einem homogenen Markt mit der Nachfrage x = 100 p konkurrieren drei Firmen
+(cid:0)
+j = 1;2;3 miteinander. Die Stückkosten jeder Firma sind c = 0. Zunächst setzt Firma
+1 als Stackelberg-Führer ihre Angebotsmenge x fest. Firmen 2 und 3 wählen danach als
+1
+Stackelberg-Folger simultan ihre Angebotsmengen x und x .
+2 3
+1. Bestimmen Sie die Mengen welche die Firmen 2 und 3 anbieten, wenn sich Firma 1
+auf eine bestimmte Menge x festgelegt hat.
+(cid:3)1
+2. Ermitteln Sie die Menge, die für Firma 1 optimal ist, gegeben die Reaktion der
+Konkurrenten aus Teil (1.).
+3. Welcher Preis ergibt sich im Marktgleichgewicht?
+4 Cournot Oligopol mit n Firmen
+In einem Markt werden n heterogene Güter von n Firmen angeboten. Firma j produziert
+das Gut j zu den Stückkosten c 0. Die inverse Nachfrage nach Gut j ist
+(cid:21)
+p (x ;:::;x ) = a bx g x ;
+j 1 n j i
+(cid:0) (cid:0)
+i=j
+X6
+wobei a > c, b > 0 und b g b gelten.
+(cid:0) (cid:20) (cid:20)
+1. Berechnen Sie die Reaktionsfunktion von Firma j.
+2. Zeigen Sie, dass im symmetrischen Cournot-Gleichgewicht die Menge von Firma j
+gegeben ist durch
+a c
+xc = (cid:0)
+j 2b+g(n 1)
+(cid:0)
+und der Preis für Gut j gegeben ist durch
+(a+c)b+gc(n 1)
+pc = (cid:0) :
+j 2b+g(n 1)
+(cid:0)
+2

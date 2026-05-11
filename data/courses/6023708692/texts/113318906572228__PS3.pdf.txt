@@ -1,0 +1,140 @@
+Statistische Datenanalyse
+Kapitel 1
+Deskriptive Statistik
+Deskriptive Statistik
+Statistische Beschreibung von
+diskreten Variablen
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 1/12
+Statistische Beschreibung diskreter Variablen
+• Häufigkeitstabellen:BeinominalskaliertenMerkmalensindabsoluteund
+relativeHäufigkeiten,beimindestensordinalskaliertenMerkmalen
+zusätzlichkumulierteHäufigkeitenmöglich.
+R> table(mietspiegel$lage)
+normale Lage gute Lage beste Lage
+1794 1210 78
+R> prop.table(table(mietspiegel$lage))
+normale Lage gute Lage beste Lage
+0.58208955 0.39260221 0.02530824
+R> cumsum(table(mietspiegel$lage))
+normale Lage gute Lage beste Lage
+1794 3004 3082
+R> cumsum(prop.table(table(mietspiegel$lage)))
+normale Lage gute Lage beste Lage
+0.5820896 0.9746918 1.0000000
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 2/12
+Statistische Beschreibung diskreter Variablen
+• Säulendiagramme
+R> plot(mietspiegel$lage, main = "Lage der Wohnung")
+Lage der Wohnung
+normale Lage gute Lage beste Lage
+0051
+0001
+005
+0
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 3/12
+Statistische Beschreibung diskreter Variablen
+• Kreisdiagramme
+R> pie(table(mietspiegel$lage), main = "Lage der Wohnung",
++ col = gray.colors(3))
+Lage der Wohnung
+normale Lage
+beste Lage
+gute Lage
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 4/12
+Zusammenfassung
+Stetige Variablen
+• Wertebereich,d.h.kleinsterundgrößterWert
+• Mittelwert(arithmetischesMittel,evtl.Median,Quantile)
+• StreuungderDaten(Spannweite,empirischeStandardabweichung,evtl.
+Interquartilsabstand)
+• ExtremeWertebzw.Ausreißerbzw.unüblicheWerte
+• SymmetrieundSchiefeanhandHistogramm/Boxplot
+• ZahlderModibzw.Modalklassen(Unimodal,BimodalundMultimodal)
+anhandHistogramm
+• UnplausibleWerte,Datenfehler
+• FehlendeWerte
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 5/12
+Zusammenfassung
+Diskrete Variablen
+• Absoluteundrelativebzw.prozentualeHäufigkeiten
+• Modus,d.h.häufigsterWert
+• SchwachbesetzteKategorien
+• FehlendeWerte,Datenfehler
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 6/12
+Deskriptive Statistik
+Deskriptive Zusammenhangsanalyse
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 7/12
+Zusammenhang Miete und Lage der Wohnung?
+R> par(mfrow = c(1,2))
+R> boxplot(mietspiegel$miete, main = "Miete")
+R> plot(miete ~ lage, data = mietspiegel,
++ main = "Miete nach Lage der Wohnung", xlab = "")
+0051
+0001
+005
+0
+Miete
+normale Lage gute Lage beste Lage
+0051
+0001
+005
+0
+Miete nach Lage der Wohnung
+eteim
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 8/12
+Zusammenhangsanalyse zwischen stetiger und
+diskreter Variable I
+R> summary(mietspiegel$miete[mietspiegel$lage == "normale Lage"])
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+54.76 312.42 414.02 434.58 527.65 1454.88
+R> summary(mietspiegel$miete[mietspiegel$lage == "gute Lage"])
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+40.39 330.28 441.83 481.55 595.49 1837.89
+R> summary(mietspiegel$miete[mietspiegel$lage == "beste Lage"])
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+179.0 383.2 644.3 634.1 847.4 1207.3
+R> sd(mietspiegel$miete[mietspiegel$lage == "normale Lage"])
+[1] 167.7031
+R> sd(mietspiegel$miete[mietspiegel$lage == "gute Lage"])
+[1] 216.4353
+R> sd(mietspiegel$miete[mietspiegel$lage == "beste Lage"])
+[1] 281.6377
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 9/12
+Zusammenhangsanalyse zwischen stetiger und
+diskreter Variable II
+R> tapply(mietspiegel$miete, mietspiegel$lage, summary)
+$`normale Lage`
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+54.76 312.42 414.02 434.58 527.65 1454.88
+$`gute Lage`
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+40.39 330.28 441.83 481.55 595.49 1837.89
+$`beste Lage`
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+179.0 383.2 644.3 634.1 847.4 1207.3
+R> tapply(mietspiegel$miete, mietspiegel$lage, sd)
+normale Lage gute Lage beste Lage
+167.7031 216.4353 281.6377
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 10/12
+Zusammenhangsanalyse zwischen stetiger und
+diskreter Variable III
+R> aggregate(miete ~ lage, data = mietspiegel, FUN = summary)
+lage miete.Min. miete.1st Qu. miete.Median miete.Mean
+1 normale Lage 54.75936 312.42491 414.01860 434.57861
+2 gute Lage 40.39206 330.28177 441.83288 481.54560
+3 beste Lage 179.00329 383.17493 644.27890 634.10747
+miete.3rd Qu. miete.Max.
+1 527.65322 1454.88105
+2 595.48887 1837.88985
+3 847.37682 1207.31352
+R> aggregate(miete ~ lage, data = mietspiegel, FUN = sd)
+lage miete
+1 normale Lage 167.7031
+2 gute Lage 216.4353
+3 beste Lage 281.6377
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 11/12
+Aufgabe
+AnalysierenSieZusammenhängezwischenderMieteundweiterendiskreten
+VariablendesMietspiegel-Datensatzesgrafischundmitdeskriptiven
+Kennzahlen.
+© StatistischeDatenanalyse–1–DeskriptiveStatistik 12/12

@@ -1,0 +1,266 @@
+06/05/2026
+GeneratedbyOpenAI
+imagegenerator
+Workshop 7: Testdrehbücher und Abnahmetests
+Michael Breu
+Sommersemester 2026
+4./6. Mai 2026
+1
+Links
+• https://ars.uibk.ac.at/
+– RaumNr: 99306645
+• Vorlage
+https://git.uibk.ac.at/informatik/qe/swa
+_swe/swe/swe-skeleton/-
+/wikis/Testdrehbuch
+Michael Breu | PS Software Engineering | SoSe 2023 2
+2
+06/05/2026
+Inhalte
+1. Einordnung in den Entwicklungsprozess
+2. Das Testdrehbuch
+3. Der Abnahmetest
+4. Zusammenfassung und Ausblick
+Michael Breu | PS Software Engineering | SoSe 2023 3
+3
+1. Einordnung in den Entwicklungsprozess
+Michael Breu | PS Software Engineering | SoSe 2023 4
+4
+06/05/2026
+Die wichtigsten Artefakte der Softwareentwicklung
+(Clemens Sauerwein, SW Architektur, WS 19/20)
+Anforderungs- Testdrehbuch für
+Pflichtenheft
+sppezifikation Abnahmetest
+Analyse Analysemodell Testdrehbuch für
+Systemtests
+Integrationstests
+Design SW-Architektur
+Vorlesung
+Softwarearchitektur
+Entwicklertests
+Implementierung lauffähiges System Unittests
+Michael Breu | PS Software Engineering | SoSe 2023 5
+5
+Kurzer Ausflug: Unit Tests / Entwicklertests
+• Mit Unit Tests(dt. Modultests) werden einzelne Komponenten getestet
+– Heutzutage sind diese Tests weitgehend automatisierbar (z.B. mit JUnit,
+JEST, …)
+– Modultests sollten isoliert von anderen Modulen laufen
+• => Nachgeordnete Module werden „simuliert“ (engl. MockObjects)
+• Test Suite: Zusammenfassung verwandter Tests
+• Integrationstests: Sammlung von Tests zur Prüfung des gesamten
+Systems in einer produktionsnahen Umgebung
+• Regressionstests: Sammlung von Tests zur Prüfung der bereits
+umgesetzten Funktionalität
+– Regressionstests stellen sicher, dass Modifikationen / Erweiterungen von
+Modulen/Systemen keine Fehler in vorhandenen Funktionen nach sich
+ziehen. => Idealerweise als automatisierte Tests
+• Entwicklertests: Tests die der Softwareentwickler für seinen eigenen
+Code durchführt.
+• Testüberdeckung: Metrik(en) für die Messung der Testqualität
+Michael Breu | PS Software Engineering | SoSe 2023 6
+6
+06/05/2026
+Ars Nova
+• 01 Haben Sie schon mal Software aktiv getestet?
+• 011 Wie hoch ist die bisherige Testüberdeckung mit Unit-Tests in
+Ihrem Teamprojekt?
+Michael Breu | PS Software Engineering | SoSe 2023 7
+7
+Ars Nova
+• 02 Wie haben Sie Ihre Testergebnisse dokumentiert?
+Michael Breu | PS Software Engineering | SoSe 2023 8
+8
+06/05/2026
+Das Testdrehbuch
+Michael Breu | PS Software Engineering | SoSe 2023 9
+9
+Zielsetzung des Testens und der Testdokumentation
+• Qualitätssicherung
+– (Frühzeitiges) Entdecken von Mängeln in der Anwendung
+• Funktionale und Nichtfunktionale Mängel
+– Sicherstellung der Produktreife
+• Nachvollziehbarkeit
+– Nachvollziehbarkeit des Testprozesses durch Protokolle
+– Reproduzierbarkeit der gefundenen Fehler
+Michael Breu | PS Software Engineering | SoSe 2023 10
+10
+06/05/2026
+Zielsetzung des Testdrehbuchs (für System-/Abnahmetests)
+• Definition des Testablaufs
+– Testeingangskriterien
+• Wann kann der Test gestartet werden (z.B. nach erfolgreichem Systemtest,
+Bereitstellung der Testumgebung, …)
+– Wer testet? (Und: Wer ist der Testmanager?) => Rollen
+– Auf welchen Systemen wird getestet?
+– Was wird getestet?
+• Funktionale Tests
+• Nichtfunktionale Tests (Antwortzeiten, Stabilität, Usability, Sicherheit, …)
+– Mit welchen Testdaten?
+• Z.B. Bereitstellung von Testnutzern mit verschiedenen Rollen
+• Bereitstellung von Teststammdaten und Testbewegungsdaten
+– Ggf. Festlegung von Testwerkzeugen
+– Wie werden die Testdurchführung und die Testergebnisse dokumentiert?
+(z.B. via Bugtracking: Issue-Management in GitLab)
+Michael Breu | PS Software Engineering | SoSe 2023 11
+11
+Ars Nova
+• 03 Wieviel Projektaufwand läuft typischerweise in das Testen?
+• 04 Rolle Testmanager
+Michael Breu | PS Software Engineering | SoSe 2023 12
+12
+06/05/2026
+Wie finde ich geeignete System-/Abnahmetests?
+• Aus dem Pflichtenheft
+– Standardfunktionalität:
+• Jeder Use Case liefert einen oder mehrere Tests
+Ggf. auch weitere Abläufe und Interaktionen mit dem Arduino/Raspberry
+(z.B. Synchronisation)
+– Test von Fehlersituationen
+• Falsche Eingaben: z.B. Text statt numerischer Eingabe
+• Grenzwerte, bzw. Werte außerhalb der Spezifikation
+ Achtung: Flächendeckende Fehlertests (hohe Coverage) sindsehr
+aufwendig!
+– Ggf. auch
+• Manueller Code Review / Automatisierte Prüfungen
+• Performanztests(aus Pflichtenheft abgeleitet)
+• Penetrationstests (z.B. XSS, SQL-Injection)
+Michael Breu | PS Software Engineering | SoSe 2023 13
+13
+Beschreibung eines funktionalen Tests
+• Testbeschreibung
+– Testname/ Kürzel
+– Referenz auf Anforderung (z.B. Name des Use Cases)
+– Eingaben/Aktionen/Testschritte für das Ausführen des Tests
+– Erwartetes Ergebnis (ggf. pro Schritt, oder am Ende)
+– Ggf. Beschreibung der Testdaten
+• Testdokumentation
+– Testergebnis: OK, Nicht OK, oder Bewertung (von kosmetischbis
+fatal)
+– Ggf. Referenz auf Issueim Issue-Tracker
+– Ggf. weitere Informationen zur Reproduzierbarkeit des Tests
+Michael Breu | PS Software Engineering | SoSe 2021 14
+14
+06/05/2026
+Ars Nova
+• 05 Defektmanagement
+• 07 Beispiele für Testdaten
+Michael Breu | PS Software Engineering | SoSe 2023 15
+15
+Beispiel (Use Case)
+[aus Projekt SoSe 2021]
+UC Auth1 -Login Nutzer
+Auslösender Akteur Beliebiger Nutzer
+Vorbedingung Mitarbeiter ist nicht eingeloggt.
+Basisablauf 1. Der Nutzer gibt einen beliebigen Link für die Anwendung TimeFlipein (oder folgt
+einem Link zur TimeFlipPlattform).
+2. Die Login-Maske erscheint.
+3. Der Nutzer gibt seine UserIdund sein Nutzerpasswort ein und klickt Login.
+Nachbedingung Der Nutzer ist angemeldet.
+Der Nutzer sieht die angewählte Seite (sofern er die Berechtigung hat)
+Alternative Abläufe, Ausnahmen Wurden bei Schritt 3 eine falsche UserIdoder ein falsches Passwort angegeben, so erscheint
+die Loginmaskeerneut, mit einer Fehlermeldung.
+Sind die Eingaben korrekt, aber der Nutzer besitzt nicht die notwendige Berechtigung, so
+erscheint die Loginmaskemit einem Hinweis, dass die benötigte Berechtigung nicht vorliegt.
+Ist der Nutzer das erste Mal in der TimeFlipPlattform eingeloggt, so muss er einen
+Disclaimertextbestätigen.
+Michael Breu | PS Software Engineering | SoSe 2023 16
+16
+06/05/2026
+Ars Nova
+• 08 Testfall
+Aus Projektbeschreibung:
+1.6.1. Logfiles
+Alle wichtigen Ereignisse, die das System insgesamt betreffen, sollen in zwei unterschiedlichen Log-Dateien direkt am
+Webserver gespeichert werden. Anhand der Log Dateien soll sowohl das fehlerfreie Zusammenspiel der
+Systemkomponenten nachvollziehbar sein, als auch Fehlerbehebung anhand von Warnungen, und Errors aus dem laufenden
+Betrieb ermöglicht werden.
+Dabei soll eine der Log-Dateien alle Informationen loggen, die andere nur die Warnungen und Fehlermeldungen. Zu
+Ereignissen zählen zum Beispiel das Hinzufügen neuer Verbindungen oder Geräte oder Ausfälle der Sensorstationen,
+Raspberry PIs oder des Webservers. Ebenso soll eine Log-Datei auf jedem Raspberry Pi geschrieben werden. Bitte loggen Sie
+hier die Kommunikation mit den Sensorstationen, Übertragungen an den Webserver, Datenlöschungen, erfolgreiche
+Verbindungsversuche und Verbindungsprobleme bzw. -ausfälle sowohl mit Sensorstationen als auch
+dem Webserver.
+…
+Michael Breu | PS Software Engineering | SoSe 2023 17
+17
+Automatische Generierung von Testfällen mit
+ChatGPT
+• Der Einsatz von Generierten Testfällen ist erlaubt!
+– Bitte ggf. die Nutzung von Werkzeugen im Testdrehbuch
+dokumentieren.
+• Demo Codex (ChatGPT OpenAI)
+• Ars Nova:
+09 Welche Probleme können beim Generierung von Testfällen mit Chat-GPT
+auftreten?
+Michael Breu | PS Software Engineering | SoSe 2021 18
+18
+06/05/2026
+Wie dokumentiere ich gefunden Fehler?
+• Klassische Fehlermeldung eines Endnutzers
+– „Die Anwendung funktioniert nicht“
+– „Das Anwendung stürzt immer ab“
+– „Immer wenn ich eine Zeitbuchung eingebe, kommt ein Fehlerdialog“
+• => Fehlermeldungen sollten den Fehler reproduzierbar(!)beschreiben:
+z.B.
+1. Wann trat der Fehler auf? (=> Analyse des Logfiles)
+2. Wer hat den Fehler gefunden? (=> ggf. für Rückfragen beim Nutzer)
+3. In welcher Funktion trat der Fehler auf (=> genauere Lokalisation des
+möglichen Fehlers)
+4. Mit welchen Eingabedaten kann der Fehler ggf. reproduziert werden? (=>
+Nachvollziehbarkeit für Entwickler)
+5. Ein Screenshot hilft oft ungemein! (Achtung ggf. Datenschutz!)
+• Fehler können übrigens auch an mangelnder Nutzerdokumentation /
+Nutzerschulung / schlechtem UI-Design liegen.
+Michael Breu | PS Software Engineering | SoSe 2023 19
+19
+Der Abnahmetest
+Michael Breu | PS Software Engineering | SoSe 2023 20
+20
+06/05/2026
+Zielsetzung und Ergebnis des Abnahmetests
+• Typischerweise letzter Schritt vor der Inbetriebnahme
+• Gewährleistung der Produktionsreife
+• Testdurchführung durch den Auftraggeber(!)
+– Allerdings kann der Auftraggeber ggf. auf die Testfälle der Integrationstests zurückgreifen (bzw.
+der Auftragnehmer im Integrationstest auf Testfälle aus Abnahmetest)
+• Typische Ausgänge eines Abnahmetests
+o Abnahme: Produkt ist abgenommen
+o Bedingte Abnahme: Produkt wird abgenommen, aber es müssen
+noch eine festgelegte Liste von Mängeln behoben werden.
+o Ablehnung: Abnahme wird nicht erteilt, eine Liste Mängel müssen
+behoben und zur erneuten Abnahme vorgelegt werden.
+Michael Breu | PS Software Engineering | SoSe 2023 21
+21
+Durchführung des Abnahmetests
+• Ausgangsbasis: Testdrehbuch für die Abnahme (ggf. abgeleitet
+aus Testdrehbuch für System-/Integrationstests)
+• Durchführung der Tests
+=> Erstellung eines Testprotokolls
+• Dokumentation des Ausgangs des Abnahmetests
+z.B.
+– früher: offiziell unterschriebenes Dokument
+– Heutezutage: eine (formale) Email:
+Der Abnahmetest wurde am … durch … durchgeführt.
+Testprotokoll im Anhang/als Link
+Eine bedingte Abnahme wird erteilt.
+Folgende Punkte sind noch zu beheben: F3, F6, F24, …
+Michael Breu | PS Software Engineering | SoSe 2023 22
+22
+06/05/2026
+Ars Nova
+• 09 Was ist ein Smoke-Test?
+Michael Breu | PS Software Engineering | SoSe 2023 23
+23
+Kontakt
+Michael Breu
+Email: Michael.Breu@uibk.ac.at
+Michael Breu | PS Software Engineering | SoSe 2023 24
+24
+06/05/2026
+Links
+• Testaufwand
+– https://de.wikipedia.org/wiki/Testaufwand
+– http://greiterweb.de/spw/Software-Entwicklungsaufwand.htm
+25

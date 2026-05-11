@@ -1,0 +1,96 @@
+PS Bilanzierung &
+Bilanzanalyse
+Linda Hintsteiner, PhD
+1
+Einheitskontenrahmen
+2
+Wiederholung Bilanz
+Aktivseite = Mittelverwendung Passivseite = Mittelherkunft
+Welche Welches Geld wurde dem
+Vermögensgegenstände sind Unternehmen zur Verfügung
+vorhanden? gestellt?
+3
+Wiederholung Bilanz
+Anlagevermögen =
+Gegenstände, die
+bestimmt sind, dauernd
+dem Geschäftsbetrieb zu
+dienen
+Umlaufvermögen =
+Gegenstände, die nicht
+bestimmt sind, dauernd
+dem Geschäftsbetrieb zu
+dienen
+4
+Wiederholung Bilanz
+Eigenkapital =
+Finanzmittel, die von
+Eigentümer:innen selbst
+aufgebracht wurden oder
+als erwirtschaftete
+Gewinne im Unternehmen
+belassen wurden
+5
+Wiederholung Bilanz
+Fremdkapital =
+Finanzmittel (von externen
+Geldgebern), die einem
+Unternehmen nur befristet
+zur Verfügung stehen.
+passive
+6
+Begrifflichkeiten: SOLL / HABEN
+• Doppelte Buchführung und System aus „SOLL“ und „HABEN“
+geht zurück auf italienischen Mönch und Mathematiker Luca
+Pacioli
+(z.B. Fisher, 2000; Thompson, 1991)
+• Jeder Betrag wird doppelt erfasst: auf einem Konto im SOLL,
+auf einem anderen Konto im HABEN
+SOLL = Mittelverwendung = wo gehen die Mittel hin?
+HABEN = Mittelherkunft = woher stammt das Geld?
+Porträt von Luca Pacioli, gemalt vonJacopo de Barbari, 1495
+7
+Überblick Buchungstechnik
+4 Schritte zum richtigen Buchungssatz
+1. Welche Konten sind beteiligt? Welche Konten benötigt man?
+z.B. Kassa, Forderungen, Verbindlichkeiten, Maschine
+2. Um welche Art von Konten handelt es sich?
+Bestandskonten oder Erfolgskonten
+3. Welche Veränderung findet statt?
+Zunahme + oder Abnahme -
+4. Auf welcher Seite werden diese Veränderungen gebucht?
+Soll oder Haben
+8
+Wiederholung Bilanz
+§ 198 (5) Aktive RAP:
+§ 198 (6) Passive RAP:
+Ausgaben vor dem
+Einnahmen vor dem
+Abschlussstichtag, soweit
+Abschlussstichtag, soweit
+sie Aufwand für eine
+sie Ertrag für eine
+bestimmte Zeit nach
+bestimmte Zeit nach
+diesem Tag sind
+diesem Tag sind
+10
+Rechnungsabgrenzungsposten
+• Nicht immer findet Zahlungsvorgang in jener Abrechnungsperiode statt, in welcher der
+Geschäftsfall als Aufwand bzw. Ertrag berücksichtigt werden soll.
+Aktive RAP Passive RAP Verbindlichkeiten Forderungen
+§ 198 UGB Bertl/Deutsch-Goldoni/Hirschler (2025), S. 499-504
+11
+Aufgabe 12 Sachverhalt 6
+Bilanzstichtag 2023 Verkauf Maschine Bilanzstichtag 2024
+Aktivierung Maschine
+16.01.2023 20.12.2024 31.12.2024
+31.12.2023
+Verkauf um 19.000€
+5 Jahre Nutzungsdauer
+Aktivierung um 20.000€
+Buchwert Maschine 16.000€ Buchwert Maschine 12.000€
+AFA pro Jahr = 4000€
+13
+Aufgabe 12 Sachverhalt 6
+14

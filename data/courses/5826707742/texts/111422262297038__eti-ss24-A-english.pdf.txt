@@ -1,0 +1,207 @@
+Einführung in die Theoretische Informatik
+1. lecture exam for Summer 2024, 28.06.2024 Group A
+Name:
+Matriculation number:
+Signature:
+Caution: This English-language translation of the exam is unofficial and only provided for your convenience.
+Although great care was taken to translate the exam faithfully, only the German version (which you also
+received) is legally binding.
+This is a closed-book exam. You have 90 minutes. There are 100 points in total, which are distributed as
+follows: 24 points for the multiple choice questions 1 to 6, and 19 points for the free-form questions 7 to 10.
+The answers for the multiple-choice questions must be written on the cover sheet (this page) by putting either
+T (true) or F (false) into the corresponding box. Note that more than one answer may be true. You receive 1
+pointforeachcorrectanswer. Foreachincorrectanswer,2pointsaresubtracted. Ifyoudonotgiveananswer,
+no points will be subtracted. It is not possible to receive a negative number of points for a question. Your
+grade will be determined according to the given grading table.
+If you need more space to write we will provide you with additional paper. Do not use any sheets of paper that
+were not provided by us.
+Best of luck!
+Grading table:
+Points ⩾90 ⩾75 ⩾60 ⩾50 <50
+Grade Excellent (SGT1) Good (GUT2) Satisfactory (BEF3) Sufficient (GEN4) Insufficient (NGD5)
+1. (a) (b) (c) (d)
+2. (a) (b) (c) (d)
+3. (a) (b) (c) (d)
+4. (a) (b) (c) (d)
+5. (a) (b) (c) (d)
+6. (a) (b) (c) (d)
+7. / 19 points
+8. / 19 points
+9. / 19 points
+10. / 19 points
+1. VO exam ETI Summer 2024 Group A
+1. (4 points) Which of the following statements about propositional logic are correct?
+a) If A ,...,A,...A ⊢B holds, then also A ,...,A ⊢A→B.
+1 n 1 n
+b) A≡B holds if (A→B)∧(B →A) is a tautology.
+c) Every axiom system for propositional logic is complete.
+d) A formula A is a tautology if ¬A is not satisfiable.
+2
+1. VO exam ETI Summer 2024 Group A
+2. (4 Punkte) Which of the following statements are correct? (Letters in this font describe atomic
+formulas.)
+a) The formula (¬d∧(g→d))→¬g is satisfiable but not a tautology.
+b) The formula w∧e∧((True∨w)∧False)∧u is a tautology.
+c) The formula ((e → g)∧(w → (u∧e))) → ((u → ¬d) → (w → d)) is satisfiable but not a
+tautology.
+d) The formula ((w→(e∧u))∧(e→g))→((u→¬d)→(w→¬d)) is unsatisfiable.
+3
+1. VO exam ETI Summer 2024 Group A
+3. (4 Points) Consider the formal languages L = {ϵ,0,10,100,110}, M = {1,11,101,111} und N =
+{0,1}∗. Which of the following statements are correct?
+a) L∪M ={0,1,10,11,100,101,110,111}
+b) L∪M ={ϵ,0,1,10,11,100,101,110,111}
+c) (L∪M)∩N ={ϵ,0,1,10,11,100,101,110,111}
+d) L∪(M ∩N)={ϵ,0,1,10,100,101,110,111}
+4
+1. VO exam ETI Summer 2024 Group A
+4. WhichofthefollowingderivationsarecorrectwithrespecttothegrammarG=({S,T,U},{a,b,c},R,S)?
+(The derivation can also be partial.)
+Rules R of the grammar G:
+S →aTb|aU |ϵ
+aTb→aaaTbb|aaTbbb|bTa|Sbb
+U →aaU |Sc
+a) S ⇒aU ⇒aSc⇒aaaaTbbc⇒aaTbc⇒aaaaaaTbbbc
+b) S ⇒aaaaaU ⇒aaaU ⇒aU ⇒aaaaaSc⇒aaaaaaTbc
+c) T ⇒aU ⇒aSc⇒aaUc⇒aaaaUc
+d) S ⇒aTb⇒aaTbbb⇒aaaaTbbbb⇒aaabTabbb
+5
+1. VO exam ETI Summer 2024 Group A
+5. (4 Points) Which of the following statements about the depicted automaton A are correct?
+0
+start a c
+0
+1 1 1 1
+0
+b d
+0
+a) For all n,m≥0 we have δˆ(b,12n02m+1)=d.
+b) L(A)∩{0n1m |n,m≥0}={0,1}∗.
+c) L(A)∩{0n1m |n,m≥0}={0n1m |m,n odd}.
+d) For all n,m≥0 we have δˆ(b,02n12m+1)=d.
+6
+1. VO exam ETI Summer 2024 Group A
+6. (4 points) Which of the following statements about counter machines is correct?
+a) Anytotalfunctionf: Nk →Nthatisimplementedinanyprogramminglanguageprogramming
+language can also be calculated on an RM.
+b) There are functions f: Nk → N that can be calculated on a TM that cannot be calculated on
+an RM.
+c) F¨for every language L that is accepted by an RM, there exists a finite automaton that accepts
+L.
+d) Let L be a language that is computed by an RM. Then L can only be computed by a TM if L
+is regular.
+7
+1. VO exam ETI Summer 2024 Group A
+7. (19 Punkte) Show in the calculus NK of natural deduction that
+¬q →r∨¬p⊢(p∧¬q)→r
+Use the following rules:
+Einführung Elimination
+A B A∧B A∧B
+∧ ∧: i ∧: e ∧: e
+A∧B A B
+A B
+. .
+. .
+. .
+A∨B C C
+A B
+∨ ∨: i ∨: i ∨: e
+A∨B A∨B C
+A
+.
+.
+.
+B
+A A→B
+→ →: i →: e
+A→B B
+A
+.
+.
+.
+False
+A ¬A
+¬ ¬: i ¬: e
+¬A False
+False
+False False: e
+A
+¬¬A
+¬¬ ¬¬: e
+A
+8
+1. VO exam ETI Summer 2024 Group A
+8. (19 Punkte) Consider the following two formal languages over the alphabet Σ={a,b,c}:
+L ={bncan+2 |n≥1} L ={bncan+2 |0≤n≤3}
+1 2
+a) Define a context-free grammar G with L(G)=L .
+1
+b) Define the transition function δ for a DFA A = (Q,Σ,δ,q ,F) with Q = {0,1,...,10} (maxi-
+0
+mum 11 states) so that L(A) = L . Do this by completing the following state table and give
+2
+both the starting state q and the set of accepting states F.
+0
+• q =
+0
+• F =
+a b c
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+9
+1. VO exam ETI Summer 2024 Group A
+9. (19 points)
+Sudoku, literally"digitsmayonlyoccuronce"isapopularJapanesenumberpuzzle, whichisplayed
+on a 9×9 grid. As the name suggests, the digits from 1 to 9 may only occur once in each of the (i)
+rows, (ii) columns and (iii) 3×3 blocks.
+Show that Sudoku is in NP and sketch a suitable polytime verifier. This means that you summarise
+Sudoku as a formal language
+SUDOKU:={S |S is a solvable Sudoku puzzle}
+and define a polytime verifier for SUDOKU.
+hint. YoucanassumeanarbitrarycodingofSudokus,forexampleS isrepresentedbya9×9matrix,
+where the entries are x ∈{1,...,9,⊔}.
+ij
+x x x x x x x x x
+11 12 13 14 15 16 17 18 19
+x x x x x x x x x
+21 22 23 24 25 26 27 28 29
+x x x ... x x x
+31 32 33 37 38 39
+x x x ... x x x
+41 42 43 47 48 49
+.
+.
+.
+x x x x x x x x x
+91 92 93 94 95 96 97 98 99
+The entry ⊔ means that the corresponding cell is empty.
+10
+1. VO exam ETI Summer 2024 Group A
+10. (19 Points) Consider the precondition {x = n∧y = 1}, postcondition {y = 2n}, and the while
+program P:
+while x̸=0 do
+y :=2·y;
+x:=x−1;
+end;
+Here,x,y,narenaturalnumbersand·denotesmultiplication. ShowthatP ispartiallycorrectusing
+the Hoare calculus.
+Use the following rules:
+{Q′} P {R′}
+Q|=Q′,R′ |=R
+[z] {Q{x(cid:55)→t}} x:=t {Q} [a] {Q} P {R}
+{Q} P {R} {R} P {S} {I∧B} P {I}
+1 2
+[s] {Q} P ;P {S} [w] {I} while B do P end {I∧¬B}
+1 2
+Hint: use the loop invariant {y = 2n−x}. As in the lecture, all variables in the program contain
+natural numbers and for subtraction we use the convention 0−1=0.
+11

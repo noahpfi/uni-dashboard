@@ -1,0 +1,52 @@
+Theorie ökonomischer Entscheidungen
+Aufgabenblatt 8
+Prof. Dr. Heiner Schumacher
+UIBK
+1 Adverse Selektion und Tests
+Auf einem Markt werden Zitronen zum Preis p gehandelt. Dieser Preis wird von allen
+Agenten als gegeben betrachtet. Es gibt 100 risikoneutrale Zitronenverkäufer, die jeweils
+eine Zitrone verkaufen. 50 Zitronen sind von guter, 50 sind von schlechter Qualität. Der
+Reservationspreis eines Verkäufers für eine schlechte Zitrone sei 0 Euro, für eine gute sei
+dieser gegeben durch 5 Euro. Weiter gibt es 120 risikoneutrale Käufer, von denen jeder
+genau eine Zitrone erwerben will. Die Zahlungsbereitschaft für eine gute Zitrone beträgt
+8 Euro, für eine schlechte 0 Euro.
+1. Bestimmen Sie die e¢ ziente Allokation auf diesem Markt.
+2. Angenommen, weder Verkäufer noch Käufer kennen die Qualität einer Zitrone (je-
+doch die relevanten Wahrscheinlichkeiten!). Wie hoch ist der Gleichgewichtspreis?
+Ist das Gleichgewicht e¢ zient?
+3. Die Verkäufer kennen nun die Qualität ihrer Zitrone. Wie sieht die Angebotsfunk-
+tion eines Verkäufers aus, wenn er eine gute bzw. eine schlechte Zitrone geerntet
+hat? Bestimmen Sie die aggregierte Angebotsfunktion der Zitronenverkäufer.
+4. Welche Qualität erwartet ein Käufer, der nicht beobachten kann, ob eine Zitrone
+gut oder schlecht ist, aber weiß, dass die Verkäufer die Qualität kennen, bei einem
+Preis von 3 bzw. 6? Beachten Sie, dass er auch alle relevanten Wahrscheinlichkeiten
+kennt! Wie hoch ist dessen Zahlungsbereitschaft in diesen Fällen? Bestimmen Sie
+die aggregierte Nachfragefunktion der Zitronenkäufer!
+5. Bestimmen Sie das Gleichgewicht auf diesem Markt unter den in Teil (3.) und (4.)
+gemachten Annahmen.
+1
+6. Angenommen, die Verkäufer kennen die Qualität ihrer Zitronen zunächst nicht,
+können diese aber testen lassen. Gute Zitronen bestehen einen solchen Test mit
+Wahrscheinlichkeit t > 0;5, schlechte Zitronen bestehen ihn mit Wahrscheinlichkeit
+g < 0;5. Die Käufer haben keine Möglichkeit, diesen Test durchzuführen. Sie
+antizipieren jedoch, dass alle Verkäufer ihre Zitronen testen. Welches Gleichgewicht
+ergibt sich bei t = 0;6/g = 0;45 bzw. t = 0;9/g = 0;05?
+2 Adverse Selektion und Screening
+Eine Unfallversicherung zahlt für jeden Unfall 1:000 Euro pro Person. Nehmen Sie an, es
+gibt zwei unterschiedlich große Gruppen von Versicherten: Ein Versicherter der Gruppe A
+hat mit einerWahrscheinlichkeit von10%einenUnfall; einVersicherterderGruppe B hat
+mit einer Wahrscheinlichkeit von 40% einen Unfall. Gruppe A umfasst 3.000 Personen,
+während Gruppe B nur 2.000 Personen umfasst.
+1. Gehen Sie davon aus, dass die Versicherung die zwei Gruppen nicht unterscheiden
+kannundbeideGruppengesetzlichverp‡ichtetsind,eineVersicherungabzuschließen.
+Wie hoch muss die Unfallversicherung die Prämie pro Person mindestens wählen,
+um keine Verluste zu machen?
+2. Wenn die Unfallversicherung nun nicht verp‡ichtend ist, welche Gruppe wird sich
+für die Versicherung entscheiden, wenn der Preis der in Teil (1.) ermittelte Wert
+ist? Sie können annehmen, dass beide Gruppen risiko-neutral sind.
+3. Die Versicherung bietet nun zwei verschiedene Verträge zu unterschiedlichen Kondi-
+tionen an: (a) einen Vertrag mit einer Prämie von 40 Euro, welcher im Schadensfall
+900 Euro ausbezahlt; (b) einen Vertrag mit einer Prämie von 300 Euro, welcher im
+Schadensfall 2:000 Euro ausbezahlt. Welche Gruppe wird sich für welchen Vertrag
+entscheiden?
+2

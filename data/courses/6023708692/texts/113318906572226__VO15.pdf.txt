@@ -1,0 +1,424 @@
+Statistische Datenanalyse
+Der zentrale Grenzwertsatz
+Der zentrale Grenzwertsatz
+Summen von
+Zufallsvariablen
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 1/28
+Summen von Zufallsvariablen:
+Erwartungswert
+• EineGruppevonAnleger:innenbesitzt3WertpapiereX,Y
+undZ.
+X isteinfestverzinslichesWertpapiermitjährlichem
+Gewinnvon200Euro.Y undZ sindunsichereAnlagenmit
+E(Y)=400Euro,Var(Y)=202
+E(Z)=200Euro,Var(Z) =102
+Y undZ sindstochastischunabhängig.
+• Frage:WiegroßistdererwarteteGewinnallerdrei
+Wertpapiere?
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 2/28
+Summen von Zufallsvariablen:
+Erwartungswert
+• DerGewinnistgegebendurch
+G = 200+Y +Z.
+E(G) = E(200+Y +Z)
+= 200+E(Y)+E(Z)
+= 200+400+200
+= 800Euro
+d.h.erwarteterGewinnistSummedererwarteten
+GewinnedereinzelnenWertpapiere.
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 3/28
+Summen von Zufallsvariablen:
+Erwartungswert
+• DieGruppevonAnleger:innenkauftvonY zweiweitere
+PapiereundvonZ dreiweiterePapiere
+G = 200+3Y +4Z
+E(G) = E(200+3Y +4Z)
+= 200+3E(Y)+4E(Z)
+= 200+3·400+4·200
+= 2200Euro
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 4/28
+Summen von Zufallsvariablen:
+Erwartungswert
+Erwartungswert der Summe von Zufallsvariablen
+E(a +a Y +a Z) = a +a E(Y)+a E(Z)
+0 1 2 0 1 2
+E(a +a X +...+a X ) = a +a E(X )+...+a E(X )
+0 1 1 n n 0 1 1 n n
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 5/28
+Summen von Zufallsvariablen: Varianz
+• VarianzdesGewinns
+G = 200+3Y +4Z
+Var(G) = Var(200+3Y +4Z)
+= 32Var(Y)+42Var(Z)
+= 9·202+16·102
+= 5200
+√
+DieStandardabweichungbeträgtdamit 5200 = 72.11
+Euro.
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 6/28
+Summen von Zufallsvariablen: Varianz
+• BeiderVarianzderSummevonZufallsvariablenfallen
+additiveKonstantenwegundmultiplikativeKonstanten
+werdenquadriert!
+Vorraussetzung:Zufallsvariablensindunabhängig.
+• ZurBerechnungderVarianzvonabhängigen
+ZufallsvariablenbenötigenwirdieKovarianzder
+Zufallsvariablen.
+Annahme:Cov(Y,Z) = 100
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 7/28
+Summen von Zufallsvariablen: Varianz
+• VarianzdesGewinns
+Var(G) = Var(200+3Y +4Z)
+(cid:104) (cid:105)
+= E (200+3Y +4Z−E(200+3Y +4Z))2
+(cid:104) (cid:105)
+= E (3Y −E(3Y)+4Z−E(4Z))2
+(cid:104) (cid:105)
+= E (3Y −E(3Y))2
++2·E[(3Y −E(3Y))(4Z−E(4Z))]
+(cid:104) (cid:105)
++E (4Z−E(4Z))2
+= Var(3Y)+2·Cov(3Y,4Z)+Var(4Z)
+= 32Var(Y)+2·3·4Cov(Y,Z)+42Var(Z)
+= 9·202+24·100+16·102
+= 7600
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 8/28
+Zusammenfassung: Varianz der Summe
+von Zufallsvariablen
+Unabhängige Zufallsvariablen
+Var(a +a Y+a Z) = a2Var(Y)+a2Var(Z)
+0 1 2 1 2
+Var(a +a X +...+a X ) = a2Var(X )+...+a2Var(X )
+0 1 1 n n 1 1 n n
+Abhängige Zufallsvariablen
+Var(a +a Y+a Z)=a2Var(Y)+a2Var(Z)+2a a Cov(Y,Z)
+0 1 2 1 2 1 2
+Var(a +a X +...+a X )=a2Var(X )+...+a2Var(X )+
+0 1 1 n n 1 1 n n
++2a a Cov(X ,X )+...+2a a Cov(X ,X )
+1 2 1 2 n−1 n n−1 n
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 9/28
+Normalverteilung
+• AnnahmeY undZsindunabhängigundnormalverteiltmit
+Y ∼ N(400,202)
+Z ∼ N(200,102)
+• Gewinn
+G = 200+3Y +4Z
+istwiedernormalverteiltmit
+E(G) = 2200Euro
+Var(G) = 5200Euro
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 10/28
+Normalverteilung
+• Also
+G ∼ N(2200,5200).
+• FallsY undZ abhängigsind(und(Y,Z)zweidimensional
+normalverteiltist),folgt
+G = 200+3Y +4Z
+istwiedernormalverteiltmit
+E(G) = 2200
+Var(G) = 7600
+Also
+G ∼ N(2200,7600).
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 11/28
+Summe unabhängiger normalverteilter
+ZVlen
+a)Y ∼ N(µ ,σ2)undZ ∼ N(µ ,σ2)
+y y z z
+a +a Y +a Z ∼ N(a +a µ +a µ ,a2σ2+a2σ2)
+0 1 2 0 1 y 2 z 1 y 2 z
+b)X ,...,X mitX ∼ N(µ,σ2)
+1 n i i i
+a +a X +...+a X ∼ N(a +a µ +...+a µ ,a2σ2+...+a2σ2)
+0 1 1 n n 0 1 1 n n 1 1 n n
+c)SpezialfallX ∼ N(µ,σ2)
+i
+a +a X +...+a X ∼ N
+(cid:0)
+(a +a +...+a
+)µ,(a2+...+a2)σ2(cid:1)
+0 1 1 n n 0 1 n 1 n
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 12/28
+Der zentrale Grenzwertsatz
+Der Zentrale Grenzwertsatz
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 13/28
+Aussage des Zentralen Grenzwertsatzes
+• ImletztenAbschnitthabenwirgesehen,dassSummen
+normalverteilterZufallsvariablenwiedernormalverteilt
+sind.
+• FallsdieSummandennichtnormalverteiltsind,istdie
+SummeinvielenFällenzumindestapproximativ
+normalverteilt.
+• GrundlageistderZentrale Grenzwertsatz.
+• DerZentraleGrenzwertsatzgiltz.B.fürunabhängigund
+identisch(i.i.d.)verteilteZufallsvariablenX ,...,X mit
+1 n
+E(X) = µundVar(X) = σ2.
+i i
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 14/28
+Veranschaulichung des Zentralen
+Grenzwertsatzes
+Beispiel: Münzwurf
+• WirwerfeneineMünzeunabhängigvoneinandernmal.
+• BetrachtedieZufallsvariablen
+(cid:40)
+1 Ergebnisdesi-tenWurfsistKopf
+X =
+i
+0 Ergebnisdesi-tenWurfsistZahl
+• ObwohldieAusgangsvariablenX ∼ B(1,0.5)diskretsind,
+i
+kanndieSummederKopfWürfewegendeszentralen
+GrenzwertsatzesdurcheineNormalverteilung
+approximiertwerden,d.h.
+X = X +···+X ∼ a N(n·0.5,n·0.52).
+1 n
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 15/28
+Veranschaulichung des Zentralen
+Grenzwertsatzes
+(a)10Würfe (b)20Würfe
+1monib
+52.
+2.
+51.
+1.
+50.
+0
+0 2 4 6 8 10
+x1
+2monib
+2.
+51.
+1.
+50.
+0
+0 5 10 15 20
+x2
+(c)50Würfe (d)100Würfe
+3monib
+1.
+50.
+0
+0 10 20 30 40 50
+x3
+2monib
+80.
+60.
+40.
+20.
+0
+0 20 40 60 80 100
+x2
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 16/28
+Aussage des Zentralen Grenzwertsatzes
+Approximativgiltdann
+S := X +···+X ∼ a N(nµ,nσ2)
+n 1 n
+bzw.
+(cid:18) (cid:19)
+x−nµ
+P(S ≤ x) ≈ Φ √
+n
+nσ
+undnatürlichauch
+(cid:18) σ2(cid:19)
+a
+X ∼ N µ,
+n
+n
+bzw.
+(cid:18) x−µ√ (cid:19)
+P(X ≤ x) ≈ Φ n .
+n σ
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 17/28
+Der Zentrale Grenzwertsatz
+Zentraler Grenzwertsatz
+Seien X ,...,X unabhängige und identisch verteilte Zufalls-
+1 n
+variablen wie X mit E(X) = µ und Var(X) = σ2. Dann konver-
+giertdieVerteilungsfunktionF (z)=P(Z ≤z)derstandardi-
+n n
+siertenSumme
+X +···+X −nµ 1 (cid:88) n X −µ X−µ√
+Z = 1 √ n = √ i = n
+n nσ n σ σ
+i=1
+fürn→∞anjederStellez∈RgegendieVerteilungsfunktion
+Φ(z)derStandardnormalverteilung:
+F (z)→Φ(z).
+n
+Kurz:Z ∼a N(0,1).
+n
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 18/28
+Praktische Anwendungen I
+• DieMonatsumsätze einer Reihe von Einzelhandels-
+geschäftenlassensichalsZufallsvariablenauffassen
+X ,X ,....DerGesamtumsatzallerausgewählten
+1 2
+EinzelhandelsgeschäfteistdannalsSummederX ,X ,...
+1 2
+näherungsweisenormalverteilt.
+• DerStromverbrauch eines Elekrizitätswerkesist
+annäherndnormalverteilt,daersichalsSummedes
+zufallsabhängigenStromverbrauchssehrvielerHaushalte
+ergibt.
+• DieGesamtleistung eines Versicherungsunter-
+nehmersistnäherungsweisenormalverteilt,dasiesich
+alsSummederzufallsabhängigenLeistungenandiesehr
+vielenVersicherungsnehmer:innenergibt.
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 19/28
+Praktische Anwendungen II
+• DieGesamtnachfrage nach einem Massenprodukt
+istnäherungsweisenormalverteilt,wennesdieSumme
+vielerEinzelnachfragenist.DieseTatsachefindet
+beispielsweiseinderLagerhaltungstheorieVerwendung.
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 20/28
+Musteraufgabe: Elektrizitätswerk
+Ein2-PersonenhaushaltbenötigtimSchnitt2950kWh/Jahr
+elektrischenStrom(Standardabweichungbeträgtca.117
+kWh/Jahr).Angenommen,einElektrizitätswerkbeliefert1000
+2-Personenhaushalte.
+WievielekWhStromproJahrmussdasElektrizitätswerkzur
+Verfügungstellen,damitdieWahrscheinlichkeitdafür,dass
+dieNachfrageder2-PersonenhaushaltenachStromdievom
+ElektrizitätswerkproduzierteMengeüberschreitet,nurein
+Prozentbeträgt?
+Lösung
+S = X +X +...+X
+1000 1 2 1000
+S ∼ a N(1000·2950,1000·1172)
+1000
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 21/28
+Musteraufgabe Elektrizitätswerk, Lösung
+S ∼ a N(1000·2950,1000·1172)
+1000
+P(S > s) = 0.01
+1000
+mitR:
+√
+qnorm(0.01,1000·2950, 1000·1172,lower.tail = FALSE)
+= 2958607kWh/Jahr
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 22/28
+Musteraufgabe: Postfiliale
+IneinerPostfilialesollderStellenplanfürdiekommenden
+Monatefestgelegtwerden.InderfolgendenTabellesehenSie
+fürdiepoissonverteilte Zufallsvariable“Anzahlder
+Kund:innenproTag”dieAufzeichnungenüber5Tage:
+Tag 1 2 3 4 5
+Kund:innen 81 81 88 46 84
+BerechnenSienunapproximativ(mitHilfedesZentralen
+Grenzwertsatzes)dieWahrscheinlichkeit,dassinden
+kommenden90Tagenwenigerals6713Kund:innendie
+Postfilialeaufsuchenwerden,wenndieAnzahlderKund:innen
+proTagalsvoneinanderunabhängigeZufallsvariablen
+angenommenwerdensollen.
+(GebenSiedasErgebnisbitteinProzentan!)
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 23/28
+Exkurs: Poissonverteilung
+Poissonverteilung
+EineZufallsvariableXmitderWahrscheinlichkeitsfunkti-
+on
+(cid:40)
+λx e−λ x ∈ {0,1,...}
+f(x) = P(X = x) = x!
+0 sonst
+istpoissonverteilt mitParameter(oderRate)λ > 0,kurz
+X ∼ Po(λ).
+Die Poissonverteilung bestimmt die Wahrscheinlich-
+keiten für die Anzahl eines bestimmten Ereignisses in
+einembestimmtenZeitraum.
+Es gilt E(X) = λ und Var(X) = λ. λ ist also die
+durchschnittliche Anzahl von Ereignissen inner-
+halb eines Zeitraums.
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 24/28
+Wahrscheinlichkeitsfunktion je nach λ
+λ=0.5
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+0 1 2 3 4 5 6 7 8 9 10
+X
+)x(f
+λ=1
+0.4
+0.3
+0.2
+0.1
+0
+0 1 2 3 4 5 6 7 8 9 10
+X
+)x(f
+λ=5
+0.2
+0.15
+0.1
+0.05
+0
+0 5 10 15
+X
+)x(f
+λ=10
+0.14
+0.12
+0.1
+0.08
+0.06
+0.04
+0.02
+0
+0 5 10 15 20
+X
+)x(f
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 25/28
+Annahmen der Poissonverteilung
+• ZweiEreignissekönnennichtgenaugleichzeitig
+auftreten.
+• DieWahrscheinlichkeit,dasseinEreigniswährendeines
+kleinenZeitintervallsderLänge∆t stattfindet,ist
+annäherndλ∆t.
+• DieWahrscheinlichkeitfürdasEintreteneiner
+bestimmtenZahlvonEreignissenineinemTeilintervall
+hängtnurvondessenLängel,abernichtvonseinerLage
+aufderZeitachseab.
+• DieAnzahlenvonEreignisseninzweidisjunkten
+Teilintervallensindunabhängig.
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 26/28
+Musteraufgabe Postfiliale, Lösung
+• DieAnzahlderKund:innen,diediePostfilialeproTag
+betreten,istpoissonverteilt.Füreinepoissonverteilte
+ZufallsvariableX wissenwirnun,dassgilt
+E(X) = Var(X) = λ.
+• AusderobigenTabellekannλmitHilfedes
+arithmetischenMittelsgeschätztwerdenundbeträgt76.
+• DieAnzahlderKund:innenfüreinebestimmteZahlvon
+TagenkannalsSummevonpoissonverteilten
+Zufallsvariablen(X ∼ Po(λ))modelliertwerden.
+i
+• NachdemZentralenGrenzwertsatzistdieSummevonn
+identisch,unabhängigverteiltenZufallsvariablenX
+i
+annährendnormalverteilt
+S = X +X +···+X ∼ a N(nµ,nσ2)
+n 1 2 n
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 27/28
+Musteraufgabe Postfiliale, Lösung
+• DieKund:innenanzahlvon90Tagenistalsoapproximativ
+normalverteiltmit
+90
+(cid:88) a
+S = X ∼ N(90·76,90·76)
+90 i
+i=1
+• Gesuchtist
+P(S < 6713)
+90
+• mitR:
+√
+P(S < 6713) = pnorm(6713,90·76, 90·76)
+90
+≈ 6.2%
+© StatistischeDatenanalyse–15–DerzentraleGrenzwertsatz 28/28

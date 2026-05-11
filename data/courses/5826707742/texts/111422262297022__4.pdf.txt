@@ -1,0 +1,425 @@
+Einführung in die Theoretische Informatik
+ArminWalch Georg Moser JoshuaOcker
+ManuelEberl SamuelFrontull VeraSchmitt
+https://tcs-informatik.uibk.ac.at
+Zusammenfassung
+Zusammenfassung der letzten LVA
+Einführung Elimination
+A B A∧B A∧B
+∧ ∧: i ∧: e ∧: e
+A∧B A B
+A B
+. .
+. .
+. .
+A∨B C C
+A B
+∨ ∨: i ∨: i ∨: e
+A∨B A∨B C
+A
+.
+.
+.
+B A A → B
+→ →: i →: e
+A → B B
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 1
+Einführung Elimination
+A
+.
+.
+.
+False A ¬A
+¬ ¬: i ¬: e
+¬A False
+False
+False False: e
+A
+¬¬A
+¬¬ ¬¬: e
+A
+Definition
+DerKalkülNKdesnatürlichenSchließensbestehtausdengeradebetrachteten
+Beweisregeln.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 2
+Inhalte der Lehrveranstaltung
+Einführung in die Logik
+Syntax&SemantikderAussagenlogik,KalküldesnatürlichenSchließens,Konjunktive
+undDisjunktiveNormalformen
+Einführung in die Algebra
+algebraischeStrukturen,BoolescheAlgebra
+Einführung in die Theorie der Formalen Sprachen
+GrammatikenundFormaleSprachen,ReguläreSprachen,KontextfreieSprachen,
+Chomsky-Hierarchie,AnwendungenvonformalenSprachen
+Einführung in die Berechenbarkeitstheorie und Komplexitätstheorie
+AlgorithmischunlösbareProbleme,TuringMaschinen,Alternative
+Berechnungsmodelle,Reduktion,Komplexitätstheorie
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 3
+Konjunktive und Disjunktive Normalformen
+Definition
+EineWahrheitsfunktionf: {T,F}n → {T,F}isteineFunktion,dienWahrheitswerten
+einenWahrheitswertzuordnet (vgl.Rechnerarchitektur)
+Definition
+Seif: {T,F}n → {T,F}eineWahrheitsfunktion;wirdefinieren:
+TV(f) := {(s ,...,s ) | f(s ,...,s ) = T}
+1 n 1 n
+Definition (Konjunktive und Disjunktive Normalform)
+1
+EinLiteralisteinAtompoderdieNegationeinesAtoms¬p
+2 FormelAistindisjunktiverNormalform(DNF),wennAeineDisjunktionvon
+KonjunktionenvonLiteralen
+3 FormelAistinkonjunktiverNormalform(KNF),wennAeineKonjunktionvon
+DisjunktionenvonLiteralen
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 4
+Lemma
+• f: {T,F}n → {T,F}eineWahrheitsfunktion
+TV(f) ̸= ∅,TV(f) ̸= {T,F}n
+• p ,...,p atomareFormeln
+1 n
+• SeiDNFDdefiniertals:
+n
+_ ^
+D := A
+i
+(s1 ,...,sn )∈TV(f) i=1
+wobeiA = p,wenns = TundA = ¬p sonst
+i i i i i
+• SeiKNFK definiertals:
+n
+^ _
+K := B
+j
+(s1 ,...,sn )̸∈TV(f) j=1
+wobeiB = ¬p,wenns = TundB = p sonst
+j j j j j
+• DieWahrheitstabellenvonDundK entsprechenderWahrheitsfunktionf
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 5
+Satz
+1 JedeWahrheitsfunktionkannalsDNFoderKNFausgedrücktwerden
+2 JedeFormelmitnAtomeninduzierteineWahrheitsfunktioninnVariablen
+Beweis.
+1 EsfehlendieFälle,wodieWahrheitsfunktiontrivialist:
+• TV(f)=∅
+• TV(f)={T,F}n
+2 SetzeD = K :=
+Vn
+i=1 (p i ∧¬p i )imerstenFall
+3 SetzeD = K :=
+Wn
+i=1 (p i ∨¬p i )imzweitenFall
+Folgerung
+FürjedeFormelAexistierteineDNFDundeineKNFK,sodassA ≡ D ≡ K gilt.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 6
+Beispiel
+DiefolgendeOperation(⊕)wirdXORgenannt:
+p q p⊕q
+F F F
+F T T
+T F T
+T T F
+WirerstellendieKNF.
+TV(⊕) = {(F,T),(T,F)}
+p p p ⊕p Disjunktion KNF
+1 2 1 2
+F F F p ∨p
+1 2
+T T F ¬p ∨¬p (p ∨p )∧(¬p ∨¬p )
+1 2 1 2 1 2
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 7
+Algebraische Strukturen
+Definition (Algebra)
+EineAlgebraA = ⟨A ,...,A ;◦ ,...,◦ ⟩bestehtaus
+1 n 1 m
+1 Träger(oderTrägermengen)A 1 ,...,A n
+2 Operationen◦ 1 ,...,◦ m aufdenTrägern
+Definition
+WenndieTrägervonAendlichsind,dannnennenwirAendlich
+Beispiel
+SeiA = {a,b,c,d}und◦durchfolgendeOperationstabelledefiniert:
+◦ a b c d
+a a b c d
+b b c d a
+c c d a c
+d d a b c
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 8
+Nullelement, neutrales Element, Inverses
+Definition
+Sei◦einebinäreOperationaufA
+• Wenn0 ∈ Aexistiert,sodassfürallea ∈ A
+a◦0 = 0◦a = 0
+dannheißt0Nullelementfür◦
+• Wenn1 ∈ Aexistiert,sodassfürallea ∈ A
+a◦1 = 1◦a = a
+dannheißt1Einselement(neutralesElement)für◦
+• Sei1dasneutraleElementfür◦undfüra ∈ A,existiertb ∈ A,sodass
+a◦b = b◦a = 1
+DannheißtbdasInverse(Komplement)vona
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 9
+Halbgruppen, Monoide und Gruppen
+Definition
+EineAlgebraA = ⟨A;◦⟩heißt
+• Halbgruppe,wenn◦assoziativ
+• Monoid,wennA = ⟨A;◦,1⟩eineHalbgruppemitEinselement1für◦
+• Gruppe,wennAeinMonoidistundjedesElementeinInverseshat
+EineHalbgruppe,einMonoidodereineGruppeheißtkommutativ,wenn◦kommutativ
+Beispiel
+DieimvorigenBeispieldefinierteAlgebraAhatfolgendeEigenschaften:
+1
+aistdasneutraleElementvon◦
+2 JedesElementbesitzteinInverses
+3
+◦istnichtkommutativ
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 10
+Definition (Boolesche Algebra)
+EineAlgebraB = ⟨B;+,·,∼,0,1⟩heißtBoolescheAlgebrawenngilt:
+1
+⟨B;+,0⟩und⟨B;·,1⟩sindkommutativeMonoide
+2 DieOperationen+und·distribuierenübereinander.Esgiltalsofürallea,b,c ∈ B:
+a·(b+c) = (a·b)+(a·c) a+(b·c) = (a+b)·(a+c)
+3 Fürallea ∈ Bgilt
+a+∼(a) = 1 a·∼(a) = 0
+DasElement∼(a)heißtdasKomplementoderdieNegationvona
+Konventionen
+• Wirlassen·oftwegundschreibenabstatta·b
+• WirverwendendiefolgendePräzedenz:∼bindetstärkerals+und·
+• DieDefinitionisteineVerallgemeinerungderDefinitioninRechnerarchitektur
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 11
+Mengenalgebra
+SeiMeineMenge;P(M)bezeichnetdiePotenzmengevonM,also
+P(M) := {N | N ⊆ M}
+Definition
+WirbetrachtendieAlgebra
+⟨P(M);∪,∩,∼,∅,M⟩
+1
+∪dieMengenvereinigung
+2
+∩dieSchnittmenge
+3
+∼dieKomplementärmenge
+DieseAlgebranenntmanMengenalgebra.
+Lemma
+DieMengenalgebraisteineBoolescheAlgebra
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 12
+Lemma
+DieMengenalgebraisteineBoolescheAlgebra
+Beweis.
+Wirmüssenzeigen,dass
+1
+⟨P(M);∪,∅⟩sowie⟨P(M);∩,M⟩kommutativeMonoidesind
+2 seienA,B,C ⊆ M,danngilt
+A∩(B∪C) = (A∩B)∪(A∩C) A∪(B∩C) = (A∪B)∩(A∪C)
+3 füralleA ⊆ Mgilt
+A∪∼(A) = M A∩∼(A) = ∅
+WirbeginnenmitdenGesetzenzumKomplement;dazubeschränkenwirunsauf
+A∩∼(A) = ∅,derBeweisfürA∪∼(A) = Mistganzähnlich
+A∩∼(A) = A∩{x ∈ M | x ∈/ A} = {x ∈ M | x ∈ Aundx ∈/ A} = ∅
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 13
+Beweis (Fortsetzung).
+Wirmüssenalsonochzeigen,dass
+1
+⟨P(M);∪,∅⟩sowie⟨P(M);∩,M⟩kommutativeMonoidesind
+2 seienA,B,C ⊆ M,danngilt
+A∩(B∪C) = (A∩B)∪(A∩C) A∪(B∩C) = (A∪B)∩(A∪C)
+DieKorrektheitderDistributivgesetzefolgtleichtausdenDefinitionender
+Mengenoperationen(nachrechnen!)
+Zeigenwirnunalso,dass⟨P(M);∪,∅⟩einkommunitativeMonoidist;dazuzeigenwir
+• ∪istassoziativ:A∪(B∪C) = (A∪B)∪C
+• ∅istdasneutraleElementfür∪aufP(M):A∪∅ = ∅∪A = A
+BeideGleichungenfolgenausderDefinitionderVereinigung.
+Ebensozeigtman,dass⟨P(M);∩,M⟩einkommunitativeMonoidist.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 14
+Pause & Ankündigung
+
+Binäre Algebra
+Definition
+SeiB := {0,1},wobei0,1 ∈ N.WirbetrachtendieAlgebra
+⟨B;+,·,∼,0,1⟩
+wobeidieOperationen+,·,∼wiefolgtdefiniert:
+· 1 0 + 1 0 ∼
+1 1 0 1 1 1 1 0
+0 0 0 0 1 0 0 1
+DieseAlgebranenntmanbinäreAlgebraoderBoolescheAlgebraimengerenSinn
+(Rechnerarchitektur)
+Lemma
+DiebinäreAlgebraisteineBoolescheAlgebra
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 15
+Algebra des Kartesischen Produkts und der
+Schaltfunktionen
+Definition
+SeiB := {0,1}undseiBn dasn-fachekartesischeProduktvonB:
+Bn = {(a ,...,a ) | a ∈ B};wirbetrachten
+1 n i
+⟨Bn;+,·,∼,(0,...,0),(1,...,1)⟩
+1
+(a
+1
+,...,a
+n
+)+(b
+1
+,...,b
+n
+) = (a
+1
++b
+1
+,...,a
+n
++b
+n
+)
+2
+(a
+1
+,...,a
+n
+)·(b
+1
+,...,b
+n
+) = (a
+1
+·b
+1
+,...,a
+n
+·b
+n
+)
+3
+∼((a
+1
+,...,a
+n
+)) = (∼(a
+1
+),...,∼(a
+n
+))
+Lemma
+DieobendefinierteAlgebraisteineBoolescheAlgebra (Proseminar)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 16
+Definition (Boolesche Funktion)
+1 SeiF eineaussagenlogischeFormelmitAtomenx 1 ,...,x n
+2 F(s 1 ,...,s n ) := F[x 1 7→ s 1 ,...,x n 7→ s n ]
+3
+WirdefinierendieFunktionf: Bn → Bwiefolgt:
+f(s ,...,s ) := F(s ,...,s ) .
+1 n 1 n
+Dannheißtf dieBoolescheFunktionzumAusdruckF (vgl.Wahrheitsfunktion)
+Beispiel (Boolesche Algebra Frm = ⟨Frm;∨,∧,¬,False,True⟩)
+SeiF = x ∧¬(x ∨x ),dannistf: B2 → B s 1 s 2 f(s 1 ,s 2 ) g(s 1 ,s 2 )
+1 2 1
+dieBoolescheFunktionzuF 0 0 0 0
+SeiG = x ∧x ∧¬x ,dannistg: B2 → B 0 1 0 0
+1 2 2
+dieBoolescheFunktionzuG 1 0 0 0
+1 1 0 0
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 17
+Darstellungssatz von Stone
+Satz
+JedeendlicheBoolescheAlgebraistisomorphzueinerMengenalgebra
+Bemerkung
+• Isomorphiebedeutet,dassdieOperationenaufdenAlgebrenidentsind.
+• DerDarstellungssatzvonStonebedeutetalso,dassjedeGleichheitineiner
+MengenalgebraeineGleichheitfüralleBooleschenAlgebrenist.
+• AndersausgedrücktstellenMengenalgebrendieeindeutigeDarstellungvon
+BooleschenAlgebrendar.
+Anwendung
+• gegebenzweiBooleschenFunktionenf,g: Bn → B
+• umzuzeigen,dassf = ggenügtesf,galsMengenaufzufassenunddie
+GleichheitinderMengenalgebrazuzeigen
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 18
+Isomorphie
+vgl. Lineare Algebra
+Definition
+SeienA = ⟨A;◦ ,...,◦ ⟩,B = ⟨B;⊙ ,...,⊙ ⟩Algebren,dannheißteineAbbildung
+1 m 1 m
+φ: A → BeinIsomorphismuszwischenAundB,wenngilt
+• φistbijektiv
+• füralleOperationen◦ vonA(◦ n-stellig)gilt:
+i i
+φ(◦(a ,...,a )) = ⊙(φ(a ),...,φ(a ))
+i 1 n i 1 n
+fürallea ,...,a ∈ A.
+1 n
+Definition
+EineAlgebraA = ⟨A;◦ ,...,◦ ⟩heißtisomorphzurAlgebraB = ⟨B;⊙ ,...,⊙ ⟩,wenn
+1 m 1 m
+∼
+einIsomorphismusφ: A → Bexistiert.WirschreibenA = B.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 19
+Beispiel
+• BetrachtedieMonoide⟨{a,b},+⟩und⟨{0,1},·⟩,wobeidieOperationen+bzw.·
+durchdiefolgendenOperationstafelndefiniertsind:
++ a b · 0 1
+a a b 0 0 1
+b b a 1 1 0
+• DannistdieAbbildungφ: {a,b} → {0,1}mit
+φ(a) := 0 φ(b) := 1 ,
+einIsomorphismus
+Bemerkung
+WirinteressierenunsbesondersfürIsomorphismenzwischenBooleschenAlgebren
+undkönnendamitdenDarstellungsatzvonStoneexaktdefinieren.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 20
+Beispiel
+• Sei⟨B;+,·,∼,0,1⟩diebinäreAlgebra
+• Sei⟨P(M);∪,∩,∼,∅,M⟩dieMengenalgebra,mitderMengeM := {a}.Wirkönnen
+dieseMengenalgebraeinfacherwiefolgtschreiben:
+⟨{∅,{a}};∪,∩,∼,∅,{a}⟩
+• Seiφ: B → {∅,{a}}wiefolgtdefiniert
+φ(0) := ∅ φ(1) := {a}
+• DannistφeinebijektiveFunktionundaußerdemsogareinIsomorphismus:
+∪ {a} ∅ ∩ {a} ∅ ∼
+{a} {a} {a} {a} {a} ∅ {a} ∅
+∅ {a} ∅ ∅ ∅ ∅ ∅ {a}
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 21
+Partielle Ordnungen und Boolesche Algebren
+Definition
+EinepartielleOrdnungaufeinerMengeM ̸= ∅isteineMengevongeordnetenPaaren
+(a,b) ∈ M×M,geschriebena ≤ b,sodassgilt
+• a ≤ a,fürallea ∈ M Reflexivität
+• a ≤ bundb ≤ cimplizierta ≤ c,fürallea,b,c ∈ M Transitivität
+• a ≤ bundb ≤ aimplizierta = b,fürallea,b ∈ M Antisymmetrie
+Fakt
+• SeiB = ⟨B;+,·,∼,0,1⟩eineBoolescheAlgebraunddefiniereRelation≤aufB:
+a ≤ b :⇔ a·b = a
+• ≤isteinepartielleOrdnung ( → „DiskreteStrukturen“)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 22
+Beispiel
+WirbetrachtendieMengenalgebra
+⟨P(M);∪,∩,∼,∅,M⟩
+• DanninduziertdieMengenalgebradiepartielleOrdnung
+A ≤ B :⇔ A∩B = A
+• “≤”istgeradedieTeilmengenrelationfürM
+Beispiel
+WirbetrachtendieBoolescheAlgebraFrm
+⟨Frm;∨,∧,¬,False,True⟩
+WobeidieZeichenwieinderAussagenlogikinterpretiertwerdenundGleichheit
+logischeÄquivalenzbedeutet.
+DannentsprichtdieinduzierteOrdnungrelationA ≤ BgeradeA → B.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 23
+Beweis des Darstellungssatz von Stone (I)
+• SeiB = ⟨B;+,·,∼,0,1⟩eine(endliche)BoolescheAlgebra
+• sei≤,dievonB induziertepartielleOrdnung
+Definition
+• Seia ∈ B\{0}.
+• Wenn0 ≤ aundkeina′ ∈ B\{0},a ̸= a′ existiert,sodass0 ≤ a′ ≤ a,dannnennen
+wiraeinAtom.
+Kürzer:dieAtomesinddieoberenNachbarnvon0inB.
+Beispiel
+• sei⟨B;+,·,∼,0,1⟩diebinäreAlgebra,dannist1 ∈ BeinAtom
+• esgibtkeinElement ̸= 0inB,dasgrößerals0und(echt)kleinerals1
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 24
+Beweis des Darstellungssatz von Stone (II)
+Lemma
+Zujedemb ∈ B\{0}gibtesmindestenseinAtoma ∈ Bmita ≤ b.
+Konstruktion
+1 SeiM := {a ∈ B | aeinAtominB}.
+2
+WirbetrachtennundieMengenalgebra⟨P(M);∪,∩,∼,∅,M⟩.
+3 Fürjedesb ∈ B,definiereA(b) := {a ∈ B | aeinAtominB unda ≤ b}.
+4 SchließlichdefinierenwirdieAbbildungφ: B → P(M),sodassφ(b) := A(b).
+Lemma
+DieAbbildungφisteinIsomorphismusvon⟨B;+,·,∼,0,1⟩auf⟨P(M);∪,∩,∼,∅,M⟩.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 25

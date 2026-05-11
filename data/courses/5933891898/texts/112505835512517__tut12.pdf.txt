@@ -1,0 +1,111 @@
+Tutorium — Functional Programming
+Week 12 — Cyclic Data Structures & Abstract Data Types
+Adam Pescoller
+T. Niederbrunner & J. Bodemann (for courteously providing their materials)
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 0/11
+Cyclic Data Structures
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 1/11
+Concrete vs Abstract Datatypes
+Concrete datatypes
+• Structure is given
+• We can define our own Operations
+Abstract Datatypes
+• Defined by a set of operations
+• We define internal structure
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 2/11
+Stack
+Image:https://commons.wikimedia.org/wiki/File:Data_stack.svg
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 3/11
+Exercise 12.1: Implement Stack
+Create a new module and implement the following functions and types:
+• Create a new type Stack
+• top: returns the top element of the stack
+• pop: removes the top element and returns the new stack
+• push: adds an element on top of the stack
+• isEmpty: returns a Bool wheter the stack contains elements or not
+Only export the 4 functions, the Stack type and a function to create an empty stack,
+don’t export the Stack datatype constructor, to entirely hide the internal structure of
+the stack.
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 4/11
+Exercise 12.1: Possible Solution
+module StackModule (top, pop, push, isEmpty, Stack, newStack) where
+newtype Stack a = Stack [a] deriving (Show)
+-- here you can also use Maybe instead of an error if nothing is on top,
+-- but for simplicity I chose just to go with the error approach
+top :: Stack a -> a
+top (Stack []) = error "kein Element vorhanden"
+top (Stack (x : xs)) = x
+pop :: Stack a -> Stack a
+pop (Stack []) = error "kein Element vorhanden"
+pop (Stack (x : xs)) = Stack xs
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 5/11
+Exercise 12.1: Possible Solution
+push :: a -> Stack a -> Stack a
+push x (Stack xs) = Stack (x : xs)
+isEmpty :: Stack a -> Bool
+isEmpty (Stack []) = True
+isEmpty _ = False
+-- this constant represents a new Stack, without exposing the underlying
+-- inner storage type
+newStack :: Stack a
+newStack = Stack []
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 6/11
+Exercise 12.2: Using the Stack
+• Create a constant that represents the
+illustrated stack.
+Start with an empty stack and use the defined
+operations.
+• Create a new constant and modify the previous
+stack to look like on the right.
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 7/11
+Exercise 12.2: Possible Solution
+import StackModule (Stack, newStack, pop, push)
+myStack :: Stack Integer
+myStack = push 4 . push 3 . push 2 . push 1 $ newStack
+myStack2 :: Stack Integer
+myStack2 = pop myStack
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 8/11
+Exercise 12.3 Printing and saving the Stack
+• Implement a function printStack, that
+outputs a stack the following way:
+• Create a function saveStack, that stores the
+stack in a text file.
+Hint: use the show function
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 9/11
+Exercise 12.3: Possible Solution
+printStack :: (Show a) => Stack a -> IO ()
+printStack (Stack (x : xs)) = printStack2 "#" (Stack (x : xs))
+where
+printStack2 aux (Stack (x : xs)) = do
+putStrLn (aux ++ show x)
+if null xs then putStrLn "END"
+else printStack2 (aux ++ "#") (Stack xs)
+saveStack :: (Show a) => a -> IO ()
+saveStack stack = do
+appendFile "save.txt" (show stack ++ "\n")
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 10/11
+Questions? Need help? Feedback?
+• Element Chat (with handle @adam.pescoller:student.uibk.ac.at)
+• Adam.Pescoller@student.uibk.ac.at
+• http://cl-informatik.uibk.ac.at/teaching/ws25/fp/feedback.php
+Tutorium—FunctionalProgramming WS25—Week12—CyclicData AdamPescoller
+Structures&AbstractDataTypes 11/11

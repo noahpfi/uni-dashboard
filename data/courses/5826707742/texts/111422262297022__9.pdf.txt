@@ -1,0 +1,286 @@
+Einführung in die Theoretische Informatik
+ArminWalch Georg Moser JoshuaOcker
+ManuelEberl SamuelFrontull VeraSchmitt
+https://tcs-informatik.uibk.ac.at
+Zusammenfassung
+Zusammenfassung der letzten LVA
+Definition (informell)
+deterministische,einbändigeTuringmaschine(TM):
+⊢ a b b a b a ⊔ ⊔ ⊔ ⊔ ⊔ ⊔ ⊔ ···
+Q Lese/Schreibkopf
+• EineTMverwendeteineinseitigunendlichesBandalsSpeicher
+• ZuBeginnderBerechnungstehtdieEingabeaufdemBand
+• DerSpeicherwirdmiteinemLese/Schreibkopfgelesenoderbeschrieben
+• DasVerhaltenderTMwirddurchdieendlicheKontrolleQkontrolliert
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 1
+Inhalte der Lehrveranstaltung
+Einführung in die Logik
+Syntax&SemantikderAussagenlogik,KalküldesnatürlichenSchließens,Konjunktive
+undDisjunktiveNormalformen
+Einführung in die Algebra
+algebraischeStrukturen,BoolescheAlgebra
+Einführung in die Theorie der Formalen Sprachen
+GrammatikenundFormaleSprachen,Chomsky-Hierarchie,ReguläreSprachen,
+KontextfreieSprachen,AnwendungenvonformalenSprachen
+Einführung in die Berechenbarkeitstheorie und Komplexitätstheorie
+AlgorithmischunlösbareProbleme,Turingmaschinen,Alternative
+Berechnungsmodelle,Reduktion,Komplexitätstheorie
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 2
+Deterministische Turingmaschinen (cont’d)
+Beispiel
+SeiM = ({s,p,t,r},{0,1},{⊢,⊔,0,1},⊢,⊔,δ,s,t,r)eineTM,δ kanndurcheine
+Zustandstabelle
+⊢ 0 1 ⊔
+s (s,⊢,R) (s,0,R) (s,1,R) (p,⊔,L)
+p (t,⊢,R) (t,1,L) (p,0,L) ·
+oderdurchdasZustandsübergangsgraphangegebenwerder
+1/1/R
+0/0/R
+⊢/⊢/R
+1/0/L
+0/1/L
+⊢/⊢/R
+⊔/⊔/L
+s p t
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 3
+Turing Maschinen Berechenbarkeit
+Beispiel
+WirbeschreibeninformelleineTMM,diezweiZahlenx undx alsEingabebekommt;
+1 2
+Msollx −x berechnenunddieseDifferenzverdoppeln
+1 2
+Algorithmus
+• wirkodierendieEingabex ,x durchWörterüberdemAlphabet{⊓}derLängex
+1 2 1
+bzw.x
+2
+• diebeidenEingabenwerdendurchTrennsymbol getrennt
+• Subtraktionfunktioniert,indemwirsukzessivefü(cid:50)ralle⊓rechtsvon ein⊓links
+mit⊔überschreiben (cid:50)
+• Verdopplungfunktioniertindemwirfürjedesübrige⊓,⊓⊓schreiben
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 4
+Rekursiv, Rekursiv Aufzählbar, Co-Rekursiv Aufzählbar
+Definition
+EineSpracheL(oderallgemeineineMenge)heißt
+• rekursivaufzählbar,wenneineTMMexistiert,sodassL = L(M)
+• co-rekursivaufzählbarwennsiedasKomplementeinerrekursivaufzählbaren
+Spracheist
+• rekursiv,wenneseinetotaleTMMgibt,sodassL = L(M)
+Church-Turing-These
+JedesalgorithmischlösbareProblemistauchmitHilfeeinerTuringmaschinelösbar
+(dasgiltauchfürQuantenrechner!)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 5
+Satz
+SeiΣeinAlphabetundL ⊆ Σ∗ rekursiv;dannist∼Lrekursiv
+Beweis.
+DaLrekursivist,gibteseinetotaleTMMmitL = L(M).WirdefiniereneineTMM′,
+wobeiderakzeptierendeundderverwerfendeZustandvonMvertauschtwerden.Weil
+Mtotalist,istauchM′ total.SomitakzeptiertM′ einWortgenaudann,wennMes
+verwirftundesfolgt∼L = L(M′),d.h.∼Listrekursiv.
+Satz
+JederekursiveMengeistrekursivaufzählbar.Andererseitsistnichtjederekursiv
+aufzählbareMengerekursiv.
+Beweis.
+DerersteTeildesSatzesisteineKonsequenzderDefinitionen;fürdenzweitenTeil
+brauchenwirnochetwasVorbereitung...
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 6
+Satz
+WennLund∼Lrekursivaufzählbarsind,dannistLrekursiv.
+Beweis.
+• ∃TMM ,M mitL = L(M )und∼(L) = L(M )
+1 2 1 2
+• definiereTMM′,sodassdasBandzweiHälftenhat(odereine2-BandTM):
+b b ˆ a b a a a a b a a a
+···
+c c c d d d c ˆc d c d c
+• M wirdaufderoberenundM aufderunterenHälftesimuliert
+1 2
+• wennM x akzeptiert,M′ akzeptiertx
+1
+• wennM x akzeptiert,M′ verwirftx
+2
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 7
+Nichtdeterministische Turingmaschinen
+Definition
+Einenichtdeterministische(einbändige)TuringmaschineN(kurzNTM)istein9-Tupel
+N = (Q,Σ,Γ,⊢,⊔,δ,s,t,r),
+sodass
+1 QeineendlicheMengevonZuständen,
+2
+ΣeineendlicheMengevonEingabesymbolen,
+3
+Γ ⊇ ΣeineendlicheMengevonBandsymbolen,
+4
+⊢ ∈ Γ\Σ,derlinkeEndmarker,
+5
+⊔ ∈ Γ\Σ,(⊔ ≠ ⊢),dasLeerzeichen,
+6
+δ: Q×Γ → P(Q×Γ×{L,R})dieÜbergangsfunktion,
+7 s ∈ Q,derStartzustand,
+8 t ∈ Q,derakzeptierendeZustandund
+9 r ∈ Q,derverwerfendeZustandmitt ̸= r.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 8
+Beispiel
+FürdieNTMN = ({s,q,r,t},{0,1},{⊢,⊔,0,1},⊢,⊔,δ,s,t,r)mitδ gegebendurch
+⊢ 0 1 ⊔
+s {(s,⊢,R)} {(s,0,R),(q,0,R)} {(s,1,R)} {(r,⊔,R)}
+q · {(r,0,R)} {(t,1,R)} {(r,⊔,R)}
+esgilt0011 ∈ L(N)
+Beachte
+dieSpracheL(N)vonNistregulär
+1 0,1
+0 1
+q q q
+0 1 2
+1
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 9
+Beispiel (Fortsetzung)
+EsergibtsichfürdasWort0011derfolgendeBerechnungsbaum:
+(s,⊢ 0011⊔∞,0)
+(s,⊢ 0011⊔∞,1)
+(s,⊢ 0011⊔∞,2)(q,⊢ 0011⊔∞,2)
+(s,⊢ 0011⊔∞,3)(q,⊢ 0011⊔∞,3)(r,⊢ 0011⊔∞,3)
+. . (t,⊢ 0011⊔∞,4)
+.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 10
+Adressierung des Berechnungsbaumes
+ϵ ϵ
+1 1
+11 11 12
+111 111 112 121
+1111 1111 1121
+deterministisch nichtdeterministisch
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 11
+Satz
+SeiNeineNTM.DannexistierteineDTMM,sodassL(M) = L(N).Umgekehrtwirdjede
+voneinerDTMakzeptierteSpracheauchvoneinerNTMakzeptiert.
+Beweis des ersten Teils.
+SeiNeineNTM;wirkonstruiereneinedreibändigeDTMMmitL(N) = L(M);seix das
+EingabewortfürN:
+• DasersteBandvonMwirdimmernurdieseEingabex enthalten
+• AufdemzweitenBandsimulierenwirdieRechenschrittevonNbezüglicheines
+WegesimBerechnungsbaum
+• SchließlichdientdasdritteBanddazu,denaktuellenWegzuadressieren
+MitHilfederAdressierungvonWegenkönnenwirnundasVerhaltenvonNinM
+simulieren
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 12
+Beweis (Fortsetzung).
+1 AnfangsenthältBand1vonMdasEingabewortx,dieBänder2und3sindleer
+2 KopieredenInhaltvonBand1aufBand2
+3 VerwendeBand2,umdieRechenschrittevonNaufx zusimulieren.Beijeder
+StelleinderBerechnung,inderdieÜbergangsfunktionδ mehrereMöglichkeiten
+zulässt,siehtMaufBand3nach,welcheMöglichkeitgewähltwerdensoll
+4 WenndieSimulationvonNakzeptiert,dannakzeptiere
+5 ErsetzedasWortaufBand3durchseinenunmittelbarenNachfolgerinder
+graduiert-lexikographischenOrdnungaufWörtern≤
+gradlex
+6 GehezuSchritt(2)
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 13
+LV Evaluierung
+LV Analyse: Online in Präsenz
+BittebesuchenSiediefolgendeURLundstartenSiedieUmfrage:
+https://lfuonline.uibk.ac.at/public/lfuonline_lve.online?hkey=
+55d70fdd50acb280e8d1f4a8353ade2f
+WozuLVAnalyse?
+• FeedbackzurLehrveranstaltungerlaubtVerbesserung
+• LVAnalyseistfixerBestandteilderinternenEvaluierungvonLehrenden
+• GuteEvaluierungensindVoraussetzungfürLehrepreise
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 14
+Unentscheidbarkeit
+Entscheidbarkeit, Unentscheidbarkeit
+Definition
+SeiΣeinAlphabet.EineEigenschaftPvonWörternüberΣheißt
+• entscheidbargenaudann,wenndieMenge{x ∈ Σ∗ | x hatEigenschaftP}rekursiv
+ist
+• semi-entscheidbargenaudann,wenndieMenge{x ∈ Σ∗ | x hatEigenschaftP}
+rekursivaufzählbarist
+Beispiel
+SeiP(x) = „x isteinPalindromgeraderLänge“;dannistPentscheidbar
+Beispiel
+JedesentscheidbareProblemistsemi-entscheidbar
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 15
+Grenzen der Informatik
+• EinProblemPist
+1 semi-entscheidbar,wenneseineTMMgibt,derenSprachealleWörtersind,welche
+dieEigenschaftPhaben
+2 entscheidbar,wenneseinetotaleTMMgibt,sodassMgenaujeneWörterakzeptiert,
+welchedieEigenschaftPhaben
+WaskönnenTuringmaschinen?
+• CodierungvonTuringmaschinen
+• universelleTuringmaschine;eineTMalsUniversalinterpreter
+WarumhatdieInformatikdannGrenzen?
+• DefinitioneinerTMmiteinemanderenVerhalten(inBezugaufTermination)als
+alleanderen
+• UnentscheidbarkeitdesHalteproblems
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 16
+Universelle Turingmaschine
+Codierung von TMs
+TMskönnencodiertwerdenindemallenotwendigenInformationenalsWörterüber
+{0,1}dargestelltwerden:
+1 AnzahlderZustände
+2 Übergangsfunktion
+3 Eingabe-undBandalphabet
+4 ...
+Beispiel
+seiM = (Q,Σ,Γ,⊢,⊔,δ,s,t,r)eineTM;Codierungüber{0,1}
+0n 1 0m 1 0k 1 0s 1 0t 1 0r 1 0u 1 0v 1 ···
+entsprichtQ = {0,...,n−1},Γ = {0,...,m−1},Σ = {0,...,k−1},(k ⩽ m),s
+Startzustand,t akzeptierend,r verwerfend,ulinkerEndmarker,v Blanksymbol;das
+Zeichen1dientalsTrennzeichenderCodierung
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 17
+Beispiel (Fortsetzung)
+betrachteMundkodiereδ(p,a) = (q,b,d),wobeic = 0wennd = Lundc = 1wenn
+d = R
+0p 1 0a 1 0q 1 0b 1 0c 1
+Beispiel
+WirkodierenM′ = ({s,p,t,r},{0,1},{0,1,⊢,⊔},⊢,⊔,δ,s,t,r)mit
+⊢ 0 1 ⊔
+s (s,⊢,R) (s,0,R) (s,1,R) (p,⊔,L)
+p (t,⊢,R) (t,1,L) (p,0,L) ·
+Zunächsterhaltenwir
+0000100001 00 1 ϵ 1 00 10001 00 10001···
+(cid:124)(cid:123)(cid:122)(cid:125) (cid:124)(cid:123)(cid:122)(cid:125) (cid:124)(cid:123)(cid:122)(cid:125) (cid:124)(cid:123)(cid:122)(cid:125) (cid:124)(cid:123)(cid:122)(cid:125) (cid:124)(cid:123)(cid:122)(cid:125) (cid:124)(cid:123)(cid:122)(cid:125) (cid:124)(cid:123)(cid:122)(cid:125)
+n=4 m=4 k=2 s t r ⊢ ⊔
+undetwaδ(p,⊢) = (t,⊢,R)wirdzu0102102102101
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 18
+Definition
+eineTMUheißtuniversell(UTM),wennbeiEingabe
+• desCodes⌜M⌝einerTMM
+• unddesCodes⌜x⌝einerEingabex fürM
+dieTMU,dieTMMaufx simuliert,dasheißt
+L(U) = {⌜M⌝♯⌜x⌝ | x ∈ L(M)}
+UTM schematisch
+U
+⌜M⌝♯⌜x⌝ ⌜x⌝ t t
+M r r
+⟳ ⟳
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 19
+Simulation durch eine Universelle Turingmaschine
+Notation
+VereinfachendläßtmanoftdenHinweisaufdieKodierungweg:
+L(U) = {M♯x | x ∈ L(M)}
+Simulation
+1 UTMUkontrolliertKorrektheitderCodes;wenninkorrekt,verwirftU
+2 UsimuliertMmit3BändernaufderEingabex
+• Band1enthältdieBeschreibungvonM
+• Band2enthältdasdekodierteEingabewortx
+• Band3enthältdensimuliertenBandinhaltdesBandesvonM
+3 wennMakzeptiert,soakzeptiertU;wennMverwirft,soverwirftU
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 20
+Lemma
+AngenommenUeineUTMundMeinebeliebigeTM.Dannexistierteine
+SpezialisierungvonU,genanntU ,dieMaufallenEingabensimuliert.
+M
+Beweis.
+• WirbetrachteneineVarianteU′ vonU,sodassdaszweiteBandvonU′ die
+BeschreibungderzusimulierendenTMsenthältunddasersteBanddie
+(dekodierte)Eingabe
+• NunspezialisierenwirU′ zurgesuchtenTMU indemwirdenCodevonMfixauf
+M
+daszweiteBandschreiben(alsohardcoden)
+• NachDefinitionführtU alleSchrittevonMaufderEingabex aus
+M
+Bemerkung
+MetaprogrammierungoderProgrammiermakrosstammenvonUTMs
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 21
+Frohe Feiertage & Guten Rutsch

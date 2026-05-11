@@ -1,0 +1,33 @@
+{
+  "_hash": "f849e01dc9cf782c",
+  "course_id": "5717917862",
+  "course_code": null,
+  "course_type": null,
+  "course_title": "Mathematik",
+  "course_name": "Mathematik",
+  "ongoing_summary": "Die Proseminare finden wie gewohnt statt. Inhaltlich geht es um das gesamte Thema 5. Als Voraussetzung wird vor allem das Lösen von linearen Gleichungssystemen mit dem Eliminationsverfahren benötigt. Der Onlinetest wird im Olatkurs wieder nach der VO verfügbar sein und nochmal zwei Aufgaben zur Nachbereitung von Thema 5 sowie drei Aufgaben zu den neuen Inhalten aus Thema 6 umfassen.",
+  "deadlines": [
+    {
+      "date": "2026-06-22",
+      "description": "PS-Klausur im Mathematik-Modul, jeweils in der Zeit des PS"
+    },
+    {
+      "date": "2026-06-23",
+      "description": "PS-Klausur im Mathematik-Modul, jeweils in der Zeit des PS"
+    },
+    {
+      "date": "2026-07-06",
+      "description": "Anmeldung für die Vorlesungsprüfung im Mathematik-Modul, über LFU:online, bis 13.7. 12:00 Uhr Mittags"
+    },
+    {
+      "date": "2026-07-13",
+      "description": "Letzter Tag der Anmeldung für die Vorlesungsprüfung im Mathematik-Modul, über LFU:online, bis 12:00 Uhr Mittags"
+    },
+    {
+      "date": "2026-07-20",
+      "description": "Vorlesungsprüfung im Mathematik-Modul, am Montag, 10:00 Uhr"
+    }
+  ],
+  "requirements": "",
+  "last_activity": "2026-05-11"
+}

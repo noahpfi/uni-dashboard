@@ -1,0 +1,85 @@
+Theorie ökonomischer Entscheidungen
+Aufgabenblatt 3
+Prof. Dr. Heiner Schumacher
+UIBK
+1 Markteintritt und Wettbewerb
+Auf einem Markt be…ndet sich ein rational agierender Monopolist U1. Das ebenfalls
+rational agierende Unternehmen U2 überlegt in den Markt einzutreten. U1 entscheidet
+sich zwischen einer gemäßigten und einer aggressiven Werbestrategie. Die Strategien von
+U2 sindentwederindenMarkteinzutreten, odernichteinzutreten. TrittU2 indenMarkt
+ein und U1 wirbt gemäßigt, dann macht U1 einen Gewinn von 50 und U2 einen Gewinn
+von 100. Tritt U2 in den Markt ein und U1 wirbt aggressiv, machen beide einen Gewinn
+von 0. Tritt U2 nicht in den Markt ein, dann macht es in jedem Fall einen Gewinn von
+50. Der Gewinn von U1 ist dann 300, egal welche Werbestrategie es verfolgt.
+1. NehmenSiean,dassbeideUnternehmenihreStrategiesimultanentscheidenmüssen.
+Erstellen Sie eine Auszahlungsmatrix und …nden Sie alle Nash Gleichgewichte.
+2. Nehmen Sie nun an, dass U2 seine Strategie zuerst entscheidet und U1 darauf
+reagieren kann. Erstellen Sie den Spielbaum. Finden Sie alle Nash Gleichgewichte
+in reinen Strategien und alle teilspielperfekten Nash Gleichgewichte.
+2 Das Hold-Up Problem
+Betrachten Sie das folgende dreistu…ge Spiel zwischen einem selbständigen Softwareen-
+twickler (S) und einem Konzern (K), für den S ein Programm entwickelt:
+Auf Stufe 1 muss sich S entscheiden, ob er sich bei der Entwicklung anstrengen will
+(cid:15)
+oder nicht. Wenn er sich nicht anstrengt, so ist das Programm für K wertlos, das
+Spiel endet und beide erhalten eine Auszahlung von 0. Wenn S sich anstrengt, so
+hat er Kosten von c Euro unabhängig davon, ob er die Er…ndung später an den
+Konzern verkauft oder nicht. Das Programm hat in diesem Fall einen Wert v Euro
+für K und das Spiel geht weiter auf Stufe 2. Sie können annehmen, dass v > c > 1.
+2
+1
+Auf Stufe 2 macht K ein Kaufangebot an S. Das Angebot kann entweder großzügig
+(cid:15)
+sein, so dass K den Betrag v an S bezahlt, oder es ist niedrig, dann bezahlt K nur
+2
+1 Euro an S.
+Auf Stufe 3 entscheidet sich S, ob er das Angebot von K annimmt. In diesem Fall
+(cid:15)
+erhält er den angebotenen Kaufpreis und K kann das Programm nutzen. Lehnt er
+ab, so erhält er kein Geld, da das Programm …rmenspezi…sch ist und an niemanden
+sonst verkauft werden kann. In diesem Fall hat K keinen Zugri¤auf das Programm
+so dass K’s Auszahlung 0 ist.
+1. Zeichnen Sie den Spielbaum dieses Spiels.
+2. Wieviele Strategien haben die beiden Spieler? Nennen Sie alle Strategien!
+3. Bestimmen Sie das teilspielperfekte Nash Gleichgewicht dieses Spiels.
+4. Angenommen, K könnte sich vor Beginn des Spiels verp‡ichten s > v 1 Euro
+2 (cid:0)
+Strafe an den Staat zu bezahlen, falls er ein niedriges Angebot macht. Wie sieht
+dann der Spielbaum dieses Spiels aus? Welches teilspielperfekte Nash Gleichgewicht
+ergibt sich?
+5. Würde K eine solche freiwillige Selbstverp‡ichtung eingehen wollen? Erläutern Sie
+kurz verbal Ihre Antwort.
+3 Daniel, der Hase
+Daniel und n Löwen be…nden sich in der folgenden Situation:
+Daniel ist so erschrocken, dass er sich nicht bewegen kann. Die Löwen sind sehr
+hungrig, aber auch sehr rational. Löwe 1 wählt zwischen den Strategien “Daniel essen”
+2
+(E) und “nicht Daniel essen”(N). Wenn er E wählt, wird er müde so dass er von dem
+nächstenLöwengegessenwerdenkann. JederLöwej 2kanndenLöwenj 1essenwenn
+(cid:21) (cid:0)
+Löwe j 1 Strategie E gewählt hat. Alle Löwen maximieren ihre erwartete Auszahlung
+(cid:0)
+und haben die folgenden Präferenzen. “E und nicht gegessen werden”ist strikt besser
+als “N und nicht gegessen werden”, was wiederum strikt besser ist als “E und gegessen
+werden”.
+1. Schreiben Sie den Spielbaum für dieses Spiel auf wenn n = 3 ist.
+2. Finden Sie das teilspielperfekte Nash Gleichgewicht für n = 3. Wird Daniel am
+Leben bleiben?
+3. Sagen Sie Daniels (teilspielperfektes) Schicksal für allgemeines n voraus. Warum ist
+es nicht unabhängig von n?
+4 Die Piraten
+Zehn Piraten (in der Reihenfolge 10 bis 1, vom ältesten bis zum jüngsten Piraten) be-
+sitzen zusammen 100 Goldmünzen. Sie müssen eine Aufteilung …nden, die jedem Piraten
+eine nicht-negative Anzahl an Goldmünzen bietet und sicherstellt, dass alle Goldmünzen
+verteilt werden. Die Piraten haben sich auf folgendes Verfahren geeinigt: Pirat 10 macht
+einen Vorschlag. Wenn zumindest die Hälfte der Piraten (inklusive dem Vorschlagenden)
+diesem Vorschlag zustimmen, wird er implementiert. Ansonsten wird der vorschlagende
+Pirat exekutiert. Dann wird die neun-Piraten Version dieses Spiels gespielt, wobei Pi-
+rat 9 den Vorschlag macht. Zur Annahme dieses Vorschlags werden mindestens vier der
+anderen acht Piraten benötigt. Wenn der Vorschlag angenommen wird, wird er imple-
+mentiert, ansonsten wird Pirat 9 exekutiert. Und so geht es weiter... (Wenn die Anzahl
+der Piraten ungerade ist, wird zur Annahme eine strikte Mehrheit benötigt; wenn die An-
+zahl der Piraten gerade ist, reicht zur Annahme die Zustimmung der Hälfte der Piraten
+aus). Wie viele Goldmünzen erhält Pirat 10 maximal in einem teilspielperfektem Nash
+Gleichgewicht?
+3

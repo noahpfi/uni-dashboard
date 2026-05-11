@@ -1,0 +1,30 @@
+Methoden zum Management von
+Leistungsprozessen
+Julian Fodor
+5. Übungsaufgabe
+Aufgabenstellung:
+Für eine bestimmte Baugruppe, die vom Unternehmen zugekauft wird, liegen
+folgende Bedarfswerte für das vergangene Jahr, bestehend aus 20 Perioden, vor:
+t 1 2 3 4 5 6 7 8 9 10
+y 70 28 65 65 82 65 43 21 71 74
+k
+11 12 13 14 15 16 17 18 19 20 t
+65 45 53 45 26 80 57 46 59 56 y
+k
+Die Baugruppe soll mit Hilfe eines Bestellpunktsystems disponiert werden. Die
+bestellfixen Kosten betragen 24 GE je Bestellung, die Lagerkosten betragen 0,17 GE
+je Stück und Periode. Die Wiederbeschaffungszeit (von der Bestellung bis zur
+Lieferung) beträgt 2 Perioden. D.h., wird z. Bsp. in Periode 2 bestellt, so stehen die
+Komponenten in Periode 4 zur Verfügung.
+1. Ermitteln Sie Schätzwerte für den mittleren Periodenbedarf und die
+Standardabweichung des Periodenbedarfs. Berechnen Sie darauf aufbauend
+die optimale Melde- und Bestellmenge für die Baugruppe (Aufrunden auf
+ganze Zahl!). Unterstellen Sie dabei normalverteilte und im Mittel konstante
+Periodenbedarfe und gehen Sie davon aus, dass Fehlmengen mit einer
+Wahrscheinlichkeit von 95% ausgeschlossen werden sollen. - 3 Punkte
+2. Bestimmen Sie, in welchen Perioden auf Basis des jeweiligen
+Dispositionsbestands eine Bestellung durchgeführt werden muss. Der
+Anfangslagerbestand zu Beginn der Periode 1 beträgt 170 Stück. - 3 Punkte
+Anmerkungen:
+Dispositionsbestand einer Periode = Dispositionsbestand Vorperiode – Bedarf einer
+Periode + offene Bestellmenge Vorperiode

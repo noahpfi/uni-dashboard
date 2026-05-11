@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+html, body {
+  background-color: var(--color-page);
+}
+
+@theme {
+  --color-page: #f9fafb;
+  --color-card: #ffffff;
+  --color-card-hover: #f9fafb;
+  --color-border: #e5e7eb;
+  --color-border-sub: #f3f4f6;
+  --color-text-1: #111827;
+  --color-text-2: #374151;
+  --color-text-3: #4b5563;
+  --color-text-muted: #9ca3af;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-page: #0d121d;
+    --color-card: #111827;
+    --color-card-hover: #1f2937;
+    --color-border: #1f2937;
+    --color-border-sub: #111827;
+    --color-text-1: #c4c9d4;
+    --color-text-2: #c4c9d4;
+    --color-text-3: #9ca3af;
+    --color-text-muted: #6b7280;
+  }
+}
+
+@layer components {
+  .badge-vo {
+    background: #dbeafe;
+    color: #1d4ed8;
+  }
+
+  .badge-ps {
+    background: #dcfce7;
+    color: #15803d;
+  }
+
+  .badge-se {
+    background: #f3e8ff;
+    color: #7e22ce;
+  }
+
+  .badge-ue {
+    background: #fef3c7;
+    color: #b45309;
+  }
+
+  .badge-pr {
+    background: #ffedd5;
+    color: #c2410c;
+  }
+
+  .badge-default {
+    background: #f3f4f6;
+    color: #4b5563;
+  }
+
+  .badge-added {
+    background: #dcfce7;
+    color: #15803d;
+  }
+
+  .badge-changed {
+    background: #fef3c7;
+    color: #b45309;
+  }
+
+  .badge-removed {
+    background: #fee2e2;
+    color: #b91c1c;
+  }
+
+  .badge-priority {
+    background: #f3e8ff;
+    color: #7e22ce;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge-vo {
+    background: #1e3a5f;
+    color: #93c5fd;
+  }
+
+  .badge-ps {
+    background: #14532d;
+    color: #86efac;
+  }
+
+  .badge-se {
+    background: #3b0764;
+    color: #d8b4fe;
+  }
+
+  .badge-ue {
+    background: #451a03;
+    color: #fcd34d;
+  }
+
+  .badge-pr {
+    background: #431407;
+    color: #fdba74;
+  }
+
+  .badge-default {
+    background: #374151;
+    color: #9ca3af;
+  }
+
+  .badge-added {
+    background: #14532d;
+    color: #86efac;
+  }
+
+  .badge-changed {
+    background: #451a03;
+    color: #fcd34d;
+  }
+
+  .badge-removed {
+    background: #450a0a;
+    color: #fca5a5;
+  }
+
+  .badge-priority {
+    background: #3b0764;
+    color: #d8b4fe;
+  }
+}

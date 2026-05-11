@@ -1,0 +1,51 @@
+PS Einführung in die Makroökonomik
+Aufgabenblatt 1
+Sommersemester2026
+1. IneinerVolkswirtschaftgibtesineinemJahrdiefolgendenwirtschaftlichenAktivitäten: EineFis-
+chzucht zahlt seinen Arbeitenden EUR 400000 für die Bearbeitung von Fisch. Der bearbeitete
+Fisch wird dann um EUR 500000 an ein Fischverarbeiter verkauft. Der Fischverarbeiter zahlt
+seinen Arbeitenden EUR 500000 für die Erzeugung diverser Dosenfische. Diese Dosenfische
+werdenumEUR1850000direktandieEndverbraucherverkauft.
+(a) Wie hoch ist das BIP in diesem Land, wenn man den Wert der produzierten Endprodukte
+errechnet(Verwendungsrechnung)?
+(b) WiehochistdieWertschöpfungaufjederStufedesProduktionsprozesses? Wiehochistdas
+BIP in diesem Land, wenn man die Summe der Wertschöpfungen bildet (Entstehungsrech-
+nung)?
+(c) Wie hoch sind die gesamten Löhne und die gesamten Gewinne in dieser Volkswirtschaft?
+WiehochistdasBIP,wennmandieSummedieserEinkommenbildet(Verteilungsrechnung)?
+2. AngenommeneineVolkswirtschaftproduziertindenJahren2017und2018diezweiGüterFahrräder
+undHemdenzudeninderTabellegegebenenPreisenP undindenangegebenenMengenQ.
+Jahr 2017 Jahr 2018
+P Q P Q
+Fahrräder 2700 2000 2600 3500
+Hemden 110 45000 80 17000
+(a) Berechnen Sie mit Hilfe des BIP-Deflators die Inflationsrate. Verwenden Sie das Jahr 2017
+alsBasisjahr.
+(b) Berechnen Sie mit Hilfe des Verbraucherpreisindex die Inflationsrate. Der Verbraucher-
+preisindex wird anhand eines konstanten Warenkorbes berechnet, der 6 Fahrräder und 15
+Hemdenbeinhaltet.
+(c) WarumunterscheidensichdieInflationsraten?
+3. EineVolkswirtschaftseidurchdiefolgendenVerhaltensgleichungenbeschrieben:
+C =150+0.5YD
+I =800
+G=700
+T =800
+(a) BerechnenSiedasgleichgewichtigeBIP(Y∗)
+(b) BerechnenSiedasverfügbareEinkommenimGleichgewicht(YD∗)
+(c) BerechnenSiedieKonsumausgabenimGleichgewicht(C∗)
+4. GehenSieaufdieHomepagederFederalReserveEconomicData(FRED)DatenbankderSt.Louis
+FederalReserve(https://fred.stlouisfed.org/). LadenSienachstehendeZeitreihenfürÖster-
+reichherunter. VerwendenSiedieSuchfunktionderHomepageundgebenSieentwederSchlag-
+wörteroderdenDaten-Codeein.
+1|2
+• Nominales Bruttoinlandsprodukt (Gross Domestic Product for Austria; Daten-Code: CPM-
+NACSCAB1GQAT)
+• BIP-Deflator (National Accounts: National Accounts Deflators: Gross Domestic Product:
+GDPDeflatorforAustria;Daten-Code: AUTGDPDEFQISMEI)
+• Verbraucherpreisindex (Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer
+PriceIndex: TotalforAustria;Daten-Code: AUTCPIALLQINMEI)
+(a) BerechnenSiemitHilfedesBIP-DeflatorsdasrealeBIPin2023Q2(MillionenEuro).
+(b) BerechnenSiemitHilfedesVPIsdasrealeBIPin2023Q2(MillionenEuro).
+(c) Veranschaulichen Sie die Zeitreihen der beiden realen und des nominalen BIPs (von 1995
+Q1bis2023Q3)mittelseinesLinien-Diagramms(x-AchsemitZeitwerten).
+2|2

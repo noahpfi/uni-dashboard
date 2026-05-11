@@ -1,0 +1,931 @@
+VIII
+Physische Datenorganisation
+Kapitel
+Vorlesung Datenbanksysteme
+Univ.-Prof. Dr. Günther Specht
+Datenbanken und Informationssysteme (DBIS)
+Hardwarenahe Aspekte
+2
+Motivation
+• Speicherung der DB-Inhalte als Dateien
+• Effizienz
+• Physische Ebene der Speicherung
+– Blockorientierung
+– Seitengröße (aktuell ~4kB)
+– Direkter Zugriff über Seitennummer
+– Umrechnung Seitennummer  physikalische Adresse: Betriebssystem
+(Platten-Controller)
+3
+Adressierung
+• Festplattenlaufwerke, häufig auch: Disk-Arrays
+– viele, kleinere Platten anstelle von wenigen großen
+– Parallelisierung des Zugriffs
+– Erhöhung der Fehlertoleranz
+– Verschiedene Speichertechniken, RAID-Level (Random Array of
+Inexpensive Disks)
+• Magnetische Platten: Umrechnung von Seitennummer auf physische Adresse
+(Zylinder, Spur, Spur-Offset) durch Betriebssystem oder Platten-
+Controller/Micro-Code.
+• Datenorganisation (Hierarchie): Block  Spur  Zylinder
+• SSD: direkt adressierbar
+4
+Basismethoden für Plattenzugriff
+Sequentiell
+• Schneller sequentieller Zugriff in aufsteigender Sortierfolge
+• Datensätze fester und variabler Länge möglich
+• Schnell, aber schlechte Performance falls Anwendung wahlfreien Zugriff benötigt
+• Änderungen (updates) i.d.R. sehr aufwendig
+• Anwendungen: sequential read, log-Files, batch processing, Data Warehouse:
+Reporterstellung
+Wahlfrei (random)
+• Zugriffszeit von Position des Schreib-/Lesekopfes abhängig (bei Magnetplatten)
+• Schneller Zugriff, wenn alle Daten „physisch nahe“ gespeichert sind, die oft gemeinsam
+benötigt werden (physical clustering)
+• Datensätze fester Länge von Vorteil (für variable Satzlänge spezielle Implementierung
+erforderlich)
+5
+Überblick: Speicherhierarchie
+Register
+(L1/L2/L3)
+Cache
+Hauptspeicher
+Plattenspeicher
+Archivspeicher
+6
+Überblick: Speicherhierarchie
+Register
+1 ns 6 kB
+(L1/L2/L3)
+Cache
+10 ns 12MB
+Hauptspeicher
+100 ns 16GB
+Plattenspeicher
+8 ms/1ms 2TB
+Archivspeicher
+Sekunden >> 2TB
+7
+Lesen von Daten von der Platte
+• Seek Time: Arm positionieren
+– 5ms
+• Latenzzeit: ½ Plattenumdrehung (im Durchschnitt)
+– 10.000 Umdrehungen / Minute
+–  ca. 3ms
+• Transfer von der Platte zum Hauptspeicher
+– 1.030 Mbit/s  150 MB/s
+8
+Random versus Chained IO
+• 1000 Blöcke à 4KB sind zu lesen
+• Transfer 1.030 Mbit/sec für HDD, 3.000 Mbit/sec für SSD
+• Random I/O Festplatte
+– Jedes Mal Arm positionieren
+– Jedes Mal Latenzzeit
+–  1000 * (5 ms + 3 ms) + Transferzeit von 4 MB
+–  > 8000 ms + 30ms  8s
+• Chained IO Festplatte
+– Einmal positionieren, dann „von der Platte kratzen“
+–  5 ms + 3ms + Transferzeit von 4 MB
+–  8ms + 30 ms  38 ms
+• SSDs: Unterschied zwischen Random und Chained I/O abhängig von prefetching
+– Suche Block: 0.10 ms + Transferzeit 10ms
+• Also ist chained IO ein bis zwei Größenordnungen schneller als random IO
+• In Datenbank-Algorithmen unbedingt beachten!
+9
+Performance- und Datensicherheitsaspekte
+Anzahl der Hintergrundspeicher-Zugriffe (i.d.R. Magnetplatten) i.a. dominierender
+Performance-Faktor für DBMS
+• Abschätzung bzw. Abschätzbarkeit (best case, average case, worst case) der Anzahl der
+Plattenzugriffe deshalb wichtiges Auswahlkriterium bei Bewertung von Verfahren
+• Zuverlässigkeit des Dateisystems bzw. der physischen Speicherung ausschlaggebend für
+Brauchbarkeit des DBS
+• Standard-Dateisysteme, die vom Betriebssystem verwaltet werden, bringen auch
+Probleme mit sich:
+– Direktes physisches Durchschreiben geänderter Datensätze (tuple) nicht immer
+gewährleistet (file cache!)
+– Aktualisierung der Dateizuordnungstabelle erst beim Schließen der Datei (CLOSE),
+dadurch Gefahr von Datenverlusten bei Systemabstürzen
+• Funktionalität des Dateisystems deckt DBS-Bedürfnisse nur teilweise ab – oft zu wenig
+Kontrolle über die konkrete physische Speicherung
+10
+Datenspeicherung
+Datenspeicherung
+• Datenbank-Inhalte werden in Dateien im Hintergrundspeicher gespeichert.
+• MySQL verwaltet beispielsweise die Inhalte einer Tabelle in einer Datei.
+• Daten werden blockweise von der Festplatte zum Hauptspeicher transferiert.
+• Transferzeit üblicherweise höher als Verarbeitungszeit.
+• Wichtig bei der Speicherung ist die Berücksichtigung der Speicherhierarchie
+ Speicherung der Daten persistent
+ Ausnützen des Hauptspeichers und Caches soweit möglich
+ möglichst viele Daten im Hauptspeicher halten
+12
+Puffer-Verwaltung
+• Blöcke sollten möglichst lange im Hauptspeicher (Datenbankpuffer) gehalten
+werden (über Verarbeitung hinaus).
+• Datenlokalität  neu angeforderte Daten könnten bereits im Hauptspeicher
+liegen, da Block in einem vorigen Schritt bereits in den Hauptspeicher geladen
+wurde.
+• Puffer-Kapazität begrenzt  Ersetzungsstrategie für Puffer-Verwaltung nötig
+(siehe auch VO Betriebssysteme)
+13
+Puffer-Verwaltung
+P4 P1 P4 P1
+Datenbank-
+P5 P2 P2
+Puffer
+Laden von P3 =
+Ersetzen von P5 (Last
+Laden von P2 P5 P3
+Recently Used)
+P5 P2 P4 P3 P5 P2 P4 P3
+Hintergrund-
+P1 … P1 …
+speicher
+Grafik basierend auf Alfons Kemper, André Eickler: Datenbanksysteme, 7. Auflage, Oldenbourg, 2009.
+14
+Records und Felder
+• Daten werden als sogenannte Records gespeichert.
+• Mehrere Records werden in eine Datei geschrieben.
+• Record = Menge von Feldern (Werte (Items))
+ Record = Zeile der Tabelle
+ Feld = Spalte der Tabelle für gegebene Zeile
+• Jedes Feld verfügt über spezifizierten Datentyp.
+• Vgl. CREATE-Statements oder auch Structs in C.
+• Dateien bestehen aus ein oder mehreren Blöcken.
+• Ein Block kann ein oder mehrere Records enthalten.
+15
+Dateien – Blockweise Speicherung
+• Datei als Abfolge von Records.
+• Records sind oft von gleicher Länge  fixed-length records
+• Records sind unterschiedlicher Länge variable-length records
+(z.B. weil VARCHAR-Datentyp für ein oder mehrere Felder gewählt wurde)
+• Felder sind vom gleichen Record-Typ, verfügen aber über optionale Felder
+ optional fields
+16
+Dateien – Blockweise Speicherung (2)
+• Records können weniger Bytes als ein Block benötigen
+ mehrere Records in einen Block speichern, Lücken bestehen lassen
+(unspanned records)
+ „Lücken“ in Blöcken auffüllen (Teile von Records in Blöcke speichern;
+spanned records)
+• Records können auch größer als ein Block sein
+ Einfügen von Pointer vom Ende des ersten Blocks zu jenem Block, der den
+Rest des Records beinhaltet (spanned records, ggf. auch mehrere Pointer über
+mehrere Blöcke)
+17
+Dateien – Blockweise Speicherung (3)
+Types of record organization. (a) Unspanned. (b) Spanned.
+Grafik entnommen aus R. Elmasri, S. Navathe: FundamentalsofDatabase Systems, 7th edition, Pearson, 2015.
+18
+Dateien – Blockweise Speicherung (4)
+• Anforderung von Speicher vom Betriebssystem für Dateispeicherung
+– Fortlaufende Allokation: Blöcke, die hintereinander im Speicher liegen,
+werden allokiert
+– Verlinkte Allokation: Blöcke sind verteilt, beinhalten Pointer zum nächsten
+Block
+• Berechnung der Speicheradresse, der gewünschtes Feld beinhaltet:
+– fixed-length records: Berechnung des Offsets zum Beginn des Records
+– variable-length records: Einführen eines Separators, der Grenze zwischen
+Feldern signalisiert
+– optional fields: falls wenige optionale Felder genutzt werden, wird Feldname
+zum Wert gespeichert; eigener Separator für
+• Trennung Feldname und –wert
+• Trennung der Felder
+• Trennung der Records
+19
+Dateien – Blockweise Speicherung (5)
+Three recordstorageformats. (a) Afixed-lengthrecord with six fields andsize of 71 bytes.
+(b) A record with two variable-lengthfields and three fixed-lengthfields. (c) A variable-field
+recordwiththreetypesofseparatorcharacters.
+GrafikentnommenausR.Elmasri,S.Navathe:FundamentalsofDatabaseSystems,7thedition,Pearson,
+2015.
+20
+Speicherung von Datenbankinhalten
+• Verschiedene Möglichkeiten der Datei-Organisation
+– Heap-Dateien
+– Sortierte Dateien
+– Hashing
+– B-Baum
+• Verschiedene Möglichkeiten des Datei-Zugriffs
+– Öffnen der Datei
+– Lesen von Records
+– Löschen von Records
+– Einfügen von Records
+– Suchen (Scan) nach Records, die Suchkriterien erfüllen
+– …
+21
+Unsortierte Dateien (Heap Files)
+• Records werden in Datei hintereinander gespeichert
+• Records sind nicht sortiert, sondern in Reihenfolge des Einfügens gespeichert,
+bzw. an der ersten freien Stelle.
+• Bewertung
+– Einfügen neuer Records sehr effizient (in Buffer geschrieben, Block wird
+dann zurück auf Hintergrundspeicher geschrieben)
+– Suche von Records sehr teuer (lineare Suche über gesamte Datei)
+– Sortiertes Lesen sehr teuer (Datei wird kopiert und sortiert)
+– Löschen von Records teuer (entsprechenden Block finden, in Buffer
+kopieren, Record aus Block löschen, Block in Hintergrundspeicher zurück
+schreiben)
+22
+Unsortierte Dateien (Heap Files) (2)
+• Blockgröße = 3 Records mit angeführten vier Feldern
+L1 Smith London 20
+Block 1 L2 Jones Paris 10
+L3 Blake Paris 30
+L4 Clark London 20
+Block 2 L5 Adams Athen 30
+L6 Hart Chicago 80
+L7 Parker New York 70
+Block 3 L8 James Athen 25
+(ein freier
+Platz)
+Grafik basierend auf Gottfried Vossen: Datenmodelle, Datenbanksprachen und Datenbankmanagementsysteme, 5. Auflage, Oldenbourg, 2008.
+23
+Sortierte Dateien
+• Records sind sortiert nach einem Feld  sortierte Datei.
+• Bewertung
+– Lesen in Sortierreihenfolge ist sehr effizient (kein Sortieren mehr notwendig)
+– Lesen des nächsten Records in Sortierreihenfolge nützt Datenlokalität aus
+ nächster Record ist ggf. im gleichen Block und bereits in Hauptspeicher
+geladen worden (Prefetching)
+– Suche kann durch binäre Suche beschleunigt werden
+– Einfügen und Löschen sind aufwändige Operationen (Verschieben von
+anderen Records).
+24
+Sortierte Dateien (2)
+25
+Grafik entnommen aus R. Elmasri, S. Navathe: FundamentalsofDatabase Systems, 7th edition, Pearson, 2015.
+Vergleich Dateiorganisation
+Annahme: Datei enthält b Blöcke
+Dateiorganisation Zugriffs/Suchmethode Durchschnittliche Anzahl
+gelesene Blöcke zum
+Lesen eines Records
+Unsortierte Datei Lineare Suche b/2
+Sortierte Datei Lineare Suche b/2
+Sortierte Datei Binäre Suche log b
+2
+26
+Hashing
+• Speicherung der Daten in einer Hash-Datei.
+• Ausgewählte Attributkombination (meist ein Schlüssel) wird „gehasht“
+(Hashfeld).
+• Funktion h wird auf Hashfeld angewandt, um die Speicheradresse jenes
+Blockes zu berechnen, in dem der Record gespeichert wird.
+• Internes Hashing: Hash-Table zum Speichern von Daten (interne Datenstruktur)
+• Externes Hashing: Hashing zum Speichern von Dateien auf der Festplatte
+27
+Internes Hashing
+• Hash-Tabelle (vgl. VO Algorithmen und Datenstrukturen, Programmiermethodik)
+• Abbilden eines Datensatzes auf eine Adresse (meist in einem Array der
+Länge M)
+• Hashfunktion berechnet Index zwischen 0 und M-1.
+• h(K) = K mod M
+• Kollisionsbehandlung
+– lineares Sondieren
+– Chaining (Überlauflisten)
+– Mehrfaches Hashing
+28
+Internes Hashing
+Internal hashing data structures. (a) Array of M positions for use in internal hashing. (b) Collision
+resolution by chaining records.
+Grafik entnommen aus R. Elmasri, S. Navathe: FundamentalsofDatabase Systems, 7th edition, Pearson, 2015.
+29
+Externes Hashing
+• Adressraum: Buckets, die mehrere Records enthalten können.
+• Bucket ↔ Block (oder mehrere hintereinander liegende Blöcke)
+Matching bucket numbers to disk block addresses.
+Grafik entnommen aus R. Elmasri, S. Navathe: Fundamentals of Database Systems, 7th edition,
+Pearson, 2015.
+30
+Externes Hashing (2)
+• Kollisionen treten tendenziell weniger häufig auf, da Bucket mehrere Records
+halten kann.
+• Überlaufbehandlung: sogenanntes Chaining.
+• Überlaufbuckets werden angelegt und für jeden überfüllten Bucket werden
+„Record Pointers“ angeführt, die zum entsprechenden Record im
+Überlaufbucket zeigen.
+• Hashing ist meist nicht ordnungserhaltend, hängt von der Wahl der
+Hashingfunktion ab.
+31
+Externes Hashing (3)
+Handling overflow for buckets by chaining.
+Grafik entnommen aus R. Elmasri, S. Navathe: FundamentalsofDatabase Systems, 7th edition, Pearson, 2015. 32
+Externes Hashing (4)
+• Bisher: statisches Hashing.
+– Fixe Anzahl an Buckets zur Verfügung, zu Beginn allokiert.
+– (m x M) maximale Anzahl an Records, wobei m Anzahl Records in Bucket
+und M Anzahl allokierte Blöcke/Buckets.
+– Überfüllung führt zu Kollisionen (eingefügte Records >> m x M), Einfüge-
+und Suchoperationen werden verlangsamt.
+– Erweiterung Speicher: komplette Reorganisation notwendig.
+ für Speicherung von Datenbank-Dateien nicht ideal
+ dynamisches Hashing
+33
+Externes Hashing (5)
+• Dynamisches und erweiterbares Hashing erlauben es, dynamisch die Datei zu
+vergrößern bzw. zu verkleinern.
+• Erweiterbares Hashing
+– Zugriffsstruktur speichert Verteilung der Daten (directory)
+– Directory hat globale Tiefe d
+– Erste d bits der Hashwerte werden im Directory zusammengefasst bzw. im
+gleichen Block gespeichert, auf den der Directory-Eintrag zeigt.
+– Lokale Tiefe d‘: Anzahl bits, für die die Werte im Bucket gespeichert sind
+(vgl. Beispiel nächste Folie)
+– d kann jederzeit verringert bzw. erhöht werden (verdoppelt bzw. halbiert
+Anzahl der Directory Einträge)
+– Beispiel: Einfügen von Hashwert 01…
+34
+Externes Hashing (6)
+Structure of the extendible hashing scheme.
+Grafik entnommen aus R. Elmasri, S. Navathe: FundamentalsofDatabase Systems, 7th edition, Pearson, 2015.
+35
+Externes Hashing (7)
+• Dynamisches Hashing
+– Gleicher Ansatz wie erweiterbares Hashing, anderer Directory-Aufbau
+– Directory baumartig aufgebaut
+– Unterscheidung interne und externe (Blatt-) Knoten im Baum
+– Interne Knoten haben zwei Pointer: einmal für „0er“-Bit, einmal für „1er“-Bit
+– Externe Knoten: Pointer zum Bucket mit den Records
+– wiederum: Verdoppelung oder Halbierung der Buckets
+36
+Externes Hashing (8)
+Structure of the dynamic hashing scheme.
+Grafik entnommen aus R. Elmasri, S. Navathe: Fundamentals of Database Systems, 7th edition, Pearson, 2015.
+37
+Externes Hashing (9)
+• Lineares, dynamisches Hashing
+– kein Directory notwendig
+– Vorgehen ähnlich zu statischem Hashing, Überlaufbehandlung durch
+Chaining
+– Bei Kollision, die zu Überlauf-Bucket führt:
+• erstes Bucket in der Datei wird gesplittet: Hälfte der Records bleibt dort, andere
+Hälfte wird in neuem Bucket M am Ende der Buckets gespeichert; Verteilung
+mittels zweiter Hashfunktion h = K mod 2M
+i+1
+• h stellt sicher, dass alle Records, die über H in Bucket 0 gehasht wurden,
+i+1 i
+entweder in Bucket 0 oder M gespeichert werden
+• Bei jeder weiteren Kollision wird Bucket 1, 2, … mit dieser Methode gesplittet –
+Überlauf-Records werden im Laufe des Verfahrens in „richtige“ Buckets gehasht
+(delayed split); Anzahl Splits mit Counter n gezählt
+– Zugriff: falls h(K) < n: h (K); sonst h(K)
+i i+1 i
+– Vorteil: kein Verdoppeln mehr, sondern lineares Wachstum des
+Speicherbedarfs
+38
+Indexstrukturen
+Zugriff auf Records
+• Bisher: verschiedene Arten von Dateispeicherung, Hashing über Key-Feld
+• Zugriff über Record-Identifier (Primärschlüssel) schnell (sortierte Dateien,
+Hashing)
+• Was passiert bei Abfrage: alle Records mit Vorname = ‚John‘ und Nachname =
+‚Doe‘?
+• Full table scan!
+40
+Indexstrukturen
+• Zusätzliche Zugriffsstruktur zur Beschleunigung von Abfragen
+• Unterscheidung, Klassifikation von Indexstrukturen:
+– Nach physikalischen Eigenschaften:
+• Clustered (Clustering Index)
+• Non-clustered
+– Nach Anzahl Levels:
+• Single-level
+• Multilevel
+– Nach indizierten Feldern:
+• Primärindex
+• Sekundärindex
+41
+Indexstrukturen:
+Single-Level Ordered Indizes
+Single-Level Ordered Indizes
+• Ähnlich zu Telefonbuch oder Index in einem Buch
+• Index wird über Indexfeld (Indexattribut) erzeugt (z.B. Name, ID)
+• Zu jeder Ausprägung des Indexattributs wird Pointer zum vollständigen Record
+gespeichert.
+• Werte im Index (Indexattribut) sind sortiert  binäre Suche möglich (O(log n))
+• Verschiedene Typen:
+– Primärindex
+– Sekundärindex
+Physische Typen:
+– Clustered Index
+– Nicht geclusterter Index
+43
+Primärindex
+• Index über Primärschlüsselattribut(e)
+• bestimmt physikalische Anordnung in Datei (Sortierung)  clustered index
+• Attribut(kombination) ist eindeutig (cf. Definition Primärschlüssel)
+• ein Eintrag (Block anchor) im Index für jeden Block (samt Pointer zum Block)
+• Beispiel (Name als PK):
+<K(1) = (Aaron, Ed), P(1) = Adresse Block 1>
+<K(2) = (Adams, John), P(2) = Adresse Block 2>
+<K(3) = (Alexander, Ed), P(3) = Adresse Block 3>
+44
+Primärindex (2)
+Primary index on the
+ordering key field.
+Grafik entnommen aus R. Elmasri, S.
+Navathe: Fundamentalsof Database
+Systems, 7th edition, Pearson, 2015.
+45
+Primärindex (3)
+• Anzahl Indexeinträge << Anzahl Records (ein Eintrag pro Block)
+• Größe Indexeintrag (zwei Felder) << Größe Record
+ Größe Index kleiner
+ mehr Indexeinträge in einem Block
+ binäre Suche benötigt weniger Block-Zugriffe
+• Primärindex ist ein sogenannter „Sparse“ Index (weniger Indexeinträge als
+Records  ein Pointer pro Block; Indexeintrag für ersten Record im Block)
+• Gegenteil: „Dense“ Index (ein Eintrag im Index pro Record)
+46
+Primärindex (4)
+• Rechenbeispiel für die Suche eines einzelnen Datensatzes (sogenannte
+Punktsuche)
+– Sortierte Datei mit 30.000 Records
+– Blockgröße: 1.024 bytes
+– Records mit fixer Größe, R = 100 bytes
+– Suche ohne Index:
+(cid:3003)
+• Blocking factor (bfr) = = 1024/100 = 10 𝑅𝑒𝑐𝑜𝑟𝑑𝑠 𝑝𝑟𝑜 𝐵𝑙𝑜𝑐𝑘
+(cid:3019)
+(cid:3045)
+• Anzahl benötigte Blöcke = ( ) = 30000/10 = 3000 𝐵𝑙ö𝑐𝑘𝑒
+(cid:3029)(cid:3033)(cid:3045)
+ein Eintrag pro
+• Binäre Suche: 𝑙𝑜𝑔 𝑏 = 𝑙𝑜𝑔 3000 = 12 𝐵𝑙𝑜𝑐𝑘 − 𝑍𝑢𝑔𝑟𝑖𝑓𝑓𝑒 + Block
+(cid:2870) (cid:2870)
+𝑍𝑢𝑔𝑟𝑖𝑓𝑓 𝐷𝑎𝑡𝑒𝑛𝑏𝑙𝑜𝑐𝑘 ( Blockpointer)
+– Suche mit Index:
+• Indexeintrag Größe = 9 bytes Indexfeld + 6 bytes Pointer = 15 bytes
+(cid:3003)
+• Blocking factor (bfr) = = 1024/15 = 68 𝑅𝑒𝑐𝑜𝑟𝑑𝑠 𝑝𝑟𝑜 𝐵𝑙𝑜𝑐𝑘
+(cid:3019)
+(cid:3045)
+• Anzahl benötigte Blöcke für Index = ( ) = 3000/68 = 45 𝐵𝑙ö𝑐𝑘𝑒
+(cid:3029)(cid:3033)(cid:3045)
+• Binäre Suche: 𝑙𝑜𝑔 𝑏 = 𝑙𝑜𝑔 45 = 6 𝐵𝑙𝑜𝑐𝑘 − 𝑍𝑢𝑔𝑟𝑖𝑓𝑓𝑒 + 𝑍𝑢𝑔𝑟𝑖𝑓𝑓 𝐷𝑎𝑡𝑒𝑛𝑏𝑙𝑜𝑐𝑘
+(cid:2870) (cid:2870) 47
+Clustering Index
+• Daten sind physikalisch bzgl. eines Nichtschlüssel-Feldes (oder Kombination)
+angeordnet.
+• Nichtschlüssel-Feld per Definition nicht eindeutig
+• Feld = sogenanntes Clustering-Feld
+• Beschleunigt Zugriff auf alle Records mit gleichem Wert für Clustering-Feld.
+• Index besteht wiederum aus zwei Feldern: Wert + Pointer zu erstem Block, der
+Records mit diesem Wert beinhaltet.
+• Achtung: Clustering Indexes kommen sehr selten vor; normalerweise sind die
+Daten physikalisch anhand des Primärschlüssels angeordnet. Würden Daten
+nach Nichtschlüssel-Feld (oder Kombination) geordnet sein, verliert der
+Primärschlüssel diese Eigenschaft der phys. Anordnung.
+48
+Clustering Index (2)
+A clustering index on the Dept_number ordering
+nonkey field of an EMPLOYEE file.
+Grafik entnommen aus R. Elmasri, S. Navathe: Fundamentalsof
+Database Systems, 7th edition, Pearson, 2015. 49
+Clustering Index (3)
+Clustering index with a separate block
+cluster for each group of records that share
+the same value for the clustering field.
+Grafik entnommen aus R. Elmasri, S. Navathe:
+Fundamentalsof Database Systems, 7th edition, 50
+Pearson, 2015.
+Sekundärindex
+• Weitere Indexstruktur zusätzlich zu bestehendem Primärindex
+• Indexfelder können Duplikate enthalten oder eindeutige Werte beinhalten.
+• Indexfelder über Schlüsselkandidaten oder beliebige Felder
+• Index ist sortiert, daher Binärsuche möglich.
+• Achtung: Records in der Datei sind nicht nach den Indexfeldern des
+Sekundärindizes sortiert.
+ Block-anchors nicht möglich
+ Ein Index-Eintrag pro Record notwendig ( dense index)
+51
+Sekundärindex (2)
+A dense secondary index (with block pointers) on a nonordering key field of a file. 52
+Grafik entnommen aus R. Elmasri, S. Navathe: FundamentalsofDatabase Systems, 7th edition, Pearson, 2015.
+Sekundärindex (3)
+• Rechenbeispiel für die Suche eines einzelnen Datensatzes (sogenannte
+Punktsuche)
+– Sortierte Datei mit 30,000 Records
+– Blockgröße: 1,024 bytes
+– Records mit fixer Größe, R = 100 bytes
+– Suche ohne Sekundärindex:
+(cid:3003)
+• Blocking factor (bfr) = = 1024/100 = 10 𝑅𝑒𝑐𝑜𝑟𝑑𝑠 𝑝𝑟𝑜 𝐵𝑙𝑜𝑐𝑘
+(cid:3019)
+(cid:3045)
+• Anzahl benötigte Blöcke = ( ) = 30000/10 = 3000 𝐵𝑙ö𝑐𝑘𝑒
+(cid:3029)(cid:3033)(cid:3045)
+(cid:3029) (cid:2871)(cid:2868)(cid:2868)(cid:2868)
+• Suche benötigt Blöcke = = 1500 𝐵𝑙ö𝑐𝑘𝑒 + 𝑍𝑢𝑔𝑟𝑖𝑓𝑓 𝐷𝑎𝑡𝑒𝑛𝑏𝑙𝑜𝑐𝑘
+(cid:2870) (cid:2870)
+– Suche mit Sekundärindex:
+• Indexeintrag Größe = 9 bytes Indexfeld + 6 bytes Pointer = 15 bytes ein Eintrag pro
+Record
+(cid:3003)
+• Blocking factor (bfr) = = 1024/15 = 68 𝑅𝑒𝑐𝑜𝑟𝑑𝑠 𝑝𝑟𝑜 𝐵𝑙𝑜𝑐𝑘
+(cid:3019)
+(cid:3045)
+• Anzahl Blöcke für Index = ( ) = 30000/68 = 442 𝐵𝑙ö𝑐𝑘𝑒
+(cid:3029)(cid:3033)(cid:3045)
+• Binäre Suche: 𝑙𝑜𝑔 𝑏 = 𝑙𝑜𝑔 442 = 9 𝐵𝑙𝑜𝑐𝑘 − 𝑍𝑢𝑔𝑟𝑖𝑓𝑓𝑒 + Zugriff Datenblock
+(cid:2870) (cid:2870)
+53
+Zusammenfassung Single Level Indizes
+Indexart Anzahl Indexeinträge Dense/Sparse Block-Anchor
+Primär Anzahl Blöcke sparse ja
+Clustering Anzahl eindeutige Werte sparse ja/nein
+im Indexfeld
+Sekundärindex Anzahl Records dense nein
+(Schlüsselattribut)
+Sekundärindex Anzahl Records oder dense/sparse nein
+(Nichtschlüsselattribut) Anzahl eindeutige Werte
+im Indexfeld
+(implementierungsabhän
+gig)
+54
+Indexstrukturen:
+Multilevel Ordered Indizes
+Multilevel Indizes
+• Bisher: Zugriffe auf Daten in Dateien über eine Indexstruktur mit binärer Suche.
+• O(log b) Block-Zugriffe  mit jedem Schritt im Suchbaum wird Suchraum
+2 i
+halbiert (Verzweigungsgrad 2)
+• Ziel: Verzweigungsgrad erhöhen
+ schnellere Einschränkung des Suchraums
+ weniger Block-Zugriffe notwendig
+• Multilevel:
+– erstes Level: sortierte Datei mit eindeutigem Wert für K(i)
+– zweites Level: Index auf erstes Level
+– drittes Level: Index auf zweites Level, etc.
+56
+Index-Sequential Access Method (ISAM)
+A two-level primary index resembling ISAM
+(indexed sequential access method)
+organization.
+Grafik entnommen aus R. Elmasri, S. Navathe: Fundamentals 57
+of Database Systems, 7th edition, Pearson, 2015.
+Bäume
+Tree data structure that shows an unbalanced tree.
+58
+Grafik entnommen aus R. Elmasri, S. Navathe: Fundamentals of Database Systems, 7th edition, Pearson, 2015.
+Suchbäume
+• Suchbaum der Ordnung p besteht aus Knoten mit maximal (p-1) Sucheinträgen
+und dazugehörigen Pointern:
+<P , K , P , K , …, P , K , P , K > mit q  p
+1 1 2 2 q-1 q-1 q q
+• Pointer zeigen auf Kindknoten
+• Sucheinträge sind eindeutig (unique)
+• Bedingungen:
+– innerhalb jedes Knoten: K < K < K … K (Werte im Knoten sind sortiert).
+1 2 3 q
+– Für alle Werte X in einem Teilbaum, auf den mit P gezeigt wird, K < X < K
+i i-1 i
+für alle 1 < i < q; X < K für i = 1 und K < X für i = q
+i i-1
+Node in Tree with pointers to subtrees.
+59
+Grafik entnommen aus R. Elmasri, S. Navathe: Fundamentals of Database Systems, 7th edition, Pearson, 2015.
+Suchbäume (2)
+• Werte im Baum entsprechend Werte einer/mehrerer Spalten.
+B-Tree of order = 3.
+60
+Grafik entnommen aus R. Elmasri, S. Navathe: Fundamentals of Database Systems, 7th edition, Pearson, 2015.
+B-Baum
+• Suchbaum, der balanciert sein muss
+• balancierter Baum: alle Blätter befinden sich auf der gleichen Ebene
+• Vorteile:
+– Suchgeschwindigkeit ist gleichbleibend, da Suchpfad immer gleich lang ist
+– Gleichmäßige Verteilung der Knoten im Baum  Minimierung der Höhe des
+Baumes
+– Knotengröße entspricht Blockgröße
+• Balanciertheit des Baumes muss bei allen Einfüge,- Lösch und
+Änderungsoperationen stets gewahrt werden.
+• Komplexität aller Operationen: O(Höhe Baum)
+• Jeder Wert im Baum zeigt auch auf den Record in der Datendatei.
+61
+B-Baum: formale Definition
+• Ordnung des Baumes: p
+• Innere Knoten haben folgende Form:
+<P , <K , Pr >, P , <K , Pr >, ..., P , <K , Pr >, P >, wobei
+1 1 1 2 2 2 q–1 q–1 q–1 q
+q ≤ p,
+P sind Baum-Pointer, die auf andere Knoten im Baum zeigen
+i
+Pr sind Daten-Pointer, die auf den Record, der den entsprechenden Wert K enthält,
+i i
+zeigen.
+• Jeder Knoten enthält sortierte Werte K < K < K … K .
+1 2 3 q-1
+• Für alle Suchwerte X in einem Teilbaum, auf den von Pi gezeigt wird, gilt:
+K < X < K für 1 < i < q; X < K für i = 1; und K < X für i = q.
+i–1 i i i–1
+• Jeder Knoten hat maximal p Baum-Pointer.
+• Jeder Knoten (außer der Wurzelknoten) hat mindestens 𝑝/2 Baum-Pointer.
+• Der Wurzelknoten hat mindestens zwei Baum-Pointer (außer dieser ist der einzige Knoten
+im Baum).
+• Ein Knoten mit q Baum-Pointern, q ≤ p, hat q – 1 Suchwerte (und damit Daten-Pointer).
+• Alle Blattknoten sind auf der gleichen Ebene und deren Baum-Pointer sind NULL.
+62
+B-tree structures. (a) A node in a B-tree with q − 1 search values. (b) A B-tree of order p
+= 3. The values were inserted in the order 8, 5, 1, 7, 3, 12, 9, 6.
+Grafik entnommen aus R. Elmasri, S. Navathe: Fundamentals of Database Systems, 7th edition, Pearson, 2015. 63
+Suche im B-Baum
+Suche nach Schlüssel S
+1. Lese Wurzelknoten
+2. Suche K mit K = S in Knoten
+i i
+– gefunden: gib Daten-Pointer Pr zurück; fertig!
+i
+– nicht gefunden:
+• Seite ist Blatt: Schlüssel nicht in Baum; fertig!
+• Seite ist kein Blatt:
+– bestimme kleinstes K mit S < K und setze Suche in Knoten P
+i i i
+fort
+– solches K nicht vorhanden, dann setze Suche in Knoten P fort
+i q
+64
+Einfügen in B-Baum
+Einfügen von Schlüssel S
+1. Führe eine Suche nach dem Schlüssel S durch; dieses endet
+(scheitert) an der Einfügestelle.
+2. Füge den Schlüssel S dort ein.
+3. Ist der Knoten überfüllt, teile ihn:
+- Erzeuge einen neuen Knoten und belege ihn mit den
+Einträgen des überfüllten Knotens, deren Schlüssel
+größer ist als der des mittleren Eintrags.
+- Füge den mittleren Eintrag im Vaterknoten des
+überfüllten Knotens ein.
+- Verbinde den Verweis rechts des neuen Eintrags im
+Vaterknoten mit dem neuen Knoten.
+4. Ist der Vaterknoten überfüllt?
+- Handelt es sich um die Wurzel, lege eine neue Wurzel an.
+- Wiederhole Schritt 3 mit dem Vaterknoten.
+65
+Einfügen mit Überlauf und Knotensplitt
+Gegeben sei B-Baum der Ordnung p = 5:
+1. Leerer Baum
+2. Einfügen von 25
+3. Einfügen 43
+4. Einfügen von 71
+5. Einfügen von 5
+66
+Einfügen mit Überlauf und Knotensplitt (2)
+6. Einfügen von 47
+Überlauf: Split
+67
+Löschen im B-Baum
+Löschen von Schlüssel S
+1. Suche S in Baum
+– S nicht gefunden  Fehlermeldung; fertig!
+– S gefunden  b sei der Block, in dem S gefunden wurde
+2. Lösche S in b
+– b ist Blatt
+• b hat nach Löschung noch mind. p/2 Einträge: fertig!
+• b hat weniger als p/2 Einträge  Unterlaufbehandlung; fertig!
+– b ist kein Blatt
+1. Ersetze S in b durch größtes Blattelement b' im linken Teilbaum von b;
+2. Führe ggf. Unterlaufbehandlung für b' durch; fertig!
+68
+Löschen im B-Baum (cont.)
+Unterlaufbehandlung für Unterlauf-Knoten b:
+• b hat einen linken Nachbarknoten mit genau p/2 Einträgen:
+• Zusammenfassen der beiden Knoten und des Schlüsselwertes aus dem
+Vaterknoten; ggf. Unterlaufbehandlung für Vaterknoten; fertig!
+• sonst:
+• b ist Blatt: führe „kleine“ Rotation über Vaterknoten nach rechts aus; fertig!
+(Ausnahme: b ist das äußerste, linke Blatt im Teilbaum: kleine Rotation nach links)
+• b ist kein Blatt: führe „große“ Rotation über Vaterknoten mit linkem Bruder-
+Teilbaum von b aus; fertig!
+(Ausnahme: b ist das äußerste, linke Blatt im Teilbaum: große Rotation nach rechts)
+[Anmerkung: Ausgleich durch Umhängen eines ganzen Teilbaumes]
+69
+Löschen im Blattknoten
+Gegeben sei B-Baum der Ordnung p = 5:
+1. Löschen von 73
+70
+Löschen im Blattknoten: Zusammenfassen
+2. Löschen von 49
+Unterlauf!
+Zusammenfassen
+71
+Löschen in Nicht-Blattknoten
+Gegeben sei B-Baum der Ordnung p = 5:
+Löschen von 99
+72
+Löschen: kleine Rotation
+Gegeben sei B-Baum der Ordnung p = 5:
+1. Löschen von 100
+73
+Löschen: kleine Rotation (2)
+2. Löschen von 129
+Unterlauf!
+kleine Rotation
+74
+Löschen: große Rotation
+Gegeben sei B-Baum der Ordnung p = 5:
+1. Löschen 300
+Unterlauf!
+75
+Löschen: große Rotation (2)
+nach Zusammenfassen:
+Unterlauf!
+76
+Löschen: große Rotation (3)
+nach großer Rotation (mit Umhängen):
+77
+B-Baum: Ordnung
+• Suchfeld V = 9 bytes
+• Blockgröße = 512 bytes
+• Daten-Pointer Pr = 7 bytes
+• Block-Pointer/Baum-Pointer P = 6 bytes
+• Knoten hält p Baum-Pointer, p-1 Suchwerte und p-1 Daten-Pointer:
+(p * P) + ((p-1) * V) + ((p-1) * Pr) ≤ B
+(p * 6) + ((p-1) * 9) + ((p-1) * 7) ≤ 512
+p * 6 + p * 9 – 9 + p * 7 – 7 ≤ 512
+(p * 22) ≤ 528
+p = 24
+78
+B-Baum: Füllgrad
+• B-Bäume sind im Schnitt zu 69% gefüllt
+• B-Baum mit Ordnung p=24
+• 24 * 0,69 = 16 Pointer pro Knoten  15 Suchwerte
+Wurzel 1 Knoten 15 Suchwerte 16 Pointer
+Ebene 1 16 Knoten 240 Suchwerte 256 Pointer
+Ebene 2 256 Knoten 3,840 Suchwerte 4096 Pointer
+Ebene 3 4096 Knoten 61,440 Suchwerte
+79
+B-Baum: Höhe vs. Füllgrad
+Worst Case für Ordnung p:
+Ebene Anzahl Knoten Anzahl Suchwerte
+0 1 1
+1 2 (cid:3043)
+2 ∗ ( − 1)
+(cid:2870)
+𝑝 𝑝 𝑝
+2
+2 ∗ 2 ∗ − 1 ∗
+2 2 2
+3 (cid:3043) (cid:3043) (cid:3043) (cid:3043) (cid:3043)
+2 ∗ ∗ (2 ∗ − 1 ∗ ∗ )
+(cid:2870) (cid:2870) (cid:2870) (cid:2870) (cid:2870)
+…
+h 𝑝 (cid:3035)(cid:2879)(cid:2869) 𝑝 𝑝 (cid:3035)(cid:2879)(cid:2869)
+2 ∗ 2 ∗ − 1 ∗
+2 2 2
+(cid:3041)
+𝑎(cid:3041)(cid:2878)(cid:2869) −1
+Gesamtanzahl Suchwerte (Herleitung über endliche geometrische Reihe):(cid:3533)𝑎(cid:3038) =
+𝑎−1
+(cid:3041)(cid:2880)(cid:2868)
+(cid:3283)
+(cid:3291)
+(cid:3036) (cid:2879)(cid:2869) (cid:3035)
+(cid:3043) (cid:3043) (cid:3043) (cid:3043)
+(cid:3035)(cid:2879)(cid:2869) (cid:3118) =
+(cid:3036)(cid:2880)(cid:2868) (cid:3291)
+(cid:2870) (cid:2870) (cid:2870) (cid:2879)(cid:2869) (cid:2870)
+(cid:3118)
+(cid:3035)
+(cid:3043)
+=
+(cid:2870)
+80
+B-Baum: maximale Höhe
+Herleitung über Anzahl Suchwerte n im Baum:
+(cid:3035)
+(cid:3035)
+(cid:3035)
+(cid:3043)
+(cid:2870)
+• Höhe eines B-Baumes (worst case) daher bestimmt durch Anzahl Einträge n
+und Ordnung p:
+(cid:3043)
+(cid:2870)
+81
+B-Baum: Höhe (cont.)
+• Beispiel: 90.000.000 Datensätze zu verwalten
+• p = 24 (siehe Folie zur Berechnung der Ordnung)
+• max. Anzahl von Seitenzugriffen für das Auffinden eines Schlüssels (=Höhe):
+(cid:2869)(cid:2870)
+Insgesamt: 7 Blockzugriffe für Index + 1 Blockzugriff für Datensatz
+= 8 Blockzugriffe für Suche
+82
+B+-Bäume
+• B-Baum gut für gezieltes Aufsuchen von Schlüsseln bzw. Datensätzen.
+• Traversierung in Schlüsselreihenfolge (=Sortierfolge) zwar möglich, aber etwas
+umständlich.
+• Gezielter Einstieg und Weiterverarbeitung in Sortierfolge in praktischen
+Anwendungen jedoch relativ häufig.
+• In der Praxis werden fast ausschließlich B+-Bäume verwendet.
+Ansatz B+-Baum
+• Die Datenseiten befinden sich ausschließlich in den Blättern (und sind
+untereinander verkettet).
+• Die „oberen“ Baumknoten sind reine Indexknoten und dienen nur der
+Suchraum-Partitionierung.
+83
+B+-Bäume: formale Definition
+• Ordnung des Baumes: p
+• Innere Knoten haben folgende Form:
+<P , K , P , K , ..., P , K P >, wobei
+1 1 2 2 q–1 q–1, q
+q ≤ p,
+P sind Baum-Pointer, die auf andere Knoten im Baum zeigen.
+i
+– Jeder Knoten enthält sortierte Werte K < K < K … K .
+1 2 3 q-1
+– Für alle Suchwerte X in einem Teilbaum, auf den von P gezeigt
+i
+wird, gilt:
+K < X < K für 1 < i < q; X < K für i = 1; und K < X für i = q.
+i–1 i i i–1
+– Jeder Knoten hat maximal p Baum-Pointer.
+– Jeder Knoten (außer der Wurzelknotens) hat mindestens
+Baum-Pointer. Der Wurzelknoten hat mindestens zwei Baum-
+Pointer (außer dieser ist der einzige Knoten im Baum).
+– Ein Knoten mit q Baum-Pointern, q ≤ p, hat q – 1 Suchwerte (und
+damit Daten-Pointer).
+84
+B+-Bäume: formale Definition (2)
+• Blattknoten haben folgende Form:
+<<K , Pr >, <K , Pr >, ..., <K , Pr >, P >, wobei
+1 1 2 2 q–1 q–1 next
+q ≤ p,
+Pr sind Daten-Pointer, die auf den Record, der den entsprechenden
+i
+Wert K enthält, zeigen,
+i
+P zeigt auf den nächsten Blattknoten im Baum.
+next
+– Jeder Knoten enthält sortierte Werte K < K < K … K .
+1 2 3 q-1
+– Jeder Blattknoten hat mindestens Werte.
+– Alle Blattknoten sind auf der gleichen Ebene.
+85
+B+-Bäume
+The nodes of a B+-tree. (a) Internal node of a B+-tree with q − 1 search values. (b) Leaf
+node of a B+-tree with q − 1 search values and q − 1 data pointers.
+Grafik entnommen aus R. Elmasri, S. Navathe: FundamentalsofDatabase Systems, 7th edition, Pearson, 2015.
+86
+B+-Baum: Ordnung
+• Suchfeld V = 9 bytes
+• Blockgröße = 512 bytes
+• Daten-Pointer Pr = 7 bytes
+• Block-Pointer/Baum-Pointer P = 6 bytes
+• Interner Knoten hält p Baum-Pointer und p-1 Suchwerte:
+(p * P) + ((p-1) * V) ≤ B
+(p * 6) + ((p-1) * 9) ≤ 512
+p * 6 + p * 9 – 9 ≤ 512
+vgl. B-Baum: p = 24
+(p * 15) ≤ 521
+p = 34
+• Blattknoten hält p Daten-Pointer + Next-Pointer
+(p * (Pr + V)) + P ≤ B
+leaf
+(p * (7 + 9)) + 6 ≤ 512
+leaf
+(16 * p ) ≤ 506
+leaf
+p = 31
+leaf
+87
+B+-Baum: Füllgrad
+• B+-Baum mit Ordnung p=23
+• 34 * 0,69 = 23 Pointer pro Knoten  22 Suchwerte
+Wurzel 1 Knoten 22 Suchwerte 23 Pointer
+Ebene 1 23 Knoten 506 Suchwerte 529 Pointer
+Ebene 2 529 Knoten 11,638 Suchwerte 12,167 Pointer
+Ebene 3 12,167 Knoten 255,507 Suchwerte
+88
+Verwendung von B-Bäumen für Sekundärschlüssel
+89
+B/B+-Bäume - Abschließende Bemerkungen
+• B-Bäume, insbesondere B+-/B*-Bäume, die zur Zeit am meisten verwendete
+Index-Implementierung in Datenbanksystemen (sowohl für Primär- als auch für
+Sekundärindizes).
+• Üblicher Verzweigungsgrad ~ 100.
+• Erlauben sehr schnellen punktweisen Zugriff und sequentielles Lesen in
+Primärschlüsselreihenfolge, sowie Bereichsanfragen („range queries“).
+Viele Varianten hinsichtlich
+• Minimalem Füllungsgrad der Seiten (B*-Baum: 2/3)
+• Art der Behandlung von Löschungen
+• Komprimierung der Schlüsseleinträge (z.B. Präfix-B-Baum)
+• Unmittelbarer Zugriffspfad: Baum enthält Datensätze
+• Mittelbarer Zugriffspfad: Baum enthält (neben Schlüsselattribut) nur Adressen
+der Datensätze
+90
+Anlegen und Löschen von Indexen
+Syntax (vereinfacht)
+CREATE [ UNIQUE ] INDEX Indexname ON Relationsname
+( Attributname1 [, Attributname2 , ... ] )
+DROP INDEX Indexname [ ON Relationsname ]
+Beispiel
+CREATE INDEX idx_lectured_by ON lecture (lectured_by)
+CREATE UNIQUE INDEX idx_unique_attends ON attends (student_id, lecture_id)
+DROP INDEX idx_lectured_by
+Anmerkungen
+• Indexnamen für vom Benutzer erzeugte Relationen müssen innerhalb eines Schemas eindeutig sein.
+• Mehrere Indexe pro Relation erlaubt.
+• Indexe können von Anfang an (bei noch leerer Relation) oder nachträglich definiert werden.
+• Bei nachträglicher Definition und UNIQUE-Klausel müssen die betroffenen Attributwerte (bzw.
+Attributwert-Kombinationen) dieses Prädikat erfüllen.
+91

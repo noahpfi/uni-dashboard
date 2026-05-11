@@ -1,0 +1,312 @@
+Einführung in die Theoretische Informatik
+1. Vorlesungsklausur für das SS25 am 27.06.2025 (Musterlösung) Gruppe A1
+Name:
+Matrikelnummer:
+Unterschrift:
+Diese Klausur ist closed-book. Sie haben 90 Minuten Zeit. Insgesamt gibt es 100 Punkte, die sich wie folgt
+aufteilen: 24 Punkte für die Multiple-Choice-Fragen 1 bis 6 und 19 Punkte für die offenen Fragen 7 bis 10.
+DieAntwortderMultiple-Choice-FragenmüssensieaufdemDeckblatt(dieseSeite)angeben,indemSiejeweils
+T (Wahr) oder F (Falsch) in die entsprechende Box eintragen. Beachten Sie, dass auch mehrere Antworten
+richtig sein können. Pro richtige Antwort bekommen Sie einen Punkt, pro falsche Antwort werden Ihnen 2
+Punkte abgezogen. Wenn Sie keine Antwort geben, gibt es keine Punktabzüge. Es ist auch nicht möglich, für
+eine gesamte Aufgabe Minuspunkte zu erhalten. Ihre Note wird dann durch den angegebenen Notenschlüssel
+berechnet.
+FallsSiemehrPlatzbrauchen,gebenwirIhnengernezusätzlicheZettel,verwendenSiekeinesfallseigeneZettel!
+Viel Erfolg!
+Notenschlüssel:
+Punkte ⩾90 ⩾75 ⩾60 ⩾50 <50
+Note Sehr Gut Gut Befriedigend Genügend Nicht Genügend
+1. (a) X (b) (c) X (d)
+2. (a) X (b) (c) X (d)
+3. (a) (b) X (c) X (d)
+4. (a) (b) (c) (d)
+5. (a) (b) X (c) X (d)
+6. (a) (b) (c) (d) X
+7. / 19 Punkte
+8. / 19 Punkte
+9. / 19 Punkte
+10. / 19 Punkte
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+1. (4 Punkte) Welche der folgenden Anordnungen der Chomsky-Hierarchie sind richtig?
+Zur Erinnerung:
+L =reguläre Sprachen L =rekursiv aufzählbare Sprachen
+3 0
+L =kontextfreie Sprachen L=formale Sprachen
+2
+L =kontextsensitive Sprachen
+1
+Hier bezeichnet ⊆ die Teilmengenbeziehung und ⊊ die echte Teilmengenbeziehung; ähnlich für ⊋.
+a) L ⊊L ⊊L ⊊L ⊊L
+3 2 1 0
+b) L ⊋L ⊋L ⊋L ⊋L
+3 2 1 0
+c) L ⊆L ⊆L ⊆L ⊆L
+3 2 1 0
+d) L =L =L =L =L
+3 2 1 0
+2
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+Solution
+a) Wahr
+b) Falsch
+c) Wahr
+d) Falsch
+3
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+2. (4 Punkte) Seien L und M formale Sprachen mit L ⩽p M. Welche der folgenden Aussagen zu
+Reduktionen sind richtig?
+a) Wenn M ∈P dann auch L∈P.
+b) Wenn L∈NP dann auch M ∈NP.
+c) Wenn M ∈NP dann auch L∈NP.
+d) Wenn L∈P dann auch M ∈P.
+4
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+Solution
+a) Wahr
+b) Falsch
+c) Wahr
+d) Falsch
+5
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+3. (4 Punkte) Betrachten Sie die formalen Sprachen L={ϵ,0,10,100,110}, M ={1,11,101,111} und
+N ={0,1}∗. Welche der folgenden Aussagen sind richtig?
+a) L∪(M ∩N)={ϵ,0,1,10,100,101,110,111}
+b) L∩N ={ϵ,0,10,100,110}
+c) L∪(M ∩N)={ϵ,0,1,10,11,100,101,110,111}
+d) L∪M ={ϵ,1,10,11,100,101,110,111}
+6
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+Solution
+a) Falsch
+b) Wahr
+c) Wahr
+d) Falsch
+7
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+4. (4 Punkte) Welche der folgenden Aussagen sind richtig?
+a) Die Formel (t∧¬l)→True ist erfüllbar aber keine Tautologie.
+b) Die Formel t→¬t ist unerfüllbar.
+c) Die Formel (¬t∧¬l)∧(t∨l) ist erfüllbar aber keine Tautologie.
+d) Die Formel ((l→y)∧(t→(w∧l)))→((w→¬c)→(t→¬c)) ist unerfüllbar.
+8
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+Solution
+a) Falsch. Die Formel ist eine Tautologie.
+b) Falsch. Die Formel ist erfüllbar aber keine Tautologie.
+c) Falsch. Die Formel ist unerfüllbar.
+d) Falsch. Die Formel ist eine Tautologie.
+9
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+5. (4 Punkte) Welche der folgenden Aussagen bezüglich des dargestellten Automaten A sind richtig?
+0
+a c
+0
+1 1 1 1
+0
+b d
+0
+a) Für alle n,m⩾0 gilt δˆ(b,02n12m+1)=d.
+b) Für alle n,m⩾0 gilt δˆ(c,12n+102m)=d.
+c) L(A)∩{0n1m |n,m⩾0}={0n1m |m,n ungerade}.
+d) L(A)∩{0n1m |n,m⩾0}={}.
+10
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+Solution
+11
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+a) Falsch
+b) Wahr
+c) Wahr
+d) Falsch
+12
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+6. (4 Punkte) Welche der folgenden Aussagen zur Aussagenlogik sind richtig?
+a) Es gelten die Gesetze von de Morgan, das heißt: ¬(E∧F)≡¬E∧¬F.
+b) Es existiert eine Wahrheitsfunktion f, sodass f nicht durch eine Wahrheitstabelle ausgedrückt
+werden kann.
+c) Es gilt die logische Äquivalenz: A∨True≡A.
+d) Die Aussagenlogik ist vollständig axiomatisierbar, das heißt es existiert ein korrektes und voll-
+ständiges Beweissystem für die Aussagenlogik.
+13
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+Solution
+a) Falsch
+b) Falsch
+c) Falsch
+d) Wahr
+14
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+7. (19 Punkte) Zeigen Sie im Kalkül NK des natürlichen Schließens, dass
+¬p→q ⊢ ¬q →p
+Verwenden sie hierfür ausschließlich die folgenden Regeln:
+Einführung Elimination
+A B A∧B A∧B
+∧ ∧: i ∧: e ∧: e
+A∧B A B
+A B
+. .
+. .
+. .
+A∨B C C
+A B
+∨ ∨: i ∨: i ∨: e
+A∨B A∨B C
+A
+.
+.
+.
+B
+A A→B
+→ →: i →: e
+A→B B
+A
+.
+.
+.
+False
+A ¬A
+¬ ¬: i ¬: e
+¬A False
+False
+False False: e
+A
+¬¬A
+¬¬ ¬¬: e
+A
+15
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+Solution
+Zeigen Sie im Kalkül NK des natürlichen Schließens, dass
+¬p→q ⊢ ¬q →p
+1 ¬p→q Prämisse
+2 ¬q Annahme
+3 ¬p Annahme
+4 q →: e 3,1
+5 False ¬: e 4,2
+6 ¬¬p ¬: i 3–5
+7 p ¬¬: e 6
+8 ¬q →p →: i 2–7
+16
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+8. a) (5 Punkte) Finden Sie eine kontextfreie Grammatik G mit L(G )={ab,ba}.
+1 1
+b) (14 Punkte) Betrachten Sie die folgende formale Sprache über dem Alphabet Σ={a,b}:
+L ={x|x enthält eine gerade Anzahl von a und eine ungerade Anzahl von b}
+2
+Finden Sie eine rechtslineare Grammatik G mit L(G )=L .
+2 2 2
+17
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+Solution
+a) G =({S},{a,b},R,S), mit R gegeben durch die Regeln
+1
+S →ab|ba
+b) G =({S ,S ,S ,S },{a,b},R,S), mit R gegeben durch die Regeln
+2 00 01 10 11
+S →aS |bS
+00 10 01
+S →aS |bS
+10 00 11
+S →aS |bS |ϵ
+01 11 00
+S →aS |bS
+11 01 10
+18
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+9. a) Gegeben Sei folgender DEA A=({q ,q ,q },{0,1},δ,q ,{q }) mit δ:
+1 2 3 1 2
+q 0 1
+q q q
+1 2 3
+q q q
+2 1 2
+q q q
+3 2 3
+i. (2 Punkte) Berechnen Sie δ(cid:98)(q
+3
+,100).
+ii. (3 Punkte) Bestimmen Sie L(A)∩{010,001,011}.
+b) (14 Punkte) Wir betrachten das Alphabet Σ = {a,b,b}. Konstruieren Sie einen determinis-
+tischen endlichen Automaten (DEA) B mit weniger als 10 Zuständen, der genau die Wörter
+akzeptiert, die jede der drei Symbolen a, b und c mindestens einmal enthalten. Automaten
+mit mehr Zuständen erhalten 0 Punkte.
+19
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+Solution
+a) i.
+δ(cid:98)(q
+3
+,100)=δ(δ(cid:98)(q
+3
+,10),0)
+=δ(δ(δ(cid:98)(q
+3
+,1),0),0)
+=δ(δ(δ(δ(cid:98)(q
+3
+,ϵ),1),0),0)
+=δ(δ(δ(q ,1),0),0)
+3
+=δ(δ(q ,0),0)
+3
+=δ(q ,0)
+2
+=q
+1
+ii. L(A)∩{010,001,011}={011}.
+b) Es sei
+B =(Σ={a,b,c},Q={000,001,010,100,011,101,110,111},Q ={111},s=000,δ),
+f
+wobei δ über den folgenden Zustandsgraphen definiert ist:
+c b,c
+b
+001 011
+c b c a,c a,b,c
+a a
+b
+start 000 010 101 111
+b
+a a a a,b
+c c
+b
+100 110
+20
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+10. Entwerfen Sie eine totale, deterministische 1-Band-Turingmaschine M mit dem Eingabealphabet
+{a,b,c} an, die für eine Eingabe der Form anbk (mit n,k ≥ 0) die Ausgabe cm produziert, wobei
+m=max(n,k).
+Das heißt: Falls der Bandinhalt initial von der Form
+⊢ aaa bbbb⊔∞
+(cid:124)(cid:123)(cid:122)(cid:125)(cid:124)(cid:123)(cid:122)(cid:125)
+n-malk-mal
+ist, so landet die Maschine in endlich vielen Schritten im akzeptierenden Zustand t und der Bandin-
+halt ist dann:
+⊢ cccc ⊔∞
+(cid:124)(cid:123)(cid:122)(cid:125)
+max(n,k)
+• (5 Punkte) Beschreiben Sie informell, wie Ihre Turingmaschine vorgeht, um die Ausgabe zu
+erzeugen.
+• (14 Punkte) Geben Sie die vollständige Übergangsfunktion Ihrer Turingmaschine an (in tabel-
+larischer Form oder graphisch).
+Beachten Sie dabei:
+• Ihre Maschine darf, abgesehen von den akzeptierenden und verwerfenen Zuständen t und r,
+höchstens4weitereZuständehaben.MaschinenmitmehrZuständenerhalten0Punkte.
+• Zustandsübergänge, die für die Korrektheit der Maschine irrelevant sind (z.B. weil sie uner-
+reichbar sind) sowie die Übergänge von den akzeptierenden/verwerfenden Zuständen dürfen
+weggelassen werden.
+• DasVerhaltenderMaschineaufEingaben,dienichtvonderFormanbk sind,sowiediePosition
+des Lese-/Schreibkopfes am Ende der Ausführung sind egal.
+21
+1. VO-Klausur ETI SS25 Gruppe A1 (Musterlösung)
+Solution
+DievorgeschlageneTuringmaschinestartetimZustand0bei⊢markiertdasersteamitcundersetzt
+das am weistesten rechts stehende b mit einem ⊔ (falls eines da), geht dann zurück nach links und
+wiederholt diesen Schritt. Falls kein a mehr gefunden wird, ersetzt sie alle übrigen b mit c und
+akzeptiert.
+δ ⊢ a b c ⊔
+0 (0,⊢,L) (1,c,R) (0,c,R) (0,c,R) (t,⊔,R)
+1 (1,a,R) (1,b,R) (2,⊔,L)
+2 (2,a,L) (3,⊔,L) (t,c,R)
+3 (0,⊢,R) (3,a,L) (3,b,L) (3,c,L)
+https://morphett.info/turing/turing.html?112e18c80e04660fa60a0ebf8d636225
+22

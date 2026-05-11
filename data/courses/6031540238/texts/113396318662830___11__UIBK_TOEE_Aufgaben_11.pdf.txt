@@ -1,0 +1,50 @@
+Theorie ökonomischer Entscheidungen
+Aufgabenblatt 11
+Prof. Dr. Heiner Schumacher
+UIBK
+1 Moralisches Risiko
+Betrachten Sie das folgende Prinzipal-Agenten Problem. Der Agent kann zwischen zwei
+Aktionen wählen, a und a . Der Gewinn des Projekts ist entweder G = 15 oder G = 0.
+1 2 h l
+Die Wahrscheinlichkeit, dass der Gewinn G ist nachdem der Agent Aktion a gewählt hat,
+ist f(G a). Wir nehmen an, dass f(G a ) = 2 und f(G a ) = 1. Der Prinzipal ist
+j h j 1 3 h j 2 2
+risikoneutral. Der Nutzen des Agenten, wenn er den Lohn w erhält und Aktion a gewählt
+hat, ist V = U(w) C(a), wobei die Nutzenfunktion U(w) = pw sei. Wir nehmen an,
+(cid:0)
+dass C(a ) = p3 und C(a ) = p2. Der Reservationsnutzen des Agenten beträgt 0.
+1 2
+1. NehmenSiean, nurAktiona wärefürdenAgentenmöglich. LeitenSiedenniedrig-
+1
+sten Fixlohn her zu dem der Agent bereit ist, für den Prinzipal zu arbeiten.
+2. Es sei wieder nur Aktion a möglich. Nehmen Sie an, der Prinzipal bietet dem
+1
+Agenten einen Vertrag an in dem er dem Agenten w = 0 bei niedrigem Pro…t G
+l l
+bezahlt. Leiten Sie den niedrigsten Lohn w her zu dem der Agent bereit ist, für
+h
+den Prinzipal zu arbeiten, wenn dieser Lohn nach hohem Gewinn G bezahlt wird.
+h
+Vergleichen Sie den erwarteten Lohn aus diesem Vertrag mit dem Fixlohn aus Teil
+(1). Wie würde sich Ihre Antwort verändern, wenn die Nutzenfunktion des Agenten
+V = w C(a) wäre?
+(cid:0)
+3. Der Agent kann ab nun zwischen den beiden Aktionen a und a wählen. Der
+1 2
+Prinzipal kann die Aktion des Agenten im Vertrag festlegen. Was ist der optimale
+Vertrag, der a bzw. a implementiert?
+1 2
+4. Was ist der optimale Vertrag für den Prinzipal wenn die Aktion des Agenten im
+Vertrag festgelegt werden kann? Wie würde sich Ihre Antwort verändern wenn
+C(a ) = p5 wäre?
+1
+1
+5. Der Prinzipal kann ab nun nicht mehr die Aktion des Agenten beobachten oder im
+Vertrag …xieren. Welche Aktion würde der Agent wählen, wenn der Prinzipal den
+Vertrag aus Teil (1.) anbietet? Würde er den Vertrag überhaupt akzeptieren?
+6. Was ist der optimale Vertrag für den Prinzipal, wenn er die Aktion des Agenten
+weder beobachten noch im Vertrag …xieren kann?
+7. Wie würde sich Ihre Antwort aus Teil (6.) ändern, wenn f(G a ) = 1 wäre?
+h 1
+j
+2

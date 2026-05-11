@@ -1,0 +1,330 @@
+PS Software Engineering
+Softwarekonzept
+09.03.2026
+Agenda
+• Softwarekonzept
+PSSoftwareEngineeringISommersemester2026 Page2
+Softwarekonzept: Überblick
+PSSoftwareEngineeringISommersemester2026
+Softwarekonzept
+• Ziel:
+• Aufgabenstellung mit allen Implikationen verstehen
+• Anforderungen an das System von User-Seite verstehen
+• Anforderungen an das System von technischer Seite verstehen
+• Semester für die Umsetzung planen
+• Aufgaben:
+• Projektbeschreibung studieren und im Team diskutieren
+• Fragen und Unklarheiten: OLAT Forum, Aufgabenstellung Q&A
+• Ausarbeitung Konzept-Teile für Konzeptabgabe V1
+(Deadline 12.03.2026)
+• Feedback aus V1 einarbeiten und Konzept-Teile für Konzeptabgabe
+V2 ausarbeiten (Deadline 19.03.2026)
+• Finale Version aus Feedback von V2 (Deadline 27.03.2026)
+PSSoftwareEngineeringISommersemester2026 Page4
+Softwarekonzept
+• Inhalte
+• Systemüberblick
+• Use Cases
+• Klassendiagramm
+• SW-Architektur (Sequenzdiagramme)
+• API Dokumentation
+• Lösungsansätze komplexe Abläufe
+• Ausfallssicherheit
+• GUI Prototyp
+• Projektplan
+PSSoftwareEngineeringISommersemester2026 Page5
+Softwarekonzept
+• Die Sektionen des SW-Konzepts sind in 2 Bereiche aufgeteilt
+• V1: User-Sicht und Projektplanung
+• V2: Technische Bereiche
+Softwarekonzept V1 Softwarekonzept V2
+Systemüberblick Klassendiagramm V2
+Use Cases SW-Architektur
+Klassendiagramm V1 API Dokumentation
+GUI Prototyp Lösungsansatz komplexe Abläufe
+Projektplan Ausfallssicherheit
+PSSoftwareEngineeringISommersemester2026 Page6
+Softwarekonzept V1: User-Sicht und Projektplanung
+• Einarbeitung in die Projektaufgabe
+• Systemüberblick
+• Planung der User-Seite der Software
+• Use Cases
+• GUI
+• Erste Planung, welche Daten in der Webapp verarbeitet
+werden müssen
+• Klassendiagramm V1
+• Projektplanung
+PSSoftwareEngineeringISommersemester2026 Page7
+Softwarekonzept V2: Technische Bereiche
+• SW-Architektur
+• Ausarbeitung Sequenzdiagramme für komplexere Abläufe zwischen
+den Systemteilen/innherhalb einzelner Systemteile
+• Mindestanforderung
+• Grenzwertverletzung: Definition Grenzwert, Auftreten Verletzung,
+Kommunikation und Anzeige, Verbesserung der Werte nach Aktion
+• Büro fällt temporär unter die für den Datenschutz
+relevante Belegungs-Mindestgrenze – Auswirkung auf Speicherung
+Sensorwerte, Wiederherstellen der normalen Situation
+• Verbindungsaufbau und –konfiguration Arduino / Raspberry PI /
+Webapp
+• API Dokumentation
+• Webapp: Frontend-Backend
+• Webapp – Raspberry
+• Raspberry - Webapp
+PSSoftwareEngineeringISommersemester2026 Page8
+Softwarekonzept V2: Technische Bereiche Cont’d
+• Lösungsansätze komplexe Abläufe
+• für weiter Systemabläufe, die im Team durchdacht werden müssen
+• Dokumentieren Sie Ablauf sowie die Entscheidungen, die Sie im
+Team zur Umsetzung getroffen haben
+• Ausfallssicherheit
+• Punkte 1-5 aus der Projektbeschreibung
+• Berücksichtigung zusätzlicher Datenanforderungen, die sich aus
+diesen Punkten ergeben
+• Klassendiagramm V2
+PSSoftwareEngineeringISommersemester2026 Page9
+Vorgehensweise
+• 02.03.2026 - 08.03.2026:
+• Teamfindung
+• Projektbeschreibung lesen
+• Einführung Anforderungsmanagement (03.03.2026)
+• Einführung Projektmanagement (05.03.2026)
+• Start Ausarbeitung Konzept-Teile V1
+• 09.03.2026: Arbeit am Konzept im PS
+• Fragen etc. an PS-Leitung
+• 12.03.2026: Deadline Konzept V1
+PSSoftwareEngineeringISommersemester2026 Page10
+Vorgehensweise
+• 16.03.2026: Feedback Konzept V1 im PS
+• Arbeit an Konzeptteile V2 im Proseminar
+• 12.03.2026 - 18.03.2026
+• Arbeit an Konzeptteile V2
+• Überarbeitung Konzeptteile V1 anhand des Feedbacks
+• 19.03.2026: Deadline Konzept V2
+• Bis 24.03.2026: schriftliches Feedback zu gesamten
+Softwarekonzept
+• 24.03.2026 - 27.03.2026:
+• Überarbeitung Softwarekonzept anhand des Feedbacks
+• 27.03.2026: Deadline Endversion Softwarekonzept
+PSSoftwareEngineeringISommersemester2026 Page11
+Softwarekonzept: V1
+Schwerpunkt Gruppenarbeit
+im PS
+PSSoftwareEngineeringISommersemester2026
+Softwarekonzept
+• V1: User-Sicht und Projektplanung
+Softwarekonzept V1
+Systemüberblick
+Use Cases
+Klassendiagramm V1
+GUI Prototyp
+Projektplan
+PSSoftwareEngineeringISommersemester2026 Page13
+Softwarekonzept – Systemüberblick
+• Zielsetzung
+• Zielgruppe
+• Benutzer
+• Funktionalitäten
+• Fassen Sie die Aufgabenstellung und Ihre Interpretation
+dieser kompakt in eigenen Worten zusammen
+• Beschreiben Sie Ihr Gesamtkonzept der geforderten
+Software
+• Verzichten Sie auf Kopieren von Textpassagen oder Sätzen
+aus der Aufgabenstellung!
+PSSoftwareEngineeringISommersemester2026 Page14
+Softwarekonzept – Use Case Diagramm
+• Fragestellungen, die Sie in Ihrem Konzept unbedingt
+beachten sollten und teilweise direkt aus der Aufgabenstellung
+herauszulesen sind:
+• Wer darf welche Messdaten einsehen?
+• Welche User sehen welche Grenzwertüberschreitungen und in welcher
+Form?
+• Welche User gibt es im System und wie stehen sie zueinander?
+• Wie funktioniert die Geräte-Administration und wer hat Zugriff darauf?
+• etc.
+• Beschreiben Sie Akteure und Benutzer-Rollen kurz und prägnant
+• Achten Sie darauf, dass das Use Case Diagramm im Einklang mit
+allen anderen Inhalten des Softwarekonzeptes stehen (z.B. Use
+Cases vs. GUI Prototyp)
+PSSoftwareEngineeringISommersemester2026 Page15
+Softwarekonzept – Use Case Beschreibungen
+• Formulieren Sie detaillierter Use Case Beschreibungen zu folgenden
+Funktionalitäten aus:
+• Zugriff auf Raumdatenauswertungen mit verschiedenen Rollen
+• Beachten Sie, das User mit unterschiedlichen Rollen unterschiedliche Ansichten
+auf Raumklimadaten haben
+• Beachten Sie, dass zu bestimmten Räumen zu bestimmten Zeiten keine
+Messdaten vorhanden sein können (z.B. Datenschutz)
+• Usecases zu Grenzwertwarnungen
+• Beachten Sie, dass hier u.U. Entscheidungen zur Umsetzung getroffen
+werden müssen, die nicht in der Aufgabenstellung spezifiziert sind
+• Achten Sie darauf, dass die Use Case Beschreibungen im Einklang mit
+allen anderen Inhalten des Softwarekonzeptes stehen (z.B. Use Cases
+vs. GUI Prototyp)
+PSSoftwareEngineeringISommersemester2026 Page16
+Softwarekonzept – Klassendiagramm V1
+• Entwickeln Sie ein fachliches Klassendiagramm
+• Beschreiben Sie alle Klassen und deren Aufgaben (inkl.
+relevanter Attribute)
+• Gehen Sie auf besonders relevante Assoziationen und deren
+Bedeutung für Ihr Modell ein
+• Planen Sie auch das Löschen einzelner Daten in Ihre
+Überlegungen mit ein!
+PSSoftwareEngineeringISommersemester2026 Page17
+Softwarekonzept – GUI Prototyp
+• Skizzieren Sie einen ersten GUI Prototyp
+• Erstellen Sie Mockups, die die Kernfunktionalitäten der GUI
+darstellen
+• Beschreiben Sie diese Kernfunktionalitäten hinreichend
+• Zeichnen ist ausdrücklich erlaubt
+• Achten Sie darauf, dass der GUI Prototyp im Einklang mit
+allen anderen Inhalten des Softwarekonzeptes stehen
+(z.B. Use Cases vs. GUI Prototyp)
+PSSoftwareEngineeringISommersemester2026 Page18
+Softwarekonzept – Projektplan
+• Verantwortlichkeiten im Projektteam
+• Grober Zeitplan mit Hilfe sinnvoller Meilensteine
+• Inkrementelle Entwicklung
+• Vergessen Sie nicht darauf, zusätzliche Aufgaben (z.B. für
+Berichte) einzuplanen
+PSSoftwareEngineeringISommersemester2026 Page19
+Softwarekonzept: V2
+Softwarekonzept Iteration 2
+PSSoftwareEngineeringISommersemester2026
+Softwarekonzept
+• V2: Technische Bereiche
+• Erinnerung: Deadline erst am 19.03.2026
+Softwarekonzept V2
+Klassendiagramm V2
+SW-Architektur
+API Dokumentation
+Lösungsansatz komplexe Abläufe
+Ausfallssicherheit
+PSSoftwareEngineeringISommersemester2026 Page21
+Softwarekonzept – Klassendiagramm V2
+• Verbessern Sie Ihr fachliches Klassendiagramm
+• Arbeiten Sie das erhaltene Feedback ein
+• Erweitern Sie das Klassendiagramm entsprechend des
+besseren Verständnisses, das Sie für Ihr System haben
+• Überprüfen Sie, ob die Entscheidungen, die Sie für Ihr
+System getroffen haben, im Klassendiagramm reflektiert ist
+• Überprüfen Sie, ob die textuelle Beschreibung des
+Klassendiagramms vollständig ist
+PSSoftwareEngineeringISommersemester2026 Page22
+Softwarekonzept – SW-Architektur: Laufzeitsicht
+• Entwickeln Sie Sequenzdiagramme für die in der
+Aufgabenstellung beschriebenen Kommunikationsabläufe
+zwischen den einzelnen Systemteilen
+• Mindestanforderung
+• Grenzwertverletzung: gesamtes System beachten, d.h. sowohl Arduino als
+auch Webapp. User-Interaktion, Grenzwertberechnung,
+Grenzwertwarnung etc. modellieren. Bedenken Sie auch, dass die
+Grenzwertwarnung nach geeigneten Kriterien wieder ausgeschaltet
+werden soll.
+• Belegungs-Mindestgrenze: Überlegen Sie sich, unter welchen Umständen
+die Belegungs-Mindestgrenze temporär unterschritten werden kann. Und
+wie das System weiß, an welchen Tagen Daten am Raspberry nur zur
+Grenzwertberechnung verwendet werden dürfen.
+• Verbindungsaufbau und –konfiguration Arduino / Raspberry / Webapp.
+Von der Erstellung in der Webapp bis zur erfolgreichen Verbindung eines
+Arduinos mit einem Raspberry
+PSSoftwareEngineeringISommersemester2026 Page23
+Softwarekonzept – SW-Architektur: Laufzeitsicht
+• Überlegen Sie sich, welche Akteure in den jeweiligen
+Abläufen beteiligt sind
+• Überlegen Sie sich alle möglichen Abläufe und Alternativen
+und treffen Sie wo nötig Designentscheidungen
+• Dokumentieren Sie alle Designentscheidungen
+• Beschreiben Sie die modellierten Abläufe kurz textuell
+• Achten Sie darauf, das die Sequenzdiagramme in Einklang
+sind mit (z.B. Bezeichnung):
+• Aufgabenstellung
+• Klassen- und Use Case Diagramm
+• API Dokumentationen
+PSSoftwareEngineeringISommersemester2026 Page24
+Softwarekonzept – REST API Dokumentation
+• Dokumentieren Sie die REST APIs beider Server im System
+• Webapp (Frontend und Raspberry)
+• Raspberry (Minimale API)
+• Überlegen Sie sich für jeden Endpoint: HTTP-Method, Pfad, Request-
+/Response-Formate, Fehlercodes, und DTOs
+• Siehe Vorlage im Skeleton-Wiki, bzw. alternativ: Excel File im Skeleton
+Repository
+• Wichtig: Je genauer Sie hier arbeiten, desto leichter wird das
+unabhängige Arbeiten von z.B. Raspberry-Team, Frontend-Team und
+Backend-Team
+• Achten Sie darauf, das die Sequenzdiagramme in Einklang sind mit (z.B.
+Bezeichnung):
+• Aufgabenstellung
+• Klassen- und Use Case Diagramm
+• API Dokumentationen
+PSSoftwareEngineeringISommersemester2026 Page25
+Softwarekonzept – Lösungsansätze komplexe
+Abläufe
+• Die erforderlichen Sequenzdiagramme bilden nur einen Teil
+der komplexen Abläufe zwischen den einzelnen
+Komponenten ab
+• Diskutieren Sie im Team weitere in der Aufgabenstellung
+beschriebene komplexe Abläufe und Funktionalitäten
+• z.B.
+o Messdatenerfassung am Arduino: Messintervalle, Aufbereitung und
+Aggregation Daten, Übertragung Raspberry Pi
+o Grenzwertverletzungen: Umgang mit Ausreißern bei Berechnung;
+Änderungen der Grenzwerte - Auswirkungen auf historische Daten
+o Anzeige von Grenzwertverletzungen in Webapp: Anzeigedauer?
+Deaktivierung möglich?
+PSSoftwareEngineeringISommersemester2026 Page26
+Softwarekonzept – Lösungsansätze komplexe
+Abläufe
+• Formulieren Sie Ihre Lösungsansätze textuell aus
+• Verwenden Sie Modellierungsansätze wo angebracht
+• Weitere Sequenzdiagramme
+• Zustandsdiagramme
+• Klassendiagramme
+• Bedenken Sie auch mögliche nicht explizit in der Aufgabenstellung beschriebene
+Funktionalitäten wie z.B. Löschvorgänge
+• Dokumentieren Sie alle getroffenen Designentscheidungen
+• Achten Sie darauf, dass Ihre Lösungsansätze im Einklang mit dem restlichen
+Softwarekonzept sind:
+• Aufgabenstellung
+• Klassen- und Use Case Diagramm
+• Laufzeitsicht
+• API Dokumentation
+• etc.
+PSSoftwareEngineeringISommersemester2026 Page27
+Softwarekonzept – Ausfallssicherheit
+• Entwickeln Sie Ansätze um die Ausfallssicherheit des Systems zu gewährleisten
+• Überlegen Sie sich zu geforderten Punkten 1 – 5 im Anforderungsdokument worauf
+geachtet werden muss hinsichtlich:
+• Datenkonsistenz
+• Logging
+• Wiederaufnahme des Betriebs
+• Informationsaustausch zwischen den Komponenten
+• Informationen für User (rollenabhängig)
+• Formulieren Sie zu den geforderten Punkten 1 – 5 Ihre Lösungsansätze aus
+• Textuelle Beschreibung verpflichtend
+• Unterstützung durch Modellierungen erwünscht
+• Achten Sie darauf, dass Ihre Lösungsansätze im Einklang mit dem restlichen Softwarekonzept
+sind:
+• Klassen- und Use Case Diagramm
+• Laufzeitsicht
+• API Dokumentation
+• etc.
+PSSoftwareEngineeringISommersemester2026 Page28
+Allgemeine Hinweise
+• Für V1 und V2 Ihrer Konzeptbeschreibung (V1: Deadline 12.03.2026, 12:00 (cid:19)hr;
+V2: Deadline 19.03.2026, 12:00) können Sie Grafiken und Diagramme auch per
+Hand zeichnen
+• Müssen als Grafiken in das Wiki eingebunden werden (Scan, Foto)
+• Achten Sie auf eine angemessene Auflösung und guten Kontrast bei
+eingebundenen Scans und Fotos
+• Für die finale Projektabgabe (Deadline 18.06.2026, 12:00) müssen alle Grafiken
+und Diagramme mit entsprechenden Tools gezeichnet und als Vektorgrafik
+(bzw. angemessen aufgelöste Screenshots) in das GIT Repository Wiki
+eingebunden sein
+• Der Einsatz des GIT Repository Wikis für die Ausarbeitungen ist verpflichtend
+• Die inhaltlichen Vorgaben im Repository Wiki müssen eingehalten werden
+• Bewertung: Die finale Version des SW-Konzepts fließt in die finale Bewertung
+ein (Deadline 27.03.2026, 12:00).
+PSSoftwareEngineeringISommersemester2026 Page29
+PSSoftwareEngineeringISommersemester2026 Page30

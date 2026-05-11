@@ -1,0 +1,104 @@
+Aufgabenblatt 1 Proseminar Bilanzierung und Bilanzanalyse
+KAPITEL 1 - Einführung
+Teil 1 - Diskussion und Reflexion zum Einstieg, Grundsätze ordnungsmäßiger Buchführung
+Aufgabe 1: Wirecard
+Recherchieren Sie zum Finanzskandal rund um das Unternehmen „Wirecard“. Beantworten Sie in Ihrer Recherche
+folgende Fragen. Liefern Sie Quellen für Ihre Antworten:
+a) Fassen Sie die Geschehnisse kurz zusammen.
+b) Welche der „Grundsätze ordnungsmäßiger Buchführung“ hat Wirecard insbesondere missachtet? Recher-
+chieren Sie und verwenden Sie zur Beantwortung dieser Frage zusätzlich Ihren Kodex (UGB).
+c) Welche Rolle spielte der externe Prüfer (Ernst & Young, EY) im Skandal?
+Aufgabe 2: Grundsätze ordnungsmäßiger Buchführung (GoB)
+Beschreiben Sie die folgenden GoB und geben Sie ein Beispiel für jeden GoB an.
+a) Vorsichtsprinzip
+b) Materielle Stetigkeit
+c) Going-Concern Prinzip
+d) Bilanzidentität
+Teil 2 - Begriffsabgrenzungen
+Aufgabe 3: Begriffsabgrenzungen
+Beurteilen Sie, ob folgende Sachverhalte als Auszahlung, Ausgabe, Aufwand oder Kosten bzw. als Einzahlung,
+Einnahme, Ertrag oder Leistung zu klassifizieren sind.
+Nr. Sachverhalt Auszahlung Ausgabe Aufwand Kosten
+1 Die C AG kauft eine neue Produktionsma-
+schine, welche innerhalb von 30 Tagen be-
+zahlt werden muss.
+2 Die neu angeschaffte Maschine mit einer
+Nutzungsdauer von 3 Jahren wird linear ab-
+geschrieben.
+3 Den Produktionsmitarbeitern werden Ferti-
+gungslöhne überwiesen.
+4 Es wird ein kalkulatorischer Unternehmer-
+lohn in Höhe von 3.500 € pro Monat ange-
+setzt.
+5 Die A GmbH überweist eine Spende in
+Höhe von 5.000 € an Amnesty Internatio-
+nal.
+Einzahlung Einnahme Ertrag Leistung
+6 Ein Friseur verrechnet für einen Damen-
+haarschnitt 40 €, die Kundin bezahlt bar.
+7 Der Gastronom C erhält für seine rein spe-
+kulativ gehaltenen Wertpapiere Zinsen in
+der Höhe von 6.000 € als Überweisung auf
+sein Bankkonto.
+8 Die Toys GmbH produziert Spielwaren im
+Wert von 700 €, welche an das SOS Kinder-
+dorf gespendet werden.
+1
+Aufgabenblatt 1 Proseminar Bilanzierung und Bilanzanalyse
+Teil 3 - Beurteilung Rechnungslegungspflicht
+Aufgabe 4: Rechnungslegungspflicht
+Beurteilen Sie ob bei den folgenden Fällen eine Rechnungslegungspflicht nach UGB besteht. Falls ja, für welches
+Geschäftsjahr?
+1. Die als Einzelunternehmerin eingetragene Malermeisterin Hofer erwirtschaftet im Jahr 2021 einen Umsatz von
+750.000 €. Der Umsatz im Jahr 2022 beträgt 1.200.000 €.
+2. Der Schokoladenhersteller Praline-OG hat folgende Umsätze:
+2020 720.000 €
+2021 740.000 €
+2022 715.000 €
+2023 650.000 €
+2024 680.000 €
+3. Die Kleintierarztpraxis HundKatzeMaus erwirtschaftet im Jahr 2020 einen Umsatz von 740.000€ und im Jahr
+2021 von 760.000€.
+4. Ein Landwirt hatte in den letzten 4 Jahren (2023, 2022, 2021, 2020) Umsätze kleiner als 391.000€. Der Einheits-
+wert des landwirtschaftlichen Betriebes betrug in dieser Zeit 88.000€.
+5. Am 23. September 2021 wurde die Warenhandels-KG gegründet und erwirtschaftete bis zum Bilanzstichtag am
+31.12.2021 einen Umsatz von 600.000€. Prüfen Sie, ob für 2022 eine Rechnungslegungspflicht laut UGB be-
+steht.
+6. Die Tooltime-OG erwirtschaftet im Jahr 2020 einen Umsatz von 295.000€ und im Jahr 2021 von 350.000€. Die
+Gesellschafter der Tooltime-OG sind die Tim Taylor-GmbH und die Al Borland-AG.
+7. Die Poolbau GmbH & Co KG erwirtschaftet in 2020 und 2021 jeweils einen Umsatz von 450.000€.
+Teil 4 - Größenklassen und Bestandteile des Jahresabschlusses
+Aufgabe 5: Berichtspflichten 1
+Die KFZ-GmbH erfüllte vor dem Jahr 2020 alle Kriterien einer Kleinstkapitalgesellschaft.
+a) Ordnen Sie das Unternehmen einer Größenklasse zu. Geben Sie auch den entsprechenden Umfang der Be-
+richtspflichten an
+Stichtag Bilanzsumme Mio. Umsatz Arbeitneh- Klassifikation Berichts-
+€ Mio. € mer:innen pflichten
+31.12.2020 0,3 0,7 12
+31.12.2021 0,35 4,8 18
+31.12.2022 3,5 8,5 36
+31.12.2023 4,8 15,5 52
+31.12.2024 15,8 20,6 100
+31.12.2025 21,5 41,6 90
+b) Ergeben sich Qualifikationsänderungen, wenn es sich bei gleicher Datenlage um die kapitalmarktorientierte
+KFZ-AG handelt?
+2
+Aufgabenblatt 1 Proseminar Bilanzierung und Bilanzanalyse
+Aufgabe 6: Berichtspflichten 2
+Geben Sie für die nachfolgenden Fälle an, ob Rechnungslegungspflicht besteht und wenn ja, welche Pflichtbestand-
+teile die Jahresabschlüsse beinhalten müssen:
+a) Der Fruchtgummihersteller Bärchen KG beschäftigt in den vergangenen drei Jahren (2020 bis 2022) konstant
+78 Mitarbeiter und hat jeweils Umsätze zwischen 12.350.000 € und 15.730.000 € und eine Bilanzsumme
+zwischen 4.800.000 € und 4.950.000 €
+b) Die Tierfutter-GmbH wurde 2020 gegründet und besitzt folgende Eigenschaften:
+Stichtag Bilanzsumme Mio. Umsatz Arbeitneh- Klassifikation Berichts-
+€ Mio. € mer:innen pflichten
+31.12.2020 7 2 60
+31.12.2021 9 8 67
+31.12.2022 15 13 55
+31.12.2023 10 8 47
+31.12.2024 11 5 45
+31.12.2025 ?? ?? ??
+Ordnen Sie das Unternehmen einer Größenklasse zu. Geben Sie auch den entsprechenden Umfang der Berichts-
+pflichten an.
+3

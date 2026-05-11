@@ -1,0 +1,82 @@
+PS Bilanzierung &
+Bilanzanalyse
+Linda Hintsteiner, PhD
+1
+Aufg. 13: Ansatzgrundsätze und Aktivierung
+Wiederholung Vorlesung:
+Ansatzgrundsätze
+(1) Abstrakte Aktivierungsfähigkeit/
+Abstrakte und konkrete Bilanzierungsfähigkeit
+Eigenschaften Vermögensgegenstand
+(1) Aktivierungsfähig und damit i.d.R. aktivierungspflichtig
+• Erwarteter künftiger Nutzen ?
+ist jeder Geschäftsvorfall, der die Eigenschaften eines
+• Greifbarkeit bzw. selbständige
+Vermögensgegenstandes erfüllt und keinem
+Übertragbarkeit/Verwertbarkeit ?
+ausdrücklichen (konkreten) Aktivierungswahlrecht/ (Vermögensgegenstand
+Aktivierungsverbot unterliegt „abstrakte kann losgelöst vom UN verkauft werden)
+Aktivierungsfähigkeit“ • Selbständige Bewertbarkeit ?
+(Vermögensgegenstand lässt sich einzeln bewerten)
+Kriterien für einen Vermögensgegenstand
+• Erwarteter künftiger Nutzen (2) Konkrete Aktivierungsfähigkeit
+• Greifbarkeit bzw. selbständige Übertragbarkeit • Gebot ?
+• Selbständige Bewertbarkeit • Wahlrecht ?
+• Verbot ?
+(2) Aktivierungsfähig ist darüber hinaus jeder
+Geschäftsvorfall, für den der Gesetzgeber ein
+ausdrückliches (konkretes) Aktivierungsgebot bzw. ein
+z.B. Siehe Bertl/Deutsch-Goldoni/Hirschler, 2025, S. 288
+ausdrückliches (konkretes) Aktivierungswahlrecht
+Kodex §197;§203;
+vorgesehen hat „konkrete Aktivierungsfähigkeit“
+2
+Ansatz - Vermögen
+• „Für den Ansatz der Vermögensgegenstände gilt das uneingeschränkte Anschaffungs- oder
+Herstellungskostenprinzip unter Beachtung des Vorsichtsprinzips“
+(ESB, 2026, S. 92)
+→Gemäß §203 Abs 1: Gegenstände des Anlagevermögens sind mit den Anschaffungs-
+/Herstellungskosten vermindert um Abschreibungen gemäß § 204 zu bewerten.
+→Gegenstände des Umlaufvermögens sind gemäß §206 Abs 1 mit den Anschaffungs- oder
+Herstellungskosten vermindert um Abschreibungen gemäß §207 zu bewerten.
+3
+Aufg. 15: Wertansatz: Herstellungskosten
+• Mindestansatz vs. Höchstansatz Herstellungskosten
+• Herstellungskosten im Kodex: UGB § 203 (3)
+4
+Aufgabe 15 (b)
+Geben Sie kurz an, warum die Herstellung eines Vermögensgegenstandes grundsätzlich er-
+folgsneutral ist.
+→Alle Aufwendungen (Material, Löhne,…) werden mit der Buchung über (4) aktivierte
+Eigenleistungen wieder neutralisiert
+Detaillierte Erklärung: Bertl/Deutsch-Goldoni/Hirschler, 2025, S. 388
+5
+Aufgabe 16 (c)
+Welche Buchungen sind am 31.12.2021 vorzunehmen?
+(1) Noch nicht abrechenbare Leistungen an (4) Bestandsveränderung 311.283,38€
+Es besteht ein rechtsgültig abgeschlossener Vertrag über die Lieferung eines hergestellten Gegenstandes oder die
+Durchführung einer Leistung, ESB S. 247 - (siehe Angabe: „es besteht ein Fertigungsauftrag“) →Verbuchung über
+(1) Nicht abrechenbare Leistungen
+→ Inhalt dieses Bilanzpostens: die bereits angefallenen Aufwendungen für Vermögensgegenstände
+(ESB, S. 247)
+“soweit Dienstleistungen noch nicht vollständig erbracht sind, hat für den bereits erbrachten, aber noch nicht selbstständig abrechenbaren Teil der DL eine
+Neutralisierung des Aufwands zu erfolgen“ (Bertl, Deutsch-Goldoni/Hirschler, S. 291)
+(4) Bestandsveränderungen: Ertragskonto „Erhöhungen und Verminderungen des Bestands an fertigen und
+unfertigen Erzeugnissen sowie an noch nicht abrechenbaren Leistungen, §231 Abs 2 Z 2 UGB. Aufgabe dieser
+Position ist die Neutralisierung von Aufwendungen,
+die zur Herstellung noch nicht am Markt abgesetzter oder abrechenbarer Produkte
+getätigt wurden (Bestandserhöhung), oder die Berücksichtigung des Absatzes von im letzten Geschäftsjahr auf Lager gelegenen oder noch nicht abrechenbar
+).“
+gewesenen Produkten (Bestandsminderung (Bertl/Deutsch-Goldoni/Hirschler, 2025, S. 311)
+6
+Aufg. 17: Abschreibungsmethoden
+• Linear/geometrisch degressiv/arithmetisch degressiv/geometrisch progressiv/arithmetisch
+progressiv/leistungsabhängig
+• Abschreibungsplan:
+Jahr Anschaffungskosten Buchwert 1.1. Planmäßige Abschreibung Buchwert 31.12.
+2021
+2022
+2023
+2024
+2025
+7

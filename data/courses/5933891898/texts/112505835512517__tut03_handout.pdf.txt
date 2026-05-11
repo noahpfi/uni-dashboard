@@ -1,0 +1,60 @@
+Tutorium — Functional Programming
+Week 03 — Functions on Trees
+Adam Pescoller
+T. Niederbrunner & J. Bodemann (for courteously providing their materials)
+Tutorium—FunctionalProgramming WS25—Week03—FunctionsonTrees AdamPescoller 0/6
+Defining Functions
+So far:
+funName x1 x2 ... xN = expr
+• x1 x2 ... xN are variables.
+Now:
+funName pat1 pat2 ... patN = expr
+• pat1 pat2 ... patN are patterns.
+• Definition of patterns on VO 3 - Slides 10/11
+• Patterns allow us to define functions depending on the structure of the input.
+• Input parameters then get matched against these patterns to decide which
+function definition is applicable.
+• Pattern matching allows us to define multiple right hand sides for the same function.
+Example: 3example_pattern-matching.hs
+Tutorium—FunctionalProgramming WS25—Week03—FunctionsonTrees AdamPescoller 1/6
+Exercise 3.1: Pattern Matching
+In the VO we saw the Recursive type List. Define three new Function that operate
+with the List type, use pattern matching and do the following:
+-- this function should return true, if the list is empty
+-- and false otherwise
+isEmpty :: List -> Bool
+-- this function should test if the list starts with a specific number,
+-- what is the reasonable result for an empty list?
+startsWith :: List -> Integer -> Bool
+-- this function should replace the first element of the list with the
+-- argument, what is a reasonable way of handling an empty list?
+replaceFirst :: List -> Integer -> List
+Tutorium—FunctionalProgramming WS25—Week03—FunctionsonTrees AdamPescoller 2/6
+Exercise 3.1: Possible Solutions: isEmpty
+isEmpty :: List -> Bool
+isEmpty Empty = True
+isEmpty _ = False
+Tutorium—FunctionalProgramming WS25—Week03—FunctionsonTrees AdamPescoller 3/6
+Exercise 3.1: Possible Solutions: startsWith
+Response to the question: the empty list doesn’t start with anything, so an empty list
+should always return False.
+startsWith :: List -> Integer -> Bool
+startsWith Empty _ = False
+startsWith (Cons number _) toMatch = number == toMatch
+Tutorium—FunctionalProgramming WS25—Week03—FunctionsonTrees AdamPescoller 4/6
+Exercise 3.1: Possible Solutions: replaceFirst
+Response to the question: if there is no first element to replace, nothing will be
+replaced, so just return the empty list.
+replaceFirst :: List -> Integer -> List
+replaceFirst empty@Empty _ = empty
+replaceFirst (Cons _ rest) number = Cons number rest
+Bonus question: what is the difference in the second line between empty and Empty?
+Solution: Empty is the constructor of the empty list, it creates a new List type. But
+empty is the matched empty list, that is supplied to the method, so no new list is
+created, but the old empty one is just returned.
+Tutorium—FunctionalProgramming WS25—Week03—FunctionsonTrees AdamPescoller 5/6
+Questions? Need help? Feedback?
+• Element Chat (with handle @adam.pescoller:student.uibk.ac.at)
+• Adam.Pescoller@student.uibk.ac.at
+• http://cl-informatik.uibk.ac.at/teaching/ws25/fp/feedback.php
+Tutorium—FunctionalProgramming WS25—Week03—FunctionsonTrees AdamPescoller 6/6

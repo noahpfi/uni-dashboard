@@ -1,0 +1,46 @@
+PS Software Engineering
+Proseminareinheit 4
+23.03.2026
+Agenda
+• Durchstich Demonstration
+• Weitere Vorgehensweise
+PS Software Engineering I Sommersemester 2026 Page 2
+Durchstich Demonstration
+• Ziel: Alle 3 Systemteile sind miteinander verbunden;
+Dummy Daten können ausgetauscht werden
+• So simpel wie möglich!
+• Hardcoden von Verbindungsparametern akzeptabel
+• Z.B. “Arduino Says Hello” Message in der Webapp UI + Console Log
+“Webapp Says Hello” und “Arduino Says Hello” Message im
+Console Log des Raspberries
+• “Webapp Says Hello” und “Raspberry Says Hello” auf Serial Out des
+Arduinos oder am LCD Display
+• ~10 Minuten fürs Setup
+PS Software Engineering I Sommersemester 2026 Page 3
+Beantwortung Fragen Feedback Konzept v2
+• In der restlichen Einheit
+• Wenn notwendig auch nach Vereinbarung
+PS Software Engineering I Sommersemester 2026 Page 4
+Erinnerung: Meeting Protokolle
+• Regelmäßige Deadline für Feststellung Projektfortschritt:
+Donnerstag 12:00 vor der LV-Einheit
+• März: jede Woche
+• Ab April: im geblockten Modus
+• Zu jeder Deadline muss zeitnah ein Teammeeting
+stattfinden, um die vergangene Periode zu reflektieren und
+die nächste zu planen
+• Diese Meetings müssen protokolliert werden!
+• Siehe Template im Wiki
+• Protokolle fließen in die Bewertung des Projekts ein
+• Faktor "Projektmanagement"
+PS Software Engineering I Sommersemester 2026 Page 5
+Nächste PS Einheit findet am 13.04.2026 statt
+• Primärer Fokus: Softwarenetwicklung
+• Sekundärer Fokus: finalisierung Softwarekonzept
+• Feedback SW-Konzept V2 bis 24.03.2026
+• Deadlines:
+• SW-Konzept final, 27.03.2026, 12:00 (Freitag)
+• Es wird ein angemessener kontinuierlicher Projektfortschritt
+verlangt und kontrolliert
+PS Software Engineering I Sommersemester 2026 Page 6
+PS Software Engineering I Sommersemester 2026 Page 7

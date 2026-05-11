@@ -1,0 +1,237 @@
+Management von Leistungsprozessen
+Gregor Blossey
+Produktionswirtschaft und Logistik
+ABC-XYZ Analyse
+OOkkttoobbeerr 2244 TTiitteell ooddeerr VVoorrttrraaggeennddeerr 11
+Literatur
+▪ Zäpfel, G.(2001). Grundzüge des Produktions-
+und Logistikmanagement (2. Auflage).
+München, Wien:Oldernburg. S. 162-167
+Oktober 24 Gregor Blossey 2
+Agenda
+▪ ABC – Analyse
+▪ XYZ – Analyse
+▪ ABC/XYZ – Analyse
+▪ Ziel der Analysen: Klassifikation von Gütern.
+Oktober 24 Gregor Blossey 3
+Einordnung in PPS-System
+Produktionsplanung Produktionssteuerung
+Programmplanung Auftragsveranlassung
+Kapazitäts- und
+Mengenplanung
+Auftragsüberwachung
+Termin- und
+Kapazitätsplanung
+Grunddatenverwaltung
+Oktober 24 Gregor Blossey 4
+ABC-Analyse
+▪ Methode um Güter anhand ihres Mengen-Wert Verhältnisses zu klassifizieren
+▪ Idee: Materialen die einen hohen Jahresverbrauchswert besitzen, benötigen besondere Aufmerksamkeit
+▪ Beschaffungs- & Bestandsmanagement
+▪ Genauigkeit der Bedarfsmengen
+▪ Programmgebunden
+▪ Verbrauchsgebunden A B C
+▪ Lieferanten- & Kundenmanagement
+▪ Lieferantenauswahl (z.B.: Termintreue)
+Oktober 24 Gregor Blossey 5
+ABC-Analyse
+▪ Erfassen von Mengen und Wert je Stück (pro Jahr):
+Material Stück Wert/Stück
+Speiche 250 160
+Schaltung II 300 50
+Schaltung I 300 80
+Rahmen II 200 300
+Rahmen I 50 2800
+Nabenring II 1000 1,6
+Nabenring I 600 3
+Nabe 500 12
+Lack 1400 4
+Felge 400 15
+Summe 5000
+Oktober 24 Gregor Blossey 6
+ABC-Analyse: Schritt 1
+▪ Relative Menge, absoluten und relativen Gesamtwert berechnen
+Menge Gesamtwert
+Material Stück in % Wert/Stück absolut in %
+Speiche 250 5,00% 160 40000 13,33%
+Schaltung II 300 6,00% 50 15000 5,00%
+Schaltung I 300 6,00% 80 24000 8,00%
+Rahmen II 200 4,00% 300 60000 20,00%
+Rahmen I 50 1,00% 2800 140000 46,67%
+Nabenring II 1000 20,00% 1,6 1600 0,53%
+Nabenring I 600 12,00% 3 1800 0,60%
+Nabe 500 10,00% 12 6000 2,00%
+Lack 1400 28,00% 4 5600 1,87%
+Felge 400 8,00% 15 6000 2,00%
+Summe 5000 100,00% 300000 100,00%
+Oktober 24 Gregor Blossey 7
+ABC-Analyse: Schritt 2
+▪ Vergabe von Rangziffern nach fallendem Wertanteil
+Menge Gesamtwert
+Material Stück in % Wert/Stück absolut in % Rang
+Speiche 250 5,00% 160 40000 13,33% 3
+Schaltung II 300 6,00% 50 15000 5,00% 5
+Schaltung I 300 6,00% 80 24000 8,00% 4
+Rahmen II 200 4,00% 300 60000 20,00% 2
+Rahmen I 50 1,00% 2800 140000 46,67% 1
+Nabenring II 1000 20,00% 1,6 1600 0,53% 10
+Nabenring I 600 12,00% 3 1800 0,60% 9
+Nabe 500 10,00% 12 6000 2,00% 7
+Lack 1400 28,00% 4 5600 1,87% 8
+Felge 400 8,00% 15 6000 2,00% 6
+Summe 5000 100,00% 300000 100,00%
+Oktober 24 Gregor Blossey 8
+ABC-Analyse: Schritt 3
+▪ Reihung nach Rängen und anschließendes kumulieren der relativen Gesamtwerte und Mengenangaben
+Menge Gesamtwert
+Material Stück in % kumuliert Wert/Stück absolut in % kumuliert Rang
+Rahmen I 50 1,00% 1,00% 2800 140000 46,67% 46,67% 1
+Rahmen II 200 4,00% 5,00% 300 60000 20,00% 66,67% 2
+Speiche 250 5,00% 10,00% 160 40000 13,33% 80,00% 3
+Schaltung I 300 6,00% 16,00% 80 24000 8,00% 88,00% 4
+Schaltung II 300 6,00% 22,00% 50 15000 5,00% 93,00% 5
+Felge 400 8,00% 30,00% 15 6000 2,00% 95,00% 6
+Nabe 500 10,00% 40,00% 12 6000 2,00% 97,00% 7
+Lack 1400 28,00% 68,00% 4 5600 1,87% 98,87% 8
+Nabenring I 600 12,00% 80,00% 3 1800 0,60% 99,47% 9
+Nabenring II 1000 20,00% 100,00% 1,6 1600 0,53% 100,00% 10
+Summe 5000 100,00% 300000 100,00%
+Oktober 24 Gregor Blossey 9
+Klasseneinteilung
+Die ABC – Analyse unterteilt die Güter in drei Klassen:
+▪ A-Güter: Güter mit niedrigem Anteil an der Gesamtmenge (10-20%) und
+hohem Anteil am Wert (60-80%).
+▪ B-Güter: Güter, die sowohl bei der Gesamtmenge als auch beim
+Gesamtwert einen mittleren Wert aufweisen.
+▪ C-Güter: Güter mit hohem Anteil an der Gesamtmenge (60-80%) und
+niedrigem Anteil am Gesamtwert (5-10%).
+Oktober 24 Gregor Blossey 10
+ABC-Analyse: Schritt 4
+▪ Klassifikation der Materialien
+Menge Gesamtwert
+Material Stück in % kumuliert Wert/Stück absolut in % kumuliert Rang Klassen
+Rahmen I 50 1,00% 1,00% 2800 140000 46,67% 46,67% 1
+Rahmen II 200 4,00% 5,00% 300 60000 20,00% 66,67% 2 A-Güter
+Speiche 250 5,00% 10,00% 160 40000 13,33% 80,00% 3
+Schaltung I 300 6,00% 16,00% 80 24000 8,00% 88,00% 4 B-Güter
+Schaltung II 300 6,00% 22,00% 50 15000 5,00% 93,00% 5
+Felge 400 8,00% 30,00% 15 6000 2,00% 95,00% 6
+Nabe 500 10,00% 40,00% 12 6000 2,00% 97,00% 7
+Lack 1400 28,00% 68,00% 4 5600 1,87% 98,87% 8
+Nabenring I 600 12,00% 80,00% 3 1800 0,60% 99,47% 9
+Nabenring II 1000 20,00% 100,00% 1,6 1600 0,53% 100,00% 10 C-Güter
+Summe 5000 100,00% 300000 100,00%
+Oktober 24 Gregor Blossey 11
+ABC-Analyse: Lorenzkurve
+Kum. Verbrauchs- wert
+[%]
+100
+80
+60
+40
+A B C
+20
+Rang &
+0
+Teilebezeichnung
+Oktober 24 Gregor Blossey 12
+Vorgehensweise ABC-Analyse
+Berechnung des Gesamtwerts jedes Objekts pro Periode
+Berechnung des prozentuellen Wertanteils der Objekte in Bezug auf
+den Gesamtwert aller Objekte
+Reihung der Objekte nach absteigendem Wert; Kumulation der
+prozentuellen Wertanteile
+Klasseneinteilung in ABC-Güter
+Oktober 24 Gregor Blossey 13
+XYZ-Analyse
+▪ Kategorisierung von Materialen nach der Stetigkeit des Bedarfs.
+▪ X-Objekte: konstanter, trendförmiger Verbrauchsverlauf
+▪ Y-Objekte: saisonförmiger Verbrauchsverlauf
+▪ Z-Objekte: unregelmäßiger Verbrauchsverlauf
+Verbrauch Verbrauch Verbrauch
+Zeit t Zeit t Zeit t
+X-Güter Y-Güter Z-Güter
+Oktober 24 Gregor Blossey 14
+XYZ-Analyse
+▪ Variationskoeffizient
+▪ Großer Variationskoeffzient ➔ Z-Teil
+▪ Mittlerer Variationskoeffzient ➔ Y-Teil
+▪ Kleiner Variationskoeffizient ➔ X-Teil
+▪ Grenzen für „Groß“, „Mittel“ & „Klein“ sind subjektiv festzulegen.
+Anmerkung: VarK(X) wird manchmal in [%] angegeben.
+Oktober 24 Gregor Blossey 15
+XYZ-Analyse: Schritt 1
+Material Stück Wert/Stück VarK
+Speiche 250 160 0,64%
+Schaltung II 300 50 0,28%
+Schaltung I 300 80 4,00%
+Rahmen II 200 300 1,19%
+Rahmen I 50 2800 0,24%
+Nabenring II 1000 1,6 1,99%
+Nabenring I 600 3 0,92%
+Nabe 500 12 7,05%
+Lack 1400 4 0,41%
+Felge 400 15 1,60%
+Summe 5000
+Oktober 24 Gregor Blossey 16
+XYZ-Analyse: Schritt 2
+▪ Berechnen des relativen Anteils des VarK [%]
+Material Stück Wert/Stück VarK rel. VarK [%]
+Speiche 250 160 0,64% 3,49%
+Schaltung II 300 50 0,28% 1,53%
+Schaltung I 300 80 4,00% 21,83%
+Rahmen II 200 300 1,19% 6,50%
+Rahmen I 50 2800 0,24% 1,31%
+Nabenring II 1000 1,6 1,99% 10,86%
+Nabenring I 600 3 0,92% 5,02%
+Nabe 500 12 7,05% 38,48%
+Lack 1400 4 0,41% 2,24%
+Felge 400 15 1,60% 8,73%
+Summe 5000 18,32% 100,00%
+Oktober 24 Gregor Blossey 17
+XYZ-Analyse: Schritt 3
+▪ Aufsteigendes Sortieren nach relativem VarK, kumulieren und subjektive Klasseneinteilung durchführen
+Material Stück Wert/Stück VarK rel. VarK kum. Rel. VarK
+Rahmen I 50 2800 0,24% 1,31% 1,31%
+Schaltung II 300 50 0,28% 1,53% 2,84%
+Lack 1400 4 0,41% 2,24% 5,08%
+Speiche 250 160 0,64% 3,49% 8,57% X-Teile
+Nabenring I 600 3 0,92% 5,02% 13,59%
+Rahmen II 200 300 1,19% 6,50% 20,09% Y-Teile
+Felge 400 15 1,60% 8,73% 28,82%
+Nabenring II 1000 1,6 1,99% 10,86% 39,68%
+Schaltung I 300 80 4,00% 21,83% 61,52%
+Nabe 500 12 7,05% 38,48% 100,00% Z-Teile
+Summe 5000 18,32% 100,00%
+Oktober 24 Gregor Blossey 18
+ABC/XYZ-Analyse
+▪ Kombiniert die Klassifikation der ABC Analyse mit der, der XYZ Analyse.
+Automatisierte
+Beschaffung
+Manuelle
+Beschaffung
+Programmgebundene VerbrauchsgebundeneB
+Bedarfsermittlung edarfsermittlung
+Oktober 24 Gregor Blossey 19
+ABC/XYZ-Analyse
+▪ Kombiniert die Klassifikation der ABC Analyse mit der, der XYZ Analyse.
+Klassen A B C
+Automatisierte
+Rahmen I Speiche Schaltung II
+Beschaffung
+X Lack
+Rahmen II Nabenring I
+Manuelle
+Beschaffung Y
+Programmgebundene Verbrauchsgebundene
+Bedarfsermittlung Bedarfsermittlung
+Schaltung I Nabe
+Z Felge
+Nabenring II
+Oktober 24 Gregor Blossey 20
+Übungsaufgaben
+▪ Liegt in Kürze im OLAT
+▪ Gruppen aus maximal 2 Leuten dürfen gebildet werden
+▪ Abgabe bis 24 Uhr am Tag vor dem nächsten Termin!
+▪ 3 Extrapunkte für vorrechnen der Lösung
+Oktober 24 Gregor Blossey 21

@@ -1,0 +1,474 @@
+E/R-Modell: Hilfsmittel zum
+II
+Datenbankentwurf Kapitel
+Vorlesung Datenbanksysteme
+Univ.-Prof. Dr. Günther Specht
+Datenbanken und Informationssysteme (DBIS)
+Vorlesungsinhalt
+2. Datenbankentwurf (E/R-Modell)
+1. Das Entity-Relationship - Modell (E/R-Modell)
+2. E/R-Diagramme
+3. Existenzabhängigkeit und schwache Entity-Typen
+4. Spezielle Konstrukte
+5. Regeln für eine gute E/R-Modellierung
+6. Beispiele
+2
+1. Das Entity-Relationship – Modell
+3
+Das Entity-Relationship - Modell (E/R-Modell)
+Ursprung Chen 1976 (heute viele Varianten)
+“Chen P.: The Entity-Relationship Model - Towards a Unified View
+of Data, ACM Transactions on Database Systems 1,1
+(March 1976) pp. 9-36”
+Bedeutung Grafisches Hilfsmittel zur semantischen Modellierung der Diskurswelt
+(Anwendungsgebiet), d.h. zum Entwurf einer Datenbank, unabhängig
+vom konkreten DBS.
+Als solches dient es vor allem zur Kommunikation zwischen Datenbank-
+Designer und Auftraggeber. Sein Erfolg liegt in erster Linie darin, dass es
+leicht zu verstehen und bequem darzustellen ist.
+Grundidee Reale Welt lässt sich durch Objekte und Beziehungen zwischen
+Objekten beschreiben.
+» Objekte: Entitiäten (Entity)
+» Beziehungen: Relationships
+4
+Bsp. Entity/Relationship-Modellierung
+• Entity (Gegenstandstyp)
+• Relationship (Beziehungstyp)
+• Attribut (Eigenschaft)
+• Schlüssel (Identifikation)
+5
+Größeres Bsp.: Online Hotelreservierung
+6
+Entity
+Entity, Entität
+• Ein Entity ist ein existierendes Objekt, das von anderen Objekten bezüglich
+seiner Rolle unterscheidbar ist.
+Entity-Typ (Entity-Set)
+• Ein Entity-Typ (Synonym: Entity-Set) ist eine Menge an ähnlichen Entities.
+Entity-Typen müssen nicht disjunkt sein (jeder spielt verschiedene Rollen, z.B.
+Bankangestellter kann auch Bankkunde sein)
+Entscheidende Schritte beim Datenbank-Entwurf
+– Wahl der Entity-Typen
+– Wahl der Attribute (soweit, dass jedes Entity eindeutig identifizierbar ist)
+– Wahl der Relationship-Typen (Beziehungen zwischen Entity-Typen)
+7
+Attribute und Schlüssel
+Definition Beispiel
+Entities im Entity-Set besitzen Attribute Entity: “John Smith” (Typ: Angestellter)
+Attribute: Geburtsdatum, Name, Gehalt
+Jedes Attribut besitzt einen Domäne Name: String
+Wertebereich, die Domäne Domäne GebDat: 1980 < GebDat < 2010
+Jedes Entity muss im Entity-Set Zusätzliches Attribut:
+eindeutig durch seine Attribute Angest#
+identifizierbar sein (Werte-Identität)
+Jede Teilmenge der Attributmenge, die Professor (Pers#, Name, Zi#, Tel#)
+die Elemente eindeutig identifiziert heißt Schlüssel:
+Schlüssel oder Superschlüssel
+{Pers#, Name, Zi#}
+{Name, Tel#}
+{Pers#} ...
+Schlüssel mit minimaler Anzahl an Schlüsselkandidaten:
+Attributen heißen Schlüsselkandidaten {Pers#}, {Name, Tel#}
+Der tatsächlich gewählte Primärschlüssel:
+Schlüsselkandidat heißt Primärschlüssel {Pers#}
+Wichtig
+• Schlüsseleigenschaft ist ein semantisches Kriterium, sie kann nicht vom
+momentanen Datenbestand abgeleitet werden
+(z.B. kann zu einem späteren Zeitpunkt ein Angestellter mit gleichem Namen eingestellt werden)
+8
+Wh Bsp. Entity/Relationship-Modellierung
+• Entity (Gegenstandstyp)
+• Relationship (Beziehungstyp)
+• Attribut (Eigenschaft)
+• Schlüssel (Identifikation)
+9
+Relationship
+Relationship
+• Eine Relationship ist eine Beziehung zwischen zwei (oder mehreren) Entities.
+Relationship-Typ
+• Ein Relationship-Typ ist eine Menge an Einzelbeziehungen
+zwischen zwei oder mehreren Entity-Typen.
+(Die Bezeichnungen werden dabei oft laxer gehandhabt:
+oft spricht man von Relationships und meint dabei Relationship-Typen)
+10
+Relationship
+Notation Entity-Typen E , E , ..., E
+1 2 n
+Relationship-Typ R ⊆ E × E × E ... E
+1 2 3 k
+Beispiel E = Väter, E = Kinder
+1 2
+R ⊆ E × E Vater-Kind Beziehung
+1 2
+Relationships dürfen Attribute haben (informationstragende Beziehungen)
+Beispiel R ⊆ E × E ∪ {Lohnsteuerrelevant}
+1 2
+mit der Domäne (0, ½, 1) für das Attribut „Lohnsteuerrelevant“
+Alternativ Neues Attribut beim Vater mit angeben. Dann hat man aber den
+Informationsverlust, welche Kinder “Zählkinder” sind.
+11
+Relationship
+Achtung
+• Attribute dürfen in ihrer Reinform nicht mengenwertig sein.
+Mengenwertig: Vater (“John”, {“Mary”, “Bill”})
+(später Erweiterung dazu und Auflösung, besser gleich auflösen)
+Anmerkung
+• Oft Wahlfreiheit, ob etwas Entity oder Relationship ist (etwa Bauteil hat Farbe).
+12
+Relationship
+Funktionalität von Relationships
+R ⊆ E × E
+1 2
+1 : 1 Beziehung (x, y) ∈ R ∧ (x, y') ∈ R ⇒ y = y'
+und (x, y) ∈ R ∧ (x', y) ∈ R ⇒ x = x'
+n : 1 Beziehung (x, y) ∈ R ∧ (x, y') ∈ R ⇒ y = y'
+1 : n Beziehung (x, y) ∈ R ∧ (x', y) ∈ R ⇒ x = x'
+n : m Beziehung ohne Einschränkung
+Beispiel
+Ein Mann ist verheiratet mit (genau) einer Frau
+Angestellte arbeiten in einer Abteilung
+Angestellte arbeiten an Projekten
+13
+Beachte: Bei 1:n und n:m gilt: n, m ∈ {0, 1, …, k}
+Funktionalitäten
+... ...
+E
+E R
+2
+1
+R ⊆ E x E
+1 2
+1:n
+1:1 E E
+1 2
+n:1
+n:m
+14
+Funktionalitäten
+1 : 1 Beziehung
+• besteht, falls jedem Entity e aus E höchstens ein Entity e aus E
+1 1 2 2
+zugeordnet ist
+und umgekehrt, jedem Entity e aus E höchstens ein Entity e aus E
+2 2 1 1
+zugeordnet ist.
+Möglich ist auch, dass zu Entities kein „Partner“ existiert.
+• Ein Beispiel einer 1:1 Beziehung ist „verheiratet“ zwischen den
+Entitätstypen Mann und Frau
+n : 1 Beziehung
+• besteht, falls jedem Entity e aus E beliebig viele (also mehrere aber
+1 1
+auch gar keine) Entitäten aus E zugeordnet sein können, aber jedes
+2
+Entity e aus der Menge E mit maximal einem Entity aus E in Beziehung
+2 2 1
+stehen kann.
+• Typisches Beispiel für eine 1:n Beziehung ist „beschäftigt“ zwischen Firma
+und Person.
+15
+Funktionalitäten
+1 : 1 Beziehung
+n : 1 Beziehung
+1 : n Beziehung
+• Analog zu oben
+n : m Beziehung
+• Besteht, wenn keinerlei Restriktionen gelten müssen,
+d.h. jede Entität aus E kann mit beliebig vielen Entitäten aus E in Beziehung
+1 2
+stehen und umgekehrt.
+• Beispiel: eine Playlist enthält beliebig viele Songs, wobei ein Song aber auch in
+beliebig vielen Playists vorkommen kann.
+16
+Bsp. Entity/Relationship-Modellierung
+• Entity (Gegenstandstyp)
+• Relationship (Beziehungstyp)
+• Attribut (Eigenschaft)
+• Schlüssel (Identifikation)
+17
+Generalisierung
+Wichtige Sonderbeziehung “A isa B”
+• Geeignet zum Aufbau von Subtyp-Hierarchien
+• Menge A ist Subtyp oder Spezialisierung von B
+• Menge B ist Verallgemeinerung oder Generalisierung von A
+→ A kann Attribute von B erben und neue haben.
+Beispiel: Manager isa Angestellter und hat eigenes Attribut “Firmenauto”
+Formale Definition von “A isa B”
+• Zu jedem a ∈ A existiert genau ein b ∈ B: a und b sind die gleiche Entity
+• Kein b ∈ B kann zu zwei verschiedenen Elementen von A gehören
+• A und B haben den gleichen Primärschlüssel
+18
+Beispiel
+An der Uni arbeiten verschiedene Lohngruppen: Beamte, Angestellte und Arbeiter.
+Gemeinsame Attribute wie Name, Vorname, Personalnummer, Geburtsdatum etc.
+lassen sich in der Generalisierungs-Entity Bediensteter zusammenfassen. Wir
+erhalten z.B. die Entitäts-Typen
+– Uni-Bediensteter (Name, Vorname, Personalnummer, Geburtsdatum),
+– Beamter (Bezüge) Beamter isa Uni-Bediensteter,
+– Angestellter (Gehalt) Angestellter isa Uni-Bediensteter,
+– Arbeiter (Lohn) Arbeiter isa Uni-Bediensteter
+19
+isa – Hierarchien
+In allen Notationen gleich:
+Der Pfeil gibt die Richtung
+der isa-Beziehung an
+20
+2. E/R - Diagramme
+21
+E/R-Diagramm
+Grundbausteine
+Entity – Typ
+Attribute; Primärschlüssel werden unterstrichen
+Relationship-Typen
+22
+Entity/Relationship-Modellierung
+• Entity (Gegenstandstyp)
+• Relationship (Beziehungstyp)
+• Attribut (Eigenschaft)
+• Schlüssel (Identifikation)
+• Rolle
+Bemerkung: Angabe der Entity-Namen üblicherweise im Singular.
+23
+Notationen
+• Zur Angabe der Funktionalitäten der Beziehungen stehen verschiedene
+Notationen zur Verfügung:
+– Chen-Notation (m:n), min-max-Notation, Pfeilnotation, Crow‘s Foot, ....
+Chen (m:n) min-max Pfeilnotation
+1:1
+1:n
+m:n
+1:n bedeutet, dass zu einem A mehrere B‘s gehören, und ein B genau zu einem A gehört
+24
+Chen: Partielle und ganze Teilnahme
+Entity-Typen können an Relationships entweder partiell oder ganz teilnehmen:
+– Partielle Teilnahme: es müssen nicht alle Entities an der Relationship
+teilnehmen (alle bisherigen Relationships, keine besondere Kennzeichnung)
+– Ganze Teilnahme: jede Entity hat eine entsprechende Beziehung.
+Gekennzeichnet durch eine doppelte Linie
+partiell ganz
+Beispiel:
+• ganze Teilnahme: jede Bachelorabeit wird von (genau) einem Professor betreut
+• partielle Teilnahme: nicht jeder Professor muss (mindestens) eine
+Bachelorarbeit betreuen
+25
+Die Min-Max Notation
+Die Min-Max Notation
+(vgl. ISO 82: TC97/SC5/W,Elmasri/Navathe)
+mit Angabe von Ober- und Untergrenzen
+Untergrenze 0: Kann-Beziehung (partielle Teilnahme)
+Untergrenze 1: Muss-Beziehung (ganze Teilnahme: jede Entity muss mind. 1x
+enthalten sein)
+“Ein Kunde erteilt 0 bis n Aufträge. Ein Auftrag wird von genau einem Kunden erteilt.”
+“Eine Musik-Playlist enthält mindestens 5 Songs. Ein Song kann in bis zu 20 Playlists
+vorkommen (muss aber nicht zwingend in einer vorkommen).”
+26
+Die Min-Max Notation
+Die Intervallangabe (min, max) bedeutet: Jedes Entity e aus dem Entity-Typ E
+muss an mindestens min und höchstens max Beziehungen des Relationship-
+Typs teilnehmen.
+a (c,x) x
+b (d,y) y
+c (d,z) z
+d (d,u) u
+Im Vergleich zur n:m Notation vertauschen sich damit bei der min-max Notation
+genau die Funktionalitätsangaben. Lassen Sie sich dadurch nicht verwirren,
+aber wechseln Sie innerhalb eines E/R-Diagramms nie die Notation.
+Anmerkung
+• Die min-max-Notation ist genauer als die n:m -Notation, dafür aber eventuell
+schwerer lesbar
+27
+Die Crow‘s Foot - Notation
+• Die Crow‘s foot (dt.: Krähenfuß) – Notation oder auch Martin-Notation ist eine
+vereinfachte Alternative zur Darstellung von E/R-Diagrammen
+– Wird immer häufiger eingesetzt (u.a. von automatisierten Tools wie z.B.
+MySQL Workbench)
+– Ähnlich zu UML: Entities enthalten Attribute
+– Kein Symbol für Relationships, sondern direkte Verbindung zwischen
+Entities
+– Relationships als Beschriftung der Kante (optional)
+– Der Name leitet sich von der Darstellung von n bei 1:n – Beziehungen ab
+– Bei jeder Beziehung stehen immer 2 Kardinalitäten hintereinander
+• “0“: Null
+• „I“ : Eins
+• „Krähenfuß“: n
+28
+Die Crow‘s Foot - Notation
+• Beispiel
+Bemerkung: Kardinalitäten sind im Bsp. nur in einer Richtung angegeben
+(Person -> Ort); in realen Beispielen grundsätzlich aber in beiden Richtungen
+angegeben, wie z.B.:
+29
+Wh: Gegenüberstellung der Notationen
+– Chen-Notation (m:n), min-max-Notation, Pfeilnotation, Crow‘s Foot, ....
+Chen (m:n) min-max Pfeilnotation
+1:1
+1:n
+m:n
+1:n bedeutet, dass zu einem A mehrere B‘s gehören, und ein B genau zu einem A gehört
+30
+Relationships mit Attributen
+• Nicht nur Entities können Attribute haben, sondern auch Relationships
+• Dies ist dann sinnvoll, wenn sich eine Eigenschaft nur aus der Beziehung
+zwischen zwei Entitäten ergibt
+• Beispiel: Benutzer greifen auf Dateien in einem Filesystem zu. Dabei soll das
+Datum sowie die Art des Zugriffs gespeichert werden.
+Speicherung von Zugriffsart und Datum ist weder beim Benutzer noch bei der
+Datei sinnvoll, sondern nur beim Zugriff selbst.
+31
+Beispiel: Projektverwaltung
+“Der Angestellte Fritz Müller arbeitet am Projekt P7 zu 30 % seiner Arbeitszeit”
+Angestellter: Entity-Typ
+„Fritz Müller“: Entity ∈ Angestellter
+Attribute: Name, Vorname, Pers#
+arbeitet an: Relationship-Typ
+Projekt: Entity-Typ
+„P7“: Entity ∈ Projekt
+„zu 30%“: Attribut zur Beziehung R
+32
+Beispiel: Bibliotheksverwaltung
+Funktionalitäten?
+33
+Beispiel: Bibliotheksverwaltung (Chen)
+34
+Beispiel: Bibliotheksverwaltung (min-max)
+35
+Beispiel: Verschiedene E/R-Notationen
+vgl: Chen-
+Notation:
+36
+3. Existenzabhängigkeit und
+schwache Entity-Typen
+37
+Existenzabhängigkeit
+Die Existenz einer Entity kann von der Existenz anderer Entities abhängen.
+– Kennzeichnung durch doppelte Raute
+– Der Pfeil gibt die Richtung an
+• Beispiel:
+– Der Entity-Typ “Foto” ist existenzabhängig von Fotoalbum.
+– D.h. wenn das Fotoalbum gelöscht wird, dann werden auch alle darin
+enthaltenen Fotos gelöscht
+38
+Schwache Entity-Typen
+− können nicht eindeutig durch ihre eigenen Attribute identifiziert werden und
+müssen durch ihre Beziehungen mit anderen Entities identifiziert werden
+− stehen immer in einer Existenzabhängigkeit zum zugehörigen
+identifizierenden Entity (starke Entity), d.h. zu jedem schwachen Entity muss es
+ein identifizierendes Entity in der Datenbank geben.
+− werden durch ein Doppelrechteck dargestellt
+Starke Entität
+Existenzabhängigkeit
+Partieller Schlüssel Schwache Entität
+39
+Existenzabhängigkeit und schwache Entity-Typen
+• Da die Attribute einer schwachen Entität allein zur eindeutigen Identifizierung
+nicht ausreichen, spricht man von einem partiellen Schlüssel. Dieser wird
+strichliert unterstrichen
+• Nur zusammen mit dem Schlüssel des identifizierenden Entities ist ein partieller
+Schlüssel auch ein voller Primärschlüssel
+• Alle Typen, die keine schwachen Entities sind, heißen starke Entity-Typen
+• Beispiel: Wenn ein Arbeitnehmer das Unternehmen verlässt, sollten auch die
+Informationen über seine Kinder gelöscht werden.
+– Partieller Schlüssel von “Kind”: Vorname
+– Primärschlüssel von “Kind”: (Ang#, Vorname)
+40
+Existenzabhängigkeit und schwache Entity-Typen
+• Anmerkung:
+Falls im Beispiel die Kinder eine eindeutige Kindernummer (SVNR) bekommen,
+wird aus dem schwachen Entity-Typ ein starker. Die Existenzabhängigkeit kann
+dennoch bestehen bleiben:
+41
+Existenzabhängigkeit und schwache Entity-Typen
+• Weiteres Beispiel:
+• Beziehung zwischen "starken" und schwachem Typ ist immer 1:n
+(oder 1:1 in seltenen Fällen)
+• Warum kann das keine n:m-Beziehung sein?
+• RaumNr ist nur innerhalb eines Gebäudes eindeutig, z.B.
+– Raum „HS A“ in Technikareal, SOWI, ...
+• Schlüssel ist: (Geb#, RaumNr)
+42
+4. Spezielle Konstrukte
+43
+Mehrwertige Attribute
+• Attribute, die mehr als einen Wert je Entity enthalten können, heißen
+mehrwertige Attribute (multivalued attributes). Sie werden mit einem Doppeloval
+dargestellt
+• Beispiel:
+• Mehrwertige Attribute können durch schwache Entitäten aufgelöst werden:
+44
+Abgeleitete Attribute
+• Attribute, die durch andere Attribute abgeleitet werden können, aber dennoch
+festgehalten werden sollen, können speziell markiert werden (strichliertes Oval)
+• Beispiel: das Alter lässt sich aus dem Geburtsdatum ableiten
+• In welchen Fällen macht eine zusätzliche Speicherung Sinn?
+– Für alle Berechnungen, die „on-the-fly“ zu aufwändig wären bzw. zu lange
+brauchen würden
+– Beispiel: durchschnittlicher Umsatz des letzten Jahres, Monat, Woche, ...
+• (Berechnung z.B. in der Nacht – siehe Data Warehouse Systeme,
+Masterstudium)
+45
+n-wertige Beziehungen (Beispiel n=3)
+“Ein Kunde kann mehrere Kredite haben, jeden bei einer speziellen Bank.
+Ein Kredit kann auch zu mehreren Kunden gehören”
+Anmerkungen
+• Angabe von exakten Funktionalitäten nicht immer möglich (z.B. min-max: immer (0,*))
+• Führen Sie, soweit es geht, n-stellige Beziehungen auf n zweier Beziehungen zurück, da
+diese intuitiv leichter verständlich sind.
+• Es können nicht alle 3er Beziehungen auf (mehrere) 2er Beziehungen zurückgeführt
+werden, da 3er Beziehungen u.U. mehr semantische Information tragen als die
+entsprechenden drei 2er Beziehungen
+46
+Rollennamen
+Bei Mehrdeutigkeiten und bei Rekursion sind Rollennamen nötig. Dazu können die
+Kanten mit den entsprechenden Rollen markiert werden.
+Beispiel
+• Aus folgendem E/R-Diagramm ist die Richtung der Beziehung nicht ersichtlich
+Bearbeitet das Werkzeug den Arbeitsvorgang oder bearbeitet der Arbeitsvorgang das Werkzeug?
+Mit zusätzlichen Rollennamen wird die
+Semantik klar.
+Bei rekusiven Beziehungen sind Rollennamen
+immer nötig!
+47
+5. Regeln für eine gute E/R-Modellierung
+48
+Regeln für eine gute E/R-Modellierung
+1. Namenskonflikte vor allem von Attributen auflösen. Synonyme (verschiedene
+Namen für das selbe Konzept) durch selben Namen ersetzen, Homonyme
+(gleicher Namen für verschiedene Konzepte) eindeutig ersetzen
+− Ergebnis:
+Jeder Attributname, Entity-Typ-Name und Relationship-Typ-Name tritt global nur
+einmal auf
+− Beispielweise lässt sich das Attribut „Name“ der Entities “Person“ und „Hotel“ auf die
+zwei unterschiedlichen Namen „PersonName“ und „HotelName“ aufteilen
+2. Lassen sich n-stellige Beziehungen durch n Zweierbeziehungen darstellen?
+– Dies ist meistens der Fall!
+49
+Regeln für eine gute E/R-Modellierung cont.
+3. Elimination von redundanten Relationships
+redundante Relationship “lebt in”
+keine redundanten Relationships
+diese Beziehung ist transitiv herleitbar
+50
+Regeln für eine gute E/R-Modellierung cont.
+4. Vermeidung von redundanten Attributen (z.B. Alter und Geburtsdatum).
+5. Vermeidung von zusammengesetzten Schlüsseln in Entities, falls möglich.
+6. Vermeidung von mehrwertigen Attributen (Auflösung z.B. durch schwache
+Entities.
+7. Falls Relationship-Attribute an 1:1 oder 1:n Relationships auftreten: Frage, ob
+diese nicht besser dem Entity-Typ an der n-Kante zugeordnet werden sollten?
+51
+Kritik an der E/R-Modellierung
+• E/R-Diagramme benötigen viel Platz, dadurch werden sie eventuell unübersichtlich
+• Domäne eines Attributes wird nicht spezifiziert (Nummer -> int, nat, real, float, ...)
+Erweiterung: Als Marke an die Attribute heftbar, z.B. direkt unter die Attribut-Ellipse.
+• Oft ist nicht klar, ob etwas eine Entity oder ein Attribut ist (Freiheit in der
+Modellierung). Dies ist abhängig von der jeweiligen Sichtweise bzw. Anwendung.
+• Wie werden Aggregationen (Summe, Minimum, Maximum, Durchschnitt, ...)
+modelliert? Aggregationsfunktionen sind so nicht explizit darstellbar.
+• Rein statisches Modell. Mittels E/R-Diagramm ist keine Dynamik wie z.B. typischer
+Ablauf einer Transaktion, oder eines Workflows etc., spezifizierbar.
+• Trotz Standardisierung viele unterschiedliche Varianten
+52
+6. Beispiele
+53
+Universitätsschema
+Online Hotelreservierung
+55

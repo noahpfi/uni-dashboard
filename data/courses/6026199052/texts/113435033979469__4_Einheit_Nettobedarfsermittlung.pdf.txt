@@ -1,0 +1,259 @@
+Management von Leistungsprozessen
+Gregor Blossey
+Produktionswirtschaft und Logistik
+Dispositionsstufenverfahren &
+Nettobedarfsermittlung
+OOkkttoobbeerr 2244 TTiitteell ooddeerr VVoorrttrraaggeennddeerr 11
+Literatur
+▪ Zäpfel, G.(2001). Grundzüge des Produktions-
+und Logistikmanagement (2. Auflage).
+München, Wien:Oldernburg. S. 122-129
+Oktober 24 Gregor Blossey 2
+Agenda
+▪ Konzepte der Bedarfsermittlung
+▪ Stücklisten
+▪ Gozinto-Graphen
+▪ Dispositionsstufenverfahren
+▪ Nettobedarfsermittlung
+▪ Losgrößenplanung
+Oktober 24 Gregor Blossey 3
+Einordnung in PPS-System
+Produktionsplanung Produktionssteuerung
+Programmplanung Auftragsveranlassung
+Kapazitäts- und
+Mengenplanung
+Auftragsüberwachung
+Termin- und
+Kapazitätsplanung
+Grunddatenverwaltung
+Oktober 24 Gregor Blossey 4
+Konzepte der Bedarfsermittlung
+Produktionsprogrammplanung
+programmgebundene verbrauchsgebundene
+Bedarfsermittlung Bedarfsermittlung
+Stücklistenauflösung, Bestellpunkt-, Bestell-
+Nettobedarfsrechnung rhythmusverfahren
+Ermittlung des Sekundärbedarf
+(Welche Teile, Rohstoffe usw., Wann, Wie oft?)
+Oktober 24 Gregor Blossey 5
+Mengenplanung: Sekundärbedarfsermittlung
+Oktober 24 Gregor Blossey 6
+Mengenplanung: Sekundärbedarfsermittlung
+▪ Bereich Mengenplanung (=Materialwirtschaft)
+▪ Ziel: wirtschaftliche Produktion aufrechterhalten
+→ Fertigungs-/Bestellaufträge: Komponente, Menge, Periode
+▪ Komponenten:
+▪ Rohstoffe (zB Holz)
+▪ Halbzeuge (zB Rohr)
+▪ Halbfabrikate (zB Tisch unbehandelt)
+▪ Teile (zB Tischfuß)
+▪ Baugruppen (zB Tischbein → aus Rohr und Tischfuß)
+etc.
+Oktober 24 Gregor Blossey 7
+Programmgebundene Bedarfsermittlung
+Oktober 24 Gregor Blossey 8
+Programmgebundene Bedarfsermittlung
+Charakteristik
+▪ Ermittlung des Sekundärbedarfs aus dem Primärbedarf (Produktions- programm) mittels Stücklistenauflösung
+Vorteil
+▪ Exakte Ableitung des Bedarfs → geringe Lagerbestände
+Nachteil
+▪ Verfahren erfordert hohen Aufwand
+Verfahren
+▪ Nettobedarfsrechnung
+Notwendigkeit
+▪ Stückliste
+Oktober 24 Gregor Blossey 9
+Stücklisten
+▪ Stücklisten geben die Menge an Komponenten/Teilen an, aus denen eine andere
+Komponente/ein Endprodukt besteht.
+Listenform Erzeugnisbäume
+▪ Benötigte Informationen für die Nettobedarfsermittlung:
+▪ Direktbedarfskoeffizienten
+▪ Vorlaufzeiten
+Oktober 24 Gregor Blossey 10
+Vorgehensweise bei der Nettobedarfsrechnung
+Gozinto – Graph (spezieller Erzeugnisbaum) erstellen
+Ermittlung der Dispositionsstufe pro Komponente
+Reihung der Komponenten nach aufsteigender Dispositionsstufe
+Berechnung des Bruttobedarfs, des Nettobedarfs und der Lose pro
+Komponente
+Oktober 24 Gregor Blossey 11
+Spezieller Erzeugnisbaum → Gozinto-Graph
+▪ Sinnvoller Zwischenschritt für Nettobedarfsermittlung (Vereinfachung, Fehlervermeidung)
+▪ Merkmale:
+▪ Es können mehrere Pfeile von einem Erzeugnis (Knoten) ausgehen bzw. eingehen
+▪ Jedes Erzeugnis wird von genau einem Knoten repräsentiert
+▪ Redundanzfreie Darstellung
+Oktober 24 Gregor Blossey 12
+Spezieller Erzeugnisbaum →Gozinto-Graph
+▪ Sinnvoller Zwischenschritt für Nettobedarfsermittlung (Vereinfachung, Fehlervermeidung)
+▪ Merkmale:
+▪ Es können mehrere Pfeile von einem Erzeugnis (Knoten) ausgehen bzw. eingehen
+▪ Jedes Erzeugnis wird von genau einem Knoten repräsentiert
+▪ Redundanzfreie Darstellung
+Oktober 24 Gregor Blossey 13
+2
+R
+/ 2
+1
+B G
+1
+1
+/ 1
+P
+R
+1
+1
+2
+/ 1 4 / 1
+B G 2
+3
+R
+/ 1
+3
+B
+P
+R
+G
+2
+1 / 2
+2
+3 / 1
+3
+1
+B
+/
+R
+2
+G
+2
+1
+1
+/ 2
+P 3
+1 / 1
+B G
+R
+3
+3
+2
+/ 1
+Umwandlung
+in Gozinto-graph
+Dispositionsstufenverfahren
+▪ Komponenten die in keine andere Komponente eingehen, bekommen die Dispositionsstufe 0
+▪ Für alle anderen Komponenten ergibt sich die Dispositionsstufe D aus dem Maximum der
+k
+Dispositionsstufen der Nachfolger N +1:
+k
+Wenn der Gozintograph erstellt wurde geht’s auch einfacher:
+▪ Die Dispositionsstufe des Erzeugnis k entspricht also dem längsten Weg - gemessen an der
+Anzahl der Pfeile - im Gozintographen von einem Endprodukt zum betrachteten Erzeugnis k!
+Oktober 24 Gregor Blossey 14
+D
+k
+= ml
+∈
+a
+N
+x
+k
+( D
+l
+) + 1
+Beispiel 1: Dispositionsstufen aus Gozinto-Graph
+P3 P1 P2 0
+1/2 4/1
+1/1 1/1 1/2
+BG3 BG1 BG2 1
+3/1 1/1 2/2 3/1
+R2 R1 R3 2
+Oktober 24 Gregor Blossey 15
+Beispiel 2: Dispositionsstufen aus Gozinto-Graph
+E7 E8 E9
+B1 B2 B3 B4 B5
+T1 T4
+R1
+Oktober 24 Gregor Blossey 16
+Beispiel 2: Dispositionsstufen aus Gozinto-Graph
+E7 0 E8 0 E9 0
+B1 1 2 B2 B3 1 2 B4 B5 1
+T1 3 T4 3
+R1
+4
+Oktober 24 Gregor Blossey 17
+Nettobedarfsermittlung – Beispiel
+Produktionsprogramm
+0
+Disp.Stufe Direktbedarfskoeffizient/Vorlaufzeit
+0
+D
+T
+i
+s
+p
+1 o
+4/1 1/1 s
+i
+t
+i
+o
+n
+1
+TB TP s
+s
+t
+u
+f
+e
+1/1 1/1
+2
+2
+Rohr Fuß
+Oktober 24 Gregor Blossey 18
+Vorgehensweise bei der Nettobedarfsermittlung
+Gozinto – Graph (spezieller Erzeugnisbaum) erstellen
+Ermittlung der Dispositionsstufe pro Komponente
+Reihung der Komponenten nach aufsteigender Dispositionsstufe
+Berechnung des Bruttobedarfs, des Nettobedarfs und der Lose pro
+Komponente
+Oktober 24 Gregor Blossey 19
+Losgrößenplanung
+▪ Los = Zusammenfassung mehrerer Nettobedarfe zu einem Bestell- oder Fertigungsauftrag
+aufgrund von auftragsfixen Kosten
+65 65
+0
+▪ Relevante Kostenarten für Losgrößenmodelle:
+▪ Auftragsfixe Kosten (Bestellfixe-, Rüstkosten)
+▪ Lagerhaltungskosten
+Oktober 24 Gregor Blossey 20
+Losgrößenplanung
+▪ Entscheidungsregeln
+Lot-for-Lot (Nettobedarf entspricht der Losgröße)
+▪ Mindestlosgröße (Aufsummierung)
+▪ Beschaffungslosgröße (fixe Größe auflegen oder Vielfaches)
+▪ Periodenbedarf (Zusammenfassung fixer Anzahl Perioden)
+▪ Mathematische Modelle
+▪ Statische Modelle: z. B. Andlerlosgröße (EOQ, 1-Produkt-Fall)
+▪ Dynamische Modelle:
+▪ Exakte Verfahren (z. B. Wagner-Whitin)
+▪ Näherungsverfahren (z. B. Stückperiodenverfahren, Stückkostenverfahren)
+Oktober 24 Gregor Blossey 21
+Losgrößenplanung: Entscheidungsregeln
+Produktionsprogramm
+Lot for Lot Periode 4: 170 Stück
+Mindestlosgröße 70 Periode 4: 70 Stück (Verzug zur Folge!)
+Beschaffungslosgröße 40 Periode 3: 120 Stück (3x Beschaffungs-LG)
+Periodenbedarf (4 Perioden) Periode 1: 170 Stück
+Oktober 24 Gregor Blossey 22
+Losgrößen und deren Effekte
+Wirkung alternativer Lose
+(Zäpfel: Grundzüge des operativen Produktions-und Logistikmanagement)
+Oktober 24 Gregor Blossey 23
+Übungsaufgaben
+▪ Liegt in Kürze im OLAT
+▪ Gruppen aus maximal 2 Leuten dürfen gebildet werden
+▪ Abgabe bis 24 Uhr am Tag vor dem nächsten Termin!
+▪ 3 Extrapunkte für vorrechnen der Lösung
+Oktober 24 Gregor Blossey 24

@@ -1,0 +1,1989 @@
+Grundlagen des relationalen
+III
+Datenbankmodells
+Kapitel
+Vorlesung Datenbanksysteme
+Univ.-Prof. Dr. Günther Specht
+Datenbanken und Informationssysteme (DBIS)
+Vorlesungsinhalt
+3. Grundlagen des relationalen Datenbankmodells
+3.1. Erstellung von Relationen aus dem E/R-Modell
+– Motivation
+– Relationenmodell
+– Umsetzregeln E/R-Modell ins Relationenmodell
+– Erzeugen von Relationen in SQL (create table)
+3.2. Abfragesprachen des Relationenmodells:
+– Relationale Algebra
+– Relationen-Kalküle
+• Tupel-Kalkül
+• Domänen-Kalkül
+(beide, Algebra und Kalkül, als Grundlagen für Kap 4: SQL)
+2
+3.1. Erstellung von Relationen
+aus dem E/R-Modell
+3
+Motivation:
+Das haben wir: E/R-Modell
+4
+Da wollen wir hin: Konkrete Relationen
+Assistant Lecture requires
+EmployeeID Name Expertise Boss LectureID Title Credits Lectured_by predecessor successor
+3002Platon Ideenlehre 2125 4052Logik 4 2125 5001 5041
+3003Aristoteles Syllogistik 2125 4630Die 3 Kritiken 4 2137 5001 5043
+3004Wittgenstein Sprachtheorie 2126 5001Grundzuege 4 2137 5001 5049
+Planetenbewegu 5022Glaube und Wissen 2 2134 5041 5052
+3005Rhetikus ng 2127
+5041Ethik 4 2125 5043 5052
+Keplersche
+5043Erkenntnistheorie 3 2126 5041 5216
+3006Newton Gesetze 2127
+5049Maeeutik 2 2125 5052 5259
+3007Spinoza Gott und Natur 2134
+5052Wissenschaftstheorie 3 2126
+5216Bioethik 2 2126
+5259Der Wiener Kreis 2 2133
+Professor Student attends grades
+ProfessorID Name Type Room StudentID Name Semester StudentID LectureID Employ
+StudentID LectureID Grade
+eeID
+2125Sokrates C4 226 24002Xenokrates 18 27550 4052
+25403 5041 2125 2
+2126Russel C4 232 25403Jonas 12 26120 5001
+27550 4630 2137 2
+2127KopernikusC3 310 26120Fichte 10 27550 5001
+28106 5001 2126 1
+2133Popper C3 52 26830Aristoxenos 8 29120 5001
+2134AugustinusC3 309 27550Schopenhauer 6 29555 5001
+2136Curie C4 36 28106Carnap 3 25403 5022
+2137Kant C4 7 29120Theophrastos 2 29555 5022
+29555Feuerbach 2 28106 5041
+5
+Relationenmodell
+8
+Geschichtlicher Hintergrund
+• Ende der 60er Jahre Grundlagenforschung am IBM-Forschungslabor San Jose,
+California, mit dem Ziel, die Erstellung von Datenbankanwendungen „einfacher“
+zu machen.
+• 1970 erste Veröffentlichung von E.F. Codd zum „Relationalen Datenmodell“
+• In der Folge verschiedene Prototyp-Entwicklungen, am bekanntesten wurden
+– System R, IBM
+– Ingres, University of California, Berkeley
+• Heute wichtigste Datenbanktechnologie
+• viele relationale DBS auf dem Markt
+– Oracle (Oracle)
+– DB2 (IBM)
+– SQL-Server (Microsoft)
+– Sybase (SAP/Sybase)
+– MySQL (Oracle)
+– PostgreSQL
+– etc.
+9
+Basiskonzepte
+Darstellung der Miniwelt in Tabellenform
+(Datenbank = Menge von Relationen/Tabellen)
+Ansatz
+• Einzige Datenstruktur: Tabelle  Relation
+• Saubere mathematische Grundlage:
+Mengentheorie (vgl. math. Relation)
+• Einfache Operationen, mengenorientiert
+• Abgeschlossenheit: Operationen überführen
+Tabellen in Tabellen
+•  Entwurfstheorie (was sind
+„gute“ Tabellen?)
+Relation = Menge von Tupeln (mit atomaren Komponenten)
+10
+Eigenschaften
+• Alle Informationen werden als Relationen modelliert
+• Relation = zweidimensionale Tabelle von Werten
+= Menge von Tupeln (keine Duplikate, keine Reihenfolge!)
+• Jede Zeile - genannt Tupel - entspricht einem Entity oder/und einer Beziehung
+• Die Spalten der Tabelle (Relation) sind benannt und werden als die Attribute
+bezeichnet
+• Jedem Attribut ist ein Wertebereich D (sog. Domain) zugeordnet.
+• R  D x D x … x D (Teilmenge des kart. Produkts der Domains)
+1 2 n
+• Ein Wertebereich ist eine Menge atomarer Werte, welche - aus Sicht des
+DBMS - „elementar“ sind, d.h. keine weitere Substruktur mehr aufweisen.
+• Beziehungen werden ausschließlich über Attributwerte realisiert
+Anm: Wie wir später noch sehen werden, werden die letzten beiden Forderungen im Kontext der objektorientierten
+Erweiterungen von SQL wieder aufgeweicht bzw. fallengelassen.
+11
+Mathematische Notation
+ … für alle
+ … Element aus
+ … kein Element aus
+ … Subset, Teilmenge, kann auch ganze Menge sein
+ … „echtes“ Subset, Teilmenge
+ … Vereinigung
+ … daraus folgt
+ … es gibt
+ … Delta
+ … Äquivalent (Menge)
+ … UND
+ … ODER
+ … NICHT
+ … Äquivalent (Logik)
+12
+Schreibweisen und Definitionen
+• Relation R mit Attributen A bis A :
+1 5
+R ( A , A , A , A , A )
+1 2 3 4 5
+• Relation mit Attributen A bis D oft auch:
+ABCD
+• Schema sch(R) = {A ,..., A } Schema einer Relation
+1 n
+• Domain dom(A) = D Domäne (Wertebereich) von A
+i i i
+• Wert val(R)  dom(A ) x ... x dom(A ) Wert einer Relation
+1 n
+• Tupel t = <A :v , ..., A :v > mit v  D
+1 1 n n i i,
+meist mit fester Reihenfolge der Attribute: t = (v , ..., v ), t  val(R)
+1 n
+13
+Schreibweisen und Definitionen
+• Tupelkomponenten/Attributwerte: t (A) = v oder auch t[A] oder t.A,
+i i i i
+auch mit A  sch(R): t(A)
+• „Set of Mappings“ Definition von Relationen: Relation ist Menge von Abbildungen
+t: sch(R)   D, so dass t(A)  D
+j i j i i
+• K  sch(R) heißt Superschlüssel, wenn  t, t' : t(K) = t'(K)  t = t'
+• K  sch(R) heißt Schlüsselkandidat [1] oder auch nur kurz Schlüssel,
+wenn K Superschlüssel und minimal ist
+• Primärschlüssel : ein ausgewählter Schlüsselkandidat [2]
+• Fremdschlüssel F in Relation R bezüglich Relation S:
+F  sch(R) und F  sch(S) für eine Relation S, in der F Primärschlüssel ist
+• A  sch(R) ist Schlüsselattribut oder prim, wenn es Teil eines Schlüsselkandidaten ist.
+Wenn nicht, dann ist A ein Nichtschlüsselattribut oder nicht-prim
+[1] bei Kemper auch „Kandidatenschlüssel“
+[2] Eine Relation kann also mehrere Attribute oder Attributkombinationen besitzen, die Schlüsseleigenschaft haben
+(= Schlüssel(kandidaten)), wie z. B. Personalnummer oder Sozialversicherungsnummer oder (Vorname, Nachname,
+Straße, Plz, Ort). Einer davon wird dann als bevorzugter Schlüssel (= Primärschlüssel) ausgewählt. 14
+Beispiel
+Seien D , D , ..., D Domänen Telefonbuch
+1 2 n
+Name Adresse Telefonnummer
+Mickey Mouse Main Street 4711
+Minnie Mouse Broadway 94725
+Donald Duck Broadway 95672
+... ... ...
+• Relation: R  D x ... x D
+1 n
+z.B.: Telefonbuch  string x string x integer
+• Tupel: t  R
+z.B.: t = („Mickey Mouse“, „Main Street“, 4711)
+• Schema definiert die Struktur der gespeicherten Daten
+z.B.: Telefonbuch (Name, Adresse, Telefonnummer)
+oder auch: Telefonbuch: {[Name: string, Adresse: string, Telefonnummer: integer]}
+15
+Beispiel zu Schlüsseln (Telefonbuch + Alter)
+Telefonbuch
+Annahme, dass Name Adresse TelefonNr Alter
+Mickey Mouse Main Street 4711 87
+– Die TelefonNr eindeutig ist
+Minnie Mouse Broadway 94725 87
+– Die Kombination von Donald Duck Broadway 95672 81
+(Name, Adresse) eindeutig ist ... ... ...
+– D.h, jedes Tupel aus der Relation Telefonbuch kann eindeutig identifiziert
+werden durch die TelefonNr oder der Kombination von Name und Adresse
+Dann gilt:
+– {Name, Adresse, TelefonNr, Alter}, {Name, Adresse, TelefonNr}, {Name,
+Adresse, Alter}, {TelefonNr, Alter}, {TelefonNr, Name}, {TelefonNr}, {Name,
+Adresse}, … sind Superschlüssel
+– {Name, Adresse} and {TelefonNr} sind Schlüsselkandidaten
+– {TelefonNr} ist z.B. der gewählte Primärschlüssel
+– Name, Adresse, TelefonNr sind Schlüsselattribute, Alter ist ein
+Nichtschlüsselattribut 16
+Modellinhärente Integritätsbedingungen des
+Relationenmodells
+1. „Entity Integrity“
+Primärschlüsselattribute dürfen nie undefiniert (NULL) sein
+2. „Referential Integrity“
+Fremdschlüssel sind entweder undefiniert (NULL) oder es gibt ein entsprechendes Tupel
+mit diesem Primärschlüssel in der anderen Relation.
+3. „Domains“
+Attribute dürfen nur Werte aus der jeweiligen Domain annehmen (oder undefiniert
+(„NULL“)) sein.
+Nullwerte
+• Nullwerte sind spezielle logische Werte und entsprechen nicht dem Leerzeichen oder dem
+numerischen Wert Null. Mittels Nullwerten lässt sich eine dreiwertige Logik realisieren:
+Prädikat = {true | false | unknown}
+17
+Umsetzregeln
+E/R-Modell ins Relationemodell
+18
+Umsetzregeln:
+E/R-Modell ins Relationenmodell (Regeln 1)
+Für Abbildung eines E/R-Modells in ein relationales Schema müssen
+• Entity-Typen und
+• Relationship-Typen
+in Relationen umgesetzt werden.
+1. Abbildung von Entity-Typen auf Relationen:
+– Entity-Typ E mit Attributen A aus Domäne D (1  i  k) wird abgebildet auf die
+i i
+k-stellige Relation E(A :D , A :D , ..., A :D )
+1 1 2 2 k k
+– Falls außerdem "E isa F" besteht oder E ein schwacher Entity-Typ oder E existenz-
+abhängig von F ist, werden alle Schlüsselattribute von F hinzugenommen.
+19
+Beispiel: Mapping von Entities
+Mapping der
+Entities
+• Passagier (Pass#, Name, Adresse)
+• Flug (Flug#, Datum)
+• Flugzeug (Flugzeug#, Hersteller, Typ)
+20
+Beispiel: Universität – Entities
+RequirementOf
+Predecessor LecNo
+MatrNo Successor
+n m
+hear Lectures ECTS
+Name Students
+n n
+Title
+Semester
+n m n
+teach
+Mark examine
+1 1
+PersNo
+Rank
+Name Assistants work_for Professors
+Room
+n 1
+ResearchArea
+PersNo Name
+Umsetzung der Entities: (Relationships folgen später)
+Students (MatrNo: integer, Name: string, Semester: integer)
+Lectures (LecNo: integer, Title: string, ECTS: integer)
+Professors (PersNo: integer, Name: string, Rank: string, Room: integer)
+Assistants (PersNo: integer, Name: string, ResearchArea: string)
+21
+Umsetzregeln:
+E/R-Modell ins Relationenmodell (Regeln 2)
+2. Abbildung von Relationship-Typen auf Relationen:
+2.1. n:m-Beziehungen und alle 3er, 4er, ... etc. Beziehungen:
+– Relationship R zwischen Entity-Typen E ... E wird abgebildet auf Relation R,
+1 n
+deren Attribute aus den Primärschlüsseln der E bestehen.
+i
+• Gleiche Attributnamen werden durch Umbenennung in R eindeutig gemacht.
+• Falls R eigene Attribute hat, werden diese hinzugenommen.
+2.2. 1:n Beziehung zwischen nur 2 Entitytypen E und F (oft)):
+– Keine Relation R aus Relationship,
+statt dessen Primärschlüssel von E in Relation F als Fremdschlüssel aufnehmen.
+Falls Relationship R eigene Attribute hat, müssen diese auch in F aufgenommen
+werden.
+2.3. 1:1 Beziehung zwischen nur 2 Entitytypen E und F:
+– Keine Relation R aus Relationship,
+statt dessen Primärschlüssel von E in Relation F
+oder Primärschlüssel von F in Relation E als Fremdschlüssel aufnehmen.
+2.4. isa Beziehungen und Existenzabhängigkeiten
+– "E isa F" und Existenabhängigkeiten werden nicht in Relationen abgebildet,
+da sonst redundante Tupel der Art isa (133, 133) entstehen.
+22
+Beispiel (selbst probieren):
+Name Adresse
+Vegetarier?
+Pass#
+Passagier
+n
+Preis
+hat
+gebucht
+Sitz#
+m
+Flug#
+Flug
+Datum
+n
+wird
+ausgeführt Flugzeug#
+1 Hersteller
+Flugzeug
+Typ
+23
+Bsp.: 1:n - Relationships (nicht-rekursiv)
+Nicht-rekursiv = es existiert eine Relationship zwischen zwei
+verschiedenen Entitäten
+Fremdschlüssel
+Relationales Modell
+• Department (DepID, Description)
+• Employee (EmpID, Name, DepID)
+Department Employee
+DepID Description EmpID Name DepID
+3815 buying 7911 Meier 3815
+3952 selling 8794 Müller 4717
+4717 stock 2314 Abele 3815
+... ... ... ... ...
+• (0,1) Kardinalität (statt (1,1)) kann zu NULL-Werten bei
+DepID in der Employee-Tabelle führen
+(kein Problem, ist bei Fremdschlüsseln erlaubt, nur bei Primärschlüsseln nicht,
+(wenn nicht gewollt, explizit NOT NULL setzen))
+24
+Bsp.: 1:1 - Relationships
+Mapping (zwischen Entity-Typen E und F)
+• Ähnlich wie 1:n
+• Keine eigene Relation R für die Relationship
+• Füge Primärschlüssel von E als Fremdschlüssel in F ein
+(oder umgekehrt)
+• Alternative: gemeinsame Entity G mit allen Attributen
+Fremdschlüssel
+Beispiel
+• Laptop (SerialNo, Description, …)
+• Screen (ScreenID, Size, … , LaptopSerialNo, …)
+Alternative
+• Laptop (SerialNo, Description, …, ScreenID, ScreenSize, ... )
+25
+Bsp.: m:n - Relationships (nicht-rekursiv)
+Distributor (DistNo, Name, Location)
+Component (PartNo, Description)
+delivers (PartNo, DistNo, Price) “Relationship”-Relation
+Distributor Component delivers
+DistNo Name Location PartNo Description DistNo PartNo Price
+28 Meyer & Sohn Innsbruck 1458 Screw M4 x 6 28 1458 0.25
+33 Brinkmann Wien 1471 Screw M5 x 6 33 1458 0.26
+41 Häring Reutlingen 1475 Screw M5 x 7 33 1471 0.27
+... ... ... 1501 Screw nut M4 41 1471 0.25
+... ... ... ...
+26
+Beispiel: Mapping von Relationships
+Mapping der
+Entities
+• Passagier (Pass#, Name, Adresse)
+• Flug (Flug#, Datum, Flugzeug#)
+• Flugzeug (Flugzeug#, Hersteller, Typ)
+Mapping der
+Relationships
+• gebucht (Pass#, Flug#, Preis, Sitz#)
+27
+Bsp.: 1:n - Relationships (rekursiv)
+• Variante 1 ( “Relationship”-Relation)
+Employee (PersNo, Name, Department)
+has_boss (PersNo, BossPersNo)
+Super-Boss  kein Tupel in has_boss–Relation
+• Variante 2 (Rollennamen)
+Employee (PersNo, Name, Department, BossPersNo)
+Super-Boss  NULL–Wert in BossPersNo
+28
+Bsp.: 1:n - Relationship (rekursiv)
+PNR 3814
+PNR 4755 PNR 5812 PNR 3995
+PNR 6719 PNR 5222 PNR 7817 PNR 8149 PNR 7443 PNR 3379 PNR 5711 PNR 4179
+Variante 1: Employee1 has_boss
+PersNo Name Dep PersNo BossPersNo
+3379 Schmidt buying 3379 3995
+3814 König management 3995 3814
+3995 Berger selling 4179 3995
+4179 Hansen buying 4755 3814
+4755 Zimmerer selling 5222 4755
+5222 Wegner stock 5711 3995
+5711 Abele buying 5812 3814
+5812 Brauer selling 6719 4755
+6719 Zapp stock 7443 5812
+7443 Hauber bookkeeping 7817 4755
+7817 Faust stock 8149 5812
+29
+8149 Maier bookkeeping
+Bsp.: 1:n - Relationship (rekursiv)
+PNR 3814
+PNR 4755 PNR 5812 PNR 3995
+PNR 6719 PNR 5222 PNR 7817 PNR 8149 PNR 7443 PNR 3379 PNR 5711 PNR 4179
+Variante 2: Employee2
+PersNo Name Dep BossPersNo
+3379 Schmidt buying 3995
+3814 König management NULL
+3995 Berger selling 3814
+4179 Hansen buying 3995
+4755 Zimmerer selling 3814
+5222 Wegner stock 4755
+5711 Abele buying 3995
+5812 Brauer selling 3814
+6719 Zapp stock 4755
+7443 Hauber bookkeeping 5812
+7817 Faust stock 4755
+30
+8149 Maier bookkeeping 5812
+Bsp.: n:m - Relationships (rekursiv)
+Mapping
+• Part (PartNo, Description, …, Stock)
+• Structure (UpperPNo, LowerPNo, Amount)
+– upper und lower Rollennamen legen die
+Richtung der Relation fest
+Structure Part
+UpperPNo LowerPNo Amount PartNo Description Stock
+A B 1 A gear 10
+A C 4 B bearing1 5
+A
+A E 7 C shaft 5
+1 4
+B D 3 D screw1 100
+B C
+B E 1 E screw2 150 7
+1
+5
+C E 5 F bearing2 30
+3 2
+C F 2
+D E F
+31
+n
+X Y means: x is contained in Y n times
+Mapping von n-stelligen Relationships
+Mapping wie m:n
+• Erzeugung einer Relation R, die
+alle Schlüssel der beteiligten Entitäten
+enthält
+• Schlüssel ist zusammengesetzter
+Schlüssel aus allen
+Teilschlüsseln
+• m:n ist also Spezialfall einer n-
+stelligen Relation mit n=2
+R (S-E1-1, ..., S-E1-n, S-E2-1, ..., S-E2-n, ..., S-Ek-1, ..., S-Ek-n, A-R-1, ... A-R-n)
+E1 E2 Ek R 32
+Bsp.: Mapping von n-stelligen Relationships
+assign (ProfID, StudentID, Title, Domain, Date)
+33
+Bsp.: Mapping von Generalisierung
+Es gibt 3 Varianten zum Mappen von Generalisierungen:
+Variante 1: Relation für jede Entity
+Employee (PersNo, Name)
+Professor (PersNo, Rank, Room)
+Assistant (PersNo, Expertise)
+Variante 2: Relation nur für benötigte Sub-Entities
+Professor (PersNo, Name, Rank, Room)
+Assistant (PersNo, Name, Expertise)
+Variante 3 (seltener): nur eine Relation für das Vater-Entity
+Employee (PersNo, Name, Rank, Room, Expertise)
+Jede Variante hat Vor- und Nachteile. Wahl hängt von der Hierarchie, dem zu
+erwartenden Datenbestand und den zu erwartenden Abfragen ab!
+34
+Bsp.: Mapping schwacher Entitäten
+• Schwaches Entity bekommt Schlüsselattribute des starken Entities
+• Schlüssel wird zusammengesetzt aus partiellem Schlüssel und den “geerbten”
+Schlüsselattributen
+Gebäude (Geb#, Straße, Hausnr)
+Raum (Geb#, RaumNr, Größe)
+35
+Bsp.: Mapping von speziellen Attributen
+• Mehrwertige Attribute
+– Werden für das Mapping (intern) in eine Relation mit schwacher Entität
+umgewandelt und dementsprechend gemappt:
+– Mapping:
+• Person (PersonID, Name)
+• E-Mail (PersonID, EMailAdresse)
+• Abgeleitete Attribute
+– Werden wie “normale” Attribute behandelt
+36
+Beispiele
+Beispiel: „University“
+38
+Beispiel: "University“ – Entities
+Mapping der
+Entities
+• Student (StudentID, Name, Semester)
+• Lecture (LectureID, Title, Credits)
+• Professor (EmployeeID, Name, Type, Room)
+• Assistant (EmployeeID, Name, Expertise)
+39
+Beispiel: „University“ – Relationships
+Mapping der
+Relationships
+• attends (StudentID, LectureID)
+• Lecture (LectureID, Title, Credits, LecturedBy)
+• requires (predecessor, successor)
+• Assistant (EmployeeID, Name, Expertise, ProfEmpID)
+• grades (StudentID, LectureID, ProfEmpID, Grade) 40
+Beispiel: „University“ - Fremdschlüssel
+• Um die Fremdschlüssel in einem Schema anzugeben, kann z.B. folgende Form
+verwendet werden: A(x , ... x ) ⟶ B(y , ..., y )
+1 n 1 n
+• Dies bedeutet, dass die Attribute x , ... x der Relation A auf die Attribute y , ...
+1 n 1
+y der Relation B verweisen.
+n
+Beispiel University – Schema:
+• attends(StudentID) ⟶ Student(StudentID)
+• attends(LectureID) ⟶ Lecture(LectureID)
+• Lecture(LecturedBy) ⟶ Professor(EmployeeID)
+• requires(predecessor) ⟶ Lecture(LectureID)
+• requires(successor) ⟶ Lecture(LectureID)
+• Assistant(Boss) ⟶ Professor(EmployeeID)
+• grades(StudentID) ⟶ Student(StudentID)
+• grades(LectureID) ⟶ Lecture(LectureID)
+• grades(EmployeeID) ⟶ Professor(EmployeeID)
+41
+Beispiel: “University” in konkreter Ausprägung
+Assistant Lecture requires
+EmployeeID Name Expertise Boss LectureID Title Credits Lectured_by predecessor successor
+3002Platon Ideenlehre 2125 4052Logik 4 2125 5001 5041
+3003Aristoteles Syllogistik 2125 4630Die 3 Kritiken 4 2137 5001 5043
+3004Wittgenstein Sprachtheorie 2126 5001Grundzuege 4 2137 5001 5049
+Planetenbewegu 5022Glaube und Wissen 2 2134 5041 5052
+3005Rhetikus ng 2127
+5041Ethik 4 2125 5043 5052
+Keplersche
+5043Erkenntnistheorie 3 2126 5041 5216
+3006Newton Gesetze 2127
+5049Maeeutik 2 2125 5052 5259
+3007Spinoza Gott und Natur 2134
+5052Wissenschaftstheorie 3 2126
+5216Bioethik 2 2126
+5259Der Wiener Kreis 2 2133
+Professor Student attends grades
+ProfessorID Name Type Room StudentID Name Semester StudentID LectureID Employ
+StudentID LectureID Grade
+eeID
+2125Sokrates C4 226 24002Xenokrates 18 27550 4052
+25403 5041 2125 2
+2126Russel C4 232 25403Jonas 12 26120 5001
+27550 4630 2137 2
+2127KopernikusC3 310 26120Fichte 10 27550 5001
+28106 5001 2126 1
+2133Popper C3 52 26830Aristoxenos 8 29120 5001
+2134AugustinusC3 309 27550Schopenhauer 6 29555 5001
+2136Curie C4 36 28106Carnap 3 25403 5022
+2137Kant C4 7 29120Theophrastos 2 29555 5022
+29555Feuerbach 2 28106 5041
+42
+Beispiel: Online Hotelreservierung
+43
+Mapping Online Hotelreservierung
+• Hotel (HotelID, Name)
+• HotelTelefon (HotelID, TelefonNr)
+• Zimmer (HotelID, ZimmerNr, Preis)
+• Suite (HotelID, ZimmerNr, AnzahlRäume)
+• Mietauto (AutoID, Typ, Preis)
+• Foto (FotoID, Titel, HotelID, MietautoID)
+• Buchung (BuchungsNr, Gesamtpreis, GetätigtVon)
+• BuchungZimmer (BuchungsNr, HotelID, ZimmerNr, von, bis)
+• BuchungMietauto (BuchungsNr, AutoID, von, bis)
+• Kunde (Username, Passwort)
+• Rechnung (BuchungsNr, RechnungsNr, Datum, Betrag, BezahltVon)
+44
+Fremdschlüssel Online Hotelreservierung
+• Zimmer(HotelID) ⟶ Hotel(HotelID)
+• Suite(HotelID,ZimmerNr) ⟶ Zimmer(HotelID,ZimmerNr)
+• Foto(HotelID) ⟶ Hotel(HotelID)
+• Foto(MietautoID) ⟶ Mietauto(AutoID)
+• BuchungZimmer(BuchungsNr) ⟶ Buchung(BuchungsNr)
+• BuchungZimmer(HotelID,ZimmerNr) ⟶ Zimmer(HotelID,ZimmerNr)
+• BuchungMietauto(BuchungsNr) ⟶ Buchung(BuchungsNr)
+• BuchungMietauto(AutoID) ⟶ Mietauto(AutoID)
+• Buchung(GetätigtVon) ⟶ Kunde(Username)
+• Rechnung(BuchungsNr) ⟶ Buchung(BuchungsNr)
+• Rechnung(BezahltVon) ⟶ Kunde(Username)
+45
+Vorsicht: Anomalien
+• Achtung: Bei falscher Zuordnung des Fremdschlüssels bei 1:n
+Beziehungen entstehen Anomalien!
+Lecture
+Professor
+LecNo Title ECTS
+PersNo Name Rank Room LecNo
+5001 Main Features 4
+2125 Socrates C4 226 5041
+5041 Ethics 4
+2125 Socrates C4 226 5049
+5043 Epistemology 3
+2125 Socrates C4 226 4052
+5049 Meiotic 2
+... ... ... ... ...
+4052 Logic 4
+2134 Augustine C3 309 5022
+5052 Philosophy of Science 3
+2136 Curie C4 36 ??
+5216 Bio Ethics 2
+5259 The Vienna Circle 2
+5022 Faith and Knowledge 2
+46
+Anomalien cont.
+Achtung: diese Modellierung kann so nicht durchgeführt werden!
+Professors Lectures
+PersNo Name Rank Room LecNo LecNo Title ECTS
+2125 Socrates C4 226 5041 5001 Main Features 4
+2125 Socrates C4 226 5049 5041 Ethics 4
+2125 Socrates C4 226 4052 5043 Epistemology 3
+... ... ... ... ... 5049 Meiotic 2
+2134 Augustine C3 309 5022 4052 Logic 4
+2136 Curie C4 36 ?? 5052 Philosophy of Science 3
+5216 Bio Ethics 2
+5259 The Vienna Circle 2
+5022 Faith and Knowledge 2
+• Update-Anomalie: Was passiert, wenn Socrates den Raum wechselt?
+• Lösch-Anomalie: Was passiert, wenn “Faith and Knowledge” gelöscht wird?
+• Einfüge-Anomalie: Curie is neu und hält noch keine Vorlesungen
+47
+Weiteres Beispiel:
+Mapping E/R-Modell KursDB auf Relationen
+48
+Mapping E/R-Modell KursDB auf Relationen
+Kurs Kursleiter Vorauss Fuehrt_durch
+KursNr Titel PersNr Name Gehalt VorNr KursNr AngNr KursNr PersNr
+G08 Grundlagen I 27183 Meier, I. 4300.50 G08 P13 1 G08 38197
+G10 Grundlagen II 29594 Schulze, H. 3890.20 G10 P13 2 G08 38197
+P13 C-Programmierung 38197 Huber, L. 4200.10 G08 I09 1 G10 43325
+I09 Datenbanken 43325 Müller, K. 3400.80 G10 I09 2 G10 29594
+P13 I09 1 P13 27183
+2 P13 27183
+Teilnehmer Nimmt_teil
+1 I09 29594
+TnNr Name Ort AngNr KursNr TnNr
+2 I09 29594
+143 Schmidt, M. Bremen 2 G08 143
+3 I09 29594
+145 Huber, Chr. Augsburg 2 P13 143
+146 Abele, I. Senden 1 G08 145 Angebot
+149 Kircher, B. Bochum 1 P13 146 AngNr KursNr Datum Ort
+155 Meier, W. Stuttgart 1 I09 146 1 G08 2000-10-13 München
+171 Möller, H. Innsbruck 2 P13 149 2 G08 2000-11-24 Bremen
+173 Schulze, B. Stuttgart 1 I09 155 1 G10 2000-12-01 München
+177 Mons, F. Essen 1 I09 171 2 G10 2001-02-15 Hamburg
+185 Meier, K. Heidelberg 1 I09 173 1 P13 2001-05-28 Innsbruck
+187 Karstens, L. Hamburg 2 P13 177 2 P13 2001-07-01 Essen
+194 Gerstner, M. Innsbruck 1 I09 185 1 I09 2001-03-27 Stuttgart
+2 I09 187 2 I09 2001-04-23 Hamburg
+1 P13 194 3 I09 2001-05-29 München 50
+Vorsicht: Anomalien
+• Achtung: Bei falscher Zuordnung des Fremdschlüssels bei 1:n
+Beziehungen entstehen Anomalien!
+Lecture
+Professor
+LecNo Title ECTS
+PersNo Name Rank Room LecNo
+5001 Main Features 4
+2125 Socrates C4 226 5041
+5041 Ethics 4
+2125 Socrates C4 226 5049
+5043 Epistemology 3
+2125 Socrates C4 226 4052
+5049 Meiotic 2
+... ... ... ... ...
+4052 Logic 4
+2134 Augustine C3 309 5022
+5052 Philosophy of Science 3
+2136 Curie C4 36 ??
+5216 Bio Ethics 2
+5259 The Vienna Circle 2
+5022 Faith and Knowledge 2
+52
+Anomalien cont.
+Achtung: diese Modellierung kann so nicht durchgeführt werden!
+Professors Lectures
+PersNo Name Rank Room LecNo LecNo Title ECTS
+2125 Socrates C4 226 5041 5001 Main Features 4
+2125 Socrates C4 226 5049 5041 Ethics 4
+2125 Socrates C4 226 4052 5043 Epistemology 3
+... ... ... ... ... 5049 Meiotic 2
+2134 Augustine C3 309 5022 4052 Logic 4
+2136 Curie C4 36 ?? 5052 Philosophy of Science 3
+5216 Bio Ethics 2
+5259 The Vienna Circle 2
+5022 Faith and Knowledge 2
+• Update-Anomalie: Was passiert, wenn Socrates den Raum wechselt?
+• Lösch-Anomalie: Was passiert, wenn “Faith and Knowledge” gelöscht wird?
+• Einfüge-Anomalie: Curie is neu und hält noch keine Vorlesungen
+53
+Erzeugen von Relationen in SQL
+54
+Erzeugen einer Relation: CREATE TABLE
+Erzeugen einer Relation (Minimalform)
+CREATE TABLE Kurs
+(KursNr CHAR(3),
+Titel VARCHAR(20))
+Wirkung
+1. Es wird eine Relation „Kurs“ angelegt und dem Default-Schema und dem
+Default-Tablespace zugeordnet.
+2. Die Tabelle hat zwei Attribute KursNr und Titel
+3. KursNr hat den Attributtyp Character, feste Länge, genau 3
+4. Titel hat den Attributtyp Character, variable Länge, max. 20
+5. Für beide Attribute sind Nullwerte (dies ist der Default) zugelassen.
+6. Wir hätten dies auch explizit verbieten können mittels
+... KursNr CHAR(3) NOT NULL,
+Titel VARCHAR NOT NULL …
+55
+SQL-Datentypen der Attribute
+Datentyp Spezifikation Erläuterungen
+Integer INTEGER
+Real FLOAT
+Dezimal DECIMAL(g [,k]) insgesamt gStellen,
+davon kNachkommastellen
+Zeichenkette CHAR(Länge) feste Länge,
+max. 254 Zeichen
+Zeichenkette VARCHAR(Länge) variable Länge,
+max. 4.000 Zeichen
+Zeichenkette LONG VARCHAR variable Länge,
+max. 32.700 Zeichen
+Zeichenkette CLOB variable Länge,
+max. 2 GB
+Bytestrings BLOB für Binärdaten und Graphikdaten
+Datum DATE
+56
+Primärschlüssel
+Festlegung des Primärschlüssels
+1. Primärschlüssel sind (per definition) NOT NULL.
+2. Das DBS verlangt, dass bei Einfüge-, Lösch- und Änderungs-Operationen der Wert
+dieses Attributes (bzw. dieser Attributkombination) innerhalb der Tabelle stets eindeutig
+ist.
+Die Änderungsoperation wird ansonsten zurückgewiesen.
+3. Je Relation kann max. ein Primärschlüssel deklariert werden.
+Beispiel:
+CREATE TABLE Kurs
+(KursNr CHAR(3) NOT NULL PRIMARY KEY,
+Titel VARCHAR(20))
+alternativ
+CREATE TABLE Kurs
+(KursNr CHAR(3) NOT NULL,
+Titel VARCHAR(20),
+PRIMARY KEY(KursNr) )
+Anmerkung
+• Ist der Primärschlüssel zusammengesetzt, dann kommt nur die zweite Form in Frage. 57
+Fremdschlüssel und Fremdschlüsselbedingungen
+DBS-seitiges Erzwingen korrekter Fremdschlüsselwerte
+CREATE TABLE Angebot
+(AngNr INTEGER NOT NULL,
+KursNr CHAR(3) NOT NULL REFERENCES Kurs(KursNr), [1]
+Datum DATE,
+PRIMARY KEY(AngNr, KursNr))
+alternativ
+CREATE TABLE Angebot
+(AngNr INTEGER NOT NULL,
+KursNr CHAR(3) NOT NULL,
+Datum DATE,
+PRIMARY KEY(AngNr, KursNr),
+FOREIGN KEY(KursNr) REFERENCES Kurs(KursNr)) [2]
+Wirkungsweise von REFERENCES ... (in der obigen Form)
+1. Beim Einfügen in der „Kind-Tabelle“ muss der Fremdschlüsselwert als Primärschlüsselwert in der
+übergeordneten Tabelle („Vater-Tabelle“) vorhanden sein.
+2. Beim Löschen in der „Vater-Tabelle“ dürfen in den abhängigen Tabellen keine „Waisenkinder“
+entstehen.
+Ansonsten wird die Operation zurückgewiesen!
+[1]NOT NULLhier nur wegen der Primärschlüssel-Bedingung. Fremdschlüssel-Attribute könnenansonsten durchaus auch Nullwerte aufweisen. 58
+[2]Bezieht sich REFERENCESauf den Primärschlüssel der referenzierten Tabelle (wie hier der Fall), so genügt auch „.... REFERENCES Kurs“.
+Löschen einer Relation: DROP TABLE
+DROP TABLE Kurs
+Wirkung
+• Löscht die Tabelle Kurs samt Inhalt und entfernt den Katalogeintrag mit allen
+Verweisen und zugehörenden Hilfsdaten (z.B. Indexe)
+• Bewirkt bei manchen DBS (z.B. bei Oracle V7) ein COMMIT der laufenden
+Transaktion!
+(Für DB2 UDB 5.0 gilt dies nicht. - Hier ist auch nach DROP TABLE noch ein
+Rollback (siehe später) möglich.)
+59
+3.2. Sprachen des Basismodells
+60
+Sprachen des Basismodells
+Zwei formale (mathematische) Abfragesprachen als Basis für reale Sprachen
+(z.B.: SQL):
+• Relationale Algebra
+– operational: man beschreibt genau, wie die Ergebnisse berechnet werden)
+– wird intern verwendet für die Optimierung und Ausführung
+• Relationaler Tupelkalkül / Domänenkalkül
+– deklarativ: man beschreibt was man haben möchte, nicht wie
+– Grundlage z.B. des Exists-Operators in SQL
+61
+Sprachen des Basismodells cont.
+Eigenschaften
+• Mengenorientiert (im Gegensatz zu tupelorientiert, navigierend)
+– abgeschlossen
+d.h. Operationen liefern immer wieder Relationen
+– orthogonal
+d.h. Operationen lassen sich beliebig kombinieren
+• Mathematische Fundierung:
+– Relationale Algebra
+(5 Basisoperatoren: Vereinigung, Differenz, Produkt, Selektion, Projektion)
+– Relationen-Kalkül
+(vgl. Prädikatenkalkül 1. Ordnung)
+62
+Relationale Algebra
+63
+Die relationale Algebra Operatoren
+ Selektion
+ Projektion
+ Umbenennung
+x Kreuzprodukt
+A Join (Verbund)
+ Vereinigung
+ Durchschnitt
+Charakteristisch
+„Konstruktion“ der
+ Mengendifferenz
+Ergebnis-Relation durch ggf.
+ Division
+geschachtelte Anwendung von
+F Semi-Join (rechter) Algebra-Operationen auf die
+Ausgangs-Relation(en).
+E Semi-Join (linker)
+C linker äußerer Join
+D rechter äußerer Join
+64
+Selektion
+ R
+Teilnehmer
+F
+steht für eine Selektion (Tupelauswahl)
+TnNr Name Ort
+angewandt auf Relation R unter Anwendung
+143 Schmidt, M. Bremen
+der Selektionsformel F
+145 Huber, Chr. Augsburg
+146 Abele, I. Senden
+149 Kircher, B. Bochum
+155 Meier, W. Stuttgart
+Anfrage:  Teilnehmer 171 Möller, H. Innsbruck
+TnNr > 155
+173 Schulze, B. Stuttgart
+177 Mons, F. Essen
+TnNr Name Ort
+185 Meier, K. Heidelberg
+171 Möller, H. Innsbruck
+187 Karstens, L. Hamburg
+173 Schulze, B. Stuttgart
+194 Gerstner, M. Innsbruck
+177 Mons, F. Essen
+185 Meier, K. Heidelberg
+187 Karstens, L. Hamburg
+194 Gerstner, M. Innsbruck
+65
+Selektion cont.
+Selektionsformel F
+Vergleiche (<, >, >=, >=, <>) sowie logische Verknüpfungen (, , ¬) davon über Attributwerte und Konstanten
+Anfrage:  Teilnehmer
+(TnNr<= 146) (Ort = ‘Innsbruck‘)
+TnNr Name Ort
+143 Schmidt, M. Bremen
+145 Huber, Chr. Augsburg
+146 Abele, I. Senden
+171 Möller, H. Innsbruck
+194 Gerstner, M. Innsbruck
+Ergebnis: leere Rel.
+Anfrage:  Teilnehmer
+(TnNr< 180) (Ort = ‘Innsbruck')
+Ergebnis:
+TnNr Name Ort
+171 Möller, H. Innsbruck
+Formal: sch( R) = sch(R)
+F
+val( R) = {t  val(R) | F(t)} 66
+F
+Projektion
+
+R
+Attr
+Steht für eine Projektion angewandt auf Relation R,
+wobei Attr die Teilmenge der Attribute ist, auf die R abgebildet (projiziert) wird.
+Anfrage:  Teilnehmer
+TnNr,Name
+Teilnehmer Anfrage:  Teilnehmer
+Ort
+TnNr Name Ort TnNr Name
+143 Schmidt, M. Bremen 143 Schmidt, M. Ort
+145 Huber, Chr. Augsburg 145 Huber, Chr. Bremen
+146 Abele, I. Senden 146 Abele, I. Augsburg
+149 Kircher, B. Bochum 149 Kircher, B. Senden
+155 Meier, W. Stuttgart 155 Meier, W. Bochum
+171 Möller, H. Innsbruck 171 Möller, H. Stuttgart
+173 Schulze, B. Stuttgart 173 Schulze, B. Innsbruck
+187 Karstens, L. Hamburg 187 Karstens, L. Hamburg
+194 Gerstner, M. Innsbruck 194 Gerstner, M.
+Formal: sch( R) = L, wobei L  sch(R)
+L
+val( R) = {t(L):  t'  val(R)  t'(L) = t} 67
+L
+Komplexitäten von Selektion und Projektion
+• Selektion: O(n)
+– jede Zeile muss abgearbeitet und dabei kontrolliert werden, ob die
+Bedingung zutrifft
+• Projektion: ?
+– Jede Zeile muss abgearbeitet werden und nicht projizierte Attribute
+„abgeschnitten“ werden
+– also O(n) ? – nein!
+• Relationenmodell ist mengenorientiert, deshalb Überprüfung auf Duplikate
+notwendig:
+Teilnehmer  Teilnehmer
+Ort
+ Teilnehmer
+Ort
+TnNr Name Ort Ort
+Ort
+1 Schmidt, M. Innsbruck Innsbruck
+Innsbruck
+2 Huber, Chr. Wien Wien
+Wien
+3 Abele, I. Innsbruck Innsbruck
+• d.h. O(n) + O(n2) = O(n2)
+• Bemerkung: viele DBS verzichten u.a. deshalb auf Überprüfung von Duplikaten
+68
+und sind somit nicht mehr mengenorientiert, sondern multimengenorientiert
+Umbenennung
+a) Explizite Umbenennung: Operator  (griechisch rho, von rename)
+a1) Relationen-Umbenennung:
+ Rel
+NeuerRelName
+Bsp:  Kursleiter
+k1
+a2) Attribut-Umbenennung
+ Rel
+NeuerAttrName← AlterAttrName
+Benennt nur den Spaltennamen um (zur besseren Ausgabe)
+Bsp:  Vorauss
+Voraussetzung_fuer ← KursNr
+b) Implizite Umbenennung:
+Attribut-Umbenennung
+Es ist sinnvoll, auch den Projektions-Operator gleich mit der Möglichkeit zur
+Attribut-Umbenennung zu versehen:
+ Rel
+NeuerAttrName ← AlterAttrName
+6699
+Zusammengesetzte Anfragen
+„Gib Teilnehmer-Nummer und -Name aller Teilnehmer aus Innsbruck aus“
+
+( Teilnehmer)
+TnNr,Name Ort = 'Innsbruck'
+Die logische Abarbeitungsreihenfolge
+1. Schritt Berechnung des -Ausdrucks  Rel
+1
+2. Schritt Anwendung des -Operators auf Rel  Erg
+1
+Die alternative Formulierung
+ ( Teilnehmer)
+Ort = 'Innsbruck' TnNr,Name
+wäre nicht korrekt. Warum?
+(Selektion enthält nur Ort, keine TnNrbzw. Namen mehr)
+70
+Weitere Operatoren
+R  S steht für die Vereinigung (union) der Relationen R und S,
+wobei R und S strukturgleich sein müssen, d.h. es muss gelten: sch(R) = sch(S).
+Kurzschreibweise  R  R  R  ...  R
+i=1,2,..k i 1 2 k
+R - S steht für die Differenz der Relationen R und S, d.h. R S
+alle Tupel von R, die auch in S vorkommen, werden
+A B C D
+aus R entfernt. (Auch hier gilt sch(R) = sch(S)).
+a1 b1 c1 d1
+R x S steht für das kartesische Produkt
+der Relationen R und S. a2 b2 c2 d2
+c3 d3
+Anmerkung
+R x S
+R  S  R - (R - S) ableitbar, wie üblich.
+A B C D
+a1 b1 c1 d1
+Formal
+a1 b1 c2 d2
+sch(R  S) = sch(R - (R - S)) = sch(R)
+a1 b1 c3 d3
+val(R  S) = val(R)  val(S),
+a2 b2 c1 d1
+val(R - S) = val(R) - val(S) a2 b2 c2 d2
+sch(R x S) = sch(R) .. sch(S) [.. = disjunktive Vereinigung] a2 b2 c3 d3
+val(R x S) = {t | t(sch(R))  val(R)  t(sch(S))  val(S)}
+71
+Verknüpfung von Tabellen
+Um die gewünschten Ergebnisse zu bekommen, müssen Tabellen i.d.R. verknüpft
+werden. Dies kann mit der Kombination von x und  erreicht werden.
+Beispiel: Anfrage
+„Welche Kurse (Ausgabe: Kurs-Nummer und -Titel) sind für welche anderen
+Kurse (Ausgabe: Kurs-Nummer) Voraussetzung?“
+Kurs Vorauss
+Ausgangsrelationen
+KursNr Titel VorNr KursNr
+G08 Grundlagen I G08 P13
+G10 Grundlagen II G10 P13
+P13 C-Programmierung G08 I09
+I09 Datenbanken G10 I09
+P13 I09
+Anfrage in der Relationalen Algebra
+ ( (Vorauss x Kurs))
+VorNr,Titel,VorausFür ← Vorauss.KursNr VorNr = Kurs.KursNr
+72
+Verknüpfung von Tabellen cont.
+Abarbeitungsreihenfolge 1. Schritt: Vorauss x Kurs
+VorNr Vorauss.KursNr Kurs.KursNr Titel
+1. Schritt
+G08 P13 G08 Grundlagen I
+Berechnung Vorauss x Kurs  Rel
+1
+G08 P13 G10 Grundlagen II
+2. Schritt
+... ... ... ...
+
+Anwendung von auf Rel  Rel G08 P13 I09 Datenbanken
+VorNr=Kurs.KursNr 1 2
+G10 P13 G08 Grundlagen I
+3. Schritt
+... ... ... ...
+Anwendung von
+G10 P13 I09 Datenbanken
+
+auf Rel
+VorNr, Titel, Vorauss_für← Vorauss.Kurs 2 ... ... ... ...
+P13 I09 I09 Datenbanken
+2. Schritt:  (Rel )
+VorNr=Kurs.KursNr 1
+VorNr Vorauss.KursNr Kurs.KursNr Titel
+3. Schritt:  (Rel )
+VorNr, Titel, Vorauss_für← Vorauss.KursNr 2
+G08 P13 G08 Grundlagen I
+VorNr Titel VoraussFür
+G10 P13 G10 Grundlagen II
+G08 Grundlagen I P13
+G08 I09 G08 Grundlagen I
+... ... ...
+G10 I09 G10 Grundlagen I
+P13 C-Programmierung I09
+P13 I09 P13 C-Programmierung
+73
+Join (Verbund)
+Die Verknüpfung von Tabellen aufgrund von Attributwert-Beziehungen ist eine häufige
+Operation im relationalen Datenmodell, sie wird daher durch spezielle Join-Operation
+explizit unterstützt.
+R A S steht für den Join (Verbund) der Relationen R und S unter Verwendung der
+F
+Verbundbedingung F.
+
+R A S ist semantisch äquivalent zu (R x S)
+F F
+Beispiel:
+Vorauss A Kurs entspricht:  (Vorauss x Kurs)
+VorNr= KursNr VorNr= Kurs.KursNr
+A
+-Ausführungslogik „Nested Loops Algorithmus“
+for each Tupel x in Vorauss do
+for each Tupel y in Kurs do
+if x.VorNr = y.KursNr then
+erzeuge Resultat-Tupel x || y und füge in Ergebnisrelation ein
+fi
+done
+done 74
+Join cont.
+Beispiel: „Gib KursNr und Titel aller Kurse sowie den Namen des Kursleiters aus, die
+von dem Kursleiter mit der Personalnummer 27183 durchgeführt werden“
+Kurs Kursleiter Fuehrt_durch
+KursNr Titel PersNr Name Gehalt AngNr KursNr PersNr
+G08 Grundlagen I 27183 Meier, I. 4300.50 1 G08 38197
+G10 Grundlagen II 29594 Schulze, H. 3890.20 2 G08 38197
+P13 C-Programmierung 38197 Huber, L. 4200.10 1 G10 43325
+I09 Datenbanken 43325 Müller, K. 3400.80 2 G10 29594
+1 P13 27183
+2 P13 27183
+1 I09 29594
+2 I09 29594
+Mögliche Anfrageformulierung
+2 I09 29594
+
+Kurs.KursNr, Titel, Name
+( (Kurs ⋈ (Kursleiter ⋈ Fuehrt_durch)))
+PersNr = 27183
+Kurs.KursNr Kursleiter.PersNr
+= =
+Fuehrt_durch.KursNr Fuehrt_durch.PersNr
+75
+Join cont.
+Equi Join, Theta Join
+• Die „Join-Bedingung“ kann mittels =, aber auch <, >, >=, >= sowie (, , ¬)
+formuliert werden.
+– Joins über “=“-Bedingung heißen: Equi Join
+– Joins über “, , , “ etc heißen: -Join (Theta Join)
+Natural Join
+• Spezialfall des Equi Joins, indem keine Bedingungen angegeben werden
+• alle Spalten gleichen Namens werden gejoint
+• diese Spalten werden aber nur einmal ausgegeben werden (implizite
+Projektion).
+R ⋈ S steht für natürlichen Verbund (natural join) der Relationen R und S.
+76
+Join cont.
+Beispiel: Die vorige Anfrage mittels natürlichem Verbund formuliert
+ 
+Kurs ⋈ (( Kursleiter) ⋈ Fuehrt_durch)
+KursNr, Titel PersNr = 27183
+Anmerkung Unterschied zum Equi-Join
+• Attribute gleichen Namens treten in der Ergebnis-Relation (sowie in allen
+Zwischenergebnis-Relationen) jeweils nur einmal auf.
+• Also: sch(R ⋈ S) = sch(R)  sch(S)
+• Beispiel:
+• R(A,B) S(B,C,D)
+• sch(R ⋈ S) = (A,B,C,D)
+• sch(R ⋈ S) = (A, R.B, S.B, C, D)
+R.B=S.B
+77
+Join-Komplexitäten
+• Komplexitäten zum Kreuzprodukt und zu den verschiedenen Joinarten:
+siehe Tafelarbeit
+78
+Beispiele zur Relationenalgebra
+Gegeben R S T
+A B C B D B D
+1 a d a 100 a 100
+3 c c b 300 d 200
+4 d f c 400 f 400
+5 d b d 200 g 120
+6 e f e 150
+Anfragen und Ergebnisse
+   S  T S - T A
+S R R R S
+D<300 A,C C R.B=S.B
+B D B D
+B D A C C A R.B C S.B D
+a 100 b 300
+a 100 1 d d 1 a d a 100
+b 300 c 400
+d 200 3 c c 3 c c c 400
+c 400 e 150
+e 150 4 f f 4 d f d 200
+d 200
+5 b b T - S 5 d b d 200
+e 150
+6 f B D 6 e f e 150
+f 400
+f 400
+g 120
+g 120
+79
+Beispiele zur Relationenalgebra cont.
+R S T R  T
+A B C B D B D
+A R.B C T.B D
+1 a d a 100 a 100
+1 a d a 100
+3 c c b 300 d 200 1 a d d 200
+1 a d f 400
+4 d f c 400 f 400
+1 a d g 120
+5 d b d 200 g 120
+3 c c a 100
+6 e f e 150
+3 c c d 200
+3 c c f 400
+R A T R A S 3 c c g 120
+A*100=D
+4 d f a 100
+A B C D
+A R.B C S.B D
+4 d f d 200
+1 a d 100
+1 a d a 100 4 d f f 400
+4 d f 200 4 d f g 120
+4 d f c 400
+5 d b a 100
+5 d b 200
+3 c c b 300
+5 d b d 200
+5 d b f 400
+S A T
+5 d b g 120
+B D 6 e f a 100
+a 100 6 e f d 200
+6 e f f 400
+d 200
+80
+6 e f g 120
+Umbenennung (Beispiel)
+Umbennung ist oft erforderlich, um Eindeutigkeit zu bewahren, z.B. bei Selfjoins
+Beispiel: Stückliste
+Teil(TeilNr, Name, OberteilNr)
+Anfrage: Finde den Namen des Oberteils vom Oberteil von Teil 123
+1. Schritt:  Teil selektiert Teil mit Nr 123
+TeilNr = 123
+2. Schritt: ( Teil) A Teil Problem: welche Tabelle ist gemeint?
+TeilNr = 123 OberteilNr= TeilNr
+(  Teil) A ( Teil) Lösung: Umbenennung!
+TeilNr = 123 T1 T1.OberteilNr = T2.TeilNr T2
+3. Schritt: (  Teil) A ( Teil) A ( Teil)
+TeilNr = 123 T1 T1.OberteilNr = T2.TeilNr T2 T2.OberteilNr = T3.TeilNr T3
+4. Schritt: Finale Lösung
+ ((  Teil) A ( Teil) A ( Teil))
+T3.Name TeilNr = 123 T1 T1.OberteilNr = T2.TeilNr T2 T2.OberteilNr = T3.TeilNr T3
+81
+Abgeleitete Operatoren der Relationenalgebra
+R  S Durchschnitt
+S R
+wie üblich: R  S ≡ R - (R - S)
+A A B
+R ÷ S Division
+a1 a1 b1
+Sei D = R ÷ S, dann muss gelten:
+a2 a2 b1
+sch(S)  sch(R)
+a3 a3 b1
+sch(D) = sch(R) - sch(S)
+a4 b1
+t  D   s  val(S): < t,s >  val(R)
+a1 b2
+a3 b2
+Anwendungsbeispiele
+a2 b3
+R ÷ S
+„Welche Lieferanten liefern alle Teile?“
+a3 b3
+B
+„Welche Mitarbeiter arbeiten an allen Projekten mit?“
+a4 b3
+b1
+„Welche Kursleiter können alle Kurse halten?“ a1 b4
+b4
+a2 b4
+Berechnung von D äquivalent zu a3 b4
+(1) Temp1 ←  R
+Attr(R -S)
+(2) Temp2 ←  (( S × Temp1 ) - R)
+Attr(R -S)
+(3) D ← Temp1 - Temp2
+82
+Abgeleitete Operatoren der Relationenalgebra cont.
+C
+R S Left Outer Join
+F
+(Einseitiger) „äußerer-Verbund“. Alle Tupel der linken Relation (d.h. alle R-Tupel) sind im Ergebnis
+enthalten. Gibt es für ein Tupel r  R kein S-Tupel, das F erfüllt, so werden die S-Attribute im
+i
+Ergebnistupel mit NULL aufgefüllt.
+R S C
+R S
+R.B=S.B
+A B B C
+R.A R.B S.B S.C
+a1 b1 b1 c1
+a1 b1 b1 c1
+a2 b2 b1 C2
+a1 b1 b1 c2
+a3 b4 b2 C3
+a2 b2 b2 c3
+a4 b2 b3 C6
+a3 b4 NULL NULL  Nullwert!
+a4 b5
+a4 b2 b2 c3
+a5 b1
+Analog
+a4 b5 NULL NULL  Nullwert!
+C
+R S Left Outer Join
+a5 b1 b1 c1
+D
+R S Right Outer Join
+a5 b1 b1 c2
+B
+R S Full Outer Join
+Weitere Join-Variante:
+Semijoin R E S:=  (R A S) …alle Attribute von R
+sch(R)
+83
+Geeignet für Fragen: wie viele Joinpartner existieren zu S in R.
+Beispiele
+84
+Beispiel: University (1)
+• Schema
+– Student (StudentID, Name, Semester)
+– Professor (EmployeeID, Name, Type, Room)
+– Assistant (EmployeeID, Name, Expertise, Boss)
+– Lecture (LectureID, Title, Credits, LecturedBy)
+– attends (StudentID, LectureID)
+– requires (predecessor, successor)
+– grades (StudentID, LectureID, EmployeeID, Grade)
+• “Finde den Namen aller Studenten, die im 6. Semester sind.“
+ (σ (Student))
+Name Semester=6
+85
+Beispiel: University (2)
+• Schema
+– Student (StudentID, Name, Semester)
+– Professor (EmployeeID, Name, Type, Room)
+– Assistant (EmployeeID, Name, Expertise, Boss)
+– Lecture (LectureID, Title, Credits, LecturedBy)
+– attends (StudentID, LectureID)
+– requires (predecessor, successor)
+– grades (StudentID, LectureID, EmployeeID, Grade)
+• “Gib den Titel aller Lehrveranstaltungen aus, die von Prof. Einstein gehalten
+werden.“
+ (σ (Lecture A Professor))
+Title Name=‚Einstein‘ LecturedBy=EmployeeID
+86
+Beispiel: University (3)
+• Schema
+– Student (StudentID, Name, Semester)
+– Professor (EmployeeID, Name, Type, Room)
+– Assistant (EmployeeID, Name, Expertise, Boss)
+– Lecture (LectureID, Title, Credits, LecturedBy)
+– attends (StudentID, LectureID)
+– requires (predecessor, successor)
+– grades (StudentID, LectureID, EmployeeID, Grade)
+• “Gib die ID und den Namen aller Studenten aus, die die Lehrveranstaltung
+‚Logik‘ besuchen und noch unter dem 4. Semester sind.“
+ (σ (Student ⋈ attends ⋈ Lecture))
+StudentID, Name Semester<4 ∧ Title = ‚Logik‘
+Alternative:  (σ Student ⋈ attends ⋈ σ Lecture))
+StudentID, Name Semester<4 Title = ‚Logik‘
+Anmerkung: es kann hier immer ein Natural Join verwendet werden, da die Attribute der Joinpartner gleich heißen.
+Wenn nicht, explizit mittels Equijoin angeben.
+87
+Beispiel: University (4)
+• Schema
+– Student (StudentID, Name, Semester)
+– Professor (EmployeeID, Name, Type, Room)
+– Assistant (EmployeeID, Name, Expertise, Boss)
+– Lecture (LectureID, Title, Credits, LecturedBy)
+– attends (StudentID, LectureID)
+– requires (predecessor, successor)
+– grades (StudentID, LectureID, EmployeeID, Grade)
+• “Gib den Namen aller Studenten aus (als „Studierende/r“), die von Prof. Einstein
+für die Lehrveranstaltung ‚Physik‘ die Note 1 oder 5 bekommen haben.“
+ (Student ⋈ σ grades ⋈ σ Lecture ⋈
+Studierende/r ← Student.Name Grade=1  Grade=5 Title=‚Physik‘
+σ Professor))
+Name=‚Einstein‘
+88
+Beispiel: University (5)
+• Schema
+– Student (StudentID, Name, Semester)
+– Professor (EmployeeID, Name, Type, Room)
+– Assistant (EmployeeID, Name, Expertise, Boss)
+– Lecture (LectureID, Title, Credits, LecturedBy)
+– attends (StudentID, LectureID)
+– requires (predecessor, successor)
+– grades (StudentID, LectureID, EmployeeID, Grade)
+• “Gib alle Lehrveranstaltungen und deren Voraussetzungen aus (jeweils Titel
+und ECTS).“
+
+(requires
+suc.title, suc.Credits, predecessorTitle ← pre.Title, predecessorCredits ← pre.Credits
+A  Lecture A  Lecture))
+predecessor=pre.LectureID pre successor=suc.LectureID suc
+89
+Beispiel: University (6)
+• Schema
+– Student (StudentID, Name, Semester)
+– Professor (EmployeeID, Name, Type, Room)
+– Assistant (EmployeeID, Name, Expertise, Boss)
+– Lecture (LectureID, Title, Credits, LecturedBy)
+– attends (StudentID, LectureID)
+– requires (predecessor, successor)
+– grades (StudentID, LectureID, EmployeeID, Grade)
+• “Finde alle Professoren (ID), die keine Assistenten haben.“
+(Variante 1)
+
+σ
+Professor.EmployeeID Assistant.EmployeeID=NULL
+(Professor ⟕ Assistant)
+Professor.EmployeeID=Boss
+(Variante 2)
+
+(Professor – (Professor ⋉ Assistant)
+EmployeeID Professor.EmployeeID=Boss 90
+Beispiel: University (7)
+• Schema
+– Student (StudentID, Name, Semester)
+– Professor (EmployeeID, Name, Type, Room)
+– Assistant (EmployeeID, Name, Expertise, Boss)
+– Lecture (LectureID, Title, Credits, LecturedBy)
+– attends (StudentID, LectureID)
+– requires (predecessor, successor)
+– grades (StudentID, LectureID, EmployeeID, Grade)
+• “Finde alle Professoren (ID, Name, Raum) vom Typ „C4“, die noch nie eine
+negative Note vergeben haben.“
+AllC4Profs =  ( σ Professor)
+EmployeeID Type=‚C4‘
+NegativeGradeProfs =  (σ grades)
+EmployeeID Grade=5
+
+(Lösung) ((AllC4Profs - NegativeGradeProfs) ⋈ Professor)
+EmployeeID, Name, Room
+91
+Beispiel: University (8)
+• Schema
+– Student (StudentID, Name, Semester)
+– Professor (EmployeeID, Name, Type, Room)
+– Assistant (EmployeeID, Name, Expertise, Boss)
+– Lecture (LectureID, Title, Credits, LecturedBy)
+– attends (StudentID, LectureID)
+– requires (predecessor, successor)
+– grades (StudentID, LectureID, EmployeeID, Grade)
+• “Finde alle Studenten (Name), die im 1. Semester sind oder die
+Lehrveranstaltung ‚DBS‘ besuchen.“
+FirstSemStudents =  ( σ Student)
+Name Semester=1
+DBSStudents =  (σ Lecture ⋈ attends ⋈ Student)
+Name Title=‚DBS‘
+(Lösung) FirstSemStudents  DBSStudents
+Achtung: nicht  (σ Lecture ⋈ attends ⋈ σ Student)
+92
+Name Title=‚DBS‘ Semester=1
+Aggregation
+Mengenorientierte Operation, die
+• zuerst eine Partitionierung einer Relation in Teilmengen gemäß
+einer Gruppe von Attributwerten vornimmt (Gruppierung),
+• dann eine Aggregatsfunktion (z.B. count, sum, min, max, avg, etc.) auf
+jeder Teilmenge auswertet.
+• Das Ergebnis ist eine Relation, die für jede Gruppe ein Tupel mit
+dem Aggregationswert enthält.
+Häufig verwendete Aggregations-Funktionen:
+– COUNT
+– SUM
+– MIN
+– MAX
+– AVG
+93
+Funktionsweise von Gruppierung/Aggregation
+Beispiel: Wieviele Teilnehmer kommen aus einem Ort?
+1. Schritt: Gruppierung nach Attribut „Ort“
+Teilnehmer Teilnehmer
+TnNr Name Ort TnNr Name Ort
+143 Schmidt, M. Innsbruck 143 Schmidt, M. Innsbruck
+145 Huber, Chr. Innsbruck 145 Huber, Chr. Innsbruck
+Gruppe „Innsbruck“
+146 Abele, I. Telfs 171 Möller, H. Innsbruck
+149 Kircher, B. Schwaz 194 Gerstner, M. Innsbruck
+155 Meier, W. Kufstein 146 Abele, I. Telfs
+Gruppe „Telfs“
+171 Möller, H. Innsbruck 187 Karstens, L. Telfs
+173 Schulze, B. Zirl 149 Kircher, B. Schwaz Gruppe „Schwaz“
+187 Karstens, L. Telfs 155 Meier, W. Kufstein Gruppe „Kufstein“
+194 Gerstner, M. Innsbruck 173 Schulze, B. Zirl Gruppe „Zirl“
+94
+Funktionsweise von Gruppierung/Aggregation
+Beispiel: Wieviele Teilnehmer kommen aus einem Ort?
+2. Schritt: Aggregation – Berechnung der Anzahl der Zeilen pro Gruppe
+Teilnehmer
+TnNr Name Ort
+143 Schmidt, M. Innsbruck Ergebnis
+145 Huber, Chr. Innsbruck Ort AnzahlStudenten
+171 Möller, H. Innsbruck Innsbruck 4
+194 Gerstner, M. Innsbruck Telfs 2
+146 Abele, I. Telfs Schwaz 1
+187 Karstens, L. Telfs Kufstein 1
+149 Kircher, B. Schwaz Zirl 1
+155 Meier, W. Kufstein
+173 Schulze, B. Zirl
+Abfrage in relationaler Algebra:
+ (Teilnehmer)
+Ort; COUNT(TnNr) ⟶AnzahlStudenten
+95
+Aggregation allgemein
+Gruppierung nach den Attributen a,b unter Verwendung der Aggregatsfunktionen
+agg und agg auf die Attribute c und d:
+1 2
+ (Relation)
+a,b; agg1(c) ⟶ neuerSpaltenName1, agg2(d) ⟶ neuerSpaltenName2
+• Beispiel: Schema
+Student (StudentID, Name, Semester)
+Lecture (LectureID, Title, Credits, LecturedBy)
+attends (StudentID, LectureID)
+– Aggregation auch ohne Gruppierung möglich: „Finde den maximalen Credit
+aller gespeicherten Vorlesungen“
+
+(Lecture)
+; MAX(Credit) ⟶ maxCredit
+– “Wieviele Studenten besuchen die Lehrveranstaltung ‚Logik‘?“
+
+(attends ⋈ σ Lecture)
+LectureID, Title, COUNT(StudentID) ⟶ numberOfStudents Title=‚Logik‘ 96
+Gruppierung nach mehreren Attributen
+Beispiel: Anzahl und Durchschnittsalter der Teilnehmer pro Ort mit selber PLZ.
+1. Schritt: Gruppierung nach den Attributen „Ort“ und “PLZ“
+Teilnehmer Teilnehmer
+TnNr Name Alter Ort PLZ TnNr Name Alter Ort PLZ
+143 Schmidt, M. 20 Innsbruck 6020 143 Schmidt, M. 20 Innsbruck 6020
+Gruppe „Innsbruck, 6020“
+145 Huber, Chr. 21 Innsbruck 6023 171 Möller, H. 25 Innsbruck 6020
+146 Abele, I. 22 Telfs 6410 145 Huber, Chr. 21 Innsbruck 6023 Gruppe „Innsbruck, 6023“
+149 Kircher, B. 23 Schwaz 6130 194 Gerstner, M. 28 Innsbruck 6080 Gruppe „Innsbruck, 6080“
+155 Meier, W. 24 Kufstein 6330 146 Abele, I. 22 Telfs 6410
+Gruppe „Telfs, 6410“
+171 Möller, H. 25 Innsbruck 6020 187 Karstens, L. 27 Telfs 6410
+173 Schulze, B. 26 Zirl 6170 149 Kircher, B. 23 Schwaz 6130 Gruppe „Schwaz, 6130“
+187 Karstens, L. 27 Telfs 6410 155 Meier, W. 24 Kufstein 6330 Gruppe „Kufstein, 6330“
+194 Gerstner, M. 28 Innsbruck 6080 173 Schulze, B. 26 Zirl 6170 Gruppe „Zirl, 6170“
+97
+Gruppierung nach mehreren Attributen
+Beispiel: Wieviele Teilnehmer kommen aus einem Ort?
+2. Schritt: Aggregation – Berechnung der Anzahl und Durchschnittsalter / Gruppe
+Teilnehmer
+TnNr Name Alter Ort PLZ Teilnehmer
+143 Schmidt, M. 20 Innsbruck 6020 Ort PLZ AnzahlTN AvgAlter
+171 Möller, H. 25 Innsbruck 6020 Innsbruck 6020 2 22.5
+145 Huber, Chr. 21 Innsbruck 6023 Innsbruck 6023 1 21
+194 Gerstner, M. 28 Innsbruck 6080 Innsbruck 6080 1 28
+146 Abele, I. 22 Telfs 6410 Telfs 6410 2 24.5
+187 Karstens, L. 27 Telfs 6410 Schwaz 6130 1 23
+149 Kircher, B. 23 Schwaz 6130 Kufstein 6330 1 24
+155 Meier, W. 24 Kufstein 6330 Zirl 6170 1 26
+173 Schulze, B. 26 Zirl 6170
+Abfrage in relationaler Algebra:
+ (Teilnehmer)
+Ort, PLZ; COUNT(TnNr) ⟶AnzahlTN, AVG(Alter) ⟶AvgAlter
+98
+Gruppierung Beispiele
+• Schema
+Student (StudentID, Name, Semester)
+Lecture (LectureID, Title, Credits, LecturedBy)
+attends (StudentID, LectureID)
+• “Gib für alle Vorlesungen (Title, Credits) mit mehr als 2 Credits die Anzahl der
+Anmeldungen aus.”
+
+(attends ⋈ σ Lecture)
+Title, Credits ; COUNT(StudentID) ⟶ numStudents Credits>2
+
+• liefert (wie alle Operatoren der RelAlg) wieder eine Relation, d.h. das
+Ergebnis der Gruppierung kann nachher beliebig „weiterverarbeitet“ werden:
+– Selbe Anfrage wie oben, aber gib nur Vorlesungen aus, die mind. 2
+Anmeldungen haben.
+
+σ ( (attends ⋈ σ
+numStudents >= 2 Title, Credits ; COUNT(StudentID) ⟶ numStudents Credits>2
+Lecture))
+99
+Query-Optimierung
+100
+Operatorbaum
+• Zu jedem korrekten Ausdruck in relationaler Algebra kann ein Operatorbaum
+erzeugt werden.
+• Beispiel:  (σ (Lecture A Professor))
+Title Name=‚Einstein‘ LecturedBy=EmployeeID
+
+Title
+σ
+Name = ‚Einstein‘
+A
+LecturedBy=EmployeeID
+Lecture Professor
+Operatorbaum (Beispiel)
+ (Student ⋈ σ grades ⋈ σ Lecture ⋈ σ Professor))
+Student.Name Grade=1  Grade=5 Title=‚Physik‘ Name=‚Einstein‘
+
+Student.Name
+A
+Student A
+σ A
+Grade=1  Grade=5
+σ σ
+grades
+Title = ‚Physik‘ Name= ‚Einstein‘
+Lecture Professor
+Query Optimierung
+• Motivationsbeispiel:
+Sei die Kardinalität der Relationen R und S jeweils 10000
+• Naiver Ansatz:
+Join wie in Definitionen als σ (R x S) berechnen
+108 = 100 Mio.
+108 Tupelzugriffe, je Zugriff nur 10-6 sec
+Antwortzeit: 100sec!!! Viel zu lange, praktisch untragbar
+103
+1. Nichtalgebraische Optimierungen
+D.h. einzelne Operationen günstiger implementieren.
+• Komplexitäten:
+– Selektion:
+• Relationen-Scan (sequentieller Durchlauf) O(n)
+• Index als B-Baum O(log n)
+• Index als Hash O(1) – hoffentlich
+– Projektion
+• naiv O(n2)
+• mit B-Baum Index O(n log n) <= meist
+• Mit Hash-Index O(n) <= wirklich gute Implementierung
++ evtl. Kosten für Anlegen des Index
+104
+Nichtalgebraische Optimierungen cont.
+Join
+1. nested-loop-Join (naiv) O(n2)
+for i:=1 to |R| do
+for j := 1 to |S| do
+if r θ s then Rel := Rel ∪ append(r, s);
+i j
+2. sort-merge-Join O(n log n)
+R ⋈ S
+A = B
+R sei sortiert nach A
+S sei sortietnach B
+…, 3, … …, 2, …
+…, 4, … …, 4, …
+…, 4, … …, 4, …
+…, 5, … …, 6, …
+105
+Nichtalgebraische Optimierungen cont.
+3. Hash Join R ⋈ S O(n) (sei |R|=n)
+1. |R| sei klein (z.B. Join- oder Selektionsausgabe)
+2. auf S.B liege Hash
+Fragen des Optimierers (Programm):
+– Können bestehende Indexe ausgenutzt werden?
+– Rentiert es sich, einen temporären Index anzulegen, so dass trotz
+Indexerzeugung die Query-Auswertung schneller wird (auch Indexe
+brauchen Platz!).
+106
+2. Algebraische Optimierungen
+Ausnützen der Gesetze der relationalen Algebra als Rechenregeln, um möglichst
+kleine Zwischenrelationen zu erhalten!
+1. R ⋈ (S ⋈ T) = (R ⋈ S) ⋈ T => optimale Joinreihenfolge
+2. σ (σ (R)) = σ (R)
+F1 F2 F1  F2
+3. σ (R ⋈ S) = σ (R) ⋈ S falls F nur Attribute aus R betrifft
+F F
+4. σ (R ⋈ S) = R ⋈ σ (S) falls F nur Attribute aus S betrifft
+F F
+5. σ ( (R)) =  (σ (R)) falls Attribute(F)  A
+F A A F
+usw.
+Dazu wird eine komplette Query vom Optimierer in einen Operatorbaum
+transformiert und dieser dann transformiert.
+107
+Algebraische Optimierung: Beispiel
+ 
+Student.Name Student.Name
+A
+σ
+(Grade=1  Grade=5)
+∧Title=‚Physik‘
+A
+∧ Professor.Name=‚Einstein‘ σ
+Grade=1Grade=5
+A A
+grades Student
+Professor A σ σ
+Title = ‚Physik‘ Name= ‚Einstein‘
+Lecture A Lecture Professor
+Student grades
+= sehr wenige Tupel
+= wenige Tupel
+= viele Tupel
+= sehr viele Tupel
+108
+Zusammenfassendes Bsp. zur Optimierung
+• Beispiel einer vollständigen Baumtransformation eines DB-Optimierers
+ausgehend von der naiven Standardübersetzung
+(Projektion über Selektion über Join/Kreuzprodukt):
+siehe Tafel und Animation
+109
+Äquivalenzumformungen
+Seien R, S und T drei jeweils geeignet definierte Relationen.
+Klassifikation algebraischer Umformungen:
+• Kommutativität von unären Operationen (, ):
+U U R → U U R (U und U jeweils vom selben Typ)
+1 2 2 1 1 2
+• Kommutativität von binären Operationen (,  , ×, A):
+R B S → S B R
+• Assoziativität von binären Operationen (,  , ×, A):
+R B (S B T) → (R B S) B T
+• Idempotenz (bzw. Zusammenfassung) von unären Operationen (, ):
+U R → U U R
+• Distributivität von unären Operationen in Bezug auf binäre Operationen:
+110
+U (R B S) → (U R) B (U S)
+Äquivalenzumformungen von
+Relationalen-Algebra-Ausdrücken
+111
+Äquivalenzumformungen von
+Relationalen-Algebra-Ausdrücken cont.
+112
+Äquivalenzumformungen von
+Relationalen-Algebra-Ausdrücken cont.
+113
+Beispiele und Erkl. zu den Äquivalenzumformungen
+Bsp.: Gegeben seien die Relationen R(A,B,C), R1(A,B,C), R2(A,B,C), S(D,E) und T(F,G,H), wobei die
+Wertebereiche der Attribute A bis H jeweils Teilmengen der natürlichen Zahlen sein sollen.
+zu 1:  ( R) kann in σ (σ R) transformiert werden und umgekehrt.
+A<10 C>8 B>8 B>8 A<10  C>8
+zu 2: σ ( R) kann in  (σ R) transformiert werden.
+B<200 A,B A,B B<200
+Geht man von der rechten Seite aus, d.h. von  (σ R), so kann die Transformation in der
+A,B B<200
+Gegenrichtung nur dann durchgeführt werden, wenn sich die Selektions-Bedingung lediglich auf
+Attribute bezieht, die auch in der Projektion spezifiert sind (siehe NB zu Regel 2). Im vorliegenden Fall
+entspricht Attr(F) der Attributmenge {B} und A entspricht der Attributmenge {A,B}. Die
+Nebenbedingung ist also erfüllt. D.h. die Transformation in die "←"-Richtung ist ebenfalls möglich.
+zu 8: Gegeben sei (R ⋈ S) ⋈ T.
+A=D E=F
+Für die "→"-Transformation muss folgende Nebenbedingung erfüllt sein: {E,F}  ({D,E}  {F,G,H}).
+Dies ist hier der Fall. Der Ausdruck kann somit in R ⋈ (S ⋈ T) transformiert werden.
+A=D E=F
+Bei (R ⋈ S) ⋈ T ginge dies z.B. hingegen nicht.
+A=D A=F
+zu 9:  R kann in   R transformiert werden und umgekehrt.
+A A A,B
+zu 10: σ R kann zerlegt werden in σ ( σ R).
+A<100  B>30 A<100 B>30
+Umgekehrt kann man σ (σ R) durch Zusammenfassen der Selektionsbedingungen (UND-
+A<100 B>30
+Verknüpfung) in σ R transformieren.
+A<100 B>30
+114
+Beispiele und Erkl. zu den Äquivalenzumformungen
+zu 11: σ (R1  R2) kann in (σ R1)  (σ R2) transformiert werden und umgekehrt.
+B<300 B<300 B<300
+Anmerkung: Hier ist keine Nebenbedingung erforderlich, da die Vereinigung nur zwischen Relationen
+gleichen Typs definiert ist.
+zu 12: σ (R1 − R2) kann in (σ R1) − (σ R2) transformiert werden und umgekehrt.
+B<300 B<300 B<300
+(σ bei R1 oder R2 kann gegebenfalls dabei auch entfallen!)
+zu 13: Gegeben sei σ (R × S). Dieser Ausdruck kann in zwei Selektion überführt werden, indem
+A<300 D>50
+man die Selektions-Bedingung geeignet „aufspaltet“. In diesem Fall wäre (σ R) × (σ S) eine
+A<300 D>50
+mögliche Aufspaltung.
+zu 14: Da ein Verbund R ⋈ S äquivalent zu σ (R × S) ist, gilt das im vorangegangenen Beispiel Gesagte
+F F
+– analog übertragen – auch hier.
+zu 15: Ein Ausdruck der Art  {R1  R2) kann stets „ausmultipliziert“ werden zu
+A,B
+( R1)  ( R2).
+A,B A,B
+zu 16: Die Nebenbedingung für die "→"-Richtung besagt, dass nach dem „Ausmultiplizieren“ die
+Projektions-Attribute so gewählt werden müssen, dass sie für die jeweilige Relation auch definiert
+sind. Im Falle des Ausdruckes  (R × S) wäre z.B. ( R) × ( S) eine korrekte
+A,R.B,D A,R.B D
+Transformation,
+( R) × ( S) hingegen nicht.
+A R.B, D
+115
+Beispiele und Erkl. zu den Äquivalenzumformungen
+zu 17: Die Nebenbedingung für die "→"-Richtung kann wie folgt interpretiert werden: Sind die in der
+Verbund-Bedingung angegebenen Attribute eine Teilmenge der in der Projektion angegebenen
+Attribute (d.h. gilt Attr(F)  A), dann kann der Ausdruck „ausmultipliziert“ werden, wobei wieder zu
+beachten ist, dass die in der Projektion auf der linken Seite angegebenen Attribute wieder korrekt auf
+ihre Relationen „verteilt“ werden.
+Der Ausdruck  (R ⋈ S) kann z.B. transformiert werden in ( R) B<E ( S).
+A,B,E B<E A,B E
+ (R ⋈ S) hingegen wäre nicht transformierbar, da {B,E} ⊄ {A,B,D}.
+A,B,D B<E
+Die umgekehrte Richtung ("←") ist trivial. Hier sind lediglich die Projektions-Attribute
+zusammenzufassen.
+Wichtiger "Spezialfall":  R ≡ ? ( R) ⋈ ( R) "←"-Richtung gilt i.a. nicht !!
+A1 A2 A1 A2
+Voraussetzung, damit es doch gilt: „lossless join“  siehe Kapitel 4
+zu 23: R − σ R kann in σ R transformiert werden und umgekehrt.
+B<200 B ≥ 200
+zu 26: (σ R) − (σ R) kann in σ R transformiert werden und umgekehrt.
+A<10 B>100 A<10 B≤100
+116
+Abschließende Bemerkungen zur Relationen-Algebra
+• In der Relationalen Algebra ist kein Komplementoperator definiert.
+Grund: im Allgemeinen -große Relationen (außer bei endlichen Domänen)
+• Relationen-Algebra als Datenbanksprache nur bei den ersten relationalen
+DBMS-Prototypen als Anfragesprache verwendet
+• Jedoch bis heute wichtige formale Grundlage für DBMS-interne Anfrage-
+Verarbeitung und Optimierung.
+• Darüberhinaus dient die Relationale Algebra als theoretisches Maß für die
+Ausdrucksmächtigkeit relationaler Datenbank-Sprachen
+ „relationale Vollständigkeit“
+• Relationale Algebra ist nicht rein deskriptiv, wegen Reihenfolgen
+abhängigkeiten (funktionale Sprache). Jedoch: Äquivalenz-Umformungen
+erlauben Optimierung.
+117
+Relationen-Kalküle:
+Tupelkalkül und Domänenkalkül
+118
+Relationenkalküle
+Relationen-Algebra
+• „Konstruktion“ der Ergebnisrelation durch sukzessive (geschachtelte) Anwendung von
+Algebra-Operatoren auf die Ausgangsrelationen
+( prozedurale Vorgehensweise)
+Tupel- und Domänenkalkül liegt andere Strategie zugrunde:
+• Beschreibung, welche Bedingungen (Prädikate) die Tupel der Ergebnisrelation erfüllen
+müssen, vgl. Prädikatenkalkül
+( deklarative Vorgehensweise)
+– Variablen im Tupelkalkül repräsentieren Tupel von Relationen
+– Variablen im Domänenkalkül werden an Domänen (Wertemengen) gebunden
+– Beide Kalküle sind gleich mächtig
+119
+Relationaler Tupelkalkül
+• Generische Form: {t | P(t)}
+– gesucht sind alle Tupel t, für die ein gewisses Prädikat (Bedingung) P gilt
+– Tupelvariablen sind an Relationen gebunden
+• Beispiel: „Alle Professoren mit Typ ‚C4‘ “
+Student (StudentID, Name, Semester)
+Professor (EmployeeID, Name, Type, Room)
+{p | p ∈ Professor ∧ p.Type = ‚C4‘} Lecture (LectureID, Title, Credits, LecturedBy)
+attends (StudentID, LectureID)
+• Grundlage: Prädikatenlogik 1. Stufe (∃,∀, ¬,∧,∨, ...)
+• Komplexeres Beispiel mit „Joins“: „Finde alle Studenten, die mindestens eine
+Vorlesung bei Prof. Curie besucht haben.“
+{s | s ∈ Student
+∧ ∃a ∈ attends (s.StudentID = a.StudentID
+∧ ∃e ∈ Lecture (a.LectureID = e.LectureID)
+∧ ∃p ∈ Professor (p.EmployeeID = e.LecturedBy
+∧ p.Name = ‚Curie‘)))}
+120
+Relationaler Domänenkalkül
+• Generische Form: {[v , v , ... v ] | P(v , v , ... v )}
+1 2 n 1 2 n
+– gesucht sind alle möglichen Ausprägungen der Domänenvariablen v , v , ...
+1 2
+v , für die ein gewisses Prädikat (Bedingung) P gilt
+n
+– Jede Variable wird an einen Wertebereich gebunden und repräsentiert
+einen Attributwert
+• Formeln ähnlich zu Tupelkalkül, aber keine Bindung zu Relationen mehr
+• „Finde ID und Name aller Studenten,
+Student (StudentID, Name, Semester)
+Professor (EmployeeID, Name, Type, Room)
+die mindestens eine Prüfung bei Prof.
+grades (StudentID, LectureID, EmployeeID, Grade)
+Curie abgelegt haben.“
+{[id,n] | ∃ s ([id,n,s] ∈ Student ∧ ∃ c,e,g ([id,c,e,g] ∈ grades ∧ ∃ p,t,r ([e,p,t,r] ∈
+Professoren ∧ p = ‚Curie‘)))}
+• Anmerkung: Joins werden i.A. implizit durch die Verwendung derselben
+Domänenvariablen angegeben
+121
+Anfrageformulierung
+In der Rel. Algebra (schrittweise Konstruktion der Ergebnismenge):
+
+KursNr, Titel, Datum, Ort
+(( Kurs A  Angebot) A ( Vorauss))
+01.07.2014 <= Datum <= 31.09.2014 VorNr = 'G08'
+Im Tupel-Relationenkalkül (prädikative Beschreibung der Ergebnismenge):
+{ t | (  a (  v (  k (Kurs(k)  Angebot(a)  Vorauss(v) 
+k.KursNr = a.KursNr  k.KursNr = v.KursNr 
+a.Datum >= 01.07.2014  a.Datum <= 31.09.2014 
+v.VorNr = 'G08' 
+t.KursNr = k.KursNr  t.Titel = k.Titel 
+t.Datum = a.Datum  t.Ort = a.Ort )))) }
+122
+Anfrageformulierung cont.
+Kalkül
+• vgl. Prädikatenlogik 1. Stufe
+• Tupel-Relationenkalkül vs. Domain-Relationenkalkül :
+Variablen für ganze Tupel bzw. für einzelne Attributwerte
+123
+Tupel-Relationenkalkül (TRC)
+• „Atome“
+1. R(t) : R = Relationenname
+t = Tupelvariable
+Aussage: „Tupel t ist in R enthalten“
+2. X Θ Y: X, Y = Konstanten oder Tupelkomponenten t[i]
+(t = Tupelvariable, i = i-te Tupelkomponente)
+Θ = arithm. Vergleichsoperator (<, >, =, ...)
+Alle Tupel einer Relation haben eine konstante Stelligkeit.
+Falls hierauf explizit Bezug genommen wird, so schreiben wir t(s) .
+124
+Tupel-Relationenkalkül (TRC) cont.
+• „freie / gebundene Variablen“:
+Analogie:
+– gebundene Variablen
+≈ lokale Variablendeklaration einer Prozedur,
+kann nicht von außen referenziert werden.
+– freie Variablen
+≈ globale Variablen,
+außerhalb der betrachteten Prozedur deklariert.
+Sei eine freie Tupelvariable t „global“ bzgl. Formel F,
+dann entspricht (t) bzw. (t) in etwa der „Deklaration“ der Variablen t.
+125
+Tupel-Relationenkalkül (TRC) cont.
+Formeln, freie und gebundene Variablen im TRC:
+• Jedes Atom ist eine Formel.
+Alle in einem Atom auftretenden Tupelvariablen sind „frei“
+• Falls F1 und F2 Formeln sind,
+dann sind auch  F1, (F1), F1  F2 und F1  F2 Formeln.
+• Wenn F eine Formel ist, dann sind auch „( t F)" und „( t F)" Formeln.
+Alle in F auftretenden freien Tupelvariablen t werden
+an  t in der Formel "( t F)" bzw.
+an  t in "( t F)" gebunden.
+Der Status anderer Tupelvariablen in F ändert sich dadurch nicht
+• Nichts anderes ist eine Formel
+126
+Tupel-Relationenkalkül (TRC) cont.
+Anfrage im TRC:
+{ t | F(t) } mit t als einziger freien Tupelvariablen in Formel F
+Anmerkung:
+Eine Anfrage des TRC liefert nicht notwendig eine endliche Tupelmenge!
+127
+Beispiel
+Vereinigung von R1 und R2: { t | R1(t)  R2(t) }
+Anmerkungen:
+– Jedes Tupel hat auch eine feste Stelligkeit. R1 und R2 müssen also entsprechend
+„kompatibel“ sein.
+– In dieser einfachen Form sind alle Komponenten (Attribute) auch „domain-
+kompatibel“.
+„Gib alle Tupel t, die nicht in Relation R vorkommen, aus!“ (Negation):
+{ t |  R(t) }
+Anmerkungen:
+– Welche Ergebnistupel (Schema) ?
+Vereinfachende Annahme: Schema von R
+– Welche Ausprägungen ?
+Vereinfachend: Komplement von R bzgl. Produkt der Attributdomains
+– Resultat von Domains abhängig!
+evtl. nicht endlich!
+128
+Beispiel cont.
+• Projektion auf Attribute (Komponenten) i , i , ..., i von R
+1 2 k
+{ t (k) | ( u ( R(u)  t[1] = u[i ]  ...  t[k] = u[i ] )) }
+1 k
+• Selektion aller Tupel aus R, die Bedingung F erfüllen: { t | R(t)  F(t) }
+– wobei F(t) stellvertretend für die konkrete Bedingung an die Tupelkomponente(n)
+steht
+– z.B. (t[1] = 17)  (t[3] = 24)
+• Differenz zweier Relationen R und S: { t | R(t)   S(t) }
+• Kartesisches Produkt von R und S:
+{ t(r+s) | ( u(r) ( v(s) ( R(u)  S(v)
+ t[1] = u[1]  ...  t[r] = u[r]
+ t[r+1] = v[1]  ...  t[r+s] = v[s] ))) }
+129
+Sichere Kalkül-Ausdrücke
+Problem:
+Sowohl beim relationalen Tupelkalkül als auch beim Domänenkalkül können
+unendliche Ergebnismengen auftreten, z.B.:
+{ t |  R(t) } : nur Einschränkung hinsichtlich Stelligkeit von t ( R),
+hinsichtlich der Domäne aber nicht beschränkt
+Überlegungen:
+1. Wir fragen nach Werten aus der Datenbank, nicht von „sonst irgendwoher“
+2. Jede Relation in der konkreten Datenbank ist endlich, damit ist auch der
+betrachtete Datenbankzustand endlich
+3. Einschränkung: Als Domäne (für die Auswertung von Anfragen) werden nur in
+der DB vorkommende Werte oder in der Anfrage auftretende Konstanten
+zugelassen
+Allgemeine Lösung: mindestens eine nichtnegierte Relation
+bzw. Def. von (einschränkenden) Bedingungen, um Ausdrücke sicher zu machen,
+d.h. endliche Ergebnismengen zu garantieren.
+130
+Definition „Safety“
+Eine Formel F des TRC heißt sicher, wenn
+a) keine  - Quantoren vorkommen
+b) bei F  F , F und F jeweils nur eine freie Variable haben, und zwar die
+1 2 1 2
+gleiche
+c) bei (maximalen) konjunktiven Teilformeln F  F  ...  F alle freien
+1 2 n
+Tupelkomponenten in den F begrenzt sind:
+i
+ F nicht negiert, kein arithm. Vergleich,
+i
+freie Tupelvariable t  alle Komponenten von t begrenzt
+ F  t[a] = c oder F  c = t[a], für Konstante c  t[a] begrenzt
+i i
+ F  t[a] = t'[a'] oder F  t'[a'] = t [a] und t' [a'] begrenzt  t[a]
+i i
+begrenzt
+d) Negation () nur auf Termen innerhalb einer Konjunktion wie in c) erlaubt
+131
+„Safety“ cont.
+Bemerkung zu a)
+• ( t) F(t)   ( t) ( F(t) ) ... d.h. keine Einschränkung
+• Alternativ:  nur in der Form: ( t) ( R(t)  ...)
+... und bei : ( t) ( R(t)  ...)
+132
+Relationale Vollständigkeit
+Satz:
+Relationenalgebra, sicherer relationaler Tupelkalkül und sicherer relationaler
+Domänenkalkül sind äquivalent.
+Beweisidee:
+Finde zu jedem Ausdruck in Relationenalgebra einen sicheren Kalkülausdruck
+Ausdruck und umgekehrt (siehe Lehrbücher)
+„Relational Completeness“
+Eine Anfragesprache für das Relationenmodell heißt relational vollständig,
+wenn sie (mindestens) so ausdruckskräftig wie die Relationenalgebra ist
+[Codd 70].
+133
+Zusammenfassung
+Relationen-Algebra
+• „Konstruktion“ der Ergebnisrelation durch sukzessive (geschachtelte) Anwendung von
+Algebra-Operatoren auf die Ausgangsrelationen
+( prozedurale Vorgehensweise)
+Tupel- und Domänenkalkül:
+• Beschreibung, welche Bedingungen (Prädikate) die Tupel der Ergebnisrelation erfüllen
+müssen, vgl. Prädikatenkalkül
+( deklarative Vorgehensweise)
+•
+– Beide Kalküle sind gleich mächtig
+– Relationale Algebra ist die interne Abarbeitungsstrategie in allen relationalen DBS.
+SQL wird in die Rel. Alg. übersetzt und dann ausgewertet.
+– Teile von SQL, wie Subqueries mit Exists, etc. haben Kalkül-Semantik.
+134

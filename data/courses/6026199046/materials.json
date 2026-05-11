@@ -1,0 +1,47 @@
+{
+  "course_id": "6026199046",
+  "course_name": "2026S437300 VO Management von Leistungsprozessen",
+  "files": [
+    {
+      "filename": "Prufungsliteratur+VOMLP.pdf",
+      "title": "Prufungsliteratur+VOMLP.pdf",
+      "creator": "Häussler, Stefan",
+      "type": "pdf",
+      "size": "132.5 kB",
+      "folder_nid": "113821867897441",
+      "folder_label": "Modulinformationen",
+      "folder_path": "Modulinformationen",
+      "priority": true,
+      "text_file": "courses/6026199046/texts/113821867897441_Modulinformationen_Prufungsliteratur_VOMLP.pdf.txt"
+    },
+    {
+      "filename": "Magmt von Leistungsprozessen Syllabus_anonym.pdf",
+      "title": "Magmt von Leistungsprozessen Syllabus_anonym.pdf",
+      "creator": "Häussler, Stefan",
+      "type": "pdf",
+      "size": "219.0 kB",
+      "folder_nid": "113821867897441",
+      "folder_label": "Modulinformationen",
+      "folder_path": "Modulinformationen",
+      "priority": true,
+      "text_file": "courses/6026199046/texts/113821867897441_Modulinformationen_Magmt_von_Leistungsprozessen_Syllabus_anonym.pdf.txt"
+    },
+    {
+      "filename": "Prufungsstoff_und_Modus MLP Haussler_Praesenz_v4.pdf",
+      "title": "Prufungsstoff_und_Modus MLP Haussler_Praesenz_v4.pdf",
+      "creator": "Häussler, Stefan",
+      "type": "pdf",
+      "size": "146.6 kB",
+      "folder_nid": "113821867897441",
+      "folder_label": "Modulinformationen",
+      "folder_path": "Modulinformationen",
+      "priority": true,
+      "text_file": "courses/6026199046/texts/113821867897441_Modulinformationen_Prufungsstoff_und_Modus_MLP_Haussler_Praesenz_v4.pdf.txt"
+    }
+  ],
+  "diff": {
+    "added": [],
+    "removed": [],
+    "changed": []
+  }
+}

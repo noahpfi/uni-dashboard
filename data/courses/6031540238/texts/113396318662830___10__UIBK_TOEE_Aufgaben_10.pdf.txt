@@ -1,0 +1,43 @@
+Theorie ökonomischer Entscheidungen
+Aufgabenblatt 10
+Prof. Dr. Heiner Schumacher
+UIBK
+1 Screening
+Der Prinzipal P möchte einen Programmierer A einstellen. Beide Parteien sind risikoneu-
+tral. Wenn A in der Woche t Stunden arbeitet, erhöht sich der Gewinn des P um t. Die
+Anstrengungskosten des A sind gegeben durch
+c(t;(cid:18)) = (cid:18)t2;
+wobeiderParameter(cid:18) 1; 1 privateInformationvonAist. P weiß,dassdieWahrschein-
+2 f4 2g
+lichkeit des Typen mit niedrigen Kosten ((cid:18) = 1) p, und die Wahrscheinlichkeit des Typen
+4
+mit hohen Kosten ((cid:18) = 1) 1 p ist. A’s Reservationsnutzen ist 0. P bietet ein Menü von
+2 (cid:0)
+Verträgen an. Jeder Vertrag i N;H spezi…ziert die wöchentliche Arbeitszeit t und
+i
+2 f g
+den Lohn w .
+i
+1. Nehmen Sie an, dass P zwischen Programmierern mit hohen und niedrigen Kosten
+unterscheiden kann. Welchen Vertrag wird der den beiden Typen anbieten?
+2. Nehmen Sie nun an, dass P nicht zwischen den beiden Typen unterscheiden kann.
+Legen Sie das Maximierungsproblem des P dar unter der Annahme, dass beide
+Typen einen Vertrag annehmen sollen, und die Verträge für die beiden Typen un-
+terschiedlich sind. [Verwenden Sie die Notation (t ;w ) für den Vertrag des Typen
+N N
+mit niedrigen Kosten, und (t ;w ) für den Vertrag des Typen mit hohen Kosten.]
+H H
+3. ZeigenSie,welcheBedingungendiesesMaximierungsproblemsimOptimumbindend
+sein müssen und welche nicht.
+4. LeitenSiedasoptimaleMenüvonVerträgenher. ÜberprüfenSie,dassalleNebenbe-
+dingungen erfüllt sind.
+5. Nehmen Sie an, dass p = 1 ist. Errechnen Sie den erwarteten Gewinn des P und
+2
+den erwarteten Nutzen der beiden Typen von A.
+1
+6. Nehmen Sie an, dass P nur den Programmierer mit niedrigen Kosten einstellen will.
+WelchenVertragwürdeerdannanbieten? WarumwürdederTypmithohenKosten
+diesen Vertrag nicht annehmen? Berechnen Sie den erwarteten Gewinn des P wenn
+er nur diesen Vertrag anbietet, unter der Annahme, dass p = 1 ist.
+2
+2

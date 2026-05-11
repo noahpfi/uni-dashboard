@@ -1,0 +1,41 @@
+Methoden zum Management von
+Leistungsprozessen
+Julian Fodor
+3. Übungsaufgabe
+Aufgabenstellung:
+Ein Unternehmen beschafft zehn Materialien, deren Preis pro Stück,
+Jahresverbrauch und Variationskoeffizient in der folgenden Tabelle gegeben sind:
+Material Verbrauch / Jahr Preis / Stück Variationskoeffizient
+M1 18.000 13 0,62 %
+M2 30.000 22 0,31 %
+M3 30.000 13 3,94 %
+M4 40.000 240 1,16 %
+M5 26.000 110 1,28 %
+M6 35.000 210 2,06 %
+M7 46.000 8 0,94 %
+M8 40.000 30 6,56 %
+M9 28.000 30 0,21 %
+M10 40.000 25 1,63 %
+Als Produktionsplaner sollen Sie die folgenden Aufgaben lösen:
+1.
+a) Führen Sie für die Materialien eine ABC-Analyse durch. Zeichnen sie die
+Lorenzkurve. - 1 Punkt
+b) Führen Sie für die Materialien eine XYZ-Analyse durch. Wählen Sie als
+Klassifizierungsmerkmal den Verbrauchsverlauf (bewertet mittels
+Variationskoeffizienten). - 1 Punkt
+c) Führen Sie für die Materialien eine ABC/XYZ-Analyse durch. Wählen Sie
+als erstes Klassifizierungsmerkmal den Verbrauchswert und als zweites
+Klassifizierungsmerkmal den Verbrauchsverlauf (bewertet mittels
+Variationskoeffizient). - 1 Punkt
+2. Welche Dispositionsmethode (Programmgebunden oder Verbrauchs-
+gebunden), würden Sie für
+o A – Güter,
+o C – Güter empfehlen?
+o Begründen Sie kurz Ihre Antwort!
+1,5 Punkte
+3. „Just in Time“ ist eine Produktionsstrategie, welche das Ziel verfolgt,
+bedarfssynchron Materialien zur Verfügung zu stellen. D.h., Güter sollen
+hinsichtlich Menge und Termin exakt disponiert werden.
+Für welche Güter (nach ABC/XYZ-Klassifikation) eignet sich eine solche
+Strategie?
+1,5 Punkte

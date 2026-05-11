@@ -1,0 +1,429 @@
+Statistische Datenanalyse
+Kapitel 1
+Deskriptive Statistik: Fragebogen
+Fragebogen: Daten einlesen
+LadenSiedenDatensatzfragebogen_2026S.rdainR.VerwendenSiedazuden
+Befehlload().
+R> load("daten/fragebogen_2026S.rda")
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 1/33
+Fragebogen: Übersicht I
+R> str(Fragebogen)
+'data.frame': 541 obs. of 15 variables:
+$ motiv : int 2 2 5 2 2 3 5 6 1 1 ...
+$ schultyp : int 2 1 4 1 1 4 4 4 1 2 ...
+$ vertrauen : int 2 1 1 2 3 4 2 2 1 1 ...
+$ studium : int 1 2 1 2 3 3 2 2 3 2 ...
+$ fleiss : int 1 2 1 1 3 4 2 2 1 2 ...
+$ stunden : num 10 6 3 5 5 5 8 20 5 4 ...
+$ puls : num 60 80 60 61 78 80 50 65 60 65 ...
+$ kraft : num 5 5 1 2 0 3 8 0 4.5 12 ...
+$ ausdauer : num 12 2 0 8 2 1 4 2 3 8 ...
+$ yoga : int 2 2 2 2 2 1 2 2 2 2 ...
+$ unruhig : num 60 70 100 30 50 70 0 20 80 50 ...
+$ stress : num 20 60 50 10 50 60 0 50 80 0 ...
+$ wut : num 10 40 100 10 50 50 0 30 50 20 ...
+$ gluecklich: num 60 80 50 90 80 70 80 70 80 80 ...
+$ gewicht : num 84 63 55 76 55 53 78 53 60 75 ...
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 2/33
+Fragebogen: Übersicht II
+'data.frame': 541 obs. of 16 variables:
+$ groesse_selbst: num 180 156 170 192 170 168 180 165 168 182 ...
+$ groesse_mutter: num 172 150 175 176 166 168 160 167 168 174 ...
+$ groesse_vater : num 165 170 179 198 185 178 190 180 165 173 ...
+$ beruf : int 1 1 1 2 1 1 2 3 2 1 ...
+$ schlaf : int 2 1 1 2 2 2 2 2 2 1 ...
+$ alkohol : int 1 3 1 5 3 3 3 1 3 1 ...
+$ rauchen : int 1 1 1 1 3 1 1 1 2 1 ...
+$ kaffee : int 1 2 3 1 3 1 1 2 2 1 ...
+$ wasser : num 5 1 1 3 1.5 2 2 1 2 3 ...
+$ einkommen : num 1500 800 0 1000 1200 500 800 1000 1700 0 ...
+$ fixkosten : num 0 580 1000 650 620 1050 400 290 520 0 ...
+$ lebensmittel : num 300 100 200 300 200 250 200 150 250 200 ...
+$ ernaehrung : int 1 1 2 1 2 1 1 1 1 1 ...
+$ stil : int 1 4 1 1 1 1 1 1 1 1 ...
+$ geschlecht : int 1 2 2 1 2 2 1 2 2 1 ...
+$ geburtsjahr : int 2003 2006 2003 2006 2006 2006 2006 2005 2005 2005 ...
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 3/33
+Fragebogen: Übersicht
+R> summary(Fragebogen)
+motiv schultyp vertrauen studium
+Min. :1.00 Min. :1.0 Min. :1.00 Min. :1.00
+1st Qu.:1.00 1st Qu.:1.0 1st Qu.:1.00 1st Qu.:1.00
+Median :2.00 Median :1.0 Median :2.00 Median :2.00
+Mean :2.22 Mean :1.5 Mean :1.81 Mean :1.93
+3rd Qu.:3.00 3rd Qu.:2.0 3rd Qu.:2.00 3rd Qu.:2.00
+Max. :6.00 Max. :4.0 Max. :4.00 Max. :5.00
+NA's :6 NA's :6 NA's :6 NA's :7
+fleiss stunden puls kraft
+Min. :1.00 Min. : 0.00 Min. : 38.0 Min. : 0.00
+1st Qu.:1.00 1st Qu.: 4.00 1st Qu.: 60.0 1st Qu.: 1.00
+Median :2.00 Median : 5.00 Median : 65.0 Median : 3.00
+Mean :2.02 Mean : 5.84 Mean : 66.3 Mean : 3.69
+3rd Qu.:3.00 3rd Qu.: 7.00 3rd Qu.: 74.0 3rd Qu.: 5.00
+Max. :5.00 Max. :100.00 Max. :154.0 Max. :75.00
+NA's :6 NA's :8 NA's :14 NA's :5
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 4/33
+Fragebogen: Übersicht
+ausdauer yoga unruhig stress
+Min. : 0.00 Min. :1.00 Min. : 0.0 Min. : 0.0
+1st Qu.: 1.00 1st Qu.:2.00 1st Qu.: 20.0 1st Qu.: 18.0
+Median : 2.50 Median :2.00 Median : 40.0 Median : 30.0
+Mean : 3.79 Mean :1.85 Mean : 42.1 Mean : 38.5
+3rd Qu.: 5.00 3rd Qu.:2.00 3rd Qu.: 65.0 3rd Qu.: 60.0
+Max. :140.00 Max. :2.00 Max. :100.0 Max. :100.0
+NA's :5 NA's :18 NA's :6 NA's :5
+wut gluecklich gewicht groesse_selbst
+Min. : 0.0 Min. : 0.0 Min. : 39.0 Min. : 1.58
+1st Qu.: 10.0 1st Qu.: 60.0 1st Qu.: 60.0 1st Qu.:168.00
+Median : 20.0 Median : 70.0 Median : 70.0 Median :176.00
+Mean : 25.2 Mean : 68.2 Mean : 69.5 Mean :172.45
+3rd Qu.: 30.0 3rd Qu.: 80.0 3rd Qu.: 78.0 3rd Qu.:183.00
+Max. :100.0 Max. :100.0 Max. :121.0 Max. :203.00
+NA's :5 NA's :6 NA's :5 NA's :5
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 5/33
+Fragebogen: Übersicht
+groesse_mutter groesse_vater beruf schlaf
+Min. : 1.63 Min. : 1.63 Min. :1.0000 Min. :1.0000
+1st Qu.:163.50 1st Qu.:175.00 1st Qu.:1.0000 1st Qu.:1.0000
+Median :168.00 Median :180.00 Median :2.0000 Median :2.0000
+Mean :163.71 Mean :176.51 Mean :1.6903 Mean :1.6959
+3rd Qu.:172.00 3rd Qu.:184.00 3rd Qu.:2.0000 3rd Qu.:2.0000
+Max. :185.00 Max. :200.00 Max. :4.0000 Max. :2.0000
+NA's :6 NA's :9 NA's :5 NA's :5
+alkohol rauchen kaffee wasser
+Min. :1.0000 Min. :1.0000 Min. :1.0000 Min. :0.0000
+1st Qu.:2.0000 1st Qu.:1.0000 1st Qu.:1.0000 1st Qu.:2.0000
+Median :3.0000 Median :1.0000 Median :2.0000 Median :2.0000
+Mean :2.6579 Mean :1.2505 Mean :1.8964 Mean :2.3108
+3rd Qu.:3.0000 3rd Qu.:1.0000 3rd Qu.:3.0000 3rd Qu.:3.0000
+Max. :5.0000 Max. :4.0000 Max. :4.0000 Max. :6.5000
+NA's :6 NA's :6 NA's :10 NA's :5
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 6/33
+Fragebogen: Übersicht
+einkommen fixkosten lebensmittel ernaehrung
+Min. : 0 Min. : 0 Min. : 0 Min. :1.00
+1st Qu.: 600 1st Qu.: 295 1st Qu.:150 1st Qu.:1.00
+Median : 950 Median : 510 Median :250 Median :1.00
+Mean : 971 Mean : 494 Mean :246 Mean :1.19
+3rd Qu.:1200 3rd Qu.: 650 3rd Qu.:300 3rd Qu.:1.00
+Max. :4500 Max. :14000 Max. :700 Max. :2.00
+NA's :9 NA's :6 NA's :6 NA's :5
+stil geschlecht geburtsjahr
+Min. :1.00 Min. :1.00 Min. : 20
+1st Qu.:1.00 1st Qu.:1.00 1st Qu.:2004
+Median :1.00 Median :1.00 Median :2005
+Mean :1.32 Mean :1.44 Mean :2001
+3rd Qu.:1.00 3rd Qu.:2.00 3rd Qu.:2006
+Max. :4.00 Max. :2.00 Max. :2008
+NA's :5 NA's :6 NA's :6
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 7/33
+Fragebogen: Übersicht
+R> sum(is.na(Fragebogen))
+[1] 208
+R> table(is.na(Fragebogen))
+FALSE TRUE
+16563 208
+R> summary(Fragebogen$stunden)
+Min. 1st Qu. Median Mean 3rd Qu. Max. NA's
+0.00 4.00 5.00 5.84 7.00 100.00 8
+R> mean(Fragebogen$stunden)
+[1] NA
+R> mean(Fragebogen$stunden, na.rm = TRUE)
+[1] 5.836
+R> which(is.na(Fragebogen$stunden))
+[1] 38 55 160 222 239 268 361 421
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 8/33
+Fragebogen: Umgang mit Datenfehlern
+NAs(“NotAvailable“)können (!)ausdemDatensatzentferntwerden.
+R> dim(Fragebogen)
+[1] 541 31
+R> summary(Fragebogen$stunden)
+Min. 1st Qu. Median Mean 3rd Qu. Max. NA's
+0.00 4.00 5.00 5.84 7.00 100.00 8
+R> Fragebogen <- na.omit(Fragebogen)
+R> dim(Fragebogen)
+[1] 494 31
+R> summary(Fragebogen$stunden)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0.00 4.00 5.00 5.86 7.00 100.00
+R> sum(is.na(Fragebogen))
+[1] 0
+R> table(is.na(Fragebogen))
+FALSE
+15314
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 9/33
+Fragebogen: Umgang mit Datenfehlern
+KorrigierbareEingabefehlerbeheben:
+R> summary(Fragebogen$groesse_selbst)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+1.58 168.00 176.00 172.73 183.00 203.00
+R> summary(Fragebogen$groesse_vater)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+1.63 175.00 180.00 176.87 184.75 200.00
+R> summary(Fragebogen$groesse_mutter)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+1.63 164.00 168.00 164.15 172.00 185.00
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 10/33
+Fragebogen: Umgang mit Datenfehlern
+KorrigierbareEingabefehlerbeheben:
+R> head(sort(Fragebogen$groesse_selbst), n = 12)
+[1] 1.58 1.62 1.64 1.75 1.78 1.80 1.82 1.85 1.88
+[10] 1.90 155.00 155.00
+R> head(sort(Fragebogen$groesse_vater), n = 12)
+[1] 1.63 1.75 1.75 1.75 1.75 1.77 1.80 1.83 1.83
+[10] 1.87 150.00 156.00
+R> head(sort(Fragebogen$groesse_mutter), n = 12)
+[1] 1.63 1.63 1.65 1.65 1.67 1.68 1.69 1.69 1.75
+[10] 1.80 145.00 148.00
+Möglichkeit1:
+R> Fragebogen$groesse_selbst <-
++ ifelse(Fragebogen$groesse_selbst < 2,
++ Fragebogen$groesse_selbst * 100,
++ Fragebogen$groesse_selbst)
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 11/33
+Fragebogen: Umgang mit Datenfehlern
+KorrigierbareEingabefehlerbeheben:
+Möglichkeit2:
+R> Fragebogen$groesse_vater[Fragebogen$groesse_vater < 2] <-
++ Fragebogen$groesse_vater[Fragebogen$groesse_vater < 2] * 100
+R> Fragebogen$groesse_mutter[Fragebogen$groesse_mutter < 2] <-
++ Fragebogen$groesse_mutter[Fragebogen$groesse_mutter < 2] * 100
+R> summary(Fragebogen$groesse_selbst)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+155 169 176 176 183 203
+R> summary(Fragebogen$groesse_vater)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+150 176 180 180 185 200
+R> summary(Fragebogen$groesse_mutter)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+145 164 168 168 172 185
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 12/33
+Fragebogen: Umgang mit Datenfehlern
+UnplausibleWertekorrigierenoderentfernen:
+R> boxplot(Fragebogen$ausdauer)
+041
+001
+06
+02
+0
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 13/33
+Fragebogen: Umgang mit Datenfehlern
+UnplausibleWertekorrigierenoderentfernen:
+R> summary(Fragebogen$ausdauer)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0.00000 1.00000 3.00000 3.81073 5.00000 140.00000
+R> head(sort(Fragebogen$ausdauer, decreasing = TRUE),5)
+[1] 140 30 20 20 20
+R> Fragebogen <- Fragebogen[Fragebogen$ausdauer <= 30,]
+R> summary(Fragebogen$ausdauer)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0.00000 1.00000 3.00000 3.53448 5.00000 30.00000
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 14/33
+Fragebogen: Umgang mit Datenfehlern
+UnplausibleWertekorrigierenoderentfernen:
+R> boxplot(Fragebogen$ausdauer)
+03
+52
+02
+51
+01
+5
+0
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 15/33
+Fragebogen: Variablenklasse zuweisen
+UmwandlungeinerdiskretenVariableineinenFaktor:
+BSPVariablekaffee:
+TrinkenSieKaffee,wennja,wieoftproTag?
+• 1(nein)
+• 2(ja,1xproTag)
+• 3(ja,2xproTag)
+• 4(ja,3xoderöfterproTag)
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 16/33
+Fragebogen: Variablenklasse zuweisen
+UmwandlungeinerdiskretenVariableineinenFaktor:
+R> summary(Fragebogen$kaffee)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+1.0 1.0 2.0 1.9 3.0 4.0
+R> Fragebogen$kaffee <-
++ factor(Fragebogen$kaffee,
++ levels = 1:4,
++ labels = c("nein", "1x pro Tag", "2x pro Tag", "3x oder ¨ofter"))
+R> summary(Fragebogen$kaffee)
+nein 1x pro Tag 2x pro Tag 3x oder o¨fter
+220 143 91 39
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 17/33
+Fragebogen: Variablenklasse zuweisen I
+Nach der UmwandlunghatderDatensatzfolgendeStruktur:
+R> str(Fragebogen)
+'data.frame': 493 obs. of 13 variables:
+$ motiv : int 2 2 5 2 2 3 5 6 1 1 ...
+$ schultyp : int 2 1 4 1 1 4 4 4 1 2 ...
+$ vertrauen: int 2 1 1 2 3 4 2 2 1 1 ...
+$ studium : int 1 2 1 2 3 3 2 2 3 2 ...
+$ fleiss : int 1 2 1 1 3 4 2 2 1 2 ...
+$ stunden : num 10 6 3 5 5 5 8 20 5 4 ...
+$ puls : num 60 80 60 61 78 80 50 65 60 65 ...
+$ kraft : num 5 5 1 2 0 3 8 0 4.5 12 ...
+$ ausdauer : num 12 2 0 8 2 1 4 2 3 8 ...
+$ yoga : int 2 2 2 2 2 1 2 2 2 2 ...
+$ unruhig : num 60 70 100 30 50 70 0 20 80 50 ...
+$ stress : num 20 60 50 10 50 60 0 50 80 0 ...
+$ wut : num 10 40 100 10 50 50 0 30 50 20 ...
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 18/33
+Fragebogen: Variablenklasse zuweisen II
+'data.frame': 493 obs. of 18 variables:
+$ gluecklich : num 60 80 50 90 80 70 80 70 80 80 ...
+$ gewicht : num 84 63 55 76 55 53 78 53 60 75 ...
+$ groesse_selbst: num 180 156 170 192 170 168 180 165 168 182 ...
+$ groesse_mutter: num 172 150 175 176 166 168 160 167 168 174 ...
+$ groesse_vater : num 165 170 179 198 185 178 190 180 165 173 ...
+$ beruf : int 1 1 1 2 1 1 2 3 2 1 ...
+$ schlaf : int 2 1 1 2 2 2 2 2 2 1 ...
+$ alkohol : int 1 3 1 5 3 3 3 1 3 1 ...
+$ rauchen : int 1 1 1 1 3 1 1 1 2 1 ...
+$ kaffee : Factor w/ 4 levels "nein","1x pro Tag",..: 1 2 3 1 3 1 1 2 2 1 ...
+$ wasser : num 5 1 1 3 1.5 2 2 1 2 3 ...
+$ einkommen : num 1500 800 0 1000 1200 500 800 1000 1700 0 ...
+$ fixkosten : num 0 580 1000 650 620 1050 400 290 520 0 ...
+$ lebensmittel : num 300 100 200 300 200 250 200 150 250 200 ...
+$ ernaehrung : int 1 1 2 1 2 1 1 1 1 1 ...
+$ stil : int 1 4 1 1 1 1 1 1 1 1 ...
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 19/33
+Fragebogen: Variablenklasse zuweisen III
+$ geschlecht : int 1 2 2 1 2 2 1 2 2 1 ...
+$ geburtsjahr : int 2003 2006 2003 2006 2006 2006 2006 2005 2005 2005 ...
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 20/33
+Deskriptive Statistik: Fragebogen
+Zusammenhangsanalyse
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 21/33
+Fragebogen: Zusammenhangsanalyse
+UntersuchenSiedenZusammenhangzwischenderHäufigkeit,indenletzten4
+WochennegativenStressempfundenzuhaben(Variablestress)unddem
+täglichenKaffeekonsum(Variablekaffee).
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 22/33
+Fragebogen: Zusammenhangsanalyse
+R> boxplot(stress ~ kaffee, data = Fragebogen, las = 1)
+100
+80
+60
+40
+20
+0
+nein 1x pro Tag 2x pro Tag 3x oder öfter
+kaffee
+sserts
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 23/33
+Fragebogen: Zusammenhangsanalyse
+R> tapply(Fragebogen$stress, Fragebogen$kaffee, summary)
+$nein
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0.0 15.0 30.0 35.4 58.5 100.0
+$`1x pro Tag`
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0.0 20.0 40.0 40.2 60.0 99.0
+$`2x pro Tag`
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0.0 20.0 35.0 39.2 60.0 100.0
+$`3x oder ¨ofter`
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+5 25 50 47 70 90
+R> tapply(Fragebogen$stress, Fragebogen$kaffee, sd)
+nein 1x pro Tag 2x pro Tag 3x oder o¨fter
+25.46 26.23 25.20 25.46
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 24/33
+Deskriptive Statistik: Fragebogen
+Weitere Beispiele
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 25/33
+Fragebogen: Umgang mit Datenfehlern
+UnplausibleWertekorrigierenoderentfernen:
+R> boxplot(Fragebogen$fixkosten)
+00021
+0008
+0004
+0
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 26/33
+Fragebogen: Umgang mit Datenfehlern
+UnplausibleWertekorrigierenoderentfernen:
+R> summary(Fragebogen$fixkosten)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0.000 300.000 520.000 503.529 650.000 14000.000
+R> head(sort(Fragebogen$fixkosten, decreasing = TRUE), n = 5)
+[1] 14000 2500 1700 1600 1600
+R> Fragebogen <- Fragebogen[Fragebogen$fixkosten < 14000,]
+R> summary(Fragebogen$fixkosten)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0.000 300.000 520.000 476.098 650.000 2500.000
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 27/33
+Fragebogen: Zusammenhangsanalyse
+UmwandlungderdiskretenVariableberufineinenFaktor:
+Variableberuf:
+SindSiegegenwärtigberufstätigodernicht?
+• nein,nichtberufstätig
+• geringfügig
+• Teilzeit
+• Vollzeit
+• Wehrdienst/Zivildienst
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 28/33
+Fragebogen: Zusammenhangsanalyse
+UmwandlungderdiskretenVariableberufineinenFaktor:
+R> table(Fragebogen$beruf)
+1 2 3 4
+230 190 64 8
+R> Fragebogen$beruf <-
++ factor(Fragebogen$beruf,
++ levels = 1:4,
++ labels = c("nein", "geringfuegig", "Teilzeit", "Vollzeit"))
+R> table(Fragebogen$beruf)
+nein geringfuegig Teilzeit Vollzeit
+230 190 64 8
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 29/33
+Fragebogen: Zusammenhangsanalyse
+R> boxplot(lebensmittel ~ beruf, data = Fragebogen)
+nein geringfuegig Teilzeit Vollzeit
+006
+004
+002
+0
+beruf
+lettimsnebel
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 30/33
+Fragebogen: Zusammenhangsanalyse
+R> tapply(Fragebogen$lebensmittel, Fragebogen$beruf, summary)
+$nein
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0 160 250 247 300 700
+$geringfuegig
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0 150 210 232 300 700
+$Teilzeit
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0 188 275 274 400 600
+$Vollzeit
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+50 222 300 310 425 500
+R> tapply(Fragebogen$lebensmittel, Fragebogen$beruf, sd)
+nein geringfuegig Teilzeit Vollzeit
+126.0 125.8 128.9 154.3
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 31/33
+Fragebogen: Variablenklasse zuweisen
+UmwandlungeinerdiskretenVariableineinenFaktor:
+BSPVariablegeschlecht:
+BittegebenSieIhrGeschlechtan.
+(1=“männlich“,2=“weiblich“,3=“divers“)
+R> table(Fragebogen$geschlecht)
+1 2
+277 215
+R> Fragebogen$geschlecht <- factor(Fragebogen$geschlecht,
++ levels = 1:3,
++ labels = c("maennlich", "weiblich", "divers"))
+R> table(Fragebogen$geschlecht)
+maennlich weiblich divers
+277 215 0
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 32/33
+Mögliche weitere Untersuchungen
+• VisualisierenSieeinenmöglichenGrößenunterschiedzwischenden
+GeschlechternderStudierenden.
+• RechnenStudierende,diederBehauptungzustimmen,dassStatistikmit
+Fleißerlernbarist,auchmiteinemgrößerenAufwandfürdasModul?
+• ···
+© StatistischeDatenanalyse–1–DeskriptiveStatistik:Fragebogen 33/33

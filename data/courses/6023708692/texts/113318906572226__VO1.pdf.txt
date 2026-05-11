@@ -1,0 +1,355 @@
+Statistische Datenanalyse
+Wozu Statistik?
+Definition von Statistik
+Statistik ist die Wissenschaft von der Erhebung, Analy-
+se, Präsentation und Interpretation von Daten mit dem
+Ziel,geeigneteSchlussfolgerungenundEntscheidungen
+zutreffen.
+© StatistischeDatenanalyse–1–WozuStatistik? 1/25
+Analyse von Merkmalen
+1970 1980 1990 2000 2010
+06
+04
+02
+0
+02−
+04−
+Jahresrendite deutscher Aktien (DAX)
+Jahr
+]%[
+etidneR
+1970 1980 1990 2000 2010 2017 1970 1980 1990 2000 2010
+06
+04
+02
+0
+02−
+04−
+Rendite deutscher Anleihen (REX)
+Jahr
+]%[
+etidneR
+1970 1980 1990 2000 2010 2017
+Abbildung:RenditedeutscherAktien1 undAnleihen2 imVergleich.
+1
+boerse.de,Zugriffam28.05.2018,Verfügbarunter
+https://www.boerse.de/historische-kurse/Dax/DE0008469008
+2
+DeutscheBörseAG,Zugriffam6.05.2018,Verfügbarunter
+https://www.bundesbank.de/dynamic/action/de/statistiken/zeitreihen-datenbanken/zeitreihen-
+datenbank/723452/723452?tsId=BBK01.WU046A
+© StatistischeDatenanalyse–1–WozuStatistik? 2/25
+Präsentation von Daten
+3000.
+2000.
+1000.
+0
+Histogramm: Haushaltsnettoeinkommen 2013
+0 2000 4000 6000 8000 10000 12000 14000 16000 18000
+monatliches Nettoeinkommen in Euro
+Abbildung:Histogrammdesmonatlichen
+Haushaltsnettoeinkommens3 imJahr2013inDeutschland
+3
+StatistischesBundesamt,Fachserie15,Heft1,Einkommens-undVerbrauchsstichprobe(EVS)2013,S.11.
+© StatistischeDatenanalyse–1–WozuStatistik? 3/25
+Aufzeigen von Zusammenhängen
+4
+2
+0
+2−
+4−
+6−
+Z−score der Kinder
+)gnurheanreretnU
+reuf
+xednI(
+erocS−z
+keine primaer sekundaer hoehere
+4
+2
+0
+2−
+4−
+6−
+Z−score der Kinder nach Bildungsgrad der Mutter
+Ausbildungsgrad der Mutter
+)gnurheanreretnU
+reuf
+xednI(
+erocS−z
+Abbildung:Datensatzbangladesh_barisal.rda
+© StatistischeDatenanalyse–1–WozuStatistik? 4/25
+Zusammenhang zwischen PS- und
+GP-Note?
+PS
+PG
+1 2 3 4
+1
+2
+3
+4
+5
+0.1
+8.0
+6.0
+4.0
+2.0
+0.0
+© StatistischeDatenanalyse–1–WozuStatistik? 5/25
+Rückschlüsse auf die Grundgesamtheit
+© StatistischeDatenanalyse–1–WozuStatistik? 6/25
+Wozu Statistik?
+Statistiksoftware
+© StatistischeDatenanalyse–1–WozuStatistik? 7/25
+Statistiksoftware R
+• RisteinefreieStatistiksoftware
+• InstallationsprogrammefürRgibtesauf
+https://CRAN.R-project.org/
+DasentsprechendeBetriebssystemauswählenunddann
+dasBasissystemvonRinstallieren.
+• EineEntwicklungsumgebung,indermanRlaufenlassen
+kannistRStudio.Von
+https://posit.co/download/rstudio-desktop/
+herunterladen(“RStudioDesktop”).
+• UmsichdarüberhinausgehendüberRzuinformieren
+stehenManualsaufhttps://www.R-project.org/zur
+Verfügung.
+© StatistischeDatenanalyse–1–WozuStatistik? 8/25
+Wozu Statistik?
+Deskriptive Statistik
+© StatistischeDatenanalyse–1–WozuStatistik? 9/25
+Beschreibung von Merkmalen bzw.
+(Zufalls)Variablen
+Beschreibung(derVerteilung)derVariablenineinem
+DatensatzhinsichtlichzumBeispielfolgenderFragen:
+• AufwelcherMessskalawirdeineVariable
+erhoben/gemessen?
+• InwelchemBereichbewegensichdieWerteeiner
+Variablen?AndersausgedrücktwelchenWerthatdie
+kleinstebzw.größteBeobachtung?
+• WelchenWertnimmteineVariableimDurchschnittan?
+• WiestarkistdieStreuungumdenDurchschnittswert?
+• WiekanndieVerteilunggrafischdargestelltwerden?
+• GibtesFehlerindenDaten(unplausibleWerte,fehlende
+Beobachtungen,etc.)?
+© StatistischeDatenanalyse–1–WozuStatistik? 10/25
+Typen von Variablen
+• Diskretversusstetig
+• diskreteVariable:nurendlichvieleWerteoderbeliebig
+vieleWerte,aberabzählbar(Bewertungsskala,
+Schulausbildung,...)
+• stetigeVariable:jederbeliebigeWertinnerhalbeines
+IntervallsalsAusprägungmöglich(Körpergröße,
+Einkommen,Mietpreise,...)
+• Dummy-Variable,binäreVariable
+• Skalenniveau
+• Nominalskala(Farbe(rot,grün,blau),Religion
+(katholisch,evangelisch,konfessionslos,andere))
+• Ordinalskala(Schulnoten,Likertskala)
+• Kardinalskalabzw.metrisches Merkmal
+• Intervallskala(TemperaturinGradCelsius,IQ)
+• Verhältnisskala(Einkommen,Alter,Körpergröße)
+© StatistischeDatenanalyse–1–WozuStatistik? 11/25
+Datensatz: Mietspiegel I
+EinMietspiegelsollMieter:innenundVermieter:innen
+gleichermaßeneinenÜberblicküberdenMarktfürWohnraum
+geben.ZudiesemZwecksindimDatensatzmietspiegel.rda
+für3082Wohnungen,dieimJahr1999inMünchenvermietet
+wordensind,achtverschiedeneMerkmaleerhobenworden.
+© StatistischeDatenanalyse–1–WozuStatistik? 12/25
+Datensatz: Mietspiegel II
+• MieteinEuroproMonat(miete)bzw.MieteinEuropro
+MonatundQuadratmeter(mieteqm)
+• Wohnfläche(flaeche)
+• Baujahr(bjahr)
+• AusstattungdesBades(bad;1=gehoben,0=normal)
+• AusstattungderKüche(kueche;1=gehoben,0=
+normal)
+• BezirksviertelinMünchen(bezv)
+• LagekategoriegemäßderEinschätzungvonGutachtern
+(lage;1=normaleLage,2=guteLage,3=besteLage)
+• Zentralheizung(zh;1=mit,0=ohne)
+Ziel ist die Schätzung des Zusammenhanges zwischen
+der Miete und den anderen Variablen.
+© StatistischeDatenanalyse–1–WozuStatistik? 13/25
+Datensatz im R und Typen von Variablen
+R> load("./daten/mietspiegel.rda")
+R> head(mietspiegel)
+miete mieteqm flaeche bjahr bad
+1 120.6 3.446 35 1939 normal
+2 435.7 4.189 104 1939 gehoben
+3 354.7 12.230 29 1971 normal
+4 282.1 7.233 39 1972 normal
+5 804.8 8.297 97 1985 normal
+6 481.4 7.764 62 1962 normal
+kueche bezv lage zh
+1 normal 1112 normale Lage ohne
+2 normal 1112 normale Lage mit
+3 normal 2114 gute Lage mit
+4 normal 2148 gute Lage mit
+5 normal 2222 normale Lage mit
+6 normal 2222 normale Lage mit
+© StatistischeDatenanalyse–1–WozuStatistik? 14/25
+Statistische Kennwerte stetiger Variablen
+Bemerkung:BehandlediskretemetrischeMerkmalemitsehr
+vielenMerkmalsausprägungenwiestetigeVariablen.
+• Lagemaße
+• Arithmetisches Mittel:Schwerpunkteigenschaft,
+ausreißerempfindlich
+• Median:RobustgegenüberAusreißern
+• Quartile,Perzentile,Quantile
+• Streuungsmaße
+• Spannweite
+• Empirische Standardabweichung:Ausreißersensitiv
+• Interquartilsabstand:RobustgegenüberAusreißern
+© StatistischeDatenanalyse–1–WozuStatistik? 15/25
+Statistische Beschreibung mit R
+R> summary(mietspiegel)
+miete mieteqm flaeche bjahr
+Min. : 40.4 Min. : 0.415 Min. : 20.0 Min. :1918
+1st Qu.: 321.1 1st Qu.: 5.245 1st Qu.: 51.0 1st Qu.:1939
+Median : 425.7 Median : 6.959 Median : 65.0 Median :1959
+Mean : 458.1 Mean : 7.090 Mean : 67.4 Mean :1956
+3rd Qu.: 557.7 3rd Qu.: 8.814 3rd Qu.: 81.0 3rd Qu.:1972
+Max. :1837.9 Max. :17.669 Max. :160.0 Max. :1997
+bad kueche bezv lage
+normal :2891 normal :2951 Min. : 113 normale Lage:1794
+gehoben: 191 gehoben: 131 1st Qu.: 561 gute Lage :1210
+Median :1025 beste Lage : 78
+Mean :1170
+3rd Qu.:1714
+Max. :2529
+zh
+ohne: 321
+mit :2761
+© StatistischeDatenanalyse–1–WozuStatistik? 16/25
+Statistische Beschreibung mit R
+R> summary(mietspiegel$mieteqm)
+Min. 1st Qu. Median Mean 3rd Qu. Max.
+0.415 5.245 6.959 7.090 8.814 17.669
+R> quantile(mietspiegel$mieteqm, probs = c(0.25,0.75))
+25% 75%
+5.245 8.814
+R> quantile(mietspiegel$mieteqm, probs = c(0.25,0.75), type = 2)
+25% 75%
+5.245 8.815
+R> max(mietspiegel$mieteqm)-min(mietspiegel$mieteqm)
+[1] 17.25
+R> var(mietspiegel$mieteqm)
+[1] 5.899
+R> sd(mietspiegel$mieteqm)
+[1] 2.429
+© StatistischeDatenanalyse–1–WozuStatistik? 17/25
+Grafische Darstellungsmöglichkeiten
+• Histogramm:GutgeeignetzurgrafischenBeschreibung
+vonVerteilungen,BeurteilungderSchiefe/Symmetrie,
+BestimmungdesModus/der Modalklasse.
+WenigergutgeeignetzurZusammenhangsanalyse.
+GestaltzumTeilabhängigvonderKlasseneinteilung.
+• Boxplot:GrafischeDarstellungausreißerrobuster
+Kennzahlen.GutgeeignetzumVergleichvon
+Verteilungen,BeurteilungderSchiefe/Symmetrieund
+zumAuffindenvonAusreißern.
+© StatistischeDatenanalyse–1–WozuStatistik? 18/25
+Histogramm
+R> par(mfrow=c(1,2))
+R> hist(mietspiegel$miete, xlab="Miete", ylab="Haeufigkeit",
++ main="Miete")
+R> hist(mietspiegel$mieteqm, xlab="Miete pro qm", ylab="Haeufigkeit",
++ main="Miete pro qm")
+Miete
+Miete
+tiekgifueaH
+0 500 1000 1500
+006
+004
+002
+0
+Miete pro qm
+Miete pro qm
+tiekgifueaH
+0 5 10 15
+004
+003
+002
+001
+0
+© StatistischeDatenanalyse–1–WozuStatistik? 19/25
+Boxplot
+R> par(mfrow=c(1,2))
+R> boxplot(mietspiegel$mieteqm, main="Miete pro qm")
+R> plot(mieteqm ~ lage, data = mietspiegel,
++ main="Miete pro qm")
+51
+01
+5
+0
+Miete pro qm
+normale Lage gute Lage beste Lage
+51
+01
+5
+0
+Miete pro qm
+lage
+mqeteim
+InterpretationsieheauchSkriptDeskriptiveStatistik
+© StatistischeDatenanalyse–1–WozuStatistik? 20/25
+Statistische Beschreibung diskreter
+Variablen
+• Häufigkeitstabellen:BeinominalskaliertenMerkmalen
+absoluteundrelativeHäufigkeiten,beimindestens
+ordinalskaliertenMerkmalenzusätzlichkumulierte
+Häufigkeitenmöglich.
+R> table(mietspiegel$lage)
+normale Lage gute Lage beste Lage
+1794 1210 78
+R> prop.table(table(mietspiegel$lage))
+normale Lage gute Lage beste Lage
+0.58209 0.39260 0.02531
+R> round(prop.table(table(mietspiegel$lage)), 4)
+normale Lage gute Lage beste Lage
+0.5821 0.3926 0.0253
+© StatistischeDatenanalyse–1–WozuStatistik? 21/25
+Statistische Beschreibung diskreter
+Variablen
+• Säulendiagramme
+R> plot(mietspiegel$lage, main="Lage der Wohnung")
+Lage der Wohnung
+normale Lage gute Lage beste Lage
+0051
+0001
+005
+0
+© StatistischeDatenanalyse–1–WozuStatistik? 22/25
+Statistische Beschreibung diskreter
+Variablen
+• Kreisdiagramme
+R> pie(table(mietspiegel$lage), main="Lage der Wohnung",
++ col=gray.colors(3, start = 0.3, end = 0.9,
++ gamma = 2.2, alpha = NULL))
+Lage der Wohnung
+normale Lage
+beste Lage
+gute Lage
+© StatistischeDatenanalyse–1–WozuStatistik? 23/25
+Zusammenfassung
+Stetige Variablen
+• Wertebereich,d.h.kleinsterundgrößterWert
+• Mittelwert(arithmetischesMittel,evtl.Median,Quantile)
+• StreuungderDaten(Spannweite,empirische
+Standardabweichung,evtl.Interquartilsabstand)
+• ExtremeWertebzw.Ausreißerbzw.unüblicheWerte
+• SymmetrieundSchiefeanhandHistogramm/Boxplot
+• ZahlderModibzw.Modalklassen(Unimodal,Bimodalund
+Multimodal)anhandHistogramm
+• UnplausibleWerte,Datenfehler
+• FehlendeWerte
+© StatistischeDatenanalyse–1–WozuStatistik? 24/25
+Zusammenfassung
+Diskrete Variablen
+• Absoluteundrelativebzw.prozentualeHäufigkeiten
+• Modus,d.h.häufigsterWert
+• SchwachbesetzteKategorien
+• FehlendeWerte,Datenfehler
+© StatistischeDatenanalyse–1–WozuStatistik? 25/25

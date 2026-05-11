@@ -1,0 +1,38 @@
+PS Einführung in die Makroökonomik
+Aufgabenblatt 3
+Sommersemester2026
+1. NehmenSiefolgendeGeldnachfragefunktionan: MD = PY(1.22−i). DasnominaleEinkommen
+beträgt 1050 Geldeinheiten (GE). Nehmen Sie weiters an, dass die Zentralbank einen Zinssatz
+von5%anstrebt. AufdemGeldmarktunddenFinanzmärktenherrschtGleichgewicht.
+(a) Welches Geldangebot muss die Zentralbank bereitstellen, um ihren Zielzinssatz von 5% zu
+erreichen?
+(b) Wenn die Zentralbank den Zinssatz i um 0.25 Prozentpunkte (25 Basispunkte) erhöhen
+möchte,umwievielmusssiedasGeldangebotverändern?
+2. Eine Person verfügt über ein Vermögen von 1600 Geldeinheiten (GE) und bezieht ein jährliches
+nominalEinkommenvon1050GE.IhreGeldnachfragefunktionseigegebendurch: MD =PY(1.26−
+i). DasVermögenbestehtausGeldsowieaus(verzinsten)Bonds.
+(a) BerechnenSiedieNachfragenachGeldbeieinemZinssatzvon10%.
+(b) BerechnenSiedieNachfragenachBondsbeieinemZinssatzvon10%.
+(c) WieverändertsichdieGeldnachfrageimFalleeinerZinserhöhungvon8Prozentpunkten?
+(d) WieverändertsichdieGeldnachfrage,wenndasVermögenum150GEsinkt?
+3. DieLiquiditätsfalleamGeldmarkt:
+(a) ErklärenSieinWortenwasmanunterderLiquiditätsfalleversteht.
+(b) Erklären Sie mit Hilfe einer geeigneten Grafik die Liquiditätsfalle am Geldmarkt. Arbeiten
+Sie die Frage handschriftlich aus und laden Sie Ihren abfotografierten oder gescannten
+Lösungsansatzhoch.
+(c) WelcheProblemeergebensichineinersolchenSituationfürdieZentralbank?
+4. GehenSieaufdieHomepagederFederalReserveEconomicData(FRED)DatenbankderSt.Louis
+FederalReserve(https://fred.stlouisfed.org/). LadenSienachstehendeZeitreihenabJän-
+ner 2000 für die EU herunter. Verwenden Sie die Suchfunktion der Homepage und geben Sie
+entwederSchlagwörteroderdenDaten-Codeein.
+• EONIAOvernightInterbankRate(EuroInterbankOfferedRate;Daten-Code: EONIARATE)
+• Durchschnittlicher 10-Jahres Zinssatz auf EU Länder-Bonds (10-Year Long-Term Govern-
+mentBondYieldsforEuroArea;19Countries;Daten-Code: IRLTLT01EZM156N)
+(a) TragenSiebeideZeitreihenineinerGrafikauf(ZeitaufderX-Achse;zeigenSienurMonate
+in denen beide Zeitreihen verfügbar sind). Was fällt Ihnen auf bzw. wie verhalten sich die
+beidenZinssätzezueinander?
+(b) ZentralbankenkönnenmitHilfevonVeränderungendesLeitzinssatzeslediglichsehrkurzfristige
+Zinssätzedirektsteuern,währendInvestitionsentscheidungenehervonlangfristigenZinssätzen
+abhängen. WiekönnenesZentralbankentrotzdemschaffen,solcheEntscheidungenzubee-
+influssen?
+1|1

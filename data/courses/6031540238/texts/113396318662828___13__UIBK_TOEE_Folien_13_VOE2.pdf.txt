@@ -1,0 +1,296 @@
+Theorie ökonomischer Entscheidungen
+Prof. Dr. Heiner Schumacher
+UIBK
+13. Verhaltensökonomie II
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 1/31
+Einleitung
+Bisher haben wir immer angenommen, dass sich Individuen nur für ihr
+eigenes Wohlergehen interessieren. Die Auszahlung an andere
+Agenten war irrelevant für den eigenen Nutzen.
+Eine Fülle von Experimenten hat gezeigt, dass auch diese Annahme
+oft sehr unrealistisch ist. Viele Individuen verhalten sich manchmal
+altruistisch oder sind bereit, Ressourcen aufzugeben, um anderen zu
+schaden.
+Im Folgenden gehen wir kurz auf die wichtigsten Erkenntnisse der
+experimentellen Wirtschaftsforschung ein und versuchen, die Motive
+hinter pro-sozialem Verhalten zu verstehen.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 2/31
+Einleitung
+Überblick
+Soziales Verhalten
+Prosoziale Motivation
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 3/31
+Soziales Verhalten
+Im Diktator-Spiel gibt es zwei Parteien: Einen Diktator und einen
+Empfänger.
+Der Diktator hat einen Betrag von 10 Euro. Er kann diesen zwischen
+sich und dem Empfänger aufteilen.
+Was würde ein egoistischer Diktator tun?
+Was passiert im Experiment?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 4/31
+Soziales Verhalten
+Im Schnitt geben Diktatoren den Empfängern etwa 20%.
+Die Variation ist sehr groß. Viele Diktatoren geben nichts ab, einige
+dagegen bis zu 50%. Mehr als 50% gibt fast kein Diktator seinem
+Empfänger.
+Diese Ergebnisse sind äußerst robust. Sie gelten in den meisten
+Ländern, für verschieden hohe Beträge, und für unterschiedliche
+Grade der Anonymität.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 5/31
+Soziales Verhalten
+Im Ultimatum-Spiel gibt es wiederum zwei Parteien: Spieler 1 und
+Spieler 2.
+Spieler 1 hat einen Betrag von 10 Euro und schlägt eine Aufteilung x
+zwischen sich und Spieler 2 vor.
+Spieler 2 entscheidet dann, ob er den Vorschlag von Spieler 1
+akzeptiert oder nicht.
+Wenn Spieler 2 akzeptiert, so erhält Spieler 1 den Betrag 10 x und
+(cid:0)
+Spieler 2 den Betrag x. Andernfalls erhalten beide Spieler 0.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 6/31
+Soziales Verhalten
+Welche Aufteilungen können in einem Nash Gleichgewicht in diesem
+Spiel auftreten, wenn beide Spieler egoistisch sind?
+Was wäre das teilspielperfekte Nash Gleichgewicht in diesem Spiel,
+wenn beide Spieler egoistisch sind?
+Was passiert im Experiment?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 7/31
+Soziales Verhalten
+Kaum jemand bietet mehr als x = 5. Der größte Teil der Angebote
+be…ndet sich zwischen 4 und 5.
+Es gibt kaum Angebote unter 2. Niedrige Angebote werden häu…g
+abgelehnt.
+Die Wahrscheinlichkeit einer Ablehnung sinkt in x.
+Diese Ergebnisse sind relativ unabhängig von der Skalierung der
+Beträge (d.h. ähnliche Ergebnisse erhält man auch, wenn mehrere
+Monatsgehälter ausgespielt werden).
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 8/31
+Soziales Verhalten
+Im Vertrauens-Spiel gibt es zwei Parteien: Spieler 1 und Spieler 2.
+Spieler 1 hat einen Betrag von 10 Euro. Er kann diesen behalten oder
+in Spieler 2 “investieren”. Es sei x der Betrag, den Spieler 1 in Spieler
+2 investiert.
+Der Betrag wird verdreifacht, Spieler 2 erhält also 3x. Spieler 2
+entscheidet dann, wie viel er von diesem Betrag an Spieler 1
+zurückgibt. Sei y der Betrag den Spieler 2 an Spieler 1 zurückgibt.
+Am Ende des Spiels erhält Spieler 1 den Betrag
+(10 x)+y,
+(cid:0)
+und Spieler 2 erhält den Betrag
+10+3x y.
+(cid:0)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 9/31
+Soziales Verhalten
+Was wäre das e¢ ziente Ergebnis in diesem Spiel?
+Was wäre das Ergebnis, wenn beide Spieler egoistisch wären (und dies
+jeder weiß)?
+Was passiert im Experiment?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 10/31
+Soziales Verhalten
+Spieler 1 investiert im Schnitt 50% und erhält im Schnitt 95% zurück
+(in einigen Studien lohnt sich Vertrauen, in anderen nicht).
+Wiederum gibt es eine große Varianz im Verhalten.
+Diese Ergebnisse zeigen, dass viele Individuen darauf vertrauen, dass
+der Gegner nicht rein egoistisch ist. Dies entspricht (im Schnitt) auch
+dem Verhalten der Spieler 2.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 11/31
+Prosoziale Motivation
+Die experimentellen Ergebnisse zeigen, dass sich viele Individuen nicht
+volltständig egoistisch verhalten.
+Aber was sind die Motive für prosoziales Verhalten?
+Im Folgenden erläutern wir die wichtigsten Motive für prosoziales
+Handeln: Altruismus, Reziprozität, und “image concerns”.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 12/31
+Prosoziale Motivation
+Altruismus
+Das Verhalten in Diktator-Spielen impliziert, dass viele Individuen
+Nutzen aus den Auszahlungen für sich und andere ziehen.
+Wir unterscheiden zwischen reinem und unreinem Altruismus
+(Andreoni 1989).1
+Ein rein altruistisches Individuum zieht Nutzen aus der Auszahlung für
+sich und andere. Es sei x die eigene Auszahlung und y die
+Auszahlung einer anderen Person. Die Nutzenfunktion eines rein
+altruistischen Individuums ist dann gegeben durch U(x,y); diese
+Funktion ist strikt steigend in beiden Variablen.
+1Andreoni, James (1989): “Giving with Impure Altruism: Applications to Charity and
+Ricardian Equivalence,”Journal of Political Economy 97(6), 1447 - 1458.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 13/31
+Prosoziale Motivation
+Ein unrein altruistisches Individuum zieht Nutzen aus der Tatsache,
+dass es etwas gibt oder spendet.
+Dieser Nutzen wird in der Literatur als “warm glow”bezeichnet.
+Es sei g der Betrag den ein unrein altruistisches Individuum an einere
+andere Person spendet. Ihre Nutzenfunktion ist dann gegeben durch
+U(x,y,g); diese Funktion ist strikt steigend in der letzten Variable.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 14/31
+Prosoziale Motivation
+Die Unterscheidung zwischen reinem und unreinem Altruismus ist in
+einigen Anwendungen wichtig.
+Betrachten Sie die Bereitstellung ö¤entlicher Finanzen für karitative
+Einreichtungen, die auch private Spenden sammeln.
+Wären alle Spender reine Altruisten, dann würde eine Erhöhung der
+Finanzierung durch ö¤entliche Mittel zu einem etwa gleich großen
+Rückgang des Spendenaufkommens führen. (Warum?)
+Wenn einige Spender unreine Altruisten sind, ist der Rückgang
+geringer. (Warum?)
+Empirische Studien zeigen, dass der Rückgang von Spenden in
+solchen Situationen eher gering ist.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 15/31
+Prosoziale Motivation
+Reziprozität
+Die Ergebnisse im Vertrauens-Spiel zeigen, dass viele Individuen sich
+reziprok verhalten, also “nach dem Prinzip der Gegenseitigkeit”
+handeln.
+Soziologen und Anthropologen zufolge ist Reziprozität eine der am
+weitesten verbreiteten sozialen Normen in menschlichen
+Gesellschaften.
+Wir werden von Kindheit an auf reziprokes Verhalten konditioniert.
+Das Folgende Experiment zeigt, dass Reziprozität das Verhalten in
+strategischen Situationen grundlegend verändern kann.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 16/31
+Prosoziale Motivation
+Fehr and Gächter (2000) vergleichen das Verhalten in einem
+Ö¤entliche-Güter Spiel mit und ohne die Option, Gegenspieler zu
+bestrafen wenn sie nicht zu einem ö¤enlichen Gut beitragen.2
+Das Ö¤entliche-Güter Spiel wird in Vierergruppen gespielt.
+Gruppenmitglied i hat eine Anfangsausstattung von 20 Token und
+muss entscheiden, welche Anzahl an Token g es zu dem ö¤entlichen
+i
+Gut der Gruppe beitragen will. Seine Auszahlung ist dann
+4
+π = 20 g +0,4 ∑ g .
+i i j
+(cid:0)
+j=1
+Welche Strategie maximiert die Auszahlung der Gruppe? Was ist die
+optimale Stratgie für ein rein egoistisches Gruppenmitglied?
+2Fehr, Ernst, and Simon Gächter (2000): “Cooperation and Punishment in Public
+Goods Experiments,”American Economic Review 90(4), 980 - 994.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 17/31
+Prosoziale Motivation
+Alle Teilnehmer spielen das Ö¤entliche-Güter Spiel mit und ohne
+Bestrafungsoption.
+Wenn es keine Bestrafungsoption gibt, ist das Spiel vorbei und die
+Auszahlungen werden realisiert.
+Wenn es eine Bestrafungsoption gibt, gibt es nach dem
+Ö¤entliche-Güter Spiel eine Stufe, auf der jedes Gruppenmitglied auf
+die Aktionen der anderen Mitglieder reagieren kann.
+Mitglied j kann Mitglied i bestrafen, in dem es diesem
+Bestrafungspunkte pi zuweist. Jeder an i zugewiesene
+j
+Bestrafungspunkt reduziert die Auszahlung an i aus dem
+Ö¤entliche-Güter Spiel um 10 Prozent.
+Bestrafung verursacht allerdings Kosten.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 18/31
+Prosoziale Motivation
+Die Auszahlung von Mitglied i nach der Bestrafungsstufe ist
+1
+π…nal = π 1 min ∑ pi,10 ∑ c(pj),
+i i (cid:0) 10 j (cid:0) i
+" (j=i )# j=i
+6 6
+wobei c(pj) die Kosten der Bestrafung von Mitglied j sind.
+i
+Die Bestrafungskosten sind folgendermaßen:
+pj 0 1 2 3 4 5 6 7 8 9 10
+i
+c(pj) 0 1 2 4 6 9 12 16 20 25 30
+i
+Jede Kondition wird 10 mal in wechselnden Gruppen wiederholt.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 19/31
+Prosoziale Motivation
+Was ist das teilspielperfekte Nash Gleichgewicht in diesem Spiel,
+wenn alle Spieler rein egoistisch sind?
+Wie könnte ein Anteil reziproker Spieler dieses Gleichgewicht
+verändern?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 20/31
+Prosoziale Motivation
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 21/31
+Prosoziale Motivation
+Die Bestrafungsoption verändert den durchschnittlichen Beitrag zum
+ö¤entlichen Gut beträchtlich.
+Mit Bestrafungsoption ist der durchschnittliche Beitrag etwa 58
+Prozent.
+Ohne Bestrafungsoption konvergiert dieser gegen Null.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 22/31
+Prosoziale Motivation
+Ein Teilnehmer wird vor allem dann bestraft, wenn sein Beitrag unter
+den Durchschnitt der Gruppe fällt.
+Beiträge über dem Durchschnitt werden sehr selten bestraft.
+Die Bestrafungsoption reduziert am Anfang die durchschnittliche
+Auszahlung an alle Gruppenmitglieder. Gegen Ende des Spiels ist die
+durchschnittliche Auszahlung aber höher, wenn es die
+Bestrafungsoption gibt.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 23/31
+Prosoziale Motivation
+Reziprozität kann ausgenutzt werden, um das Handeln von Personen
+zu beein‡ussen.3
+Eine Strategie ist, mit kleinen Geschenken sich die Gunst des
+Gegenübers zu sichern, um bei einem deutlich größeren Anliegen
+dessen Zustimmung zu erhalten (“foot-in-the-door”Technik).
+Eine weitere (etwas riskante) Strategie ist, ein sehr großen Anliegen
+vorzutragen, dass meist abgelehnt wird. Im Anschluss reduziert man
+die Forderung deutlich. Diesem Anliegen nachzugeben erscheint dann
+als Konzession. Oft wird dieses Anliegen dann akzeptiert
+(“rejection-then-retreat”Technik).
+3Cialdini, Robert (2009): In‡uence –Science and Practice, Pearson, 5th Edition,
+Chapter 2 (“Reciprocation: The Old Give and Take... and Take”).
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 24/31
+Prosoziale Motivation
+Wie stabil sind soziale Präferenzen?
+Im Folgenden betrachten wir ein Experiment das zeigt, dass soziale
+Präferenzen nicht so robust sind, wie wir gerne glauben würden
+(Dana et al. 2007).4
+Insbesondere scheint ein Teil der Individuen prosozial zu handeln um
+ein positives Selbstbild aufrecht erhalten zu können.
+4Dana, Jason, Roberto Weber, and Jason Xi Kuang (2007): “Exploiting moral wiggle
+room: experiments demonstrating an illusory preference for fairness,”Economic Theory
+33, 67 - 80.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 25/31
+Prosoziale Motivation
+Wir betrachten ein Diktator-Spiel mit folgenden Attributen. Der
+Diktator wählt zwischen zwei Optionen, A und B.
+Option A impliziert eine Auszahlung von 6 USD für den Diktator und
+1 USD für den Empfänger. Option B impliziert eine Auszahlung von
+5 USD für den Diktator und 5 USD für den Empfänger.
+Machen Sie eine Vorhersage, wie sich die Teilnehmer in diesem
+Experiment verhalten würden (basierend auf den bisherigen
+Ergebnissen über soziale Präferenzen)!
+Es gibt eine zweite Kondition, die sogenannte “hidden information”
+Kondition.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 26/31
+Prosoziale Motivation
+In der “hidden information”Kondition kann der Diktator die
+Konsequenzen seiner Wahl ignorieren.
+Der Diktator erhält immer 6 USD, wenn er Option A wählt, und 5
+USD, wenn er Option B wählt.
+Die Auszahlung für den Empfänger wird zufällig bestimmt: Sie ist
+entweder 1 USD und 5 USD (bei Option A und Option B), oder
+genau andersrum, 5 USD und 1 USD. In diesem zweiten Fall, ist
+Option A für beide Parteien besser.
+Beide Szenarien sind gleich wahrscheinlich.
+Der Diktator kann das Szenario erfahren, wenn er auf einen Knopf
+klickt (es ist also quasi kostenlos für ihn, vollständige Information zu
+erhalten).
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 27/31
+Prosoziale Motivation
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 28/31
+Prosoziale Motivation
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 29/31
+Prosoziale Motivation
+Was sollte in den beiden Konditionen passieren, wenn alle Teilnehmer
+stabile soziale Präferenzen haben?
+Werden mehr oder weniger Teilnehmer Option B (die faire Option) in
+der “hidden information”Kondition wählen? Warum?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 30/31
+Prosoziale Motivation
+Im einfachen Diktator-Spiel wählen 74% aller Teilnehmer Option B.
+In der “hidden information”Kondition wählen nur 27% aller
+Teilnehmer, die das Diktator-Spiel spielen, Option B.
+Nur 56% der Teilnehmer in der “hidden information”Kondition
+informieren sich über die Auszahlungen. Die Teilnehmer, die sich
+nicht informieren, wählen in 85% der Fälle Option A.
+Interpretation: Viele Teilnehmer scheinen also die Konsequenzen ihrer
+Wahl ignorieren zu wollen. So können sie ein positives Selbstbildnis
+beibehalten und trotzdem egoistisch handeln.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 13.VerhaltensökonomieII 31/31

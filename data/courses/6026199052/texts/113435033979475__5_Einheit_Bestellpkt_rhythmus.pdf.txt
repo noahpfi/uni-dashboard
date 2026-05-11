@@ -1,0 +1,241 @@
+Management von Leistungsprozessen
+Gregor Blossey
+Produktionswirtschaft und Logistik
+Bestellpunkt- bzw. Bestellrhythmusverfahren
+NNoovveemmbbeerr 2244 TTiitteell ooddeerr VVoorrttrraaggeennddeerr 11
+Literatur
+▪ Thommen, J. P. und A. K. Achleitner(2001).
+Allgemeine Betriebswirtschaftslehre (3.
+Auflage). Wiesbaden: Gabler S. 306 – 314.
+▪ Zäpfel, G. (2001). Grundzüge des
+Produktions- und Logistikmanagement (2.
+Auflage). München, Wien: Oldenbourg. S.
+155 – 159.
+November 24 Gregor Blossey 2
+Agenda
+▪ Verbrauchsgebundene Bedarfsermittlung
+▪ Dispositionsgrößen
+▪ Lagerhaltungspolitiken
+▪ Beispiel (r,x) Politik
+▪ Beispiel (t,S) Politik
+▪ Klassisches Losgrößenmodell = klassisches Bestellmengenmodell
+▪ Andler-Formel
+November 24 Gregor Blossey 3
+Einordnung in PPS-System
+Produktionsplanung Produktionssteuerung
+Programmplanung Auftragsveranlassung
+Kapazitäts- und
+Mengenplanung
+Auftragsüberwachung
+Termin- und
+Kapazitätsplanung
+Grunddatenverwaltung
+November 24 Gregor Blossey 4
+Konzepte der Bedarfsermittlung
+Produktionsprogrammplanung
+programmgebundene verbrauchsgebundene
+Bedarfsermittlung Bedarfsermittlung
+Stücklistenauflösung, Bestellpunkt-, Bestell-
+Nettobedarfsrechnung rhythmusverfahren
+Ermittlung des Sekundärbedarf
+(Welche Teile, Rohstoffe usw., Wann, Wie oft?)
+November 24 Gregor Blossey 5
+Verbrauchsgebundene Bedarfsermittlung
+▪ Kein Bezug zum Produktionsprogramm, sondern
+▪ Kontrolliert den Lagerbestand …
+▪ … und trifft dann Entscheidung ob Auffüllung des Lagers
+erfolgen soll oder nicht.
+x
+Lagerhaltungspolitik, x
+r
+x
+Entscheidungsvariable?
+WBZ WBZ WBZ
+▪ „Am Verbrauch orientierte Lagerdisposition“
+▪ In der Regel für geringwertige Komponenten. Wie erkennbar?
+November 24 Gregor Blossey 6
+Dispositionsgrößen
+▪ Bestellmenge (x) oder maximaler Auffüllbestand (S).
+▪ Bestellpunkt bzw. Meldemenge (r).
+Listenform
+▪ Kontrollzeitpunkt (t).
+▪ Wie und wann wird geprüft ob der aktuelle Lagerbestand kleiner (oder gleich) r ist!
+kontinuierlich diskontinuierlich
+(laufend) (periodisch)
+November 24 Gregor Blossey 7
+Bestellpunkt- und Bestellrhythmusverfahren
+Bestellmenge Kontinuierliche Disposition Periodische Disposition
+Bestellpunktverfahren mit Bestellrhythmusverfahren
+fixer Bestellmenge mit fixer Bestellmenge
+Fix
+(r,x)-Politik (t,r,x)-Politik
+Bestellpunktverfahren mit Bestellrhythmusverfahren
+variabler Bestellmenge mit variabler Bestellmenge
+Variabel
+(r,S)-Politik (t,S)- und (t,r,S)-Politik
+Bestellpunktverfahren Bestellrhythmusverfahren
+November 24 Gregor Blossey 8
+Beispiel: Bestellpunktverfahren (r,x)-Politik
+Bestand
+x
+x
+r
+x
+Zeit
+WBZ WBZ WBZ
+November 24 Gregor Blossey 9
+Beispiel: Bestellrhythmusverfahren (t,r,S)-Politik
+Bestand
+t t t
+S
+r
+s
+s
+s
+Zeit
+WBZ WBZ WBZ
+November 24 Gregor Blossey 10
+Kostenarten (benötigte Daten für weitere Berechnungen)
+▪ Beschaffungskosten:
+▪ Unmittelbare: Einstandspreis * Menge
+(Einstandspreis = Marktpreis – Rabatte + Transportkosten…)
+▪ Mittelbare: mengenunabhängig (Angebotseinholung, Prüfungen, Meldungen, Lieferterminüberwachung…)
+▪ Lagerkosten:
+▪ Raumkosten (Miete, Abschreibungen, Heizung etc. → mengenunabhängig)
+▪ Unterhaltskosten: Manipulation, Kontrollen
+▪ Zinskosten für gebundenes Kapital (mengenabhängig)
+▪ Versicherungen
+▪ Lagerrisiko (Wertminderung durch Schwund, Verderb)
+▪ Fehlmengenkosten (Mangelnde Versorgung d. Fertigung):
+▪ Kosten Produktionsunterbrechung
+▪ Preisdifferenzen (erhöhte Transportkosten)
+▪ Konventionalstrafen
+▪ Auftragsverluste (entgangene Gewinne)
+▪ Imageverluste
+November 24 Gregor Blossey 11
+Beschaffungszeit (Wiederbeschaffungszeit = WBZ)
+Dauer zwischen Bedarfsfeststellung und Zeitpunkt zu dem die Ware für die
+Fertigung zur Verfügung steht!
+Bedarfsermittlungszeit
++ Bestellzeit
++ Lieferzeit
++ Transportzeit
++ Warenannahmezeit
+= Beschaffungszeit
+November 24 Gregor Blossey 12
+Andler Formel (=kl. Losgrößenformel, EOQ-Formel)
+November 24 Gregor Blossey 13
+B e s t e l l m e n g e b z w . L o s g r ö ß e ˆx =
+2  F
+l
+ m
+F = Kosten je Rüst (Bestell- ) Vorgang in GE
+m = mittlerer Bedarf pro Zeiteinheit
+l = Lagerkosten pro Stück und Periode in GE
+Kosten
+Gesamtkosten
+Lagerhaltungs-
+kosten
+Bestellfixe
+Kosten
+Optimum
+Bestellmenge
+Meldebestandsberechnung
+Bestellpunkt bzw. Meldebes tan d : rˆ = mL + z L
+Bedarf in WBZ Sicherheitsbestand
+m = Bedarf pro ZE
+L = Lieferzeit in ZE
+z = z-Quantil der Standardnormalverteilung
+σ = Standardabweichung für den Bedarf
+z … entspricht also dem Quantil der Lieferbereitschaft abgelesen an
+der Standardnormalverteilung.
+November 24 Gregor Blossey 14
+Quantile der Standardnormalverteilung N(0,1)
+Summe(Abweichungen2) Varianz
+Anzahl−1
+November 24 Gregor Blossey 15
+P
+M
+S
+e
+it
+u
+r io d
+1 .
+2 .
+3 .
+4 .
+5 .
+t e lw
+m m
+A
+e n
+e r t
+e ( B
+n z a
+e
+h
+d
+l
+B
+a
+e d a r
+45637
+5 ,0 0
+r f e )
+f e A b w
+V
+e ic h
+- 101-
+22
+a r ia
+u
+n
+n
+z
+g e n Q u a d
+2
+r . A
+10144
+,5 0
+b w .
+a
+Sb tw a ne dic ah ru dn -g
+1 ,5 8
+Wann wird nachbestellt?
+▪ Nachbestellt wird, wenn der Dispositionsbestand unter die Meldegrenze sinkt!
+▪ Dispositionsbestand = Lagerbestand + offene Bestellungen
+▪ Beispiel
+▪ Lieferzeit: 2 Perioden
+▪ Meldegrenze: 130 Stück
+▪ Bestellmenge: 110 Stück
+▪ Anfangslagerbestand: 80 Stück
+▪ Bedarfe – siehe Tabelle.
+▪ Formeln:
+Lagerbestand(Beginn) = Lagerbestand(Ende) + Bestellung
+t t-1 t-L
+Lagerbestand(Ende) = Lagerbestand(Beginn) – Bedarf
+t t t
+Dispobestand = Dispobestand – Bedarf + Bestellung
+t t-1 t t-1
+November 24 Gregor Blossey 16
+Vorteile der Bestellverfahren
+Bestellpunktverfahren: Bestellrhythmusverfahren:
+▪ Reduktion des Sicherheitsbe-
+▪ Einfache Verwaltung des Systems
+stands und der Lagerhaltungs-
+aufgrund fixer Bestellzyklen
+kosten aufgrund verbrauchs-
+gerechter Beschaffung ▪ Reduktion der Bestell- und
+Transportkosten für Kompo-
+▪ Reduktion der Bestellkosten durch
+nenten vom gleichen Zu-lieferer
+Bestimmung der optimalen
+Bestellmenge
+November 24 Gregor Blossey 17
+Übungsaufgaben
+▪ Liegt in Kürze im OLAT
+▪ Gruppen aus maximal 2 Leuten dürfen gebildet werden
+▪ Abgabe bis 24 Uhr am Tag vor dem nächsten Termin!
+▪ 3 Extrapunkte für vorrechnen der Lösung
+November 24 Gregor Blossey 18

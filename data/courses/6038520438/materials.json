@@ -1,0 +1,95 @@
+{
+  "course_id": "6038520438",
+  "course_name": "2026S432521 PS Einführung in die Makroökonomik",
+  "files": [
+    {
+      "filename": "Syllabus_432021_432521.pdf",
+      "title": "Syllabus_432021_432521.pdf",
+      "creator": "Breitenlechner, Maximilian",
+      "type": "pdf",
+      "size": "85.9 kB",
+      "folder_nid": "113435062837733",
+      "folder_label": "Ressourcen",
+      "folder_path": "",
+      "priority": true,
+      "text_file": "courses/6038520438/texts/113435062837733__Syllabus_432021_432521.pdf.txt"
+    },
+    {
+      "filename": "Aufgabenblatt_1.pdf",
+      "title": "Aufgabenblatt_1.pdf",
+      "creator": "Breitenlechner, Maximilian",
+      "type": "pdf",
+      "size": "60.4 kB",
+      "folder_nid": "113435062837733",
+      "folder_label": "Ressourcen",
+      "folder_path": "",
+      "priority": true,
+      "text_file": "courses/6038520438/texts/113435062837733__Aufgabenblatt_1.pdf.txt"
+    },
+    {
+      "filename": "Aufgabenblatt_2.pdf",
+      "title": "Aufgabenblatt_2.pdf",
+      "creator": "Breitenlechner, Maximilian",
+      "type": "pdf",
+      "size": "68.3 kB",
+      "folder_nid": "113435062837733",
+      "folder_label": "Ressourcen",
+      "folder_path": "",
+      "priority": true,
+      "text_file": "courses/6038520438/texts/113435062837733__Aufgabenblatt_2.pdf.txt"
+    },
+    {
+      "filename": "Aufgabenblatt_3.pdf",
+      "title": "Aufgabenblatt_3.pdf",
+      "creator": "Breitenlechner, Maximilian",
+      "type": "pdf",
+      "size": "59.7 kB",
+      "folder_nid": "113435062837733",
+      "folder_label": "Ressourcen",
+      "folder_path": "",
+      "priority": true,
+      "text_file": "courses/6038520438/texts/113435062837733__Aufgabenblatt_3.pdf.txt"
+    },
+    {
+      "filename": "Aufgabenblatt_4.pdf",
+      "title": "Aufgabenblatt_4.pdf",
+      "creator": "Breitenlechner, Maximilian",
+      "type": "pdf",
+      "size": "47.9 kB",
+      "folder_nid": "113435062837733",
+      "folder_label": "Ressourcen",
+      "folder_path": "",
+      "priority": true,
+      "text_file": "courses/6038520438/texts/113435062837733__Aufgabenblatt_4.pdf.txt"
+    },
+    {
+      "filename": "Aufgabenblatt_5.pdf",
+      "title": "Aufgabenblatt_5.pdf",
+      "creator": "Breitenlechner, Maximilian",
+      "type": "pdf",
+      "size": "55.9 kB",
+      "folder_nid": "113435062837733",
+      "folder_label": "Ressourcen",
+      "folder_path": "",
+      "priority": true,
+      "text_file": "courses/6038520438/texts/113435062837733__Aufgabenblatt_5.pdf.txt"
+    },
+    {
+      "filename": "Aufgabenblatt_6.pdf",
+      "title": "Aufgabenblatt_6.pdf",
+      "creator": "Breitenlechner, Maximilian",
+      "type": "pdf",
+      "size": "79.4 kB",
+      "folder_nid": "113435062837733",
+      "folder_label": "Ressourcen",
+      "folder_path": "",
+      "priority": true,
+      "text_file": "courses/6038520438/texts/113435062837733__Aufgabenblatt_6.pdf.txt"
+    }
+  ],
+  "diff": {
+    "added": [],
+    "removed": [],
+    "changed": []
+  }
+}

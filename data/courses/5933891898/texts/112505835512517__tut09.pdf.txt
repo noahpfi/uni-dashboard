@@ -1,0 +1,136 @@
+Tutorium — Functional Programming
+Week 09 — Folding
+Adam Pescoller
+T. Niederbrunner & J. Bodemann (for courteously providing their materials)
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 0/12
+Function composition
+(.) :: (b -> c) -> (a -> b) -> (a -> c)
+(f . g) x = f (g x)
+• Argument x is input to resulting function of type a -> c
+Example:
+addOne :: Integer -> Integer
+addOne = (+1)
+multTwo :: Integer -> Integer
+multTwo = (*2)
+term1 :: Integer -> Integer
+term1 = addOne.(+3).multTwo
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 1/12
+Application operator ($)
+• Right-associative operator with lowest
+precedence
+• Does in itself nothing, but helps to avoid
+binding when not wanted
+• Often used with function composition
+Precedence table (by René Thiemann)
+myFun x = (f . g . h) x
+myFun x = f . g . h $ x
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 2/12
+foldr
+foldr :: (a -> b -> b) -> b -> [a] -> b : foldr f z f
+foldr _ z [] = z
+foldr f z (x:xs) = f x (foldr f z xs) 1 : 1 f
+• foldr replaces [] with z, and : with f. 2 : 2 f
+• z and resulting type of f have to be the same.
+3 : 3 f
+• Last element is in innermost expression, so we say
+foldr folds right-to-left 4 [] 4 z
+• When using lambda abstractions for f, customary
+use:
+(\x acc -> expr)
+Example (visualized on the right):
+foldr f z [1,2,3,4] = f 1 (f 2 (f 3 (f 4 z)))
+foldr f z (1:2:3:4:[]) = 1 `f` (2 `f` ( 3 `f` (4 `f` z)))
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 3/12
+foldl
+foldl :: (b -> a -> b) -> b -> [a] -> b : foldl f z f
+foldl _ z [] = z
+foldl f z (x:xs) = foldl f (f z x) xs 1 : f 4
+• First element is in innermost expression, so we say 2 : f 3
+foldl folds left-to-right.
+3 : f 2
+• Customary use for f in lambda abstractions:
+(\acc x -> expr)
+4 [] z 1
+• Note that the accumulator is now the first
+parameter.
+Example (visualized on the right):
+foldl f z [1,2,3,4] = f (f (f (f z 1) 2) 3) 4
+foldl f z (1:2:3:4:[]) = (((z `f` 1) `f` 2) `f` 3) `f` 4
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 4/12
+Exercise 9.1: findMax
+Create a function findMax, that given a list of positive Integers returns the Integer
+with the highest value.
+Use foldr.
+Evaluate findMax [4,3,5,5] with the definition of foldr given on the previous slide.
+Bonus: What do you need to change in findMax for it to work with negative Integers
+as well?
+Hint: there is no such thing as a minimal Integer, since they are theoretically infinite
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 5/12
+Exercise 9.1: Possible Solution
+-- here we use 0 as base case, and the already defined function max
+-- Note: one could argue findMax [] returning 0 being questionable
+findMax :: [Integer] -> Integer
+findMax = foldr max 0
+-- using 0 as base case can backfire, when using negative Integers,
+-- we solve that here, by using foldr1, that doesn't have base case,
+-- so we create an explicit error for the base case of the empty list
+findMax' :: [Integer] -> Integer
+findMax' [] = error "Not defined for an empty list"
+findMax' xs = foldr1 max xs
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 6/12
+Exercise 9.2: recreate filter with foldr
+Create a function myFilter that replicates the behaviour of filter using foldr.
+Reminder: Signature filter :: (a -> Bool) -> [a] -> [a]
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 7/12
+Exercise 9.2: Possible Solution
+-- we create an accumulator, that is the filtered result and add only
+-- elements, that fulfill the filter function
+myFilter :: (a -> Bool) -> [a] -> [a]
+myFilter f = foldr (\x acc -> if f x then x : acc else acc) []
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 8/12
+zip and zipWith
+zip :: [a] -> [b] -> [(a, b)]
+zip [] _ = []
+zip _ [] = []
+zip (a:as) (b:bs) = (a,b) : zip as bs
+• Takes two lists and returns a list of tuples.
+• Stops when one of the lists ends.
+• zip [1] ['a', 'b'] == [(1,'a')]
+• zip [1, 2] ['a'] == [(1,'a')]
+zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
+• Works similar, takes function as parameter to apply to both lists instead of
+making a tuple.
+• zipWith f [x1,x2,...] [y1,y2,...] == [f x1 y1, f x2 y2,...]
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 9/12
+Exercise 9.3: firstName
+Create a function firstName, that given a list of names and an ordering as list of
+Integers, returns the name with the lowest number in the order.
+Use zip and foldr1
+Examples:
+firstName ["Franz", "Viktoria", "Anna", "Gregor"] [2,1,0,3] == "Anna"
+firstName ["Franz", "Viktoria", "Anna", "Gregor"] [2,1,4,3] == "Viktoria"
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 10/12
+Exercise 9.3: Possible Solution
+-- using foldr1 you don't have any base case, but an empty list creates
+-- a runtime error, so you can always catch that case(s) earlier
+-- and output a better error
+firstName :: [String] -> [Integer] -> String
+firstName [] _ = error "No names given"
+firstName _ [] = error "No ordering given"
+firstName names order = snd . foldr1 (\x acc ->
+if (fst x) < (fst acc)
+then x
+else acc
+) $ zip order names
+Solution file
+You can find this file in the attachments.
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 11/12
+Questions? Need help? Feedback?
+• Element Chat (with handle @adam.pescoller:student.uibk.ac.at)
+• Adam.Pescoller@student.uibk.ac.at
+• http://cl-informatik.uibk.ac.at/teaching/ws25/fp/feedback.php
+Tutorium—FunctionalProgramming WS25—Week09—Folding AdamPescoller 12/12

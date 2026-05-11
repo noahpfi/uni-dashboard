@@ -1,0 +1,62 @@
+PS Einführung in die Makroökonomik
+Aufgabenblatt 6
+Sommersemester2026
+1. A.WasspiegeltdieHandelsbilanzwider?
+B. Erklären Sie den Unterschied zwischen “heimischer Nachfrage” und der “Nachfrage nach
+heimischenGütern”.
+C. Leiten Sie die Handelsbilanz grafisch her. Das heißt, zeichnen Sie zunächst in einem Koordi-
+natensystem(NachfrageaufderY-AchseundAngebotaufderX-Achse)dieheimischeNachfrage
+(Z =C+I+G),dieheimischeNachfrageminusImporte(AA=Z−IM)sowiedieheimischeNach-
+frage minus Importe plus Exporte (ZZ = AA+EX). Leiten Sie anschließend in einer separaten
+GrafikdieHandelsbilanzgrafischab(mitdenNettoexportenaufderY-AchseunddemOutputauf
+derX-Achse).
+D.GehenSienundavonaus,dassdieausländischenEinkommenYf steigen. StellenSiedieda-
+raus resultierenden Änderungen grafisch dar und erläutern Sie die Anpassungsprozesse verbal.
+WasergibtsichimneuenGütermarkt-GleichgewichtinBezugaufdieHandelsbilanz(istdiesenun
+ausgeglichen, liegt ein Handelsbilanzdefizit oder ein Handelsbilanzüberschuss vor - und wie hat
+sichdiesinRelationzurAusgangssituationinCentwickelt)?
+2. A. Gehen Sie davon aus, dass der J-Kurven-Effekt wirkt. Welches der folgenden Ereignisse tritt
+nacheinerrealenAufwertungein(nureineAntwortmöglichkeitistkorrekt)?
+Nach einer realen Aufwertung sind heimische Produkte im Ausland wettbewerbsfähiger. / Eine
+reale Aufwertung führt stets zu einem langfristigen Anstieg der Exporte. / Die J-Kurve ist das
+Ergebnis sinkender Produktivität im Exportsektor. / Die Handelsbilanz verbessert sich kurzfristig
+undverschlechtertsichdann. /DerrealeWechselkursistgleichdemnominalenWechselkurs.
+B.FertigenSieeinepassendeGrafikanundladenSiediesehierhoch:
+C.ErläuternSiezudemverbal,wiesoSiedieGrafiksogezeichnethabenundwelcheSchlussfol-
+gerungenSiedarausziehen:
+3. Es sei eine offene Volkswirtschaft gegeben, welche durch die folgenden Verhaltensgleichungen
+beschriebenwird:
+C =c +c ·(Y −T)=200+0.4·(Y −T)
+0 1
+I =300
+G=225
+T =300
+NX =nx ·Yf −nx ·Y −nx ·ϵ=0.59·Yf −0.10·Y −1.00·ϵ
+X IM E
+ϵ=0.82
+Yf =700
+DerrealeWechselkurs(ϵ)istwiefolgtdefiniert: ϵ= E·P,wobeiP dasinländischePreisniveau,und
+Pf
+Pf dasPreisniveauderHandelspartnerbezeichnet.
+(a) BerechnenSiedasGleichgewichtseinkommenindieserÖkonomie.
+(b) BerechnenSiedieHandelsbilanzdieserÖkonomie.
+(c) BerechnenSiedenMultiplikatordesautonomenKonsumsindieserÖkonomie.
+1|2
+(d) NehmenSiean,dassdieseÖkonomiedenHandelmitdemAuslandvoneinemTagaufden
+anderenkompletteinstellt. WärederMultiplikatordiesernungeschlossenenÖkonomienun
+größer oder kleiner als der Multiplikator, den Sie eben berechnet haben? Begründen Sie
+(kurz)IhreAntwort.
+(e) Der reale Wechselkurs wertet nun auf ϵ′ = 0.7 ab. Berechnen Sie das neue Gleichgewicht-
+seinkommenY∗′.
+(f) BerechnenSiedieneueHandelsbilanzdieserÖkonomie.
+4. GehenSieaufdasDatenportalderEuropäischenZentralbank(https://data.ecb.europa.eu/).
+LadenSiefolgendeZeitreihenvonderHomepage(überdenZeitraum1999Q1bis2018Q1):
+• WechselkursSchweizerFranken/Euro(Daten-Code: EXR.Q.CHF.EUR.SP00.A)
+• WechselkursBritischePfund/Euro(Daten-Code: EXR.Q.GBP.EUR.SP00.A)
+(a) Veranschaulichen Sie die beiden Zeitreihen in einen Diagramm. Vergessen Sie nicht die
+GrafikzuBeschriften: Titel,AchsenbeschriftungundLegendederZeitreihen.
+(b) SinddiebeidenWechselkurseflexibeloderfest? SehenSieeinenUnterschiedvorbzw. nach
+derFinanzkrisevon2007?
+(c) Wie stark hat der Britische Pfund/Euro Wechselkurs im Zeitraum von 2007 Q1 bis 2009 Q1
+auf-/abgewertet?
+2|2

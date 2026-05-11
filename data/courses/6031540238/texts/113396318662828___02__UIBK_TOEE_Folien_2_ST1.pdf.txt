@@ -1,0 +1,265 @@
+Theorie ökonomischer Entscheidungen
+Prof. Dr. Heiner Schumacher
+UIBK
+2. Spieltheorie I
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 1/24
+Einleitung
+Spieltheorie ist eine mathematische Sprache, die wir verwenden, um
+strategische Interaktion zu analysieren.
+Strategische Interaktion tritt immer dann auf, wenn das Verhalten
+mehrerer Personen sich wechselseitig beein‡usst.
+Beispiele: Wettbewerb zwischen Firmen, Auktionen,
+Verhandlungssituationen (Tarifverträge, Klimaschutz),
+Zentralbankpolitik, Strategisches Verhalten in der Kriegsführung oder
+im Sport.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 2/24
+Einleitung
+Überblick
+Grundlegende Konzepte
+Nash Gleichgewicht
+Gleichgewicht in gemischten Strategien
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 3/24
+Grundlegende Konzepte
+De…nition eines Spiels
+Eine Menge von Spielern i N = 1,...,n .
+2 f g
+Eine Menge von möglichen Strategien für jeden Spieler: s S . Ein
+i i
+2
+Strategiepro…l ist ein Vektor
+s = (s ,s ,...,s ) S = S S ... S .
+1 2 n 1 2 n
+2 (cid:2) (cid:2) (cid:2)
+Der Vektor s beinhaltet die Strategien aller Spieler außer die von
+i
+(cid:0)
+Spieler i, i.e., s = (s ,...,s ,s ,...,s ).
+i 1 i 1 i+1 n
+(cid:0) (cid:0)
+Eine Nutzenfunktion die angibt, welche Auszahlung ein Spieler
+erhält in Abhängigkeit davon, welche Strategien von allen Spielern
+gewählt worden sind: u : S R (Spieler i’s Nutzenfunktion).
+i
+!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 4/24
+Grundlegende Konzepte
+Ziel jedes Spielers ist es, eine Strategie zu wählen, die den eigenen
+Nutzen maximiert.
+Jeder Spieler kennt die Struktur des Spiels.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 5/24
+Grundlegende Konzepte
+Wenn es nur zwei Spieler gibt, lassen sich Spiele oft durch eine
+Auszahlungsmatrix darstellen.
+Betrachten wir das folgende Beispiel mit zwei Spielern S1, S2 und
+zwei Strategien pro Spieler.
+S1/S2 Links Rechts
+Oben 1,3 0,1
+Unten 2,1 1,0
+Interpretation: Wenn S1 “Unten”und S2 “Rechts”wählt, dann
+erhält S1 eine Auszahlung von 1 und S2 eine Auszahlung von 0.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 6/24
+Grundlegende Konzepte
+Dominante Strategien
+Was sind die optimalen Strategien der beiden Spieler?
+Wenn S2 “Links”spielt, ist für S1 “Unten”besser als “Oben”. Wenn
+S2 “Rechts”spielt, ist für S1 “Unten”besser als “Oben”.
+Es ist also eine dominante Strategie für S1 “Unten”zu spielen.
+Genauso ist es eine dominante Strategie für S2 “Links”zu spielen.
+Eine dominante Strategie ist eine Strategie, die für einen Spieler
+immer optimal ist, d.h., unabhängig davon, welche Strategien seine
+Gegenspieler gewählt haben.
+In dem Beispiel erhalten wir ein Gleichgewicht in dominanten
+Strategien.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 7/24
+Grundlegende Konzepte
+Iterierte Eliminierung strikt dominierter Strategien (IESDS)
+In den meisten Spielen gibt es keine dominanten Strategien (und
+daher auch kein Gleichgewicht in dominanten Strategien). Wie
+können wir solche Spiele analysieren?
+S1/S2 Links Mitte Rechts
+Oben 1,0 1,2 0,1
+Unten 0,3 0,1 2,0
+Idee: Man schließt strikt dominierte Strategien aus.
+Eine Strategie B wird von einer anderen Strategie A strikt dominiert,
+wenn die Strategie A bei allen möglichen Entscheidungen der
+Gegenspieler zu einer strikt höheren Auszahlung führt.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 8/24
+Grundlegende Konzepte
+Wir wenden IESDS in dem Beispiel an:
+“Rechts”wird streng dominiert durch “Mitte”.
+Ein rationaler Spieler S2 wird “Rechts”nicht wählen.
+Wenn S1 weiß, dass S2 rational ist, kann er “Rechts”eliminieren.
+Dann ist für ihn “Unten”streng dominiert.
+Wenn S2 weiß, dass Spieler S1 rational ist und dass Spieler S1 weiß,
+dass S2 rational ist, kann er “Unten”eliminieren. Dann ist für ihn
+“Links”streng dominiert.
+Fazit: Es wird “Oben, Mitte”gespielt.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 9/24
+Nash-Gleichgewicht
+Die bisherigen Lösungskonzepte helfen bei den meisten Spielen nicht
+weiter.
+Betrachten wir folgendes Beispiel:
+S1/S2 Links Mitte Rechts
+Oben 3,3 2,4 3,2
+Mitte 4,2 6,6 0,8
+Unten 2,3 8,0 4,4
+In diesem Spiel gibt es weder dominante, noch dominierte Strategien.
+Wir suchen deshalb die besten Antworten.
+Eine Strategie s ist eine beste Antwort auf s wenn gilt:
+i i
+(cid:0)
+u (s ,s ) u (s ,s ) für alle s S .
+i i i i i0 i i0 i
+(cid:0) (cid:21) (cid:0) 2
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 10/24
+Nash Gleichgewicht
+Markieren Sie für jede Strategie von S2, was die beste Antwort von
+S1 auf diese Strategie ist. Am besten unterstreichen Sie die höchste
+Auszahlung von S1 in jeder Spalte der Matrix.
+Markieren Sie für jede Strategie von S1, was die beste Antwort von
+S2 auf diese Strategie ist. Am besten unterstreichen Sie die höchste
+Auszahlung von S2 in jeder Zeile der Matrix.
+Sollte es mehrere maximale Auszahlungen in einer Spalte (Zeile)
+geben, müssen Sie alle diese Auszahlungen unterstreichen.
+Wir haben ein Nash Gleichgewicht gefunden, wenn es eine Zelle in
+der Matrix gibt, in der beide Auszahlungen unterstrichen sind.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 11/24
+Nash Gleichgewicht
+Ein Strategiepro…l (s ,...,s ) ist ein Nash Gleichgewicht, wenn für
+1(cid:3) n(cid:3)
+jeden Spieler i und jede Strategie s dieses Spielers s eine beste
+i i(cid:3)
+Antwort auf s ist, i.e., für jeden Spieler i und s gilt:
+(cid:3)i i
+(cid:0)
+u (s ,s ) u (s ,s ) für alle s S .
+i i(cid:3) (cid:3)i i i (cid:3)i i i
+(cid:0) (cid:21) (cid:0) 2
+Beachten Sie, dass nur eine schwache Ungleichheit gefordert wird!
+In einem Nash-Gleichgewicht hat kein Spieler einen Anreiz, sein
+Verhalten einseitig zu ändern (d.h., von der vorgegebenen Strategie
+abzuweichen während die Gegenspieler ihr Verhalten nicht ändern).
+Zum Zeitpunkt, in dem ein Spieler sich für eine Strategie entscheiden
+muss, weißer nicht, welche Strategien seine Gegenspieler wählen
+werden. Er kann nur eine beste Antwort gegen das erwartete
+Verhalten der Gegenspieler wählen. Im Gleichgewicht müssen diese
+Erwartungen korrekt sein.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 12/24
+Nash Gleichgewicht
+Warum sollten wir erwarten, dass ein Nash Gleichgewicht gespielt
+wird?
+Rationale Analyse des Spiels (was kommt als Ergebnis in Frage?)
+Vorschlag von außen (Beispiel: soziale Norm wie “Rechts vor Links”)
+Kommunikation vor dem Spiel
+Lernen durch Versuch und Irrtum
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 13/24
+Nash Gleichgewicht
+Multible Nash Gleichgewichte
+In vielen Spielen gibt es mehrere Gleichgewichte.
+Betrachten Sie den folgenden “Kampf der Geschlechter”:
+“Sie”/“Er” Ballett Boxen
+Ballett 2,1 0,0
+Boxen 0,0 1,2
+Zeigen Sie, dass sowohl “Ballett, Ballett”als auch “Boxen, Boxen”
+Nash Gleichgewichte sind!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 14/24
+Nash Gleichgewicht
+Wenn es mehrere Nash Gleichgewichte gibt, ist nicht klar, welches
+gespielt wird bzw. ob überhaupt ein Nash Gleichgewicht gespielt wird.
+Es gibt ein paar Konzepte, die versuchen, dieses Problem zu lösen:
+Fokalpunkte (Schelling)
+Selbstgestützte Absprachen
+Verfeinerung des Gleichgewichtsbegri¤s (“Re…nements”)
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 15/24
+Nash Gleichgewicht
+Fokalpunkte
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 16/24
+Nash Gleichgewicht
+Fokalpunkte sind Eigenschaften der Umgebung die genutzt werden
+können, um das Verhalten des Gegenspielers zu antizipieren.
+Sie zeigen, dass sich Individuen auch ohne Kommunikation
+koordinieren können.
+Gibt es einen Fokalpunkt im “Kampf der Geschlechter”?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 17/24
+Nash Gleichgewicht
+Pareto Optimalität
+Wir könnten argumentieren, dass ein bestimmtes Nash Gleichgewicht
+gespielt werden sollte, da es höhere Auszahlungen für beide Spieler
+liefert als jedes andere Gleichgewicht.
+S1/S2 Links Rechts
+Oben 100,100 0,0
+Unten 0,0 1,1
+“Oben, Links”ist das Auszahlungs-dominante Nash Gleichgewicht.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 18/24
+Nash Gleichgewicht
+Wenn die Spieler allerdings die Strategie ihres Gegners nicht genau
+kennen, könnte es Sinn machen, eine andere Strategie zu wählen.
+S1/S2 Left Right
+Up 9,9 0,8
+Down 8,0 7,7
+Ein Nash Gleichgewicht ist Risiko-dominant wenn es “weniger
+riskant”ist.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 19/24
+Gleichgewicht in gemischten Strategien
+In einigen Spielen gibt es kein Nash Gleichgewicht in reinen
+Strategien.
+Betrachten Sie das sogenannte “Elfmeterspiel”:
+S1/S2 Links Rechts
+Links -1,1 1,-1
+Rechts 1,-1 -1,1
+In diesem Spiel gibt ein Gleichgewicht in gemischten Strategien:
+Jeder Spieler wählt mit Wahrscheinlichkeit 1/2 “Links”und mit
+Wahrscheinlichkeit 1/2 “Rechts”.
+Eine gemischte Strategie für Spieler i ist ein Vektor, der jeder
+(reinen) Strategie von Spieler i eine Wahrscheinlichkeit zuordnet.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 20/24
+Gleichgewicht in gemischten Strategien
+Wie …nden wir ein Nash Gleichgewicht in gemischten Strategien?
+Nehmen Sie an, S1 erwartet, dass S2 “Links”mit Wahrscheinlichkeit
+q wählt.
+Die erwartete Auszahlung von S1 durch Strategie “Links”ist dann
+E[u(Links)] = q ( 1)+(1 q) 1 = 1 2q.
+(cid:2) (cid:0) (cid:0) (cid:2) (cid:0)
+Die erwartete Auszahlung von S1 durch Strategie “Rechts”ist
+E[u(Rechts)] = q 1+(1 q) ( 1) = 2q 1.
+(cid:2) (cid:0) (cid:2) (cid:0) (cid:0)
+S1 ist indi¤erent zwischen “Links”und “Rechts”genau dann wenn
+E[u(Links)] = 1 2q = 2q 1 = E[u(Rechts)].
+(cid:0) (cid:0)
+Also muss im Gleichgewicht q = 1/2 gelten!
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 21/24
+Gleichgewicht in gemischten Strategien
+Bei einer gemischten Strategie ist der Spieler immer indi¤erent
+zwischen den reinen Strategien, die er mit positiver
+Wahrscheinlichkeit spielt.
+Eine gemischte Strategie ist genau dann eine beste Antwort auf ein
+Strategiepro…l, wenn sie eine reine Strategie mit positiver
+Wahrscheinlichkeit nur dann wählt, wenn diese reine Strategie selbst
+eine beste Antwort auf das Strategiepro…l ist. (Warum?)
+Was könnte eine Interpretation von gemischten Strategien sein?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 22/24
+Gleichgewicht in gemischten Strategien
+Als Beispiel betrachten wir das “Freiwilligen-Dilemma”.
+Ein Verbrechen wird von N Personen beobachtet.
+Jede Person kann zwischen den Strategien “Polizei anrufen”und
+“Polizei nicht anrufen”wählen.
+Jede Person will, dass die Polizei gerufen wird. Allerdings würde jede
+Person vorziehen, dass jemand anderes die Polizei ruft.
+Die Auszahlung von Spieler i ist 0, wenn niemand die Polizei ruft; sie
+ist v > 0 wenn Spieler i die Polizei nicht anruft, die Polizei aber von
+jemand anderes angerufen wird; und sie ist v c > 0 wenn Spieler i
+(cid:0)
+die Polizei selbst anruft.
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 23/24
+Gleichgewicht in gemischten Strategien
+Gibt es ein Nash Gleichgewicht in reinen Strategien?
+Gibt es ein symmetrisches Nash Gleichgewicht in reinen Strategien?
+(“symmetrisch”bedeutet, dass alle Spieler die gleiche Strategie
+wählen)
+Finden Sie das symmetrische Nash Gleichgewicht in gemischten
+Strategien. In diesem Gleichgewicht ruft jeder Spieler die Polizei mit
+Wahrscheinlichkeit p (0,1) an.
+2
+Wie hängt die Wahrscheinlichkeit, dass niemand die Polizei anruft,
+von der Zahl der Spieler N ab?
+Prof.Dr.HeinerSchumacher (UIBK) TheorieökonomischerEntscheidungen 2.SpieltheorieI 24/24

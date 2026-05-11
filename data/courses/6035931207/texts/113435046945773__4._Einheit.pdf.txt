@@ -1,0 +1,688 @@
+Aktiva
+3.2 Folgebewertung – Umlaufvermögen
+3.2 Umlaufvermögen § 203 (2) UGB
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Umlaufvermögen § 203 (2) UGB
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Das Umlaufvermögen in der Bilanz
+Aktiva Passiva
+A.Anlagevermögen A.Eigenkapital
+I. Immaterielle Vermögensgegenstände I. Nennkapital (Grund-, Stammkapital)
+II. Sachanlagen II. Kapitalrücklagen
+III.Finanzanlagen III.Gewinnrücklagen
+IV.Bilanzgewinn (Bilanzverlust), davon
+B. Umlaufvermögen
+Gewinnvortrag/Verlustvortrag
+I. Vorräte
+B. Rückstellungen
+II. Forderungen und sonstige
+C. Verbindlichkeiten
+Vermögensgegenstände
+D. Rechnungsabgrenzungsposten
+III.Wertpapiere und Anteile
+IV.Kassenbestand, Schecks, Guthaben
+bei Kreditinstituten
+C. Rechnungsabgrenzungsposten
+D. Aktive Latente Steuern
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Grundlagen der Bewertung
+UMLAUFVERMÖGEN
+→Pflicht zur Abschreibung auf den niedrigeren Börsenkurs oder
+Marktpreis bzw. den beizulegenden Wert am Stichtag
+Vorräte Forderungen Wertpapiere
+▪ Beizulegender Zeitwert
+▪ volleinbringliche Forderungen
+▪ Roh-, Hilfs- und Betriebsstoffe ▪ Anteile an verbundenen
+▪ Zweifelhafte Forderungen
+▪ (un-) fertige Erzeugnisse Unternehmen
+▪ Unsichere Forderungen
+▪ Sonstige Wertpapiere und Anteile
+▪ Identitätspreisverfahren ▪ an einem aktiven Markt
+▪ Durchschnittspreisverfahren ermittelter Preis.
+▪ Pauschalwertberichtigung (PWB)
+(geleitend, gewogen) ▪ Marktpreis gegeben, wenn
+▪ Einzelwertberichtigung (EWB)
+▪ Verbrauchsfolgeverfahren (FIFO, Wertpapier z.B. an Börse
+LIFO) gehandelt wird.
+Nina Limberg I Seminar Bilanzierung und Bilanzanalyse WS 25/26 198
+3.2 Umlaufvermögen
+Vorräte
+3.2 Vorräte
+…sind alle auf Lager liegenden Gegenstände, die im Produktionsprozess bearbeitet werden oder für den Absatz bestimmt
+sind.
+Beispiele
+▪ Roh-, Hilfs- und Betriebsstoffe
+▪ Unfertige Erzeugnisse
+▪ Fertige Erzeugnisse
+▪ Handelswaren
+Inventur
+▪ Körperliche (art-, mengen- und wertmäßigen) Bestandsaufnahme aller
+Vermögensgegenstände und Schulden zu einem bestimmten Stichtag
+▪ Unentbehrliche Vorstufe zur Jahresabschlusserstellung
+▪ Zählen, wiegen und messen der Vermögensgegenstände
+▪ Gibt Auskunft über Inventurdifferenz (Schwund)
+▪ Schwund wird als Aufwand verbucht
+(Abschreibung und Wertberichtigung von Vorräten)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Vorratsbewertung - Übersicht
+Vorratsbewertung
+▪ Einzelbewertung der auf Lager liegenden Vorräte oft schwierig
+▪ Nach dem Grundsatz der Wirtschaftlichkeit der Rechnungslegung erlaubt der Gesetzgeber daher nach § 209 UGB in
+Abweichung vom Einzelbewertungsprinzip gemäß § 201 Abs. 2 Z 3 UGB für bestimmte Gegenstände des
+Vorratsvermögens eine vereinfachte Bewertung:
+− Gruppenbewertung (Durchschnittswerte)
+− Sammelbewertung (FiFo, LiFo)
+− Festbewertung (nur für Roh-, Hilfs- und Betriebsstoffe; gemäß § 209 Abs. 1 UGB; Wert und Menge werden auf
+der Grundlage einer Fiktion festgestellt; Bsp: Schrauben einer Tischlerei; alle 5 Jahre Inventur)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Vorratsbewertung
+Einzelbewertung
+Identitätspreisverfahren
+▪ Voraussetzung: getrennte Lagerung oder Identifikation anhand besonderer Merkmale möglich
+▪ Verbrauch und Endbestand werden jeweils mit den Anschaffungskosten bewertet.
+→Entspricht dem Grundsatz der Einzelbewertung
+Gruppenbewertung
+Durchschnittspreisverfahren
+▪ Gleitendes Durchschnittspreisverfahren
+− Voraussetzung: gleichartige Gegenstände können zu einer Gruppe zusammengefasst werden und direkte mengenmäßige
+Verbrauchsermittlung ist möglich.
+− Ermittlung des Durchschnittspreises vor jedem Abgang und Bewertung des Verbrauchs mit diesem Preis
+▪ Gewogenes Durchschnittspreisverfahren
+− Voraussetzung: gleichartige Gegenstände können zu einer Gruppe zusammengefasst werden.
+− Ermittlung des Durchschnittsbestands am Bilanzstichtag
+Lagerwert am 1.1. + Lagerwert aller Zugänge
+Durchschnittspreis =
+Gesamte Lagermenge (Stück)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Vorratsbewertung
+Sammelbewertung
+Verbrauchsfolgeverfahren
+▪ FIFO (First In First Out)
+→ Es wird unterstellt, dass die zuerst angeschafften Vorräte als erstes wieder verbraucht werden. Der Endbestand
+setzt sich aus den letzten, noch nicht verbrauchten Zukäufen zusammen.
+▪ LIFO (Last In First Out)
+→ Es wird unterstellt, dass die zuletzt angeschafften Vorräte als erstes wieder verbraucht werden. Die Bewertung
+des Endbestands geht vom Anfangsbestand aus.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Einsatzermittlung
+Direkte Einsatzermittlung Indirekte Einsatzermittlung
+Anfangsbestand Anfangsbestand
++ Zukäufe + Zukäufe
+- Retourwaren - Retourwaren
+- Abfassungen (= Einsatz) - Ist-Endbestand
+= Soll-Endbestand = Einsatz
+- Ist-Endbestand
+= Schwund
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Umlaufvermögen
+Forderungen
+3.2 Forderungen: Kunde zahlt später
+Forderungen
+volleinbringliche zweifelhafte (=dubiose) uneinbringliche
+Forderungen Forderungen Forderungen
+evtl.
+Einzelwertberichtigung Einzelwertberichtigung
+Pauschalwertberichtigung
+ohne USt-Korrektur mit USt-Korrektur
+ohne USt-Korrektur
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Bewertung von Forderungen
+Verfahren der Wertberichtigung von Forderungen
+(1) Einzelwertberichtigung (EWB) → für spezielle Kreditrisiken
+▪ kundenspezifisches Ausfallrisiko
+▪ aufgrund konkreter Anhaltspunkte, dass die Rückzahlung einer bestimmten Forderung gefährdet ist.
+(2) Pauschalwertberichtigung (PWB) → für das allgemeine Kreditrisiko
+▪ Erfahrungswerte aus der Vergangenheit bzw. allgemeine Praxis
+▪ ohne konkrete Anhaltspunkte → Vorsorge für nicht erfassbare Ausfallsrisiken
+▪ Um dem Niederstwertprinzip Rechnung zu tragen
+▪ Forderungen werden in Abhängigkeit von Dubiosenrisiken in Gruppen zusammengefasst (z.B. Länder, erreichte Mahnstufe…)
+▪ prozentualer Abschlag auf ein gegebenes Forderungskollektiv.
+▪ Berechnungsgrundlage ist der Nettobetrag → Keine USt-Korrektur
+Abschreibungen auf Forderungen (aus Lieferungen und Leistungen) sind vorzunehmen wegen Uneinbringlichkeit
+(sicherem Zahlungsausfall)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Bewertung von Forderungen
+Buchungssätze Einzelwertberichtigung
+Zweifelhafte (dubiose) Forderungen
+Bildung der Einzelwertberichtigung
+(7) Zuweisung zu EWB AN (2) EWB zu Forderungen
+Einzelwertberichtigung wird aufgelöst
+(2) EWB zu Forderungen AN (4) Erträge aus der Auflösung von EWB
+Uneinbringliche Forderung (→ Abschreibung)
+(7) Abschreibung Forderung AN (2) Forderung
+(3) USt
+Achtung: War eine Forderung, die sich als uneinbringlich herausstellt, zuvor als dubios verbucht, so wird die Einzelwertberichtigung
+entsprechend aufgelöst/angepasst!
+Buchungssatz Pauschalwertberichtigung
+(7) Abschreibung auf Forderung AN (2) Pauschalwertberichtigung von Forderungen
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Forderungsbewertung in Zeiten von Covid-19
+▪ Besonders bedeutsam für Kreditinstitute und deren Bedarf Wertberichtigungen auf vergebene Kredite (also ihre
+Forderungen) vorzunehmen
+▪ Mit erhöhtem Risiko von Forderungsausfällen der Schuldner ist grds. zu rechnen; jedoch Berücksichtigung von
+öffentlichen Unterstützungsmaßnahmen (öffentliche Zuschüsse, abgesicherte Kredite) beim Schuldner
+▪ Allfällige Notwendigkeit der Anpassung der Pauschalwertberichtigung bzw. erwarteter Kreditausfälle über
+Einzelwertberichtigung
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3.2 Umlaufvermögen
+Aktien
+3.2 Aktien
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Wissensüberprüfung
+
+Bilanzierungsvorschriften nach UGB
+Passivseite der Bilanz
+Kapital 4
+Egger/Samer/Bertl Band 1
+Kapitel 5
+Univ.-Prof. Dr. Dipl.-Ing. Mag. Stéphanie Mittelbach-Hörmanseder, MIM (CEMS)
+Institut für Rechnungslegung, Wirtschaftsprüfung und Steuerlehre
+Die Inhalte dieses Skriptes sind urheberrechtlich geschützt und dürfen nicht weiter verbreitet werden!
+Passivseite der Bilanz
+1
+Passivierung nach UGB
+2 Bewertung von Verbindlichkeiten und Rückstellungen
+3
+Eigenkapital
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Das Eigen- und Fremdkapital in der Bilanz
+Aktiva Passiva
+A.Anlagevermögen A.Eigenkapital
+I. Immaterielle Vermögensgegenstände I. Nennkapital (Grund-, Stammkapital)
+II. Sachanlagen II. Kapitalrücklagen
+III.Finanzanlagen III.Gewinnrücklagen
+IV.Bilanzgewinn (Bilanzverlust), davon
+B. Umlaufvermögen
+Gewinnvortrag/Verlustvortrag
+I. Vorräte
+B. Rückstellungen
+II. Forderungen und sonstige
+C. Verbindlichkeiten Fremdkapital
+Vermögensgegenstände
+D. Rechnungsabgrenzungsposten
+III.Wertpapiere und Anteile
+IV.Kassenbestand, Schecks, Guthaben Die Passivseite der Bilanz gibt Aufschluss über die Mittelherkunft für die auf
+der Aktivseite gelisteten Vermögensgegenstände.
+bei Kreditinstituten Bei der Mittelherkunft wird zwischen Eigenkapital und Fremdkapital
+unterschieden. Diese unterscheiden sich insbesondere in Bezug auf:
+C. Rechnungsabgrenzungsposten
+▪ Haftung
+▪ Fristigkeit
+D. Aktive Latente Steuern
+▪ Verzinsung
+▪ Verfügungsrechte
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Bilanzierungsentscheidungen
+1. Soll bilanziert werden?
+Ansatz
+Fragestellung: Liegt eine abstrakte und/oder konkrete Bilanzierungsfähigkeit vor?
+2. Mit welchem Wert soll bilanziert werden?
+Bewertung
+Fragestellung: Mit welchem Betrag (Wertansatz) ist das Wirtschaftsgut in der
+Bilanz auszuweisen? (Bewertungsregeln §§ 201ff UGB)
+3. Wo soll bilanziert werden?
+Ausweis
+Fragestellung: Unter welcher Bilanzposition ist das Wirtschaftsgut auszuweisen?
+(§ 198 UGB ‚Inhalt der Bilanz‘, § 224 UGB ‚Bilanzgliederung‘)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. Ansatz
+Passivierung
+(5. Die Passivposten der Bilanz im Einzelnen (§224 Abs 3) -Linde Datenbank)
+1. Passivierung nach UGB
+Der Vollständigkeitsgrundsatz des § 196 Abs. 1 UGB verlangt, dass der Jahresabschluss sämtliche Rückstellungen und
+Verbindlichkeiten enthält, „soweit gesetzlich nichts anderes bestimmt ist“.
+→ Verbindlichkeiten und Rückstellungen können unter dem Begriff der „Schulden“ zusammengefasst werden:
+▪ Verbindlichkeiten: rechtliche Verpflichtung, hinsichtlich Existenz und Höhe sicher
+▪ Rückstellung: Unsicherheit bezüglich der Existenz und/oder der Höhe bzw. des Eintrittszeitpunkts der (rechtlichen
+oder wirtschaftlichen) Verpflichtung
+→ Voraussetzung: Passivierungsfähigkeit des Sachverhalts
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. Konkrete und abstrakte Passivierungsfähigkeit
+(1) Passivierungsfähig und damit i.d.R. passivierungspflichtig ist jeder Geschäftsvorfall, der die Eigenschaften einer
+Schuld erfüllt und keinem ausdrücklichen (konkreten) Passivierungswahlrecht/ Passivierungsverbot unterliegt.
+→Ansatz aufgrund von „abstrakter Passivierungsfähigkeit“
+(2) Passivierungsfähig ist darüber hinaus jeder Geschäftsvorfall, für den der Gesetzgeber ein ausdrückliches
+(konkretes) Passivierungsgebot bzw. ein ausdrückliches (konkretes) Passivierungswahlrecht vorgesehen hat.
+→Ansatz aufgrund von „konkreter Passivierungsfähigkeit“
+Kriterien einer Schuld
+▪ Erwartete (wahrscheinliche) wirtschaftliche Belastung
+▪ Rechtliche oder wirtschaftliche (Außen-)Verpflichtung
+▪ Selbständige Bewertbarkeit
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. Kriterium der Verpflichtung
+Verpflichtungen
+Außenverpflichtungen Innenverpflichtungen
+(gegenüber Dritten) (gegenüber sich selbst)
+Bürgerlich-rechtliche Öffentlich-rechtliche Wirtschaftlich begründete
+Verpflichtung Verpflichtung (faktische) Verpflichtung
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel: Schuldendefinition
+Bei einem Chemieunternehmen sickern aus undichten Leitungen Schadstoffe in das Erdreich ein.
+Das Unternehmen erwartet für den Zeitpunkt der Betriebsstilllegung eine entsprechende Verfügung zur Sanierung der
+Altlasten. Die zuständige Fachbehörde wurde allerdings bisher nicht informiert. Das Unternehmen verzichtet auf die
+Einholung eines externen Gutachtens zur Schätzung der Entsorgungskosten, um die Geheimhaltung der Verunreinigung
+nicht zu gefährden.
+Liegt bei diesem Sachverhalt eine Schuld vor?
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. (Konkrete) Passivierungsgebote
+Passiver Rechnungsabgrenzungsposten (§ 198 Abs. 6 UGB)
+Aufwandsrückstellungen, die auf Grund der GoB zwingend sind (§ 198 Abs. 8 Z 2 UGB)
+Sonderfälle:
+▪ Rückstellung für passive latente Steuern (§ 198 Abs. 9 UGB)
+▪ Kulanzrückstellungen (§ 198 Abs. 8 Z 4 c) UGB)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel: Rechnungsabgrenzungsposten
+Ein Vermieter erhält am 01.11.2024 die Miete für eine Lagerhalle in Höhe von 36.000€ für 12 Monate im Voraus.
+Wie ist dieser Sachverhalt beim Vermieter am Bilanzstichtag (31.12.2024) nach UGB zu berücksichtigen?
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. (Konkrete) Passivierungswahlrechte
+Aufwandsrückstellungen
+„Rückstellungen dürfen außerdem für ihrer Eigenart nach genau umschriebene, dem Geschäftsjahr oder einem früheren
+Geschäftsjahr zuzuordnende Aufwendungen gebildet werden, die am Abschlussstichtag wahrscheinlich oder sicher,
+aber hinsichtlich ihrer Höhe oder des Zeitpunkts ihres Eintritts unbestimmt sind.“
+(§ 198 Abs. 8 Z 2 Satz 1 UGB)
+Unwesentliche Rückstellungen
+„Eine Verpflichtung zur Rückstellungsbildung besteht nicht, soweit es sich um nicht wesentliche Beträge handelt.“
+(§ 198 Abs. 8 Z 3 Satz 2 UGB)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+1. (Konkrete) Passivierungsverbote
+Weitere Rückstellungen
+„Andere Rückstellungen als die gesetzlich vorgesehenen dürfen nicht gebildet werden.“
+(§ 198 Abs. 8 Z 3 Satz 1 UGB)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Rückstellungen vs. Verbindlichkeiten
+Rückstellungen Verbindlichkeiten
+Höhe und/oder Fälligkeit Unterscheidungskriterium: Grund, Höhe und Fälligkeit
+der Verpflichtung UNGEWISSHEIT der Verpflichtung
+Stehen NICHT fest Stehen fest
+Verbindlichkeiten sind rechtliche
+Verpflichtungen gegenüber
+forderungsberechtigten Dritten
+Merke: Verrechnungsverbot!
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Bewertung von Rückstellungen und Verbindlichkeiten
+Zugangsbewertung von Schulden
+„Verbindlichkeiten sind zu ihrem Erfüllungsbetrag […] anzusetzen. Rückstellungen sind mit dem Erfüllungsbetrag
+anzusetzen, der bestmöglich zu schätzen ist.“
+(§ 211 Abs. 1 Satz 1 und 2 UGB)
+Mit Erfüllungsbetrag ist der Betrag gemeint, der bei der normalen Abwicklung eines Geschäftsvorgangs eingesetzt
+werden muss, um eine bestehende Verpflichtung zu erfüllen bzw. abzulösen.
+Folgebewertung von Schulden
+▪ Aus dem Vorsichtsprinzip folgt, dass auf Schulden grundsätzlich ein (strenges) Höchstwertprinzip anzuwenden ist
+(in Analogie zum Niederstwertprinzip für Vermögensgegenstände).
+▪ Danach ist eine Schuld am Bilanzstichtag mit einem höheren Wert anzusetzen, falls die aus der Schuld resultierende
+Belastung über dem bisherigen Rückzahlungs- oder Erfüllungsbetrag (=Buchwert) liegt.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Bewertung
+2.1 Verbindlichkeiten
+(5.5. Verbindlichkeiten )
+2.1 Verbindlichkeiten
+Verbindlichkeiten
+▪ Anleihen
+▪ Verbindlichkeiten ggü. Kreditinstituten
+▪ Erhaltene Anzahlungen auf Bestellungen
+▪ Verbindlichkeiten aus Lieferung und Leistung
+▪ Verbindlichkeiten ggü. verbundenen Unternehmen
+▪ Verbindlichkeiten ggü. Unternehmen, mit denen ein Beteiligungsverhältnis besteht
+▪ Sonstige Verbindlichkeiten
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2.1 Bewertung von Verbindlichkeiten
+Erstbewertung
+▪ Ausgangswert: Erfüllungs- bzw. Rückzahlungsbetrag
+Folgebewertung: Höchstwertprinzip
+▪ Steigt Rückzahlungsbetrag ➔ höhere Wert anzusetzen
+▪ Sinkt Rückzahlungsbetrag ➔ gesunkener Wert muss angesetzt werden (Untergrenze: Entstehungswert, d.h.
+Rückzahlungsbetrag zum Zeitpunkt der Verbindlichkeitsentstehung)
+Beispiel für schwankende Wertansätze: Fremdwährungskredite
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel: Folgebewertung von Verbindlichkeiten
+Bei Verbindlichkeiten kann die Anwendung des Höchstwertprinzips insbesondere bei Währungsverbindlichkeiten
+notwendig sein.
+Beispiel: Die Export AG hat am 30. November 2024 Waren aus den USA und der Schweiz gekauft. Die Zahlung ist
+jeweils für den 30. April des Folgejahres vorgesehen und soll in USD (10.000 USD) bzw. SFR (14.000 SRF) erfolgen.
+Mit welchem Kurs sind die Verbindlichkeiten zum Stichtag 31.12.2024 zu bewerten?
+30. November 2024 31. Dezember 2024
+€ / USD 1,04/1,00 1,05/1,00
+€ / SFR 0,93/1,00 0,92/1,00
+Wie hoch ist jeweils der Wertansatz in der Bilanz?
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2.1 Eventualverbindlichkeiten
+„Unter der Bilanz sind Verbindlichkeiten aus der Begebung und Übertragung von Wechseln, Bürgschaften, Garantien sowie
+sonstigen vertraglichen Haftungsverhältnissen, soweit sie nicht auf der Passivseite anzugeben sind, zu vermerken […].“
+(§ 199 UGB)
+Für KapG: Angabe im Anhang (§ 237 Abs. 1 Z 2 UGB)
+→ Verpflichtungen, mit deren Inanspruchnahme derzeit nicht gerechnet wird
+→ Kriterium: Wahrscheinlichkeit der Inanspruchnahme
+Beispiel: Die A GmbH übernimmt für einen Bankkredit der B AG eine Ausfallbürgschaft. B leistet zeitgerecht und in voller
+Höhe.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2. Bewertung
+2.2 Rückstellungen
+(5.4. Rückstellungen)
+2.2 Rückstellungen
+▪ Rückstellungen für Abfertigungen
+▪ Rückstellungen für Pensionen
+▪ Steuerrückstellungen
+▪ Sonstige Rückstellungen
+Rückstellungen sind potentielle zukünftige Zahlungsverpflichtungen für erkennbare Risiken & drohende Verluste.
+Sie sind
+▪ der Höhe nach und/oder
+▪ dem Zeitpunkt des Anfalls nach UNGEWISS.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2.2 Bedeutung von Rückstellung
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2.2 Rückstellung für drohende Verluste aus schwebenden Geschäften
+Definition
+▪ Schwebende Geschäfte sind Verträge, bei denen beide Parteien ihre Leistung noch nicht vollständig erbracht haben
+▪ Grundsätzlich: keine Bilanzierung schwebender Geschäfte, da kein Erfüllungsrückstand besteht (Imparitätsprinzip
+als Ausnahme!)
+▪ Es wird nicht die gesamte Verpflichtung, sondern nur der drohende Verlust (Differenzgröße) passiviert
+Ansatzpflicht
+▪ Bildung einer Rückstellung, wenn ein Verlustüberhang besteht → erwartete Aufwendungen > erwartete Erträge
+▪ Voraussetzung: Verlust muss wahrscheinlich sein (nicht bloß möglich)
+▪ Es werden nur zukünftige (noch nicht realisierte) Verluste berücksichtigt
+▪ Rückstellungen für drohende Verluste aus schwebenden Geschäften sind nur dann zu bilden, wenn keine
+Abschreibungen auf Aktivposten vorgenommen werden können
+Rechtsgrundlage:
+▪ Unternehmensgesetzbuch (UGB) § 198 Abs. 8 Z 2 (drohende Verluste aus schwebenden Geschäften)
+▪ Vorsichtsprinzip: § 201 Abs. 2 Z 4 (Vorsichtsprinzip / Imparitätsprinzip)
+Bewertung
+▪ Ansatz mit dem bestmöglichen Schätzwert unter Berücksichtigung aller erkennbaren Risiken
+▪ Rechtsgrundlage: § 211 Abs. 1 UGB
+Ziel der Regelung: Gläubigerschutz + Vorsichtsprinzip
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2.2 Auswirkungen der Bildung und Auflösung einer Rückstellung
+1. Bildung einer Rückstellung 2. Auflösung einer Rückstellung
+GuV a) Rückstellung = tatsächliche Verpflichtung
+(deckungsgleich)
+▪ Aufwand ↑
+▪ keine GuV-Wirkung (erfolgsneutral)
+▪ Periodenergebnis ↓
+▪ nur Bilanzverkürzung – Periodenergebnis unverändert
+▪ Rückstellung wird zur Abdeckung des Verlustes
+Bilanz
+verwendet → kein zusätzlicher Aufwand in der
+▪ Passiva (Rückstellungen) ↑
+Folgeperiode
+▪ Eigenkapital ↓
+b) Rückstellung < tatsächliche Verpflichtung (zu niedrig)
+▪ zusätzlicher Aufwand ↑
+▪ Periodenergebnis ↓
+Systematische Einordnung
+c) Rückstellung > tatsächliche Verpflichtung (zu hoch)
+Rückstellungen sind ungewisse Verbindlichkeiten
+▪ Ertrag ↑
+(§ 198 Abs. 8 UGB)
+▪ Periodenergebnis ↑
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2.2 Systematisierung von Rückstellungen
+Rückstellungen
+Innenverpflichtungen
+Außenverpflichtungen
+(Aufwandsrückstellungen)
+→ Rückstellungen für ihrer Eigenart nach
+genau umschriebene, dem
+Geschäftsjahr oder einem früheren
+Rechtliche Wirtschaftliche
+Geschäftsjahr zuzuordnende
+Verpflichtungen Verpflichtungen Aufwendungen (§ 198 Abs. 8 Z 2 UGB)
+▪ Rückstellungen für ▪ Rückstellungen für
+ungewisse Verbindlichkeiten Gewährleistungen ohne
+(§ 198 Abs. 8 Z 1 UGB) rechtliche Verpflichtung
+(Kulanzen)
+▪ Rückstellungen für drohende
+(§ 198 Abs. 8 Z 4 c)
+Verluste aus schwebenden
+UGB)
+Geschäften
+(§ 198 Abs. 8 Z 1 UGB)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel: Rückstellungen I
+Die Kühl AG produziert und verkauft Gefriertruhen. Eines Tages merkt die Kühl AG, dass die Cool AG Gefriertruhen
+anbietet, die den eigenen zum Verwechseln ähnlich sehen. Die Kühl AG verklagt daraufhin die Cool AG auf Schadenersatz
+i.H.v. 200.000 € wegen Verletzung des Gebrauchsmusterschutzgesetzes. Die gesamten Anwalts-, Gutachter- und
+Gerichtskosten betragen etwa 12.000 €. Diese Kosten hat der Verlierer des Verfahrens zu tragen.
+Wie und ggf. in welcher Höhe sollten die beiden Unternehmen am Bilanzstichtag den Sachverhalt in ihrem
+Jahresabschluss berücksichtigen, wenn:
+1) Beide Parteien überzeugt sind, den Prozess zu gewinnen.
+2) Jede der Parteien überzeugt ist, den Prozess zu verlieren.
+3) Beide Parteien meinen, das Gericht wird der Klage folgen.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel: Rückstellungen II
+Im Januar 2025 hat Unternehmen X einen Vertrag über die Herstellung und Lieferung einer Maschine zum Festpreis von
+1,0 Mio. € abgeschlossen. Produktion, Lieferung und Bezahlung sollen Anfang 2026 erfolgen. Im Januar 2025 wurde
+hierfür mit Kosten von 0,8 Mio. € kalkuliert. Zum Bilanzstichtag 30.06.2025 stellt sich allerdings heraus, dass die Kosten
+wegen Beschaffungsproblemen des Materials auf Grund der Corona-Krise nunmehr voraussichtlich 1,1 Mio. € betragen
+werden.
+Wie ist damit im Jahresabschluss zum 30.06.2025 umzugehen?
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel: Rückstellungen III
+Auf Grund ihrer guten Auftragslage hat die INSTAND AG im Jahr 2025 auf die grundsätzlich alle drei Jahre
+durchgeführte grundlegende Instandhaltung ihres Maschinenparks verzichtet. Die INSTAND AG beabsichtigt, die
+Instandhaltungsmaßnahmen im Laufe des Jahres 2026 nachzuholen und rechnet hierfür mit Aufwendungen in Höhe
+von 120.000 EUR.
+Wie ist damit im Jahresabschluss 2025 umzugehen?
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2.2 Folgebewertung von Rückstellungen
+→ Rückstellungen sind - vollständig oder teilweise - erfolgswirksam aufzulösen (Auflösungspflicht),
+▪ wenn der Verpflichtungsgrund entfallen ist oder der Unternehmer die Verpflichtung auf Grund neuer Informationen
+für ganz unwahrscheinlich hält,
+▪ wenn die Rückstellung in der bisherigen Höhe nicht neu
+gebildet werden könnte.
+Wird die Rückstellung in der zuvor gebildeten Höhe in Anspruch genommen, wird die Inanspruchnahme erfolgsneutral
+verbucht.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2.2 Bewertung von langfristigen Rückstellungen
+„Rückstellungen mit einer Restlaufzeit von mehr als einem Jahr sind mit einem marktüblichen Zinssatz abzuzinsen.“
+(§ 211 Abs. 2 Satz 1 UGB)
+▪ Bilanzierung von Barwerten: Diskontierung erwarteter künftiger Auszahlungen „mit einem marktüblichen Zinssatz“
+▪ Erläuternde Bemerkungen zum RÄG 2014 sehen zwei alternative Arten der Bestimmung des „marktüblichen
+Zinssatzes“ vor:
+− Durchschnittszins der letzten 7 Geschäftsjahre nach deutschem Bilanzrecht, welcher von der Deutschen
+Bundesbank veröffentlicht wird (https://www.bundesbank.de/de/statistiken/geld-und-kapitalmaerkte/zinssaetze-und-
+renditen/abzinsungszinssaetze-gemaess-253-abs-2-hgb-7-jahresdurchschnitt-650652)
+− Zinssatz nach § 9 Abs. 5 EStG (derzeit 3,5%)
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+2.2 Abzinsungssätze der Bundesbank
+Deutsche
+Bundesbank
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel zur Bilanzierung langfristiger Rückstellungen
+Das stromerzeugende Unternehmen S AG beschließt, einen Windpark, der bereits seit längerem keinen Strom
+mehr produziert, endgültig stillzulegen. Das Grundstück konnte bereits an ein anderes Unternehmen veräußert werden.
+Im Kaufvertrag ist vereinbart, dass Unternehmen S bis zum 31.12.2028 die Windenergieanlagen vollständig beseitigt. Es
+ist geplant, die Beseitigung in 2028 vorzunehmen.
+Auf Basis eines aktuellen Angebots eines Abrissunternehmens ist mit Kosten von 6 Mio. € zu rechnen. Die Preise für
+ähnliche Arbeiten sind in der Vergangenheit konstant um 1% p.a. gestiegen. Mögliche gegenläufige Erlöse aus dem
+Verkauf der demontierten Anlage fallen zu gleichen Teilen dem Erwerber und Unternehmen S zu. Derzeit wird der Anlage
+ein Schrottwert von 500.000 € beigemessen.
+Wie ist die Rückbauverpflichtung zum 31.12.2025 bei dem Unternehmen S zu bewerten?
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Wissensüberprüfung
+? Wiederholungsfrage: Schadenersatzprozess
+Die Ofen GmbH ist ein Unternehmen, das Kappen in unterschiedlichen Designs und Varianten produziert.
+Zum Ende des Geschäftsjahres 2020 wurde gegen das Unternehmen ein Schadenersatzprozess eingeleitet. Der Grund
+dafür ist der Verkauf eines fehlerhaften Ofens, der einen Hochhausbrand verursachte.
+Zum 31.12.2020 wird in diesem Zusammenhang mit folgenden Kosten gerechnet:
+▪ Schadenersatzleistung: EUR 500.000, exkl. 20% USt
+▪ Prozesskosten: EUR 200.000, exkl. 20% Ust
+Im Laufe des Jahres 2021 wurde die Ofen GmbH zu einer Schadenersatzleistung iHv EUR 480.000 (exkl. 20% USt)
+verurteilt. Die Prozesskosten, die sich im Rahmen des Verfahrens ansammelten, belaufen sich nach der
+Urteilsverkündung auf EUR 210.000 (netto, 20 % USt). Beide Rechnungen werden im Jahr X1 mittels Banküberweisung
+beglichen.
+Nehmen Sie alle nach UGB notwendigen Buchungen vor, welche die Ofen GmbH für die Geschäftsjahre 2020 und 2021
+durchzuführen hat.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Wiederholungsfrage: Rückstellungen
+Die Muster GmbH verkauft im Jahr 2025 Maschinen. Auf die Maschinen wird eine 2-jährige Garantie gewährt. Aus
+Erfahrung weiß das Unternehmen, dass voraussichtlich Garantiekosten i.H.v. 30.000€ entstehen werden.
+Wie hat die Muster GmbH den Sachverhalt nach UGB zu bewerten? Nehmen Sie, falls notwendig, alle erforderlichen
+Buchungen vor.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Passivseite
+3. Eigenkapital
+(5.1. Eigenkapital der Kapitalgesellschaft)
+3. Das Eigenkapital in der Bilanz
+Aktiva Passiva
+A.Anlagevermögen A.Eigenkapital
+I. Immaterielle Vermögensgegenstände I. Nennkapital (Grund-, Stammkapital)
+II. Sachanlagen II. Kapitalrücklagen
+III.Finanzanlagen III.Gewinnrücklagen
+IV.Bilanzgewinn (Bilanzverlust), davon
+B. Umlaufvermögen
+Gewinnvortrag/Verlustvortrag
+I. Vorräte
+B. Rückstellungen
+II. Forderungen und sonstige
+C. Verbindlichkeiten
+Vermögensgegenstände
+D. Rechnungsabgrenzungsposten
+III.Wertpapiere und Anteile
+IV.Kassenbestand, Schecks, Guthaben
+bei Kreditinstituten
+C. Rechnungsabgrenzungsposten
+D. Aktive Latente Steuern
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Eigenkapital
+Eigenkapital = Vermögen – Schulden
+Bestandteile des Eigenkapitals
+▪ Nennkapital (bzw. Grundkapital/Stammkapital)
+▪ Kapitalrücklagen
+▪ Gewinnrücklagen
+▪ Bilanzgewinn bzw. -verlust
+[Hinweis: Stille Reserven sind nicht Bestandteil des hier definierten Eigenkapitals.]
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Bestandteile des Eigenkapitals
+Nennkapital
+→ Betrag der übernommenen Einlagen (§ 229 Abs 1 UGB)
+Ausweis in Höhe des im Firmenbuch zum Bilanzstichtag eingetragenen Betrages
+▪ Grundkapital mind. 70.000 EUR bei AG
+▪ Stammkapital 35.000 EUR bei GmbH
+▪ Stammkapital mind. 10.000€ bei FlexCo
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Arten von Rücklagen
+Rücklagen
+Kapitalrücklagen Gewinnrücklagen
+Gebundene Kapitalrücklagen Gesetzliche Rücklagen
+Nicht gebundene Kapitalrücklagen Satzungsmäßige Rücklagen
+Freie Rücklagen
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Rücklagen vs. Rückstellungen
+Kriterium Rücklagen Rückstellungen
+Stärkung d. Unternehmens, Vorsorge für ungewisse
+Zweck
+Investitionen Verbindlichkeiten
+Aus Gewinnen oder wird gesetzlich Für erwartete Kosten mit unklarer
+Bildung
+vorgeschrieben Höhe / Zeitpunkt
+Bilanzierung Teil des Eigenkapital Teil des Fremdkapitals
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Bestandteile des Eigenkapitals
+Kapitalrücklagen
+→ Rücklagen, die nicht aus dem Gewinn gebildet wurden, sondern durch Kapitaleinzahlung (Bareinlagen und
+Sacheinlagen) entstanden sind. § 229 Abs 2 Z 1-5:
+▪ Betrag, der bei der ersten oder einer späteren Ausgabe von Anteilen für einen höheren Betrag als den Nennbetrag
+oder den dem anteiligen Betrag des Grundkapitals entsprechenden Betrag über diesen hinaus erzielt wird
+▪ Betrag, der bei der Ausgabe von Schuldverschreibungen für Wandlungsrechte und Optionsrechte zum Erwerb von
+Anteilen erzielt wird
+▪ der Betrag von Zuzahlungen, die Gesellschafter gegen Gewährung eines Vorzugs für ihre Anteile leisten
+▪ die Beträge, die bei der Kapitalherabsetzung gemäß den § 185, 192 Abs 5 AktG und § 59 GmbHG zu binden sind;
+▪ der Betrag von sonstigen Zuzahlungen, die durch gesellschaftsrechtliche Verbindungen veranlasst sind.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Bestandteile des Eigenkapitals
+Kapitalrücklagen
+Gebundene Kapitalrücklagen
+▪ § 229 Abs 4 bestimmt, dass Aktiengesellschaften und große Gesellschaften mit beschränkter Haftung (§ 221 Abs 3)
+gebundene Rücklagen auszuweisen haben, die aus der gebundenen Kapitalrücklage und der gesetzlichen Rücklage
+bestehen.
+→ Gilt nicht für kapitalistische Personengesellschaften
+▪ Gem § 229 Abs 5 sind in die gebundene Kapitalrücklage die in § 229 Abs 2 Z 1-4 genannten Beträge einzustellen. Der
+Gesamtbetrag der gebundenen Teile der Kapitalrücklage ist in dieser gesondert auszuweisen.
+▪ Gem § 229 Abs 7 dürfen die gebundenen Rücklagen nur zum Ausgleich eines ansonsten auszuweisenden
+Bilanzverlustes aufgelöst werden
+Nicht gebundene Kapitalrücklagen
+→Betrag von sonstigen Zuzahlungen, die durch gesellschaftsrechtliche Verbindungen veranlasst sind (§ 229 Abs 2 Z 5)
+▪ Nur Zuzahlungen aus dem direkten oder indirekten Gesellschafterbereich
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Bestandteile des Eigenkapitals
+Gewinnrücklagen
+→ Beträge, die im Geschäftsjahr oder einem früheren Geschäftsjahr aus dem Jahresüberschuss gebildet worden sind
+▪ Durch die Trennung zwischen Kapitalrücklagen und Gewinnrücklagen soll die Ertragskraft des Unternehmens besser
+dargestellt werden.
+▪ Grundsätzlich wird dieser Zweck durch den gesonderten Ausweis erreicht; in der Praxis ergeben sich aber eine Reihe
+von Einschränkungen für die Aussagekraft.
+Wenn z.B. eine Holdinggesellschaft den von der Tochtergesellschaft ausgeschütteten Gewinn an diese in Form
+von Gesellschafterzuschüssen oder Kapitalerhöhungen zurückführt, erscheinen Teile des Eigenkapitals, die
+wirtschaftlich aus dem Gewinn gebildet wurden, entweder als Bestandteil des Nennkapitals oder der
+Kapitalrücklagen.
+▪ Ein ähnlicher Effekt tritt ein, wenn aus dem Gewinn gebildete Rücklagen für eine Kapitalerhöhung aus
+Gesellschaftsmitteln verwendet werden.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Bestandteile des Eigenkapitals
+Gewinnrücklagen
+Gesetzliche Rücklage
+▪ Die gesetzlichen Rücklagen sind, wie auch die gebundenen Kapitalrücklagen (5.141.1), Teile der gebundenen
+Rücklagen. § 229 Abs 6:
+▪ in die gesetzliche Rücklage ist ein Betrag einzustellen, der mindestens dem zwanzigsten Teil des um einen
+Verlustvortrag geminderten Jahresüberschusses entspricht, bis der Betrag der gebundenen Rücklagen insgesamt den
+zehnten oder den in der Satzung bestimmten höheren Teil des Nennkapitals erreicht hat.
+▪ Diese Bestimmung gilt für alle Aktiengesellschaften und für große, nicht aber für mittelgroße und kleine GmbHs.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Beispiel: Bestandteile des Eigenkapitals
+Gewinnrücklagen
+Grundkapital 1. 1. 10.000
+Gesetzliche Rücklage
+Gebundene Kapitalrücklagen 1. 1. 800
+Gesetzliche Rücklage 1. 1. 100
+Jahresüberschuss 1. 1.–31. 12. 2.400
+Verlustvortrag 1. 1. 300
+Welcher Betrag ist der gesetzlichen Rücklage zuzuführen?
+Berechnung der gesetzlichen Rücklage
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Bestandteile des Eigenkapitals
+Gewinnrücklagen
+Andere Gewinnrücklagen
+▪ Gem § 229 Abs 3 dürfen als Gewinnrücklagen nur Beträge ausgewiesen werden, die im Geschäftsjahr oder in einem
+früheren Geschäftsjahr aus dem Jahresüberschuss gebildet worden sind.
+▪ Auf Grund des Aktiengesetzes steht es dem Vorstand einer AG (nicht aber dem Geschäftsführer einer GmbH), soweit
+dem nicht satzungsmäßige Bestimmungen entgegenstehen, frei, den gesamten oder einen Teil des positiven
+Differenzbetrages aus dem einer (freien) Gewinnrücklage zuzuführen. Das Ergebnis ist der Bilanz-
+gewinn/Bilanzverlust:
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Eigenkapital
+Negatives Eigenkapital
+→ Wenn der Posten A IV Bilanzverlust so hoch ist, dass er die Summe der Posten A I-III übersteigt, ist die Vorschrift des
+§ 225 Abs 1 zu beachten:
+▪ Ist das Eigenkapital durch Verlust aufgebraucht, so lautet dieser Posten „negatives Eigenkapital“. Im Anhang ist zu
+erläutern, ob eine Überschuldung im Sinne des Insolvenzrechts vorliegt.
+▪ Die Bezeichnung der Postengruppe des § 224 Abs 3 A „Eigenkapital“ als „negatives Eigenkapital“ erfolgt gem § 225
+Abs 1 bei bilanzmäßiger Überschuldung, dh wenn der Bilanzverlust so hoch ist, dass er die Summe aus Nennkapital
+und allen sonstigen unter A. ausgewiesenen Eigenkapitalbestandteilen übersteigt.
+Ausschüttungssperren
+→ Bei der Feststellung einer möglichen Ausschüttung des Bilanzgewinnes unter Berücksichtigung vorhandener
+Rücklagen ist auf die Ausschüttungssperren des § 235 und sonstige Ausschüttungssperren zu achten.
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+3. Das Eigenkapital in der Bilanz
+Aktiva Passiva
+A. Anlagevermögen A. Eigenkapital
+I. Immaterielle Vermögensgegenstände I. Nennkapital (Grund-, Stammkapital)
+II. Sachanlagen II. Kapitalrücklagen
+III. Finanzanlagen III. Gewinnrücklagen
+IV.Bilanzgewinn (Bilanzverlust), davon
+B. Umlaufvermögen
+Gewinnvortrag/Verlustvortrag
+I. Vorräte
+B. Rückstellungen
+II. Forderungen und sonstige
+C. Verbindlichkeiten
+Vermögensgegenstände
+D. Rechnungsabgrenzungsposten
+III. Wertpapiere und Anteile
+IV.Kassenbestand, Schecks, Guthaben bei
+Kreditinstituten
+C. Rechnungsabgrenzungsposten
+D. Aktive Latente Steuern
+Vermögen = Eigenkapital + Fremdkapital
+Vermögen – Fremdkapital = Eigenkapital
+Vorlesung Bilanzierung und Bilanzanalyse | © Mittelbach-Hörmanseder
+Wissensüberprüfung

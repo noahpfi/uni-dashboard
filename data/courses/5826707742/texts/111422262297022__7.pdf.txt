@@ -1,0 +1,333 @@
+Einführung in die Theoretische Informatik
+ArminWalch Georg Moser JoshuaOcker
+ManuelEberl SamuelFrontull VeraSchmitt
+https://tcs-informatik.uibk.ac.at
+Zusammenfassung
+Zusammenfassung der letzten LVA
+Satz
+SeiLeineformaleSprache,diefolgendenAussagensindäquivalent
+1 Listregulär
+2 L = L(G),wobeiGeinerechtslineareGrammatik
+3 L = L(D),wobeiDeinDEA
+4 L = L(E),wobeiEeinregulärerAusdruck
+Folgerung
+SeienL,MreguläreSprachen(überdemAlphabetΣ),danngilt(i)dieVereinigung
+L∪Mistregulär;(ii)dasKomplement∼Listregulär;(iii)derSchnittL∩Mistregulär;
+(iv)dieMengendifferenzL\Mistregulär.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 1
+Beispiel
+InduktiveDefinitionvonPalindromenüberΣ := {0,1}:
+1
+ϵ,0,1sindPalindrome
+2 Wennx einPalindromist,dannsindauch
+0x0 1x1
+Palindrome
+WirbetrachtendiefolgendenRegelnR:
+P → ϵ | 0 | 1
+P → 0P0 | 1P1
+DieKFGG = ({P},Σ,R,P)beschreibtdieSprachederPalindrome:
+L(G)istgenaudieMengederPalindromeüberdemAlphabetΣ
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 2
+Inhalte der Lehrveranstaltung
+Einführung in die Logik
+Syntax&SemantikderAussagenlogik,KalküldesnatürlichenSchließens,Konjunktive
+undDisjunktiveNormalformen
+Einführung in die Algebra
+algebraischeStrukturen,BoolescheAlgebra
+Einführung in die Theorie der Formalen Sprachen
+GrammatikenundFormaleSprachen,Chomsky-Hierarchie,ReguläreSprachen,
+KontextfreieSprachen,AnwendungenvonformalenSprachen
+Einführung in die Berechenbarkeitstheorie und Komplexitätstheorie
+AlgorithmischunlösbareProbleme,TuringMaschinen,Alternative
+Berechnungsmodelle,Reduktion,Komplexitätstheorie
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 3
+Lemma (für KFG)
+GelteA ⇒ X X ...X ⇒ ∗ x,wobeiX ∈ V∪Σ,x ∈ Σ∗;dannkönnenwirx indieStücke
+1 2 n i
+∗
+x ,x ,...,x brechen,sodassfürallei:X ⇒ x
+1 2 n i i
+Hilfsüberlegung
+• Wirbetrachten:X X ...X ⇒ ∗ x
+1 2 n
+• Seii < j,dannsindinx alleausX abgeleitetenSatzformenlinksvondenausX
+i j
+abgeleitetenzufinden
+Beweis (des Lemmas).
+∗
+1 WennX i ∈ Σ,dannX i = x i undoffensichtlichX i ⇒ x i
+∗
+2 WennX i ∈ V,dannerhaltenwirX i ⇒ x i indem
+• ExpansionenvonX ,...,X eliminiert
+1 i−1
+• ExpansionenvonX ,...,X eliminiert
+i+1 n
+• überflüssigeSchritteweggelassenwerden
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 4
+Lemma
+SeiG = (V,Σ,R,S)eineGrammatikund
+∗
+1 seiA ⇒ x eineAbleitunginG
+2
+seienu,v ∈ (V∪Σ)∗
+∗
+DannistauchuAv ⇒ uxv eineAbleitunginG
+Beweis.
+AngenommenesexistierenWörterw ,...,w ∈ (V∪Σ)∗,sodass
+1 k−1
+A ⇒ w ⇒ ··· ⇒ w ⇒ x
+1 k−1
+Wirargumentiereninformell:
+• WirbetrachtendenSchrittw ⇒ w füri ∈ {1,...,k−2}
+i i+1
+• NachDefinitiongiltauchuwv ⇒ uw v
+i i+1
+• DieanderenFällewerdengleichbehandelt
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 5
+Korrektheit der Grammatik.
+Esistzuzeigen,dassx ∈ L(G)gdw.x einPalindromist
+Wirzeigennur:x ∈ L(G)impliziertx isteinPalindrom.DazuverwendenwirInduktion
+∗
+nachderLängeℓderAbleitungP ⇒ x
+1 Basisℓ = 1:Alsogilteinerderfolgenden3Fälle:
+• x=ϵ
+• x=0
+• x=1
+InallenFällen:x istPalindrom
+2 Schrittℓ > 1:AlsohatdieAbleitungeinederfolgendenGestalten:
+• P⇒0P0⇒ ∗ 0y0=x
+• P⇒1P1⇒ ∗ 1y1=x
+wobeiy ∈ Σ∗
+∗
+SomitgiltP ⇒ y,worausmitInduktionshypothesefolgt,y isteinPalindrom;damit
+istaberauchx einPalindrom
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 6
+Linksableitung, Rechtsableitung und Rekursive Inferenz
+Definition
+• EineLinksableitungisteineAbleitungsodassimmer ⇒,⇒ ∗
+ℓ ℓ
+dieamweitestenlinksstehendeVariableersetztwird
+• IneinerRechtsableitungwirdimmer ⇒,⇒ ∗
+r r
+dieamweitestenrechtsstehendeVariableersetzt
+Beispiel
+WirbetrachtenKFGG = ({K},{(,)},R,K),wobeiR:
+K → ϵ | (K) | KK
+danngiltK ⇒ KK ⇒ K(K) ⇒ K() ⇒ (K)() ⇒ ()()
+r r r r r
+Definition (Eindeutigkeit einer Grammatik)
+KFGGheißteindeutig,wennjedesWortx ∈ L(G)genaueineLinksableitungbesitzt,
+ansonstenmehrdeutig
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 7
+Definition
+SeiGeineKFGundseiA → x eineRegelinG,sodassx ∈ (V∪Σ)∗.DieSprachevonA,
+bezeichnetalsL(A),kannmittelsrekursiverInferenzdefiniertwerden:
+1 Wennx ∈ Σ∗,dannx ∈ L(A)
+2 Andererseits,seix = X 1 ···X n ,wobeiX i ∈ V∪Σ
+Gelteaußerdemx ∈ L(X)oderx = X ∈ Σ
+i i i i
+Danngiltx x ···x ∈ L(A)
+1 2 n
+Bemerkung
+• DierekursiveInferenzentsprichdembottom-upparsingeinesCompilers:zuerst
+wirdderRumpfeinerRegelgelesen,dannwirddasErgebnisderVariableimKopf
+übergeben
+• DerParsergeneratoryacc(siehespäter)generierteinenbottom-upparser
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 8
+Beispiel
+WirbetrachtendieKFGG = ({E,I},{+,·,(,),a,b,0,1},R,E),wobeiRwiefolgt:
+1
+E→ I E→ E·E I→ a I→ I0
+E→ E+E E→ (E) I→ Ib I→ I1
+I→ Ia I→ b
+undzeigen(a+b10) ∈ L(E):
+Wortx Variable Regel Rekursion
+1 a I I→a
+2 b I I→b
+3 b1 I I→I1 2
+4 b10 I I→I0 3
+5 a E E→I 1
+6 b10 E E→I 4
+7 a+b10 E E→E+E 5,6
+8 (a+b10) E E→(E) 7
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 9
+Diskurs: Bäume
+P
+1 P 1
+0 P 0
+1
+DasisteinBaum
+UndsosehenBäumejetztaus
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 10
+Definition (Syntaxbaum)
+EinSyntaxbaumfürKFGG = (V,Σ,R,S)isteinBaumBmit:
+1 JederinnereKnotenvonBisteineVariableinV
+2 JedesBlattinBistentweder:
+• einTerminalausΣ
+• einNichtterminalausV,oder
+• ϵ
+ImletztenFallistdasBlattdaseinzigeKindseinesVorgängers
+3 SeiAeininnererKnoten,X 1 ,...,X n seineKinder(X i ∈ V∪Σ);danngilt:
+A → X ···X ∈ R
+1 n
+DasErgebniseinesSyntaxbaumsBfürGistdasWortüber(V∪Σ)∗,daswirerhalten,
+wennwirdieBlätterinBvonlinksnachrechtslesen
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 11
+Beispiel
+WirbetrachtendieKFGG = ({P},Σ,R,P)mitdenRegelnR:P → ϵ | 0 | 1 | 0P0 | 1P1
+DannistderfolgendeBaumeinSyntaxbaumfürG:
+P
+1 P 1
+0 P 0
+1
+Bemerkung
+VergleicheASTzumParsenvonHaskellausdrückeninFunktionalerProgrammierung
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 12
+Beispiel
+SeiG = ({L},{0,1,...,9,Nil,:}R,L)mitdenRegelnR:L → Nil | 0 : L | 1 : L | ··· | 9 : L
+L
+1 : L
+7 : L
+4 : Nil
+DasentsprichtderListe1 : 7 : 4 : Nil
+Bemerkung
+EigenschaftenvonSyntaxbäumenkönnenmitInduktionüberdieHöhedesBaumes
+gezeigtwerden.
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 13
+Satz
+SeiΣeinAlphabetundseix ∈ Σ∗.DiefolgendenBeschreibungenkontextfreier
+Sprachensindäquivalent:
+1 x ∈ L(A)nachdemrekursivenInferenzverfahren
+∗
+2 A ⇒ x
+∗
+3 A ⇒ x
+ℓ
+∗
+4 A ⇒ x
+r
+5 EsexistierteinSyntaxbaummitWurzelAundErgebnisx
+x ∈ L(A) ∃Syntaxbaum
+∗ ∗
+A ⇒ x A ⇒ x
+ℓ
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 14
+Satz
+Angenommenx ∈ L(A)nachdemrekursivenInferenzverfahren,danngibteseinen
+SyntaxbaumBmitWurzelAundErgebnisx
+Beweis.
+MitInduktionnachderAnzahlderRekursionenimInferenzverfahren
+• Basisx ∈ L(A),x = a ...a benutztgenaudieRegel
+1 k
+A → a ...a
+1 k
+WirkonstruiereneinenSyntaxbaumBmitWurzelAwiefolgt
+A
+a ...a
+1 k
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 15
+Beweis (Fortsetzung).
+• Schrittx ∈ L(A),x = x ...x benutztdieRegel
+1 n
+A → X ···X
+1 n
+wobeiX ∈ V∪Σund∀ix ∈ L(X)
+i i i
+NachIH∃SyntaxbäumeB geltenmitWurzelnX undErgebnisx
+i i i
+WirkonstruiereneinenneuenSyntaxbaummitWurzelA:
+A
+X ... X
+1 n
+...
+x x
+1 n
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 16
+Satz
+SeiBeinSyntaxbaummitWurzelAundErgebnisx ∈ Σ∗,danngibteseine
+Linksableitung(eineRechtsableitung)vonx ausA
+Beweis.
+MitInduktionnachderHöhedesSyntaxbaumsB
+• BasisHabeBdieGestalt: A
+x
+dannexistiertA → x ∈ R,alsoA ⇒ x
+ℓ
+• SchrittHabeBdieGestalt:
+A
+X X
+1 n
+...
+x x
+1 n
+dann∃A → X ···X ∈ R,also:
+1 n
+∗ ∗
+A ⇒ X ···X ⇒ x X ···X ⇒ x ···x x
+1 n 1 2 n 1 n−1 n
+ℓ ℓ ℓ
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 17
+Satz
+AngenommenA ⇒ ∗ x mitx ∈ Σ∗,dannliefertdasrekursiveInferenzverfahren,dass
+x ∈ L(A)
+Beweis.
+∗
+MitInduktionnachderLängeℓderAbleitungA ⇒ x:
+• BasisSeiℓ = 1,danngiltx ∈ L(A)
+• SchrittAngenommenℓ = ℓ′+1
+∗
+ZunächstkönnenwirdieAbleitungA ⇒ x wiefolgtschreiben:
+∗
+A ⇒ X X ···X ⇒ x x ···x = x
+1 2 n 1 2 n
+Wirverwenden,dasswirdieAbleitungenderSätzex aufbrechenkönnen,also
+i
+gilt:
+• WennX ∈Σ,dannX =x
+i i i
+• WennX ∈V,danngiltX ⇒ ∗ x undsomitx ∈L(X)
+i i i i i
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 18
+Anwendung von Kontextfreien Grammatiken
+Anwendung
+• Parsergeneratoren,beziehungsweiseimCompilerbau
+1 ParsergeneratorverwandeltdieBeschreibungeinerSpracheineinenParserfürdiese
+Sprache
+2 ParserwerdenzursyntaktischenAnalysevonProgrammenverwendet
+• AnwendungenimBereichderWissensrepräsentation,etwainXML-Dokumenten
+lexikalische Analyse
+• derEingabestromausASCII-Zeichenwirdanalysiert
+• interminaleSymbolederformalenSprachezerlegt,diemanTokennennt
+dieRegelnderlexikalischenAnalysewerdeninderfolgendenFormdefiniert
+Muster Aktion
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 19
+Beispiel
+KFGG fürarithmetischeAusdrücke
+2
+E → T | +T | −T | E+T | E−T
+T → F | T ·F | T/F
+F → c | v | (E) .
+inG giltetwa−c∗v ∈ L(E):
+2
+Wortx Variable Regel Rekursion
+1 c F F → c
+2 v F F → v
+3 c T T → F 1
+4 c·v T T → T ·F 3,2
+5 −c·v E E → −T 4
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 20
+Parsergenerierung in C mit yacc
+Regelteil calc.y (gekürzt)
+expression: term { $$ = $1; }
+| '+' term { $$ = $2; }
+| '-' term { $$ = -$2; }
+| expression '+' term { $$ = $1 + $3; }
+| expression '-' term { $$ = $1 - $3; }
+;
+term: factor { $$ = $1; }
+| term '*' factor { $$ = $1 * $3; }
+| term '/' factor { $$ = $1 / $3; }
+;
+factor: NUMBER { $$ = $1; }
+| '(' expression ')' { $$ = $2; }
+;
+EinführungindieTheoretischeInformatik,Wintersemester2024/25 21

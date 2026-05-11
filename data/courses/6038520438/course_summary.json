@@ -1,0 +1,33 @@
+{
+  "_hash": "9b48fec9068711c9",
+  "course_id": "6038520438",
+  "course_code": "2026S432521",
+  "course_type": "PS",
+  "course_title": "Einführung in die Makroökonomik",
+  "course_name": "2026S432521 PS Einführung in die Makroökonomik",
+  "ongoing_summary": "Die Zwischenklausur hat am 06.05. stattgefunden. Die nächste Deadline ist am 12.05. für das Webquiz. Die Schlussklausur findet am 17.06. statt.",
+  "deadlines": [
+    {
+      "date": "2026-05-12",
+      "description": "Abgabe des Webquizzes für das Proseminar Einführung in die Makroökonomik bis 23:59 Uhr"
+    },
+    {
+      "date": "2026-05-19",
+      "description": "Abgabe des Webquizzes für das Proseminar Einführung in die Makroökonomik bis 23:59 Uhr"
+    },
+    {
+      "date": "2026-06-02",
+      "description": "Abgabe des Webquizzes für das Proseminar Einführung in die Makroökonomik bis 23:59 Uhr"
+    },
+    {
+      "date": "2026-06-09",
+      "description": "Abgabe des Webquizzes für das Proseminar Einführung in die Makroökonomik bis 23:59 Uhr"
+    },
+    {
+      "date": "2026-06-17",
+      "description": "Schlussklausur für das Proseminar Einführung in die Makroökonomik von 11:30-13:00 Uhr"
+    }
+  ],
+  "requirements": "Die Prüfungsmodalitäten umfassen Webquizzes, Selbsttests und eine Zwischenklausur sowie eine Schlussklausur. Die genauen Anforderungen sind im Syllabus unter Ressourcen zu finden.",
+  "last_activity": "2026-06-17"
+}

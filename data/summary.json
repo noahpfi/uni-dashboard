@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-05-11",
+  "model": "llama-3.3-70b-versatile",
+  "sources": {
+    "mitteilungen_since": "2026-04-27",
+    "emails_non_dup": 0
+  },
+  "items": [
+    {
+      "type": "announcement",
+      "urgency": "medium",
+      "course": "2026S404005",
+      "date": "2026-05-18",
+      "title": "PS am 18.Mai statt 22.Mai",
+      "summary": "Das nächste PS findet am 18. Mai statt, nicht am 22. Mai.",
+      "action": ""
+    },
+    {
+      "type": "announcement",
+      "urgency": "medium",
+      "course": "2026S404005",
+      "date": "2026-06-15",
+      "title": "Präsentationen",
+      "summary": "Die Präsentationen finden am 15.06.2026 und 22.06.2026 statt. Es gilt Anwesenheitspflicht am Präsentationstermin der eigenen Gruppe.",
+      "action": "Vorbereiten Sie Ihre Präsentation"
+    },
+    {
+      "type": "announcement",
+      "urgency": "medium",
+      "course": "2026S406161",
+      "date": "2026-05-19",
+      "title": "Nächstes Seminar",
+      "summary": "Das nächste Seminar findet am 19.05. statt. Bitte bereiten Sie sich mit den Vorlesungsfolien und dem Buch von Egger/Samer/Bertl vor.",
+      "action": "Vorbereiten Sie sich auf das Seminar"
+    },
+    {
+      "type": "announcement",
+      "urgency": "medium",
+      "course": "2026S404001",
+      "date": "2026-06-01",
+      "title": "Tutorien zur Proseminarklausur",
+      "summary": "Es werden drei Tutorien veranstaltet, um sich auf die Proseminarklausur am 10.06.2026 vorzubereiten.",
+      "action": "Senden Sie Fragen/Beispiele an die Tutoren"
+    }
+  ]
+}

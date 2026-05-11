@@ -1,0 +1,317 @@
+Betriebswirtschaftliches Denken und Management
+Rechtsformwahl: Personen- und Kapitalgesellschaften
+Leonhard Dobusch
+7./8. Oktober 2025
+Universität Innsbruck
+Unternehmensverfassung
+Ordnungsprobleme arbeitsteiliger Wirtschaft
+Legitimationsfrage Organisationsfrage
+‣ Wie ist die formale
+‣ Welche Interessen
+Entscheidungsstruktur
+sollen Ziele und Politik
+eines Unternehmens
+eines Unternehmens
+interessenskonform zu
+bestimmen?
+gestalten?
+WAHL DER
+RECHTSFORM
+3
+Wahl der Rechtsform
+“
+4
+Quelle (Screenshot): https://www.wko.at/service/wirtschaftsrecht-gewerberecht/Unternehmensgruendung_Wahl_der_Rechtsform.html [24.09.2019]
+Anlässe für Rechtsformwahl
+‣ Gründung eines Unternehmens
+‣ Rechtsformwechsel
+‣ Zusammenschluss von Unternehmen
+5
+,7102.11.72
+,ehcowstfahcstriW
+/nemhenretnu/ed.owiw.www//:sptth
+lmth.6499966/rekcelhcs-notna-nov-llaf-dnu-geitsfua-muirepmi-eiregord/lednah
+6
+Der Fall »SCHLECKER«: „Zwei Buchstaben“
+“
+Der "eingetragene Kaufmann" (kurz e.K.) wird auch Einzelfirma
+oder Einzelunternehmen genannt und ist relativ leicht und
+kostengünstig zu gründen. [… ] Als Chef hat derjenige den
+Vorteil, frei entscheiden zu dürfen, ohne dass ihm irgendjemand
+hereinredet. […] Der Nachteil ist gewaltig: Anton Schlecker haftet
+mit seinem kompletten Privatvermögen für alle Schulden.
+Morgenpost, 01.02.2012, http://www.morgenpost.de/wirtschaft/
+article1896134/Zwei-Buchstaben-die-Schlecker-ruinierten.html
+7
+Diskussion des Falls »SCHLECKER«
+‣ Warum ist das Einzelunternehmen so eine beliebte Rechtsform?
+‣ Warum gibt es aber kaum große Unternehmen mit dieser
+Rechtsform?
+‣ Was könnte im konkreten Fall Schlecker die Umwandlung der
+Rechtsform (z.B. in eine GmbH) verhindert haben?
+8
+Rechtsformen & Kriterien der Rechtsformwahl
+1. Einzelunternehmen
+}
+}
+2. Personengesellschaften
+Ges bürgerl. Rechts (GbR)
+OG (Offene Gesellschaft)
+a) Haftung
+KG (Kommanditgesellschaft)
+b) Leitungsbefugnis
+Stille Gesellschaft
+c) Finanzierung
+d) Gewinn- und Verlustbeteiligung
+3. Kapitalgesellschaften
+e) Kosten und Publizität
+Ges. m. beschr. Haftung (GmbH)
+f) Steuerbelastung
+Aktiengesellschaft (AG)
+g) Kontinuität
+FlexKapG / FlexCo (seit 1.11.23)
+h) Standort
+Andere Formen d. EU, z.B.
+i) Mitbestimmung
+UG (haftungsbeschränkt)
+3. Misch-/Sonderformen
+GmbH & Co. KG
+Genossenschaft
+9
+Kriterium: Haftungsbestimmungen
+Unbeschränkt Beschränkt
+Haftung mit dem
+Haftung beschränkt auf
+Gesamtvermögen
+Höhe der Kapitaleinlage
+(inkl. Privatvermögen)
+‣ Warum wählt jemand eine Rechtsform mit unbeschränkter Haftung?
+10
+Einzelunternehmen
+‣ Natürliche Person auf eigene Rechnung und in eigenem Namen,
+entsteht mit Gewerbeanmeldung
+‣ Haftet unbeschränkt mit Betriebs- und Privatvermögen
+‣ Erfordert Gewerbeberechtigung oder Bestellung gewerberechtlichen
+Geschäftsführers
+‣ Rechnungslegungspflicht und Eintragung ins Firmenbuch („e.U.“) erst
+ab zweimal 700K Umsatz/Jahr (oder über 1M in einem Jahr)
+‣ Einkommenssteuerpflicht; Umsatzsteuerpflicht ab Jahresumsatz
+von 55K/Jahr (seit 2025: Toleranzgrenze 10 %; bei Überschreitung
+UST-Pflicht zunächst nur für Betrag, der Grenze überschreitet).
+‣ Häufigste Unternehmensrechtsform in D und A
+11
+Offene Gesellschaft (OG; in D: OHG)
+‣ Mindestens zwei Gesellschafter, die persönlich, unbeschränkt,
+solidarisch und primär haften
+‣ Entstehung durch Gesellschaftsvertrag (auch mündlich möglich) und
+(zwingende) Eintragung in Firmenbuch
+‣ Firma benötigt Zusatz ("offene Gesellschaft“, „OG")
+‣ Dispositive Vertretungsregeln, in Firmenbuch einzutragen
+‣ Rechnunglegungspflicht und Besteuerung analog zu Einzelunternehmen
+12
+Kriterium: Leitungsbefugnis
+Kapitaleigner selbst Beauftragte Organe
+‣ Personengesellschaft:
+Unbeschränkt
+Allein oder gemeinsam haftende Personen
+‣ Geschäftsführung
+‣ ggf. „mitbestimmt“
+‣ Warum sollten Kapitaleigner auf Leitungsbefugnis verzichten?
+13
+Gesellschaft mit beschränkter Haftung (GmbH)
+Kapitalgesellschaft mit vielen dispositiven Merkmalen
+‣ Gründung mittels Gesellschaftsvertrags von einer/mehreren Person(en)
+in notarieller Form
+‣ ALT: Gründungskapital/Stammeinlage von 35K, 17,5K sind in bar
+einzuzahlen; Aber: Gründungsprivileg mit 10K/5K auf zehn Jahre
+NEU seit 1.11.2023: 10K Gründungskapital/Stammeinlage
+‣ Geschäftsanteil entspricht Stammeinlage:
+‣ Geschäftsanteile vererbbar/veräußerbar (notarieller Form)
+‣ oftmals von den übrigen Gesellschaftern zu genehmigen
+‣ GmbH haftet mit gesamtem Gesellschaftsvermögen
+14
+Gesellschaft mit beschränkter Haftung (GmbH)
+‣ Leitungs- und Kontrollorgane:
+‣ Gesellschafterversammlung
+‣ Geschäftsführer (kann, muss aber nicht Gesellschafter sein)
+‣ Aufsichtsrat gem § 29 GmbHG verpflichtend wenn:
+‣ das Stammkapital 70.000 Euro übersteigt und
+‣ mehr als 50 Gesellschafter beteiligt sind oder
+‣ die Zahl der ArbeitnehmerInnen 300 übersteigt.
+‣ Gewinn-/Verlustbeteiligung nach Geschäftsanteilen (dispositiv)
+‣ Organisatorisch: „Personengesellschaft mit beschränkter Haftung“
+15
+Kriterium: Finanzierungsmöglichkeiten
+Eigenfinanzierung Fremdfinanzierung
+‣ Kredite
+‣ Börsenfähig
+‣ Anleihen
+‣ Börsennotiert
+‣ über Börse
+‣ Nicht börsenfähig ‣ Private Placements
+‣ Einmalig/rollend
+‣ Warum macht Börsenfähigkeit einen Unterschied?
+16
+Noe.orf.at, 17.10.2012, https://
+noe.orf.at/v2/news/stories/2554946/
+17
+Der Fall »Waldviertler Crowdfunding«
+“
+1999 setzte die Bank seinen Kreditrahmen drastisch herab, obwohl er
+Gewinn machte. „Ich habe geglaubt, ich spinne. Das oberste Ziel war
+dann, bankenunabhängig zu sein“, sagt Staudinger. Das gelang ihm
+innerhalb von vier Jahren. Dann gründete er einen Sparverein. Freunde,
+Verwandte und Kunden geben ihm Geld. Er investiert es, etwa in eine
+neue Lagerhalle, und zahlt es verzinst zurück. Bisher borgte er sich drei
+Millionen Euro. „Dadurch konnten wir die Firma entwickeln, das wäre mit
+der Bank nicht möglich gewesen“. Dann zeigte die FMA Staudinger an.
+Er mache Bankgeschäfte ohne Konzession[.]
+Noe.orf.at, 17.10.2012, https://noe.orf.at/v2/news/stories/2554946/
+18
+Aktiengesellschaft (AG)
+Kapitalgesellschaft mit börsenfähigen Anteilsscheinen
+‣ Gründung mittels Beschluss einer Satzung von einer/mehreren
+Person(en) in notarieller Form
+‣ Gründungskapital/Stammeinlage von mindestens 70K
+‣ Geschäftsanteile in Form von Aktien:
+‣ Wertpapiere, die das Eigentumsrecht an der AG verbriefen, einfach übertragbar
+‣ pro Aktie eine Stimme & Depotstimmen; aber: „Vorzugsaktien“
+‣ Wert auf Basis von Angebot und Nachfrage
+‣ AG haftet mit gesamten Gesellschaftsvermögen
+‣ Strenge Prüfungs- und Publizitätspflichten, hohe Rechtsformkosten
+19
+Formale Entscheidungsstrukturen in der AG
+Hauptversammlung
+‣ Wählt die Vertreter der Anteilseigner im Aufsichtsrat
+‣ Entscheidet über Satzung und Gewinnverwendung
+Aufsichtsrat
+‣ Ernennt und überwacht den Vorstand
+‣ Verfügt über Informations- und Prüfrechte
+‣ Zustimmungspflicht bei bestimmten Entscheidungen
+Vorstand
+‣ Führt das Unternehmen, plant, koordiniert und
+überwacht die Unternehmensaktivitäten.
+20
+Kriterium: Gewinn- und Verlustbeteiligung
+Gesetzliche Eingrenzung
+Dispositiv
+‣ Beschlüsse der
+‣ dem Grunde nach:
+Gesellschafter/
+Bilanzierungsvorgaben
+Kapitaleigner
+‣ Der Höhe nach:
+‣ z.B. nach Höhe der
+Mindestausschüttung
+Mithaftung, Anteilen…
+‣ Gründe für gesetzliche Eingrenzungen?
+21
+Flexible Kapitalgesellschaft (FlexKapG/FlexCo)
+Hybrid aus GmbH und AG für Startups zur Beteiligung von Mitarbeiter:innen
+‣ Baut auf GmbH-Gesetz auf, Stammeinlage 10K, Umwandlung möglich
+‣ Statt virtuellen Beteiligungen („Phantom Stocks“) neben Geschäftsanteilen
+auch „Unternehmenswert-Anteile“: Anteil an Gewinn, kein Stimmrecht
+‣ Übertragung ohne Notariatsakt möglich
+‣ Anteile nicht namentlich im Firmenbuch eingetragen, <25% des Stammkapitals
+‣ Keine Ausfallshaftung, keine Nachschusspflichten
+‣ Geschäftsanteile ohne Notar, via Rechtsanwalt übertragbar
+‣ Unterschiedliche Klassen von Geschäftsanteilen möglich
+‣ Vereinfachte schriftliche Beschlussfassung im Umlauf (Mehrheit reicht, kein Quorum)
+22
+Kommanditgesellschaft (KG)
+‣ Aufbau prinzipiell wie OG/OHG mit zusätzlichen, beschränkt auf Einlage
+haftenden Gesellschaftern
+‣ Unbeschränkt haftende Gesellschafter heißen „Komplementäre“
+‣ Beschränkt haftende Gesellschafter („Kommanditisten") erhalten
+Gewinnbeteiligung
+‣ Mitspracherecht von Kommanditisten nur bei „außergewöhnlichen
+Geschäftsführungsmaßnahmen“
+‣ Wichtig: KG ist systematisch immer noch eine Personengesellschaft
+23
+Kriterium: Kosten und Publizität
+‣ Rechnungslegung-, Prüfungs- und Publizitätsvorschriften
+‣ Gründungs- (z.B. IPO) und Organisationskosten (z.B. Aufsichtsräte)
+Niedrige Anforderungen Hohe Anforderungen
+‣ Einfach und ‣ Mehr Möglichkeiten für
+kostengünstig Eigen- & Fremdkapital
+‣ Problem: Skalierbarkeit ‣ Kosten und Transparenz
+‣ z.B. Personengesell- ggü. Wettbewerb
+schaften ‣ z.B. AG
+24
+GmbH & Co KG
+‣ Mischform aus Personen- und Kapitalgesellschaft
+‣ Kombination der Haftungsvorteile der Kapital- mit steuerlichen Vorteilen der
+Personengesellschaft
+‣ Switch zwischen Einkommens- und Körperschaftssteuer
+‣ Komplementär der KG ist eine GmbH, diese haftet persönlich und
+unbeschränkt; Kommanditist haftet mit der im Firmenbuch
+eingetragenen Haftsumme
+‣ Geschäftsführung und Vertretung obliegt der Komplementär-GmbH
+‣ Rechnungslegungspflicht unabhängig vom Vorliegen bestimmter
+Kennzahlen
+25
+Kriterium: Steuerbelastung
+Körperschaftssteuer
+Einkommenssteuer
+‣ Kapitalgesellschaften
+‣ 23% KöSt-Satz, Basis
+‣ Personengesellschaften
+ist der Gewinn
+‣ Höhe des Tarifs nach
+‣ Mindest-KöSt für AG,
+Einkommenshöhe
+GmbH etc.
+Land KöSt 2002 (%) KöSt 2023 (%)
+* gesenkt per 1.1.2023 von 25 auf 24,
+Österreich 34 23*
+neuerliche Senkung per 1.1.2024 auf
+23%
+Belgien 40 25 bzw. 20
+Deutschland 25 + Soli 15 + Soli (~15,83)
+Frankreich 36 15 bzw. 25
+26
+Kriterium: Steuerbelastung (Forts.)
+‣ Durchschnittlicher
+KöSt-Satz in den
+EU-28
+Quelle: https://awblog.at/koerperschaftsteuer-senkung-steuerdumping/,
+A&W Blog, CC BY-SA 4.0; Daten: Europäische Kommission (2018):
+Taxation Trends Report
+Kriterium: Kontinuität
+Weiterexistenz bei Wechsel/Tod des/der (einiger)
+Gesellschafter(s)?
+‣ Auflösung bei bei GbR/ABGB; Ausnahme: Fortsetzungsklausel
+‣ Andere Personengesellschaften: idR Weiterbestand mit übrigen
+Gesellschaftern; fakultative Regelungen über Fortführungsrechte
+‣ Normallfall bei Kapitalgesellschaften
+28
+Gesellschaft nach bürgerlichem Recht (GbR)
+Mindestens zwei Gesellschafter schließen sich „zur Förderung eines
+gemeinsamen Zwecks zusammen“
+‣ großer Dispositionsspielraum
+‣ Formlos (nicht im Firmenbuch/Handelsregister eingetragen)
+‣ Beispiele: z.B. Sozietät von Rechtsanwälten und Gemeinschaftspraxen von Ärzten
+‣ Bei kurzer Dauer: Gelegenheitsgesellschaft, z.B. Arbeitgemeinschaften im Baugewerbe
+‣ Gesellschafter haften mit Gesellschafts- und Privatvermögen
+‣ Tod eines Gesellschafters führt zur Auflösung, häufig aber: (dispositive)
+Fortführungsklausel
+29
+Kriterium: Standort
+‣ Geographischer Ort der Erstellung von Leistungen (z,B. Produktion,
+Vertrieb, Verwaltung usw.)
+‣ Rechtsform als ein Grund für Standortentscheidung >>
+Niederlassungsfreiheit in EU erlaubt Gründung mit Rechtsform anderer
+EU-Staaten (z.B. UG (haftungsbeschränkt))
+‣ Andere Kriterien der Standortwahl:
+‣ standortspezifische Aufwendungen (z.B. Grundstückspreise, Energiekosten)
+‣ standortspezifische Erträge (z.B. Absatzvorteile, Arbeitskräftepotenzial)
+‣ Warum nicht statt GmbH (10.000 EUR Einlage, <10 Jahre) lieber UG
+(haftungsbeschränkt) (1 Euro Einlage, kein Notariatsakt)?
+30
+Kontakt
+E-Mail: Leonhard.Dobusch@uibk.ac.at
+Mastodon/Bluesky: @leonido@chaos.social / @leonido
+Web: bit.ly/LD-UIBK // dobusch.net
+Research blogs:
+osconjunction.net
+governancexborders.com

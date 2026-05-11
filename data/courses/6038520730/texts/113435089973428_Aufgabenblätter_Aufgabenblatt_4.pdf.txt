@@ -1,0 +1,81 @@
+Aufgabenblatt 4 Proseminar Bilanzierung und Bilanzanalyse
+KAPITEL 3 - Aktivseite
+Teil 3 - Folgebewertung Umlaufvermögen
+Aufgabe 19: Vorratsvermögen
+Datum Menge Einzelpreis € Summe €
+01.01.2021 Anfangsbestand 400 8,75 3.500,00
+15.03.2021 Zukauf 1 1.800 9,25 16.650,00
+11.05.2021 Abgang 1.520
+05.08.2021 Zukauf 2 1.160 11,25 13.050,00
+19.11.2021 Abgang 1.440
+28.12.2021 Zukauf 3 520 9,50 4.940,00
+31.12.2021 Rechnerischer Endbestand 920
+31.12.2021 Inventurdifferenz 70
+31.12.2021 Tatsächlicher Endbestand 850
+Berechnen Sie den Wert des Schwundes sowie den Endbestandes unter Anwendung des gleitenden Durchschnitts-
+preisverfahrens, des permanenten LiFo-Verfahrens und des FiFo-Verfahrens. Vergleichen Sie die Verfahren.
+Aufgabe 20: Festbewertungsverfahren
+Die Metzgerei GmbH schafft sich bei ihrer Neugründung einen Bestand von 40.000 Stapelkisten um 20.000 € (netto)
+an. Dazu legt die Metzgerei GmbH einen Festwert in Höhe von 50 % der Anschaffungskosten fest. Die jährlichen
+Zukäufe an Stapelkisten (400 Stück) betragen 800 €.
+1. Kann für die Stapelkisten die Bewertungsmethode des Festwertes angewandt werden?
+2. Wie wirken sich die mengen- und wertmäßigen Bestandsveränderungen aus?
+Aufgabe 21: Forderungen
+1. Wie ist mit den beiden Sachverhalten in den Jahren 1 und 2a/2b umzugehen? Bilden Sie, wenn nötig, die
+erforderlichen Buchungssätze. Berücksichtigen Sie die USt.!
+Jahr 1: Eine Forderung aus Lieferung und Leistungen in der Höhe von 18.000 € (inkl. 20% USt) erscheint du-
+bios und soll deshalb mit 25% wertberichtigt werden.
+Jahr 2: Führen Sie die Buchungen für folgende beiden Ereignisse durch:
+a) Im Rahmen eines außergerichtlichen Verfahrens werden 25% der oben angeführten Forderung nachgelassen.
+b) Im Rahmen eines außergerichtlichen Verfahrens werden 10% der oben angeführten Forderung nachgelassen.
+2. Von den gesamten Forderungen in Höhe von 684.000 € brutto der Z-AG wurden Forderungen in Höhe von
+60.000 € als uneinbringlich und 72.000 € als zweifelhaft eingestuft. Aus Erfahrungswerten ist bekannt, dass
+rund 3 % der verbleibenden Forderungen nicht beglichen werden.
+Führen Sie die Buchung(en) unter Berücksichtigung folgender Sachverhalte durch:
+a) Ist-Stand Pauschale WB 10.500 €
+b) Ist-Stand Pauschale WB 17.500 €
+1
+Aufgabenblatt 4 Proseminar Bilanzierung und Bilanzanalyse
+KAPITEL 4 - Passivseite
+Aufgabe 22: Ansatz
+Entscheiden Sie, ob in dem folgenden Fall ein bilanzieller Ansatz möglich bzw. verpflichtend ist. Begründen Sie Ihre
+Lösung.
+Aufgrund eines Defekts einer Produktionsmaschine sind 80 % der von der Z AG im Dezember 2022 verkauften Pro-
+dukte defekt. Es ist damit zu rechnen, dass die Kunden Anfang des Jahres 2022 Gewährleistungsansprüche in Höhe
+von 10.000€ geltend machen.
+Aufgabe 23: Bewertung: Verbindlichkeiten
+Die ABC Maschinenbau GmbH (Innsbruck) ist zu 100% an der ABC Frästechnik GmbH (Wien) beteiligt. Erläutern Sie
+folgende Sachverhalte aus der Sicht der ABC Maschinenbau GmbH und führen Sie alle notwendigen Angaben bzw.
+Buchungen per 31.12.2021 an.
+a) Die ABC Frästechnik GmbH tritt am 01.01.2021 in einen Mietvertrag mit einer Mindestlaufzeit von 5 Jahren und
+einer jährlichen Miete von 50.000 € eingetreten. Das Mietverhältnis wird durch eine Bürgschaft der ABC Ma-
+schinenbau GmbH abgesichert. Zum Stichtag ist nicht davon auszugehen, dass die ABC Frästechnik GmbH
+zahlungsunfähig wird.
+b) Sachverhalt wie in Beispiel a – per 31.12.2021 war die ABC Frästechnik GmbH zahlungsfähig. Zum Bilanz-
+stichtag 31.12.2022 stellt sich heraus, dass mit einer Inanspruchnahme der Bürgschaft der ABC Frästechnik
+GmbH gegenüber dem Vermieter zu rechnen ist.
+Aufgabe 24: Bewertung: Rückstellungen
+1. In der Bilanz vom Vorjahr (2022) finden sich u.a. folgende Positionen und Beträge in der Bilanz:
+(3) Gewährleistungsrückstellung 51.200 €
+(3) Schadenersatzrückstellung 46.429,97 €
+I.) Gewährleistungsrückstellung
+Die ABC GmbH rechnet aus der Erfahrung, dass für 2,5% der erzielten Umsatzerlöse zukünftig Gewährleistungsauf-
+wendungen anfallen. Im Jahr 2023 beträgt der Jahresumsatz: 2.560.000,00 €.
+II.) Schadenersatzrückstellung
+Am Ende des Wirtschaftsjahres 2021 wurde die ABC GmbH auf Schadenersatz verklagt. Am Ende des Wirtschafts-
+jahres 2025 ist voraussichtlich eine Zahlung in Höhe von 50.000,00 € zu leisten. Der im Jahr 2023 anzuwendende
+Zinssatz beträgt 2,50 %.
+Berechnen Sie die beiden Rückstellungen per 31.12.2023. Geben Sie jeweils die Wertveränderungen der jeweiligen
+Positionen an, die bei den Abschlussbuchungen zu berücksichtigen sind.
+2. Wie sind die folgenden Geschäftsvorfälle im Jahresabschluss der Apfelsaft GmbH zum 31.12. des Jahres 2020
+zu erfassen, wenn die Unternehmung einen möglichst niedrigen Gewinn ausweisen möchte?
+a) Jedes Jahr anfallende Instandhaltungsarbeiten an einer Saftpresse mussten im Jahr 2020 wegen der enor-
+men Nachfrage nach Apfelsaft auf März des Jahres 2021 verschoben werden. Die Instandhaltungsauf-
+wendungen betragen voraussichtlich 25.000 €.
+b) Die Apfelsaft GmbH versichert ihre Lagerbestände nicht. Die jährliche Versicherungsprämie würde
+20.000 € betragen. Aus Erfahrung weiß man, dass alle 4 Jahre mit einem Schadensfall zu rechnen ist, der
+für die Apfelsaft GmbH Schäden in Höhe von 40.000 € bis 100.000 € verursacht.
+c) Der Eröffnungsbilanzwert der Gewährleistungsrückstellung der Apfelsaft GmbH beträgt 38.400 €. Die Ap-
+felsaft GmbH rechnet aus Erfahrung damit, dass für 3 % der Umsatzerlöse zukünftig Gewährleistungsauf-
+wendungen anfallen. Der Jahresumsatz beträgt 1.1600.000 €.
+2

@@ -1,0 +1,375 @@
+Schnittstellen zur Anbindung an
+V
+Datenbanksysteme Kapitel
+Vorlesung Datenbanksysteme
+Univ.-Prof. Dr. Günther Specht
+Datenbanken und Informationssysteme (DBIS)
+Vorlesungsinhalt
+5. Schnittstellen zur Anbindung an Datenbanksysteme
+– Übersicht und Problemstellung
+– Das Cursor-Prinzip
+– Low-Level Schnittstellen
+– High-Level Schnittstellen
+2
+Übersicht und Problemstellung
+3
+Übersicht und Problemstellung
+Übersicht
+• Low-Level-Schnittstellen
+– Embedded SQL
+– SQL-CLI
+– ODBC
+– JDBC/SQLJ
+• High-Level-Schnittstellen
+– Object Mappers
+– LinQ
+Problemstellung
+• SQL ist eine deklarative Anfragesprache für relationale Datenbanken
+• Gängige Programmiersprachen sind zumeist imperativ
+• Einbindung von SQL in eine Wirtssprache daher notwendig
+• Impedance Missmatch:
+– Unterschiedliche Typsysteme
+– Mengen Orientiert vs. Record at a Time
+– Imperativ vs. deklarativ
+4
+Das Cursor-Prinzip
+5
+Cursor-Prinzip
+• Ermöglicht den Zugriff auf Ergebnismengen von imperativen Sprachen
+• Anfrage liefert einen Cursor als Repräsentation der Ergebnismenge
+6
+Low-Level-Schnittstellen
+7
+Embedded SQL (ESQL)
+• Definiert in SQL-Standard nach ISO/IEC 9075-2
+• Zwei Varianten:
+– Statisch
+– Dynamisch
+• Datenbankspezifische Implementierungen
+– Sourcecodekompatibel
+– Nicht Binärkompatibel
+– DBMS Wechsel -> Neuübersetzung
+• Ermöglicht Einbindung in folgende Wirtssprachen (lt. Standard):
+– Ada, C, COBOL, Fortran, MUMPS, Pascal, PL/I
+• Kommunikation zwischen Wirtssprache und ESQL erfolgt über Host Variablen.
+– Sind sowohl innerhalb von ESQL als auch der Wirtssprache gültig
+– Innerhalb von SQL-Statements mit Doppelpunkt als Präfix
+• Direkte Integration der Fehlerbehandlung in die Wirtssprache
+• Vorübersetzung von SQL:
+– Optimierung der Statements
+– Schemaüberprüfung
+8
+– Typüberprüfung
+Embedded SQL Beispiel
+• Deklaration der Hostvariablen
+EXEC SQL BEGIN DECLARE SECTION;
+int angebotsnummer;
+char kursnummer[3];
+char datum[8]; /* Impedance Missmatch! Datum wird zu Zeichenkette */
+char ort[20];
+EXEC SQL END DECLARE SECTION;
+• Ausführen der Abfrage:
+EXEC SQL SELECT Datum, Ort
+INTO :datum, :ort
+FROM Angebot
+WHERE AngNr = :angebotsnummer
+AND KursNr = :kursnummer;
+• Verarbeiten der Anfrageergebnisse
+printf(``Angebot findet am %s in %s statt.’’, datum, ort);
+9
+Dynamisches ESQL
+• Bei statischem ESQL steht die Struktur der Abfrage zur Übersetzungszeit schon fest.
+• Ist zur Übersetzungszeit die Anfrage noch nicht vollständig bekannt, so muss auf dynamisches SQL
+zurückgegriffen werden.
+• Struktur der Antworttupel zur Übersetzungszeit ist nicht immer bekannt
+(cid:1)
+Typüberprüfung zu diesem Zeitpunkt nicht möglich
+• Bei SELECT-Anfragen, die bis auf die WHERE-Bedingung bekannt sind
+(cid:1)
+Typüberprüfung möglich
+• Low Level Schnittstelle zur Anbindung von Datenbanken
+• Im SQL Standard ISO/IEC 9075-3 definiert.
+• Definiert Strukturen und Prozeduren um SQL-Statements aus Wirtssprachen abzusetzen
+• Prozeduren sind unabhängig von auszuführendem SQL-Statement
+• Auf Client - Server Betrieb ausgelegt.
+• Für folgende Sprachen definiert:
+– Ada - Mumps
+– C - Pascal
+– COBOL - PL/I
+– Fortran
+10
+SQL Call Level Interface (CLI)
+• Unabhängig von Präprozessor
+(cid:1)
+• Applikationen werden ausschließliche gegen SQL/CLI-API gelinkt
+Binärkompatibel
+• Für Resourcen werden Referenzen (Handles) allokiert und können so den
+entsprechenden Funktionen übergeben werden
+• Benötigt keine globalen Speicherbereiche
+• Keine explizite Cursordeklaration nötig
+• Metadatenschnittstelle nur in SQL/CLI der Opengroup, nicht aber im ISO-
+Standard
+SQL/CLI Embedded SQL
+Cursor wird für auszuführende Statements implizit Cursor muss explizit deklariert werden
+erstellt
+Statusse und Ressourcen werden jeweils lokalen Statusse und Ressourcen werden in globale Variablen
+Variablen zugeordnet. gehalten
+Statements werden dynamisch zusammengesetzt Statische Typüberprüfung bei statischen SQL-
+Statements möglich
+Übernimmt automatische Konversion der Datentypen Datentypen müssen explizit angegeben werden
+Sicherheitskonzept ist rein auf Benutzerebene Feingranulares Sicherheitskonzept
+Für 5 Sprachen definiert + Sprachen die gegen Unterstützung für 5 festgelegte Programmiersprachen
+Objektcode linken
+11
+Open Database Connectivity (ODBC)
+• Prozedurale standardisierte Schnittstelle für SQL
+• Von Microsoft auf Basis des Call Level Interfaces 1992 entwickelt
+• Neben Windows auch diverse UNIX Implementierungen verfügbar
+• Führt das Treibermanager/Treiberkonzept ein:
+– Datenbankunabhängige Treiberschnittstelle
+– Datenbankabhängige Treiberimplementierung
+– Treibermanager als Vermittler zwischen der Applikation und dem
+Datenbank Treiber
+• Ermöglicht modulare Datenbankapplikationen
+12
+ODBC Architektur
+• Unterstützt traditionelle OLTP-Applikationen
+• Metadatenschnittstelle
+• Features aus SQL-1999 bzw. SQL-2003 wurden nicht mehr weiterentwickelt
+• Hunderte von Treibern für ODBC vorhanden.
+• Freie Varianten iODBC (Independent Open DataBase Connectivity) und
+UnixODBC
+• ODBC Treiber müssen im System installiert werden.
+13
+Java Database Connectivity (JDBC)
+• Programmierschnittstelle für Java die den Zugriff auf Datenbanken ermöglicht
+• Teil der Java Plattform seit Version 1.1
+• Teil des SQL-Standards
+• Starke Integration in die Java Programmiersprache
+• Ähnlich dem Treiberkonzept von ODBC
+• Unterstützt vier Arten von Treibern
+• Neben der Ausführung von traditionellen CREATE, INSERT, UPDATE und
+DELETE werden auch Aufrufe von Stored Procedures unterstützt.
+14
+JDBC Architektur
+(cid:1)
+• Auf der JAVA-Plattform basierend betriebsystemunabhängig.
+• Datenbank-Cursor werden durch Ergebnisobjekte vor dem Benutzer verborgen.
+• Fehlermeldungen werden mittels Exceptions durchgeführt.
+– Wichtig: Die Art der geworfenen Exception wird bis Version 3.0 durch den
+Datenbankhersteller und nicht durch den Standard definiert.
+– Ab Version 4.0 verschiedene Exceptions vordefiniert.
+15
+JDBC Datenstrukturen
+• Connection: Repräsentiert eine Datenbankverbindung
+• Repräsentationsarten für Anfragen
+– Statement: Einfache CREATE, UPDATE, INSERT, DELETE Anfragen
+– Prepared Statement: Ermöglicht die Ausführung Vorübersetzter Anfragen.
+Verhindert SQL-Injections.
+– Callable Statement: Ermöglicht die Ausführung von SQL-Stored Procedures
+• ResultSet: Stellt die Ergebnismenge einer Abfrage dar.
+• ResultSetMetaData: Beinhaltet die Metadaten, wie Spaltennamen und
+Datentypen einer Ergebnismenge.
+16
+JDBC Beispiel
+• Laden des Treibers:
+Class.forName("MyDriverClassName");
+• Erstellen der Verbindung:
+String url = "jdbc: <subprotocol>: <subname>"
+Connection conn = DriverManager.getConnection(url);
+• Alternative mittels DataSource:
+InitialContext ic = new InitialContext();
+DataSource ds = ic.lookup(url);
+Connection con = ds.getConnection();
+17
+JDBC-Beispiel
+• Abfrage durchführen:
+String qry = "SELECT Datum, Ort FROM Angebot"
++ "WHERE AngNr = ? AND KursNR = ?";
+PreparedStatement stmt = conn.prepareStatement(qry);
+stmt.setInt(1,8);
+stmt.setInt(2,15);
+ResultSet rs = stmt.executeQuery();
+• Abfrageergebnis ausgeben:
+while(rs.next()) {
+String da = rs.getString("Datum");
+String pl = rs.getString("Ort");
+System.out.printf("Kurs ist am %s in %s", da, pl);
+}
+18
+JDBC-Beispiel
+• Resourcen freigeben:
+rs.close();
+stmt.close();
+conn.close();
+• Fehlerbehandlung in JDBC:
+try {
+// JDBC Aufruf
+} catch(SQLException ex) {
+for(Throwable thr : exception) {
+System.out.println(thr.getMessage());
+}
+}
+19
+SQLJ
+• Statisches SQL für JAVA
+• In SQL-Standard festgelegt
+• Von der Syntax ähnlich wie statisches ESQL
+• Ermöglicht Typüberprüfung zur Übersetzungszeit
+• Verwendet intern JDBC -> Binärkompatibel zwischen DBMS
+• Optimierte Implementierungen für spezifische DBMS möglich
+• Wird hauptsächlich zur Implementierung von Stored Procedures innerhalb von
+DBMS verwendet.
+• Nachteil: Keine dynamischen Bestandteile innerhalb von Anfragen möglich.
+20
+ADO.net
+• API-Schnittstelle, die unter der .NET Umgebung für die Anbindung an
+Datenbanken verantwortlich ist.
+• Ähnlich zu JDBC
+• Unterstützt von Anfang an verbundenes und nicht verbundenes
+Verarbeitungsmodel.
+• Ermöglicht innerhalb der .net Umgebung Betriebssystemunabhängigkeit.
+• Für Abwärtskompatibilität ist Zugriff auf ODBC bzw. OLEDB Datenquellen
+möglich.
+21
+DB-Abstraktionsschicht in OO-Sprachen
+• Fast alle OO-Sprachen besitzen Low Level DB-APIs (vgl. JDBC, ADO.NET...)
+• Low Level APIs mit objektorientierten Mitteln gebaut (Connection, ResultSet...)
+• Verarbeitung selbst ist prozedural, da Ergebnismenge keine Objekte
+repräsentieren.
+(cid:1)
+• Anwender muss händisch zwischen Tupelmenge und Objekten konvertieren
+Arbeitsintensiv + Fehleranfällig
+• Lösungsansatz: Frameworks und Bibliotheken versuchen die DB zu
+abstrahieren.
+• Diese werden Objekt Relationale Mapper (ORM) genannt.
+22
+High-Level Schnittstellen
+23
+Object-relational Impedance Missmatch
+• OO-Sprachen kapseln Informationen in Objekten.
+• Objekte besitzen öffentliche Schnittstelle und verstecken die interne
+Repräsentation
+• RDBMS kennen nur öffentliche Daten
+• Unterschiede im Typsystem (z.B. by-value vs. by-reference)
+• OO Sprachen verwenden navigierenden Zugriff um Assoziationen zu
+traversieren (verschachtelte Datenstrukturen)
+• In RDBMs werden Assoziationen durch JOINs aufgelöst. (flache
+Datenstrutkturen)
+• Deklarative vs. imperative Semantik
+• OO-Konzepte wie Vererbung im relationalen Modell nicht vorhanden
+24
+Eigenschaften eines ORM
+• Einfache Spezifikation von Abbildungen zwischen Tabellen und Objekten
+• Navigierender Zugriff auf Objekten
+• Objektorientierte Anfragesprachen
+• Ergebnisse von Anfragen sind erneut Objekte
+25
+Problemstellungen bei OR-Mapping
+• Wann werden Assoziationen geladen?
+z.B.: Abteilungen werden aus einer Datenbank geladen. Wann werden die
+dazugehörigen Mitarbeiter geladen?
+• Wie ist der Lebenszyklus von Objekten?
+• Wie wird die Objektidentität behandelt.
+• Wie werden Assoziationen abgebildet.
+• Wie werden bidirektionale Referenzen abgebildet.
+z.B.: Auf Objekten der Klasse Abteilung kann die Methode getMitarbeiter
+aufgerufen werden. Auf Objekten der Klasse Mitarbeiter kann die Methode
+getAbteilung aufgerufen werden.
+• Wie wird Vererbung abgebildet.
+26
+OR - Mapping-Strategien
+• „Einfaches“ Objekt (ohne Assoziationen) auf Tabelle:
+– Jedes Tupel entspricht einem Objekt.
+– Jede Eigenschaft eines Objektes wird auf ein Attribut eines Tupels
+abgebildet (soweit möglich mit jeweils gleichem Namen).
+– Die Datentypen der Tabelle und des Objektes werden aufeinander
+(cid:1)
+abgestimmt. (z.B.: Timestamp Calendar)
+27
+OR Mapping-Strategien
+• 1:N – Beziehung:
+– Im relationalen Schema werden 1:N durch Fremdschlüssel auf der N-Seite
+Abgebildet:
+Abteilung(AbteilungsId, Abteilungsname)
+Mitarbeiter(MitarbeiterNr, AbteilungsId, Namen)
+– Objektorientiert wird der Sachverhalt wie folgt modelliert:
+28
+OR Mapping-Strategien
+• M:N – Beziehung:
+– Im relationalen Schema werden M:N Beziehung mittels separaten
+Beziehungsrelationen abgebildet:
+Benutzer(Login, Email)
+Berechtigung(Ber_Name, Beschreibung)
+IstBerechtigt(Login, Ber_Name)
+– Objektorientiert wird dieser Sachverhalt wie folgt modelliert:
+29
+OR Mapping-Strategien
+• Vererbung:
+– Gegeben sei folgendes Objektmodell:
+30
+OR Mapping-Strategien
+• Vererbung:
+– Abbildung mittels Single Table Inheritance:
+Eine Relation enthält die Vereinigung aller Properties der gesamten
+Vererbungshierarchie.
+Zusätzlich wird eine sogenannte Diskriminatorspalte eingefügt, die den Typ
+das aktuelle Tupel spezifiiziert.
+File(DateiID, Elternpfad, Name,
+Auflösung, Länge, Bitrate, DISC)
+– Abbildung mittels Class Table Inheritance:
+Sowohl Basis- als auch Subklassen in eigenen Relationen.
+File(DateiID, Elternpfad, Name)
+Audio(DateiID, Bitrate, Länge)
+Bild(DateiID, Bitrate)
+31
+OR Mapping-Strategien
+• Vererbung:
+– Abbildung mittels Concrete Table Inheritance:
+Für jede Subklasse wird eine eigenständige Tabelle mit der Vereinigung der
+Attribute aus der Sub- und der Basisklasse erzeugt.
+Audio(DateiID, Elternpfad, Name, Bitrate, Länge)
+Bild(DateiID, Elternpfad, Name, Auflösung)
+32
+Möglichkeiten zur Spezifikation
+• Mittels XML Dialekt: vgl. Hibernate, OpenJPA
+• Source Code Annotations: vgl. JPA-Standard
+• Im Source Code mittels Meta Programming: vgl. Ruby on Rails
+33
+ORM - Abfragesprachen
+• Criteria APIs für dynamische Abfragen. vgl. Hibernate:
+Criteria crit = sess.createCriteria(Mitarbeiter.class);
+crit.createCritera("Abteilung").add(Restrictions.eqProeprty("name", "DBIS");
+List<Mitarbeiter> mas = crit.list();
+• Diverse Object Query Languages (ähnlich zu SQL) vgl. JPA-QL.
+Anfragestring wird dabei als Methodenargument übergeben.
+SELECT ma FROM Mitarbeiter ma
+WHERE ma.abteilung.name = 'DBIS';
+34
+ORM - Abfragesprachen
+• Natives SQL (muss den Ergebnisobjekten entsprechen)
+vgl. Hibernate
+SELECT MitarbeiterNr, AbteilungsId, Namen
+FROM Mitarbeiter Ma
+INNER JOIN Abteilung Abt
+ON Abt.AbteilungsId = Ma.AbteilungsID
+WHERE Abt.Abteilungsname = 'DBIS';
+• LINQ (Microsoft Language Integrated Query)
+– Anfrage ist dabei direkt Bestandteil der Programmiersprache (nur
+Manipulation des Syntaxbaumes).
+– Wird zur Übersetzungszeit in Äquivalente Lambda-Ausdrücke übersetzt.
+35
+ORM - Abfragesprachen
+• LINQ (Microsoft Language Integrated Query)
+– Beispiel Anfrage:
+var query = FROM ma IN this.Mitarbeiter WHERE
+ma.abteilung.name = "DBIS"
+SELECT ma;
+foreach (var ma in query) {
+Console.WriteLine (... + ma.name);
+}
+– Alternativ:
+var query = this.Mitarbeiter.Where(
+ma => ma.abteilung.name == "DBIS"
+)
+36

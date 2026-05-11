@@ -1,0 +1,702 @@
+Eine Tulpenzwiebel um 3 Millionen Euro
+und eine Pizza um eine Milliarde Euro:
+Bubbles, Crashes und was wir aus ihnen lernen können
+Univ.Prof.DDr. Jürgen Huber, Institut für Banken und Finanzen
+Einführung in die BWL I Huber I 2. VO-Termin Seite 1
+Zur Person: Univ.Prof.DDr. Jürgen Huber
+Geb. 1974 in Braunau/Inn (AUT)
+Glücklich verheiratet, 2 Kinder (*2005 und 2009)
+Studium in Innsbruck (IWW, PoWi, Jus) und New Orleans
+Weitere berufliche Stationen in Yale (USA) und Wien
+Seit 2008 Prof. für Finanzwirtschaft in Innsbruck
+Seit 2010 Leiter des Instituts für Banken und Finanzen
+Forschungsinteressen: Experimentelle Finanzwirtschaft, Nudging, Behavioral Finance,
+Finanzmarktblasen, Informationsökonomie, Anreizstrukturen
+Einführung in die BWL I Huber I 2. VO-Termin Seite 2
+Jetzt beginnen die spannendsten Jahre ihres Lebens … nutzen Sie sie!
+UIBK ist eine Volluniversität, die alle Fächer abdeckt – nutzen Sie das; gehen Sie
+auch mal zu einer Biologie-, Archäologie- oder Physik-VO. Ebenso „Lange Nacht der
+Forschung“, USI-Sportangebot, etc.
+Nutzen Sie die angebotenen Vorträge
+Lesen Sie int‘l Zeitungen und Zeitschriften – NZZ, FAZ, Economist, etc. -> Bib
+Engagieren Sie sich bei ÖH, ICONS, Börsenverein oder ähnlichem
+Registrieren Sie sich beim EconLab für Experimentteilnahmen:
+https://webapp.uibk.ac.at/hrootstudents/register
+Einführung in die BWL I Huber I 2. VO-Termin Seite 3
+Im Rahmen wissenschaftlicher Studien sucht das Innsbruck EconLab
+TeilnehmerInnen für ökonomische Experimente.
+Die Experimente bilden wirtschaftliche und soziale Entscheidungs-
+situationen ab und dauern in der Regel zwischen 30 und 90 Minuten.
+Basierend auf Ihren Entscheidungen und den Entscheidungen anderer
+TeilnehmerInnen, verdienen Sie durchschnittlich 15,– Euro pro Stunde für
+Onlineexperimente und 20,– Euro pro Stunde für Präsenzexperimente im
+Labor an der Sowi, um den zusätzlichen Aufwand und die geringere
+Flexibilität durch die örtliche Bindung zu kompensieren.
+Ihre Teilnahme liefert Ihnen spannende Einblicke in wirtschaftliche
+Prozesse und unterstützt die Forschung an der Universität Innsbruck.
+Die Teilnahme an Experimenten ist…
+anonym,
+zeitlich flexibel und
+erfolgt auf freiwilliger Basis.
+Durch die Registrierung in unserer Datenbank erhalten Sie unverbindliche
+Einladungen zu Experimenten im Innsbruck EconLab – Sie entscheiden ob und
+wann Sie an einem Experiment teilnehmen möchten.
+Weitere Informationen und unverbindliche Anmeldung unter:
+https://www.uibk.ac.at/de/econstat/fakultat/institute-und-forschungseinrichtungen/innsbruck-econlab/
+Übersicht für heute:
+»
+Die erste Aktie und die erste Aktienbörse der Welt
+»
+Frühe Bubbles:
+• Eine Tulpenzwiebel um 3 Millionen Euro: Tulpenmanie (Niederlande 1636/37)
+• Ein Schotte rettet und ruiniert Frankreich: John Law und die Mississippi Kompanie
+(Frankreich, 1716-1721)
+• Eine Phantasiegesellschaft um die Staatsschulden zu bezahlen: South Sea Bubble
+(Großbritannien, 1720-1721)
+»
+Die teuerste Pizza aller Zeiten: Bitcoins und andere Kryptowährungen
+Einführung in die BWL I Huber I 2. VO-Termin Seite 7
+Spekulationsblasen (Bubbles) und Crashes
+»
+Spekulationsblasen und die darauffolgenden Crashes existieren, seit es Märkte
+gibt.
+»
+Die spezielle „Geschichte“ sowie „Verpackung“ variiert, jedoch sind die Ursachen
+stets dieselben: Gier, billiges Geld und Verschuldung (Leverage) sowie die
+Geschichte einer „Neuen Welt/Neuen Wirtschaft“.
+»
+Viele Wissenschaftler argumentieren, dass gelegentliche Crashes unvermeidliche
+Nebeneffekte des Kapitalismus sind. Wie schlimm der Crash wird und inwiefern
+dieser gesteuert werden kann („Sanfte Landung“), ist jedoch umstritten. Ich bin
+der Meinung, dass strenge Regulierung meist mehr Gutes bewirkt, als sie
+Schaden anrichten würde.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 8
+Die erste Aktiengesellschaft der Welt
+»
+Erste Aktiengesellschaft (VOC, Vereenigde Oostindische Compagnie,
+Niederländische Ostindien-Kompanie; ~2000 Investoren) und erste
+Aktienbörse gegründet 1602 in Amsterdam, Niederlande.
+»
+Ziel: Finanzierung kolonialer Expansion für die niederländischen Kaufleute, die
+keinen absoluten Monarchen hatten, der die Risiken für sie übernommen hätte
+(Spanien, Portugal, England und Frankreich hatten solche Monarch:innen).
+»
+Die Amsterdamer Börse war ein großer Erfolg – innerhalb weniger Jahre wurde
+Amsterdam DAS Finanzzentrum Europas (und blieb es bis ca. 1800, als es in den
+napoleonischen Kriegen von London abgelöst wurde, dieses im 2. Weltkrieg von
+New York).
+Einführung in die BWL I Huber I 2. VO-Termin Seite 9
+VOC war enorm erfolgreich – bis 1620 baute sie mehr als 4000 Schiffe und 70% des
+Überseehandels wurde auf ihren Schiffen getätigt; in Summe >1 Mio. Europäer
+nach Asien. Nach einer Berechnung war die VOC das wertvollste Unternehmen aller
+Zeiten: 3x so wertvoll wie die heute teuersten Firmen Apple und Microsoft.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 10
+Einführung in die BWL I Huber I 2. VO-Termin Seite 11
+Warum reden wir dann Englisch und nicht NL?
+»
+Berechtigte Frage, denn um 1650 deutete nichts darauf hin, dass England
+Holland je ablösen könnte.
+»
+Während die Niederlande ein goldenes 17. Jahrhundert hatten, erlebten
+die Engländer ein blutiges. Nach Elisabeth I (1603) regierte James I bis
+1625 recht gut. Sein Sohn (Charles I) war aber ein Desaster, der die
+Magna Charta widerrief und religiöse Spannungen schürte → Bürgerkrieg
+1642-1653; Charles I wurde 1649 enthauptet. Dann Diktatur von Oliver
+Cromwell (dem kurz sein unfähiger Sohn folgte), dann wieder ein guter
+König (Charles II 1660-1685), gefolgt von unpopulärem Sohn.
+»
+Wilhelm von Oranien (NL) wurde vom brit. Parlament „eingeladen“, mit
+einer Armee zu kommen und König zu werden → wurde 1688 König;
+dann Brit-NL Seekriege & Londoner Börse & British East India Company.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 12
+Funktionen des Kapitalmarktes (der Börse)
+»
+Kanal für
+➢Unternehmer, um Kapital für riskante Geschäfte zu sammeln
+➢Investoren, um eine hohe Rendite und Diversifikation zu erzielen
+»
+Allokation von Kapital zur bestmöglichen Nutzung für die gesamte
+Gesellschaft – d.h. das Geld fließt dorthin, wo es den höchsten Nutzen bringt.
+»
+Natürlich nicht perfekt … „Blasen“ führen zu Fehlinvestitionen und Verlusten
+(wenn z.B. in den USA oder Spanien bis 2008 Millionen von Wohnungen gebaut wurden, die
+nie jemand bezog – das Geld wäre in Bildung oder Straßen besser investiert gewesen, aber
+die Bahnlinien der Eisenbahnbooms des 19. Jahrhunderts werden bis heute genutzt).
+Einführung in die BWL I Huber I 2. VO-Termin Seite 13
+Tulpenmanie von 1636/37
+»
+In den 1630er Jahren floss viel Geld aus ganz Europa nach Amsterdam (dort
+Reichtum, während in Deutschland der 30-jährige Krieg tobte).
+»
+Es gab eine neue „Bürgerschaft“ und „Adlige“, reich aufgrund des Handels mit
+Gewürzen, mit reichlich Geld und Freizeit („Pfeffersäcke“).
+»
+Tulpen, neuerdings importiert aus Persien, kamen in Mode und wurden
+Statusobjekt.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 14
+Eine Tulpe, bekannt als Viceroy. Die
+Zwiebel/Knolle kostete zwischen 3.000 und
+4.200 Gulden. Ein geschickter Handwerker
+verdiente zu dieser Zeit ca. 300 Gulden pro
+Jahr (demnach entspräche der Preis der
+Tulpe heute 800.000 bis 1 Million Euro).
+Ein Bild aus dem 17. Jahrhundert
+der Semper Augustus, bekannt
+als die teuerste je verkaufte
+Tulpe während der Tulpenmanie
+(12.000 Gulden ≈ 3 Mio. Euro).
+Einführung in die BWL I Huber I 2. VO-Termin Seite 15
+Keine einzige blühende Tulpe wurde
+während der Blase gehandelt!
+Tulpen blühen im April und Mai für ungefähr eine
+Woche. Während der Ruhephase der Pflanze von
+Juni bis September können die Blumenzwiebeln
+entwurzelt und bewegt werden, so dass die tat-
+sächlichen Käufe meist in diesen Monaten statt-
+fanden.
+Tulpenpreise begannen ab 1635 zu steigen. Französische Spekulanten, welche 1635
+erstmals in den Markt eintraten, verstärkten die Blase. Die Tulpenmanie erreichte ihren
+Höhepunkt während des Winters 1636/37, als viele Blumenzwiebeln zehn mal am Tag
+den Besitzer wechselten. Doch im Februar 1637 kollabierten die Preise der Tulpen
+abrupt und der Handel kam praktisch zum Stillstand (startend in Haarlem, vermutlich
+aufgrund von Gerüchten über einen Ausbruch der Pest, der Händlern eine „Nachdenk-
+pause“ aufzwang).
+Einführung in die BWL I Huber I 2. VO-Termin Seite 16
+Jan-Pieter Brueghel‘s Bild zur Tulpenmanie: Spekulanten werden als Affen in
+zeitgenössischer Kleidung der Oberschicht abgebildet. In einem „Statement“ zur
+wirtschaftlichen Torheit uriniert ein Affe auf die zuvor wertvollen Pflanzen, andere
+erscheinen vor dem Schuldnergericht und wieder andere duellieren sich.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 17
+Verschuldungshebel (Leverage)
+» Angenommen, ein Projekt erfordert eine Investition von 100 und erbringt mit gleicher
+Wahrscheinlichkeit nach einem Jahr entweder 130 oder 90.
+» Finanzieren Sie alles aus Eigenmitteln, so haben Sie entweder +30 Gewinn oder −10 Verlust;
+der erwartete Gewinn ist daher +30 ∙ 0,5 + −10 ∙ 0,5 = +10, die erwartete Rendite +10%.
+Gewinn
+» Allgemein: Rendite =
+Eingesetztes Kapital
++30 −10 +10
+» Erwartete Rendite (in diesem Beispiel) = ∙ 0,5 + ∙ 0,5 = = +10%
+100 100 100
+Einführung in die BWL I Huber I 2. VO-Termin Seite 18
+Verschuldungshebel (Leverage)
+» Angenommen, ein Projekt erfordert eine Investition von 100 und erbringt mit gleicher
+Wahrscheinlichkeit nach einem Jahr entweder 130 oder 90.
+» Finanzieren Sie alles aus Eigenmitteln, so haben Sie entweder +30 Gewinn oder −10 Verlust;
+der erwartete Gewinn ist daher +30 ∙ 0,5 + −10 ∙ 0,5 = +10, die erwartete Rendite +10%.
+» Setzen Sie nur 50 an Eigenmitteln ein und leihen sich die anderen 50 zu 4% Zinsen, so müssen
+Sie für das geliehene Geld in einem Jahr 50 ∙ (1 + 0,04) = 52 zurückzahlen. Im positiven Fall
+erzielen Sie dann mit einem Eigenkapitaleinsatz von 50 einen Gewinn von 130 − 52 − 50 =
++ 28, im negativen Fall einen Verlust von 90 − 52 − 50 = −12. Der erwartete Gewinn ist daher
++ 28 ∙ 0,5 + −12 ∙ 0,5 = +8 (also die gezahlten Zinsen, 2, weniger als vorher), die erwartete
++28 −12 +8
+Rendite auf das eingesetzte Eigenkapital beträgt nun · 0,5 + · 0,5 = = +16%.
+50 50 50
+Einführung in die BWL I Huber I 2. VO-Termin Seite 19
+Mit steigender Verschuldung steigt auch die Eigenkapitalrendite
+→ daher oft zu viel Risiko!
+Einführung in die BWL I Huber I 2. VO-Termin Seite 20
+Mit steigender Verschuldung steigt auch die Eigenkapitalrendite
+→ daher oft zu viel Risiko!
+Einführung in die BWL I Huber I 2. VO-Termin Seite 21
+Mit steigender Verschuldung steigt auch die Eigenkapitalrendite
+→ daher oft zu viel Risiko!
+Einführung in die BWL I Huber I 2. VO-Termin Seite 22
+Mit steigender Verschuldung steigt auch die Eigenkapitalrendite
+→ daher oft zu viel Risiko!
+Einführung in die BWL I Huber I 2. VO-Termin Seite 23
+Begrenzte Haftung (GmbH, AG) macht Verschuldung (Überschuldung) noch „sinnvoller“
+Überschuldung spielte bei praktisch jeder historischen Bubble eine entscheidende
+Rolle (z.B. hatte Lehman Brothers 2008 nur 2% Eigenkapital).
+Einführung in die BWL I Huber I 2. VO-Termin Seite 24
+John Law und die Mississippi Kompanie
+»
+“Erfinder” des modernen Finanzwesens: Führte Papiergeld in Frankreich ein,
+stimulierte die Wirtschaft, die enormen Staatsschulden wurden durch den
+Verkauf von Anteilen an der Mississippi Kompanie zurückgezahlt.
+»
+Dann überschätzte er sich: Zu viel Geld wurde gedruckt und sein Finanzsystem
+brach zusammen.
+»
+John Law war ein interessanter Charakter:
+Ein Gentleman-Spieler mit Geschmack für Reichtum, Wein,
+Frauen und Macht. Seine finanzielle Karriere begann in den
+Spielsalons Europas. Nach einem tödlichen Duell wurde er
+1694 in England zum Tode verurteilt, „durfte“ aber fliehen,
+nachdem reiche Freunde die Wachen bestochen hatten.
+Fuhr sofort nach Paris, später Amsterdam und dann Venedig.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 25
+John Law und die Mississippi Kompanie
+»
+Law war neun Jahre lang in Kontinentaleuropa, nachdem er aus England geflüchtet war
+und häufte in dieser Zeit mit Glücksspielen ein kleines Vermögen an, bevor er in sein
+heimatliches Schottland zurückreiste.
+»
+Das Schottland, in das Law zurückkehrte, befand sich nach einem katastrophalen
+Kolonialisierungsversuch in Panama in einer tiefen Krise, da die Ersparnisse fast der ganzen
+Oberschicht des Landes verloren waren und weder Gold noch Silber vorhanden waren.
+»
+Laws Vorschlag um die schottische Wirtschaft wieder in Schwung zu bringen war die
+Ausgabe von Papiergeld, das durch den großen Landbesitz der Krone/Regierung besichert
+wäre (letztlich vom schottischen Parlament abgelehnt – stattdessen Union mit England).
+»
+Ein paar Jahre später gelang es ihm, nach dem Tod Ludwig des XIV. den neuen
+französischen Regenten, den Herzog von Orleans, von seinem Plan zu überzeugen …
+Einführung in die BWL I Huber I 2. VO-Termin Seite 26
+John Law und die Mississippi Kompanie
+»
+Law war überzeugt, dass Papiergeld Gold- oder Silbermünzen vorzuziehen sei, da
+es leichter herzustellen, transportabel und austauschbar ist, und daher praktischer
+als Gold oder Silber als Tauschmittel sei. Da es nach Belieben gedruckt werden
+kann, kann damit Liquidität für den Handel garantiert werden.
+»
+Law erkannte (wie Adam Smith erst mehr als 70 Jahre später schreiben würde),
+dass der Reichtum eines Landes an seiner Produktion von Gütern gemessen
+werden sollte, nicht an seinem Edelmetallbestand (der im Merkantilismus als Maß
+des Reichtums eines Landes galt). Sein Papiergeld hatte Erfolg, da er durchsetzen
+konnte, dass auch Steuern in den Banknoten bezahlt werden konnten.
+»
+Leider kann Papiergeld aber auch nach Belieben gedruckt werden, was zu Inflation
+führt, wenn eine Regierung nicht diszipliniert ist … was letztlich auch zum
+Scheitern von Law führte ... VERTRAUEN ist bei Geld essentiell!
+Einführung in die BWL I Huber I 2. VO-Termin Seite 27
+John Law und die Mississippi Kompanie
+»
+Im Mai 1716 wurde die Banque Générale Privée, welche Papiergeld
+ausgeben durfte, von Law gegründet. Es war eine Privatbank, aber der
+Regent zahlte Kapital ein um öffentlich sein Vertrauen in Law zu zeigen.
+»
+Als „Controller General“ (Wirtschaftsminister) setzte Law viele vorteilhafte
+Reformen um: Er versuchte, große Landbesitzungen aufzuteilen, um den
+Bauern zu helfen; er schaffte viele Mautgebühren für Straßen und Kanäle ab;
+förderte den Bau neuer Straßen, die Gründung neuer Industrien (hauptsächlich
+durch Darlehen mit niedrigen Zinsen) und die Wiederbelebung des Handels in
+Übersee.
+»
+In der Tat stieg die Industrieproduktion in zwei Jahren um 60%, und die Zahl
+der französischen Schiffe, die im Export tätig waren, stieg von 16 auf 300.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 28
+John Law und die Mississippi Kompanie
+»
+Dann kam sein größter Plan: Durch den Verkauf von Anteilen an der "Mississippi
+Kompanie" (für Staatsanleihen, die zu 1/5 des Nominalwerts notierten, da jeder
+wusste, dass Frankreich pleite war) würde die Staatsverschuldung zurückgezahlt. Der
+Erlös würde dazu beitragen, die Kolonie Louisiana zu entwickeln, und alle Franzosen
+könnten am Wachstum teilhaben (vermutlich war er ehrlich erschüttert über Armut
+und hatte die gute Absicht zu helfen).
+»
+Im August 1717 gründete er die Mississippi Company,
+die von der Regierung ein Handelsmonopol für West-
+indien und Nordamerika erhielt. Schnell übernahm das
+Unternehmen alle anderen französischen Handels-
+unternehmen und hatte ab 1719 ein Handelsmonopol
+auf allen Meeren und im Tabakhandel in Frankreich.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 29
+John Law und die Mississippi Kompanie
+»
+Seine Bank wurde 1718 zur Banque Royale, was bedeutete, dass die
+Banknoten von der Krone garantiert wurden und alle Steuern in diesen
+Banknoten bezahlt werden konnten.
+»
+Law übertrieb den Reichtum von Louisiana mit geschicktem Marketing, was
+1719 zu Spekulationen in den Aktien des Unternehmens führte → Preis stieg
+um das 20-fache und erstmals beteiligten sich zigtausende Investoren und
+Spekulanten.
+»
+Die Bank begann jedoch auf Geheiß des Regenten, viel mehr Banknoten
+auszugeben, als sie an Gold- und Silberreserven hatte, was bald zu hoher
+Inflation führte.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 30
+Einführung in die BWL I Huber I 2. VO-Termin Seite 31
+John Law und die Mississippi Kompanie
+»
+Law‘s Bank war erfolgreich, bis die französische Regierung zugeben musste,
+dass die Anzahl der von der Banque Royale ausgegebenen Banknoten nicht
+der Menge an Edelmetall entsprach, die sie hielt (16 x höher!) Die Blase
+platzte Mitte 1720, als Gegner John Laws in Massen versuchten, ihre
+Banknoten in Gold und Silber umzutauschen.
+»
+Gleichzeitig kehrten die ersten Siedler aus Louisiana zurück und berichteten,
+dass es dort weder Gold noch Silber gäbe; sehr wohl aber feindliche Indianer,
+Sümpfe und tückische Krankheiten.
+»
+Als der Aktienkurs etwas sank, fixierte die Regierung ihn per Gesetz bei 9.000
+Livres … und nahm ihm damit jegliche spekulative Phantasie, so dass sehr
+viele Spekulanten verkaufen wollten.
+»
+Ende 1720 wurde Law all seiner Ämter enthoben und enteignet. Er floh aus
+Frankreich nach Venedig, wo er 1729 starb.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 32
+John Law und die Mississippi Kompanie
+»
+„Bestandteile“ der Blase:
+• Neue Welt, neue Möglichkeiten (Louisiana)
+• Viel Geld (Papier statt Gold - unbegrenztes Angebot)
+• Günstige Kredite für alle durch die Banque Royale (mit Anteilen an der
+Mississippi Company als Sicherheit)
+• Lockere Geldpolitik (Erhöhung der Geldmenge um das 16-fache)
+Sehr gute Doku zu John Law:
+https://www.youtube.com/watch?v=vA6HFMwtyc4&t=1890s&ab_channel=FrankHartmann
+Einführung in die BWL I Huber I 2. VO-Termin Seite 33
+Südseeblase (engl. South Sea Bubble)
+»
+Die South Sea Company war eine britische Aktiengesellschaft, die im 18.
+Jahrhundert in Südamerika Handel treiben sollte. Das Unternehmen wurde
+1711 gegründet und erhielt von der britischen Regierung ein Monopol für
+den Handel mit den südamerikanischen Kolonien Spaniens – ein „Recht“, das
+die Spanier nie akzeptierten (sie akzeptierten EIN Schiff pro Jahr). Im
+Gegenzug übernahm das Unternehmen die im Rahmen des Krieges mit
+Spanien entstandene Staatsschuld Englands (das wesentliche Ziel war, die
+Regierung zu finanzieren).
+»
+Spekulationen mit der Aktie des Unternehmens führten 1720 zu einer großen
+Blase, der sogenannten South Sea Bubble, die bei ihrem Platzen für viele den
+finanziellen Ruin bedeutete.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 34
+Südseeblase (engl. South Sea Bubble)
+»
+Die Regierung hatte ungefähr 50 Millionen Pfund Schulden und sah, wie
+Frankreich durch die Mississippi-Company schuldenfrei wurde.
+»
+Die South Sea Company erhielt ein Monopol für den Handel mit Südamerika.
+Anfangs 10 Mio. Pfund Kapital.
+»
+1720 zusätzliche 30 Mio. Pfund (> 50% aller Staatsschulden).
+»
+Das Unternehmen pries dann seine Aktien mit „den extravagantesten
+Gerüchten“ über den Wert seines potenziellen Handels in der Neuen Welt an,
+der von einer Welle „spekulativer Raserei“ gefolgt wurde. Der Aktienkurs
+stieg von 125£ im Januar 1720 auf 175£ im Februar, 330£ im März, 550£ Ende
+Mai und erreichte später einen Höchststand von 950£.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 35
+Südseeblase (engl. South Sea Bubble)
+Einführung in die BWL I Huber I 2. VO-Termin Seite 36
+Südseeblase: Korruption des Parlaments & der Regierung
+»
+Aktien der Gesellschaft wurden zum aktuellen Marktpreis an Politiker
+„verkauft“. Anstatt jedoch für die Aktien zu zahlen, erhielten diese Empfänger
+sie einfach ohne zu bezahlen, wobei sie die Möglichkeit hatten, die Aktien an
+das Unternehmen zurück zu verkaufen, wann und wie sie wollten, und als
+„Gewinn“ den Anstieg des Marktpreises zu erhalten.
+»
+Diese Methode die Regierung und Minister (und den König, der auch
+investierte) zu gewinnen, hatte den Vorteil, deren Interessen an die
+Interessen des Unternehmens zu binden: Um ihre eigenen Gewinne
+zu sichern, halfen viele Politiker die Aktie zu unterstützen.
+»
+Durch die Bekanntmachung der Namen ihrer Elite-Aktionäre gelang es dem
+Unternehmen, sich eine Aura der Legitimität zu geben, die andere Käufer
+anzog.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 37
+Südseeblase: Spekulationsblasen – „Bubbles“
+»
+Um am allgemeinen Boom teilzunehmen, wurde eine große Anzahl
+anderer Aktiengesellschaften an die Börse gebracht und extravagante
+(manchmal betrügerische) Behauptungen über ausländische oder
+andere Unternehmungen oder bizarre Systeme gemacht. Diese
+Firmen wurden „Bubbles“ (Seifenblasen) genannt.
+»
+Unter den vielen Unternehmen, die 1720 an die Börse gingen, gab es bspw. eine,
+die sich selbst als "Unternehmen für die Durchführung einer Unternehmung von
+großem Vorteil, aber niemand weiß, was es ist" beworben hat; andere
+versprachen ein Perpetuum mobile, etc.
+»
+Es gab eine landesweite Manie, da Menschen aller Schichten ein fieberhaftes
+Interesse an Investitionen entwickelten; v.a. in die South Sea Company, aber
+auch in Aktien im Allgemeinen.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 38
+Südseeblase (engl. South Sea Bubble)
+»
+Als der Aktienkurs langsam zu sinken begann, versuchten viele Menschen
+zu verkaufen. Um den Kurs zu steigern, beauftragten die Direktoren des
+Unternehmens ihre Agenten, Aktien zu kaufen, aber viele Investoren machten
+sich Sorgen, wollten Gewinne sichern und verkauften weiter.
+»
+Darüber hinaus endeten spekulative Blasen in Amsterdam und Paris – der
+Zusammenbruch fiel mit dem Ende der Mississippi-Bubble in Frankreich
+zusammen. Infolgedessen brach der Kurs der South Sea-Aktien ein – von
+über 900£ auf 150£ im September 1720.
+»
+Angesichts der Empörung der Anleger wurde das Parlament im Dezember
+einberufen und eine Untersuchung eingeleitet. 1721, zeigte sich der weit
+verbreitete Betrug unter den Unternehmensdirektoren und Korruption im
+Kabinett (einige landeten im Gefängnis).
+Einführung in die BWL I Huber I 2. VO-Termin Seite 39
+Isaac Newton und die Südseeblase
+„Ich kann die Bewegung der Himmelskörper berechnen,
+aber nicht die Verrücktheit der Menschen.“
+(„I can calculate the motions of the heavenly bodies,
+but not the madness of people“)
+Sir Isaac Newton, nachdem er ein Vermögen (20.000£;
+heute ≈ 6 Mio. Euro) durch Spekulationen in Aktien der
+South Sea Company verloren hatte.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 40
+Einführung in die BWL I Huber I 2. VO-Termin Seite 41
+Südseeblase (engl. South Sea Bubble)
+»
+„Bestandteile“ der Blase:
+• Neue Welt, neue Möglichkeiten (Südsee, Handel)
+• Viele neue (unerfahrene) Investoren
+• Leverage (Verschuldungshebel) und Leerverkäufe (short selling)
+• Aura der Legitimität durch die Vergabe von Aktien an den König und die
+Regierung, die die Regierung faktisch korrumpierte.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 42
+Oktober 1929
+»
+War der größte Börsenabsturz bisher, der Millionen betraf und die Great
+Depression auslöste.
+»
+Optimismus in den USA nach dem ersten Weltkrieg, gute wirtschaftliche
+Bedingungen. Die Aktienkurse begannen 1924 zu steigen und setzten sich
+1925 fort. Kurze Pause 1926, und anschließend neuerlicher beschleunigter
+Aufwärtstrend.
+»
+Viele Leute sahen ihre Bankiers, Arbeitgeber und Nachbarn mit Aktien reich
+werden, und wollten ebenfalls daran teilhaben.
+»
+Finanzintermediäre (v.a. GoldmanSachs) machten dies einfacher als je zuvor -
+indem sie Kredite anboten (Leverage!)
+Einführung in die BWL I Huber I 2. VO-Termin Seite 43
+Oktober 1929
+»
+Zum ersten Mal kauften Millionen von Menschen
+Aktien. Wie bei der Mississippi- und South Sea-
+Bubble machten viele „normale“ Leute mit.
+»
+Der Aktienindex stieg innerhalb von sieben Jahren
+um das 6-fache, erreichte einen Höchststand von
+400; brach dann aber auf 34 ein (-92%).
+»
+Millionen verloren ihre Ersparnisse; der Konsum
+brach zusammen, dann auch die Industrie-
+produktion, da Käufer fehlten. Der Welthandel
+schrumpfte um 90%. Während der Großen
+Depression lag die Arbeitslosigkeit in den USA,
+Österreich und Deutschland bei >30%.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 44
+Oktober 1929
+„Bestandteile“ der Blase:
+• Neue Möglichkeiten (US-Weltmacht, Autos, Konsum)
+• Viele neue (unerfahrene) Investoren, Verkaufsförderung durch
+Investmentbanken (v.a. GoldmanSachs)
+• Leverage (10% Anzahlung für Aktienkäufe genügte, Rest Kredit)
+• Lockere Geldpolitik durch schwache Zentralbank
+Einführung in die BWL I Huber I 2. VO-Termin Seite 45
+Reaktion: Neue Regulierungen von FDR (Franklin D. Roosevelt)
+»
+Insiderhandel verboten (1931)
+»
+Glass-Steagall-Act (1933) zur Trennung des Commercial Banking vom
+Investment Banking und beider von den Versicherungen (aufgehoben
+1999).
+»
+Spekulation mit einigen Rohstoffen (v.a. Lebensmitteln) verboten
+1936; aufgehoben 2004.
+»
+M.E. „gute“ Regulierungsmaßnahmen. Nur wenige Jahre nach deren
+Aufhebung folgte die nächste große Spekulationsblase und -crash
+(die Finanzkrise 2008/09).
+Einführung in die BWL I Huber I 2. VO-Termin Seite 46
+Weiteres Bubbles und Crashes
+»
+Dot-Com-Blase bis zum Jahr 2000
+»
+US-Housing-Boom und Platzen mit der Pleite der Lehman-Bank
+am 15.09.2008.
+»
+Corona-Crash nach 10 Jahren Aktienboom, der getrieben war
+von billigem Geld (Nullzinspolitik und „Quantitative easing“ =
+Gelddrucken) nach der Finanzkrise 2008/09. Da aber laufend
+weiter billiges Geld gedruckt wurde, waren die Aktienkurse sehr
+schnell wieder nahe neuen Höchstständen – der Crash war sehr
+kurzlebig.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 47
+Corona-Crash im März 2020 – Beispiel Deutschland (DAX-Index)
+Einführung in die BWL I Huber I 2. VO-Termin Seite 48
+Vergleich USA-DE: Ähnliche Entwicklung
+Welt-Kapitalmärkte bewegen sich ähnlich
+Einführung in die BWL I Huber I 2. VO-Termin Seite 49
+Österreich? Schwächer, da hier keine ausgeprägte Aktien-Kultur und
+viele der erfolgreichsten Unternehmen privat (Red Bull, Swarovski)
+Einführung in die BWL I Huber I 2. VO-Termin Seite 50
+Die wertvollsten Unternehmen Europas
+» Bis 1914 waren die meisten der wertvollsten Unternehmen
+der Welt europäisch, denn Europa hatte damals 70% der
+weltweiten Industrieproduktion und Aktienmarkt-
+kapitalisierung.
+» Durch die Selbst-Zerstörung Europas im 1. und 2. Weltkrieg
+und die Vertreibung großer Teile der intellektuellen Elite
+durch die Nazis in den 1930er Jahren fiel Europa hinter
+die USA zurück.
+» Heute sind die wertvollsten Unternehmen der Welt
+überwiegend US-amerikanisch, wobei Microsoft, Apple,
+NVIDIA, Google und Amazon die aktuell wertvollsten
+Unternehmen sind – mit je 2000 bis 4500 Mrd. USD
+Aktienwert.
+» Die wertvollsten Unternehmen Europas sind aus dem
+Pharmabereich, Luxusgüter, Chipindustrie sowie Software-
+und Consulting.
+https://www.visualcapitalist.com/most-valuable-companies-europe/
+Einführung in die BWL I Huber I 2. VO-Termin Seite 51
+Einführung in die BWL I Huber I 2. VO-Termin Seite 52
+Bitcoin
+»
+Ein weltweit verwendbares, dezentrales, digitales Zahlungsmittel
+(Erfindung 2009 durch Satoshi Nakamoto, der nach wie vor incognito ist) –
+angepriesen als „Geld des Internetzeitalters“ und eingeführt am
+Höhepunkt der Finanzkrise 2008/2009
+»
+Besteht im Kern aus einem Zahlungssystem und einer Recheneinheit:
+• Zahlungssystem ist die Blockchain
+• Recheneinheit der Bitcoin
+Einführung in die BWL I Huber I 2. VO-Termin Seite 53
+Bitcoin-Hype und Crash
+»
+Erste „echte“ Transaktion am 22.05.2010: 10.000 Bitcoin für eine Pizza – das
+entsprach am Höhepunkt rund 1 Milliarde Euro!
+»
+„Aus dem Nichts“ entstand ein Anlageinstrument, das am Höhepunkt rund
+2000 Milliarden Dollar wert war → mehr als der gesamte öst. Aktienmarkt;
+aber weniger als 0,8% des weltweiten Vermögens!
+»
+Kurs ist aber sehr volatil…
+»
+Mittlerweile gibt/gab es über 20.000 Nachahmer, d.h. >20.000 Krypto-
+währungen (von denen über
+80% schon wieder wertlos sind).
+Einführung in die BWL I Huber I 2. VO-Termin Seite 54
+Gewinne? Mit den meisten ICOs (Initial Coin Offerings) verliert man
+sehr schnell Geld…
+Die meisten Kryptowährungen
+gehen innerhalb weniger Monate
+pleite, und nur sehr wenige
+bringen den Investoren Gewinne.
+Ich rate daher sehr zur Vorsicht
+und Zurückhaltung bei einem
+Investment, da es hoch spekulativ
+ist.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 55
+Die größten Kryptowährungen
+(https://coinmarketcap.com/de/)
+Einführung in die BWL I Huber I 2. VO-Termin Seite 56
+Ist Bitcoin eine Währung? Ist er Geld?
+»
+Eine Währung ist das offizielle Zahlungsmittel eines Landes; das ist Bitcoin seit Mitte
+2021 in El Salvador (neben dem US-Dollar, den sie schon lange nutzen) –> BTC nun
+tatsächlich Währung. Einzige andere Kryptowährung der Welt ist der „Petro“, der
+Ende 2018 im bankrotten Venezuela eingeführt wurde.
+»
+Ist Bitcoin Geld? Geld wird definiert über drei Funktionen: Es muss Recheneinheit,
+Wertaufbewahrungsmittel und Zahlungsmittel sein. Historisch erfüllten diese
+Funktionen z.B. Salz, Muscheln, Steine, Gold, Silber, Papiergeld, etc.
+•
+Bitcoin kann Recheneinheit sein.
+•
+Bitcoin ist zur Wertaufbewahrung nur sehr eingeschränkt geeignet: Schon
+wiederholt mehr als 60% Wertverlust innerhalb weniger Monate … Tatsächlicher
+Wert? … m.E. Null!
+•
+Bitcoin ist nur sehr eingeschränkt Zahlungsmittel – im Darkweb und bei einzelnen
+Geschäften einsetzbar, aber nicht flächendeckend; auch in El Salvador sehr
+schwierig etwas damit zu kaufen.
+Einführung in die BWL I Huber I 2. VO-Termin Seite 57
+Preisentwicklung… letzte 5 Jahre. V.a. weil die Zinsen so niedrig waren und es so viel
+(neu gedrucktes) Geld gibt; letzter Boom seit Amtseinführung von Donald Trump.
+Kaufen Sie nichts, wo Sie nicht verstehen, wo „Wachstum im Wert“ herkommen soll…
+Einführung in die BWL I Huber I 2. VO-Termin Seite 58
+Mining
+»
+Bitcoins werden durch “mining” geschaffen.
+»
+Dabei werden kryptographische Rätsel gelöst – Ausgangspunkt ist
+der Hashcode des aktuellen Blocks. Durch die Kombination mit einer
+Zufallszahl wird das nächste Rätsel gestellt. Wer es als erster löst (d.h. minimale
+Anzahl an “0” vorne hat) erhält als Belohnung die neu geschaffenen (derzeit 3,125)
+Bitcoins (passiert ≈ alle 10 Min.).
+»
+Je mehr “Miner”, desto schwieriger werden die Rätsel.
+»
+Sinn? Es gibt keinen, außer “proof of work”.
+»
+Kosten? Enormer Stromverbrauch – CO2-Ausstoss
+ist mit 90 Mio. t/Jahr doppelt so hoch wie jener
+der Schweiz! Jede Transaktion verursacht so viel CO2-
+Ausstoß wie 110.000 Stunden YouTube schauen oder
+wie 1,5 Mio Kreditkarten-Transaktionen.
+https://www.visualcapitalist.com/visualizing-the-power-consumption-of-bitcoin-mining/
+Einführung in die BWL I Huber I 2. VO-Termin Seite 59
+https://science.orf.at/stories/3215308/
+Einführung in die BWL I Huber I 2. VO-Termin Seite 60
+Funktionsweise der Blockchain
+Ingrid
+Die Blockchain ist ein dezentrales
+→19bLDxjsV63oF14P38LhDZmfKUApNeqFi6 
+Register oder digitaler Kontoauszug
+Jutta aus aneinandergereihten Datenblöcken
+über Transaktionen und Interaktionen
+zwischen Computern (bzw. deren
+Nutzern). Peer-to-peer Netzwerk wo
+dieselben Daten auf Tausenden von
+Computern gespeichert sind →
+Sebastian
+→1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX 
+Gertrud
+Einführung in die BWL I Huber I 2. VO-Termin Seite 61
+Wie sieht eine Transaktion aus?
+Einführung in die BWL I Huber I 2. VO-Termin Seite 62
+Was ist eine Blockchain?
+Blockchain könnte wichtige
+Zukunftstechnologie sein –
+für “sharing economy”,
+aber auch online-voting,
+online-Katasteramt
+(verhindert Korruption und
+Fehler; macht Notare
+überflüssig).
+Einführung in die BWL I Huber I 2. VO-Termin Seite 63
+Zahl der existierenden Bitcoins
+21 Millionen
+21
+20
+19
+19,9
+18
+17
+Millionen
+16
+15
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+2009 2011 2013 2015 2017 2019 2021 2023 2025 2027 2029 2031 2033
+Einführung in die BWL I Huber I 2. VO-Termin Seite 64
+Einführung in die BWL I Huber I 2. VO-Termin Seite 65
+Was sagen die Aufsichtsbehörden?
+https://www.elliptic.co/blog/a-world-of-crypto-regulation-at-a-glance
+Einführung in die BWL I Huber I 2. VO-Termin Seite 66
+Preis und Wert: Was ist ein Bitcoin wert?
+»
+Was ist der „Preis“, was ist der „Wert“ von etwas?
+Einführung in die BWL I Huber I 2. VO-Termin Seite 67
+Weiterführende Literatur für Interessierte
+»
+Weiterführend für Interessierte:
+• Galbraith, J.K. „The A Short History of Financial Euphoria”, 1994
+• Galbraith, J.K. „Eine kurze Geschichte der Spekulation”, 2011
+• Mehr Informationen zur VOC: https://www.thegeniusworks.com/2017/12/dutch-east-india-company-
+the-worlds-most-valuable-company-of-all-time-worth-7-9-trillion-in-todays-money/
+• Doku zu John Law: https://www.youtube.com/watch?v=vA6HFMwtyc4&ab_channel=FrankHartmann
+• Film “Tulpenfieber” (“tulip mania”), 2017
+Einführung in die BWL I Huber I 2. VO-Termin Seite 68

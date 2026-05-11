@@ -1,0 +1,276 @@
+Betriebswirtschaftliches Denken und Management
+Externes Rechnungswesen
+Leonhard Dobusch
+21./22. Oktober 2025
+Universität Innsbruck
+<1>
+Systematik des Rechnungswesens
+Perspektiven auf das Rechnungswesen
+‣ Wissenschaftlich: ein Beschreibungsmodell (Deskription)
+‣ Funktional: ein Informationssystem
+‣ Normativ: Erklärung betrieblicher Vorgänge?
+‣ Bewertung
+‣ Handlungsanweisung
+3
+Hemisphären des Rechnungswesens
+Externes Internes
+Rechnungswesen Rechnungswesen
+‣ Darstellung nach Außen ‣ Planung und Kontrolle
+‣ Information für Stakeholder ‣ Information für Management
+‣ Beispiel: Jahresabschluss (Bilanz, ‣ Beispiele: Kostenartenrechnung,
+G&V, Anhang), Sonderbilanzen Soll-Ist-Vergleich
+4
+Buchführungspflicht nach UGB
+§
+Der Unternehmer hat Bücher zu führen und in
+diesen seine unternehmensbezogenen Geschäfte
+und die Lage seines Vermögens nach den
+Grundsätzen ordnungsmäßiger Buchführung
+ersichtlich zu machen. Die Buchführung muss so
+beschaffen sein, dass sie einem sachverständigen
+Dritten innerhalb angemessener Zeit einen Überblick
+über die Geschäftsvorfälle und über die Lage des
+Unternehmens vermitteln kann.
+§ 190 UGB
+5
+<2>
+Bilanz und Bilanzierung
+6
+Bilanz: Begriffsklärung
+Formell Materiell
+Bilanz ist die ertragsgemäß Bilanz ist die wertmäßige
+ausgeglichene, gegliederte Abbildung und Abrechnung des
+Gegenüberstellung von betrieblichen Umsatzprozesses
+Vermögenswerten (Aktiva) und mit Informations- und
+Wertansprüchen (Passiva). Gestaltungsfunktion.
+7
+Charakteristika von Bilanzen
+‣ Keine mengenmäßigen Angaben >> Bewertung
+‣ Bestandsgrößen
+‣ Erfolg wird durch Gegenüberstellung von Vermögens- und
+Kapitalpositionen (zu einem Stichtag) ermittelt
+‣ Vermögen einerseits und Eigenkapital sowie Schulden andererseits
+werden einander gegenübergestellt
+‣ Verschiedene Vermögensgegenstände oder Schulden von gleicher
+Risikostruktur werden zu einer Bilanzposition zusammengefasst
+‣ Darstellung zumeist in Kontoform
+8
+Grundstruktur einer Bilanz
+Aktiva = Vermögen Passiva = Kapital
+Anlagevermögen Eigenkapital
+- Immaterielle Vermögenswerte - Gezeichnetes Kapital
+- Sachanlagen - Rücklagen
+- Finanzanlagen - Überschuss
+Kapital- Kapital-
+verwendung herkunft
+Umlaufvermögen Fremdkapital
+- Vorräte - Anleihen
+- Forderungen - Kredite
+- Kassa - V.a.L.u.L.
+9
+Grundstruktur einer Bilanz
+Aktiva = Vermögen Passiva = Kapital
+Anlagevermögen Eigenkapital
+- Immaterielle Vermögenswerte - Gezeichnetes Kapital
+- Sachanlagen - Rücklagen
+- Finanzanlagen - Überschuss
+Kapital- Kapital-
+verwendung herkunft
+Umlaufvermögen Fremdkapital
+- Vorräte - Anleihen
+- Forderungen - Kredite
+- Kassa - V.a.L.u.L.
+10
+Bilanzzweck: Information
+Information für „Beteiligte mit Informationsinteressen“ („Stakeholder“)
+‣ Unternehmensführung
+‣ AnteilseignerInnen
+‣ GläubigerInnen
+‣ Öffentlichkeit
+‣ Fiskus
+‣ ArbeitnehmerInnen
+>> Bedeutung schwankt stark zwischen und innerhalb dieser Gruppen auf
+Grund unterschiedlicher Zugänge zu Information und Interessenskonflikten
+11
+Bilanzzweck: Rechenschaft & Zahlungsbemessung
+Zahlungsbemessungskriterium
+‣ Maßgeblich für Zahlungshöhe
+‣ Insbesondere für Anteilsinhaber und Fiskus
+‣ Grundsatz: Maßgeblichkeit der UGB/HGB-Bilanz für Steuerbilanz
+Festlegung ergebnisabhängiger Zahlungsansprüche
+‣ Ermittlung dem Grunde und der Höhe nach
+‣ Verwendung (Ausschüttung, Kapitalrückzahlung, Thesaurierung)
+>> Einfluss von Bewertungmethodik
+12
+<3>
+Bilanzierung und Bewertungsprinzipien
+Bilanzierungsprozess
+(1) Bilanzansatz
+‣ Bilanzierungsfähigkeit: abstrakt und konkret
+‣ Bilanzierungswahlrecht vs. Bilanzierungspflicht
+(2) Bilanzbewertung
+‣ Bewertungsprinzipien: Einzelbewertung, Vorsicht, etc.
+‣ Bewertungsverfahren (z.B. Abschreibung: linear, degressiv, progressiv,
+Leistungsabschreibung)
+(3) Bilanzausweis
+‣ Gliederungsvorschriften
+14
+Grundsätze ordnungsmäßiger Buchführung
+Rahmengrundsätze
+‣ Richtigkeit und Willkürfreiheit
+‣ Klarheit (inkl. Verrechnungsverbot)
+‣ Einzelbewertung
+‣ Vollständigkeit
+Abgrenzungsgrundsätze, insbes.
+‣ Realisationsprinzip
+‣ Imparitätsprinzip
+Ergänzende- und Dokumentationsgrundsätze, insbes.
+‣ Kontinuitätsprinzip
+‣ Vorsichtsprinzip
+15
+22 Der grosse Börsenkrach des Jahres 1878.
+Lust, denn erstens würde ein derartiger Process jahrelang
+dauern, zweitens das betreffende Effect um den lezten Credit
+bringen, drittens aber würden die Syndicats - Mitglieder zu
+„rumoren" beginnen, und - die Bank hält sich wohlweislich
+an das berühmte Wort, dass, wer Butter auf dem Kopfe hat,
+nicht in die Sonne gehen möge. Was bleibt also übrig? Die
+nicht angebrachten Stücke werden entweder von der Bank
+oder von der neuen Gesellschaft übernommen und figuriren
+in deren Büchern als „eigene Effecten". In der Bilanz werden
+dieselben dann zum Pari-Curse eingestellt, oder, wenn sie zu
+schlecht notirt sind, gar nicht angeführt. In diesem Falle
+Vom „Gründerkrach in Wien 1873…
+ist nämlich gewöhnlich einer der Herren Verwaltungsräthe so
+freundlich, dieselben der Gesellschaft zu einem schönen Curse
+abzukaufen und auf seinen Conto zu nehmen. Natürlich lässt
+sich aber der Mann gleichzeitig einen Brief von der Gesell-
+schaft geben, in welchem sie sich verpflichtet, sofort nach er-
+folgtem Bilanz-Abschlüsse (!) ihm die Effecten zu demselben
+“
+oder sogar einem etwas höheren Curse wieder abzunehmen.
+„So kommt es, dass man in den vielen Fällen auch aus
+einer total verunglückten Financirung einen Gewinn
+„herausrechnet'4. Die Bilanz wird genehmigt, das Absoluto-
+rium gegeben, die Dividende bestimmt und vertheilt, dem
+Verwaltungsräthe der Dank votirt, und - Alles ist zufrieden.
+Wie lange? Darum kümmert man sich für jezt nicht; dass
+das nothwendige Resultat solchen Treibens zulezt denn doch
+der Bankerott sein wird und muss, genirt die Herren auch
+nicht, denn - „Nach uns die Sündfluth!"
+Schäffle, A. (1874, p. 22)
+Solches Gründen verlangte eine gleichgestimmte Börse.
+16
+Bild: https://commons.wikimedia.org/wiki/File:Schwarzer_Freitag_Wien_1873.jpg
+Hierüber schreibt der beste Korrespondent des „Actionär" am
+1. Nov. 1872: „Quos Deus vult perdere eosdem dementati Der
+Spruch des edlen Dichters passt vollkommen auf die hiesigen
+Kliquen, die das grosse Wort an der Börse führen. Sie sind
+aüsschliesslich aus jenen Hazardspielern zusammengesezt, die
+in den lezten „Epochen" vielleicht nichts gewagt, aber doch
+viel gewonnen haben. Als Chef fungirt gewöhnlich ein Ober-
+hazardeur, dem man gemeinhin den Besiz von einer Million
+und darüber zutraut. Diese Kliquen rechnen nicht, wägen
+This content downloaded from 138.232.236.39 on Mon, 21 Oct 2019 05:33:52 UTC
+All use subject to https://about.jstor.org/terms
+…zur Weltfinanzkrise 2008
+“
+[I]m Jahr 1873 kam es in Wien, damals einer der
+wichtigsten Finanzplätze Europas, zu einem großen
+Börsenkrach, der im Zusammenhang stand mit der
+damaligen Zeitwertbewertung. Als Reaktion darauf ist
+dann durch das deutsche Handelsgesetzbuch das
+Vorsichts- und das Niederstwertprinzip eingeführt
+worden, die Bewertung zu Anschaffungskosten und so
+weiter.“
+Franz-Christoph Zeitler, Vize-Präsident der Deutschen
+Bundesbank 2007-2011, zuständig für Bankenaufsicht*
+*Manager Magazin, 10.06.2008, https://www.manager-
+magazin.de/magazin/artikel/a-549640-5.html [21.10.2019]
+17
+Bild: Lee Jordan, CC BY-SA 2.0, https://commons.wikimedia.org/wiki/File:Birmingham_Northern_Rock_bank_run_2007.jpg
+…zur Weltfinanzkrise 2008
+“
+Wir haben es hier mit einem Brandbeschleuniger zu
+tun, um den wir uns dringend kümmern müssen: das
+berüchtigte, aus den USA übernommene fair value
+accounting.
+Jochen Sanio, Präsident der deutschen Bundesanstalt
+für Finanzdienstleistungsaufsicht 2002-2012* (Herv. L.D.)
+*Die Zeit, 10.04.2008, https://www.zeit.de/2008/16/
+Das_ist_ein_Brandbeschleuniger/komplettansicht [21.10.2019] 18
+Bild: Lee Jordan, CC BY-SA 2.0, https://commons.wikimedia.org/wiki/File:Birmingham_Northern_Rock_bank_run_2007.jpg
+Bewertungsprinzipien
+Historisch (vorsichtsgetrieben)
+‣ Anschaffungswertprinzip
+‣ Imparitätsprinzip
+‣ Niederstwertprinzip (streng vs. gemildert)
+‣ Höchstwertprinzip
+Zeitwertorientiert
+‣ „Fair Value“ bis hin zu „Mark to market“
+‣ Standard bei US GAAP and IFRS
+Quelle: https://www.bloomberg.com/news/articles/2020-10-06/billionaire-benko-due-big-payout-after-real-estate-revaluation
+>> relevant für Bildung „stiller Reserven“
+19
+Bewertungsverfahren: Abschreibungen
+§
+Die Anschaffungs- oder Herstellungskosten sind
+bei den Gegenständen des Anlagevermögens, deren
+Nutzung zeitlich begrenzt ist, um planmäßige
+Abschreibungen zu vermindern. Der Plan muß die
+Anschaffungs- oder Herstellungskosten auf die
+Geschäftsjahre verteilen, in denen der Vermögensgegenstand
+voraussichtlich wirtschaftlich genutzt werden kann.
+§ 204 UGB
+20
+Bewertungverfahren: Abschreibungen
+Abschreibungstypen
+Gründe für Abschreibungen
+‣ Linear
+‣ verbrauchsbedingt
+(z.B. Abnutzung) ‣ Degressiv
+‣ zeitlich bedingt
+‣ Geometrisch (z.B. 25% vom Bilanzwert/
+(z.B. Witterung) Jahr;)
+‣ wirtschaftlich bedingt (z.B. ‣ Arithmetisch (z.B. Verringerung d.
+Abschreibungsbetrags um fixen Betrag)
+Wertminderung)
+‣ Progressiv
+‣ rechtlich bedingt
+(z.B. Patentfrist) ‣ Leistungsabschreibung
+21
+<4>
+Bilanztypen und Jahresabschluss
+Bilanztypen
+nach Bilanzierungshäufigkeit und -zeitraum
+‣ Regelmäßig: Tages-/Monats-/Quartals-/Jahresbilanzen
+‣ Unregelmäßig: Gründungs-/Sanierungs-/Insolvenzbilanz
+nach Bilanzinhalt
+‣ Beständebilanz (Bilanz im engeren Sinne)
+‣ Bewegungsrechnung (z.B. Erfolgs-, Cashflow-Rechnung)
+nach Bilanzierungsanlass
+‣ Gesetzlich vorgeschrieben: Handels-, Steuerbilanz
+‣ Freiwillig: Sozial-, Öko- oder interne Bilanzen
+23
+Jahresabschluss: Bestandteile
+Bilanz
+‣ Erfolg durch Vermögensvergleich zweier Bilanzstichtage
+Gewinn- und Verlustrechnung
+‣ Erfolg durch Saldierung von Aufwendungen und Erträgen, Staffelform
+Anhang (verpflichtend für Kapitalgesellschaften)
+‣ Korrektur-/Ergänzungsfunktion, Bilanzierungsmethoden
+Lagebericht (verpflichtend für Kapitalgesellschaften)
+‣ Lage der Gesellschaft entsprechend den „tatsächlichen
+Verhältnissen“; formal nicht Teil des Jahresabschlusses
+24
+Kontakt
+E-Mail: Leonhard.Dobusch@uibk.ac.at
+Mastodon/Bluesky: @leonido@chaos.social / @leonido
+Web: bit.ly/LD-UIBK // dobusch.net
+Research blogs:
+osconjunction.net
+governancexborders.com
+Literatur
+‣ Schäffle, A. (1874): Der „grosse Börsenkrach” des Jahres 1873. Zeitschrift für die gesamte
+Staatswissenschaft / Journal of Institutional and Theoretical Economics, 30 (1), 1-94.,
+26

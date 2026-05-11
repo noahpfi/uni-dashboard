@@ -1,0 +1,189 @@
+Einführung in die Theoretische Informatik
+1. Vorlesungsklausur für das SS25 am 27.06.2025 Gruppe B1
+Name:
+Matrikelnummer:
+Unterschrift:
+Diese Klausur ist closed-book. Sie haben 90 Minuten Zeit. Insgesamt gibt es 100 Punkte, die sich wie folgt
+aufteilen: 24 Punkte für die Multiple-Choice-Fragen 1 bis 6 und 19 Punkte für die offenen Fragen 7 bis 10.
+DieAntwortderMultiple-Choice-FragenmüssensieaufdemDeckblatt(dieseSeite)angeben,indemSiejeweils
+T (Wahr) oder F (Falsch) in die entsprechende Box eintragen. Beachten Sie, dass auch mehrere Antworten
+richtig sein können. Pro richtige Antwort bekommen Sie einen Punkt, pro falsche Antwort werden Ihnen 2
+Punkte abgezogen. Wenn Sie keine Antwort geben, gibt es keine Punktabzüge. Es ist auch nicht möglich, für
+eine gesamte Aufgabe Minuspunkte zu erhalten. Ihre Note wird dann durch den angegebenen Notenschlüssel
+berechnet.
+FallsSiemehrPlatzbrauchen,gebenwirIhnengernezusätzlicheZettel,verwendenSiekeinesfallseigeneZettel!
+Viel Erfolg!
+Notenschlüssel:
+Punkte ⩾90 ⩾75 ⩾60 ⩾50 <50
+Note Sehr Gut Gut Befriedigend Genügend Nicht Genügend
+1. (a) (b) (c) (d)
+2. (a) (b) (c) (d)
+3. (a) (b) (c) (d)
+4. (a) (b) (c) (d)
+5. (a) (b) (c) (d)
+6. (a) (b) (c) (d)
+7. / 19 Punkte
+8. / 19 Punkte
+9. / 19 Punkte
+10. / 19 Punkte
+1. VO-Klausur ETI SS25 Gruppe B1
+1. (4 Punkte) Welche der folgenden Aussagen sind richtig?
+a) Die Formel (g∨q)∧(¬g∧¬q) ist eine Tautologie.
+b) Die Formel (g∧q)∨(¬q∨¬g) ist unerfüllbar.
+c) Die Formel (q∨(b∧g))→(q∨b)∧(q∨g) ist unerfüllbar.
+d) Die Formel ((q→(g∧b))∧(g→d))→((b→¬x)→(q→x)) ist eine Tautologie.
+2
+1. VO-Klausur ETI SS25 Gruppe B1
+2. (4 Punkte) Betrachten Sie die formalen Sprachen L={ϵ,0,10,100,110}, M ={1,11,101,111} und
+N ={0,1}∗. Welche der folgenden Aussagen sind richtig?
+a) L∪M ={ϵ,0,1,10,11,100,101,110,111}
+b) L∪(M ∩N)={ϵ,0,1,10,100,101,110,111}
+c) (L∪M)∩N ={ϵ,0,1,10,11,100,101,110,111}
+d) L∪M ={0,1,10,11,100,101,110,111}
+3
+1. VO-Klausur ETI SS25 Gruppe B1
+3. (4 Punkte) Welche der folgenden Anordnungen der Chomsky-Hierarchie sind richtig?
+Zur Erinnerung:
+L =reguläre Sprachen L =rekursiv aufzählbare Sprachen
+3 0
+L =kontextfreie Sprachen L=formale Sprachen
+2
+L =kontextsensitive Sprachen
+1
+Hier bezeichnet ⊆ die Teilmengenbeziehung und ⊊ die echte Teilmengenbeziehung; ähnlich für ⊋.
+a) L ⊊L ⊊L ⊊L ⊊L
+3 2 1 0
+b) L ⊋L ⊋L ⊋L ⊋L
+3 2 1 0
+c) L =L =L =L =L
+3 2 1 0
+d) L ⊆L ⊆L ⊆L ⊆L
+3 2 1 0
+4
+1. VO-Klausur ETI SS25 Gruppe B1
+4. (4 Punkte) Welche der folgenden Aussagen bezüglich des dargestellten Automaten A sind richtig?
+0
+a c
+0
+1 1 1 1
+0
+b d
+0
+a) Für alle n,m⩾0 gilt δˆ(b,12n02m+1)=d.
+b) L(A)∩{0n1m |n,m⩾0}={}.
+c) Für alle n,m⩾0 gilt δˆ(b,12n+102m)=d.
+d) L(A)∩{0n1m |n,m⩾0}={02n+112m+1 |m,n⩾0}.
+5
+1. VO-Klausur ETI SS25 Gruppe B1
+5. Welche der folgenden Ableitungen sind im Bezug auf die Grammatik G=({S,T,U},{a,b,c},R,S)
+korrekt? (Die Ableitung kann auch partiell sein.)
+Regeln R der Grammatik G:
+S →aTb|aU |ϵ
+aTb→aaaTbb|aaTbbb|bTa|Sbb
+U →aaU |Sc
+a) U ⇒aTb⇒aaTbbb⇒aaaTbbbbb⇒aaaaTbbbbbbb⇒aaaaaaTbbbbbbbb
+b) S ⇒aTbbbbb⇒Sbb⇒aTbbb⇒Sbbbb⇒aTb
+c) S ⇒aTb⇒aaTbbb⇒aSbbbb⇒aaUbbbb
+d) aTb⇒S ⇒aaTbbb⇒aaaaTbbbb⇒aaabTabbb
+6
+1. VO-Klausur ETI SS25 Gruppe B1
+6. (4 Punkte) Seien L und M formale Sprachen mit L ⩽p M. Welche der folgenden Aussagen zu
+Reduktionen sind richtig?
+a) Wenn M ∈NP dann auch L∈NP.
+b) Wenn L∈NP dann auch M ∈NP.
+c) Wenn L∈P dann auch M ∈P.
+d) Wenn M ∈P dann auch L∈P.
+7
+1. VO-Klausur ETI SS25 Gruppe B1
+7. (19 Punkte) Zeigen Sie im Kalkül NK des natürlichen Schließens, dass
+¬q →¬¬p ⊢ ¬p→¬¬q
+Verwenden sie hierfür ausschließlich die folgenden Regeln:
+Einführung Elimination
+A B A∧B A∧B
+∧ ∧: i ∧: e ∧: e
+A∧B A B
+A B
+. .
+. .
+. .
+A∨B C C
+A B
+∨ ∨: i ∨: i ∨: e
+A∨B A∨B C
+A
+.
+.
+.
+B
+A A→B
+→ →: i →: e
+A→B B
+A
+.
+.
+.
+False
+A ¬A
+¬ ¬: i ¬: e
+¬A False
+False
+False False: e
+A
+¬¬A
+¬¬ ¬¬: e
+A
+8
+1. VO-Klausur ETI SS25 Gruppe B1
+8. a) (5 Punkte) Finden Sie eine kontextfreie Grammatik G mit L(G )={ba,ab}.
+1 1
+b) (14 Punkte) Betrachten Sie die folgende formale Sprache über dem Alphabet Σ={a,b}:
+L ={x|x enthält eine ungerade Anzahl von a und eine gerade Anzahl von b}
+2
+Finden Sie eine rechtslineare Grammatik G mit L(G )=L .
+2 2 2
+9
+1. VO-Klausur ETI SS25 Gruppe B1
+9. a) Gegeben Sei folgender DEA A=({q ,q ,q },{1,0},δ,q ,{q }) mit δ:
+1 2 3 1 2
+q 1 0
+q q q
+1 2 3
+q q q
+2 1 2
+q q q
+3 2 3
+i. (2 Punkte) Berechnen Sie δ(cid:98)(q
+3
+,011).
+ii. (3 Punkte) Bestimmen Sie L(A)∩{101,110,100}.
+b) (14 Punkte) Wir betrachten das Alphabet Σ = {j,k,k}. Konstruieren Sie einen determinis-
+tischen endlichen Automaten (DEA) A mit weniger als 10 Zuständen, der genau die Wörter
+akzeptiert, die jede der drei Symbolen j, k und l mindestens einmal enthalten. Automaten
+mit mehr Zuständen erhalten 0 Punkte.
+10
+1. VO-Klausur ETI SS25 Gruppe B1
+10. (19Punkte)EntwerfenSieeinetotale,deterministische1-Band-TuringmaschineM mitdemEingabe-
+alphabet{b,a,c}an,diefüreineEingabederFormbnak (mitn,k ≥0)dieAusgabecm produziert,
+wobei m=max(n,k).
+Das heißt: Falls der Bandinhalt initial von der Form
+⊢ bbb aaaa⊔∞
+(cid:124)(cid:123)(cid:122)(cid:125)(cid:124)(cid:123)(cid:122)(cid:125)
+n-malk-mal
+ist, so landet die Maschine in endlich vielen Schritten im akzeptierenden Zustand t und der Bandin-
+halt ist dann:
+⊢ cccc ⊔∞
+(cid:124)(cid:123)(cid:122)(cid:125)
+max(n,k)
+• (5 Punkte) Beschreiben Sie informell, wie Ihre Turingmaschine vorgeht, um die Ausgabe zu
+erzeugen.
+• (14 Punkte) Geben Sie die vollständige Übergangsfunktion Ihrer Turingmaschine an (in tabel-
+larischer Form oder graphisch).
+Beachten Sie dabei:
+• Ihre Maschine darf, abgesehen von den akzeptierenden und verwerfenen Zuständen t und r,
+höchstens4weitereZuständehaben.MaschinenmitmehrZuständenerhalten0Punkte.
+• Zustandsübergänge, die für die Korrektheit der Maschine irrelevant sind (z.B. weil sie uner-
+reichbar sind) sowie die Übergänge von den akzeptierenden/verwerfenden Zuständen dürfen
+weggelassen werden.
+• DasVerhaltenderMaschineaufEingaben,dienichtvonderFormbnak sind,sowiediePosition
+des Lese-/Schreibkopfes am Ende der Ausführung sind egal.
+11

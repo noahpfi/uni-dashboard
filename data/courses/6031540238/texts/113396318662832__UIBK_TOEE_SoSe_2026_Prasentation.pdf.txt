@@ -1,0 +1,136 @@
+Theorie ökonomischer Entscheidungen
+Präsentation im Proseminar
+Prof. Dr. Heiner Schumacher
+UIBK
+1 Übersicht
+Ein Teil der Prüfung für “Theorie ökonomischer Entscheidungen”ist eine Präsentation.
+In dieser Präsentation stellen Sie die Antwort auf eine spezi…sche Forschungsfrage vor.
+Die Präsentation ist in Dreier-Gruppen abzuhalten. Bewertet werden die Präsentation
+selbstunddiedazugehörigenPräsentationsfolien. Wichtig: DiegenauenAnforderun-
+gen werden durch die Proseminarleiter/Proseminarleiterinnen in den ersten
+Wochen des Semesters festgelegt und kommuniziert.
+Viel Erfolg!
+2 Präsentation
+InderPräsentationsollenSieeinespezi…scheForschungsfragebeantworten.DieForschungs-
+fragen stammen aus zwei unterschiedlichen Themengebieten, nämlich “Amazon’s An-
+titrust Paradox”und “Künstliche Intelligenz und der Arbeitsmarkt”. Zu jedem The-
+mengebiet gibt es 6 Forschungsfragen, deren Zuteilung durch die Proseminarleiter/ Pros-
+eminarleiterinnen erfolgt. Die Liste der möglichen Forschungsfragen be…ndet sich am
+Ende des Dokuments. Wir geben einige Literaturhinweise, allerdings sollten Sie darüber
+hinaus weitere Quellen verwenden (idealerweise akademische Quellen).
+Die Präsentation sollte ca. 10 Minuten dauern. Zu Beginn der Präsentation müssen
+Sie die Forschungsfrage explizit nennen. Auf einer der letzten Folien sollten Sie eine
+de…nitive Antwort auf die Forschungsfrage geben. Entscheidend für die Bewertung
+der Präsentation ist auch, wie Sie auf Nachfragen antworten. Zu beachten sind
+folgende Vorgaben:
+Der wichtigste Aspekt der Präsentation ist der wissenschaftliche Inhalt. Allerdings
+(cid:15)
+haben Sie viele Möglichkeiten die Präsentation für Ihre Zuhörer und Zuhörerinnen
+ansprechend zu gestalten.
+1
+Wenn Sie Elemente von Dritten (Quellen) verwenden, weisen Sie bitte darauf hin.
+(cid:15)
+Sie können die Präsentation auf Deutsch oder auf Englisch halten.
+(cid:15)
+Bitte verwenden Sie KEINE Symbolbilder. Graphiken sind nur erlaubt, wenn Sie
+(cid:15)
+der Beantwortung der Forschungsfrage dienen.
+3 Zitationen
+Bitte zitieren Sie alle verwendeten Quellen auf der letzten Folie Ihrer Präsentation. Bei
+jedem Zitat und jeder Quelle muss ersichtlich sein, weshalb sie für die Forschungsfrage
+relevant sind. Bitte verwenden Sie das folgende Format:
+Gurun, Umit, Noah Sto¤man, und Scott Yonker (2018): “Trust busting: The e¤ect
+(cid:15)
+of fraud on investor behavior,”Review of Financial Studies, 31(4), 1341-1376. [für
+Artikel aus akademische Journalen]
+Baran, Nicole, Paola Sapienza, und Luigi Zingales (2010): “Can we infer social
+(cid:15)
+preferences from the lab? Evidence from the trust game,”NBER Working Paper
+No. 15654. [für unverö¤entlichte Arbeitspapiere]
+Bewley, Truman (1999): Why wages don’t fall during a recession, Cambridge and
+(cid:15)
+London, Harvard University Press. [für Bücher]
+4 Bewertung von Präsentationsfolien und Präsenta-
+tion
+Sieerhalten10PunktefürdiePräsentationsfolien, wennfolgendeKriterienerfülltwerden:
+(i) Die Präsentationsfolien enthalten zu Beginn die exakte Formulierung der Forschungs-
+frage; (ii) Auf der ersten Folie stehen neben dem Titel der Präsentation auch die Namen
+aller Gruppenmitglieder; (iii) Die Präsentationsfolien wurden dem Proseminarleiter/der
+Proseminarleiterin mindestens 48 Stunden vor der Präsentation via OLAT als PDF Datei
+zur Verfügung gestellt (die Möglichkeit zum Upload auf OLAT wird zeitnah implemen-
+tiert); jedes Gruppenmitglied muss die Präsentation individuell hochladen; die Gruppe
+ist selbst dafür verantwortlich, dass das Dokument vom Standard-PDF-Reader (wie auf
+Geräten der UIBK vorinstalliert) geö¤net werden kann; (iv) Auf der letzten Folie der
+Präsentation werden alle verwendeten Quellen im oben genannten Format zitiert. Wenn
+eines dieser Kriterien nicht eingehalten wurde, so werden die Präsentationsfolien mit 0
+Punkten bewertet.
+2
+5 Themen und Forschungsfragen
+1. Amazon Antitrust Paradox
+Das Amazon Antitrust Paradox besteht darain, dass Amazon seinen Kunden einen ho-
+hen Nutzen bietet (in der Regel günstige Preise, ein sehr großes Angebot), aber ein
+Geschäftsmodell verfolgt, das langfristig schädlich für die Wohlfahrt sein kann. Dieser
+Themenkomplex beschäftigt sich mit den wichtigsten Komponenten des Geschäftsmod-
+ells von Amazon und wie diese aus wettbewerbstheoretischer Sicht zu bewerten sind.
+Entscheidend für die Diskussion ist das Papier von Lina Kahn (2016).
+Forschungsfragen
+1. Was ist “Verdrängungswettbewerb”(predatory pricing) und warum kann Verdrän-
+gungswettbewerb die Wohlfahrt gefährden?
+2. Was ist “vertikale Integration”(vertical integration) und warum kann vertikale In-
+tegration die Wohlfahrt gefährden?
+3. Wie verändert Amazon durch “Amazon Prime”den Wettbewerb und ist “Amazon
+Prime”ein Beispiel für Verdrängungswettbewerb?
+4. Sind die Markteintrittsbarrieren für Online-Handel großoder klein?
+5. Wie kann Amazon Daten von “Amazon Marketplace”verwenden, um den Wettbe-
+werb zu beein‡ussen und welchen E¤ekt hat das auf die Wohlfahrt?
+6. Wie können große Online-Handelsplattformen reguliert werden?
+Literatur und Quellen
+Kahn, Lina (2016): “Amazon’s antitrust paradox,”Yale Law Journal, 126, 710.
+(cid:15)
+Hinweise. Bitte zitieren Sie nur Quellen, die Sie auch gelesen und deren Inhalt sie
+wiedergebenkönnen. VerzichtenSieaufPlattitüden(“Online-Handelistwichtig”). Machen
+Sie –wenn möglich –Gebrauch von den Inhalten der Vorlesung. Nachfragen werden sich
+insbesondere auf die oben genannte Quelle beziehen.
+3
+2. Künstliche Intelligenz und der Arbeitsmarkt
+GenerativeKünstlicheIntelligenz(generativeAI)hatvielfältigeAuswirkungenaufdenAr-
+beitsmarktundaufdieArbeitsproduktivitätinOrganisationen. ErsteempirischeErkennt-
+nissezudiesemThemasindnunverfügbar, ergebenabereinz.T.uneinheitlichesBild. Die
+Vorträge zu diesem Themenkomplex sollen einen Überblick über die aktuelle Forschung
+bieten.
+Forschungsfragen
+1. Was ist das AI-Becker Problem?
+2. Was ist der Ein‡uss von generativer AI auf die Arbeitsproduktivität?
+3. Was ist der Ein‡uss von generativer AI auf die Arbeitsnachfrage?
+4. Was ist der Ein‡uss von generativer AI auf Job-Market-Signaling?
+5. Was ist der Ein‡uss von generativer AI auf Arbeitsmotivation?
+6. Was ist der Ein‡uss von generativer AI auf Stellenausschreibungen?
+Literatur und Quellen
+Acemoglu, Daron, David Autor, Jonathon Hazell, and Pascual Restrepo (2022):
+(cid:15)
+“Arti…cial intelligence and jobs: Evidence from online vacancies,”Journal of Labor
+Economics, 40(S1), S293–S340.
+Bick, Alexander, Adam Blandin, and David J. Deming (2026): “The rapid adoption
+(cid:15)
+of generative AI,”Management Science, forthcoming.
+Chen, Yvonne Jie, Jie Gong, Jin Li, and Zibo Zhao (2025): “Better technology,
+(cid:15)
+worse motivation: GenAI’s mediocrity trap,”Working Paper, University of Hong
+Kong, http://www.jin-li.org/.
+Hartley, Jonathan, Filip Jolevski, Vitor Melo, and Brendan Moore (2024): “The
+(cid:15)
+labor market e¤ects of generative arti…cial intelligence,”Working Paper, Stanford
+Unversity, https://www.jonathanhartley.net/research.
+Humlum, Anders, and Emilie Vestergaard (2025): “Large language models, small
+(cid:15)
+labor market e¤ects,”NBER Working Paper No. 33777.
+Galdin, Anais, and Jesse Silbert (2025): “Generative AI and Labor Market Signal-
+(cid:15)
+ing,”Working Paper, Princeton University, https://jesse-silbert.github.io.
+4
+Garicano,Luis(2025): TheAIBeckerproblem,https://www.siliconcontinent.com/p/the-
+(cid:15)
+ai-becker-problem.
+Hinweise. Bitte verwenden Sie die oben genannten Quellen. Gehen Sie in Ihrer Präsen-
+tation explizit auf die empirischen Ergebisse dieser Quellen ein.
+5
