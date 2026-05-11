@@ -62,9 +62,11 @@ def make_context(browser):
 
 def ensure_logged_in(context, page: Page) -> None:
     """Use saved session if valid; otherwise full login + save session."""
-    # Navigate to a protected URL — if session valid, stays on /auth/
     page.goto(f"{BASE}/auth/MyCoursesSite/0", wait_until="networkidle")
-    if "/auth/" in page.url:
+    # OLAT serves /auth/ URL even when unauthenticated — body gets class "o_dmz"
+    # when not logged in, "o_auth" when session is valid.
+    body_class = page.evaluate("document.body.className")
+    if "/auth/" in page.url and "o_dmz" not in body_class:
         print(f"Logged in (session): {page.url}")
         return
     print("Session expired or missing, logging in...")

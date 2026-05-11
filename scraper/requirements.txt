@@ -1,9 +1,0 @@
-fastapi
-uvicorn[standard]
-groq
-playwright
-pyotp
-python-dotenv
-pdfminer.six
-python-pptx
-python-docx

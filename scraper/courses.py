@@ -20,6 +20,12 @@ def get_courses(page) -> list[dict]:
             page.wait_for_load_state("networkidle")
             break
 
+    # OLAT renders course list via AJAX after networkidle — wait for actual links
+    try:
+        page.wait_for_selector("a[href*='RepositoryEntry']", timeout=15000)
+    except Exception:
+        pass  # will fall through to empty list + saved HTML for debugging
+
     html = page.content()
     with open(os.path.join(DATA_DIR, 'courses_page.html'), 'w') as f:
         f.write(html)

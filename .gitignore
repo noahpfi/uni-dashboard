@@ -1,7 +1,8 @@
 .env
-data/courses/*/files/
-data/courses/*/text/
+.venv/
+data/
 __pycache__/
 *.pyc
+*.png
 node_modules/
 dist/

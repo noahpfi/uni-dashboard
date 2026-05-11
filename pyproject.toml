@@ -12,4 +12,5 @@ dependencies = [
     "pdfminer.six",
     "python-pptx",
     "python-docx",
+    "beautifulsoup4",
 ]
