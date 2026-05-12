@@ -272,8 +272,18 @@ export default function App() {
             setTimeout(poll, 2000)
           } else {
             setRefreshing(false)
-            setRefreshStep(null)
-            if (st.error) setError(`Refresh failed: ${st.error}`)
+            if (st.error) {
+              const m = st.error.match(/Please try again in ([\d]+m[\d.]+s|[\d.]+s)/i)
+              if (m) {
+                const t = m[1].replace(/(\d+)\.(\d+)s/, (_, s) => `${s}s`)
+                setRefreshStep(`Groq limit — retry in ${t}`)
+              } else {
+                setRefreshStep(null)
+                setError(`Refresh failed: ${st.error}`)
+              }
+            } else {
+              setRefreshStep(null)
+            }
             if (!st.error && st.last) setUpdatedAt(formatTs(st.last))
             await load()
           }
