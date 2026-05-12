@@ -335,7 +335,10 @@ export default function App() {
         </header>
 
         {error && (
-          <div className="mb-4 px-4 py-3 rounded-lg bg-card text-red-700 text-sm">
+          <div
+            className="mb-4 px-4 py-3 rounded-lg bg-card text-red-700 text-sm cursor-pointer"
+            onClick={() => setError(null)}
+          >
             {error}
           </div>
         )}
