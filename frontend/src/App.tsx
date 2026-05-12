@@ -272,6 +272,8 @@ export default function App() {
             setTimeout(poll, 2000)
           } else {
             setRefreshing(false)
+            if (!st.error && st.last) setUpdatedAt(formatTs(st.last))
+            await load()
             if (st.error) {
               const m = st.error.match(/Please try again in ([\d]+m[\d.]+s|[\d.]+s)/i)
               if (m) {
@@ -284,8 +286,6 @@ export default function App() {
             } else {
               setRefreshStep(null)
             }
-            if (!st.error && st.last) setUpdatedAt(formatTs(st.last))
-            await load()
           }
         } catch {
           setTimeout(poll, 2000)
