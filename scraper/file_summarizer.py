@@ -110,6 +110,7 @@ def process_course(cid: str, course_name: str, clients: list) -> None:
         cache[keys[0]] = items
         for k in keys[1:]:
             cache[k] = []
+        _save_cache(cid, cache)
         print(f'    → {len(items)} item(s) from {len(keys)} file(s)')
 
     def batch_and_flush(pending: list[tuple]) -> None:
