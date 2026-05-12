@@ -7,6 +7,8 @@ from playwright.sync_api import sync_playwright
 from auth import make_context, ensure_logged_in, BASE
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
+STATE_FILE = os.path.join(DATA_DIR, 'state.json')
+CHANGED_FILE = os.path.join(DATA_DIR, 'changed_courses.json')
 
 FOLDER_ICONS = {'o_bc_icon', 'o_folder_icon'}
 STRUCT_ICONS = {'o_st_icon'}
@@ -22,6 +24,37 @@ PRIORITY_LABEL_RE = re.compile(
     r'|folien|unterlagen|slides?|material)',
     re.IGNORECASE,
 )
+
+
+def _load_state() -> dict:
+    try:
+        with open(STATE_FILE) as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def _load_changed() -> set[str] | None:
+    """Return set of changed course IDs, or None if no change info (run all)."""
+    try:
+        with open(CHANGED_FILE) as f:
+            return set(json.load(f))
+    except Exception:
+        return None
+
+
+def _clear_diff(out_file: str) -> None:
+    """Zero out the diff in materials.json so downstream steps don't re-process old diffs."""
+    try:
+        with open(out_file) as f:
+            data = json.load(f)
+        diff = data.get('diff', {})
+        if any(diff.get(k) for k in ('added', 'changed', 'removed')):
+            data['diff'] = {'added': [], 'changed': [], 'removed': []}
+            with open(out_file, 'w') as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+    except Exception:
+        pass
 
 
 # ---------------------------------------------------------------------------
@@ -51,7 +84,10 @@ def _parse_tree_nodes(html: str) -> list[dict]:
 
 
 def _discover_folders(page, cid: str) -> list[dict]:
-    """BFS through struct nodes to find all Briefcase (o_bc_icon) folders."""
+    """BFS through struct nodes to find all Briefcase (o_bc_icon) folders.
+
+    Expects current page to already be the course landing page.
+    """
     visited_structs: set[str] = set()
     known_folders: dict[str, dict] = {}
     queue: list[dict] = []
@@ -85,10 +121,6 @@ def _discover_folders(page, cid: str) -> list[dict]:
 
 def _scrape_bc(page, cid: str, nid: str, enc_path: str = '',
                depth: int = 0, node_label: str = '') -> list[dict]:
-    """Recursively scrape files from a Briefcase node.
-
-    enc_path: URL-encoded path within the node (empty = root of node).
-    """
     if depth > 5:
         return []
 
@@ -106,7 +138,6 @@ def _scrape_bc(page, cid: str, nid: str, enc_path: str = '',
         drag_file = row.get('data-drag-file', '')
 
         if upload_folder:
-            # Subfolder — recurse
             sub_enc = (f"{enc_path}%2F{upload_folder}" if enc_path
                        else upload_folder)
             files.extend(_scrape_bc(page, cid, nid, sub_enc,
@@ -154,19 +185,24 @@ def _scrape_bc(page, cid: str, nid: str, enc_path: str = '',
 # Per-course orchestration
 # ---------------------------------------------------------------------------
 
-def _scrape_course(page, course: dict) -> list[dict]:
+def _scrape_course(page, course: dict, folders: list[dict] | None = None) -> list[dict]:
+    """Scrape all files for a course.
+
+    If folders is provided (from state), skip the BFS discovery navigation.
+    """
     cid = course['id']
-    page.goto(course['url'], wait_until='networkidle')
-    folders = _discover_folders(page, cid)
+    if folders is None:
+        page.goto(course['url'], wait_until='networkidle')
+        folders = _discover_folders(page, cid)
 
     all_files = []
     for folder in folders:
         label = folder['label']
         if SKIP_LABEL_RE.search(label):
-            print(f"    [skip] {label}")
+            print(f'    [skip] {label}')
             continue
         files = _scrape_bc(page, cid, folder['nid'], node_label=label)
-        print(f"    [{label}] {len(files)} file(s)")
+        print(f'    [{label}] {len(files)} file(s)')
         all_files.extend(files)
 
     return all_files
@@ -188,11 +224,23 @@ def _diff(prev: list[dict], curr: list[dict]) -> dict:
 
 
 def scrape_all(page, courses: list[dict]) -> None:
+    state = _load_state()
+    changed_ids = _load_changed()
+
     for course in courses:
         cid = course['id']
         out_dir = os.path.join(DATA_DIR, 'courses', cid)
         os.makedirs(out_dir, exist_ok=True)
         out_file = os.path.join(out_dir, 'materials.json')
+
+        if changed_ids is not None and cid not in changed_ids:
+            if os.path.exists(out_file):
+                _clear_diff(out_file)
+                print(f'  [skip] {course["name"][:50]}')
+                continue
+
+        cs = state.get(cid, {})
+        folders: list[dict] | None = cs.get('folders')  # None = not in state, triggers BFS
 
         prev_files: list[dict] = []
         if os.path.exists(out_file):
@@ -200,9 +248,9 @@ def scrape_all(page, courses: list[dict]) -> None:
                 prev_files = json.load(f).get('files', [])
 
         try:
-            files = _scrape_course(page, course)
+            files = _scrape_course(page, course, folders=folders)
         except Exception as e:
-            print(f"  ERROR {course['name'][:50]}: {e}")
+            print(f'  ERROR {course["name"][:50]}: {e}')
             continue
 
         diff = _diff(prev_files, files)
@@ -218,10 +266,10 @@ def scrape_all(page, courses: list[dict]) -> None:
         n_files = len(files)
         n_added = len(diff['added'])
         label = course['name'][:50]
-        summary = f"{n_files} file(s)"
+        summary = f'{n_files} file(s)'
         if n_added:
             summary += f", +{n_added} new: {[x['filename'] for x in diff['added'][:3]]}"
-        print(f"  [{cid}] {label}: {summary}")
+        print(f'  [{cid}] {label}: {summary}')
 
 
 def main():
