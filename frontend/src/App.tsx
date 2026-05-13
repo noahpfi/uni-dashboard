@@ -295,7 +295,7 @@ function CourseCard({ course, notes, onNoteClick }: {
 
       {/* Notes */}
       {notes.length > 0 && (
-        <div className="border-t border-border-sub px-4 py-2 flex flex-wrap gap-1.5">
+        <div className="border-t border-border-sub px-4 py-4 pt-2 flex flex-wrap gap-1.5">
           {notes.map((n, i) => !n.resolved && (
             <button
               key={i}
@@ -438,7 +438,7 @@ export default function App() {
         setRefreshing(true)
         setTimeout(poll, 1000)
       }
-    }).catch(() => {})
+    }).catch(() => { })
   }, [poll])
 
   async function resolveNote() {
