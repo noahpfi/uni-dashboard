@@ -395,7 +395,51 @@ export default function App() {
     } catch { /* keep existing timestamp on fetch failure */ }
   }, [])
 
+  const poll = useCallback(async () => {
+    try {
+      const st = await apiFetch<{ running: boolean; step: string | null; step_n: number; step_total: number; item_n: number | null; item_total: number | null; last: string | null; error: string | null }>('/api/refresh/status')
+      if (st.running) {
+        if (st.step) {
+          const itemPart = st.item_n != null && st.item_total != null
+            ? ` ${st.item_n}/${st.item_total}`
+            : ` (${st.step_n}/${st.step_total})`
+          setRefreshStep(st.step + itemPart)
+        } else {
+          setRefreshStep(null)
+        }
+        setTimeout(poll, 2000)
+      } else {
+        setRefreshing(false)
+        if (!st.error && st.last) setUpdatedAt(formatTs(st.last))
+        await load()
+        if (st.error) {
+          const m = st.error.match(/Please try again in ([\d]+m[\d.]+s|[\d.]+s)/i)
+          if (m) {
+            const t = m[1].replace(/(\d+)\.(\d+)s/, (_, s) => `${s}s`)
+            setRefreshStep(`Groq limit — retry in ${t}`)
+          } else {
+            setRefreshStep(null)
+            setError(`Refresh failed: ${st.error}`)
+          }
+        } else {
+          setRefreshStep(null)
+        }
+      }
+    } catch {
+      setTimeout(poll, 2000)
+    }
+  }, [load])
+
   useEffect(() => { load() }, [load])
+
+  useEffect(() => {
+    apiFetch<{ running: boolean }>('/api/refresh/status').then(st => {
+      if (st.running) {
+        setRefreshing(true)
+        setTimeout(poll, 1000)
+      }
+    }).catch(() => {})
+  }, [poll])
 
   async function resolveNote() {
     if (!modalNote) return
@@ -416,40 +460,6 @@ export default function App() {
     setRefreshStep(null)
     try {
       await fetch('/api/refresh', { method: 'POST' })
-      const poll = async () => {
-        try {
-          const st = await apiFetch<{ running: boolean; step: string | null; step_n: number; step_total: number; item_n: number | null; item_total: number | null; last: string | null; error: string | null }>('/api/refresh/status')
-          if (st.running) {
-            if (st.step) {
-              const itemPart = st.item_n != null && st.item_total != null
-                ? ` ${st.item_n}/${st.item_total}`
-                : ` (${st.step_n}/${st.step_total})`
-              setRefreshStep(st.step + itemPart)
-            } else {
-              setRefreshStep(null)
-            }
-            setTimeout(poll, 2000)
-          } else {
-            setRefreshing(false)
-            if (!st.error && st.last) setUpdatedAt(formatTs(st.last))
-            await load()
-            if (st.error) {
-              const m = st.error.match(/Please try again in ([\d]+m[\d.]+s|[\d.]+s)/i)
-              if (m) {
-                const t = m[1].replace(/(\d+)\.(\d+)s/, (_, s) => `${s}s`)
-                setRefreshStep(`Groq limit — retry in ${t}`)
-              } else {
-                setRefreshStep(null)
-                setError(`Refresh failed: ${st.error}`)
-              }
-            } else {
-              setRefreshStep(null)
-            }
-          }
-        } catch {
-          setTimeout(poll, 2000)
-        }
-      }
       setTimeout(poll, 1000)
     } catch (e) {
       setRefreshing(false)
