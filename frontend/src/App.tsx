@@ -54,6 +54,23 @@ function formatTs(iso: string): string {
     : dt.toLocaleDateString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })
 }
 
+function getWeekOffset(date: string): number {
+  const target = new Date(`${date}T00:00:00`)
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+
+  const getWeekStart = (dt: Date) => {
+    const weekStart = new Date(dt)
+    const day = weekStart.getDay()
+    const diffToMonday = day === 0 ? -6 : 1 - day
+    weekStart.setDate(weekStart.getDate() + diffToMonday)
+    weekStart.setHours(0, 0, 0, 0)
+    return weekStart
+  }
+
+  return Math.floor((getWeekStart(target).getTime() - getWeekStart(today).getTime()) / 604800000)
+}
+
 // ── Sub-components ────────────────────────────────────────────────────────────
 
 const TYPE_BADGE: Record<string, string> = {
@@ -106,7 +123,7 @@ function UpcomingGrid({ courses }: { courses: CourseSummary[] }) {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
         {upcoming.map((d, i) => {
           const badgeClass = d.course_type ? (TYPE_BADGE[d.course_type] ?? 'badge-default') : 'badge-default'
-          const w = Math.floor((new Date(d.date + 'T00:00:00').getTime() - new Date().setHours(0, 0, 0, 0)) / 604800000)
+          const w = getWeekOffset(d.date)
           const weekLabel = w === 0 ? '' : `in ${w} Woche${w === 1 ? '' : 'n'}`
           return (
             <div
