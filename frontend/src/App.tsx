@@ -124,7 +124,7 @@ function UpcomingGrid({ courses }: { courses: CourseSummary[] }) {
         {upcoming.map((d, i) => {
           const badgeClass = d.course_type ? (TYPE_BADGE[d.course_type] ?? 'badge-default') : 'badge-default'
           const w = getWeekOffset(d.date)
-          const weekLabel = w === 0 ? '' : `in ${w} Woche${w === 1 ? '' : 'n'}`
+          const weekLabel = w === 0 ? '' : w < 2 ? 'nächste Woche' : `in ${w} Wochen`
           return (
             <div
               key={i}
