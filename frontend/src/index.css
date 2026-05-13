@@ -80,6 +80,11 @@ html, body {
     background: #f3e8ff;
     color: #7e22ce;
   }
+
+  .badge-note {
+    background: #e0f2fe;
+    color: #0369a1;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -131,5 +136,10 @@ html, body {
   .badge-priority {
     background: #3b0764;
     color: #d8b4fe;
+  }
+
+  .badge-note {
+    background: #082f49;
+    color: #7dd3fc;
   }
 }

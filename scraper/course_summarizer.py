@@ -55,6 +55,17 @@ def _payload_hash(text: str) -> str:
 def build_course_payload(cid: str, mat: dict) -> str:
     sections = []
 
+    notes_path = DATA_DIR / 'courses' / cid / 'notes.json'
+    if notes_path.exists():
+        raw_notes = json.loads(notes_path.read_text(encoding='utf-8'))
+        active = [n for n in raw_notes if not n.get('resolved')]
+        active.sort(key=lambda x: x.get('created_at', ''), reverse=True)
+        if active:
+            lines = ['## Student Notes (user-provided, high priority)']
+            for n in active:
+                lines.append(f"[{n['created_at'][:10]}] {n['text']}")
+            sections.append('\n'.join(lines))
+
     mitt_path = DATA_DIR / 'courses' / cid / 'mitteilungen.json'
     if mitt_path.exists():
         items = json.loads(mitt_path.read_text(encoding='utf-8'))

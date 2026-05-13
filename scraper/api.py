@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
 
 DATA_DIR = Path(__file__).parent.parent / 'data'
 SCRAPER_DIR = Path(__file__).parent
@@ -114,6 +115,54 @@ def get_materials(only_diff: bool = False):
                 continue
         courses.append(mat)
     return courses
+
+
+@app.get('/api/notes')
+def get_notes():
+    result: dict = {}
+    for path in sorted(DATA_DIR.glob('courses/*/notes.json')):
+        cid = path.parent.name
+        result[cid] = json.loads(path.read_text(encoding='utf-8'))
+    return result
+
+
+class _NoteIn(BaseModel):
+    text: str
+
+
+@app.post('/api/notes/{course_id}')
+def add_note(course_id: str, body: _NoteIn):
+    notes_path = DATA_DIR / 'courses' / course_id / 'notes.json'
+    notes = json.loads(notes_path.read_text(encoding='utf-8')) if notes_path.exists() else []
+    notes.append({'text': body.text, 'created_at': datetime.now(timezone.utc).isoformat(), 'resolved': False})
+    notes_path.write_text(json.dumps(notes, indent=2, ensure_ascii=False))
+    return {'ok': True}
+
+
+@app.patch('/api/notes/{course_id}/{idx}/resolve')
+def resolve_note(course_id: str, idx: int):
+    notes_path = DATA_DIR / 'courses' / course_id / 'notes.json'
+    if not notes_path.exists():
+        raise HTTPException(404, 'no notes')
+    notes = json.loads(notes_path.read_text(encoding='utf-8'))
+    if idx < 0 or idx >= len(notes):
+        raise HTTPException(404, 'index out of range')
+    notes[idx]['resolved'] = True
+    notes_path.write_text(json.dumps(notes, indent=2, ensure_ascii=False))
+    return {'ok': True}
+
+
+@app.delete('/api/notes/{course_id}/{idx}')
+def delete_note(course_id: str, idx: int):
+    notes_path = DATA_DIR / 'courses' / course_id / 'notes.json'
+    if not notes_path.exists():
+        raise HTTPException(404, 'no notes')
+    notes = json.loads(notes_path.read_text(encoding='utf-8'))
+    if idx < 0 or idx >= len(notes):
+        raise HTTPException(404, 'index out of range')
+    notes.pop(idx)
+    notes_path.write_text(json.dumps(notes, indent=2, ensure_ascii=False))
+    return {'ok': True}
 
 
 @app.get('/api/last-run')

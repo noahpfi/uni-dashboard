@@ -29,6 +29,14 @@ interface DiffFile {
   priority: boolean
 }
 
+interface Note {
+  text: string
+  created_at: string
+  resolved: boolean
+}
+
+interface ModalNote { courseId: string; idx: number; note: Note }
+
 // ── Fetch helpers ─────────────────────────────────────────────────────────────
 
 async function apiFetch<T>(path: string): Promise<T> {
@@ -122,7 +130,116 @@ function UpcomingGrid({ courses }: { courses: CourseSummary[] }) {
   )
 }
 
-function CourseCard({ course }: { course: CourseSummary }) {
+function AddNoteSection({ courses, onAdded }: { courses: CourseSummary[]; onAdded: () => void }) {
+  const [open, setOpen] = useState(false)
+  const [courseId, setCourseId] = useState('')
+  const [text, setText] = useState('')
+  const [saving, setSaving] = useState(false)
+
+  async function submit() {
+    if (!courseId || !text.trim()) return
+    setSaving(true)
+    try {
+      await fetch(`/api/notes/${courseId}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: text.trim() }),
+      })
+      setText('')
+      setOpen(false)
+      onAdded()
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  return (
+    <section className="mb-7">
+      <button
+        onClick={() => setOpen(o => !o)}
+        className="text-xs font-semibold uppercase tracking-widest text-text-muted hover:text-text-2 transition-colors"
+      >
+        Add Note {open ? '−' : '+'}
+      </button>
+      {open && (
+        <div className="mt-2 rounded-lg border border-border bg-card p-3 flex flex-col gap-2">
+          <select
+            value={courseId}
+            onChange={e => setCourseId(e.target.value)}
+            className="text-sm bg-card border border-border rounded px-2 py-1.5 text-text-1 w-full"
+          >
+            <option value="">Select course…</option>
+            {courses.map(c => (
+              <option key={c.course_id} value={c.course_id}>{c.course_title}</option>
+            ))}
+          </select>
+          <textarea
+            value={text}
+            onChange={e => setText(e.target.value)}
+            placeholder="Note…"
+            rows={3}
+            className="text-sm bg-card border border-border rounded px-2 py-1.5 text-text-1 resize-none placeholder:text-text-muted"
+          />
+          <button
+            onClick={submit}
+            disabled={saving || !courseId || !text.trim()}
+            className="self-end px-3 py-1.5 text-sm font-medium border border-border rounded-lg bg-card hover:bg-card-hover disabled:opacity-40 disabled:cursor-not-allowed text-text-2"
+          >
+            {saving ? 'Saving…' : 'Add'}
+          </button>
+        </div>
+      )}
+    </section>
+  )
+}
+
+function NoteModal({ item, onClose, onResolve, onDelete }: {
+  item: ModalNote
+  onClose: () => void
+  onResolve: () => void
+  onDelete: () => void
+}) {
+  return (
+    <div
+      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+      onClick={onClose}
+    >
+      <div
+        className="bg-card rounded-lg p-4 max-w-sm w-full border border-border"
+        onClick={e => e.stopPropagation()}
+      >
+        <p className="text-sm text-text-1 mb-1 whitespace-pre-wrap">{item.note.text}</p>
+        <p className="text-xs text-text-muted mb-4">{item.note.created_at.slice(0, 10)}</p>
+        <div className="flex gap-2 items-center">
+          <button
+            onClick={onResolve}
+            className="px-3 py-1.5 text-xs font-medium border border-border rounded-lg bg-card hover:bg-card-hover text-text-2"
+          >
+            Resolve
+          </button>
+          <button
+            onClick={onDelete}
+            className="px-3 py-1.5 text-xs font-medium border border-red-200 rounded-lg bg-card hover:bg-card-hover text-red-600"
+          >
+            Delete
+          </button>
+          <button
+            onClick={onClose}
+            className="ml-auto px-3 py-1.5 text-xs font-medium text-text-muted hover:text-text-2"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function CourseCard({ course, notes, onNoteClick }: {
+  course: CourseSummary
+  notes: Note[]
+  onNoteClick: (idx: number, note: Note) => void
+}) {
   const [open, setOpen] = useState(false)
   const badgeClass = course.course_type ? (TYPE_BADGE[course.course_type] ?? 'badge-default') : 'badge-default'
   const hasDeadlines = course.deadlines.length > 0
@@ -182,6 +299,21 @@ function CourseCard({ course }: { course: CourseSummary }) {
           ))}
         </div>
       )}
+
+      {/* Notes */}
+      {notes.length > 0 && (
+        <div className="border-t border-border-sub px-4 py-2 flex flex-wrap gap-1.5">
+          {notes.map((n, i) => (
+            <button
+              key={i}
+              onClick={() => onNoteClick(i, n)}
+              className="text-xs px-2 py-0.5 rounded badge-note truncate max-w-[200px]"
+            >
+              {n.text.length > 50 ? n.text.slice(0, 50) + '…' : n.text}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
@@ -227,19 +359,30 @@ function DiffSection({ files }: { files: DiffFile[] }) {
 export default function App() {
   const [courses, setCourses] = useState<CourseSummary[]>([])
   const [diff, setDiff] = useState<DiffFile[]>([])
+  const [notes, setNotes] = useState<Record<string, Note[]>>({})
+  const [modalNote, setModalNote] = useState<ModalNote | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [refreshing, setRefreshing] = useState(false)
   const [refreshStep, setRefreshStep] = useState<string | null>(null)
   const [updatedAt, setUpdatedAt] = useState<string | null>(null)
 
+  const reloadNotes = useCallback(async () => {
+    try {
+      const n = await apiFetch<Record<string, Note[]>>('/api/notes')
+      setNotes(n)
+    } catch {}
+  }, [])
+
   const load = useCallback(async () => {
     try {
-      const [c, d] = await Promise.all([
+      const [c, d, n] = await Promise.all([
         apiFetch<CourseSummary[]>('/api/courses/summary'),
         apiFetch<DiffFile[]>('/api/materials/diff'),
+        apiFetch<Record<string, Note[]>>('/api/notes').catch(() => ({})),
       ])
       setCourses(c)
       setDiff(d)
+      setNotes(n)
       setError(null)
     } catch (e) {
       setError(String(e))
@@ -251,6 +394,20 @@ export default function App() {
   }, [])
 
   useEffect(() => { load() }, [load])
+
+  async function resolveNote() {
+    if (!modalNote) return
+    await fetch(`/api/notes/${modalNote.courseId}/${modalNote.idx}/resolve`, { method: 'PATCH' })
+    setModalNote(null)
+    reloadNotes()
+  }
+
+  async function deleteNote() {
+    if (!modalNote) return
+    await fetch(`/api/notes/${modalNote.courseId}/${modalNote.idx}`, { method: 'DELETE' })
+    setModalNote(null)
+    reloadNotes()
+  }
 
   async function triggerRefresh() {
     setRefreshing(true)
@@ -345,6 +502,8 @@ export default function App() {
 
         <UpcomingGrid courses={courses} />
 
+        <AddNoteSection courses={courses} onAdded={reloadNotes} />
+
         {/* Courses */}
         <section className="mb-7">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">
@@ -357,7 +516,12 @@ export default function App() {
           ) : (
             <div className="flex flex-col gap-2">
               {courses.map(c => (
-                <CourseCard key={c.course_id} course={c} />
+                <CourseCard
+                  key={c.course_id}
+                  course={c}
+                  notes={(notes[c.course_id] ?? []).filter(n => !n.resolved)}
+                  onNoteClick={(idx, note) => setModalNote({ courseId: c.course_id, idx, note })}
+                />
               ))}
             </div>
           )}
@@ -372,6 +536,15 @@ export default function App() {
         </section>
 
       </div>
+
+      {modalNote && (
+        <NoteModal
+          item={modalNote}
+          onClose={() => setModalNote(null)}
+          onResolve={resolveNote}
+          onDelete={deleteNote}
+        />
+      )}
     </div>
   )
 }
