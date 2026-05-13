@@ -5,6 +5,7 @@ import os
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
 
@@ -17,7 +18,7 @@ DATA_DIR = Path(__file__).parent.parent / 'data'
 SYSTEM_PROMPT = """\
 You are an academic assistant for a university student at UIBK.
 You receive data for ONE course: announcements, newly added/changed materials,
-organizational extracts from files, and relevant emails.
+organizational extracts from files, relevant emails, and student notes.
 
 Output valid JSON only:
 {
@@ -33,6 +34,9 @@ Rules:
 - deadlines: only future or today dates. Sort ascending. Deduplicate.
 - last_activity: most recent date any university-side update happened.
 - If no deadlines, return [].
+- Student notes may describe recurring obligations.
+  Use the current weekday and KW provided to resolve relative references to concrete dates.
+  For recurring patterns, emit the next upcoming occurrence as a deadline.
 """
 
 
@@ -119,7 +123,7 @@ def build_course_payload(cid: str, mat: dict) -> str:
     return '\n\n'.join(sections)
 
 
-def summarize_course(cid: str, clients: list, today: str) -> dict | None:
+def summarize_course(cid: str, clients: list, today: str, today_context: str) -> dict | None:
     mat_path = DATA_DIR / 'courses' / cid / 'materials.json'
     if not mat_path.exists():
         return None
@@ -146,7 +150,7 @@ def summarize_course(cid: str, clients: list, today: str) -> dict | None:
         model=GROQ_MODEL,
         messages=[
             {'role': 'system', 'content': SYSTEM_PROMPT},
-            {'role': 'user', 'content': f'Today: {today}\nCourse: {course_name_raw}\n\n{payload}'},
+            {'role': 'user', 'content': f'Today: {today_context}\nCourse: {course_name_raw}\n\n{payload}'},
         ],
         response_format={'type': 'json_object'},
         temperature=0.1,
@@ -171,15 +175,24 @@ def summarize_course(cid: str, clients: list, today: str) -> dict | None:
     return out
 
 
+_VIENNA = ZoneInfo('Europe/Vienna')
+_DE_WEEKDAYS = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag']
+
+
 def main():
-    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+    now = datetime.now(_VIENNA)
+    today = now.strftime('%Y-%m-%d')
+    iso = now.isocalendar()
+    today_context = (
+        f"{today} ({_DE_WEEKDAYS[now.weekday()]}, KW {iso.week}, {now.strftime('%H:%M %Z')})"
+    )
     clients = make_clients()
 
     results = []
     for cid_dir in sorted((DATA_DIR / 'courses').iterdir()):
         if not cid_dir.is_dir():
             continue
-        result = summarize_course(cid_dir.name, clients, today)
+        result = summarize_course(cid_dir.name, clients, today, today_context)
         if result:
             results.append(result)
 

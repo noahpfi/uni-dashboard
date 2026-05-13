@@ -131,7 +131,6 @@ function UpcomingGrid({ courses }: { courses: CourseSummary[] }) {
 }
 
 function AddNoteSection({ courses, onAdded }: { courses: CourseSummary[]; onAdded: () => void }) {
-  const [open, setOpen] = useState(false)
   const [courseId, setCourseId] = useState('')
   const [text, setText] = useState('')
   const [saving, setSaving] = useState(false)
@@ -146,7 +145,6 @@ function AddNoteSection({ courses, onAdded }: { courses: CourseSummary[]; onAdde
         body: JSON.stringify({ text: text.trim() }),
       })
       setText('')
-      setOpen(false)
       onAdded()
     } finally {
       setSaving(false)
@@ -155,40 +153,33 @@ function AddNoteSection({ courses, onAdded }: { courses: CourseSummary[]; onAdde
 
   return (
     <section className="mb-7">
-      <button
-        onClick={() => setOpen(o => !o)}
-        className="text-xs font-semibold uppercase tracking-widest text-text-muted hover:text-text-2 transition-colors"
-      >
-        Add Note {open ? '−' : '+'}
-      </button>
-      {open && (
-        <div className="mt-2 rounded-lg border border-border bg-card p-3 flex flex-col gap-2">
-          <select
-            value={courseId}
-            onChange={e => setCourseId(e.target.value)}
-            className="text-sm bg-card border border-border rounded px-2 py-1.5 text-text-1 w-full"
-          >
-            <option value="">Select course…</option>
-            {courses.map(c => (
-              <option key={c.course_id} value={c.course_id}>{c.course_title}</option>
-            ))}
-          </select>
-          <textarea
-            value={text}
-            onChange={e => setText(e.target.value)}
-            placeholder="Note…"
-            rows={3}
-            className="text-sm bg-card border border-border rounded px-2 py-1.5 text-text-1 resize-none placeholder:text-text-muted"
-          />
-          <button
-            onClick={submit}
-            disabled={saving || !courseId || !text.trim()}
-            className="self-end px-3 py-1.5 text-sm font-medium border border-border rounded-lg bg-card hover:bg-card-hover disabled:opacity-40 disabled:cursor-not-allowed text-text-2"
-          >
-            {saving ? 'Saving…' : 'Add'}
-          </button>
-        </div>
-      )}
+      <h2 className="text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">Add Note</h2>
+      <div className="rounded-lg border border-border bg-card p-3 flex flex-col gap-2">
+        <select
+          value={courseId}
+          onChange={e => setCourseId(e.target.value)}
+          className="text-base bg-card border border-border rounded px-2 py-1.5 text-text-1 w-full"
+        >
+          <option value="">Select course…</option>
+          {courses.map(c => (
+            <option key={c.course_id} value={c.course_id}>{c.course_title}</option>
+          ))}
+        </select>
+        <textarea
+          value={text}
+          onChange={e => setText(e.target.value)}
+          placeholder="Note…"
+          rows={6}
+          className="text-base bg-card border border-border rounded px-2 py-1.5 text-text-1 resize-none placeholder:text-text-muted"
+        />
+        <button
+          onClick={submit}
+          disabled={saving || !courseId || !text.trim()}
+          className="self-end px-3 py-1.5 text-sm font-medium border border-border rounded-lg bg-card hover:bg-card-hover disabled:opacity-40 disabled:cursor-not-allowed text-text-2"
+        >
+          {saving ? 'Saving…' : 'Add'}
+        </button>
+      </div>
     </section>
   )
 }
@@ -211,15 +202,17 @@ function NoteModal({ item, onClose, onResolve, onDelete }: {
         <p className="text-sm text-text-1 mb-1 whitespace-pre-wrap">{item.note.text}</p>
         <p className="text-xs text-text-muted mb-4">{item.note.created_at.slice(0, 10)}</p>
         <div className="flex gap-2 items-center">
-          <button
-            onClick={onResolve}
-            className="px-3 py-1.5 text-xs font-medium border border-border rounded-lg bg-card hover:bg-card-hover text-text-2"
-          >
-            Resolve
-          </button>
+          {!item.note.resolved && (
+            <button
+              onClick={onResolve}
+              className="px-3 py-1.5 text-xs font-medium border border-border rounded-lg bg-card hover:bg-card-hover text-text-2"
+            >
+              Resolve
+            </button>
+          )}
           <button
             onClick={onDelete}
-            className="px-3 py-1.5 text-xs font-medium border border-red-200 rounded-lg bg-card hover:bg-card-hover text-red-600"
+            className="px-3 py-1.5 text-xs font-medium border border-border rounded-lg bg-card hover:bg-card-hover text-text-muted"
           >
             Delete
           </button>
@@ -303,11 +296,20 @@ function CourseCard({ course, notes, onNoteClick }: {
       {/* Notes */}
       {notes.length > 0 && (
         <div className="border-t border-border-sub px-4 py-2 flex flex-wrap gap-1.5">
-          {notes.map((n, i) => (
+          {notes.map((n, i) => !n.resolved && (
             <button
               key={i}
               onClick={() => onNoteClick(i, n)}
               className="text-xs px-2 py-0.5 rounded badge-note truncate max-w-[200px]"
+            >
+              {n.text.length > 50 ? n.text.slice(0, 50) + '…' : n.text}
+            </button>
+          ))}
+          {notes.map((n, i) => n.resolved && (
+            <button
+              key={i}
+              onClick={() => onNoteClick(i, n)}
+              className="text-xs px-2 py-0.5 rounded badge-default truncate max-w-[200px] opacity-50 line-through"
             >
               {n.text.length > 50 ? n.text.slice(0, 50) + '…' : n.text}
             </button>
@@ -370,7 +372,7 @@ export default function App() {
     try {
       const n = await apiFetch<Record<string, Note[]>>('/api/notes')
       setNotes(n)
-    } catch {}
+    } catch { }
   }, [])
 
   const load = useCallback(async () => {
@@ -519,7 +521,7 @@ export default function App() {
                 <CourseCard
                   key={c.course_id}
                   course={c}
-                  notes={(notes[c.course_id] ?? []).filter(n => !n.resolved)}
+                  notes={notes[c.course_id] ?? []}
                   onNoteClick={(idx, note) => setModalNote({ courseId: c.course_id, idx, note })}
                 />
               ))}
