@@ -106,6 +106,8 @@ function UpcomingGrid({ courses }: { courses: CourseSummary[] }) {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
         {upcoming.map((d, i) => {
           const badgeClass = d.course_type ? (TYPE_BADGE[d.course_type] ?? 'badge-default') : 'badge-default'
+          const w = Math.floor((new Date(d.date + 'T00:00:00').getTime() - new Date().setHours(0, 0, 0, 0)) / 604800000)
+          const weekLabel = w === 0 ? '' : `in ${w} Woche${w === 1 ? '' : 'n'}`
           return (
             <div
               key={i}
@@ -120,7 +122,7 @@ function UpcomingGrid({ courses }: { courses: CourseSummary[] }) {
                 )}
                 <span className="text-xs text-text-muted truncate">{d.course_title}</span>
               </div>
-              <span className="text-sm font-mono font-semibold text-text-2">{d.date} - {new Date(d.date).toLocaleDateString('de-AT', { weekday: 'short' }).replace('.', '')}</span>
+              <span className="text-sm font-mono font-semibold text-text-2">{d.date} - {new Date(d.date).toLocaleDateString('de-AT', { weekday: 'short' }).replace('.', '')}{weekLabel}</span>
               <p className="text-xs text-text-3 leading-snug line-clamp-2">{d.description}</p>
             </div>
           )
