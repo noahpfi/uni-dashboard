@@ -162,7 +162,7 @@ function AddNoteSection({ courses, onAdded }: { courses: CourseSummary[]; onAdde
         >
           <option value="">Select course…</option>
           {courses.map(c => (
-            <option key={c.course_id} value={c.course_id}>{c.course_title}</option>
+            <option key={c.course_id} value={c.course_id}>{c.course_type} - {c.course_title}</option>
           ))}
         </select>
         <textarea
