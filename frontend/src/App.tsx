@@ -122,7 +122,7 @@ function UpcomingGrid({ courses }: { courses: CourseSummary[] }) {
                 )}
                 <span className="text-xs text-text-muted truncate">{d.course_title}</span>
               </div>
-              <span className="text-sm font-mono font-semibold text-text-2">{d.date} - {new Date(d.date).toLocaleDateString('de-AT', { weekday: 'short' }).replace('.', '')}{weekLabel}</span>
+              <span className="text-sm font-mono font-semibold text-text-2">{d.date} - {new Date(d.date).toLocaleDateString('de-AT', { weekday: 'short' }).replace('.', '')} {weekLabel}</span>
               <p className="text-xs text-text-3 leading-snug line-clamp-2">{d.description}</p>
             </div>
           )
