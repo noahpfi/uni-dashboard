@@ -95,7 +95,7 @@ function UpcomingGrid({ courses }: { courses: CourseSummary[] }) {
       <h2 className="text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">
         Upcoming Deadlines
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
         {upcoming.map((d, i) => {
           const badgeClass = d.course_type ? (TYPE_BADGE[d.course_type] ?? 'badge-default') : 'badge-default'
           return (
@@ -141,7 +141,7 @@ function CourseCard({ course }: { course: CourseSummary }) {
         )}
         <span className="font-semibold text-sm truncate flex-1 text-text-1">{course.course_title}</span>
         {course.course_code && (
-          <span className="text-xs text-text-muted shrink-0">{course.course_code}</span>
+          <span className="hidden sm:inline text-xs text-text-muted shrink-0">{course.course_code}</span>
         )}
         {hasDeadlines && (
           <span className="text-xs font-semibold text-amber-600 shrink-0">
