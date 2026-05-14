@@ -253,6 +253,12 @@ def scrape_all(page, courses: list[dict]) -> None:
             print(f'  ERROR {course["name"][:50]}: {e}')
             continue
 
+        # If we previously had files but now got none, the scrape likely failed
+        # partially (LMS timeout/hiccup). Skip update to avoid false "removed" diffs.
+        if prev_files and not files:
+            print(f'  [WARN] {course["name"][:50]}: scrape returned 0 files (prev had {len(prev_files)}), skipping update')
+            continue
+
         diff = _diff(prev_files, files)
         result = {
             'course_id': cid,
