@@ -24,7 +24,7 @@ Output valid JSON only:
 {
   "ongoing_summary": "<2-4 sentences about what is currently open or upcoming: open assignments, upcoming exams, room/schedule changes, important announcements. German preferred. Empty string if nothing active.>",
   "deadlines": [
-    {"date": "YYYY-MM-DD", "description": "<one clear sentence: what must be done, for which course/exam/assignment, and any relevant detail (e.g. location, submission method, group size). Not just a label — a student should know what to do from this alone. - normal lecture dates, unless explicitly stated mandatory attendence, should not be included as deadlines.>"}
+    {"date": "YYYY-MM-DD", "description": "<one clear sentence: what must be done, for which course/exam/assignment, and any relevant detail (e.g. location, submission method, group size). Not just a label — a student should know what to do from this alone. - normal lecture (vo) dates, unless explicitly stated mandatory attendence, should not be included as deadlines - proseminars (ps) SHOULD>"}
   ],
   "requirements": "<Prüfungsmodalitäten: how to pass, grading breakdown, attendance rules, minimum score thresholds. 2-4 sentences. German preferred. Empty string if not found in the data.>",
   "last_activity": "YYYY-MM-DD"
