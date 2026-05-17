@@ -1,6 +1,8 @@
 """Step 8: FastAPI backend — serves scraped LMS data + triggers refresh"""
 import asyncio
 import json
+import os
+import secrets
 import sys
 import time as _time
 from contextlib import asynccontextmanager
@@ -8,10 +10,24 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from fastapi import FastAPI, HTTPException
+from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
+
+_DASH_USER = os.getenv('DASH_USER', 'admin')
+_DASH_PASS = os.getenv('DASH_PASS', '')
+_basic_security = HTTPBasic()
+
+
+def _require_auth(creds: HTTPBasicCredentials = Depends(_basic_security)):
+    if not _DASH_PASS:
+        return  # no password set → dev mode, skip auth
+    ok = secrets.compare_digest(creds.username.encode(), _DASH_USER.encode()) and \
+         secrets.compare_digest(creds.password.encode(), _DASH_PASS.encode())
+    if not ok:
+        raise HTTPException(401, 'Unauthorized', headers={'WWW-Authenticate': 'Basic realm="uni-dashboard"'})
 
 DATA_DIR = Path(__file__).parent.parent / 'data'
 SCRAPER_DIR = Path(__file__).parent
@@ -41,7 +57,7 @@ async def lifespan(_: FastAPI):
     yield
 
 
-app = FastAPI(title='LMS Dashboard API', lifespan=lifespan)
+app = FastAPI(title='LMS Dashboard API', lifespan=lifespan, dependencies=[Depends(_require_auth)])
 
 app.add_middleware(
     CORSMiddleware,
