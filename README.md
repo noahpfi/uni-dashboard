@@ -26,6 +26,4 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-Run scraper: `python scraper/run.py`  
-Start API: `uvicorn api.main:app`  
-Start frontend: `cd frontend && npm install && npm run dev`
+Start (backend + frontend): `bash start.sh`
