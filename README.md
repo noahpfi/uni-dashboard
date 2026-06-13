@@ -20,10 +20,26 @@ A Playwright scraper handles Shibboleth SSO + TOTP login, enumerates enrolled co
 
 ## Setup
 
+Python deps are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml` + `uv.lock`). Node is only needed to rebuild the frontend — the built `frontend/dist` is committed, so running the app doesn't require it.
+
 ```bash
-cp .env.example .env   # fill in credentials
-pip install -r requirements.txt
-playwright install chromium
+cp .env.example .env              # fill in credentials
+uv sync                           # install Python deps from uv.lock
+uv run playwright install chromium
 ```
 
-Start (backend + frontend): `bash start.sh`
+## Running
+
+```bash
+uv run python scraper/api.py      # FastAPI on :8000, also serves the prebuilt frontend/dist
+```
+
+Then open http://localhost:8000. Set `DASH_PASS` in `.env` to require HTTP basic auth (empty = open, dev mode).
+
+For frontend development with hot reload, run the Vite dev server (on :5173, expects the backend on :8000):
+
+```bash
+cd frontend && npm install && npm run dev
+```
+
+`bash start.sh` runs both the backend (via uv) and the Vite dev server together for local development.

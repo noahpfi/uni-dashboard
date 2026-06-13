@@ -16,7 +16,7 @@ lsof -ti:5173 | xargs kill -9 2>/dev/null
 sleep 1
 
 echo "Starting backend..."
-python3 "$ROOT/scraper/api.py" &
+uv run python "$ROOT/scraper/api.py" &
 BACKEND_PID=$!
 
 echo "Starting frontend..."
