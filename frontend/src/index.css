@@ -16,8 +16,26 @@ html, body {
   --color-text-muted: #9ca3af;
 }
 
+
+.in-iframe ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.in-iframe ::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+.in-iframe ::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
+
+.in-iframe * {
+  scrollbar-color: var(--border) var(--bg);
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --color-page: #0d121d;
     --color-card: #111827;
     --color-card-hover: #1f2937;
@@ -28,6 +46,18 @@ html, body {
     --color-text-3: #9ca3af;
     --color-text-muted: #6b7280;
   }
+}
+
+[data-theme="dark"] {
+    --color-page: #0d121d;
+    --color-card: #111827;
+    --color-card-hover: #1f2937;
+    --color-border: #1f2937;
+    --color-border-sub: #111827;
+    --color-text-1: #c4c9d4;
+    --color-text-2: #c4c9d4;
+    --color-text-3: #9ca3af;
+    --color-text-muted: #6b7280;
 }
 
 @layer components {
